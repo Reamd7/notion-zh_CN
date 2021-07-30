@@ -1,12 +1,14 @@
 // ==UserScript==
 // @name         Notion-zh_CN notion的汉化脚本
 // @namespace    http://tampermonkey.net/
-// @version      0.1.0
+// @version      1.0.0
 // @description  notion的汉化脚本，欢迎积极贡献一同改进项目，地址：https://github.com/nancheung97/notion-zh_CN
-// @author       NanCheung
+// @author       reamd7
 // @match        *://www.notion.so/*
 // @grant        none
 // @run-at       document-start
+// @copyright    2021, reamd7
+// @license      MIT
 // ==/UserScript==
 (function() {
   'use strict';
