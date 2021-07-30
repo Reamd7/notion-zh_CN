@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         Notion-zh_CN notion的汉化脚本
 // @namespace    http://tampermonkey.net/
-// @version      1.0.0
+// @version      1.0.1
 // @description  notion的汉化脚本，欢迎积极贡献一同改进项目，地址：https://github.com/nancheung97/notion-zh_CN
 // @author       reamd7
 // @match        *://www.notion.so/*
