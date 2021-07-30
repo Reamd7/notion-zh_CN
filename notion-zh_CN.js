@@ -1,8 +1,8 @@
 // ==UserScript==
 // @name         Notion-zh_CN notion的汉化脚本
 // @namespace    http://tampermonkey.net/
-// @version      1.0.1
-// @description  notion的汉化脚本，欢迎积极贡献一同改进项目，地址：https://github.com/nancheung97/notion-zh_CN
+// @version      1.0.3
+// @description  notion的汉化脚本，欢迎积极贡献一同改进项目，地址：https://github.com/reamd7/notion-zh_CN
 // @author       reamd7
 // @match        *://www.notion.so/*
 // @grant        none
@@ -16,7 +16,7 @@
   const script = document.createElement("script");
   script.id = "messages"
   script.type = "application/json";
-  script.setAttribute("data-locale", "ko-KR");
+  script.setAttribute("data-locale", "zh-CN");
   script.text = JSON.stringify({
     "abstractBlock.embeds.button.label": "Abstract嵌入",
     "abstractBlock.embeds.caption": "与启用公共访问的Abstract链接兼容",
@@ -119,7 +119,7 @@
     "action.languageMode.csharp": "C#",
     "action.languageMode.css": "CSS",
     "action.languageMode.cstyle": "Java/C/C++/C#",
-    "action.languageMode.dart": "达特",
+    "action.languageMode.dart": "Dart",
     "action.languageMode.diff": "Diff",
     "action.languageMode.docker": "Docker",
     "action.languageMode.elixir": "Elixir",
@@ -147,7 +147,7 @@
     "action.languageMode.lua": "Lua",
     "action.languageMode.makefile": "Makefile",
     "action.languageMode.markdown": "Markdown",
-    "action.languageMode.markup": "标记",
+    "action.languageMode.markup": "Markup",
     "action.languageMode.matlab": "MATLAB",
     "action.languageMode.mermaid": "Mermaid",
     "action.languageMode.name": "语言设置",
@@ -160,7 +160,7 @@
     "action.languageMode.plaintext": "Plain Text",
     "action.languageMode.powershell": "Powershell",
     "action.languageMode.prolog": "Prolog",
-    "action.languageMode.protobuf": "协议缓冲区(Protobuf)",
+    "action.languageMode.protobuf": "Protobuf",
     "action.languageMode.python": "Python",
     "action.languageMode.r": "R",
     "action.languageMode.reason": "Reason",
@@ -171,9 +171,9 @@
     "action.languageMode.scheme": "Scheme",
     "action.languageMode.scss": "SCSS",
     "action.languageMode.shell": "Shell",
-    "action.languageMode.sql": "SQL(SQL)",
+    "action.languageMode.sql": "SQL",
     "action.languageMode.swift": "Swift",
-    "action.languageMode.typescript": "TypeScript(类型脚本)",
+    "action.languageMode.typescript": "TypeScript",
     "action.languageMode.vbdotnet": "VB.net",
     "action.languageMode.verilog": "Verilog",
     "action.languageMode.vhdl": "VHDL",
