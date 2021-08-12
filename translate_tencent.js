@@ -1,8 +1,6 @@
 const tencentcloud = require("tencentcloud-sdk-nodejs");
 const fs = require("fs");
 
-var tar = require("./kr.json");
-
 const TmtClient = tencentcloud.tmt.v20180321.Client;
 const clientConfig = {
   credential: {
@@ -16,8 +14,6 @@ const clientConfig = {
     },
   },
 };
-
-var collect = {};
 
 const client = new TmtClient(clientConfig);
 async function translate(src) {
@@ -40,6 +36,33 @@ async function translate(src) {
 }
 
 async function timer() {
+  const prevKr = JSON.parse(fs.readFileSync("./kr.json"));
+  const newKr = JSON.parse(
+    eval(fs.readFileSync("./source.kr.json").toString())
+  );
+  const nowZh = JSON.parse(fs.readFileSync("./zh.json"));
+
+  // console.log(nowZh);
+
+  const tar = Object.keys(newKr).reduce((set, key) => {
+    let prevVal = prevKr[key];
+    let newVal = newKr[key];
+    if (newVal !== prevVal) {
+      set[key] = newVal;
+    }
+    return set;
+  }, {});
+
+  const collect = Object.keys(newKr).reduce((set, key) => {
+    let prevVal = prevKr[key];
+    let newVal = newKr[key];
+    let zhVal = nowZh[key];
+    if (newVal === prevVal && zhVal) {
+      set[key] = nowZh[key];
+    }
+    return set;
+  }, {});
+
   const array = Object.entries(tar);
   let start = 0;
   let temp = "";
@@ -75,7 +98,22 @@ async function timer() {
       temp += val;
     }
   }
-  fs.appendFileSync("./zh.json", JSON.stringify(collect));
+  const prettier = require("prettier");
+  fs.writeFileSync(
+    "./kr.json",
+    prettier.format(JSON.stringify(newKr), { parser: "json" })
+  );
+  fs.writeFileSync(
+    "./zh.json",
+    prettier.format(
+      JSON.stringify(collect)
+        .replace(/\”/g, "”")
+        .replace(/\\“/g, "“")
+        .replace(/\\’/g, "’")
+        .replace(/\\‘/g, "‘"),
+      { parser: "json" }
+    )
+  );
 }
 
 timer();
