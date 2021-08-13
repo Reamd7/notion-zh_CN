@@ -1,5 +1,7 @@
 const tencentcloud = require("tencentcloud-sdk-nodejs");
 const fs = require("fs");
+const axios = require("axios");
+const jsdom = require("jsdom");
 
 const TmtClient = tencentcloud.tmt.v20180321.Client;
 const clientConfig = {
@@ -36,11 +38,30 @@ async function translate(src) {
 }
 
 async function timer() {
+  const assest = await axios.default.post("https://www.notion.so/api/v3/getAssetsJsonV2", {
+    hash: ""
+  });
+  console.log(assest.data.localeHtml)
   const prevKr = JSON.parse(fs.readFileSync("./kr.json"));
-  const newKr = JSON.parse(
-    eval(fs.readFileSync("./source.kr.json").toString())
-  );
-  const nowZh = JSON.parse(fs.readFileSync("./zh.json"));
+  const newKr = await jsdom.JSDOM.fromURL("https://www.notion.so" + assest.data.localeHtml['ko-KR']).then(v => {
+    const res = (v.window.document.getElementById("messages").textContent)
+    fs.writeFileSync("./source_kr.json", res)
+    return JSON.parse(res);
+  });
+  const newZh = await jsdom.JSDOM.fromURL("https://www.notion.so" + assest.data.localeHtml['zh-CN']).then(v => {
+    const res = (v.window.document.getElementById("messages").textContent)
+    fs.writeFileSync("./source_zh.json", res)
+    return JSON.parse(res);
+  });
+  const cacheZh = JSON.parse(fs.readFileSync("./zh.json"))
+  const nowZh = Object.keys(newKr).reduce((set, key) => {
+    if (newZh[key]) {
+      set[key] = newZh[key];
+    } else if (cacheZh[key]) {
+      set[key] = cacheZh[key];
+    }
+    return set;
+  }, {});
 
   // console.log(nowZh);
 
