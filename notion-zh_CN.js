@@ -1,8 +1,8 @@
 // ==UserScript==
 // @name         Notion-zh_CN notion的汉化脚本
 // @namespace    http://tampermonkey.net/
-// @version      1.0.6
-// @description  notion的100%汉化脚本，欢迎积极贡献一同改进项目，地址：https://github.com/reamd7/notion-zh_CN
+// @version      2.0.0
+// @description  notion的100%汉化脚本，基于官方中文+机器翻译韩文，支持app版本以及网页油猴，地址：https://github.com/reamd7/notion-zh_CN
 // @author       reamd7
 // @match        *://www.notion.so/*
 // @grant        none
@@ -5536,5 +5536,31 @@
     "whimsicalBlock.placeholder": "嵌入 Whimsical",
     "withImageRepositioning.dragImage.text": "拖动图像以重新定位"
   });
-  document.body.appendChild(script);
+  var isElectron = "undefined" != typeof global || window.__isElectron;
+  if (isElectron) {
+    var observer = new MutationObserver(function(callback) {
+      if (callback.filter(v => {
+        return v.target === document.head;
+      }).length > 0) {
+        document.head.insertAdjacentElement("afterbegin", script);
+        observer.disconnect()
+      }
+    });
+    observer.observe(document, {
+      childList: true,  // 观察目标子节点的变化，是否有添加或者删除
+      attributes: false, // 观察属性变动
+      subtree: true     // 观察后代节点，默认为 false
+    });
+  } else {
+    function insert() {
+      try {
+        document.body.appendChild(script);
+      } catch(e) {
+        requestAnimationFrame(()=>{
+          insert()
+        })
+      }
+    }
+    insert();
+  }
 })();
