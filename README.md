@@ -34,8 +34,10 @@ notion-zh_CN 是对notion的汉化脚本。2.0版本支持网页端(油猴脚本
    //# sourceMappingURL=preload.js.map
     require("./notion-zh_CN") // 添加该行
    ```
-7. 
+7. 重启
 
+Mac 没有环境测试：原理同上
+只是 同样打开 Notion.app\Contents\Resources\app\renderer\ 即可。。（安装包显示有同样目录结构）
 
 # 大家可以做什么？
 
