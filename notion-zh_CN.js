@@ -5545,6 +5545,17 @@
       if (callback.filter(v => {
         return v.target === document.head;
       }).length > 0) {
+        if (process.platform == 'darwin'){
+          try {
+            window.navigator.language = "en-US";
+          } catch (e) {
+      
+          }
+          script.setAttribute("data-locale", "en-US");
+        }
+        else if (process.platform == 'win32'){
+
+        }
         document.head.insertAdjacentElement("afterbegin", script);
         observer.disconnect()
       }
