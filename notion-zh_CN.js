@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         Notion-zh_CN notion的汉化脚本
 // @namespace    http://tampermonkey.net/
-// @version      2.0.0
+// @version      2.0.1
 // @description  notion的100%汉化脚本，基于官方中文+机器翻译韩文，支持app版本以及网页油猴，地址：https://github.com/reamd7/notion-zh_CN
 // @author       reamd7
 // @match        *://www.notion.so/*
@@ -5538,6 +5538,9 @@
   });
   var isElectron = "undefined" != typeof global || window.__isElectron;
   if (isElectron) {
+    if (process.platform == 'darwin'){
+      script.setAttribute("data-locale", "en-US");
+    }
     var observer = new MutationObserver(function(callback) {
       if (callback.filter(v => {
         return v.target === document.head;
