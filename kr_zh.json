@@ -1,0 +1,2849 @@
+{
+  "UpdateSidebarFollowControl.following.caption": [
+    "모든 업데이트와 댓글에 대한 알림 발송",
+    "发送所有更新和评论的通知"
+  ],
+  "UpdateSidebarFollowControl.following.label": ["팔로잉", "取消关注"],
+  "UpdateSidebarFollowControl.notFollowing.caption": [
+    "알림 발송 없음",
+    "无通知发送"
+  ],
+  "UpdateSidebarFollowControl.notFollowing.label": ["팔로잉 안 함", "不关注"],
+  "action.boardColumns.name": ["보드 열", "板列"],
+  "action.connectSlack.title": ["Slack에 연결", "连接到Slack"],
+  "action.copyLinkToCurrentPage.snackBarMessage": [
+    "현재 페이지에 대한 링크가 클립보드에 복사되었습니다.",
+    "指向当前页面的链接已复制到剪贴板。"
+  ],
+  "action.edit.name": ["편집", "编辑"],
+  "action.followPage.title": ["페이지 팔로우", "关注页面"],
+  "action.group.name": ["그룹화", "分组"],
+  "action.languageMode.abap": ["ABAP", "ABAP"],
+  "action.languageMode.arduino": ["Arduino", "Arduino"],
+  "action.languageMode.bash": ["Bash", "Bash"],
+  "action.languageMode.basic": ["Basic", "基本版"],
+  "action.languageMode.c": ["C", "C"],
+  "action.languageMode.clojure": ["Clojure", "Clojure"],
+  "action.languageMode.coffeescript": ["CoffeeScript", "CoffeeScript"],
+  "action.languageMode.cplusplus": ["C++", "C++"],
+  "action.languageMode.csharp": ["C#", "C#"],
+  "action.languageMode.css": ["CSS", "CSS"],
+  "action.languageMode.cstyle": ["Java/C/C++/C#", "Java/C/C++/C#"],
+  "action.languageMode.dart": ["Dart", "达特"],
+  "action.languageMode.diff": ["Diff", "Diff"],
+  "action.languageMode.docker": ["Docker", "Docker"],
+  "action.languageMode.elixir": ["Elixir", "Elixir"],
+  "action.languageMode.elm": ["Elm", "Elm"],
+  "action.languageMode.erlang": ["Erlang", "Erlang"],
+  "action.languageMode.flow": ["Flow", "Flow(流式)"],
+  "action.languageMode.fortran": ["Fortran", "Fortran"],
+  "action.languageMode.fsharp": ["F#", "F#"],
+  "action.languageMode.gherkin": ["Gherkin", "Gherkin"],
+  "action.languageMode.glsl": ["GLSL", "GLSL"],
+  "action.languageMode.go": ["Go", "Go"],
+  "action.languageMode.graphql": ["Graphql", "Graphql"],
+  "action.languageMode.groovy": ["Groovy", "Groovy"],
+  "action.languageMode.haskell": ["Haskell", "Haskell"],
+  "action.languageMode.html": ["HTML", "HTML"],
+  "action.languageMode.java": ["Java", "Java"],
+  "action.languageMode.javascript": ["JavaScript", "JavaScript"],
+  "action.languageMode.json": ["JSON", "JSON"],
+  "action.languageMode.julia": ["Julia", "朱莉娅"],
+  "action.languageMode.kotlin": ["Kotlin", "Kotlin"],
+  "action.languageMode.latex": ["LaTeX", "LaTeX"],
+  "action.languageMode.less": ["LESS", "LESS"],
+  "action.languageMode.lisp": ["Lisp", "Lisp"],
+  "action.languageMode.livescript": ["LiveScript", "LiveScript"],
+  "action.languageMode.lua": ["Lua", "Lua"],
+  "action.languageMode.makefile": ["Makefile", "Makefile"],
+  "action.languageMode.markdown": ["Markdown", "Markdown"],
+  "action.languageMode.markup": ["Markup", "标记"],
+  "action.languageMode.matlab": ["MATLAB", "MATLAB"],
+  "action.languageMode.mermaid": ["Mermaid", "Mermaid"],
+  "action.languageMode.name": ["언어 설정", "语言设置"],
+  "action.languageMode.nix": ["Nix", "Nix"],
+  "action.languageMode.objectiveC": ["Objective-C", "Objective-C"],
+  "action.languageMode.ocaml": ["OCaml", "OCaml"],
+  "action.languageMode.pascal": ["Pascal", "Pascal"],
+  "action.languageMode.perl": ["Perl", "Perl"],
+  "action.languageMode.php": ["PHP", "PHP"],
+  "action.languageMode.plaintext": ["Plain Text", "Plain Text"],
+  "action.languageMode.powershell": ["Powershell", "Powershell"],
+  "action.languageMode.prolog": ["Prolog", "Prolog"],
+  "action.languageMode.protobuf": ["Protobuf", "Protobuf"],
+  "action.languageMode.python": ["Python", "Python"],
+  "action.languageMode.r": ["R", "R"],
+  "action.languageMode.reason": ["Reason", "Reason"],
+  "action.languageMode.ruby": ["Ruby", "Ruby"],
+  "action.languageMode.rust": ["Rust", "Rust(Rust)"],
+  "action.languageMode.sass": ["Sass", "Sass"],
+  "action.languageMode.scala": ["Scala", "Scala"],
+  "action.languageMode.scheme": ["Scheme", "Scheme"],
+  "action.languageMode.scss": ["SCSS", "SCSS"],
+  "action.languageMode.shell": ["Shell", "Shell"],
+  "action.languageMode.sql": ["SQL", "SQL(SQL)"],
+  "action.languageMode.swift": ["Swift", "Swift"],
+  "action.languageMode.typescript": ["TypeScript", "TypeScript(类型脚本)"],
+  "action.languageMode.vbdotnet": ["VB.net", "VB.net"],
+  "action.languageMode.verilog": ["Verilog", "Verilog"],
+  "action.languageMode.vhdl": ["VHDL", "VHDL"],
+  "action.languageMode.visualbasic": ["Visual Basic", "Visual Basic"],
+  "action.languageMode.webassembly": ["WebAssembly", "WebAssembly"],
+  "action.languageMode.xml": ["XML", "XML"],
+  "action.languageMode.yaml": ["YAML", "YAML"],
+  "action.listFormat.letters.default": ["기본값", "默认值"],
+  "action.listFormat.letters.name": ["글자", "字"],
+  "action.listFormat.letters.roman": ["로마 숫자", "罗马数字"],
+  "action.listFormat.name": ["목록 형식", "列表格式"],
+  "action.listFormat.numbers.name": ["숫자", "数字"],
+  "action.listFormat.sectionName": ["목록 형식", "列表格式"],
+  "action.quoteSize.default": ["기본", "基本"],
+  "action.quoteSize.large": ["크게", "大"],
+  "action.quoteSize.name": ["인용 크기", "引用大小"],
+  "action.reportPage.name": ["페이지 신고", "页面申报"],
+  "action.section.quoteSize": ["인용 크기", "引用大小"],
+  "action.signUpOrlogIn.name": ["회원 가입 또는 로그인하기", "注册或登录"],
+  "action.unpin.name": ["사이드바에서 제거", "从侧边栏移除"],
+  "action.unsyncTransclusionContainerName.name": [
+    "동기화 모두 해제",
+    "禁用所有同步"
+  ],
+  "action.unsyncTransclusionReference.name": ["동기화 해제", "取消同步"],
+  "action.whatIsNotion.name": ["Notion 소개", "Notion简介"],
+  "allTimeZones.Africa/Abidjan": ["아프리카/아비장", "非洲/阿比让"],
+  "allTimeZones.Africa/Accra": ["아프리카/아크라", "非洲/阿克拉"],
+  "allTimeZones.Africa/Addis_Ababa": [
+    "아프리카/아디스아바바",
+    "非洲/亚的斯亚贝巴"
+  ],
+  "allTimeZones.Africa/Algiers": ["아프리카/알제", "非洲/阿尔及尔"],
+  "allTimeZones.Africa/Asmara": ["아프리카/아스마라", "非洲/阿斯马拉"],
+  "allTimeZones.Africa/Asmera": ["아프리카/아스메라", "非洲/阿斯梅拉"],
+  "allTimeZones.Africa/Bamako": ["아프리카/바마코", "非洲/巴马科"],
+  "allTimeZones.Africa/Bangui": ["아프리카/방기", "非洲/邦基"],
+  "allTimeZones.Africa/Banjul": ["아프리카/반줄", "非洲/班珠尔"],
+  "allTimeZones.Africa/Bissau": ["아프리카/비사우", "非洲/比绍"],
+  "allTimeZones.Africa/Blantyre": ["아프리카/블랜타이어", "非洲/布兰太尔"],
+  "allTimeZones.Africa/Brazzaville": ["아프리카/브라자빌", "非洲/布拉柴维尔"],
+  "allTimeZones.Africa/Bujumbura": ["아프리카/부줌부라", "非洲/布琼布拉"],
+  "allTimeZones.Africa/Cairo": ["아프리카/카이로", "非洲/开罗"],
+  "allTimeZones.Africa/Casablanca": ["아프리카/카사블랑카", "非洲/卡萨布兰卡"],
+  "allTimeZones.Africa/Ceuta": ["아프리카/세우타", "非洲/塞乌塔"],
+  "allTimeZones.Africa/Conakry": ["아프리카/코나크리", "非洲/科纳克里"],
+  "allTimeZones.Africa/Dakar": ["아프리카/다카르", "非洲/达喀尔"],
+  "allTimeZones.Africa/Dar_es_Salaam": [
+    "아프리카/다르에스살람",
+    "非洲/达累斯萨拉姆"
+  ],
+  "allTimeZones.Africa/Djibouti": ["아프리카/지부티", "非洲/吉布提"],
+  "allTimeZones.Africa/Douala": ["아프리카/두알라", "非洲/杜阿拉"],
+  "allTimeZones.Africa/El_Aaiun": ["아프리카/엘아이운", "非洲/埃尔艾云"],
+  "allTimeZones.Africa/Freetown": ["아프리카/프리타운", "非洲/弗里敦"],
+  "allTimeZones.Africa/Gaborone": ["아프리카/가보로네", "非洲/加博罗内"],
+  "allTimeZones.Africa/Harare": ["아프리카/하라레", "非洲/哈拉雷"],
+  "allTimeZones.Africa/Johannesburg": [
+    "아프리카/요하네스버그",
+    "非洲/约翰内斯堡"
+  ],
+  "allTimeZones.Africa/Juba": ["아프리카/주바", "非洲/朱巴"],
+  "allTimeZones.Africa/Kampala": ["아프리카/캄팔라", "非洲/坎帕拉"],
+  "allTimeZones.Africa/Khartoum": ["아프리카/하르툼", "非洲/喀土穆"],
+  "allTimeZones.Africa/Kigali": ["아프리카/키갈리", "非洲/基加利"],
+  "allTimeZones.Africa/Kinshasa": ["아프리카/킨샤사", "非洲/金沙萨"],
+  "allTimeZones.Africa/Lagos": ["아프리카/라고스", "非洲/拉各斯"],
+  "allTimeZones.Africa/Libreville": ["아프리카/리브르빌", "非洲/利伯维尔"],
+  "allTimeZones.Africa/Lome": ["아프리카/로메", "非洲/洛美"],
+  "allTimeZones.Africa/Luanda": ["아프리카/루안다", "非洲/罗安达"],
+  "allTimeZones.Africa/Lubumbashi": ["아프리카/루붐바시", "非洲/卢本巴希"],
+  "allTimeZones.Africa/Lusaka": ["아프리카/루사카", "非洲/卢萨卡"],
+  "allTimeZones.Africa/Malabo": ["아프리카/말라보", "非洲/马拉博"],
+  "allTimeZones.Africa/Maputo": ["아프리카/마푸토", "非洲/马普托"],
+  "allTimeZones.Africa/Maseru": ["아프리카/마세루", "非洲/马塞鲁"],
+  "allTimeZones.Africa/Mbabane": ["아프리카/음바바네", "非洲/姆巴瓦内"],
+  "allTimeZones.Africa/Mogadishu": ["아프리카/모가디슈", "非洲/摩加迪沙"],
+  "allTimeZones.Africa/Monrovia": ["아프리카/몬로비아", "非洲/蒙罗维亚"],
+  "allTimeZones.Africa/Nairobi": ["아프리카/나이로비", "非洲/内罗毕"],
+  "allTimeZones.Africa/Ndjamena": ["아프리카/은자메나", "非洲/恩贾梅纳"],
+  "allTimeZones.Africa/Niamey": ["아프리카/니아메", "非洲/尼亚美"],
+  "allTimeZones.Africa/Nouakchott": ["아프리카/누악쇼트", "非洲/努瓦克肖特"],
+  "allTimeZones.Africa/Ouagadougou": ["아프리카/와가두구", "非洲/瓦加杜古"],
+  "allTimeZones.Africa/Porto-Novo": ["아프리카/포르토노보", "非洲/波托诺沃"],
+  "allTimeZones.Africa/Sao_Tome": ["아프리카/상투메", "非洲/圣多美和普林西比"],
+  "allTimeZones.Africa/Timbuktu": ["아프리카/팀북투", "非洲/组北斗"],
+  "allTimeZones.Africa/Tripoli": ["아프리카/트리폴리", "非洲/的黎波里"],
+  "allTimeZones.Africa/Tunis": ["아프리카/튀니스", "非洲/突尼斯"],
+  "allTimeZones.Africa/Windhoek": ["아프리카/빈트후크", "非洲/温得和克"],
+  "allTimeZones.America/Adak": ["아메리카/아닥", "美国/阿达克"],
+  "allTimeZones.America/Anchorage": ["아메리카/앵커리지", "美国/安克雷奇"],
+  "allTimeZones.America/Anguilla": ["아메리카/앵귈라", "美洲/安圭拉"],
+  "allTimeZones.America/Antigua": ["아메리카/안티구아", "美洲/安提瓜"],
+  "allTimeZones.America/Araguaina": ["아메리카/아라과이나", "美国/阿拉瓜伊纳"],
+  "allTimeZones.America/Argentina/Buenos_Aires": [
+    "아메리카/아르헨티나/부에노스아이레스",
+    "美洲/阿根廷/布宜诺斯艾利斯"
+  ],
+  "allTimeZones.America/Argentina/Catamarca": [
+    "아메리카/아르헨티나/카타마르카",
+    "美洲/阿根廷/卡塔马尔卡"
+  ],
+  "allTimeZones.America/Argentina/ComodRivadavia": [
+    "아메리카/아르헨티나/코모도로리바다비아",
+    "美洲/阿根廷/科莫多罗里瓦达维亚"
+  ],
+  "allTimeZones.America/Argentina/Cordoba": [
+    "아메리카/아르헨티나/코르도바",
+    "美洲/阿根廷/科尔多瓦"
+  ],
+  "allTimeZones.America/Argentina/Jujuy": [
+    "아메리카/아르헨티나/후후이",
+    "美洲/阿根廷/胡胡伊"
+  ],
+  "allTimeZones.America/Argentina/La_Rioja": [
+    "아메리카/아르헨티나/라리오하",
+    "美洲/阿根廷/拉里奥哈"
+  ],
+  "allTimeZones.America/Argentina/Mendoza": [
+    "아메리카/아르헨티나/멘도사",
+    "美洲/阿根廷/门多萨"
+  ],
+  "allTimeZones.America/Argentina/Rio_Gallegos": [
+    "아메리카/아르헨티나/리오가예고스",
+    "美洲/阿根廷/里奥加耶戈斯"
+  ],
+  "allTimeZones.America/Argentina/Salta": [
+    "아메리카/아르헨티나/살타",
+    "美洲/阿根廷/萨尔塔"
+  ],
+  "allTimeZones.America/Argentina/San_Juan": [
+    "아메리카/아르헨티나/산후안",
+    "美洲/阿根廷/圣胡安"
+  ],
+  "allTimeZones.America/Argentina/San_Luis": [
+    "아메리카/아르헨티나/산루이스",
+    "美洲/阿根廷/圣路易斯"
+  ],
+  "allTimeZones.America/Argentina/Tucuman": [
+    "아메리카/아르헨티나/투쿠만",
+    "美洲/阿根廷/图库曼"
+  ],
+  "allTimeZones.America/Argentina/Ushuaia": [
+    "아메리카/아르헨티나/우수아이아",
+    "美洲/阿根廷/乌斯怀亚"
+  ],
+  "allTimeZones.America/Aruba": ["아메리카/아루바", "美洲/阿鲁巴"],
+  "allTimeZones.America/Asuncion": ["아메리카/아순시온", "美洲/亚松森"],
+  "allTimeZones.America/Atikokan": ["아메리카/애티코칸", "美洲/阿提科坎"],
+  "allTimeZones.America/Atka": ["아메리카/애트카", "美洲/阿特卡"],
+  "allTimeZones.America/Bahia": ["아메리카/바이아", "美洲/巴伊亚"],
+  "allTimeZones.America/Bahia_Banderas": [
+    "아메리카/바이아반데라스",
+    "美洲/拜亚班德拉斯"
+  ],
+  "allTimeZones.America/Barbados": ["아메리카/바베이도스", "美国/巴巴多斯"],
+  "allTimeZones.America/Belem": ["아메리카/벨렝", "美国/别伦"],
+  "allTimeZones.America/Belize": ["아메리카/벨리즈", "美国/伯利兹"],
+  "allTimeZones.America/Blanc-Sablon": [
+    "아메리카/블랑사블론",
+    "美国/勃朗萨布隆"
+  ],
+  "allTimeZones.America/Boa_Vista": ["아메리카/보아비스타", "美洲/波阿维斯塔"],
+  "allTimeZones.America/Bogota": ["아메리카/보고타", "美洲/波哥大"],
+  "allTimeZones.America/Boise": ["아메리카/보이시", "美国/博伊西"],
+  "allTimeZones.America/Buenos_Aires": [
+    "아메리카/부에노스아이레스",
+    "美国/布宜诺斯艾利斯"
+  ],
+  "allTimeZones.America/Cambridge_Bay": [
+    "아메리카/캠브리지베이",
+    "美国/剑桥湾"
+  ],
+  "allTimeZones.America/Campo_Grande": [
+    "아메리카/캄포그란데",
+    "美国/坎波格兰德"
+  ],
+  "allTimeZones.America/Cancun": ["아메리카/칸쿤", "美洲/坎昆"],
+  "allTimeZones.America/Caracas": ["아메리카/카라카스", "美洲/加拉加斯"],
+  "allTimeZones.America/Catamarca": ["아메리카/카타마르카", "美洲/卡塔马卡"],
+  "allTimeZones.America/Cayenne": ["아메리카/카옌", "美洲/卡延"],
+  "allTimeZones.America/Cayman": ["아메리카/케이맨", "美洲/开曼"],
+  "allTimeZones.America/Chicago": ["아메리카/시카고", "美国/芝加哥"],
+  "allTimeZones.America/Chihuahua": ["아메리카/치와와", "美洲/奇瓦"],
+  "allTimeZones.America/Coral_Harbour": ["아메리카/코랄하버", "美国/珊瑚港"],
+  "allTimeZones.America/Cordoba": ["아메리카/코르도바", "美国/科尔多瓦"],
+  "allTimeZones.America/Costa_Rica": ["아메리카/코스타리카", "美洲/哥斯达黎加"],
+  "allTimeZones.America/Creston": ["아메리카/크레스턴", "美洲/克雷斯顿"],
+  "allTimeZones.America/Cuiaba": ["아메리카/쿠이아바", "美国/库亚巴"],
+  "allTimeZones.America/Curacao": ["아메리카/퀴라소", "美洲/库拉索"],
+  "allTimeZones.America/Danmarkshavn": ["아메리카/덴마크샤븐", "美洲/丹麦沙文"],
+  "allTimeZones.America/Dawson": ["아메리카/도슨시티", "美国/道森城"],
+  "allTimeZones.America/Dawson_Creek": ["아메리카/도슨크릭", "美国/道森克里克"],
+  "allTimeZones.America/Denver": ["아메리카/덴버", "美洲/丹佛"],
+  "allTimeZones.America/Detroit": ["아메리카/디트로이트", "美国/底特律"],
+  "allTimeZones.America/Dominica": ["아메리카/도미니카", "美洲/多米尼加"],
+  "allTimeZones.America/Edmonton": ["아메리카/에드먼턴", "美国/埃德蒙顿"],
+  "allTimeZones.America/Eirunepe": ["아메리카/에이루네페", "美国/埃鲁内佩"],
+  "allTimeZones.America/El_Salvador": ["아메리카/엘살바도르", "美洲/萨尔瓦多"],
+  "allTimeZones.America/Ensenada": ["아메리카/엔세나다", "美国/恩塞纳达"],
+  "allTimeZones.America/Fort_Nelson": ["아메리카/포트넬슨", "美国/内尔森港"],
+  "allTimeZones.America/Fort_Wayne": ["아메리카/포트웨인", "美国/韦恩港"],
+  "allTimeZones.America/Fortaleza": ["아메리카/포르탈레자", "美洲/福塔莱萨"],
+  "allTimeZones.America/Glace_Bay": ["아메리카/글레이스베이", "美国/格莱斯湾"],
+  "allTimeZones.America/Godthab": ["아메리카/고트호프", "美国/哥特霍夫"],
+  "allTimeZones.America/Goose_Bay": ["아메리카/구스베이", "美洲/鹅湾"],
+  "allTimeZones.America/Grand_Turk": ["아메리카/그랜드터크", "美洲/大特克"],
+  "allTimeZones.America/Grenada": ["아메리카/그레나다", "美洲/格林纳达"],
+  "allTimeZones.America/Guadeloupe": ["아메리카/과들루프", "美国/瓜德罗普"],
+  "allTimeZones.America/Guatemala": ["아메리카/과테말라", "美国/危地马拉"],
+  "allTimeZones.America/Guayaquil": ["아메리카/과야킬", "美国/瓜亚基尔"],
+  "allTimeZones.America/Guyana": ["아메리카/가이아나", "美洲/圭亚那"],
+  "allTimeZones.America/Halifax": ["아메리카/핼리팩스", "美国/哈利法克斯"],
+  "allTimeZones.America/Havana": ["아메리카/아바나", "美洲/哈瓦那"],
+  "allTimeZones.America/Hermosillo": ["아메리카/에르모시요", "美国/埃尔莫西约"],
+  "allTimeZones.America/Indiana/Indianapolis": [
+    "아메리카/인디애나/인디애나폴리스",
+    "美国/印第安纳/印第安纳波利斯"
+  ],
+  "allTimeZones.America/Indiana/Knox": [
+    "아메리카/인디애나/녹스",
+    "美国/印第安纳/诺克斯"
+  ],
+  "allTimeZones.America/Indiana/Marengo": [
+    "아메리카/인디애나/마렝고",
+    "美国/印第安纳/马伦戈"
+  ],
+  "allTimeZones.America/Indiana/Petersburg": [
+    "아메리카/인디애나/피터스버그",
+    "美国/印第安纳/彼得斯堡"
+  ],
+  "allTimeZones.America/Indiana/Tell_City": [
+    "미국/인디애나/텔시티",
+    "美国/印第安纳/特尔城"
+  ],
+  "allTimeZones.America/Indiana/Vevay": [
+    "아메리카/인디애나/비비",
+    "美国/印第安纳/比比"
+  ],
+  "allTimeZones.America/Indiana/Vincennes": [
+    "아메리카/인디애나/빈센느",
+    "美国/印第安纳/文森纳"
+  ],
+  "allTimeZones.America/Indiana/Winamac": [
+    "아메리카/인디애나/위너맥",
+    "美国/印第安纳/温纳马克"
+  ],
+  "allTimeZones.America/Indianapolis": [
+    "아메리카/인디애나폴리스",
+    "美国/印第安纳波利斯"
+  ],
+  "allTimeZones.America/Inuvik": ["아메리카/이누빅", "美国/伊努维克"],
+  "allTimeZones.America/Iqaluit": ["아메리카/이칼루이트", "美洲/伊卡卢伊特"],
+  "allTimeZones.America/Jamaica": ["아메리카/자메이카", "美洲/牙买加"],
+  "allTimeZones.America/Jujuy": ["아메리카/후후이", "美洲/胡胡伊"],
+  "allTimeZones.America/Juneau": ["아메리카/쥬노", "美洲/朱诺"],
+  "allTimeZones.America/Kentucky/Louisville": [
+    "아메리카/켄터키/루이빌",
+    "美洲/肯塔基/路易斯维尔"
+  ],
+  "allTimeZones.America/Kentucky/Monticello": [
+    "아메리카/켄터키/몬티첼로",
+    "美洲/肯塔基/蒙蒂切洛"
+  ],
+  "allTimeZones.America/Knox_IN": [
+    "아메리카/인디애나 녹스",
+    "美国/印第安纳诺克斯"
+  ],
+  "allTimeZones.America/Kralendijk": [
+    "아메리카/크랄렌데이크",
+    "美国/克拉伦代克"
+  ],
+  "allTimeZones.America/La_Paz": ["아메리카/라파스", "美洲/拉巴斯"],
+  "allTimeZones.America/Lima": ["아메리카/리마", "美洲/利马"],
+  "allTimeZones.America/Los_Angeles": ["아메리카/로스앤젤레스", "美洲/洛杉矶"],
+  "allTimeZones.America/Louisville": ["아메리카/루이빌", "美国/路易斯维尔"],
+  "allTimeZones.America/Lower_Princes": [
+    "아메리카/로어프린세스",
+    "美国/皇家公主"
+  ],
+  "allTimeZones.America/Maceio": ["아메리카/마세이오", "美洲/马塞奥"],
+  "allTimeZones.America/Managua": ["아메리카/마나과", "美洲/马那科"],
+  "allTimeZones.America/Manaus": ["아메리카/마나우스", "美国/马瑙斯"],
+  "allTimeZones.America/Marigot": ["아메리카/마리고", "美国/马里戈"],
+  "allTimeZones.America/Martinique": ["아메리카/마르티니크", "美洲/马提尼克"],
+  "allTimeZones.America/Matamoros": ["아메리카/마타모로스", "美洲/马塔莫罗斯"],
+  "allTimeZones.America/Mazatlan": ["아메리카/마사틀란", "美洲/马萨特兰"],
+  "allTimeZones.America/Mendoza": ["아메리카/멘도사", "美洲/门多萨"],
+  "allTimeZones.America/Menominee": ["아메리카/메노미니", "美洲/梅诺米尼"],
+  "allTimeZones.America/Merida": ["아메리카/메리다", "美洲/美利达"],
+  "allTimeZones.America/Metlakatla": [
+    "아메리카/메트라카트라",
+    "美洲/梅特拉卡特拉"
+  ],
+  "allTimeZones.America/Mexico_City": ["아메리카/멕시코시티", "美国/墨西哥城"],
+  "allTimeZones.America/Miquelon": ["아메리카/미클롱", "美洲/密克隆"],
+  "allTimeZones.America/Moncton": ["아메리카/멍크턴", "美国/蒙克顿"],
+  "allTimeZones.America/Monterrey": ["아메리카/몬테레이", "美洲/蒙特雷"],
+  "allTimeZones.America/Montevideo": ["아메리카/몬테비데오", "美洲/蒙得维的亚"],
+  "allTimeZones.America/Montreal": ["아메리카/몬트리올", "美国/蒙特利尔"],
+  "allTimeZones.America/Montserrat": ["아메리카/몬트세랫", "美洲/蒙特塞拉特"],
+  "allTimeZones.America/Nassau": ["아메리카/나소", "美洲/拿骚"],
+  "allTimeZones.America/New_York": ["아메리카/뉴욕", "美国/纽约"],
+  "allTimeZones.America/Nipigon": ["아메리카/니피곤", "美洲/尼皮贡"],
+  "allTimeZones.America/Nome": ["아메리카/놈", "美国/家伙"],
+  "allTimeZones.America/Noronha": ["아메리카/노로냐", "美洲/诺罗尼亚"],
+  "allTimeZones.America/North_Dakota/Beulah": [
+    "아메리카/노스다코타/뷸라",
+    "美洲/北达科他州/穆拉"
+  ],
+  "allTimeZones.America/North_Dakota/Center": [
+    "아메리카/노스다코타/센터",
+    "美洲/北达科他/中心"
+  ],
+  "allTimeZones.America/North_Dakota/New_Salem": [
+    "아메리카/노스다코타/뉴살렘",
+    "美洲/北达科他/新塞勒姆"
+  ],
+  "allTimeZones.America/Ojinaga": ["아메리카/오히나가", "美洲/欧日永"],
+  "allTimeZones.America/Panama": ["아메리카/파나마", "美国/巴拿马"],
+  "allTimeZones.America/Pangnirtung": ["아메리카/팡니르퉁", "美洲/邦尼尔通"],
+  "allTimeZones.America/Paramaribo": ["아메리카/파라마리보", "美洲/帕拉马里博"],
+  "allTimeZones.America/Phoenix": ["아메리카/피닉스", "美洲/凤凰"],
+  "allTimeZones.America/Port-au-Prince": [
+    "아메리카/포르토프랭스",
+    "美洲/太子港"
+  ],
+  "allTimeZones.America/Port_of_Spain": [
+    "아메리카/포트오브스페인",
+    "美国/西班牙港"
+  ],
+  "allTimeZones.America/Porto_Acre": [
+    "아메리카/포르투아크리",
+    "美洲/波图阿克里"
+  ],
+  "allTimeZones.America/Porto_Velho": [
+    "아메리카/포르투벨류",
+    "美洲/波尔图贝类"
+  ],
+  "allTimeZones.America/Puerto_Rico": [
+    "아메리카/푸에르토리코",
+    "美洲/波多黎各"
+  ],
+  "allTimeZones.America/Punta_Arenas": [
+    "아메리카/푼타아레나스",
+    "美国/蓬塔阿雷纳斯"
+  ],
+  "allTimeZones.America/Rainy_River": ["아메리카/레이니리버", "美洲/雷尼利佛"],
+  "allTimeZones.America/Rankin_Inlet": ["아메리카/랭킨인렛", "美洲/兰金因雷特"],
+  "allTimeZones.America/Recife": ["아메리카/헤시피", "美洲/赫西腓"],
+  "allTimeZones.America/Regina": ["아메리카/레지나", "美洲/雷吉纳"],
+  "allTimeZones.America/Resolute": ["아메리카/레졸루트", "美洲/莱佐卢特"],
+  "allTimeZones.America/Rio_Branco": ["아메리카/리오브랑코", "美国/里奥布兰科"],
+  "allTimeZones.America/Rosario": ["아메리카/로사리오", "美洲/罗萨里奥"],
+  "allTimeZones.America/Santa_Isabel": [
+    "아메리카/산타이사벨",
+    "美洲/圣塔伊萨贝尔"
+  ],
+  "allTimeZones.America/Santarem": ["아메리카/산타렘", "美国/圣塔伦"],
+  "allTimeZones.America/Santiago": ["아메리카/산티아고", "美洲/圣地亚哥"],
+  "allTimeZones.America/Santo_Domingo": [
+    "아메리카/산토도밍고",
+    "美国/圣多明各"
+  ],
+  "allTimeZones.America/Sao_Paulo": ["아메리카/상파울루", "美国/圣保罗"],
+  "allTimeZones.America/Scoresbysund": [
+    "아메리카/스코레스비순드",
+    "美洲/斯科雷斯维松德"
+  ],
+  "allTimeZones.America/Shiprock": ["아메리카/쉽락", "美洲/轻松"],
+  "allTimeZones.America/Sitka": ["아메리카/싯카", "美洲/悉卡"],
+  "allTimeZones.America/St_Barthelemy": [
+    "아메리카/생바르텔레미",
+    "美国/圣巴泰莱米"
+  ],
+  "allTimeZones.America/St_Johns": ["아메리카/세인트존스", "美洲/圣约翰斯"],
+  "allTimeZones.America/St_Kitts": [
+    "아메리카/세인트키츠",
+    "美国/圣基茨和尼维斯"
+  ],
+  "allTimeZones.America/St_Lucia": ["아메리카/세인트루시아", "美洲/圣卢西亚"],
+  "allTimeZones.America/St_Thomas": ["아메리카/세인트토마스", "美洲/圣托马斯"],
+  "allTimeZones.America/St_Vincent": ["아메리카/세인트빈센트", "美国/圣文森特"],
+  "allTimeZones.America/Swift_Current": [
+    "아메리카/스위프트커런트",
+    "美国/斯威夫特卡伦特"
+  ],
+  "allTimeZones.America/Tegucigalpa": [
+    "아메리카/테구시갈파",
+    "美国/特古西加尔巴"
+  ],
+  "allTimeZones.America/Thule": ["아메리카/툴레", "美洲/图勒"],
+  "allTimeZones.America/Thunder_Bay": ["아메리카/선더베이", "美国/桑德湾"],
+  "allTimeZones.America/Tijuana": ["아메리카/티후아나", "美国/蒂华纳"],
+  "allTimeZones.America/Toronto": ["아메리카/토론토", "美洲/多伦多"],
+  "allTimeZones.America/Tortola": ["아메리카/토르톨라", "美洲/托托拉"],
+  "allTimeZones.America/Vancouver": ["아메리카/밴쿠버", "美国/温哥华"],
+  "allTimeZones.America/Virgin": ["아메리카/버진", "美国/维珍"],
+  "allTimeZones.America/Whitehorse": ["아메리카/화이트호스", "美国/怀特霍斯"],
+  "allTimeZones.America/Winnipeg": ["아메리카/위니펙", "美国/温尼伯"],
+  "allTimeZones.America/Yakutat": ["아메리카/야쿠타트", "美国/雅库塔特"],
+  "allTimeZones.America/Yellowknife": ["아메리카/옐로나이프", "美洲/黄奈夫"],
+  "allTimeZones.Antarctica/Casey": ["남극/케이시", "南极/凯西"],
+  "allTimeZones.Antarctica/Davis": ["남극/데이비스", "南极/戴维斯"],
+  "allTimeZones.Antarctica/DumontDUrville": [
+    "남극대륙/뒤몽뒤르빌",
+    "南极洲/杜蒙杜勒维尔"
+  ],
+  "allTimeZones.Antarctica/Macquarie": ["남극/맥쿼리", "南极/麦格理"],
+  "allTimeZones.Antarctica/Mawson": ["남극/모슨", "南极/莫森"],
+  "allTimeZones.Antarctica/McMurdo": ["남극/맥머도", "南极/麦克默多"],
+  "allTimeZones.Antarctica/Palmer": ["남극/팔머", "南极/帕尔默"],
+  "allTimeZones.Antarctica/Rothera": ["남극/로데라", "南极/罗德拉"],
+  "allTimeZones.Antarctica/South_Pole": ["남극/남극점", "南极/南极点"],
+  "allTimeZones.Antarctica/Syowa": ["남극/쇼와", "南极/昭和"],
+  "allTimeZones.Antarctica/Troll": ["남극/트롤", "南极/巨魔"],
+  "allTimeZones.Antarctica/Vostok": ["남극/보스토크", "南极/沃斯托克"],
+  "allTimeZones.Arctic/Longyearbyen": ["북극/롱이어비엔", "北极/长耳比恩"],
+  "allTimeZones.Asia/Aden": ["아시아/아덴", "亚洲/亚丁"],
+  "allTimeZones.Asia/Almaty": ["아시아/알마티", "亚洲/阿拉木图"],
+  "allTimeZones.Asia/Amman": ["아시아/암만", "亚洲/安曼"],
+  "allTimeZones.Asia/Anadyr": ["아시아/아나디리", "亚洲/安纳迪里"],
+  "allTimeZones.Asia/Aqtau": ["아시아/악타우", "亚洲/阿克陶"],
+  "allTimeZones.Asia/Aqtobe": ["아시아/악퇴베", "亚洲/阿克德贝"],
+  "allTimeZones.Asia/Ashgabat": ["아시아/아시가바트", "亚洲/阿什加巴特"],
+  "allTimeZones.Asia/Ashkhabad": ["아시아/아슈하바트", "亚洲/阿什哈巴特"],
+  "allTimeZones.Asia/Atyrau": ["아시아/아티라우", "亚洲/阿特劳"],
+  "allTimeZones.Asia/Baghdad": ["아시아/바그다드", "亚洲/巴格达"],
+  "allTimeZones.Asia/Bahrain": ["아시아/바레인", "亚洲/巴林"],
+  "allTimeZones.Asia/Baku": ["아시아/바쿠", "亚洲/巴库"],
+  "allTimeZones.Asia/Bangkok": ["아시아/방콕", "亚洲/曼谷"],
+  "allTimeZones.Asia/Barnaul": ["아시아/바르나울", "亚洲/巴尔瑙尔"],
+  "allTimeZones.Asia/Beirut": ["아시아/베이루트", "亚洲/贝鲁特"],
+  "allTimeZones.Asia/Bishkek": ["아시아/비슈케크", "亚洲/比什凯克"],
+  "allTimeZones.Asia/Brunei": ["아시아/브루나이", "亚洲/布鲁奈"],
+  "allTimeZones.Asia/Calcutta": ["아시아/캘커타", "亚洲/加尔各答"],
+  "allTimeZones.Asia/Chita": ["아시아/치타", "亚洲/猎豹"],
+  "allTimeZones.Asia/Choibalsan": ["아시아/처이발상", "亚洲/蔡发奖"],
+  "allTimeZones.Asia/Chongqing": ["아시아/충칭", "亚洲/重庆"],
+  "allTimeZones.Asia/Chungking": ["아시아/충칭", "亚洲/重庆"],
+  "allTimeZones.Asia/Colombo": ["아시아/콜롬보", "亚洲/科伦坡"],
+  "allTimeZones.Asia/Dacca": ["아시아/다카(Dacca)", "亚洲/高(Dacca)"],
+  "allTimeZones.Asia/Damascus": ["아시아/다마스쿠스", "亚洲/大马士革"],
+  "allTimeZones.Asia/Dhaka": ["아시아/다카(Dhaka)", "亚洲/高(Dhaka)"],
+  "allTimeZones.Asia/Dili": ["아시아/딜리", "亚洲/迪利"],
+  "allTimeZones.Asia/Dubai": ["아시아/두바이", "亚洲/迪拜"],
+  "allTimeZones.Asia/Dushanbe": ["아시아/두샨베", "亚洲/杜尚别"],
+  "allTimeZones.Asia/Famagusta": ["아시아/파마구스타", "亚洲/帕马古斯塔"],
+  "allTimeZones.Asia/Gaza": ["아시아/가자", "亚洲/加沙"],
+  "allTimeZones.Asia/Harbin": ["아시아/하얼빈", "亚洲/哈尔滨"],
+  "allTimeZones.Asia/Hebron": ["아시아/헤브론", "亚洲/希伯伦"],
+  "allTimeZones.Asia/Ho_Chi_Minh": ["아시아/호치민", "亚洲/胡志明市"],
+  "allTimeZones.Asia/Hong_Kong": ["아시아/홍콩", "亚洲/香港"],
+  "allTimeZones.Asia/Hovd": ["아시아/호브드", "亚洲/霍布德"],
+  "allTimeZones.Asia/Irkutsk": ["아시아/이르쿠츠크", "亚洲/伊尔库茨克"],
+  "allTimeZones.Asia/Istanbul": ["아시아/이스탄불", "亚洲/伊斯坦布尔"],
+  "allTimeZones.Asia/Jakarta": ["아시아/자카르타", "亚洲/雅加达"],
+  "allTimeZones.Asia/Jayapura": ["아시아/자야푸라", "亚洲/贾亚普拉"],
+  "allTimeZones.Asia/Jerusalem": ["아시아/예루살렘", "亚洲/耶路撒冷"],
+  "allTimeZones.Asia/Kabul": ["아시아/카불", "亚洲/喀布尔"],
+  "allTimeZones.Asia/Kamchatka": ["아시아/캄차카", "亚洲/堪察卡"],
+  "allTimeZones.Asia/Karachi": ["아시아/카라치", "亚洲/卡拉奇"],
+  "allTimeZones.Asia/Kashgar": ["아시아/카슈가르", "亚洲/克什米尔"],
+  "allTimeZones.Asia/Kathmandu": ["아시아/카트만두", "亚洲/加德满都"],
+  "allTimeZones.Asia/Katmandu": ["아시아/카트만두", "亚洲/加德满都"],
+  "allTimeZones.Asia/Khandyga": ["아시아/한디가", "亚洲/汉迪加"],
+  "allTimeZones.Asia/Kolkata": ["아시아/콜카타", "亚洲/加尔各答"],
+  "allTimeZones.Asia/Krasnoyarsk": [
+    "아시아/크라스노야르스크",
+    "亚洲/克拉斯诺亚尔斯克"
+  ],
+  "allTimeZones.Asia/Kuala_Lumpur": ["아시아/쿠알라룸푸르", "亚洲/吉隆坡"],
+  "allTimeZones.Asia/Kuching": ["아시아/쿠칭", "亚洲/曲清"],
+  "allTimeZones.Asia/Kuwait": ["아시아/쿠웨이트", "亚洲/科威特"],
+  "allTimeZones.Asia/Macao": ["아시아/마카오", "亚洲/澳门"],
+  "allTimeZones.Asia/Macau": ["아시아/마카오", "亚洲/澳门"],
+  "allTimeZones.Asia/Magadan": ["아시아/마가단", "亚洲/马加丹"],
+  "allTimeZones.Asia/Makassar": ["아시아/마카사르", "亚洲/马卡萨"],
+  "allTimeZones.Asia/Manila": ["아시아/마닐라", "亚洲/马尼拉"],
+  "allTimeZones.Asia/Muscat": ["아시아/무스카트", "亚洲/马斯喀特"],
+  "allTimeZones.Asia/Nicosia": ["아시아/니코시아", "亚洲/尼科西亚"],
+  "allTimeZones.Asia/Novokuznetsk": [
+    "아시아/노보쿠즈네츠크",
+    "亚洲/新库兹涅茨克"
+  ],
+  "allTimeZones.Asia/Novosibirsk": ["아시아/노보시비르스크", "亚洲/新西伯利亚"],
+  "allTimeZones.Asia/Omsk": ["아시아/옴스크", "亚洲/鄂木斯克"],
+  "allTimeZones.Asia/Oral": ["아시아/오랄", "亚洲/奥拉尔"],
+  "allTimeZones.Asia/Phnom_Penh": ["아시아/프놈펜", "亚洲/金边"],
+  "allTimeZones.Asia/Pontianak": ["아시아/폰티아낙", "亚洲/蓬蒂亚纳克"],
+  "allTimeZones.Asia/Pyongyang": ["아시아/평양", "亚洲/平壤"],
+  "allTimeZones.Asia/Qatar": ["아시아/카타르", "亚洲/卡塔尔"],
+  "allTimeZones.Asia/Qostanay": ["아시아/코스타나이", "亚洲/哥斯达黎加"],
+  "allTimeZones.Asia/Qyzylorda": ["아시아/키질로르다", "亚洲/基吉洛尔"],
+  "allTimeZones.Asia/Rangoon": ["아시아/양곤", "亚洲/仰光"],
+  "allTimeZones.Asia/Riyadh": ["아시아/리야드", "亚洲/利雅得"],
+  "allTimeZones.Asia/Saigon": ["아시아/호치민", "亚洲/胡志明市"],
+  "allTimeZones.Asia/Sakhalin": ["아시아/사할린", "亚洲/萨哈林"],
+  "allTimeZones.Asia/Samarkand": ["아시아/사마르칸트", "亚洲/撒马尔罕"],
+  "allTimeZones.Asia/Seoul": ["아시아/서울", "亚洲/首尔"],
+  "allTimeZones.Asia/Shanghai": ["아시아/상하이", "亚洲/上海"],
+  "allTimeZones.Asia/Singapore": ["아시아/싱가포르", "亚洲/新加坡"],
+  "allTimeZones.Asia/Srednekolymsk": [
+    "아시아/스레드네콜림스크",
+    "亚洲/斯雷德内科利姆斯克"
+  ],
+  "allTimeZones.Asia/Taipei": ["아시아/타이페이", "亚洲/台北"],
+  "allTimeZones.Asia/Tashkent": ["아시아/타슈켄트", "亚洲/塔什干"],
+  "allTimeZones.Asia/Tbilisi": ["아시아/트빌리시", "亚洲/第比利斯"],
+  "allTimeZones.Asia/Tehran": ["아시아/테헤란", "亚洲/德黑兰"],
+  "allTimeZones.Asia/Tel_Aviv": ["아시아/텔아비브", "亚洲/特拉维夫"],
+  "allTimeZones.Asia/Thimbu": ["아시아/팀부", "亚洲/团队"],
+  "allTimeZones.Asia/Thimphu": ["아시아/팀푸", "亚洲/蒂姆富"],
+  "allTimeZones.Asia/Tokyo": ["아시아/도쿄", "亚洲/东京"],
+  "allTimeZones.Asia/Tomsk": ["아시아/톰스크", "亚洲/托木斯克"],
+  "allTimeZones.Asia/Ujung_Pandang": ["아시아/우중판당", "亚洲/牛中板糖"],
+  "allTimeZones.Asia/Ulaanbaatar": ["아시아/울란바토르", "亚洲/乌兰巴托"],
+  "allTimeZones.Asia/Ulan_Bator": ["아시아/울란바토르", "亚洲/乌兰巴托"],
+  "allTimeZones.Asia/Urumqi": ["아시아/우루무치", "亚洲/乌鲁木齐"],
+  "allTimeZones.Asia/Ust-Nera": ["아시아/우스트네라", "亚洲/乌斯特内拉"],
+  "allTimeZones.Asia/Vientiane": ["아시아/비엔티안", "亚洲/万象"],
+  "allTimeZones.Asia/Vladivostok": [
+    "아시아/블라디보스토크",
+    "亚洲/符拉迪沃斯托克"
+  ],
+  "allTimeZones.Asia/Yakutsk": ["아시아/야쿠츠크", "亚洲/雅库茨克"],
+  "allTimeZones.Asia/Yangon": ["아시아/양곤", "亚洲/仰光"],
+  "allTimeZones.Asia/Yekaterinburg": [
+    "아시아/예카테린부르크",
+    "亚洲/叶卡捷琳堡"
+  ],
+  "allTimeZones.Asia/Yerevan": ["아시아/예레반", "亚洲/埃里温"],
+  "allTimeZones.Atlantic/Azores": ["대서양/아조레스 제도", "大西洋/亚速尔群岛"],
+  "allTimeZones.Atlantic/Bermuda": ["대서양/버뮤다", "大西洋/百慕大"],
+  "allTimeZones.Atlantic/Canary": ["대서양/카나리아 제도", "大西洋/加那利群岛"],
+  "allTimeZones.Atlantic/Cape_Verde": ["대서양/카보베르데", "大西洋/佛得角"],
+  "allTimeZones.Atlantic/Faeroe": ["대서양/페로 제도", "大西洋/法罗群岛"],
+  "allTimeZones.Atlantic/Faroe": ["대서양/페로 제도", "大西洋/法罗群岛"],
+  "allTimeZones.Atlantic/Jan_Mayen": ["대서양/얀마옌", "大西洋/缅甸"],
+  "allTimeZones.Atlantic/Madeira": [
+    "대서양/마데이라 제도",
+    "大西洋/马德拉群岛"
+  ],
+  "allTimeZones.Atlantic/Reykjavik": ["대서양/레이캬비크", "大西洋/雷克雅未克"],
+  "allTimeZones.Atlantic/South_Georgia": [
+    "대서양/사우스조지아",
+    "大西洋/南乔治亚"
+  ],
+  "allTimeZones.Atlantic/St_Helena": ["대서양/세인트헬레나", "大西洋/圣赫勒拿"],
+  "allTimeZones.Atlantic/Stanley": ["대서양/스탠리", "大西洋/斯坦利"],
+  "allTimeZones.Australia/ACT": [
+    "호주/오스트레일리아 수도 준주(ACT)",
+    "澳大利亚/澳大利亚首都准州(ACT)"
+  ],
+  "allTimeZones.Australia/Adelaide": ["호주/애들레이드", "澳大利亚/阿德莱德"],
+  "allTimeZones.Australia/Brisbane": ["호주/브리즈번", "澳大利亚/布里斯班"],
+  "allTimeZones.Australia/Broken_Hill": ["호주/브로큰힐", "澳大利亚/布罗卡山"],
+  "allTimeZones.Australia/Canberra": ["호주/캔버라", "澳大利亚/堪培拉"],
+  "allTimeZones.Australia/Currie": ["호주/커리", "澳大利亚/克里"],
+  "allTimeZones.Australia/Darwin": ["호주/다윈", "澳大利亚/达尔文"],
+  "allTimeZones.Australia/Eucla": ["호주/유클라", "澳大利亚/尤克拉"],
+  "allTimeZones.Australia/Hobart": ["호주/호바트", "澳大利亚/霍巴特"],
+  "allTimeZones.Australia/LHI": ["호주/로드하우섬", "澳大利亚/罗德豪岛"],
+  "allTimeZones.Australia/Lindeman": ["호주/린데만", "澳大利亚/林德曼"],
+  "allTimeZones.Australia/Lord_Howe": ["호주/로드 하우", "澳大利亚/罗德豪"],
+  "allTimeZones.Australia/Melbourne": ["호주/멜버른", "澳大利亚/墨尔本"],
+  "allTimeZones.Australia/NSW": ["호주/뉴사우스웨일즈", "澳大利亚/新南威尔士"],
+  "allTimeZones.Australia/North": ["호주/북부", "澳大利亚/北部"],
+  "allTimeZones.Australia/Perth": ["호주/퍼스", "澳大利亚/珀斯"],
+  "allTimeZones.Australia/Queensland": ["호주/퀸즐랜드", "澳大利亚/昆士兰"],
+  "allTimeZones.Australia/South": ["호주/남부", "澳大利亚/南部"],
+  "allTimeZones.Australia/Sydney": ["호주/시드니", "澳大利亚/悉尼"],
+  "allTimeZones.Australia/Tasmania": [
+    "호주/태즈메이니아",
+    "澳大利亚/塔斯马尼亚"
+  ],
+  "allTimeZones.Australia/Victoria": ["호주/빅토리아", "澳大利亚/维多利亚"],
+  "allTimeZones.Australia/West": ["호주/서부", "澳大利亚/西部"],
+  "allTimeZones.Australia/Yancowinna": ["호주/얀코위나", "澳大利亚/扬科威纳"],
+  "allTimeZones.Brazil/Acre": ["브라질/아크리", "巴西/阿克里"],
+  "allTimeZones.Brazil/DeNoronha": ["브라질/데노로냐", "巴西/德诺罗尼亚"],
+  "allTimeZones.Brazil/East": ["브라질/동부", "巴西/东部"],
+  "allTimeZones.Brazil/West": ["브라질/서부", "巴西/西部"],
+  "allTimeZones.CET": ["CET(중부유럽 표준시)", "CET(中欧标准时间)"],
+  "allTimeZones.CST6CDT": ["CST6CDT(중부 표준시)", "CST6CDT(中部标准时间)"],
+  "allTimeZones.Canada/Atlantic": ["캐나다/대서양", "加拿大/大西洋"],
+  "allTimeZones.Canada/Central": ["캐나다/중부", "加拿大/中部"],
+  "allTimeZones.Canada/Eastern": ["캐나다/동부", "加拿大/东部"],
+  "allTimeZones.Canada/Mountain": ["캐나다/산악", "加拿大/山区"],
+  "allTimeZones.Canada/Newfoundland": ["캐나다/뉴펀들랜드", "加拿大/纽芬兰"],
+  "allTimeZones.Canada/Pacific": ["캐나다/태평양", "加拿大/太平洋"],
+  "allTimeZones.Canada/Saskatchewan": [
+    "캐나다/서스캐처원",
+    "加拿大/萨斯喀彻温省"
+  ],
+  "allTimeZones.Canada/Yukon": ["캐나다/유콘", "加拿大/育空"],
+  "allTimeZones.Chile/Continental": ["칠레/콘티넨탈", "智利/大陆"],
+  "allTimeZones.Chile/EasterIsland": ["칠레/이스터섬", "智利/复活节岛"],
+  "allTimeZones.Cuba": ["쿠바", "古巴"],
+  "allTimeZones.EET": ["EET(동유럽 표준시)", "EET(东欧标准时间)"],
+  "allTimeZones.EST": ["EST(동부 표준시)", "EST(东部时间)"],
+  "allTimeZones.EST5EDT": ["EST5EDT(동부 표준시)", "EST5EDT(东部时间)"],
+  "allTimeZones.Egypt": ["이집트", "埃及"],
+  "allTimeZones.Eire": ["아일랜드(Eire)", "爱尔兰"],
+  "allTimeZones.Etc/GMT": [
+    "기타/GMT(그리니치 평균시)",
+    "其他/GMT(格林威治平均时间)"
+  ],
+  "allTimeZones.Etc/GMT+0": [
+    "기타/GMT(그리니치 평균시)+0",
+    "其他/GMT(格林威治平均时间)+0"
+  ],
+  "allTimeZones.Etc/GMT+1": [
+    "기타/GMT(그리니치 평균시)+1",
+    "其他/GMT(格林威治平均时间)+1"
+  ],
+  "allTimeZones.Etc/GMT+10": [
+    "기타/GMT(그리니치 평균시)+10",
+    "其他/GMT(格林威治平均时间)+10"
+  ],
+  "allTimeZones.Etc/GMT+11": [
+    "기타/GMT(그리니치 평균시)+11",
+    "其他/GMT(格林威治平均时间)+11"
+  ],
+  "allTimeZones.Etc/GMT+12": [
+    "기타/GMT(그리니치 평균시)+12",
+    "其他/GMT(格林威治平均时间)+12"
+  ],
+  "allTimeZones.Etc/GMT+2": [
+    "기타/GMT(그리니치 평균시)+2",
+    "其他/GMT(格林威治平均时间)+2"
+  ],
+  "allTimeZones.Etc/GMT+3": [
+    "기타/GMT(그리니치 평균시)+3",
+    "其他/GMT(格林威治平均时间)+3"
+  ],
+  "allTimeZones.Etc/GMT+4": [
+    "기타/GMT(그리니치 평균시)+4",
+    "其他/GMT(格林威治平均时间)+4"
+  ],
+  "allTimeZones.Etc/GMT+5": [
+    "기타/GMT(그리니치 평균시)+5",
+    "其他/GMT(格林威治平均时间)+5"
+  ],
+  "allTimeZones.Etc/GMT+6": [
+    "기타/GMT(그리니치 평균시)+6",
+    "其他/GMT(格林威治平均时间)+6"
+  ],
+  "allTimeZones.Etc/GMT+7": [
+    "기타/GMT(그리니치 평균시)+7",
+    "其他/GMT(格林威治平均时间)+7"
+  ],
+  "allTimeZones.Etc/GMT+8": [
+    "기타/GMT(그리니치 평균시)+8",
+    "其他/GMT(格林威治平均时间)+8"
+  ],
+  "allTimeZones.Etc/GMT+9": [
+    "기타/GMT(그리니치 평균시)+9",
+    "其他/GMT(格林威治平均时间)+9"
+  ],
+  "allTimeZones.Etc/GMT-0": [
+    "기타/GMT(그리니치 평균시)-0",
+    "其他/GMT(格林威治平均时间)-0"
+  ],
+  "allTimeZones.Etc/GMT-1": [
+    "기타/GMT(그리니치 평균시)-1",
+    "其他/GMT(格林威治平均时间)-1"
+  ],
+  "allTimeZones.Etc/GMT-10": [
+    "기타/GMT(그리니치 평균시)-10",
+    "其他/GMT(格林威治平均时间)-10"
+  ],
+  "allTimeZones.Etc/GMT-11": [
+    "기타/GMT(그리니치 평균시)-11",
+    "其他/GMT(格林威治平均时间)-11"
+  ],
+  "allTimeZones.Etc/GMT-12": [
+    "기타/GMT(그리니치 평균시)-12",
+    "其他/GMT(格林威治平均时间)-12"
+  ],
+  "allTimeZones.Etc/GMT-13": [
+    "기타/GMT(그리니치 평균시)-13",
+    "其他/GMT(格林威治平均时间)-13"
+  ],
+  "allTimeZones.Etc/GMT-14": [
+    "기타/GMT(그리니치 평균시)-14",
+    "其他/GMT(格林威治平均时间)-14"
+  ],
+  "allTimeZones.Etc/GMT-2": [
+    "기타/GMT(그리니치 평균시)-2",
+    "其他/GMT(格林威治平均时间)-2"
+  ],
+  "allTimeZones.Etc/GMT-3": [
+    "기타/GMT(그리니치 평균시)-3",
+    "其他/GMT(格林威治平均时间)-3"
+  ],
+  "allTimeZones.Etc/GMT-4": [
+    "기타/GMT(그리니치 평균시)-4",
+    "其他/GMT(格林威治平均时间)-4"
+  ],
+  "allTimeZones.Etc/GMT-5": [
+    "기타/GMT(그리니치 평균시)-5",
+    "其他/GMT(格林威治平均时间)-5"
+  ],
+  "allTimeZones.Etc/GMT-6": [
+    "기타/GMT(그리니치 평균시)-6",
+    "其他/GMT(格林威治平均时间)-6"
+  ],
+  "allTimeZones.Etc/GMT-7": [
+    "기타/GMT(그리니치 평균시)-7",
+    "其他/GMT(格林威治平均时间)-7"
+  ],
+  "allTimeZones.Etc/GMT-8": [
+    "기타/GMT(그리니치 평균시)-8",
+    "其他/GMT(格林威治平均时间)-8"
+  ],
+  "allTimeZones.Etc/GMT-9": [
+    "기타/GMT(그리니치 평균시)-9",
+    "其他/GMT(格林威治平均时间)-9"
+  ],
+  "allTimeZones.Etc/GMT0": [
+    "기타/GMT(그리니치 평균시)0",
+    "其他/GMT(格林威治平均时间)0"
+  ],
+  "allTimeZones.Etc/Greenwich": ["기타/그리니치", "其他/格林尼奇"],
+  "allTimeZones.Etc/UCT": ["기타/UCT(협정세계시)", "其他/UCT(协定世界时)"],
+  "allTimeZones.Etc/UTC": ["기타/UTC(협정세계시)", "其他/UTC(协定世界时)"],
+  "allTimeZones.Etc/Universal": ["기타/세계시", "其他/世界诗"],
+  "allTimeZones.Etc/Zulu": ["기타/줄루", "其他/祖鲁"],
+  "allTimeZones.Europe/Amsterdam": ["유럽/암스테르담", "欧洲/阿姆斯特丹"],
+  "allTimeZones.Europe/Andorra": ["유럽/안도라", "欧洲/安道尔"],
+  "allTimeZones.Europe/Astrakhan": ["유럽/아스트라한", "欧洲/阿斯特拉罕"],
+  "allTimeZones.Europe/Athens": ["유럽/아테네", "欧洲/雅典"],
+  "allTimeZones.Europe/Belfast": ["유럽/벨파스트", "欧洲/贝尔法斯特"],
+  "allTimeZones.Europe/Belgrade": ["유럽/베오그라드", "欧洲/贝尔格莱德"],
+  "allTimeZones.Europe/Berlin": ["유럽/베를린", "欧洲/柏林"],
+  "allTimeZones.Europe/Bratislava": ["유럽/브라티슬라바", "欧洲/布拉迪斯拉发"],
+  "allTimeZones.Europe/Brussels": ["유럽/브뤼셀", "欧洲/布鲁塞尔"],
+  "allTimeZones.Europe/Bucharest": ["유럽/부쿠레슈티", "欧洲/布加勒斯特"],
+  "allTimeZones.Europe/Budapest": ["유럽/부다페스트", "欧洲/布达佩斯"],
+  "allTimeZones.Europe/Busingen": ["유럽/뷔징겐", "欧洲/威辛根"],
+  "allTimeZones.Europe/Chisinau": ["유럽/키시너우", "欧洲/基希讷乌"],
+  "allTimeZones.Europe/Copenhagen": ["유럽/코펜하겐", "欧洲/哥本哈根"],
+  "allTimeZones.Europe/Dublin": ["유럽/더블린", "欧洲/都柏林"],
+  "allTimeZones.Europe/Gibraltar": ["유럽/지브롤터", "欧洲/直布罗陀"],
+  "allTimeZones.Europe/Guernsey": ["유럽/건지", "欧洲/旱地"],
+  "allTimeZones.Europe/Helsinki": ["유럽/헬싱키", "欧洲/赫尔辛基"],
+  "allTimeZones.Europe/Isle_of_Man": ["유럽/맨 섬", "欧洲/曼岛"],
+  "allTimeZones.Europe/Istanbul": ["유럽/이스탄불", "欧洲/伊斯坦布尔"],
+  "allTimeZones.Europe/Jersey": ["유럽/저지", "欧洲/泽西"],
+  "allTimeZones.Europe/Kaliningrad": ["유럽/칼리닌그라드", "欧洲/加里宁格勒"],
+  "allTimeZones.Europe/Kiev": ["유럽/키예프", "欧洲/基辅"],
+  "allTimeZones.Europe/Kirov": ["유럽/키로프", "欧洲/基洛夫"],
+  "allTimeZones.Europe/Kyiv": ["유럽/키이브", "欧洲/基伊布"],
+  "allTimeZones.Europe/Lisbon": ["유럽/리스본", "欧洲/里斯本"],
+  "allTimeZones.Europe/Ljubljana": ["유럽/류블랴나", "欧洲/卢布尔雅那"],
+  "allTimeZones.Europe/London": ["유럽/런던", "欧洲/伦敦"],
+  "allTimeZones.Europe/Luxembourg": ["유럽/룩셈부르크", "欧洲/卢森堡"],
+  "allTimeZones.Europe/Madrid": ["유럽/마드리드", "欧洲/马德里"],
+  "allTimeZones.Europe/Malta": ["유럽/몰타", "欧洲/马耳他"],
+  "allTimeZones.Europe/Mariehamn": ["유럽/마리에함", "欧洲/马里埃罕"],
+  "allTimeZones.Europe/Minsk": ["유럽/민스크", "欧洲/明斯克"],
+  "allTimeZones.Europe/Monaco": ["유럽/모나코", "欧洲/摩纳哥"],
+  "allTimeZones.Europe/Moscow": ["유럽/모스크바", "欧洲/莫斯科"],
+  "allTimeZones.Europe/Nicosia": ["유럽/니코시아", "欧洲/尼科西亚"],
+  "allTimeZones.Europe/Oslo": ["유럽/오슬로", "欧洲/奥斯陆"],
+  "allTimeZones.Europe/Paris": ["유럽/파리", "欧洲/巴黎"],
+  "allTimeZones.Europe/Podgorica": ["유럽/포드고리차", "欧洲/察"],
+  "allTimeZones.Europe/Prague": ["유럽/프라하", "欧洲/布拉格"],
+  "allTimeZones.Europe/Riga": ["유럽/리가", "欧洲/里加"],
+  "allTimeZones.Europe/Rome": ["유럽/로마", "欧洲/罗马"],
+  "allTimeZones.Europe/Samara": ["유럽/사마라", "欧洲/萨马拉"],
+  "allTimeZones.Europe/San_Marino": ["유럽/산마리노", "欧洲/圣马力诺"],
+  "allTimeZones.Europe/Sarajevo": ["유럽/사라예보", "欧洲/萨拉热窝"],
+  "allTimeZones.Europe/Saratov": ["유럽/사라토프", "欧洲/萨拉托夫"],
+  "allTimeZones.Europe/Simferopol": ["유럽/심페로폴", "欧洲/辛菲罗波尔"],
+  "allTimeZones.Europe/Skopje": ["유럽/스코페", "欧洲/斯科普里"],
+  "allTimeZones.Europe/Sofia": ["유럽/소피아", "欧洲/索菲亞"],
+  "allTimeZones.Europe/Stockholm": ["유럽/스톡홀름", "欧洲/斯德哥尔摩"],
+  "allTimeZones.Europe/Tallinn": ["유럽/탈린", "欧洲/塔林"],
+  "allTimeZones.Europe/Tirane": ["유럽/티라나", "欧洲/地拉那"],
+  "allTimeZones.Europe/Tiraspol": ["유럽/티라스폴", "欧洲/蒂拉斯波尔"],
+  "allTimeZones.Europe/Ulyanovsk": ["유럽/울리야놉스크", "欧洲/乌利亚涅斯克"],
+  "allTimeZones.Europe/Uzhgorod": ["유럽/우즈호로드", "欧洲/乌兹霍罗德"],
+  "allTimeZones.Europe/Vaduz": ["유럽/파두츠", "欧洲/瓦杜兹"],
+  "allTimeZones.Europe/Vatican": ["유럽/바티칸", "欧洲/梵蒂冈"],
+  "allTimeZones.Europe/Vienna": ["유럽/비엔나", "欧洲/维也纳"],
+  "allTimeZones.Europe/Vilnius": ["유럽/빌뉴스", "欧洲/维尔纽斯"],
+  "allTimeZones.Europe/Volgograd": ["유럽/볼고그라드", "欧洲/伏尔加格勒"],
+  "allTimeZones.Europe/Warsaw": ["유럽/바르샤바", "欧洲/华沙"],
+  "allTimeZones.Europe/Zagreb": ["유럽/자그레브", "欧洲/萨格勒布"],
+  "allTimeZones.Europe/Zaporozhye": ["유럽/자포로제", "欧洲/扎波罗热"],
+  "allTimeZones.Europe/Zurich": ["유럽/취리히", "欧洲/苏黎世"],
+  "allTimeZones.GB": ["영국(GB)", "英国(GB)"],
+  "allTimeZones.GB-Eire": ["영국-아일랜드(GB-Eire)", "英国-爱尔兰(GB-Eire)"],
+  "allTimeZones.GMT": ["GMT(그리니치 평균시)", "GMT(格林威治平均时间)"],
+  "allTimeZones.GMT+0": ["GMT(그리니치 평균시)+0", "GMT(格林威治平均时间)+0"],
+  "allTimeZones.GMT-0": ["GMT(그리니치 평균시)-0", "GMT(格林威治平均时间)-0"],
+  "allTimeZones.GMT0": ["GMT(그리니치 평균시)0", "GMT(格林威治平均时间)0"],
+  "allTimeZones.Greenwich": ["그리니치", "格林威治"],
+  "allTimeZones.HST": ["HST(하와이 표준시)", "HST(夏威夷标准时间)"],
+  "allTimeZones.Hongkong": ["홍콩", "香港"],
+  "allTimeZones.Iceland": ["아이슬란드", "冰岛"],
+  "allTimeZones.Indian/Antananarivo": [
+    "인도양/안타나나리보",
+    "印度洋/安塔那利佛"
+  ],
+  "allTimeZones.Indian/Chagos": ["인도양/차고스", "印度洋/恰戈斯"],
+  "allTimeZones.Indian/Christmas": ["인도양/크리스마스", "印度洋/圣诞节"],
+  "allTimeZones.Indian/Cocos": ["인도양/코코스", "印度洋/科科斯"],
+  "allTimeZones.Indian/Comoro": ["인도양/코모로", "印度洋/科摩罗"],
+  "allTimeZones.Indian/Kerguelen": ["인도양/케르겔렌", "印度洋/凯盖伦"],
+  "allTimeZones.Indian/Mahe": ["인도양/마에", "印度洋/前"],
+  "allTimeZones.Indian/Maldives": ["인도양/몰디브", "印度洋/马尔代夫"],
+  "allTimeZones.Indian/Mauritius": ["인도양/모리셔스", "印度洋/毛里求斯"],
+  "allTimeZones.Indian/Mayotte": ["인도양/마요트", "印度洋/马约特"],
+  "allTimeZones.Indian/Reunion": ["인도양/레위니옹", "印度洋/留尼汪"],
+  "allTimeZones.Iran": ["이란", "伊朗"],
+  "allTimeZones.Israel": ["이스라엘", "以色列"],
+  "allTimeZones.Jamaica": ["자메이카", "牙买加"],
+  "allTimeZones.Japan": ["일본", "日本"],
+  "allTimeZones.Kwajalein": ["콰잘레인", "夸贾莱恩"],
+  "allTimeZones.Libya": ["리비아", "利比亚"],
+  "allTimeZones.MET": ["MET(중부유럽 표준시)", "MET(中欧标准时间)"],
+  "allTimeZones.MST": ["MST(산악 표준시)", "MST(山岳标准时间)"],
+  "allTimeZones.MST7MDT": ["MST7MDT(산악 표준시)", "MST7MDT(山岳标准时间)"],
+  "allTimeZones.Mexico/BajaNorte": ["멕시코/바하노르테", "墨西哥/巴哈诺特"],
+  "allTimeZones.Mexico/BajaSur": ["멕시코/바하수르", "墨西哥/巴哈苏尔"],
+  "allTimeZones.Mexico/General": ["멕시코/일반", "墨西哥/综述"],
+  "allTimeZones.NZ": ["뉴질랜드", "新西兰"],
+  "allTimeZones.NZ-CHAT": ["뉴질랜드-채텀", "新西兰-查塔姆"],
+  "allTimeZones.Navajo": ["나바호", "纳瓦霍"],
+  "allTimeZones.PRC": ["중화 인민 공화국", "中华人民共和国"],
+  "allTimeZones.PST8PDT": ["PST8PDT(태평양 표준시)", "PST8PDT(太平洋时间)"],
+  "allTimeZones.Pacific/Apia": ["태평양/아피아", "太平洋/阿皮亚"],
+  "allTimeZones.Pacific/Auckland": ["태평양/오클랜드", "太平洋/奥克兰"],
+  "allTimeZones.Pacific/Bougainville": ["태평양/부건빌", "太平洋/布干维尔"],
+  "allTimeZones.Pacific/Chatham": ["태평양/채텀", "太平洋/查塔姆"],
+  "allTimeZones.Pacific/Chuuk": ["태평양/추크", "太平洋/楚克"],
+  "allTimeZones.Pacific/Easter": ["태평양/이스터", "太平洋/复活节"],
+  "allTimeZones.Pacific/Efate": ["태평양/에파테", "太平洋/埃法特"],
+  "allTimeZones.Pacific/Enderbury": ["퍼시픽/엔더버리", "太平洋/恩德伯里"],
+  "allTimeZones.Pacific/Fakaofo": ["태평양/파카오푸", "太平洋/巴考普"],
+  "allTimeZones.Pacific/Fiji": ["태평양/피지", "太平洋/斐济"],
+  "allTimeZones.Pacific/Funafuti": ["태평양/푸나푸티", "太平洋/普纳普蒂"],
+  "allTimeZones.Pacific/Galapagos": ["태평양/갈라파고스", "太平洋/加拉帕戈斯"],
+  "allTimeZones.Pacific/Gambier": ["태평양/강비에", "太平洋/江比耶"],
+  "allTimeZones.Pacific/Guadalcanal": [
+    "태평양/과달카날",
+    "太平洋/瓜达尔卡纳尔"
+  ],
+  "allTimeZones.Pacific/Guam": ["태평양/괌", "太平洋/关岛"],
+  "allTimeZones.Pacific/Honolulu": ["태평양/호놀룰루", "太平洋/檀香山"],
+  "allTimeZones.Pacific/Johnston": ["태평양/존스턴", "太平洋/约翰斯顿"],
+  "allTimeZones.Pacific/Kiritimati": ["태평양/키리티마티", "太平洋/基里蒂马蒂"],
+  "allTimeZones.Pacific/Kosrae": ["태평양/코스라에", "太平洋/科斯拉埃"],
+  "allTimeZones.Pacific/Kwajalein": ["태평양/콰잘레인", "太平洋/夸贾莱恩"],
+  "allTimeZones.Pacific/Majuro": ["태평양/마주로", "太平洋/马祖罗"],
+  "allTimeZones.Pacific/Marquesas": ["태평양/마르키즈", "太平洋/马尔基斯"],
+  "allTimeZones.Pacific/Midway": ["태평양/미드웨이", "太平洋/中路"],
+  "allTimeZones.Pacific/Nauru": ["태평양/나우루", "太平洋/瑙鲁"],
+  "allTimeZones.Pacific/Niue": ["태평양/니우에", "太平洋/纽埃"],
+  "allTimeZones.Pacific/Norfolk": ["태평양/노퍽", "太平洋/诺福克"],
+  "allTimeZones.Pacific/Noumea": ["태평양/누메아", "太平洋/努美阿"],
+  "allTimeZones.Pacific/Pago_Pago": ["태평양/파고파고", "太平洋/帕戈帕戈"],
+  "allTimeZones.Pacific/Palau": ["태평양/팔라우", "太平洋/帕劳"],
+  "allTimeZones.Pacific/Pitcairn": ["태평양/핏케언", "太平洋/菲特凯恩"],
+  "allTimeZones.Pacific/Pohnpei": ["태평양/폰페이", "太平洋/庞贝"],
+  "allTimeZones.Pacific/Ponape": ["태평양/폰페이", "太平洋/庞贝"],
+  "allTimeZones.Pacific/Port_Moresby": [
+    "태평양/포트모르즈비",
+    "太平洋/莫尔兹比港"
+  ],
+  "allTimeZones.Pacific/Rarotonga": ["태평양/라로통가", "太平洋/拉罗汤加"],
+  "allTimeZones.Pacific/Saipan": ["태평양/사이판", "太平洋/塞班岛"],
+  "allTimeZones.Pacific/Samoa": ["태평양/사모아", "太平洋/萨摩亚"],
+  "allTimeZones.Pacific/Tahiti": ["태평양/타히티", "太平洋/塔希提岛"],
+  "allTimeZones.Pacific/Tarawa": ["태평양/타라와", "太平洋/塔拉瓦"],
+  "allTimeZones.Pacific/Tongatapu": ["태평양/통가타푸", "太平洋/汤加塔普"],
+  "allTimeZones.Pacific/Truk": ["태평양/추크", "太平洋/楚克"],
+  "allTimeZones.Pacific/Wake": ["태평양/웨이크", "太平洋/威克"],
+  "allTimeZones.Pacific/Wallis": ["태평양/왈리스", "太平洋/华莱士"],
+  "allTimeZones.Pacific/Yap": ["태평양/야프", "太平洋/亚普"],
+  "allTimeZones.Poland": ["폴란드", "波兰"],
+  "allTimeZones.Portugal": ["포르투갈", "葡萄牙"],
+  "allTimeZones.ROC": ["중화민국", "中华民国"],
+  "allTimeZones.ROK": ["대한민국", "韩国"],
+  "allTimeZones.Singapore": ["싱가포르", "新加坡"],
+  "allTimeZones.Turkey": ["터키", "土耳其"],
+  "allTimeZones.UCT": ["UCT(협정세계시)", "UCT(协定世界时)"],
+  "allTimeZones.US/Alaska": ["미국/알래스카", "美国/阿拉斯加"],
+  "allTimeZones.US/Aleutian": ["미국/알류샨", "美国/阿留尚"],
+  "allTimeZones.US/Arizona": ["미국/애리조나", "美国/亚利桑那州"],
+  "allTimeZones.US/Central": ["미국/중부 표준시", "美国/中部标准时间"],
+  "allTimeZones.US/East-Indiana": ["미국/인디애나 동부", "美国/印第安纳东部"],
+  "allTimeZones.US/Eastern": ["미국/동부 표준시", "美国/东部时间"],
+  "allTimeZones.US/Hawaii": ["미국/하와이", "美国/夏威夷"],
+  "allTimeZones.US/Indiana-Starke": [
+    "미국/인디애나 스타크",
+    "美国/印第安纳斯塔克"
+  ],
+  "allTimeZones.US/Michigan": ["미국/미시간", "美国/密歇根"],
+  "allTimeZones.US/Mountain": ["미국/산악 표준시", "美国/山岳标准时间"],
+  "allTimeZones.US/Pacific": ["미국/태평양 표준시", "美国/太平洋标准时间"],
+  "allTimeZones.US/Pacific-New": ["미국/태평양 표준시", "美国/太平洋标准时间"],
+  "allTimeZones.US/Samoa": ["미국/사모아", "美国/萨摩亚"],
+  "allTimeZones.UTC": ["UTC(협정세계시)", "UTC(协定世界时)"],
+  "allTimeZones.Universal": ["세계시", "世界诗歌"],
+  "allTimeZones.W-SU": ["W-SU", "W-SU"],
+  "allTimeZones.WET": ["WET(서유럽 표준시)", "WET(西欧标准时间)"],
+  "allTimeZones.Zulu": ["줄루시", "祖鲁西"],
+  "applyCreditToggle.applyCredit.amount": [
+    "크레딧 {creditAmount} 사용",
+    "使用积分{creditAmount}"
+  ],
+  "backlink.currentPageTokenLabel": ["이 페이지", "此页"],
+  "backlink.originalTokenLabel": ["원본", "原稿"],
+  "blockDiscussionMenu.emptyState.noResolvedCommentsMessage": [
+    "해결된 댓글이 없습니다.",
+    "没有解决的评论。"
+  ],
+  "blockHelpers.excalidrawBlockType": ["Excalidraw", "Excalidraw"],
+  "blockHelpers.replitBlockType": ["Replit", "剥离"],
+  "blockHelpers.sketchBlockType": ["Sketch", "Sketch"],
+  "blockPasteMenu.actions.createTransclusion.title": [
+    "붙여넣고 동기화하기",
+    "粘贴并同步"
+  ],
+  "blockPasteMenu.actions.dismiss.title": ["해제", "解除"],
+  "blockPasteMenu.actions.linkToPage.title": [
+    "페이지에 대한 링크",
+    "指向页面的链接"
+  ],
+  "blockPermissionsSettings.learnAboutAutogeneratedDomains.changingLinks": [
+    "공개 링크를 변경 중입니다.",
+    "正在更改公共链接。"
+  ],
+  "blockPermissionsSettings.learnAboutAutogeneratedDomains.openSettingsCTA": [
+    "설정",
+    "设置"
+  ],
+  "blockPermissionsSettings.learnAboutAutogeneratedDomains.setDomainForPublicLinks": [
+    "공개 링크의 도메인 설정",
+    "设置公共链接的域"
+  ],
+  "blockPermissionsSettings.learnAboutAutogeneratedDomains.transition": [
+    "전환에 대해 자세히 알아보기",
+    "了解有关过渡的更多信息"
+  ],
+  "blockPropertyValue.filterForNumberFormats.placeholder": [
+    "숫자 형식 검색",
+    "搜索数字格式"
+  ],
+  "bootupHelpers.iosErrorRequiresReinstall.errorMessage": [
+    "안녕하세요. iOS 앱에서 문제를 감지했습니다. 이 앱을 삭제한 후에 App Store에서 다시 설치해 주세요.",
+    "你好。iOS应用程序检测到问题。删除此应用后，请在App Store中重新安装它。"
+  ],
+  "collection.numberFormat.baht": ["바트", "泰铢"],
+  "collection.numberFormat.canadianDollar": ["캐나다 달러", "加元"],
+  "collection.numberFormat.chileanPeso": ["칠레 페소", "智利比索"],
+  "collection.numberFormat.colombianPeso": ["콜롬비아 페소", "哥伦比亚比索"],
+  "collection.numberFormat.danishKrone": ["덴마크 크로네", "丹麦克朗"],
+  "collection.numberFormat.dirham": ["디르함", "迪拉姆"],
+  "collection.numberFormat.forint": ["포린트", "福林特"],
+  "collection.numberFormat.franc": ["프랑", "法郎"],
+  "collection.numberFormat.hongKongDollar": ["홍콩 달러", "港元"],
+  "collection.numberFormat.koruna": ["코루나", "科鲁纳"],
+  "collection.numberFormat.krona": ["크로나", "克朗"],
+  "collection.numberFormat.leu": ["레우", "雷乌"],
+  "collection.numberFormat.mexicanPeso": ["멕시코 페소", "墨西哥比索"],
+  "collection.numberFormat.newTaiwanDollar": ["신 대만 달러", "新新台币"],
+  "collection.numberFormat.newZealandDollar": ["뉴질랜드 달러", "新西兰元"],
+  "collection.numberFormat.norwegianKrone": ["노르웨이 크로네", "挪威克朗"],
+  "collection.numberFormat.philippinePeso": ["필리핀 페소", "菲律宾比索"],
+  "collection.numberFormat.rand": ["랜드", "大地"],
+  "collection.numberFormat.ringgit": ["링깃", "林吉特"],
+  "collection.numberFormat.riyal": ["리얄", "里亚尔"],
+  "collection.numberFormat.shekel": ["셰켈", "谢克尔"],
+  "collection.numberFormat.zloty": ["즈워티", "兹罗提"],
+  "collectionFilterCombinatorGrid.filterOperator.and": ["및", "和"],
+  "collectionFilterCombinatorGrid.filterOperator.or": ["또는", "或"],
+  "collectionFilterMenuFilter.filterOperators.checkbox.order": [
+    "{operatorValue}{operator}",
+    "{operatorValue}{operator}"
+  ],
+  "collectionFilterMenuFilter.filterOperators.date.order": [
+    "{operatorValue}{operator}",
+    "{operatorValue}{operator}"
+  ],
+  "collectionFilterMenuFilter.filterOperators.file.order": [
+    "속성이 {operatorValue}{operator}",
+    "属性{operatorValue}{operator}"
+  ],
+  "collectionFilterMenuFilter.filterOperators.multi_select.order": [
+    "속성이 {operatorValue}{operator}",
+    "属性{operatorValue}{operator}"
+  ],
+  "collectionFilterMenuFilter.filterOperators.number.order": [
+    "속성이 {operatorValue}{operator}",
+    "属性{operatorValue}{operator}"
+  ],
+  "collectionFilterMenuFilter.filterOperators.person.order": [
+    "속성이 {operatorValue}{operator}",
+    "属性{operatorValue}{operator}"
+  ],
+  "collectionFilterMenuFilter.filterOperators.relation.order": [
+    "{operatorValue}{operator}",
+    "{operatorValue}{operator}"
+  ],
+  "collectionFilterMenuFilter.filterOperators.select.order": [
+    "속성이 {operatorValue}{operator}",
+    "属性{operatorValue}{operator}"
+  ],
+  "collectionFilterMenuFilter.filterOperators.text.order": [
+    "속성이 {operatorValue}{operator}",
+    "属性{operatorValue}{operator}"
+  ],
+  "collectionFilterMenuFilter.property.name": ["속성", "属性"],
+  "collectionFilterMenuFilterOperatorValue.date.exact.order": [
+    "{exact}{dateValue}",
+    "{exact}{dateValue}"
+  ],
+  "collectionFilterMenuHelpers.operator.stringHasNoAlphabetPrefix": [
+    "(사용 안 함)",
+    "(禁用)"
+  ],
+  "collectionHiddenGroupsButton.hiddenGroupsButton.text": [
+    "{numberOfHiddenGroups, plural, other {숨긴 그룹 {numberOfHiddenGroups}개}}",
+    "{numberOfHiddenGroups，plural，other{隐藏组{numberOfHiddenGroups}个}}"
+  ],
+  "collectionSortMenu.mobile.sort": ["정렬 {sortNumber}", "排序{sortNumber}"],
+  "comment.embeddedFile.placeholder": ["파일 업로드 중...", "正在上载文件."],
+  "comment.embeddedFile.uploadInProgressMessage": [
+    "파일 업로드 중...",
+    "正在上载文件."
+  ],
+  "configureRelationModal.relationProperty.createModal.cancelButton": [
+    "취소",
+    "取消"
+  ],
+  "configureRelationModal.relationProperty.createModal.confirmButton": [
+    "관계형 속성 생성",
+    "创建关系属性"
+  ],
+  "configureRelationModal.relationProperty.createModal.databaseSelect.label": [
+    "데이터베이스 선택",
+    "选择数据库"
+  ],
+  "configureRelationModal.relationProperty.createModal.databaseSelect.mobile.caption": [
+    "연결하려는 데이터베이스를 선택하세요.",
+    "选择要连接的数据库。"
+  ],
+  "configureRelationModal.relationProperty.createModal.databaseSelect.mobile.title": [
+    "연결하려는 데이터베이스",
+    "要连接的数据库"
+  ],
+  "configureRelationModal.relationProperty.createModal.databaseSelect.placeholder": [
+    "데이터베이스를 검색하세요",
+    "搜索数据库"
+  ],
+  "configureRelationModal.relationProperty.createModal.description": [
+    "관계형 속성을 사용해 다른 데이터베이스의 페이지를 연결할 수 있습니다.",
+    "可以使用关系属性连接不同数据库中的页面。"
+  ],
+  "configureRelationModal.relationProperty.createModal.header": [
+    "관계형 속성 생성",
+    "创建关系属性"
+  ],
+  "configureRelationModal.relationProperty.createModal.helpCenterLink": [
+    "관계형 사용법",
+    "关系用法"
+  ],
+  "configureRelationModal.relationProperty.createModal.helpCenterLinkMobile": [
+    "관계형 사용법",
+    "关系用法"
+  ],
+  "configureRelationModal.relationProperty.createModal.noResults": [
+    "결과 없음",
+    "无结果"
+  ],
+  "configureRelationModal.relationProperty.createModal.selfRelationPrompt": [
+    "동일한 데이터베이스를 선택하셨습니다. 연결된 페이지를 어떤 속성에 표시할까요?",
+    "您选择了相同的数据库。在哪些属性中显示链接的页面？"
+  ],
+  "configureRelationModal.relationProperty.createModal.selfRelationPrompt.createNewPropertyOption.caption": [
+    "<b>하나의 속성에 표시하고 동기화하지 않습니다.</b> \"작업\" 데이터베이스에서 \"관련된 작업\" 속성 하나를 만들 때 이 옵션을 사용하세요.",
+    "<b>在一个属性上显示并且不同步。在</b>“操作”数据库中创建一个“相关任务”属性时，请使用此选项。"
+  ],
+  "configureRelationModal.relationProperty.createModal.selfRelationPrompt.createNewPropertyOption.title": [
+    "새 속성에 표시하기",
+    "在新属性中显示"
+  ],
+  "configureRelationModal.relationProperty.createModal.selfRelationPrompt.mobileTitle": [
+    "동일 데이터베이스 내 관계형 속성",
+    "同一数据库内的关系属性"
+  ],
+  "configureRelationModal.relationProperty.createModal.selfRelationPrompt.samePropertyOption.caption": [
+    "<b>새 속성을 추가로 만들고 양방향으로 동기화합니다.</b>\"작업\" 데이터베이스에서 \"상위 작업\"과 \"하위 작업\" 속성을 별도로 만들 때 이 옵션을 사용하세요.",
+    "<b>进一步创建新属性并双向同步。在</b>“操作”数据库中分别创建“父任务”和“子任务”属性时，请使用此选项。"
+  ],
+  "configureRelationModal.relationProperty.createModal.selfRelationPrompt.samePropertyOption.title": [
+    "하나의 속성에 표시하기",
+    "在单个属性中显示"
+  ],
+  "configureRelationModal.relationProperty.render.error": [
+    "문제가 발생했습니다.",
+    "出现问题。"
+  ],
+  "configureRelationModal.relationProperty.render.loading": [
+    "로딩 중...",
+    "正在加载."
+  ],
+  "couponEntryInput.button.apply": ["사용", "使用"],
+  "couponEntryInput.error.noPromo": [
+    "유효하지 않은 쿠폰 코드",
+    "无效的优惠券代码"
+  ],
+  "couponEntryInput.placeholder": ["쿠폰 코드", "优惠券代码"],
+  "database.actionBar.boardColumnsButton.label": ["열 구분 기준", "列分隔标准"],
+  "database.actionBar.groupButton.label": ["그룹화 기준", "分组依据"],
+  "database.boardView.addGroupButton.groupAlreadyExistsError.message": [
+    "이 그룹은 이미 존재합니다.",
+    "这个组已经存在。"
+  ],
+  "database.collectionGroupActionMenu.colorSectionTitle": ["색", "颜色"],
+  "database.collectionGroupActionMenu.deleteButtonTitle": ["삭제", "删除"],
+  "database.collectionGroupActionMenu.deleteDialogMessage": [
+    "이 그룹을 삭제하시겠습니까? 이 그룹의 모든 블록이 삭제됩니다.",
+    "是否确实要删除此组？该组中的所有块都将被删除。"
+  ],
+  "database.collectionGroupActionMenu.hideButtonTitle": ["숨기기", "隐藏"],
+  "database.collectionGroupActionMenu.showButtonTitle": ["보기", "视图"],
+  "database.collectionGroupActionMenu.title": ["작업", "操作"],
+  "database.collectionGroupAggregation.title": ["집계", "聚合"],
+  "database.collectionGroupHeader.actions.addNewPage.tooltip": [
+    "새 페이지 생성",
+    "创建新页面"
+  ],
+  "database.collectionGroupValue.dateGroup.last7Days": [
+    "지난 7일",
+    "过去的7天"
+  ],
+  "database.collectionGroupValue.dateGroup.last_30Days": [
+    "지난 30일",
+    "过去的30天"
+  ],
+  "database.collectionGroupValue.dateGroup.next30Days": [
+    "다음 30일",
+    "接下来的30天"
+  ],
+  "database.collectionGroupValue.dateGroup.next7Days": ["다음 7일", "后7天"],
+  "database.collectionGroupValue.dateGroup.today": ["오늘", "今天"],
+  "database.collectionGroupValue.dateGroup.tomorrow": ["내일", "明天"],
+  "database.collectionGroupValue.dateGroup.week": [
+    "{year}년 {month}월 {startDay}일~{endDay}일의 주",
+    "{year}年{month}月{startDay}日~{endDay}日的周"
+  ],
+  "database.collectionGroupValue.dateGroup.yesterday": ["어제", "昨天"],
+  "database.collectionGroupValue.numberGroup.outOfRange": [
+    "범위 벗어남",
+    "超出范围"
+  ],
+  "database.collectionGroupValue.numberGroup.range": [
+    "{start}부터 {end}까지",
+    "从{start}到{end}"
+  ],
+  "database.collectionGroupValue.textGroup.other": ["기타", "其他"],
+  "database.formula.function.id.description": [
+    "각 항목의 고유 문자열 ID를 반환합니다.",
+    "返回每个条目的唯一字符串ID。"
+  ],
+  "database.groupExistsAlreadyError.message": [
+    "그룹이 이미 존재합니다.",
+    "组已经存在。"
+  ],
+  "database.groupMenu.clear": ["지우기", "清除"],
+  "database.groupMenu.columnsBy": ["열 구분 기준", "列分隔标准"],
+  "database.groupMenu.dateGroupBy.day": ["일별", "每日"],
+  "database.groupMenu.dateGroupBy.month": ["월별", "每月"],
+  "database.groupMenu.dateGroupBy.relative": ["상대적 날짜", "相对日期"],
+  "database.groupMenu.dateGroupBy.week": ["주별", "每周"],
+  "database.groupMenu.dateGroupBy.year": ["연도별", "每年"],
+  "database.groupMenu.groupBy": ["그룹화 기준", "分组依据"],
+  "database.groupMenu.hiddenGroups": ["숨긴 그룹", "隐藏组"],
+  "database.groupMenu.loadMoreButton.text": [
+    "{loadMoreAmount, plural, other {{loadMoreAmount}개 그룹 더 불러오기}}",
+    "{loadMoreAmount，plural，other{{loadMoreAmount}载入更多组}}"
+  ],
+  "database.groupMenu.noGroupingSetMessage": ["사용 안 함", "禁用"],
+  "database.groupMenu.noneGroup": ["없음", "无"],
+  "database.groupMenu.numberGroupRange": ["그룹 범위", "组范围"],
+  "database.groupMenu.numberGroupSize": ["그룹화 단위", "分组单位"],
+  "database.groupMenu.sort": ["정렬", "排序"],
+  "database.groupMenu.sortType.alphabetical": ["알파벳순", "按字母顺序排列"],
+  "database.groupMenu.sortType.ascending": ["오름차순", "升序"],
+  "database.groupMenu.sortType.chronological": ["시간순", "按时间顺序"],
+  "database.groupMenu.sortType.descending": ["내림차순", "降序"],
+  "database.groupMenu.sortType.manual": ["수동", "手动"],
+  "database.groupMenu.sortType.reverseAlphabetical": [
+    "알파벳 역순",
+    "字母倒序"
+  ],
+  "database.groupMenu.sortType.reverseChronological": ["시간 역순", "时间倒序"],
+  "database.groupMenu.textGroupBy.alphabetical": ["알파벳순", "按字母顺序排列"],
+  "database.groupMenu.textGroupBy.exact": ["특정 단어별", "按特定单词"],
+  "database.groupMenu.visibleGroups": ["표시되는 그룹", "显示的组"],
+  "database.groups.loadMoreButton.text": [
+    "{loadMoreAmount, plural, other {{loadMoreAmount}개 그룹 더 불러오기}}",
+    "{loadMoreAmount，plural，other{{loadMoreAmount}载入更多组}}"
+  ],
+  "database.noRelationSearchResults.message": ["결과 없음", "无结果"],
+  "database.searchRelation.createNewPageLabel": [
+    "{databaseNameWithIcon}<medium>에</medium> {pageName}라는 <medium>새 페이지를 생성하세요.</medium>",
+    "在{databaseNameWithIcon}<medium>中创建一个</medium>名为{pageName}的<medium>新页面。</medium>"
+  ],
+  "database.searchRelation.placeholder": ["페이지를 검색하세요", "搜索页面"],
+  "database.selectRelation.menuItem": ["페이지를 선택", "选择页面"],
+  "dateParserHelpers.at": ["시간:", "时间："],
+  "dateParserHelpers.day": ["일", "工作"],
+  "dateParserHelpers.last": ["지난", "过去"],
+  "dateParserHelpers.me": ["나", "我"],
+  "dateParserHelpers.month": ["월", "月"],
+  "dateParserHelpers.next": ["다음", "下一个"],
+  "dateParserHelpers.now": ["지금", "现在"],
+  "dateParserHelpers.remind": ["리마인더_알림", "提醒符_通知"],
+  "dateParserHelpers.today": ["오늘", "今天"],
+  "dateParserHelpers.today.short": ["ㅇㄴ", "乙"],
+  "dateParserHelpers.tomorrow": ["내일", "明天"],
+  "dateParserHelpers.tomorrow.short": ["ㄴㅇ", "呼呼"],
+  "dateParserHelpers.year": ["년", "年"],
+  "dateParserHelpers.yesterday": ["어제", "昨天"],
+  "dateParserHelpers.yesterday.short": ["ㅇㅈ", "呼呼"],
+  "developerIntegration.confirmationModal.cancelLabel": ["취소", "取消"],
+  "developerIntegration.confirmationModal.confirmLabel": ["계속하기", "继续"],
+  "developerIntegration.confirmationModal.deleteLabel": ["삭제", "删除"],
+  "developerIntegrationCard.botTagline.placeholder": [
+    "내부용 통합",
+    "内部集成"
+  ],
+  "developerIntegrationCard.dropdown.delete": ["이 통합 삭제", "删除此合并"],
+  "developerIntegrationCard.integrationTagline.placeholder": [
+    "공개용 통합",
+    "公开集成"
+  ],
+  "developerIntegrationCard.placeholderCard.label": [
+    "새 통합 만들기",
+    "创建新集成"
+  ],
+  "developerIntegrationCardDropdown.delete.confirmationError": [
+    "입력하신 통합 이름이 일치하지 않습니다.",
+    "输入的统一名称不匹配。"
+  ],
+  "developerIntegrationCardDropdown.delete.confirmationMessage": [
+    "이 공개 통합은 비활성화되고 추가된 모든 워크스페이스에서 제거됩니다. 확인하려면 이 통합의 이름을 입력해 주세요.",
+    "此公共集成将被禁用，并从所有添加的工作区中删除。要确认，请输入此集成的名称。"
+  ],
+  "developerIntegrationCardDropdown.delete.confirmationTitle": [
+    "{integrationName} 통합을 삭제할까요?",
+    "是否要删除{integrationName}集成？"
+  ],
+  "developerIntegrationForm.botToken.label": [
+    "내부용 통합 토큰",
+    "用于内部的集成令牌"
+  ],
+  "developerIntegrationForm.botToken.secretName": ["토큰", "代币"],
+  "developerIntegrationForm.botToken.subtitle": [
+    "오직 <bold>{spaceName}</bold> 워크스페이스에서만 사용 가능합니다. 워크스페이스를 변경하려면 <developertermslink>다른 통합을 생성해 주세요</developertermslink>.",
+    "仅在<bold>{spaceName}</bold>工作空间中可用。要更改工作空间，请创建<developertermslink>其他集成</developertermslink>。"
+  ],
+  "developerIntegrationForm.clientSecret.confirmationModal.message": [
+    "이 클라이언트 시크릿은 한 번만 표시되며 다시 볼 수 없습니다. 시크릿을 반드시 안전한 곳에 별도로 기록해 주세요.",
+    "此客户端秘密仅显示一次，并且无法再次查看。请一定在安全的地方另外记录秘密。"
+  ],
+  "developerIntegrationForm.clientSecret.confirmationModal.title": [
+    "OAuth 클라이언트 시크릿을 표시할까요?",
+    "是否显示OAuth客户端秘密？"
+  ],
+  "developerIntegrationForm.email.label": ["지원 이메일", "支持电子邮件"],
+  "developerIntegrationForm.email.subtitle": [
+    "통합 페이지와 인증 화면에 통합 관련 지원 이메일을 링크하는 데 사용합니다.",
+    "用于将集成相关支持电子邮件链接到集成页面和身份验证屏幕。"
+  ],
+  "developerIntegrationForm.icon.label": ["로고", "标志"],
+  "developerIntegrationForm.icon.subtitle": [
+    "512px x 512px의 PNG 파일 형식을 권장합니다.",
+    "建议采用512px x 512px的PNG文件格式。"
+  ],
+  "developerIntegrationForm.integrationClientId.label": [
+    "OAuth 클라이언트 ID",
+    "OAuth客户端ID"
+  ],
+  "developerIntegrationForm.integrationSecret.label": [
+    "OAuth 클라이언트 시크릿",
+    "OAuth客户端秘密"
+  ],
+  "developerIntegrationForm.integrationSecret.secretName": ["시크릿", "秘密"],
+  "developerIntegrationForm.name.label": ["이름", "名称"],
+  "developerIntegrationForm.name.subtitle": [
+    "사용자가 통합을 식별할 수 있는 이름",
+    "允许用户标识集成的名称"
+  ],
+  "developerIntegrationForm.privacy_policy_url.label": [
+    "개인정보 보호정책",
+    "隐私政策"
+  ],
+  "developerIntegrationForm.privacy_policy_url.subtitle": [
+    "통합 페이지와 인증 화면에 통합의 개인정보 보호 정책을 링크하는 데 사용합니다.",
+    "用于将集成隐私策略链接到集成页面和身份验证屏幕。"
+  ],
+  "developerIntegrationForm.redirect_uri.label": [
+    "리다이렉트 URI",
+    "重定向URI"
+  ],
+  "developerIntegrationForm.redirect_uri.subtitle": [
+    "사용자는 Notion 인증을 진행한 후 이 경로로 이동합니다. 해당 경로는 액세스에 필요한 인증 코드가 첨부되며 프로토콜이 반드시 있어야 합니다. 이 경로는 URL 프래그먼트, 상대 경로 또는 와일드카드(임의 문자 기호)를 포함할 수 없으며 공용 IP 주소를 사용할 수 없습니다.",
+    "用户继续进行Notion身份验证，然后转到此路径。该路径附加了访问所需的授权码，并且协议必须存在。此路径不能包含URL片段、相对路径或通配符(任意字符符号)，也不能使用公共IP地址。"
+  ],
+  "developerIntegrationForm.redirect_uris.label": [
+    "리다이렉트 URI",
+    "重定向URI"
+  ],
+  "developerIntegrationForm.sectionHeader.basic": ["기본 정보", "基本信息"],
+  "developerIntegrationForm.sectionHeader.oauth": [
+    "OAuth 도메인 및 URI",
+    "OAuth域和URI"
+  ],
+  "developerIntegrationForm.sectionHeader.secrets": ["시크릿", "秘密"],
+  "developerIntegrationForm.space.label": [
+    "연결할 워크스페이스",
+    "要连接的工作空间"
+  ],
+  "developerIntegrationForm.space.subtitle": [
+    "통합을 설치할 워크스페이스를 선택하세요. 나중에 통합을 업그레이드해 OAuth를 사용할 수 있습니다.",
+    "选择要安装集成的工作空间。稍后，您可以升级集成以使用OAuth。"
+  ],
+  "developerIntegrationForm.submissionType.label": ["통합 유형", "集成类型"],
+  "developerIntegrationForm.tagline.label": ["소개", "介绍"],
+  "developerIntegrationForm.tagline.subtitle": [
+    "통합에 대한 간단한 설명을 입력하세요.",
+    "输入集成的简单说明。"
+  ],
+  "developerIntegrationForm.terms_of_use_url.label": [
+    "이용 약관",
+    "条款和条件"
+  ],
+  "developerIntegrationForm.terms_of_use_url.subtitle": [
+    "통합 페이지나 인증 화면에 통합 이용 약관을 링크하는 데 사용합니다.",
+    "用于将集成条款和条件链接到集成页面或身份验证屏幕。"
+  ],
+  "developerIntegrationForm.website_url.label": [
+    "웹사이트 또는 홈페이지",
+    "网站或主页"
+  ],
+  "developerIntegrationForm.website_url.subtitle": [
+    "통합 페이지와 인증 화면에 통합 관련 웹사이트나 홈페이지를 링크하는 데 사용합니다.",
+    "用于将集成相关网站或主页链接到集成页面和认证屏幕。"
+  ],
+  "developerIntegrationFormHandler.create.developerTerms": [
+    "제출하면 Notion의 <developertermslink>개발자 약관</developertermslink>에 동의하는 것으로 간주합니다.",
+    "提交即表示您同意Notion的<developertermslink>开发者条款</developertermslink>。"
+  ],
+  "developerIntegrationFormHandler.createIntegration.confirmationModal.message": [
+    "OAuth 시크릿을 받게되며 권한 획득을 위해서 OAuth를 구현해야 합니다. 자세한 내용은 <oauthdocumentationlink>개발자 문서</oauthdocumentationlink>를 참고하세요.",
+    "您将收到OAuth秘密，您必须实施OAuth以获得权限。有关详细信息，请参阅<oauthdocumentationlink>开发人员文档</oauthdocumentationlink>。"
+  ],
+  "developerIntegrationFormHandler.createIntegration.confirmationModal.title": [
+    "공개용 통합으로 전환할까요?",
+    "转为公开整合吗？"
+  ],
+  "developerIntegrationNotFound.subtitle.label": [
+    "이 통합은 존재하지 않습니다.",
+    "此集成不存在。"
+  ],
+  "developerIntegrationNotFound.title.label": ["찾을 수 없음", "未找到"],
+  "developerIntegrationView.subtitle.label": [
+    "통합 정보를 검토하고 편집하세요.",
+    "查看和编辑集成信息。"
+  ],
+  "developerIntegrationsCreateInternal.error.invalidInput": [
+    "{ fieldName } 항목이 유효하지 않습니다.",
+    "{fieldName}条目无效。"
+  ],
+  "developerIntegrationsCreateInternal.subtitle.label": [
+    "아래 정보를 입력해 새 통합을 차근히 만들어봐요.",
+    "输入下面的信息，重新整合。"
+  ],
+  "developerIntegrationsCreateInternal.title.label": [
+    "새 통합 만들기",
+    "创建新集成"
+  ],
+  "developerIntegrationsForm.clientIdCopied.tooltip": [
+    "ID 복사 완료",
+    "完成身份复制"
+  ],
+  "developerIntegrationsForm.copiedId.label": ["복사 완료", "复制完成"],
+  "developerIntegrationsForm.copyClientId.tooltip": [
+    "클라이언트 ID 복사",
+    "复制客户端ID"
+  ],
+  "developerIntegrationsForm.copyId.label": ["복사", "复制"],
+  "developerIntegrationsForm.error.missingRequired": [
+    "{ fieldName } 항목은 필수입니다.",
+    "{fieldName}条目是必需的。"
+  ],
+  "developerIntegrationsForm.error.submission": [
+    "통합을 제출하는 중 오류가 발생했습니다. 다시 시도하거나 문제가 지속되면 지원팀에 문의하세요.",
+    "提交合并时出错。请重试，或者如果问题仍然存在，请联系您的支持团队。"
+  ],
+  "developerIntegrationsForm.redirectUri.typePrompt": [
+    "리다이렉트 URI를 입력하세요",
+    "输入重定向URI"
+  ],
+  "developerIntegrationsForm.spacePicker.missingSpacesError": [
+    "관리자를 맡고 있는 워크스페이스가 없습니다. <linktonotion>새 워크스페이스를 생성</linktonotion>하거나 소속된 워크스페이스의 관리자에게 액세스 권한 변경을 요청하세요.",
+    "没有工作区担任管理员。<linktonotion>创建新工作区</linktonotion>，或请求所属工作区的管理员更改访问权限。"
+  ],
+  "developerIntegrationsLayout.backButton.label": [
+    "나의 통합 목록",
+    "我的合并列表"
+  ],
+  "developerIntegrationsLayout.document.title": [
+    "내 통합 목록 | Notion Developers",
+    "我的合并列表|Notion Developers"
+  ],
+  "developerIntegrationsList.addNewButton.label": ["새 통합", "新集成"],
+  "developerIntegrationsList.allFilter.label": ["모두 보기", "查看全部"],
+  "developerIntegrationsList.internalFilter.label": ["내부용", "内部使用"],
+  "developerIntegrationsList.publicFilter.label": ["공개용", "公开使用"],
+  "developerIntegrationsList.subtitle": [
+    "개발 정보와 자격 증명을 생성하고 검토, 편집하세요.",
+    "创建、审阅和编辑开发信息和凭证。"
+  ],
+  "developerIntegrationsList.title": ["나의 통합 목록", "我的合并列表"],
+  "developerIntegrationsList.viewIntegration.buttonText": [
+    "통합 보기",
+    "查看集成"
+  ],
+  "developerInternalIntegraion.integrationType.bot.caption": [
+    "관리자로 있는 워크스페이스에서만 사용할 수 있습니다. 이러한 워크스페이스와의 통합은 자동으로 설치되며 검토가 필요하지 않습니다.",
+    "仅在作为管理员的工作空间中可用。与这些工作空间的集成是自动安装的，不需要审查。"
+  ],
+  "developerInternalIntegraion.integrationType.bot.title": [
+    "내부용 통합",
+    "内部集成"
+  ],
+  "developerInternalIntegraion.integrationType.integration.caption": [
+    "Notion 사용자라면 누구나 사용할 수 있습니다. 통합 갤러리에 게시하려면 검토와 검증 과정이 필요할 수도 있습니다.",
+    "任何Notion用户都可以使用。发布到集成库可能需要审阅和验证过程。"
+  ],
+  "developerInternalIntegraion.integrationType.integration.title": [
+    "공개용 통합",
+    "公开集成"
+  ],
+  "developerInternalIntegration.integrationType.bot.caption": [
+    "관리자로 있는 워크스페이스에서만 사용할 수 있습니다. 이러한 워크스페이스와의 통합은 자동으로 설치되며 검토가 필요하지 않습니다.",
+    "仅在作为管理员的工作空间中可用。与这些工作空间的集成是自动安装的，不需要审查。"
+  ],
+  "developerInternalIntegration.integrationType.bot.title": [
+    "내부용 통합",
+    "内部集成"
+  ],
+  "developerInternalIntegration.integrationType.integration.caption": [
+    "Notion 사용자라면 누구나 사용할 수 있습니다. 통합 갤러리에 게시하려면 검토와 검증 과정이 필요할 수도 있습니다.",
+    "任何Notion用户都可以使用。发布到集成库可能需要审阅和验证过程。"
+  ],
+  "developerInternalIntegration.integrationType.integration.title": [
+    "공개용 통합",
+    "公开集成"
+  ],
+  "discussion.dropZone.dropZoneMediaTitle": ["파일 업로드", "上载文件"],
+  "discussion.showMoreCommentsSidebarButton.label": [
+    "{moreCommentsNumber, plural, other {{moreCommentsNumber}개의 댓글 더 보기}}",
+    "{moreCommentsNumber，plural，other{{moreCommentsNumber}查看更多评论}}"
+  ],
+  "discussionInput.commentComment.button": ["댓글", "评论"],
+  "discussionInput.insertMention.button.tooltip": [
+    "멘션하려는 사용자, 페이지, 날짜를 입력하세요.",
+    "输入您想要声明的用户、页面和日期。"
+  ],
+  "discussionInput.uploadFile.button.tooltip": ["파일 첨부", "附加文件"],
+  "discussionInput.uploadFile.tooManyFilesErrorMessage": [
+    "댓글에는 {maxFiles}개가 넘는 파일을 업로드할 수 없습니다.",
+    "评论中不能上载超过{maxFiles}个文件。"
+  ],
+  "duplicateRateLimitError.message": [
+    "블록 복제 제한에 도달했습니다. 나중에 다시 시도하세요.",
+    "已达到块复制限制。请稍后再试。"
+  ],
+  "embedBlock.originalLink.button": ["원본", "原稿"],
+  "embedMenu.action.excalidraw": ["Excalidraw 임베드", "Excalidraw嵌入"],
+  "embedMenu.action.replit": ["Repl 임베드", "Repl嵌入"],
+  "embedMenu.action.sketch": ["Sketch 문서 임베드", "嵌入Sketch文档"],
+  "embedMenu.actions.createTransclusion.title": [
+    "붙여넣고 동기화하기",
+    "粘贴并同步"
+  ],
+  "emojiPicker.noResults.message": ["결과 없음", "无结果"],
+  "enhancedSidebarFeatureTour.pinPages.actionButton": [
+    "자세히 알아보기",
+    "了解详情"
+  ],
+  "enhancedSidebarFeatureTour.pinPages.actionText": [
+    "자세히 알아보기",
+    "了解详情"
+  ],
+  "enhancedSidebarFeatureTour.pinPages.primaryText": [
+    "공유 페이지는 여기에 정리하세요",
+    "分享页面请在这里整理"
+  ],
+  "enhancedSidebarFeatureTour.pinPages.secondaryText": [
+    "자주 보는 페이지를 사이드바에 고정하세요",
+    "将经常查看的页面固定在侧边栏"
+  ],
+  "excalidrawBlock.embeds.button.label": [
+    "Excalidraw 임베드",
+    "Excalidraw嵌入"
+  ],
+  "excalidrawBlock.embeds.caption": [
+    "Excalidraw 화이트보드와 호환됩니다.",
+    "与Excalidraw白板兼容。"
+  ],
+  "excalidrawBlock.placeholder": ["Excalidraw 임베드", "Excalidraw嵌入"],
+  "export.csvHeader.name": ["이름", "名称"],
+  "exportModal.includeContentTypes.everything.label": [
+    "모든 콘텐츠",
+    "所有内容"
+  ],
+  "exportModal.includeContentTypes.no_files.label": [
+    "파일 및 이미지 제외",
+    "排除文件和图像"
+  ],
+  "exportModal.includeContents.description": ["포함할 콘텐츠", "要包括的内容"],
+  "exportModal.pageScale.description": ["크기 비율", "大小比例"],
+  "exportModal.pageScale.invalidScaleError": [
+    "크기 비율은 10에서 200 사이의 숫자만 가능합니다.",
+    "大小比只能是10到200之间的数字。"
+  ],
+  "faq.mandatoryRefund.answer": [
+    "<p>유럽 연합, 영국 또는 의무 환불 정책을 적용하는 다른 지역에 거주하시는 경우, 72시간이 지나도 월간 구독 요금을 환불 받으실 수도 있습니다. 예를 들어, 유럽 연합의 고객은 구매 후 72시간이 아닌 14일 이내에 월간 구독 요금을 전액 환불 받으실 수 있습니다.</p><p>환불 요청은 앱 내에서 문의하시거나 team@makenotion.com으로 이메일을 보내주세요. 의무 환불 정책을 적용하는 지역에 거주하시는 경우 저희에게 알려주시면 성심껏 도와드리겠습니다.</p>",
+    "<p>如果您居住在欧盟、英国或其他适用强制性退款政策的地区，您甚至可以在72小时后退还您的月度订阅费。例如，欧盟的客户可以在14天内(而不是购买后72小时)全额退还每月订阅费。</p><p>请在应用内查询退款请求，或发送电子邮件至team@makenotion.com。如果您居住在适用强制性退款政策的地区，请告知我们，我们将竭诚为您提供帮助。</p>"
+  ],
+  "faq.mandatoryRefund.question": [
+    "의무 환불 정책을 적용하는 지역에 거주하는 경우에는 어떻게 되나요?",
+    "如果居住在适用强制性退款政策的地区，会发生什么情况？"
+  ],
+  "filePropertyMenu.header": ["파일", "文件"],
+  "forkPageScreen.chooseWorkspace.message": [
+    "워크스페이스 선택",
+    "选择工作空间"
+  ],
+  "formHandler.submitButton.create.label": ["제출", "提交"],
+  "formHandler.submitButton.create.update": ["변경 사항 저장", "保存更改"],
+  "formInputIcon.uploadButton.label": ["이미지 업로드", "上传图像"],
+  "formSecretShow.copied.label": ["복사 완료", "复制完成"],
+  "formSecretShow.copySecret.label": ["복사", "复制"],
+  "formSecretShow.copySecret.tooltip": [
+    "{secretName} 복사",
+    "{secretName}复制"
+  ],
+  "formSecretShow.refreshSecret.label": ["새로 고침", "刷新"],
+  "formSecretShow.secretCopied.tooltip": [
+    "{secretName} 복사 완료",
+    "{secretName}复制完成"
+  ],
+  "formSecretShow.showSecret.label": ["보기", "视图"],
+  "formatMessage.error.undefinedResultType": [
+    "정의되지 않은 유형",
+    "未定义的类型"
+  ],
+  "formulaHelpers.error.branchCondition": [
+    "조건의 각 분기는 동일한 유형인 {input}이어야 합니다.",
+    "条件中的每个分支必须是相同的类型{input}。"
+  ],
+  "formulaHelpers.error.circularDependency": [
+    "{propertySchemaName} 속성은 순환 종속성을 생성합니다.",
+    "{propertySchemaName}属性生成循环依赖关系。"
+  ],
+  "formulaHelpers.error.illegalConstant": [
+    "{value} 상수는 유효하지 않습니다.",
+    "{value}常量无效。"
+  ],
+  "formulaHelpers.error.invalidPropertyReference": [
+    "{input} 입력은 유효하지 않은 속성을 참조합니다.",
+    "{input}输入引用无效属性。"
+  ],
+  "formulaHelpers.error.invalidSyntax": [
+    "{input} 구문은 유효하지 않습니다.",
+    "{input}语法无效。"
+  ],
+  "formulaHelpers.error.noSignatureForFunction": [
+    "{functionName} 함수에 대한 서명이 없습니다.",
+    "{functionName}函数没有签名。"
+  ],
+  "formulaHelpers.error.propertyNotFound": [
+    "prop({input}) 속성을 찾을 수 없습니다.",
+    "找不到prop({input})属性。"
+  ],
+  "formulaHelpers.error.tooFewArguments": [
+    "{functionName} 함수에 인수가 너무 적습니다.",
+    "{functionName}函数的参数太少。"
+  ],
+  "formulaHelpers.error.tooFewArgumentsVariadic": [
+    "{functionName} 함수에 인수가 너무 적습니다.",
+    "{functionName}函数的参数太少。"
+  ],
+  "formulaHelpers.error.tooManyArguments": [
+    "{functionName} 함수에 인수가 너무 많습니다.",
+    "{functionName}函数的参数太多。"
+  ],
+  "formulaHelpers.error.tooManyArgumentsInProp": [
+    "너무 많은 인수가 prop()에 전달되었습니다.",
+    "太多的参数被传递给prop()。"
+  ],
+  "formulaHelpers.error.typeMismatch": [
+    "{nodeString} 유형이 {localizedPropertyTypeDisplayName} 유형과 일치하지 않습니다.",
+    "{nodeString}类型与{localizedPropertyTypeDisplayName}类型不匹配。"
+  ],
+  "formulaHelpers.error.undefinedConstant": [
+    "{constantName} 상수가 정의되지 않았습니다.",
+    "{constantName}常量未定义。"
+  ],
+  "formulaHelpers.error.undefinedFunction": [
+    "{functionName} 함수가 정의되지 않았습니다.",
+    "未定义{functionName}函数。"
+  ],
+  "formulaHelpers.error.undefinedOperator": [
+    "{operator} 연산자가 정의되지 않았습니다.",
+    "未定义{operator}运算符。"
+  ],
+  "frontPricingCard.educationPlan.attribute.contentApi.v2": ["API", "API"],
+  "frontSignupComponent.emailInput.educationEmailPlaceholder": [
+    "학교 이메일을 입력하세요",
+    "请输入学校电子邮件。"
+  ],
+  "frontSignupComponent.emailInput.teamEmailPlaceholder": [
+    "업무용 이메일을 입력하세요",
+    "请输入业务电子邮件。"
+  ],
+  "fullPageError.publicDomainInterstitial.title": [
+    "아래의 링크를 따라 외부 사이트로 이동하세요.",
+    "使用以下链接进入外部网站。"
+  ],
+  "fullPageError.reportAProblem.label": ["문제 신고하기", "报告问题"],
+  "fullPageError.somethingWrong.label": ["문제가 발생했나요?", "出问题了吗？"],
+  "guestPagesPopup.permissionsForUserGuest.label": ["게스트", "房客"],
+  "helpButton.whatsNew.menuItem": ["새로운 소식", "新消息"],
+  "invalidVATEmail.billingLink.text": [
+    "<b>사업자등록번호를 <billinglink>이 링크</billinglink>에서 변경해 주세요.</b>",
+    "<b>请将营业执照号从<billinglink>此链接</billinglink>更改。</b>"
+  ],
+  "invalidVATEmail.body.text": [
+    "부가가치세(VAT) 때문에 입력하셨던 사업자등록번호가 유효하지 않아 연락드립니다. 유효한 사업자등록번호를 등록하지 않으실 경우 관련 법규에 따라 세금이 부과됩니다.",
+    "由于增值税(VAT)而输入的营业执照号无效，我们将与您联系。如果您没有注册有效的商业登记号码，则根据相关法规，您将被扣税。"
+  ],
+  "invalidVATEmail.closingText": [
+    "고맙습니다.{br}Notion 팀",
+    "谢谢。{br}Notion团队"
+  ],
+  "invalidVATEmail.greetingWithName": [
+    "{customerName} 님, 안녕하세요!",
+    "{customerName}先生，您好！"
+  ],
+  "invalidVATEmail.greetingWithoutName": ["안녕하세요!", "你好！"],
+  "invalidVATEmail.subjectLine.text": [
+    "Notion 계정의 사업자등록번호를 변경해 주세요",
+    "请变更Notion账户的营业执照号码"
+  ],
+  "inviteUserButton.addGuestsAndGroupsAndIntegrationsLabel": [
+    "사용자, 이메일, 그룹 또는 통합 입력",
+    "输入用户、电子邮件、组或集成"
+  ],
+  "invoice.chargeItem.discountApplied.label": ["쿠폰", "优惠券"],
+  "invoice.chargeItem.taxCharge": ["세금", "税金"],
+  "languagePicker.betaBadge": ["베타", "测试版"],
+  "languageRegionSettings.language.label": ["언어", "语言"],
+  "languageSettings.formatsSection.title": ["형식", "形式"],
+  "loginErrors.csrf.message": [
+    "링크를 통해 로그인하는 경우, 링크를 요청했던 브라우저에서 링크를 열여주세요.",
+    "如果您通过链接登录，请在您请求链接的浏览器中打开该链接。"
+  ],
+  "loginForm.loginCodeInput.label": ["로그인 코드", "登录代码"],
+  "mathParseHelpers.errorPosition.message": [
+    "{position} 문자",
+    "{position}字符"
+  ],
+  "mathParseHelpers.fullError.message": [
+    "{errorBody} ({postfix})",
+    "{errorBody}({postfix})"
+  ],
+  "mathParseHelpers.syntax.error": ["{token}의 구문 오류", "{token}的语法错误"],
+  "mathParseHelpers.tokenExpected.error": ["{token} 예상", "{token}预期"],
+  "mathParseHelpers.unexpected.error": ["예기치 못한 {token}", "意外的{token}"],
+  "mobileActionBar.nativeMenu.textColor.title": ["색상", "颜色"],
+  "newBlock.abstract.fuzzySearchKeywords": ["앱스트랙트", "应用软件"],
+  "newBlock.breadcrumb.fuzzySearchKeywords": [
+    "이동 경로 페이지 경로",
+    "穿行页面路径"
+  ],
+  "newBlock.callout.fuzzySearchKeywords": ["콜아웃", "注解"],
+  "newBlock.codepen.fuzzySearchKeywords": ["코드펜", "代码笔"],
+  "newBlock.drive.fuzzySearchKeywords": ["구글 드라이브", "谷歌驱动器"],
+  "newBlock.excalidraw.description": [
+    "Excalidraw 화이트보드를 임베드하세요.",
+    "嵌入Excalidraw白板。"
+  ],
+  "newBlock.excalidraw.title": ["Excalidraw", "Excalidraw"],
+  "newBlock.figma.fuzzySearchKeywords": ["피그마", "血浆"],
+  "newBlock.file.fuzzySearchKeywords": ["파일", "文件"],
+  "newBlock.framer.fuzzySearchKeywords": ["프레이머", "弗雷默"],
+  "newBlock.fullPageBoard.fuzzySearchKeywords": [
+    "보드 - 전체 페이지",
+    "主板-完整页面"
+  ],
+  "newBlock.fullPageCalendar.fuzzySearchKeywords": [
+    "캘린더 - 전체 페이지",
+    "日历-整个页面"
+  ],
+  "newBlock.fullPageGallery.fuzzySearchKeywords": [
+    "갤러리 - 전체 페이지",
+    "画廊-整个页面"
+  ],
+  "newBlock.fullPageList.fuzzySearchKeywords": [
+    "리스트 - 전체 페이지",
+    "列表-整个页面"
+  ],
+  "newBlock.fullPageTable.fuzzySearchKeywords": [
+    "표 - 전체 페이지",
+    "表-整个页面"
+  ],
+  "newBlock.fullPageTimeline.fuzzySearchKeywords": [
+    "타임라인 - 전체 페이지",
+    "时间轴-整个页面"
+  ],
+  "newBlock.gist.fuzzySearchKeywords": ["깃허브 지스트", "吉卜吉斯特"],
+  "newBlock.inlineBoard.fuzzySearchKeywords": ["보드 - 인라인", "板-内联"],
+  "newBlock.inlineCalendar.fuzzySearchKeywords": [
+    "캘린더 - 인라인",
+    "日历-内联"
+  ],
+  "newBlock.inlineGallery.fuzzySearchKeywords": [
+    "갤러리 - 인라인",
+    "画廊-内联"
+  ],
+  "newBlock.inlineList.fuzzySearchKeywords": ["리스트 - 인라인", "列表-内嵌"],
+  "newBlock.inlineTable.fuzzySearchKeywords": ["표 - 인라인", "表-内联"],
+  "newBlock.inlineTimeline.fuzzySearchKeywords": [
+    "타임라인 - 인라인",
+    "时间轴-内联"
+  ],
+  "newBlock.invision.fuzzySearchKeywords": ["인비전", "英秘传"],
+  "newBlock.linkToCollection.fuzzySearchKeywords": [
+    "링크된 데이터베이스 생성",
+    "创建链接数据库"
+  ],
+  "newBlock.loom.fuzzySearchKeywords": ["룸", "房间"],
+  "newBlock.maps.fuzzySearchKeywords": ["구글 지도", "谷歌地图"],
+  "newBlock.miro.fuzzySearchKeywords": ["미로", "迷宫"],
+  "newBlock.page.fuzzySearchKeywords": ["페이지", "页数"],
+  "newBlock.pdf.fuzzySearchKeywords": ["PDF", "PDF"],
+  "newBlock.quote.fuzzySearchKeywords": ["인용", "引语"],
+  "newBlock.replit.description": ["Repl을 임베드하세요.", "嵌入Repl。"],
+  "newBlock.replit.title": ["Replit", "剥离"],
+  "newBlock.sketch.description": [
+    "Sketch 문서를 임베드하세요.",
+    "嵌入Sketch文档。"
+  ],
+  "newBlock.sketch.fuzzySearchKeywords": ["리플릿", "宣传册"],
+  "newBlock.sketch.title": ["Sketch", "Sketch"],
+  "newBlock.toggle.fuzzySearchKeywords": ["토글 목록", "切换列表"],
+  "newBlock.transclusionContainer.description": [
+    "모든 페이지에서 콘텐츠를 동기화하세요.",
+    "同步所有页面的内容。"
+  ],
+  "newBlock.transclusionContainer.fuzzySearchKeywords": [
+    "동기화 블록 생성 블록 레퍼런스 트랜스클루전 포털 블록 임베드",
+    "同步块生成块参考转引传门户块嵌入"
+  ],
+  "newBlock.transclusionContainer.title": ["동기화 블록", "同步块"],
+  "newBlock.tweet.fuzzySearchKeywords": ["트윗", "推文"],
+  "newBlock.typeform.fuzzySearchKeywords": ["타입폼", "类型形式"],
+  "newBlock.video.fuzzySearchKeywords": ["동영상", "视频"],
+  "newBlock.whimsical.fuzzySearchKeywords": ["윔지컬", "硬邦邦"],
+  "oauthAuthorizationPage.error.cancelButton.label": ["취소", "取消"],
+  "oauthAuthorizationPage.error.clientNotFound.body": [
+    "클라이언트 ID가 불완전하거나 누락되었습니다. 자세한 내용은 <inlinetextlink>개발자 문서</inlinetextlink>를 참고하세요.",
+    "客户端ID不完整或丢失。有关详细信息，请参阅<inlinetextlink>开发人员文档</inlinetextlink>。"
+  ],
+  "oauthAuthorizationPage.error.genericError.title": [
+    "문제가 발생했습니다.",
+    "出现问题。"
+  ],
+  "oauthAuthorizationPage.error.integrationAlreadyInstalled.body": [
+    "추가된 통합은 설정에서 검토하고 제거할 수 있습니다.",
+    "可以从设置中查看和删除已添加的集成。"
+  ],
+  "oauthAuthorizationPage.error.integrationAlreadyInstalled.openWorkspaceSettingsButton.label": [
+    "설정 열기",
+    "打开设置"
+  ],
+  "oauthAuthorizationPage.error.integrationAlreadyInstalled.title": [
+    "{workspaceName}에 이미 추가된 통합입니다.",
+    "已经添加到{workspaceName}的集成。"
+  ],
+  "oauthAuthorizationPage.error.invalidClientId.body": [
+    "클라이언트 ID가 불완전하거나 누락되었습니다. 자세한 내용은 <inlinetextlink>개발자 문서</inlinetextlink>를 참고하세요.",
+    "客户端ID不完整或丢失。有关详细信息，请参阅<inlinetextlink>开发人员文档</inlinetextlink>。"
+  ],
+  "oauthAuthorizationPage.error.invalidRedirectUri.body": [
+    "redirect_uri가 유효하지 않거나 누락되었습니다. 자세한 내용은 <inlinetextlink>개발자 문서</inlinetextlink>를 참고하세요.",
+    "redirect_uri无效或丢失。有关详细信息，请参阅<inlinetextlink>开发人员文档</inlinetextlink>。"
+  ],
+  "oauthAuthorizationPage.error.invalidResponseType": [
+    "response_type이 유효하지 않거나 누락되었습니다. 자세한 내용은 <inlinetextlink>개발자 문서</inlinetextlink>를 참고하세요.",
+    "response_type无效或丢失。有关详细信息，请参阅<inlinetextlink>开发人员文档</inlinetextlink>。"
+  ],
+  "oauthAuthorizationPage.error.notAnAdmin.body": [
+    "관리자에게 연락하여 관리자 액세스를 받거나 다른 워크스페이스를 선택하세요.",
+    "联系管理员获取管理员访问权限或选择其他工作空间。"
+  ],
+  "oauthAuthorizationPage.error.notAnAdmin.switchWorkspaceButton.label": [
+    "다른 워크스페이스 선택하기",
+    "选择另一个工作空间"
+  ],
+  "oauthAuthorizationPage.error.notAnAdmin.title": [
+    "{workspaceName}에 통합을 추가할 권한이 없습니다.",
+    "您没有向{workspaceName}添加集成的权限。"
+  ],
+  "oauthAuthorizationPage.permissionStep.cancelButton.label": ["취소", "取消"],
+  "oauthAuthorizationPage.permissionStep.continueButton.label": [
+    "페이지 선택하기",
+    "选择页面"
+  ],
+  "oauthAuthorizationPage.permissionStep.createSpaceLevelIntegrationCheckbox.label": [
+    "{workspaceName}의 모든 멤버들과 통합 공유",
+    "{workspaceName}与所有成员集成共享"
+  ],
+  "oauthAuthorizationPage.permissionStep.finishButton.label": [
+    "액세스 허용",
+    "允许访问"
+  ],
+  "oauthAuthorizationPage.permissionStep.intro": [
+    "<inlinetextlink>{integrationName}</inlinetextlink> 통합이 다음 권한을 요청합니다.",
+    "<inlinetextlink>{integrationName}</inlinetextlink>集成请求以下权限："
+  ],
+  "oauthAuthorizationPage.permissionStep.permissionListItem.addNewPages": [
+    "{workspaceName}에 새 페이지 추가하기",
+    "向{workspaceName}添加新页面"
+  ],
+  "oauthAuthorizationPage.permissionStep.permissionListItem.addNewPages.details": [
+    "{integrationName} 통합이 액세스할 수 있는 페이지 내부에 새 페이지를 추가할 수 있게 됩니다.",
+    "{integrationName}集成将允许您在可访问的页面内添加新页面。"
+  ],
+  "oauthAuthorizationPage.permissionStep.permissionListItem.viewAndEditPages": [
+    "선택한 페이지 보기와 편집하기",
+    "查看和编辑所选页面"
+  ],
+  "oauthAuthorizationPage.permissionStep.permissionListItem.viewAndEditPages.description": [
+    "{integrationName} 통합이 내가 다음 단계에서 선택한 페이지를 보고 편집할 수 있게 됩니다. 나중에도 공유 메뉴를 통해 {integrationName} 통합과 페이지를 공유할 수 있습니다.",
+    "{integrationName}集成将允许您查看和编辑我下一步选择的页面。稍后，您也可以通过共享菜单与{integrationName}集成共享页面。"
+  ],
+  "oauthAuthorizationPage.permissionStep.permissionListItem.viewUsers": [
+    "이름과 이메일 보기",
+    "查看姓名和电子邮件"
+  ],
+  "oauthAuthorizationPage.permissionStep.permissionListItem.viewUsers.detail": [
+    "{integrationName} 통합이 워크스페이스의 모든 멤버와 게스트의 사용자명과 이메일 주소를 볼 수 있게 됩니다.",
+    "{integrationName}集成将允许您查看工作区中所有成员和来宾的用户名和电子邮件地址。"
+  ],
+  "oauthAuthorizationPage.permissionStep.title": [
+    "<inlinetextlink>{integrationName}</inlinetextlink> 통합이 {workspaceName}에 액세스하려고 합니다.",
+    "<inlinetextlink>{integrationName}</inlinetextlink>集成尝试访问{workspaceName}。"
+  ],
+  "oauthAuthorizationPage.permissionStep.warning.body": [
+    "계속하면 민감한 정보를 공유하게 될 수도 있습니다. Notion에서는 {integrationName} 통합과 같은 제3자 통합에 대해 검토하지 않습니다. {integrationName}의 <privacypolicylink>개인정보 보호 정책</privacypolicylink>과 <termsofservicelink>서비스 약관</termsofservicelink>을 통해 사용자 데이터 처리 방식을 확인하세요.",
+    "如果继续，可能会共享敏感信息。Notion不审查第三方集成，例如{integrationName}集成。通过{integrationName}的<privacypolicylink>隐私政策</privacypolicylink>和<termsofservicelink>服务条款</termsofservicelink>查看如何处理用户数据。"
+  ],
+  "oauthAuthorizationPage.permissionStep.warning.title": [
+    "{integrationName}({redirectUriDomain}) 통합을 신뢰할 수 있는지 확인하세요.",
+    "{integrationName}({redirectUriDomain})验证集成是否可信。"
+  ],
+  "oauthAuthorizationPage.selectPageStep.empty": ["하위 페이지 없음", "无子页"],
+  "oauthAuthorizationPage.selectPagesStep.backButton.label": [
+    "뒤로 가기",
+    "上一步"
+  ],
+  "oauthAuthorizationPage.selectPagesStep.finishButton.label": [
+    "액세스 허용하기",
+    "允许访问"
+  ],
+  "oauthAuthorizationPage.selectPagesStep.pagePicker.manuallyAddedPagesSection.title": [
+    "수동으로 추가한 페이지",
+    "手动添加的页面"
+  ],
+  "oauthAuthorizationPage.selectPagesStep.pagePicker.privateSection.title": [
+    "개인 페이지",
+    "个人主页"
+  ],
+  "oauthAuthorizationPage.selectPagesStep.pagePicker.search.placeholder": [
+    "{workspaceName}에서 페이지 검색",
+    "在{workspaceName}中搜索页面"
+  ],
+  "oauthAuthorizationPage.selectPagesStep.pagePicker.sharedSection.title": [
+    "공유된 페이지",
+    "共享页面"
+  ],
+  "oauthAuthorizationPage.selectPagesStep.pagePicker.workspaceSection.title": [
+    "워크스페이스",
+    "工作空间"
+  ],
+  "oauthAuthorizationPage.selectPagesStep.title": [
+    "이 페이지에 대한 {integrationName}의 액세스 허용하기",
+    "允许{integrationName}访问此页"
+  ],
+  "oauthAuthorizationPage.workspaceSwitcher.disabledWorkspace.tooltip": [
+    "관리자 액세스를 가진 사람만이 이 통합을 추가할 수 있습니다.",
+    "只有具有管理员访问权限的人员才能添加此集成。"
+  ],
+  "oauthPageSearchResults.disabledResult.byAncestor.message": [
+    "{ancestorPageName} 페이지를 통해 이미 추가함",
+    "已通过{ancestorPageName}页面添加"
+  ],
+  "oauthPageSearchResults.disabledResult.bySelf.message": [
+    "이미 추가함",
+    "已添加"
+  ],
+  "oauthPageSearchResults.noResults.placeholder": ["결과 없음", "无结果"],
+  "offlineErrors.offlineErrorMessage": ["오프라인 상태입니다.", "脱机。"],
+  "onboardingInvite.addEmail.caption": [
+    "이메일 주소를 한 개 이상 쓸 때는 쉼표로 구분해 주세요.",
+    "使用一个或多个电子邮件地址时，请用逗号分隔。"
+  ],
+  "onboardingInvite.desktopButton.labelWithAction": [
+    "초대 후 진행하기",
+    "邀请后继续"
+  ],
+  "onboardingInvite.email.placeholder": ["이메일 주소", "电子邮件地址"],
+  "onboardingInvite.emails.addAnotherButtonText": [
+    "다른 이메일 추가하기",
+    "添加其他电子邮件"
+  ],
+  "onboardingInvite.invalidEmails.error.message": [
+    "일부 이메일이 유효하지 않은 것 같습니다. 다시 시도할까요?",
+    "一些电子邮件似乎无效。再试一下吗？"
+  ],
+  "onboardingInvite.shareInviteLink.caption": [
+    "이 링크를 클릭한 팀원을 자동으로 워크스페이스에 추가합니다.",
+    "将单击此链接的团队成员自动添加到工作区。"
+  ],
+  "onboardingInvite.sharingButton.copied": ["복사 완료!", "复制完成！"],
+  "onboardingInvite.sharingButton.copy": [
+    "공유 가능한 링크 받기",
+    "获取可共享链接"
+  ],
+  "onboardingInvite.sharingButton.tooltip.copy": [
+    "이 링크로 팀원 초대하기",
+    "使用此链接邀请团队成员"
+  ],
+  "onboardingInviteNew.error.invalidEmail.message": [
+    "유효하지 않은 이메일입니다.",
+    "电子邮件无效。"
+  ],
+  "onboardingProfile.mobileNameInput.placeholder": [
+    "예시: 에이다 러브레이스, 에이다, AL",
+    "示例:爱达爱比赛，爱达，AL"
+  ],
+  "onboardingProfile.mobileNameQuestion.label": [
+    "어떤 이름을 사용하시겠어요?",
+    "您要用什么名字？"
+  ],
+  "onboardingProfile.nameInput.placeholder": [
+    "예시: 에이다 러브레이스, 에이다, AL",
+    "示例:爱达爱比赛，爱达，AL"
+  ],
+  "onboardingProfile.nameQuestion.label": [
+    "어떤 이름을 사용하시겠어요?",
+    "您要用什么名字？"
+  ],
+  "outlinerViewAllMenuList.addToSidebar.tooltip": [
+    "사이드바에 추가",
+    "添加到侧边栏"
+  ],
+  "outlinerViewAllMenuList.removeFromSidebar.tooltip": [
+    "사이드바에서 제거",
+    "从侧边栏移除"
+  ],
+  "outlinerViewAllPopover.menu.header": ["공유된 페이지", "共享页面"],
+  "outlinerViewAllPopover.search.noMatchesPrompt": ["페이지 없음", "无页面"],
+  "outlinerViewAllPopover.search.placeholder": [
+    "공유된 페이지 검색",
+    "搜索共享页面"
+  ],
+  "page.backlinks.privatePages": [
+    "{count, plural, other {{count}개의 개인 페이지}}",
+    "{count，plural，other{{count}个个人主页}}"
+  ],
+  "page.backlinks.privatePagesTooltip": [
+    "액세스할 수 없는 페이지에서 동기화되어 있습니다.",
+    "无法访问的页面是同步的。"
+  ],
+  "pageErrorIndicator.loadingError.message": [
+    "죄송합니다. 페이지를 불러오는 중 오류가 발생했습니다. 다시 시도하려면 새로고침 해주세요.",
+    "很抱歉。加载页面时出错。要再试一次，请刷新。"
+  ],
+  "pageSearchResults.noResults.placeholder": ["검색 결과 없음", "无搜索结果"],
+  "pageShareMenu.copyMaybePublicLinkButton.label": ["복사", "复制"],
+  "pageTitle.flaggedContent": ["플래그가 지정된 콘텐츠", "已标记的内容"],
+  "pageViewBlock.movedPageBanner.ancestorMovedMessage": [
+    "{movedAncestorLink}의 변경된 위치는 {targetSpaceLink}입니다.",
+    "{movedAncestorLink}的改变位置是{targetSpaceLink}。"
+  ],
+  "pageViewBlock.movedPageBanner.pageMovedMessage": [
+    "이 페이지의 변경된 위치는 {targetSpaceLink}입니다.",
+    "此页面更改的位置为{targetSpaceLink}。"
+  ],
+  "pageViewBlock.trashBanner.restoreCurrentPageButton.label": [
+    "현재 페이지 복원",
+    "还原当前页面"
+  ],
+  "pageViewBlock.trashBanner.restoreLastVersionButton.label": [
+    "이전 버전 복원",
+    "还原早期版本"
+  ],
+  "permissionsInvite.closeInviteDialog.cancelButton.label": ["취소", "取消"],
+  "permissionsInvite.closeInviteDialog.confirmationButton.label": ["예", "是"],
+  "permissionsInvite.closeInviteDialog.confirmationMessage": [
+    "변경 내용이 저장되지 않았습니다. 변경 내용을 삭제할까요?",
+    "尚未保存更改。是否要删除更改？"
+  ],
+  "permissionsInvite.integration.select.message": ["통합 선택하기", "选择合并"],
+  "personPropertyMenu.integration.select.message": [
+    "통합 선택하기",
+    "选择合并"
+  ],
+  "pricingGrid.betaBadge": ["베타", "测试版"],
+  "pricingGrid.planAttribute.contentApi.title.v2": ["API", "API"],
+  "pricingGrid.planAttribute.contentApi.tooltip.v2": [
+    "<p>Notion API로 팀에 꼭 맞는 맞춤형 통합을 구축해 보세요. 지금 베타 버전을 만나보세요.</p>",
+    "使用<p>Notion API构建适合您的团队的自定义集成。现在就来看看测试版。</p>"
+  ],
+  "pricingGrid.switchPlanFromInAppPurchase.tooltip": [
+    "현재 Apple의 앱 내 구매를 통해 구독 중입니다. 요금제를 바꾸려면 먼저 Apple 구독을 취소해 주세요.",
+    "目前正在通过Apple的App内购买订阅。要改变计划，请先取消Apple订阅。"
+  ],
+  "profileSettings.personalInfoSection.nameInput.label": [
+    "선호하는 이름",
+    "首选名称"
+  ],
+  "profileSettings.personalInfoSection.nameMissing.message": [
+    "이름을 입력해 주세요.",
+    "请输入您的姓名。"
+  ],
+  "regionSettings.region.label": ["지역", "地区"],
+  "regionSettings.region.subtitle": [
+    "날짜, 숫자, 통화의 기본 표기 형식이 달라집니다",
+    "日期、数字和货币的默认符号格式不同。"
+  ],
+  "regionalFormatSettings.customDateFormat.applyChanges": [
+    "변경 사항 적용하기",
+    "应用更改"
+  ],
+  "regionalFormatSettings.customDateFormat.title": [
+    "형식 개별 설정",
+    "“格式”“单独设置”"
+  ],
+  "regionalFormatSettings.customSettingOption.fullDate.custom": [
+    "개별 설정",
+    "单个设置"
+  ],
+  "regionalFormatSettings.customSettingOption.fullDate.full": [
+    "전체 날짜",
+    "完整日期"
+  ],
+  "regionalFormatSettings.customSettingOption.fullDate.iso": [
+    "ISO 형식",
+    "ISO格式"
+  ],
+  "regionalFormatSettings.customSettingOption.fullDate.long": ["전체", "全部"],
+  "regionalFormatSettings.customSettingOption.fullDate.medium": [
+    "중간",
+    "中间"
+  ],
+  "regionalFormatSettings.customSettingOption.fullDate.short": [
+    "간단히",
+    "简单"
+  ],
+  "regionalFormatSettings.customSettingOption.number.number": ["숫자", "数字"],
+  "regionalFormatSettings.customSettingOption.number.percent": [
+    "퍼센트",
+    "百分比"
+  ],
+  "regionalFormatSettings.customSettingOption.number.withCommas": [
+    "쉼표가 포함된 숫자",
+    "包含逗号的数字"
+  ],
+  "regionalFormatSettings.customSettingOption.shortDate.custom": [
+    "개별 설정",
+    "单个设置"
+  ],
+  "regionalFormatSettings.customSettingOption.shortDate.iso": [
+    "ISO 형식",
+    "ISO格式"
+  ],
+  "regionalFormatSettings.customSettingOption.shortDate.short": [
+    "간단히",
+    "简单"
+  ],
+  "regionalFormatSettings.customSettingOption.weekStartOn.monday": [
+    "월요일",
+    "星期一"
+  ],
+  "regionalFormatSettings.customSettingOption.weekStartOn.sunday": [
+    "일요일",
+    "周日"
+  ],
+  "regionalFormatSettings.defaultRegionalSettings.startDayOfWeek.monday": [
+    "월요일",
+    "星期一"
+  ],
+  "regionalFormatSettings.defaultRegionalSettings.startDayOfWeek.sunday": [
+    "일요일",
+    "周日"
+  ],
+  "regionalFormatSettings.defaultSetting.fullDate": ["전체 날짜", "完整日期"],
+  "regionalFormatSettings.defaultSetting.numbers": ["숫자", "数字"],
+  "regionalFormatSettings.defaultSetting.shortDate": [
+    "날짜 간단히 표기",
+    "日期简写"
+  ],
+  "regionalFormatSettings.defaultSetting.weekStart": [
+    "한 주의 시작 요일",
+    "一周的开始日期"
+  ],
+  "regionalFormatSettings.label.subtitle": [
+    "해당 지역의 기본 형식을 자동으로 적용합니다",
+    "自动应用您所在地区的默认格式"
+  ],
+  "regionalFormatSettings.label.title": [
+    "지역의 기본 설정값 사용",
+    "使用本地默认设置"
+  ],
+  "removeUsersFromSpace.nonexistentSpace.error.message": [
+    "존재하지 않는 워크스페이스입니다.",
+    "不存在的工作空间。"
+  ],
+  "removeUsersFromSpace.nonexistentUser.error.message": [
+    "사용자가 존재하지 않습니다.",
+    "用户不存在。"
+  ],
+  "removeUsersFromSpace.removingLastAdmin.error.message": [
+    "마지막 관리자는 제거할 수 없습니다.",
+    "无法删除最后一个管理员。"
+  ],
+  "replitBlock.embeds.button.label": ["Repl 임베드", "Repl嵌入"],
+  "replitBlock.embeds.caption": ["Replit과 호환됩니다.", "与Replit兼容。"],
+  "replitBlock.placeholder": ["Repl 임베드", "Repl嵌入"],
+  "reportPage.additionalInformation.placeholder": [
+    "추가 정보 입력(선택 사항)",
+    "输入附加信息(可选)"
+  ],
+  "reportPage.helpButton.caption": ["Notion의 콘텐츠 정책", "Notion的内容策略"],
+  "reportPage.reportReasons.inappropriate_content": [
+    "부적절한 콘텐츠",
+    "内容不当"
+  ],
+  "reportPage.reportReasons.other_content_policy_violation": ["기타", "其他"],
+  "reportPage.reportReasons.phishing_or_spam": [
+    "피싱 또는 스팸",
+    "网络钓鱼或垃圾邮件"
+  ],
+  "reportPageModal.cancelButton.label": ["취소", "取消"],
+  "reportPageModal.closeButton.label": ["닫기", "关闭"],
+  "reportPageModal.mobile.title": ["페이지 신고", "页面申报"],
+  "reportPageModal.offlineMessage.description": [
+    "신고하려면 온라인으로 접속하세요.",
+    "要申报，请上网。"
+  ],
+  "reportPageModal.reportButton.label": ["신고", "申报"],
+  "reportPageModal.reportReasons.other_content_policy_violation": [
+    "기타",
+    "其他"
+  ],
+  "reportPageModal.reportReasons.phishing_or_spam": [
+    "피싱 또는 스팸",
+    "网络钓鱼或垃圾邮件"
+  ],
+  "reportPageModal.somethingWentWrong.label": [
+    "문제가 발생했습니다.",
+    "出现问题。"
+  ],
+  "reportPageModal.thanksForReporting": [
+    "이 페이지를 신고해 주셔서 감사합니다. 저희 팀이 확인하겠습니다.",
+    "感谢您举报此页面。我们队会确认的。"
+  ],
+  "reportPageModal.title": [
+    "이 페이지를 신고하시는 이유가 무엇인가요?",
+    "为什么要报告这个页面？"
+  ],
+  "richTextMenu.multiSelection.label": ["Multi-Selection", "多选择"],
+  "richTextMenu.multiSelection.tooltip": [
+    "Multi-selection alpha:{br}Some features are not supported{br}Click to learn out more",
+    "Multi-selection alpha：{br}Some features are not supported{br}Click to learn out more"
+  ],
+  "samlErrors.emailNotConfiguredForSamlSso.message": [
+    "이 이메일은 이 워크스페이스의 SAML SSO로 구성되지 않았습니다. 관리자에게 문의하세요.",
+    "此电子邮件未配置为此工作区的SAML SSO。请与管理员联系。"
+  ],
+  "scroller.scrollDown.name": ["아래로 스크롤", "向下滚动"],
+  "settings.regionSettings.regionSearch": ["지역을 검색하세요", "搜索区域"],
+  "sharedWithMePopover.sortOrder.lastEditedNewest": [
+    "최종 편집 일시",
+    "上次编辑时间"
+  ],
+  "sharedWithMePopover.sortOrder.relevance": ["연관성 높은 항목", "关联项"],
+  "sketchBlock.embeds.button.label": ["Sketch 임베드", "Sketch嵌入"],
+  "sketchBlock.embeds.caption": [
+    "공개 액세스가 활성화된 Sketch 링크와 호환됨",
+    "与启用了公共访问的Sketch链接兼容"
+  ],
+  "sketchBlock.placeholder": ["Sketch 임베드", "Sketch嵌入"],
+  "spaceBasicSettings.PublicHomePageSection.dropdownLabel": [
+    "웹에서 공유된 페이지",
+    "Web上共享的页面"
+  ],
+  "spaceBasicSettings.PublicHomePageSection.dropdownLabel.noResults": [
+    "결과 없음",
+    "无结果"
+  ],
+  "spaceBasicSettings.PublicHomePageSection.input.placeholder": [
+    "웹에서 공유한 페이지 선택",
+    "选择Web上共享的页面"
+  ],
+  "spaceBasicSettings.PublicHomePageSection.title": [
+    "공개 홈페이지",
+    "公共主页"
+  ],
+  "spaceBasicSettings.changeDomain.cta.text": ["직접 입력", "直接输入"],
+  "spaceBasicSettings.changeWorkspaceDomain.areYouSure": [
+    "도메인을 변경하시겠습니까?",
+    "是否确实要更改域？"
+  ],
+  "spaceBasicSettings.changeWorkspaceDomain.cancelButton.label": [
+    "취소",
+    "取消"
+  ],
+  "spaceBasicSettings.changeWorkspaceDomain.changeButton.label": [
+    "변경",
+    "变更"
+  ],
+  "spaceBasicSettings.changeWorkspaceDomain.prompt": [
+    "이 워크스페이스에는 공개 페이지가 있습니다. 도메인을 변경하면 {current_domain}.notion.site로 시작하는 공개 페이지의 기존 링크는 작동하지 않습니다. 도메인을 변경할까요?",
+    "此工作区有一个公共页面。更改域时，以{current_domain}.notion.site开头的公共页面上的现有链接将不起作用。是否要更改域？"
+  ],
+  "spaceBasicSettings.domainInUseError": [
+    "죄송합니다. 사용할 수 없는 도메인입니다.",
+    "很抱歉。不可用的域。"
+  ],
+  "spaceBasicSettings.domainRequiredError": [
+    "도메인 입력은 필수입니다.",
+    "域输入是必需的。"
+  ],
+  "spaceBasicSettings.domainSection.workspaceDomainInput.joinWorkspace.caption": [
+    "허용된 이메일 도메인이 있으면 누구나 {linkText} 링크를 통해 이 워크스페이스에 가입할 수 있습니다.",
+    "如果有允许的电子邮件域，任何人都可以通过{linkText}链接订阅此工作空间。"
+  ],
+  "spaceBasicSettings.domainSection.workspaceDomainInput.viewPublicPage.caption": [
+    "웹에서 공유된 페이지의 주소는 {linkText}로 시작합니다.",
+    "Web上共享的页面的地址以{linkText}开头。"
+  ],
+  "spaceIntegrationSettings.actionMenu.contactDeveloperSupportButton.label": [
+    "지원팀 문의",
+    "联系支持团队"
+  ],
+  "spaceIntegrationSettings.actionMenu.copyInternalIntegrationTokenButton.label": [
+    "내부용 통합 토큰 복사",
+    "内部统一令牌复制"
+  ],
+  "spaceIntegrationSettings.actionMenu.copyTokenModal.closeButton.label": [
+    "닫기",
+    "关闭"
+  ],
+  "spaceIntegrationSettings.actionMenu.copyTokenModal.copyTokenButton.label": [
+    "토큰 복사",
+    "复制令牌"
+  ],
+  "spaceIntegrationSettings.actionMenu.disconnectIntegrationButton.laber": [
+    "{integrationName}의 연결 끊기",
+    "断开{integrationName}的连接"
+  ],
+  "spaceIntegrationSettings.actionMenu.visitDeveloperWebsiteButton.label": [
+    "개발자 웹사이트 방문",
+    "访问开发人员网站"
+  ],
+  "spaceIntegrationSettings.error": ["문제가 발생했습니다.", "出现问题。"],
+  "spaceIntegrationSettings.helpButton.caption": [
+    "통합 관리에 대해 알아보기",
+    "了解集成管理"
+  ],
+  "spaceIntegrationSettings.integrationManagementSiteLink.caption": [
+    "나를 위한 통합 만들기",
+    "为我创建集成"
+  ],
+  "spaceIntegrationSettings.integrationTable.creationInfoColumn.contents": [
+    "{installerName}, {installedTime}",
+    "{installerName}，{installedTime}"
+  ],
+  "spaceIntegrationSettings.integrationTable.emptyMessage": [
+    "설치된 통합 없음",
+    "未安装集成"
+  ],
+  "spaceIntegrationSettings.integrationTable.integrationColumn.title": [
+    "통합",
+    "整合"
+  ],
+  "spaceIntegrationSettings.integrationTable.row.internalIntegrationLabel": [
+    "내부용",
+    "内部使用"
+  ],
+  "spaceIntegrationSettings.integrationtable.creationInfoColumn.title": [
+    "추가한 사용자",
+    "添加的用户"
+  ],
+  "spaceIntegrationSettings.title": [
+    "{workspaceName}의 전체 통합 목록",
+    "{workspaceName}的完整合并列表"
+  ],
+  "spaceSettings.closeSettingsDialog.cancelationButton.label": ["아니요", "不"],
+  "spaceSettingsSidebar.integrationsTab.title": ["통합", "整合"],
+  "spaceSettingsSidebar.subscriptionTab.title": ["구독", "订阅"],
+  "spaceSubscriptionBilling.address.invalidError": [
+    "유효하지 않은 주소입니다. 결제를 진행하려면 주소를 변경해주세요.",
+    "地址无效。要进行结算，请更改地址。"
+  ],
+  "spaceSubscriptionBilling.apply.label": ["사용하기", "使用"],
+  "spaceSubscriptionBilling.applyCouponModal.successMessage": [
+    "쿠폰 사용 성공!",
+    "优惠券使用成功！"
+  ],
+  "spaceSubscriptionBilling.applyCouponModal.title": [
+    "쿠폰 사용하기",
+    "使用优惠券"
+  ],
+  "spaceSubscriptionBilling.changeVATIDModal.subtitle": [
+    "국가 번호를 입력해 주세요",
+    "请输入国家号码"
+  ],
+  "spaceSubscriptionBilling.changeYourAddressModal.title": [
+    "주소 변경",
+    "更改地址"
+  ],
+  "spaceSubscriptionBilling.subscriptionSettingsSection.applyCoupon.title": [
+    "쿠폰 사용하기",
+    "使用优惠券"
+  ],
+  "spaceSubscriptionBilling.subscriptionSettingsSection.yourAddress.title": [
+    "주소",
+    "地址"
+  ],
+  "spaceSubscriptionBilling.vatCountryCode.subtitle": [
+    "국가 번호를 입력해 주세요",
+    "请输入国家号码"
+  ],
+  "spaceSubscriptionBilling.vatId.missingCountry": [
+    "사업자등록번호(VAT 번호)를 변경하려면 청구 주소지를 변경해 주세요.",
+    "要更改商业登记号码(VAT号码)，请更改帐单地址。"
+  ],
+  "spaceSubscriptionBilling.vatId.vatNotRequired": [
+    "현 주소상의 조세관할권에서는 사업자등록번호(VAT 번호)를 요구하지 않습니다.",
+    "当前地址的税务管辖权不要求商业登记号码(VAT编号)。"
+  ],
+  "spaceSubscriptionBillingInfoForm.countryDropdown.title": [
+    "국가나 지역 선택",
+    "选择国家或地区"
+  ],
+  "spaceSubscriptionPaymentForm.billingInformation.address": ["주소", "地址"],
+  "spaceSubscriptionPaymentForm.billingInformation.businessName": [
+    "회사 이름(선택)",
+    "公司名称(可选)"
+  ],
+  "spaceSubscriptionPaymentForm.billingInformation.city": ["시", "诗"],
+  "spaceSubscriptionPaymentForm.billingInformation.country": [
+    "국가나 지역",
+    "国家或地区"
+  ],
+  "spaceSubscriptionPaymentForm.billingInformation.fullName": ["이름", "名称"],
+  "spaceSubscriptionPaymentForm.billingInformation.header": [
+    "청구 정보",
+    "开单信息"
+  ],
+  "spaceSubscriptionPaymentForm.billingInformation.state": ["주/도", "州/省"],
+  "spaceSubscriptionPaymentForm.billingInformation.zipCode": [
+    "우편번호",
+    "邮政编码"
+  ],
+  "spaceSubscriptionPaymentForm.paymentInformation.header": [
+    "결제 정보",
+    "付款信息"
+  ],
+  "spaceSubscriptionPaymentForm.vatCountryCode.header": [
+    "부가가치세(선택)",
+    "增值税(可选)"
+  ],
+  "spaceSubscriptionPaymentForm.vatCountryCode.placeholder": [
+    "사업자등록번호(VAT 번호)",
+    "商业登记编号(增值税编号)"
+  ],
+  "spaceSubscriptionSettings.upgradeModal.billingIntervalSection.header": [
+    "청구 주기",
+    "开单周期"
+  ],
+  "spaceSubscriptionSettings.upgradeModal.checkEmailDialog.message": [
+    "이메일에서 청구서를 확인하세요.",
+    "查看电子邮件中的账单。"
+  ],
+  "spaceSubscriptionSettings.upgradeModal.contactSales": [
+    "영업팀에 문의",
+    "联系销售团队"
+  ],
+  "spaceSubscriptionSettings.upgradeModal.paymentMethodSection.header": [
+    "결제 방법",
+    "付款方式"
+  ],
+  "spaceSubscriptionSettings.upgradeModal.sales.questions": [
+    "질문이 있으세요? 자세한 내용은 영업팀에 문의해 주세요.",
+    "你有什么问题吗？详情请咨询销售团队。"
+  ],
+  "spaceSubscriptionUpdatePaymentMethod.applePay.total.label": [
+    "Notion - 정기적으로 결제됩니다",
+    "Notion-定期付款"
+  ],
+  "spaceSubscriptionUpdatePaymentMethod.creditCard.update.header": [
+    "신용카드 정보 변경",
+    "更改信用卡信息"
+  ],
+  "spaceSubscriptionUpdatePaymentMethod.creditCard.updateButton": [
+    "변경",
+    "变更"
+  ],
+  "spaceSubscriptionUpdatePaymentMethod.update.header": [
+    "결제 방법 변경",
+    "更改付款方法"
+  ],
+  "spaceSubscriptionUpgradeModal.applePay.total.label": [
+    "Notion - 정기적으로 결제됩니다",
+    "Notion-定期付款"
+  ],
+  "spaceSubscriptionUpgradeModal.billingAddress.invalidError": [
+    "유효하지 않은 주소입니다. 결제를 진행하려면 주소를 변경해주세요.",
+    "地址无效。要进行结算，请更改地址。"
+  ],
+  "spaceSubscriptionUpgradeModal.billingAddress.missingCountryError": [
+    "결제를 진행할 수 있도록 주소를 입력해 주세요.",
+    "请输入地址，以便进行结算。"
+  ],
+  "spaceSubscriptionUpgradeModal.creditCard.genericError": [
+    "이 카드로 결제를 처리할 수 없습니다. 다시 시도해 주세요.",
+    "此卡无法处理付款。请再试一次。"
+  ],
+  "spaceSubscriptionUpgradeModal.orderSummary.enterprisePlan": [
+    "기업 요금제 ({numberOfMembers, plural, one {# 명} other {# 명}})",
+    "企业计划({numberOfMembers，plural，one{#人}other{#人}})"
+  ],
+  "spaceSubscriptionUpgradeModal.orderSummary.header": [
+    "주문 내역",
+    "订单历史记录"
+  ],
+  "spaceSubscriptionUpgradeModal.orderSummary.personalPlan": [
+    "개인 프로 요금제",
+    "个人专业套餐"
+  ],
+  "spaceSubscriptionUpgradeModal.orderSummary.planSubtitle.billedMonthly": [
+    "{price} / 사용자 한 명당 / 한 달 이용료 · 매월 청구",
+    "{price}/每位用户/每月使用费·每月收费"
+  ],
+  "spaceSubscriptionUpgradeModal.orderSummary.planSubtitle.billedYearly": [
+    "{price} / 사용자 한 명당 / 한 달 이용료 · 연간 청구",
+    "{price}/每位用户/每月使用费·每年计费"
+  ],
+  "spaceSubscriptionUpgradeModal.orderSummary.teamPlan": [
+    "팀 요금제 ({numberOfMembers, plural, one {# 명} other {# 명}})",
+    "团队计划({numberOfMembers，plural，one{#人}other{#人}})"
+  ],
+  "spaceSubscriptionUpgradeModal.upgradeButton.enterprisePlan": [
+    "기업 요금제로 업그레이드",
+    "升级到企业计划"
+  ],
+  "spaceSubscriptionUpgradeModal.upgradeButton.personalProPlan": [
+    "개인 프로 요금제로 업그레이드",
+    "升级到个人专业版计划"
+  ],
+  "spaceSubscriptionUpgradeModal.upgradeButton.teamPlan": [
+    "팀 요금제로 업그레이드",
+    "升级到团队计划"
+  ],
+  "spaceSubscriptionUpgradeOrderSummary.orderTotal": ["합계", "合计"],
+  "stripeHelpers.cardDeclined.error.message": [
+    "카드 결제가 거부되었습니다.",
+    "卡付款被拒绝。"
+  ],
+  "stripeHelpers.invalidCVC.error.message": [
+    "카드의 보안 코드가 유효하지 않습니다.",
+    "卡的安全代码无效。"
+  ],
+  "stripeHelpers.invalidExpiryYear.error.message": [
+    "카드 유효 기간이 지났습니다.",
+    "卡过期了。"
+  ],
+  "stripeHelpers.invalidNumber.error.message": [
+    "유효하지 않은 신용 카드 번호입니다.",
+    "信用卡号码无效。"
+  ],
+  "subscriptionErrors.invalidVatError": [
+    "유효한 사업자등록번호(VAT 번호)가 아닙니다.",
+    "不是有效的商业登记号(VAT号)。"
+  ],
+  "subscriptionHelpers.billingInterval.monthly.option.title": [
+    "월간 요금제 – 멤버당 월 {memberPrice}",
+    "每月套餐-每个成员每月{memberPrice}"
+  ],
+  "subscriptionHelpers.billingInterval.yearly.option.title": [
+    "<pre>연간 요금제 –멤버당 월 {memberPrice} <span>{yearlySavingsPercent} 할인</span></pre>",
+    "<pre>年套餐-每个成员每月{memberPrice}<span>{yearlySavingsPercent}折扣</span</pre>"
+  ],
+  "subscriptionHelpers.lineItems.credit": ["크레딧", "信用额"],
+  "subscriptionHelpers.lineItems.promo": ["쿠폰", "优惠券"],
+  "subscriptionHelpers.lineItems.promo.subtitle": [
+    "{expirationInMonths}개월 사용 가능",
+    "{expirationInMonths}月可用"
+  ],
+  "subscriptionHelpers.lineItems.subTotal": ["소계", "小计"],
+  "subscriptionHelpers.lineItems.tax.subtitle": ["과세대상인 경우", "应纳税"],
+  "subscriptionHelpers.lineItems.tax.title": ["세금", "税金"],
+  "subscriptionHelpers.paymentMethod.appleOrGooglePay.title": [
+    "Apple Pay 또는 Google Pay",
+    "Apple Pay或Google Pay"
+  ],
+  "subscriptionHelpers.paymentMethod.creditCard.title": [
+    "신용카드 또는 직불카드",
+    "信用卡或借记卡"
+  ],
+  "subscriptionHelpers.paymentMethod.invoice.caption": [
+    "이메일로 청구서 받기",
+    "通过电子邮件接收账单"
+  ],
+  "subscriptionHelpers.paymentMethod.invoice.title": [
+    "ACH 또는 전신송금",
+    "ACH或电汇"
+  ],
+  "subscriptionSettings.button": ["구독 관리", "管理订阅"],
+  "subscriptionSettings.description": [
+    "현재 Apple의 앱 내 구매를 통해 구독 중입니다. Apple의 구독 설정에서 구독을 관리할 수 있습니다.",
+    "目前正在通过Apple的App内购买订阅。您可以在Apple的订阅设置中管理订阅。"
+  ],
+  "subscriptionSettings.mobileDescription": [
+    "App Store를 통해 개인 프로 요금제 구독을 관리하세요.",
+    "通过App Store管理个人套餐订阅。"
+  ],
+  "subscriptionSettings.title": ["구독", "订阅"],
+  "subscriptionUpgradeModal.oneLiner.enterprise": [
+    "회사 운영에 필요한 제어 기능과 지원을 제공하는 요금제입니다.",
+    "提供公司运营所需的控制和支持的计划。"
+  ],
+  "subscriptionUpgradeModal.oneLiner.personal": [
+    "훨씬 더 많은 일을 해야 하는 파워유저들을 위한 요금제입니다.",
+    "为需要做更多事情的电力用户准备的套餐。"
+  ],
+  "subscriptionUpgradeModal.oneLiner.team": [
+    "함께 쓰고, 계획하고, 작업하고 싶은 팀을 위한 요금제입니다.",
+    "这是针对想一起写、计划、工作的团队的套餐。"
+  ],
+  "subscriptionUpgradeModal.title.enterprise": [
+    "기업 요금제로 업그레이드",
+    "升级到企业计划"
+  ],
+  "subscriptionUpgradeModal.title.personal": [
+    "개인 프로 요금제로 업그레이드",
+    "升级到个人专业版计划"
+  ],
+  "subscriptionUpgradeModal.title.team": [
+    "팀 요금제로 업그레이드",
+    "升级到团队计划"
+  ],
+  "subscriptionUpgradeModal.title.teamFree": [
+    "팀 체험판으로 업그레이드",
+    "升级到团队体验版"
+  ],
+  "topbar.updatesButton.closeSidebartTooltip": [
+    "업데이트 사이드바 닫기",
+    "关闭更新侧边栏"
+  ],
+  "topbar.updatesButton.openSidebartTooltip": [
+    "업데이트 사이드바 열기",
+    "打开更新侧边栏"
+  ],
+  "topbar.updatesButton.slackIntegrationButton.connectedCaption": [
+    "Slack 채널에 연결됨",
+    "已连接到Slack通道"
+  ],
+  "topbar.updatesButton.slackIntegrationButton.disconnectTooltip": [
+    "이 페이지와 그 안에 포함된 페이지에 관한 업데이트 정보를 더 이상 받고 싶지 않다면 Slack 채널 연결을 해제하세요.",
+    "如果您不想再收到有关此页面及其包含页面的更新信息，请断开Slack通道的连接。"
+  ],
+  "topbarMoreButton.loggedOut.tooltip": ["기타", "其他"],
+  "transactionErrors.searchEngineIndexingNotAllowed.message": [
+    "이 워크스페이스는 공개 페이지가 검색 인덱스에 포함되는 것을 허용하지 않습니다.",
+    "此工作空间不允许公开页包含在搜索索引中。"
+  ],
+  "transactionErrors.upgradeClientIsNeeded.message": [
+    "새로고침(Cmd/Ctrl + R)해서 Notion을 업데이트하고 다시 시도해 주세요.",
+    "请刷新(Cmd/Ctrl+R)以更新Notion，然后重试。"
+  ],
+  "transclusionContainerBlock.actions.copySuccessMessage": [
+    "복사 완료! 이제 원하는 페이지에 붙여넣으면 콘텐츠를 동기화할 수 있습니다.",
+    "复制完成！现在，您可以将内容粘贴到所需的页面上以同步内容。"
+  ],
+  "transclusionContainerBlock.copy": ["복사하고 동기화하기", "复制并同步"],
+  "transclusionContainerBlock.differingPermissionsWarning": [
+    "일부 사용자는 이 콘텐츠를 볼 수 없습니다. 원본 페이지의 <page>원본 페이지 제목</page>은 이 페이지의 모든 사용자들과 공유되지 않습니다.",
+    "某些用户无法查看此内容。原始页面的<page>原始页面标题</page>不与这个页面上的所有用户共享。"
+  ],
+  "transclusionContainerBlock.editingMultiple": [
+    "{icon} {numberOfBacklinks, plural, one {사본 {numberOfBacklinks}개} other {사본 {numberOfBacklinks}개}} 편집 중",
+    "{icon}{numberOfBacklinks，plural，one{副本{numberOfBacklinks}个}正在编辑其它{numberOfBacklinks}个}}"
+  ],
+  "transclusionContainerBlock.editingOriginal": [
+    "원본 블록 편집 중",
+    "正在编辑源块"
+  ],
+  "transclusionContainerBlock.emptyEditingPlaceholder": [
+    "여기에 생성한 블록을 클릭하거나 끌어서 다른 페이지에 붙여넣으면 콘텐츠를 동기화할 수 있습니다.",
+    "您可以通过单击或拖动此处创建的块并将其粘贴到其他页面来同步内容。"
+  ],
+  "transclusionContainerBlock.learnMoreLabel": [
+    "동기화 블록에 대해 자세히 알아보기",
+    "了解有关同步块的更多信息"
+  ],
+  "transclusionContainerBlock.remove.confirm": [
+    "삭제하고 블록 사본 동기화 해제",
+    "删除并取消同步块副本"
+  ],
+  "transclusionContainerBlock.remove.confirmationMessage.header": [
+    "동기화를 해제할까요?",
+    "要禁用同步吗？"
+  ],
+  "transclusionContainerBlock.remove.confirmationMessage.text": [
+    "이 블록들과 {numberOfBacklinks, plural, one {{numberOfBacklinks}개의 다른 페이지} other {{numberOfBacklinks}개의 다른 페이지}}는 더 이상 동기화되지 않습니다.",
+    "这些块和{numberOfBacklinks、plural、one{{numberOfBacklinks}两个不同的页面}other{{numberOfBacklinks}其他页面}}不再同步。"
+  ],
+  "transclusionContainerBlock.remove.header": [
+    "원본을 삭제할까요?",
+    "您要删除原始文件吗？"
+  ],
+  "transclusionContainerBlock.remove.text": [
+    "이 블록들은 {numberOfBacklinks, plural, one {{numberOfBacklinks}개의 페이지} other {{numberOfBacklinks}개의 페이지}}와 동기화되고 있습니다. 원본을 삭제하면 해당 블록들은 더 이상 동기화되지 않습니다.",
+    "这些块正在与{numberOfBacklinks、plural、one{numberOfBacklinks}页}other{{numberOfBacklinks}个页面}}同步。删除源时，这些块将不再同步。"
+  ],
+  "transclusionContainerBlock.unsyncTransclusionContainer.confirm": [
+    "동기화 모두 해제",
+    "禁用所有同步"
+  ],
+  "transclusionContainerBlock.unsyncTransclusionContainer.header": [
+    "동기화를 모두 해제할까요?",
+    "要禁用所有同步吗？"
+  ],
+  "transclusionContainerBlock.unsyncTransclusionContainer.text": [
+    "이 블록들과 {numberOfBacklinks, plural, one {{numberOfBacklinks}개의 다른 페이지} other {{numberOfBacklinks}개의 다른 페이지}}는 더 이상 동기화되지 않습니다.",
+    "这些块和{numberOfBacklinks、plural、one{{numberOfBacklinks}两个不同的页面}other{{numberOfBacklinks}其他页面}}不再同步。"
+  ],
+  "transclusionContainerBlock.unsyncTransclusionReference.confirm": [
+    "동기화 해제",
+    "取消同步"
+  ],
+  "transclusionContainerBlock.unsyncTransclusionReference.header": [
+    "동기화를 해제할까요?",
+    "要禁用同步吗？"
+  ],
+  "transclusionContainerBlock.unsyncTransclusionReference.text": [
+    "선택한 블록은 더 이상 원본과 동기화되지 않습니다.",
+    "选定的块不再与源同步。"
+  ],
+  "unwantedContentTakedownEmail.body.appeal": [
+    "이와 같은 결정에 이의를 제기하려면 콘텐츠를 어떻게 수정했는지에 대한 설명이나 콘텐츠가 Notion 정책을 위반하지 않았다는 설명을 <mailto>team@makenotion.com</mailto>으로 보내주세요.",
+    "要对此类决定提出异议，请将如何修改内容的说明或内容没有违反Notion政策的说明发送到<mailto>team@makenotion.com</mailto>。"
+  ],
+  "unwantedContentTakedownEmail.body.consequence": [
+    "이에 따라 이 페이지는 비공개 페이지로 전환됩니다. 사용자 개인 워크스페이스에서는 계속해서 이 페이지에 액세스하실 수 있습니다.",
+    "因此，此页面将切换到私有页面。在用户个人工作空间中，您可以继续访问此页面。"
+  ],
+  "unwantedContentTakedownEmail.body.intro": [
+    "Notion을 이용해 주셔서 감사합니다.",
+    "感谢您使用Notion。"
+  ],
+  "unwantedContentTakedownEmail.body.takedown": [
+    "<pagelink>이 페이지</pagelink>에 있는 콘텐츠가 Notion의 <contentpolicylink>콘텐츠 이용 정책</contentpolicylink>에 명시된 기준에 맞지 않는 것으로 판단하였음을 알려 드립니다.",
+    "<pagelink>本页</pagelink>中的内容被认为不符合Notion的<contentpolicylink>内容使用政策</contentpolicylink>中规定的标准。"
+  ],
+  "unwantedContentTakedownEmail.closingText": [
+    "감사합니다.{br}Notion 팀",
+    "谢谢。{br}Notion团队"
+  ],
+  "unwantedContentTakedownEmail.greetingWithName": [
+    "{customerName} 님, 안녕하세요!",
+    "{customerName}先生，您好！"
+  ],
+  "unwantedContentTakedownEmail.greetingWithoutName": ["안녕하세요!", "你好！"],
+  "unwantedContentTakedownEmail.subjectLine.text": [
+    "Notion 계정 관련 안내: 공개 페이지의 콘텐츠 검토 결과",
+    "Notion帐户相关指南:公共页面的内容审核结果"
+  ],
+  "updateSegmentedControl.option.comment": ["댓글", "评论"],
+  "updateSegmentedControl.option.updates": ["모든 업데이트", "所有更新"],
+  "updateSidebar.commentContainer.empty": [
+    "페이지나 블록에 달린 댓글이 여기에 표시됩니다.",
+    "此处显示页面或块上的评论。"
+  ],
+  "updateSidebar.commentContainer.reply": ["답글", "回复"],
+  "updateSidebar.commentContainer.restricted": [
+    "이 제한된 페이지의 업데이트 사항을 볼 수 있는 권한이 없습니다.",
+    "您没有权限查看此受限页面的更新。"
+  ],
+  "updateSidebar.commentsTab.title": ["댓글", "评论"],
+  "updateSidebar.placeholder.addComment": ["댓글 달기", "评论"],
+  "updateSidebar.resolvedToggle.hideResolved": [
+    "해결된 댓글을 숨깁니다.",
+    "隐藏已解决的评论。"
+  ],
+  "updateSidebar.resolvedToggle.showResolved": [
+    "해결된 댓글을 표시합니다.",
+    "显示已解决的评论。"
+  ],
+  "updateSidebar.updatesContainer.empty": [
+    "이 페이지에는 업데이트 사항이 없습니다.",
+    "此页面没有更新。"
+  ],
+  "updateSidebar.updatesHeader.label": ["업데이트", "更新"],
+  "updateSidebar.updatesTab.title": ["업데이트 목록", "更新列表"],
+  "updateSidebarSelect.selectComments.label": ["댓글", "评论"],
+  "updateSidebarSelect.selectUpdates.label": ["모든 업데이트", "所有更新"],
+  "updateSpaceDomain.error.invalidDomain.message": [
+    "사용할 수 없는 도메인입니다.",
+    "不可用的域。"
+  ],
+  "updateSpaceDomain.error.missingDomain.message": [
+    "도메인 입력은 필수입니다.",
+    "域输入是必需的。"
+  ],
+  "upgradeMobileButton.upgradeButton.label": [
+    "개인 프로 요금제로 업그레이드",
+    "升级到个人专业版计划"
+  ],
+  "upsellActions.switchPlanFromInAppPurchase": [
+    "현재 Apple의 앱 내 구매를 통해 구독 중입니다. 요금제를 바꾸려면 먼저 Apple 구독을 취소해 주세요.",
+    "目前正在通过Apple的App内购买订阅。要改变计划，请先取消Apple订阅。"
+  ],
+  "userDataConsent.render.error": ["문제가 발생했습니다", "出了问题"],
+  "userSettings.userType.team1000+": ["1000명 이상", "1000人以上"],
+  "userSettings.userType.team101-1000": ["101명~1000명", "101人~1000人"],
+  "userSettings.userType.team2-50": ["2명~50명", "2人~50人"],
+  "userSettings.userType.team51-100": ["51명~100명", "51人~100人"],
+  "viewMoreOutlinerButton.label": [
+    "모두 보기({total} 페이지)",
+    "查看全部({total}页)"
+  ]
+}

@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 "discussionInput.attachFileIcon.intro.body":"附上图片和文件，做出生动的评论。"
 "discussionInput.attachFileIcon.intro.title":"附加图像和文件"
 "newBlock.excalidraw.fuzzySearchKeywords":"Excalidraw XCalidro"
@@ -205,4 +204,3 @@
 "updateSidebar.resolvedToggle.hideResolved":"隐藏已解决的评论。"
 "updateSidebar.resolvedToggle.showResolved":"显示已解决的评论。"
 "updateSidebar.updatesHeader.label":"更新"
->>>>>>> bf379bb... update 1.0.5 version
