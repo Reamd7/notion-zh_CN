@@ -2,6 +2,8 @@ const tencentcloud = require("tencentcloud-sdk-nodejs");
 const fs = require("fs");
 const axios = require("axios");
 const jsdom = require("jsdom");
+const packageJSON = require("./package.json")
+const new_version = packageJSON.version.split('.');
 
 const TmtClient = tencentcloud.tmt.v20180321.Client;
 const clientConfig = {
@@ -36,57 +38,68 @@ async function translate(src) {
       console.error("error", err);
     });
 }
+const prettier = require("prettier");
+function writeJSON(fileName, json) {
+  if (typeof json === "string") {
+    fs.writeFileSync(fileName, prettier.format(json, { parser: "json" }));
+  } else if (typeof json === "object") {
+    fs.writeFileSync(
+      fileName,
+      prettier.format(JSON.stringify(json), { parser: "json" })
+    );
+  }
+}
 
 async function timer() {
-  const assest = await axios.default.post("https://www.notion.so/api/v3/getAssetsJsonV2", {
-    hash: ""
-  });
-  console.log(assest.data.localeHtml)
-  const prevKr = JSON.parse(fs.readFileSync("./kr.json"));
-  const newKr = await jsdom.JSDOM.fromURL("https://www.notion.so" + assest.data.localeHtml['ko-KR']).then(v => {
-    const res = (v.window.document.getElementById("messages").textContent)
-    fs.writeFileSync("./source_kr.json", res)
+  const assest = await axios.default.post(
+    "https://www.notion.so/api/v3/getAssetsJsonV2",
+    {
+      hash: "",
+    }
+  );
+  console.log(assest.data.localeHtml);
+  const newKr = await jsdom.JSDOM.fromURL(
+    "https://www.notion.so" + assest.data.localeHtml["ko-KR"]
+  ).then((v) => {
+    const res = v.window.document.getElementById("messages").textContent;
     return JSON.parse(res);
   });
-  const newZh = await jsdom.JSDOM.fromURL("https://www.notion.so" + assest.data.localeHtml['zh-CN']).then(v => {
-    const res = (v.window.document.getElementById("messages").textContent)
-    fs.writeFileSync("./source_zh.json", res)
+  const newZh = await jsdom.JSDOM.fromURL(
+    "https://www.notion.so" + assest.data.localeHtml["zh-CN"]
+  ).then((v) => {
+    const res = v.window.document.getElementById("messages").textContent;
     return JSON.parse(res);
   });
-  const cacheZh = JSON.parse(fs.readFileSync("./zh.json"))
-  const nowZh = Object.keys(newKr).reduce((set, key) => {
-    if (newZh[key]) {
-      set[key] = newZh[key];
-    } else if (cacheZh[key]) {
-      set[key] = cacheZh[key];
-    }
-    return set;
-  }, {});
 
-  // console.log(nowZh);
+  // 上一次翻译时候的韩文
+  const prevKr = require("./kr.json");
+  // 上一次翻译的中文
+  const cacheZh = require("./zh.json");
+  // 现在已经翻译完成的中文缓存
 
-  const tar = Object.keys(newKr).reduce((set, key) => {
+  // 收集器
+  const collect = {};
+  // 待翻译字段
+  const tar = {};
+  Object.keys(newKr).forEach((key) => {
     let prevVal = prevKr[key];
     let newVal = newKr[key];
-    if (newVal !== prevVal) {
-      set[key] = newVal;
+    let zh = newZh[key] || cacheZh[key];
+    if (prevVal === newVal) {
+      if (zh) {
+        collect[key] = zh;
+      } else {
+        tar[key] = newVal;
+      }
+    } else {
+      tar[key] = newVal;
     }
-    return set;
-  }, {});
-
-  const collect = Object.keys(newKr).reduce((set, key) => {
-    let prevVal = prevKr[key];
-    let newVal = newKr[key];
-    let zhVal = nowZh[key];
-    if (newVal === prevVal && zhVal) {
-      set[key] = nowZh[key];
-    }
-    return set;
-  }, {});
+  });
 
   const array = Object.entries(tar);
   let start = 0;
   let temp = "";
+  fs.writeFileSync("./buffer", "");
   for (let end = start; end < array.length; end += 1) {
     const [_, val] = array[end];
     if ((temp + val).length > 2000 || end === array.length - 1) {
@@ -119,20 +132,44 @@ async function timer() {
       temp += val;
     }
   }
-  const prettier = require("prettier");
-  fs.writeFileSync(
-    "./kr.json",
-    prettier.format(JSON.stringify(newKr), { parser: "json" })
+
+  writeJSON("./kr.json", newKr);
+  const finalZh = JSON.stringify(
+    Object.keys(newKr).reduce((set, key) => {
+      // 重新排序
+      set[key] = collect[key];
+      return set;
+    }, {})
   );
+  writeJSON("./zh.json", finalZh);
+
+  writeJSON(
+    "./kr_zh.json",
+    Object.keys(newKr).reduce((set, key) => {
+      // 重新排序
+      if (!newZh[key]) {
+        set[key] = [newKr[key], collect[key]];
+      }
+      return set;
+    }, {})
+  );
+
+
+  new_version[2] = String(Number(new_version[2]) + 1);
+  packageJSON.version = new_version.join(".");
+  writeJSON("./package.json", packageJSON)
+
   fs.writeFileSync(
-    "./zh.json",
+    "./notion-zh_CN.js",
     prettier.format(
-      JSON.stringify(collect)
-        .replace(/\”/g, "”")
-        .replace(/\\“/g, "“")
-        .replace(/\\’/g, "’")
-        .replace(/\\‘/g, "‘"),
-      { parser: "json" }
+      fs
+        .readFileSync("./notion-zh_CN.template.js")
+        .toString()
+        .replace("%zh%", finalZh)
+        .replace("%version%", new_version.join(".")),
+      {
+        parser: "babel",
+      }
     )
   );
 }

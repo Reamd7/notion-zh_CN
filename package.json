@@ -1,12 +1,13 @@
 {
   "name": "notion_zh-cn",
-  "version": "2.0.1",
+  "version": "2.0.2",
   "main": "index.js",
   "repository": "https://github.com/Reamd7/notion-zh_CN.git",
   "author": "reamd7 <reamd7@gmail.com>",
   "license": "MIT",
   "private": false,
   "dependencies": {
+    "@types/node": "^16.6.1",
     "axios": "^0.21.1",
     "jsdom": "^17.0.0",
     "prettier": "^2.3.2",
