@@ -6938,7 +6938,7 @@
     function insert() {
       try {
         document.body.appendChild(script);
-        document.body.appendChild("afterbegin", routes);
+        document.body.appendChild(routes);
       } catch (e) {
         requestAnimationFrame(() => {
           insert();
