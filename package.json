@@ -5,5 +5,10 @@
   "repository": "https://github.com/Reamd7/notion-zh_CN.git",
   "author": "reamd7 <reamd7@gmail.com>",
   "license": "MIT",
-  "private": false
+  "private": false,
+  "dependencies": {
+    "axios": "^0.21.1",
+    "jsdom": "^17.0.0",
+    "tencentcloud-sdk-nodejs": "^4.0.183"
+  }
 }
