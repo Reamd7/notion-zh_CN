@@ -1,0 +1,9 @@
+{
+  "name": "notion_zh-cn",
+  "version": "2.0.1",
+  "main": "index.js",
+  "repository": "https://github.com/Reamd7/notion-zh_CN.git",
+  "author": "reamd7 <reamd7@gmail.com>",
+  "license": "MIT",
+  "private": false
+}
