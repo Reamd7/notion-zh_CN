@@ -785,6 +785,11 @@ prelude-ls@~1.1.2:
   resolved "https://registry.nlark.com/prelude-ls/download/prelude-ls-1.1.2.tgz#21932a549f5e52ffd9a827f570e04be62a97da54"
   integrity sha1-IZMqVJ9eUv/ZqCf1cOBL5iqX2lQ=
 
+prettier@^2.3.2:
+  version "2.3.2"
+  resolved "https://registry.nlark.com/prettier/download/prettier-2.3.2.tgz?cache=0&sync_timestamp=1624696193562&other_urls=https%3A%2F%2Fregistry.nlark.com%2Fprettier%2Fdownload%2Fprettier-2.3.2.tgz#ef280a05ec253712e486233db5c6f23441e7342d"
+  integrity sha1-7ygKBewlNxLkhiM9tcbyNEHnNC0=
+
 prop-types@^15.7.2:
   version "15.7.2"
   resolved "https://registry.npm.taobao.org/prop-types/download/prop-types-15.7.2.tgz?cache=0&sync_timestamp=1615984425557&other_urls=https%3A%2F%2Fregistry.npm.taobao.org%2Fprop-types%2Fdownload%2Fprop-types-15.7.2.tgz#52c41e75b8c87e72b9d9360e0206b99dcbffa6c5"
