@@ -6912,12 +6912,20 @@
   routes.type = "application/json";
   routes.setAttribute("data-locale", "zh-CN");
   routes.text = JSON.stringify({});
+  try {
+    const preferredLocale = JSON.parse(preferredLocaleStr);
+    if (preferredLocale.value) {
+      preferredLocale.value = "zh-CN"
+      window.localStorage.setItem("LRU:KeyValueStore2:preferredLocale", JSON.stringify(preferredLocale)) // search window.document.querySelector("#messages") 请阅读
+    } 
+  } catch (e) {
 
+  }
   var isElectron = "undefined" != typeof global || window.__isElectron;
   if (isElectron) {
-    if (process.platform == "darwin") {
-      script.setAttribute("data-locale", "en-US");
-    }
+    // if (process.platform == "darwin") {
+    //   script.setAttribute("data-locale", "en-US");
+    // }
     var observer = new MutationObserver(function (callback) {
       if (
         callback.filter((v) => {
