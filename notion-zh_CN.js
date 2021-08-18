@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         Notion-zh_CN notion的汉化脚本
 // @namespace    http://tampermonkey.net/
-// @version      2.0.3
+// @version      2.0.4
 // @description  notion的100%汉化脚本，基于官方中文+机器翻译韩文，支持app版本以及网页油猴，地址：https://github.com/reamd7/notion-zh_CN
 // @author       reamd7
 // @match        *://www.notion.so/*
@@ -24,9 +24,9 @@
       "你已达到团队版中的时间轴使用限制。升级以解除限制。",
     "SidebarTimelineWarning.header": "无限使用时间轴",
     "SidebarTimelineWarning.upgradeButton": "现在升级",
-    "UpdateSidebarFollowControl.following.caption": "发送所有更新和评论的通知",
+    "UpdateSidebarFollowControl.following.caption": "接收所有更新和评论通知",
     "UpdateSidebarFollowControl.following.label": "取消关注",
-    "UpdateSidebarFollowControl.notFollowing.caption": "无通知发送",
+    "UpdateSidebarFollowControl.notFollowing.caption": "不接收通知",
     "UpdateSidebarFollowControl.notFollowing.label": "不关注",
     "abstractBlock.embeds.button.label": "嵌入 Abstract",
     "abstractBlock.embeds.caption": "适用于启用了公共访问的 Abstract 链接",
@@ -1208,6 +1208,9 @@
     "blockPermissionsSettings.permissionItem.workspaceAccessNew":
       "{workspaceName}中的所有人",
     "blockPermissionsSettings.permissionsForBot.label": "机器人",
+    "blockPermissionsSettings.permissionsForBot.personalBot.label":
+      "只有我能看到的状态",
+    "blockPermissionsSettings.permissionsForBot.spaceBot.label": "与工作区共享",
     "blockPermissionsSettings.permissionsForUserGuest.label": "访客",
     "blockPermissionsSettings.privatePermissions.tooltip":
       "只有你可以访问该页面。",
@@ -1303,6 +1306,7 @@
     "botHelpers.unnamedBot": "未命名的机器人",
     "botHelpers.workspaceBotCaption":
       "机器人只能在当前的工作区中工作。任何管理员都可以编辑该机器人。机器人无权访问私人页面，除非被特定邀请。",
+    "botMenuItem.spaceBot.label": "与工作区共享",
     "botWithTokenSettings.deleteBot.label": "删除机器人",
     "botWithTokenSettings.revokeTokenModal.acceptButton.label": "撤销 API 令牌",
     "botWithTokenSettings.revokeTokenModal.message":
@@ -1498,7 +1502,7 @@
     "collectionFilterMenuHelpers.operator.relationDoesNotContain": "不包含",
     "collectionFilterMenuHelpers.operator.stringContains": "包含",
     "collectionFilterMenuHelpers.operator.stringDoesNotContain": "不包含",
-    "collectionFilterMenuHelpers.operator.stringEndsWith": "结尾是",
+    "collectionFilterMenuHelpers.operator.stringEndsWith": "以值结尾的数据",
     "collectionFilterMenuHelpers.operator.stringHasNoAlphabetPrefix": "(禁用)",
     "collectionFilterMenuHelpers.operator.stringIs": "是",
     "collectionFilterMenuHelpers.operator.stringIsNot": "不是",
@@ -2598,7 +2602,7 @@
     "discussionInput.insertMention.button.tooltip":
       "输入您想要声明的用户、页面和日期。",
     "discussionInput.saveComment.button": "保存",
-    "discussionInput.sendComment.button": "发送",
+    "discussionInput.sendComment.button": "评论",
     "discussionInput.uploadFile.button.tooltip": "附加文件",
     "discussionInput.uploadFile.tooManyFilesErrorMessage":
       "评论中不能上载超过{maxFiles}个文件。",
@@ -3949,6 +3953,7 @@
       "LaTeX 数学 区块 方程式 公式 算式 等式 表达式 $",
     "newBlock.equation.title": "方程式块",
     "newBlock.excalidraw.description": "嵌入Excalidraw白板。",
+    "newBlock.excalidraw.fuzzySearchKeywords": "Excalidraw Xcalidro",
     "newBlock.excalidraw.title": "Excalidraw",
     "newBlock.factory.description": "点击即可快速重复特定区块。",
     "newBlock.factory.fuzzySearchKeywords": "模板 复制 按钮 副本",
@@ -4038,9 +4043,10 @@
     "newBlock.quote.fuzzySearchKeywords": "引语",
     "newBlock.quote.title": "引用",
     "newBlock.replit.description": "嵌入Repl。",
+    "newBlock.replit.fuzzySearchKeywords": "宣传册",
     "newBlock.replit.title": "剥离",
     "newBlock.sketch.description": "嵌入Sketch文档。",
-    "newBlock.sketch.fuzzySearchKeywords": "宣传册",
+    "newBlock.sketch.fuzzySearchKeywords": "草绘Sketch",
     "newBlock.sketch.title": "Sketch",
     "newBlock.subHeader.description": "中标题。",
     "newBlock.subHeader.fuzzySearchKeywords": "子标题 副标题 中标题 2 ##",
@@ -6261,6 +6267,7 @@
     "subscriptionActions.upgradeForUnlimitedBlocks.shortMessage": "升级",
     "subscriptionErrors.cardRequiredError":
       "由于你尚未支付上次的账单，因此必须使用卡片支付。",
+    "subscriptionErrors.couponAlreadyApplied": "这是已经使用的优惠券。",
     "subscriptionErrors.creditExceedsBalanceError":
       "无法使用超过 {maxCredits} 的积分余额。",
     "subscriptionErrors.creditNoFreeLunch": "负积分是不可能的。",
@@ -6702,7 +6709,9 @@
     "updateSidebar.commentsTab.title": "评论",
     "updateSidebar.placeholder.addComment": "评论",
     "updateSidebar.resolvedToggle.hideResolved": "隐藏已解决的评论。",
+    "updateSidebar.resolvedToggle.hideResolvedTooltip": "隐藏已解决的评论",
     "updateSidebar.resolvedToggle.showResolved": "显示已解决的评论。",
+    "updateSidebar.resolvedToggle.showResolvedTooltip": "查看已解决的评论",
     "updateSidebar.updatesContainer.empty": "此页面没有更新。",
     "updateSidebar.updatesHeader.label": "更新",
     "updateSidebar.updatesTab.title": "更新列表",
@@ -6912,20 +6921,22 @@
   routes.type = "application/json";
   routes.setAttribute("data-locale", "zh-CN");
   routes.text = JSON.stringify({});
+
   try {
+    const preferredLocaleStr = window.localStorage.getItem(
+      "LRU:KeyValueStore2:preferredLocale"
+    );
     const preferredLocale = JSON.parse(preferredLocaleStr);
     if (preferredLocale.value) {
-      preferredLocale.value = "zh-CN"
-      window.localStorage.setItem("LRU:KeyValueStore2:preferredLocale", JSON.stringify(preferredLocale)) // search window.document.querySelector("#messages") 请阅读
-    } 
-  } catch (e) {
-
-  }
+      preferredLocale.value = "zh-CN";
+      window.localStorage.setItem(
+        "LRU:KeyValueStore2:preferredLocale",
+        JSON.stringify(preferredLocale)
+      ); // search window.document.querySelector("#messages") 请阅读
+    }
+  } catch (e) {}
   var isElectron = "undefined" != typeof global || window.__isElectron;
   if (isElectron) {
-    // if (process.platform == "darwin") {
-    //   script.setAttribute("data-locale", "en-US");
-    // }
     var observer = new MutationObserver(function (callback) {
       if (
         callback.filter((v) => {
