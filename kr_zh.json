@@ -1,12 +1,12 @@
 {
   "UpdateSidebarFollowControl.following.caption": [
-    "모든 업데이트와 댓글에 대한 알림 발송",
-    "发送所有更新和评论的通知"
+    "모든 업데이트와 댓글 알림 받기",
+    "接收所有更新和评论通知"
   ],
   "UpdateSidebarFollowControl.following.label": ["팔로잉", "取消关注"],
   "UpdateSidebarFollowControl.notFollowing.caption": [
-    "알림 발송 없음",
-    "无通知发送"
+    "알림 받지 않기",
+    "不接收通知"
   ],
   "UpdateSidebarFollowControl.notFollowing.label": ["팔로잉 안 함", "不关注"],
   "action.boardColumns.name": ["보드 열", "板列"],
@@ -1033,6 +1033,14 @@
     "전환에 대해 자세히 알아보기",
     "了解有关过渡的更多信息"
   ],
+  "blockPermissionsSettings.permissionsForBot.personalBot.label": [
+    "나만 볼 수 있는 상태",
+    "只有我能看到的状态"
+  ],
+  "blockPermissionsSettings.permissionsForBot.spaceBot.label": [
+    "워크스페이스와 공유됨",
+    "与工作区共享"
+  ],
   "blockPropertyValue.filterForNumberFormats.placeholder": [
     "숫자 형식 검색",
     "搜索数字格式"
@@ -1041,6 +1049,7 @@
     "안녕하세요. iOS 앱에서 문제를 감지했습니다. 이 앱을 삭제한 후에 App Store에서 다시 설치해 주세요.",
     "你好。iOS应用程序检测到问题。删除此应用后，请在App Store中重新安装它。"
   ],
+  "botMenuItem.spaceBot.label": ["워크스페이스와 공유됨", "与工作区共享"],
   "collection.numberFormat.baht": ["바트", "泰铢"],
   "collection.numberFormat.canadianDollar": ["캐나다 달러", "加元"],
   "collection.numberFormat.chileanPeso": ["칠레 페소", "智利比索"],
@@ -1789,6 +1798,10 @@
     "Excalidraw 화이트보드를 임베드하세요.",
     "嵌入Excalidraw白板。"
   ],
+  "newBlock.excalidraw.fuzzySearchKeywords": [
+    "Excalidraw 엑스칼리드로우",
+    "Excalidraw Xcalidro"
+  ],
   "newBlock.excalidraw.title": ["Excalidraw", "Excalidraw"],
   "newBlock.figma.fuzzySearchKeywords": ["피그마", "血浆"],
   "newBlock.file.fuzzySearchKeywords": ["파일", "文件"],
@@ -1845,12 +1858,13 @@
   "newBlock.pdf.fuzzySearchKeywords": ["PDF", "PDF"],
   "newBlock.quote.fuzzySearchKeywords": ["인용", "引语"],
   "newBlock.replit.description": ["Repl을 임베드하세요.", "嵌入Repl。"],
+  "newBlock.replit.fuzzySearchKeywords": ["리플릿", "宣传册"],
   "newBlock.replit.title": ["Replit", "剥离"],
   "newBlock.sketch.description": [
     "Sketch 문서를 임베드하세요.",
     "嵌入Sketch文档。"
   ],
-  "newBlock.sketch.fuzzySearchKeywords": ["리플릿", "宣传册"],
+  "newBlock.sketch.fuzzySearchKeywords": ["Sketch 스케치", "草绘Sketch"],
   "newBlock.sketch.title": ["Sketch", "Sketch"],
   "newBlock.toggle.fuzzySearchKeywords": ["토글 목록", "切换列表"],
   "newBlock.transclusionContainer.description": [
@@ -2594,6 +2608,10 @@
     "유효하지 않은 신용 카드 번호입니다.",
     "信用卡号码无效。"
   ],
+  "subscriptionErrors.couponAlreadyApplied": [
+    "이미 사용한 쿠폰입니다.",
+    "这是已经使用的优惠券。"
+  ],
   "subscriptionErrors.invalidVatError": [
     "유효한 사업자등록번호(VAT 번호)가 아닙니다.",
     "不是有效的商业登记号(VAT号)。"
@@ -2809,9 +2827,17 @@
     "해결된 댓글을 숨깁니다.",
     "隐藏已解决的评论。"
   ],
+  "updateSidebar.resolvedToggle.hideResolvedTooltip": [
+    "해결된 댓글 숨기기",
+    "隐藏已解决的评论"
+  ],
   "updateSidebar.resolvedToggle.showResolved": [
     "해결된 댓글을 표시합니다.",
     "显示已解决的评论。"
+  ],
+  "updateSidebar.resolvedToggle.showResolvedTooltip": [
+    "해결된 댓글 보기",
+    "查看已解决的评论"
   ],
   "updateSidebar.updatesContainer.empty": [
     "이 페이지에는 업데이트 사항이 없습니다.",
