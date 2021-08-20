@@ -16,6 +16,7 @@ async function main() {
   
   // 获取最新的官方中文
   const { newKr, newZh } = await SyncAssest();
+  writeJSON(path.join(__dirname, "../json/cacheZh.json"), newZh);
 
   writeJSON(path.join(__dirname, "../json/kr.json"), newKr);
 
