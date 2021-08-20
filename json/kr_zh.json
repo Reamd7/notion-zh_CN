@@ -1,4 +1,9 @@
 {
+  "UpdateSidebarFollowControl.follow.caption": [
+    "모든 업데이트와 댓글 알림 받기",
+    "接收所有更新和评论通知"
+  ],
+  "UpdateSidebarFollowControl.follow.label": ["팔로우", "关注"],
   "UpdateSidebarFollowControl.following.caption": [
     "모든 업데이트와 댓글 알림 받기",
     "接收所有更新和评论通知"
@@ -9,6 +14,11 @@
     "不接收通知"
   ],
   "UpdateSidebarFollowControl.notFollowing.label": ["팔로잉 안 함", "不关注"],
+  "UpdateSidebarFollowControl.unfollow.caption": [
+    "알림 받지 않기",
+    "不接收通知"
+  ],
+  "UpdateSidebarFollowControl.unfollow.label": ["팔로우 취소", "取消关注"],
   "action.boardColumns.name": ["보드 열", "板列"],
   "action.connectSlack.title": ["Slack에 연결", "连接到Slack"],
   "action.copyLinkToCurrentPage.snackBarMessage": [
@@ -1567,6 +1577,14 @@
     "{moreCommentsNumber, plural, other {{moreCommentsNumber}개의 댓글 더 보기}}",
     "{moreCommentsNumber，plural，other{{moreCommentsNumber}查看更多评论}}"
   ],
+  "discussionInput.attachFileIcon.intro.body": [
+    "이미지와 파일을 첨부해 생생한 댓글을 달아보세요.",
+    "附上图片和文件，做出生动的评论。"
+  ],
+  "discussionInput.attachFileIcon.intro.title": [
+    "이미지와 파일 첨부하기",
+    "附加图像和文件"
+  ],
   "discussionInput.commentComment.button": ["댓글", "评论"],
   "discussionInput.insertMention.button.tooltip": [
     "멘션하려는 사용자, 페이지, 날짜를 입력하세요.",
@@ -1581,6 +1599,9 @@
     "블록 복제 제한에 도달했습니다. 나중에 다시 시도하세요.",
     "已达到块复制限制。请稍后再试。"
   ],
+  "edit.blockDeletedEditStyles.defaultLabel": ["삭제된 블록", "删除的块"],
+  "edit.blockDeletedEditStyles.factoryLabel": ["삭제된 블록", "删除的块"],
+  "edit.permissionRole.canEditStyles.label": ["편집 허용", "允许编辑"],
   "embedBlock.originalLink.button": ["원본", "原稿"],
   "embedMenu.action.excalidraw": ["Excalidraw 임베드", "Excalidraw嵌入"],
   "embedMenu.action.replit": ["Repl 임베드", "Repl嵌入"],
@@ -1630,6 +1651,7 @@
     "크기 비율은 10에서 200 사이의 숫자만 가능합니다.",
     "大小比只能是10到200之间的数字。"
   ],
+  "externalObjectInstanceBlock.connect": ["연결", "连接"],
   "faq.mandatoryRefund.answer": [
     "<p>유럽 연합, 영국 또는 의무 환불 정책을 적용하는 다른 지역에 거주하시는 경우, 72시간이 지나도 월간 구독 요금을 환불 받으실 수도 있습니다. 예를 들어, 유럽 연합의 고객은 구매 후 72시간이 아닌 14일 이내에 월간 구독 요금을 전액 환불 받으실 수 있습니다.</p><p>환불 요청은 앱 내에서 문의하시거나 team@makenotion.com으로 이메일을 보내주세요. 의무 환불 정책을 적용하는 지역에 거주하시는 경우 저희에게 알려주시면 성심껏 도와드리겠습니다.</p>",
     "<p>如果您居住在欧盟、英国或其他适用强制性退款政策的地区，您甚至可以在72小时后退还您的月度订阅费。例如，欧盟的客户可以在14天内(而不是购买后72小时)全额退还每月订阅费。</p><p>请在应用内查询退款请求，或发送电子邮件至team@makenotion.com。如果您居住在适用强制性退款政策的地区，请告知我们，我们将竭诚为您提供帮助。</p>"
@@ -1799,7 +1821,7 @@
     "嵌入Excalidraw白板。"
   ],
   "newBlock.excalidraw.fuzzySearchKeywords": [
-    "Excalidraw 엑스칼리드로우",
+    "Excalidraw 엑스칼리드로",
     "Excalidraw Xcalidro"
   ],
   "newBlock.excalidraw.title": ["Excalidraw", "Excalidraw"],
@@ -2026,8 +2048,12 @@
   "oauthPageSearchResults.noResults.placeholder": ["결과 없음", "无结果"],
   "offlineErrors.offlineErrorMessage": ["오프라인 상태입니다.", "脱机。"],
   "onboardingInvite.addEmail.caption": [
-    "이메일 주소를 한 개 이상 쓸 때는 쉼표로 구분해 주세요.",
+    "이메일 주소를 한 개 이상 쓰거나 붙여넣기할 때는 쉼표, 띄어쓰기, 줄 바꿈으로 구분해 주세요.",
     "使用一个或多个电子邮件地址时，请用逗号分隔。"
+  ],
+  "onboardingInvite.bulkInvites.placeholder": [
+    "penny@myteam.com, varun@company.com, vicky@company.com, ...",
+    "penny@myteam.com，varun@company.com，vicky@company.com，."
   ],
   "onboardingInvite.desktopButton.labelWithAction": [
     "초대 후 진행하기",
@@ -2038,6 +2064,11 @@
     "다른 이메일 추가하기",
     "添加其他电子邮件"
   ],
+  "onboardingInvite.emails.addMoreOrInviteInBulkText": [
+    "추가 또는 단체로 초대",
+    "添加或集体邀请"
+  ],
+  "onboardingInvite.emails.sendInvites": ["초대하기", "邀请"],
   "onboardingInvite.invalidEmails.error.message": [
     "일부 이메일이 유효하지 않은 것 같습니다. 다시 시도할까요?",
     "一些电子邮件似乎无效。再试一下吗？"
@@ -2317,8 +2348,20 @@
     "与启用了公共访问的Sketch链接兼容"
   ],
   "sketchBlock.placeholder": ["Sketch 임베드", "Sketch嵌入"],
+  "spaceBasicSettings.PublicHomePageSection.caption": [
+    "{linkText}의 링크로 공개 홈페이지에 액세스하세요.",
+    "通过{linkText}的链接访问我们的公共主页。"
+  ],
+  "spaceBasicSettings.PublicHomePageSection.caption.tooltip": [
+    "클릭하여 링크 복사",
+    "单击以复制链接"
+  ],
+  "spaceBasicSettings.PublicHomePageSection.dropdownButton.clearHomePage": [
+    "홈페이지 지우기",
+    "清除主页"
+  ],
   "spaceBasicSettings.PublicHomePageSection.dropdownLabel": [
-    "웹에서 공유된 페이지",
+    "변경",
     "Web上共享的页面"
   ],
   "spaceBasicSettings.PublicHomePageSection.dropdownLabel.noResults": [
@@ -2700,7 +2743,7 @@
     "已连接到Slack通道"
   ],
   "topbar.updatesButton.slackIntegrationButton.disconnectTooltip": [
-    "이 페이지와 그 안에 포함된 페이지에 관한 업데이트 정보를 더 이상 받고 싶지 않다면 Slack 채널 연결을 해제하세요.",
+    "Slack 채널 연결을 해제하고 이 페이지와 하위 페이지의 업데이트를 더 이상 받지 않습니다.",
     "如果您不想再收到有关此页面及其包含页面的更新信息，请断开Slack通道的连接。"
   ],
   "topbarMoreButton.loggedOut.tooltip": ["기타", "其他"],
@@ -2781,6 +2824,16 @@
     "선택한 블록은 더 이상 원본과 동기화되지 않습니다.",
     "选定的块不再与源同步。"
   ],
+  "unfurlingMenu.actions.pasteAsEmbed.title": ["임베드로 붙여넣기", "嵌入粘贴"],
+  "unfurlingMenu.actions.pasteAsLink.title": ["링크로 붙여넣기", "粘贴为链接"],
+  "unfurlingMenu.actions.pasteAsMention.title": [
+    "멘션으로 붙여넣기",
+    "粘贴为支撑"
+  ],
+  "unfurlingMenu.actions.pasteAsPreview.title": [
+    "미리보기로 붙여넣기",
+    "粘贴为预览"
+  ],
   "unwantedContentTakedownEmail.body.appeal": [
     "이와 같은 결정에 이의를 제기하려면 콘텐츠를 어떻게 수정했는지에 대한 설명이나 콘텐츠가 Notion 정책을 위반하지 않았다는 설명을 <mailto>team@makenotion.com</mailto>으로 보내주세요.",
     "要对此类决定提出异议，请将如何修改内容的说明或内容没有违反Notion政策的说明发送到<mailto>team@makenotion.com</mailto>。"
@@ -2847,6 +2900,14 @@
   "updateSidebar.updatesTab.title": ["업데이트 목록", "更新列表"],
   "updateSidebarSelect.selectComments.label": ["댓글", "评论"],
   "updateSidebarSelect.selectUpdates.label": ["모든 업데이트", "所有更新"],
+  "updateSidebarTabCommentsSegmentedControl.option.resolved": [
+    "해결",
+    "已解决"
+  ],
+  "updateSidebarTabCommentsSegmentedControl.option.unresolved": [
+    "미해결",
+    "未解决"
+  ],
   "updateSpaceDomain.error.invalidDomain.message": [
     "사용할 수 없는 도메인입니다.",
     "不可用的域。"
