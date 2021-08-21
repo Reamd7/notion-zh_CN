@@ -13,7 +13,7 @@ async function main() {
   // 新官方韩文 newKr
   // 旧官方韩文 prevKr
   // 上一次翻译的中文
-  
+
   // 获取最新的官方中文
   const { newKr, newZh } = await SyncAssest();
   writeJSON(path.join(__dirname, "../json/cacheZh.json"), newZh);
@@ -34,7 +34,7 @@ async function main() {
     let prevVal = prevKr[key];
     let newVal = newKr[key];
     let prevZhVal = prevZh[key];
-    let newZhVal = newZh[key]
+    let newZhVal = newZh[key];
     let zh = prevZhVal || newZhVal; // 暂时策略，优先历史中文值。
     if (prevVal === newVal) {
       if (zh) {
@@ -86,13 +86,11 @@ async function main() {
   }
 
   writeJSON(path.join(__dirname, "../json/kr.json"), newKr);
-  const finalZh = JSON.stringify(
-    Object.keys(newKr).reduce((set, key) => {
-      // 重新排序
-      set[key] = collect[key];
-      return set;
-    }, {})
-  );
+  const finalZh = Object.keys(newKr).reduce((set, key) => {
+    // 重新排序
+    set[key] = collect[key];
+    return set;
+  }, {});
   writeJSON(path.join(__dirname, "../json/zh.json"), finalZh);
 
   writeJSON(
@@ -114,6 +112,12 @@ async function main() {
 
     writeJSON(path.join(__dirname, "../package.json"), packageJSON);
 
+    // 注入 中文关键字 json
+    const fuzzySearchKeywordsJSON = require(path.join(
+      __dirname,
+      "../json/fuzzySearchKeywords.json"
+    ));
+
     fs.writeFileSync(
       path.join(__dirname, "../notion-zh_CN.js"),
       prettier.format(
@@ -122,7 +126,18 @@ async function main() {
             path.join(__dirname, "../template/notion-zh_CN.template.js")
           )
           .toString()
-          .replace("%zh%", finalZh)
+          .replace(
+            "%zh%",
+            JSON.stringify(
+              Object.keys(finalZh).reduce((res, key) => {
+                res[key] = finalZh[key];
+                if (fuzzySearchKeywordsJSON[key]) {
+                  res[key] = fuzzySearchKeywordsJSON[key];
+                }
+                return res;
+              }, {})
+            )
+          )
           .replace("%version%", new_version.join(".")),
         {
           parser: "babel",
