@@ -18,7 +18,7 @@ notion-zh_CN 是对notion的汉化脚本。2.0版本支持网页端(油猴脚本
 官方连机器翻译都不愿意做。
 
 # 更新日志：
-- 2.1.0：支持中文版快捷命令！支持拼音输入的时候显示快捷命令！
+- 2.1.0：支持中文版快捷命令！支持拼音输入的时候显示快捷命令！支持安卓版本notion的汉化！
   ![](https://s3.us-west-2.amazonaws.com/secure.notion-static.com/205477fc-c9df-48f2-a816-50c8809f244b/%E6%97%A0%E6%A0%87%E9%A2%98.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAT73L2G45O3KS52Y5%2F20210821%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20210821T053807Z&X-Amz-Expires=86400&X-Amz-Signature=916007db665a09560b8cde53c10480377a1f58eed05a57f99853496dfb6c8729&X-Amz-SignedHeaders=host&response-content-disposition=filename%20%3D%22%25E6%2597%25A0%25E6%25A0%2587%25E9%25A2%2598.png%22)
 - 2.0.4: 彻底支持无论是默认英文还是韩文都会生效的汉化脚本（2021/08/19 油猴剧本 + win 客户端 + mac 客户端测试通过），统一 win mac 网页端实现。
 - 2.0.3：支持切换到韩文之后帮助文档还原到默认英文版本
@@ -41,9 +41,8 @@ notion-zh_CN 是对notion的汉化脚本。2.0版本支持网页端(油猴脚本
 **手动注入：**
 
 ### windows
-> <del>缺点：route 跳转是韩文的 helper</del> **请使用2.0.4版本**
 
-1. <del>修改notion 语言为**韩文**。（英文暂时不能**触发**汉化）</del>（自**2.0.4**版本后，任意语言都等价于中文了）
+1. （自**2.0.4**版本后，任意语言都等价于中文了）
 2. notion 安装目录：`C:\Users\用户名\AppData\Local\Programs\Notion\`
 3. 打开`C:\Users\用户名\AppData\Local\Programs\Notion\resources\app\renderer`文件夹
 4. 下载 `notion-zh_CN.js` 到上述文件夹（renderer）
@@ -57,14 +56,10 @@ notion-zh_CN 是对notion的汉化脚本。2.0版本支持网页端(油猴脚本
 
 ### Mac 
 
-> <del>使用2.0.0版本，只有系统语言设置为韩文才生效，但是这个方法改动太大，</del>**请使用2.0.4版本**
-
 网页端 以及 windows 端，能够**100% 汉化**，指的是**时间显示也有国际化的能力**，点击所有更新的时间轴中就能看出来，点击？悬浮按钮也能看到。
 
-<del>2.0.1 版本的 mac 汉化方法，很抱歉暂时没找到时间国际化的能力，所以希望使用的语言是英文。能够更熟悉时间国际化的格式。</del> **请使用2.0.4版本**
-
 1. 打开Finder，应用程序，右键`notion.app`，显示应用包内容
-2. <del>修改notion 语言为**英文**。</del>（自2.0.4版本后，任意语言都等价于中文了）
+2. （自2.0.4版本后，任意语言都等价于中文了）
 3. 打开 Notion.app\Contents\Resources\app\renderer\
 4. 下载 `notion-zh_CN.js` 到上述文件夹（renderer）
 5. 打开 `preload.js`
@@ -77,8 +72,12 @@ notion-zh_CN 是对notion的汉化脚本。2.0版本支持网页端(油猴脚本
    
 只是 同样打开 Notion.app\Contents\Resources\app\renderer\ 即可。。（安装包显示有同样目录结构）
 
+### 安卓端
+
+> 实质上只是注入了notion国际化json，然后借助mt管理器重新打包重新签名，没有加壳（可以自行解包看看），不信任可以不要下载。
+
+[](https://github.com/Reamd7/notion-zh_CN/blob/main/apk/Notion_0.6.160.apk)
+
 # 大家可以做什么？
 
 1. **优化汉化语言**。都是机器翻译，看到不通畅的句子欢迎提issue/pr直接改了 （修改 **`json/zh.json`** 文件，了解之前，先找到原有的英文，韩文对照一下再更新翻译。）
-2. [x] <del>为什么windows需要使用韩文才能触发汉化</del>
-3. [x] <del>Mac 上有没有相对简单的办法也有时间国际化的能力</del>
