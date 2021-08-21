@@ -10,12 +10,16 @@
     "@types/node": "^16.6.1",
     "axios": "^0.21.1",
     "jsdom": "^17.0.0",
+    "pinyin-pro": "^3.3.1",
     "prettier": "^2.3.2",
     "tencentcloud-sdk-nodejs": "^4.0.183"
   },
   "scripts": {
+    "dev-search": "node ./script/fuzzySearchKeywords.js",
     "dev": "cross-env env=DEV node ./script/main.js",
-    "build": "cross-env env=BUILD node ./script/main.js"
+    "build": "yarn run dev-search && cross-env env=BUILD node ./script/main.js"
   },
-  "devDependencies": { "cross-env": "^7.0.3" }
+  "devDependencies": {
+    "cross-env": "^7.0.3"
+  }
 }
