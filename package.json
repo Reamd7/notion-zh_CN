@@ -1,6 +1,6 @@
 {
   "name": "notion_zh-cn",
-  "version": "2.0.4",
+  "version": "2.1.0",
   "main": "index.js",
   "repository": "https://github.com/Reamd7/notion-zh_CN.git",
   "author": "reamd7 <reamd7@gmail.com>",
@@ -19,7 +19,5 @@
     "dev": "cross-env env=DEV node ./script/main.js",
     "build": "yarn run dev-search && cross-env env=BUILD node ./script/main.js"
   },
-  "devDependencies": {
-    "cross-env": "^7.0.3"
-  }
+  "devDependencies": { "cross-env": "^7.0.3" }
 }
