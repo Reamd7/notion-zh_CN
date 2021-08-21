@@ -31,7 +31,7 @@
   "action.languageMode.abap": ["ABAP", "ABAP"],
   "action.languageMode.arduino": ["Arduino", "Arduino"],
   "action.languageMode.bash": ["Bash", "Bash"],
-  "action.languageMode.basic": ["Basic", "基本版"],
+  "action.languageMode.basic": ["Basic", "Basic"],
   "action.languageMode.c": ["C", "C"],
   "action.languageMode.clojure": ["Clojure", "Clojure"],
   "action.languageMode.coffeescript": ["CoffeeScript", "CoffeeScript"],
@@ -39,13 +39,13 @@
   "action.languageMode.csharp": ["C#", "C#"],
   "action.languageMode.css": ["CSS", "CSS"],
   "action.languageMode.cstyle": ["Java/C/C++/C#", "Java/C/C++/C#"],
-  "action.languageMode.dart": ["Dart", "达特"],
+  "action.languageMode.dart": ["Dart", "Dart"],
   "action.languageMode.diff": ["Diff", "Diff"],
   "action.languageMode.docker": ["Docker", "Docker"],
   "action.languageMode.elixir": ["Elixir", "Elixir"],
   "action.languageMode.elm": ["Elm", "Elm"],
   "action.languageMode.erlang": ["Erlang", "Erlang"],
-  "action.languageMode.flow": ["Flow", "Flow(流式)"],
+  "action.languageMode.flow": ["Flow", "Flow"],
   "action.languageMode.fortran": ["Fortran", "Fortran"],
   "action.languageMode.fsharp": ["F#", "F#"],
   "action.languageMode.gherkin": ["Gherkin", "Gherkin"],
@@ -58,7 +58,7 @@
   "action.languageMode.java": ["Java", "Java"],
   "action.languageMode.javascript": ["JavaScript", "JavaScript"],
   "action.languageMode.json": ["JSON", "JSON"],
-  "action.languageMode.julia": ["Julia", "朱莉娅"],
+  "action.languageMode.julia": ["Julia", "Julia"],
   "action.languageMode.kotlin": ["Kotlin", "Kotlin"],
   "action.languageMode.latex": ["LaTeX", "LaTeX"],
   "action.languageMode.less": ["LESS", "LESS"],
@@ -67,7 +67,7 @@
   "action.languageMode.lua": ["Lua", "Lua"],
   "action.languageMode.makefile": ["Makefile", "Makefile"],
   "action.languageMode.markdown": ["Markdown", "Markdown"],
-  "action.languageMode.markup": ["Markup", "标记"],
+  "action.languageMode.markup": ["Markup", "Markup"],
   "action.languageMode.matlab": ["MATLAB", "MATLAB"],
   "action.languageMode.mermaid": ["Mermaid", "Mermaid"],
   "action.languageMode.name": ["언어 설정", "语言设置"],
@@ -85,15 +85,15 @@
   "action.languageMode.r": ["R", "R"],
   "action.languageMode.reason": ["Reason", "Reason"],
   "action.languageMode.ruby": ["Ruby", "Ruby"],
-  "action.languageMode.rust": ["Rust", "Rust(Rust)"],
+  "action.languageMode.rust": ["Rust", "Rust"],
   "action.languageMode.sass": ["Sass", "Sass"],
   "action.languageMode.scala": ["Scala", "Scala"],
   "action.languageMode.scheme": ["Scheme", "Scheme"],
   "action.languageMode.scss": ["SCSS", "SCSS"],
   "action.languageMode.shell": ["Shell", "Shell"],
-  "action.languageMode.sql": ["SQL", "SQL(SQL)"],
+  "action.languageMode.sql": ["SQL", "SQL"],
   "action.languageMode.swift": ["Swift", "Swift"],
-  "action.languageMode.typescript": ["TypeScript", "TypeScript(类型脚本)"],
+  "action.languageMode.typescript": ["TypeScript", "TypeScript"],
   "action.languageMode.vbdotnet": ["VB.net", "VB.net"],
   "action.languageMode.verilog": ["Verilog", "Verilog"],
   "action.languageMode.vhdl": ["VHDL", "VHDL"],
@@ -1808,14 +1808,14 @@
   "mathParseHelpers.tokenExpected.error": ["{token} 예상", "{token}预期"],
   "mathParseHelpers.unexpected.error": ["예기치 못한 {token}", "意外的{token}"],
   "mobileActionBar.nativeMenu.textColor.title": ["색상", "颜色"],
-  "newBlock.abstract.fuzzySearchKeywords": ["앱스트랙트", "应用软件"],
+  "newBlock.abstract.fuzzySearchKeywords": ["앱스트랙트", "Abstract"],
   "newBlock.breadcrumb.fuzzySearchKeywords": [
     "이동 경로 페이지 경로",
-    "穿行页面路径"
+    "面包屑 页面路径 路径"
   ],
-  "newBlock.callout.fuzzySearchKeywords": ["콜아웃", "注解"],
-  "newBlock.codepen.fuzzySearchKeywords": ["코드펜", "代码笔"],
-  "newBlock.drive.fuzzySearchKeywords": ["구글 드라이브", "谷歌驱动器"],
+  "newBlock.callout.fuzzySearchKeywords": ["콜아웃", "标注"],
+  "newBlock.codepen.fuzzySearchKeywords": ["코드펜", "Codepen"],
+  "newBlock.drive.fuzzySearchKeywords": ["구글 드라이브", "谷歌 网盘 云盘"],
   "newBlock.excalidraw.description": [
     "Excalidraw 화이트보드를 임베드하세요.",
     "嵌入Excalidraw白板。"
@@ -1825,83 +1825,83 @@
     "Excalidraw Xcalidro"
   ],
   "newBlock.excalidraw.title": ["Excalidraw", "Excalidraw"],
-  "newBlock.figma.fuzzySearchKeywords": ["피그마", "血浆"],
+  "newBlock.figma.fuzzySearchKeywords": ["피그마", "Figma"],
   "newBlock.file.fuzzySearchKeywords": ["파일", "文件"],
-  "newBlock.framer.fuzzySearchKeywords": ["프레이머", "弗雷默"],
+  "newBlock.framer.fuzzySearchKeywords": ["프레이머", "Framer"],
   "newBlock.fullPageBoard.fuzzySearchKeywords": [
     "보드 - 전체 페이지",
-    "主板-完整页面"
+    "看板 - 整页"
   ],
   "newBlock.fullPageCalendar.fuzzySearchKeywords": [
     "캘린더 - 전체 페이지",
-    "日历-整个页面"
+    "日历 - 整页"
   ],
   "newBlock.fullPageGallery.fuzzySearchKeywords": [
     "갤러리 - 전체 페이지",
-    "画廊-整个页面"
+    "画廊 - 整页"
   ],
   "newBlock.fullPageList.fuzzySearchKeywords": [
     "리스트 - 전체 페이지",
-    "列表-整个页面"
+    "列表 - 整页"
   ],
   "newBlock.fullPageTable.fuzzySearchKeywords": [
     "표 - 전체 페이지",
-    "表-整个页面"
+    "表格 - 整页"
   ],
   "newBlock.fullPageTimeline.fuzzySearchKeywords": [
     "타임라인 - 전체 페이지",
-    "时间轴-整个页面"
+    "时间轴 - 整页"
   ],
-  "newBlock.gist.fuzzySearchKeywords": ["깃허브 지스트", "吉卜吉斯特"],
-  "newBlock.inlineBoard.fuzzySearchKeywords": ["보드 - 인라인", "板-内联"],
+  "newBlock.gist.fuzzySearchKeywords": ["깃허브 지스트", "GitHub Gist"],
+  "newBlock.inlineBoard.fuzzySearchKeywords": ["보드 - 인라인", "看板 - 内嵌"],
   "newBlock.inlineCalendar.fuzzySearchKeywords": [
     "캘린더 - 인라인",
-    "日历-内联"
+    "日历 - 内嵌"
   ],
   "newBlock.inlineGallery.fuzzySearchKeywords": [
     "갤러리 - 인라인",
-    "画廊-内联"
+    "画廊 - 内嵌"
   ],
-  "newBlock.inlineList.fuzzySearchKeywords": ["리스트 - 인라인", "列表-内嵌"],
-  "newBlock.inlineTable.fuzzySearchKeywords": ["표 - 인라인", "表-内联"],
+  "newBlock.inlineList.fuzzySearchKeywords": ["리스트 - 인라인", "列表 - 内嵌"],
+  "newBlock.inlineTable.fuzzySearchKeywords": ["표 - 인라인", "表格 - 内联"],
   "newBlock.inlineTimeline.fuzzySearchKeywords": [
     "타임라인 - 인라인",
     "时间轴-内联"
   ],
-  "newBlock.invision.fuzzySearchKeywords": ["인비전", "英秘传"],
+  "newBlock.invision.fuzzySearchKeywords": ["인비전", "Invision"],
   "newBlock.linkToCollection.fuzzySearchKeywords": [
     "링크된 데이터베이스 생성",
-    "创建链接数据库"
+    "创建 链接 数据库"
   ],
-  "newBlock.loom.fuzzySearchKeywords": ["룸", "房间"],
-  "newBlock.maps.fuzzySearchKeywords": ["구글 지도", "谷歌地图"],
-  "newBlock.miro.fuzzySearchKeywords": ["미로", "迷宫"],
-  "newBlock.page.fuzzySearchKeywords": ["페이지", "页数"],
-  "newBlock.pdf.fuzzySearchKeywords": ["PDF", "PDF"],
-  "newBlock.quote.fuzzySearchKeywords": ["인용", "引语"],
+  "newBlock.loom.fuzzySearchKeywords": ["룸", "Loom"],
+  "newBlock.maps.fuzzySearchKeywords": ["구글 지도", "谷歌 地图"],
+  "newBlock.miro.fuzzySearchKeywords": ["미로", "Miro"],
+  "newBlock.page.fuzzySearchKeywords": ["페이지", "页面"],
+  "newBlock.pdf.fuzzySearchKeywords": ["PDF", "PDF P'D'F"],
+  "newBlock.quote.fuzzySearchKeywords": ["인용", "引用"],
   "newBlock.replit.description": ["Repl을 임베드하세요.", "嵌入Repl。"],
-  "newBlock.replit.fuzzySearchKeywords": ["리플릿", "宣传册"],
-  "newBlock.replit.title": ["Replit", "剥离"],
+  "newBlock.replit.fuzzySearchKeywords": ["리플릿", "Repl"],
+  "newBlock.replit.title": ["Replit", "Replit"],
   "newBlock.sketch.description": [
     "Sketch 문서를 임베드하세요.",
     "嵌入Sketch文档。"
   ],
-  "newBlock.sketch.fuzzySearchKeywords": ["Sketch 스케치", "草绘Sketch"],
+  "newBlock.sketch.fuzzySearchKeywords": ["Sketch 스케치", "Sketch"],
   "newBlock.sketch.title": ["Sketch", "Sketch"],
-  "newBlock.toggle.fuzzySearchKeywords": ["토글 목록", "切换列表"],
+  "newBlock.toggle.fuzzySearchKeywords": ["토글 목록", "切换 列表 切换列表"],
   "newBlock.transclusionContainer.description": [
     "모든 페이지에서 콘텐츠를 동기화하세요.",
     "同步所有页面的内容。"
   ],
   "newBlock.transclusionContainer.fuzzySearchKeywords": [
     "동기화 블록 생성 블록 레퍼런스 트랜스클루전 포털 블록 임베드",
-    "同步块生成块参考转引传门户块嵌入"
+    "同步"
   ],
   "newBlock.transclusionContainer.title": ["동기화 블록", "同步块"],
   "newBlock.tweet.fuzzySearchKeywords": ["트윗", "推文"],
-  "newBlock.typeform.fuzzySearchKeywords": ["타입폼", "类型形式"],
+  "newBlock.typeform.fuzzySearchKeywords": ["타입폼", "Typeform"],
   "newBlock.video.fuzzySearchKeywords": ["동영상", "视频"],
-  "newBlock.whimsical.fuzzySearchKeywords": ["윔지컬", "硬邦邦"],
+  "newBlock.whimsical.fuzzySearchKeywords": ["윔지컬", "Whimsical"],
   "oauthAuthorizationPage.error.cancelButton.label": ["취소", "取消"],
   "oauthAuthorizationPage.error.clientNotFound.body": [
     "클라이언트 ID가 불완전하거나 누락되었습니다. 자세한 내용은 <inlinetextlink>개발자 문서</inlinetextlink>를 참고하세요.",
