@@ -811,6 +811,11 @@ path-parse@^1.0.6:
   resolved "https://registry.nlark.com/path-parse/download/path-parse-1.0.7.tgz#fbc114b60ca42b30d9daf5858e4bd68bbedb6735"
   integrity sha1-+8EUtgykKzDZ2vWFjkvWi77bZzU=
 
+pinyin-pro@^3.3.1:
+  version "3.3.1"
+  resolved "https://registry.nlark.com/pinyin-pro/download/pinyin-pro-3.3.1.tgz#c8582b258e398e68b5275c984b94f5c154e075dd"
+  integrity sha1-yFgrJY45jmi1J1yYS5T1wVTgdd0=
+
 prelude-ls@~1.1.2:
   version "1.1.2"
   resolved "https://registry.nlark.com/prelude-ls/download/prelude-ls-1.1.2.tgz#21932a549f5e52ffd9a827f570e04be62a97da54"
