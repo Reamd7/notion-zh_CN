@@ -1085,11 +1085,11 @@
   "collectionFilterCombinatorGrid.filterOperator.and": ["및", "和"],
   "collectionFilterCombinatorGrid.filterOperator.or": ["또는", "或"],
   "collectionFilterMenuFilter.filterOperators.checkbox.order": [
-    "{operatorValue}{operator}",
+    "속성이 {operatorValue}{operator}",
     "{operatorValue}{operator}"
   ],
   "collectionFilterMenuFilter.filterOperators.date.order": [
-    "{operatorValue}{operator}",
+    "속성이 {operatorValue}{operator}",
     "{operatorValue}{operator}"
   ],
   "collectionFilterMenuFilter.filterOperators.file.order": [
@@ -1109,7 +1109,7 @@
     "属性{operatorValue}{operator}"
   ],
   "collectionFilterMenuFilter.filterOperators.relation.order": [
-    "{operatorValue}{operator}",
+    "속성이 {operatorValue}{operator}",
     "{operatorValue}{operator}"
   ],
   "collectionFilterMenuFilter.filterOperators.select.order": [
@@ -2047,6 +2047,23 @@
   ],
   "oauthPageSearchResults.noResults.placeholder": ["결과 없음", "无结果"],
   "offlineErrors.offlineErrorMessage": ["오프라인 상태입니다.", "脱机。"],
+  "onboardingChecklistButton.getMoreHelp.button": [
+    "더 많은 도움 받기",
+    "获得更多帮助"
+  ],
+  "onboardingChecklistButton.headerText": [
+    "<boldtext>Notion을 처음 사용하는 사용자</boldtext>",
+    "首次使用<boldtext>Notion的用户</boldtext>"
+  ],
+  "onboardingChecklistButton.stagesComplete": [
+    "{numTotalStages} 중 {numStagesComplete} 완료",
+    "{numTotalStages}已完成{numStagesComplete}"
+  ],
+  "onboardingChecklistButton.subtitleText": [
+    "환영합니다! 인터넷 상에 존재하는 유일한 올인원 작업 도구로 다양한 작업을 해보세요.",
+    "欢迎！使用互联网上唯一一款一体式工作工具，完成各种任务。"
+  ],
+  "onboardingChecklistButton.tooltip": ["체크리스트 시작하기", "启动核对表"],
   "onboardingInvite.addEmail.caption": [
     "이메일 주소를 한 개 이상 쓰거나 붙여넣기할 때는 쉼표, 띄어쓰기, 줄 바꿈으로 구분해 주세요.",
     "使用一个或多个电子邮件地址时，请用逗号分隔。"
@@ -2729,6 +2746,13 @@
   "subscriptionUpgradeModal.title.teamFree": [
     "팀 체험판으로 업그레이드",
     "升级到团队体验版"
+  ],
+  "topbar.publicPage.cta.label": ["Notion", "无"],
+  "topbar.publicPage.cta.label.get": ["Notion 사용하기", "使用Notion"],
+  "topbar.publicPage.cta.label.try": ["Notion을 사용해 보세요", "试试Notion"],
+  "topbar.publicPage.cta.label.try-free": [
+    "Notion을 무료로 사용해 보세요",
+    "免费使用Notion"
   ],
   "topbar.updatesButton.closeSidebartTooltip": [
     "업데이트 사이드바 닫기",
