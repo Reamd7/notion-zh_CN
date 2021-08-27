@@ -2057,7 +2057,7 @@
   ],
   "onboardingChecklistButton.stagesComplete": [
     "{numTotalStages} 중 {numStagesComplete} 완료",
-    "{numTotalStages}已完成{numStagesComplete}"
+    "已完成 {numStagesComplete} / {numTotalStages} "
   ],
   "onboardingChecklistButton.subtitleText": [
     "환영합니다! 인터넷 상에 존재하는 유일한 올인원 작업 도구로 다양한 작업을 해보세요.",
@@ -2747,9 +2747,9 @@
     "팀 체험판으로 업그레이드",
     "升级到团队体验版"
   ],
-  "topbar.publicPage.cta.label": ["Notion", "无"],
-  "topbar.publicPage.cta.label.get": ["Notion 사용하기", "使用Notion"],
-  "topbar.publicPage.cta.label.try": ["Notion을 사용해 보세요", "试试Notion"],
+  "topbar.publicPage.cta.label": ["Notion", "Notion"],
+  "topbar.publicPage.cta.label.get": ["Notion 사용하기", "使用 Notion"],
+  "topbar.publicPage.cta.label.try": ["Notion을 사용해 보세요", "试试 Notion"],
   "topbar.publicPage.cta.label.try-free": [
     "Notion을 무료로 사용해 보세요",
     "免费使用Notion"
