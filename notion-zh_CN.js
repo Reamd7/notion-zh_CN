@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         Notion-zh_CN notion的汉化脚本
 // @namespace    http://tampermonkey.net/
-// @version      2.1.0
+// @version      2.1.1
 // @description  notion的100%汉化脚本，基于官方中文+机器翻译韩文，支持app版本以及网页油猴，地址：https://github.com/reamd7/notion-zh_CN
 // @author       reamd7
 // @match        *://www.notion.so/*
@@ -4257,6 +4257,14 @@
     "onboardingActions.onboardingErrorDialog.closeButton.label": "关闭",
     "onboardingActions.onboardingErrorDialog.message": "糟糕，出了些问题。",
     "onboardingActions.onboardingErrorDialog.startOverButton.label": "重新开始",
+    "onboardingChecklistButton.getMoreHelp.button": "获得更多帮助",
+    "onboardingChecklistButton.headerText":
+      "首次使用<boldtext>Notion的用户</boldtext>",
+    "onboardingChecklistButton.stagesComplete":
+      "已完成 {numStagesComplete} / {numTotalStages} ",
+    "onboardingChecklistButton.subtitleText":
+      "欢迎！使用互联网上唯一一款一体式工作工具，完成各种任务。",
+    "onboardingChecklistButton.tooltip": "启动核对表",
     "onboardingGDPR.agreeButton.label": "同意",
     "onboardingGDPR.consentInfo.paragraph1.body":
       "我们使用 Cookie 来安全地识别你的帐户，让你保持登录状态，并改进我们的服务。",
@@ -6633,6 +6641,10 @@
     "topbar.presenceIndicator.viewingNowWithLocation.tooltip":
       "正在查看。点击以查看他的位置。",
     "topbar.publicPage.comment": "评论",
+    "topbar.publicPage.cta.label": "Notion",
+    "topbar.publicPage.cta.label.get": "使用 Notion",
+    "topbar.publicPage.cta.label.try": "试试 Notion",
+    "topbar.publicPage.cta.label.try-free": "免费使用Notion",
     "topbar.publicPage.duplicateButton.label": "保存副本",
     "topbar.publicPage.edit": "编辑",
     "topbar.publicPage.searchButton.label": "搜索",
