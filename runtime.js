@@ -7364,6 +7364,9 @@ function runtimeObserver() {
     // =====================================
     "Duplicate": "制作副本",
     "Comment": "评论",
+    "Turn into": "转换成",
+    "Insert below": "在下方插入",
+    "Color": "颜色",
     // =====================================
     
         "Default": "默认",
