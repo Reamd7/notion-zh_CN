@@ -1759,7 +1759,7 @@
   ],
   "fullPageError.reportAProblem.label": ["문제 신고하기", "报告问题"],
   "fullPageError.somethingWrong.label": ["문제가 발생했나요?", "出问题了吗？"],
-  "guestPagesPopup.permissionsForUserGuest.label": ["게스트", "房客"],
+  "guestPagesPopup.permissionsForUserGuest.label": ["게스트", "访客"],
   "helpButton.whatsNew.menuItem": ["새로운 소식", "新消息"],
   "invalidVATEmail.billingLink.text": [
     "<b>사업자등록번호를 <billinglink>이 링크</billinglink>에서 변경해 주세요.</b>",
