@@ -73,10 +73,10 @@ notion-zh_CN 是对notion的汉化脚本。2.0版本支持网页端(油猴脚本
 只是 同样打开 Notion.app\Contents\Resources\app\renderer\ 即可。。（安装包显示有同样目录结构）
 
 ### 安卓端
+- 下载apk：[https://github.com/Reamd7/notion-zh_CN/blob/main/apk/Notion_0.6.160_zh_cn.apk](https://github.com/Reamd7/notion-zh_CN/blob/main/apk/Notion_0.6.160_zh_cn.apk)
+- 或者下载这个压缩包然后解压：
 
-> 实质上只是注入了notion国际化json，然后借助mt管理器重新打包重新签名，没有加壳（可以自行解包看看），不信任可以不要下载。
-
-[](https://github.com/Reamd7/notion-zh_CN/blob/main/apk/Notion_0.6.160.apk)
+[Notion_0.6.160_zh_cn_arm64.7z](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/9947d7fb-c238-40db-bec8-482db1149362/Notion_0.6.160_zh_cn_arm64.7z)
 
 # 大家可以做什么？
 
