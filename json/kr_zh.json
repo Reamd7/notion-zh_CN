@@ -1821,7 +1821,7 @@
     "嵌入Excalidraw白板。"
   ],
   "newBlock.excalidraw.fuzzySearchKeywords": [
-    "Excalidraw 엑스칼리드로",
+    "Excalidraw 엑스칼리드로우",
     "Excalidraw Xcalidro"
   ],
   "newBlock.excalidraw.title": ["Excalidraw", "Excalidraw"],
@@ -2108,7 +2108,7 @@
     "电子邮件无效。"
   ],
   "onboardingProfile.mobileNameInput.placeholder": [
-    "예시: 에이다 러브레이스, 에이다, AL",
+    "예시: 홍길동, 길동, H",
     "示例:爱达爱比赛，爱达，AL"
   ],
   "onboardingProfile.mobileNameQuestion.label": [
@@ -2116,7 +2116,7 @@
     "您要用什么名字？"
   ],
   "onboardingProfile.nameInput.placeholder": [
-    "예시: 에이다 러브레이스, 에이다, AL",
+    "예시: 홍길동, 길동, H",
     "示例:爱达爱比赛，爱达，AL"
   ],
   "onboardingProfile.nameQuestion.label": [
@@ -2159,6 +2159,10 @@
   "pageViewBlock.movedPageBanner.pageMovedMessage": [
     "이 페이지의 변경된 위치는 {targetSpaceLink}입니다.",
     "此页面更改的位置为{targetSpaceLink}。"
+  ],
+  "pageViewBlock.permanentlyDeleted.message": [
+    "이 페이지는 영구적으로 삭제되었습니다.",
+    "此页面已永久删除。"
   ],
   "pageViewBlock.trashBanner.restoreCurrentPageButton.label": [
     "현재 페이지 복원",
@@ -2669,7 +2673,7 @@
     "信用卡号码无效。"
   ],
   "subscriptionErrors.couponAlreadyApplied": [
-    "이미 사용한 쿠폰입니다.",
+    "이 쿠폰은 이미 적용되었습니다.",
     "这是已经使用的优惠券。"
   ],
   "subscriptionErrors.invalidVatError": [
