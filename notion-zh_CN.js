@@ -3450,7 +3450,7 @@
     "guestPagesPopup.addMemberPermissionButton.tooltip":
       "该访客将成为该工作区的成员。",
     "guestPagesPopup.guestAccessiblePagesCaption": "该访客可以访问这些页面",
-    "guestPagesPopup.permissionsForUserGuest.label": "房客",
+    "guestPagesPopup.permissionsForUserGuest.label": "访客",
     "guestPagesPopup.privatePagePlaceholder": "私人页面",
     "guestPagesPopup.removeGuest.updatingMessage": "更新中⋯",
     "guestPagesPopup.removeGuestButton.label": "移除",
