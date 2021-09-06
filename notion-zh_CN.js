@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         Notion-zh_CN notion的汉化脚本
 // @namespace    http://tampermonkey.net/
-// @version      2.1.1
+// @version      2.2.0
 // @description  notion的100%汉化脚本，基于官方中文+机器翻译韩文，支持app版本以及网页油猴，地址：https://github.com/reamd7/notion-zh_CN
 // @author       reamd7
 // @match        *://www.notion.so/*
@@ -4731,6 +4731,7 @@
       "{movedAncestorLink}的改变位置是{targetSpaceLink}。",
     "pageViewBlock.movedPageBanner.pageMovedMessage":
       "此页面更改的位置为{targetSpaceLink}。",
+    "pageViewBlock.permanentlyDeleted.message": "此页面已永久删除。",
     "pageViewBlock.resolvedComments.menuTabTitle": "已解决的评论",
     "pageViewBlock.show.backlinks":
       "{numberOfBacklinks, plural, other {{numberOfBacklinks} 个反向链接}}",

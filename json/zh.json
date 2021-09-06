@@ -3953,6 +3953,7 @@
   "pageViewBlock.hideDescription.button": "隐藏描述",
   "pageViewBlock.movedPageBanner.ancestorMovedMessage": "{movedAncestorLink}的改变位置是{targetSpaceLink}。",
   "pageViewBlock.movedPageBanner.pageMovedMessage": "此页面更改的位置为{targetSpaceLink}。",
+  "pageViewBlock.permanentlyDeleted.message": "此页面已永久删除。",
   "pageViewBlock.resolvedComments.menuTabTitle": "已解决的评论",
   "pageViewBlock.show.backlinks": "{numberOfBacklinks, plural, other {{numberOfBacklinks} 个反向链接}}",
   "pageViewBlock.show.backlinks.tooltip": "显示链接到该页面的页面",
