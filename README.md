@@ -94,7 +94,7 @@ notion-zh_CN 是对notion的汉化脚本。
 
 3. 复制 [worker.js](https://github.com/Reamd7/notion-zh_CN/blob/main/worker.js) 到左侧代码框，修改
    ```js
-   const BaseUrl = "https://xxxx.子域名.workers.dev" // 修改为自己的子域名
+   const BaseUrl = "xxxx.子域名.workers.dev" // 修改为自己的子域名
    ```
 
 4. `Save and deploy`。如果正常，右侧应显示提示框：
