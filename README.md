@@ -1,25 +1,35 @@
 # notion-zh_CN 是什么？
 
-notion-zh_CN 是对notion的汉化脚本。2.0版本支持网页端(油猴脚本)+桌面端。2.2.0 安卓版本notion，与官方版共存 
+notion-zh_CN 是对notion的汉化脚本。
+2.0 版本支持网页端(油猴脚本)+桌面端。
+2.2.0 安卓版本notion，与官方版共存。
+2.3.0 cloudflare worker 代理，提供加速以及平台无关的汉化能力。
 
-> 如果担心有问题，可以等待官方中文版，可以稍微学习网页开发，可以询问网页开发朋友，notion_zh_CN.js 究竟做了什么操作，对notion 应用本体有什么影响，没有理由的担心只能体现对别人的不信任。
-
+> 如果担心有问题，可以等待官方中文版，可以稍微学习网页开发，可以询问网页开发朋友，项目都是开源的。究竟做了什么操作，对notion 应用本体有什么影响，没有理由的担心只能体现对别人的不信任。
+> 
+> 该项目仅用于学习，如有侵权24h内会马上删除。
 
 ## 功能
 
 1. 网页端 ( 油猴脚本 ) + 桌面端 ( win / mac ) 支持最新版本
-  > 未来官方支持中文版也会跟进（如果官方做得好就可以功成身退了）
+   > 未来官方支持中文版也会跟进（如果官方做得好就可以功成身退了）
 
-2. 支持 中文 / **拼音** 快捷键输入（2.1.0支持）
-  > 支持拼音快捷键是便于英文，中文同时输入的时候不用反复切换输入法来保证快捷键输入。
+2. 支持 中文 / **拼音** 快捷键输入（2.1.0 支持）
+   > 支持拼音快捷键是便于英文，中文同时输入的时候不用反复切换输入法来保证快捷键输入。
 
 3. 2.2.0 支持安卓版本notion的汉化！
+   > 在 apk 中注入 android.js的代码，远程下载runtime.js注入汉化文本
+
+4. 2.3.0 提供cloudflare worker 版本代理 notion.so 域名
+   这是一个**平台无关**（IOS 上的safari也能直接使用）的汉化方式，只要你自己部署cloudflare worker，就可以使用。附带cf代理**加速**的能力。
+   > 其实这里应该可以做域名映射到notion.so的访问的。(从而实现全平台汉化)
 
 # 为什么要做这个项目？
 
 官方连机器翻译都不愿意做。
 
 # 更新日志：
+- 2.3.0 支持使用 cloudflare worker 进行代理 notion.so 域名进行加速及国际化
 - 2.2.0 支持 安卓版本notion，与官方版共存 的汉化！
 - 2.1.0：支持中文版快捷命令！支持拼音输入的时候显示快捷命令！
   ![](https://s3.us-west-2.amazonaws.com/secure.notion-static.com/205477fc-c9df-48f2-a816-50c8809f244b/%E6%97%A0%E6%A0%87%E9%A2%98.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAT73L2G45O3KS52Y5%2F20210821%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20210821T053807Z&X-Amz-Expires=86400&X-Amz-Signature=916007db665a09560b8cde53c10480377a1f58eed05a57f99853496dfb6c8729&X-Amz-SignedHeaders=host&response-content-disposition=filename%20%3D%22%25E6%2597%25A0%25E6%25A0%2587%25E9%25A2%2598.png%22)
@@ -75,7 +85,25 @@ notion-zh_CN 是对notion的汉化脚本。2.0版本支持网页端(油猴脚本
    
 只是 同样打开 Notion.app\Contents\Resources\app\renderer\ 即可。。（安装包显示有同样目录结构）
 
-### 安卓端
+
+## cloudflare worker
+
+1. 首页：https://workers.cloudflare.com
+
+2. 注册，登陆，`Start building`，取一个子域名，`Create a Worker`。
+
+3. 复制 [worker.js](https://github.com/Reamd7/notion-zh_CN/blob/main/worker.js) 到左侧代码框，修改
+   ```js
+   const BaseUrl = "https://xxxx.子域名.workers.dev" // 修改为自己的子域名
+   ```
+
+4. `Save and deploy`。如果正常，右侧应显示提示框：
+   Mismatch between origin and baseUrl (dev).
+   好的（这里就证明汉化成功了）
+5. 以后可直接访问 `https://xxxx.子域名.workers.dev`。
+
+## 安卓端
+
 - 下载apk：[https://github.com/Reamd7/notion-zh_CN/blob/main/apk/Notion_0.6.160_zh_cn.apk](https://github.com/Reamd7/notion-zh_CN/blob/main/apk/Notion_0.6.160_zh_cn.apk)
 - 或者下载这个压缩包然后解压：
 
