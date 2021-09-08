@@ -37,18 +37,16 @@
             ) {
               scriptItem.remove();
               const script_src = scriptItem.src;
-              return Fetch(script_src).then(function (res) {
-                console.log(script_src);
-                res.text().then(function (val) {
-                  console.log(val);
-                  eval(val);
-                  i += 1;
-                  if (i === list.length) {
-                    console.log("deviceready");
-                    document.dispatchEvent(new Event("deviceready"));
-                    document.body.removeChild(iframe);
-                  }
-                });
+              console.log(script_src)
+              return Fetch(script_src).finally(function(){
+                i += 1;
+                if (i === list.length) {
+                  console.log("deviceready");
+                  document.dispatchEvent(new Event("deviceready"));
+                  document.body.removeChild(iframe);
+                }
+              }).then(function (res) {
+                res.text().then(eval);
               });
             });
           });
