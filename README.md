@@ -107,7 +107,7 @@ notion-zh_CN 是对notion的汉化脚本。
 - 下载apk：[https://github.com/Reamd7/notion-zh_CN/blob/main/apk/Notion_0.6.160_zh_cn.apk](https://github.com/Reamd7/notion-zh_CN/blob/main/apk/Notion_0.6.160_zh_cn.apk)
 - 或者下载这个压缩包然后解压：
 
-[Notion_0.6.160_zh_cn_arm64.7z](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/9947d7fb-c238-40db-bec8-482db1149362/Notion_0.6.160_zh_cn_arm64.7z)
+[Notion_0.6.160_zh_cn.apk.7z](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/a2c28ec1-416d-4429-8133-56a20ff435d6/Notion_0.6.160_zh_cn.apk.7z)
 
 # 大家可以做什么？
 
