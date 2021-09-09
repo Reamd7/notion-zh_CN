@@ -19,6 +19,7 @@ notion-zh_CN 是对notion的汉化脚本。
 
 3. 2.2.0 支持安卓版本notion的汉化！
    > 在 apk 中注入 android.js的代码，远程下载runtime.js注入汉化文本
+   > 2.3.1 长白屏时间，换全汉化
 
 4. 2.3.0 提供cloudflare worker 版本代理 notion.so 域名
    这是一个**平台无关**（IOS 上的safari也能直接使用）的汉化方式，只要你自己部署cloudflare worker，就可以使用。附带cf代理**加速**的能力。
@@ -29,6 +30,7 @@ notion-zh_CN 是对notion的汉化脚本。
 官方连机器翻译都不愿意做。
 
 # 更新日志：
+- 2.3.1 权衡后，安卓版本使用新的 runtime 注入方式，实现全部的（包括键盘都能够汉化的方式）但有首页白屏事件较长的问题。
 - 2.3.0 支持使用 cloudflare worker 进行代理 notion.so 域名进行加速及国际化
 - 2.2.0 支持 安卓版本notion，与官方版共存 的汉化！
 - 2.1.0：支持中文版快捷命令！支持拼音输入的时候显示快捷命令！
