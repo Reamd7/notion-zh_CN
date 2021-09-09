@@ -30,7 +30,11 @@
           rep.text().then(function (val) {
             eval(val); // 执行注入国际化脚本的能力
             // reload app;
-            const list = Array.from(document.querySelectorAll("script[src]"));
+            const list = Array.from(document.querySelectorAll("script[src]")).filter(function (
+              /** @type {HTMLScriptElement} */ scriptItem
+            ){
+              return scriptItem.src.includes("www.notion.so")
+            });
             let i = 0;
             list.forEach(function (
               /** @type {HTMLScriptElement} */ scriptItem
@@ -38,15 +42,16 @@
               scriptItem.remove();
               const script_src = scriptItem.src;
               console.log(script_src)
-              return Fetch(script_src).finally(function(){
-                i += 1;
-                if (i === list.length) {
-                  console.log("deviceready");
-                  document.dispatchEvent(new Event("deviceready"));
-                  document.body.removeChild(iframe);
-                }
-              }).then(function (res) {
-                res.text().then(eval);
+              return Fetch(script_src).then(function (res) {
+                res.text().then(function(text) => {
+                  eval(text);
+                  i += 1;
+                  if (i === list.length) {
+                    console.log("deviceready");
+                    document.dispatchEvent(new Event("deviceready"));
+                    document.body.removeChild(iframe);
+                  }
+                });
               });
             });
           });
