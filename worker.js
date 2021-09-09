@@ -43,6 +43,11 @@ async function handleRequest(request) {
 
   const destinationURL = request.url.replace(BaseUrl, NotionUrl);
   if (method === "GET") {
+    if (destinationURL === `${NotionUrl}/sw.js`) {
+      return new Response(```
+        console.log(1)
+      ```)
+    }
     const headers = request.headers;
     return fetch(destinationURL, {
       method: request.method,

@@ -12,12 +12,16 @@
     "jsdom": "^17.0.0",
     "pinyin-pro": "^3.3.1",
     "prettier": "^2.3.2",
-    "tencentcloud-sdk-nodejs": "^4.0.183"
+    "tencentcloud-sdk-nodejs": "^4.0.183",
+    "typescript": "^4.4.2"
   },
   "scripts": {
     "dev-search": "node ./script/fuzzySearchKeywords.js",
     "dev": "cross-env env=DEV node ./script/main.js",
-    "build": "cross-env env=BUILD node ./script/main.js"
+    "build": "cross-env env=BUILD node ./script/main.js",
+    "build-ts": "tsc ./sw-in.ts"
   },
-  "devDependencies": { "cross-env": "^7.0.3" }
+  "devDependencies": {
+    "cross-env": "^7.0.3"
+  }
 }
