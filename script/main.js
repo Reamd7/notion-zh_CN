@@ -1,5 +1,6 @@
 const fs = require("fs");
 const path = require("path");
+const _ = require("lodash");
 const { writeJSON } = require("../util/writeJSON");
 const { translate } = require("../util/translate");
 const { SyncAssest } = require("../util/syncAssest");
@@ -7,48 +8,50 @@ const { SyncAssest } = require("../util/syncAssest");
 const prettier = require("prettier");
 
 async function main() {
-  // TODO: 资源策略需要考虑
-  // 新官方中文 newZh
-  // 旧官方中文 prevZh
-  // 新官方韩文 newKr
-  // 旧官方韩文 prevKr
-  // 上一次翻译的中文
+  // key => [kr, zh]
+  const targetPool = require("../json/kr_zh.json");
+  // key => zh_str 关键字
+  const fuzzySearchKeywords = require("../json/fuzzySearchKeywords.json");
 
   // 获取最新的官方中文
   const { newKr, newZh } = await SyncAssest();
+  // 现在已经翻译完成的中文缓存
   writeJSON(path.join(__dirname, "../json/cacheZh.json"), newZh);
-
   writeJSON(path.join(__dirname, "../json/kr.json"), newKr);
 
-  // 上一次翻译时候的韩文
-  const prevKr = require("../json/kr.json");
-  // 上一次翻译的中文
-  const prevZh = require("../json/zh.json");
-  // 现在已经翻译完成的中文缓存
-
   // 收集器
-  const collect = {};
-  // 待翻译字段
-  const tar = {};
-  Object.keys(newKr).forEach((key) => {
-    let prevVal = prevKr[key];
-    let newVal = newKr[key];
-    let prevZhVal = prevZh[key];
-    let newZhVal = newZh[key];
-    let zh = prevZhVal || newZhVal; // 暂时策略，优先历史中文值。
-    if (prevVal === newVal) {
-      if (zh) {
-        collect[key] = zh;
-      } else {
-        // 基本来说这是不可能的，不应该走到这一步
-        tar[key] = newVal;
-      }
-    } else {
-      tar[key] = newVal;
-    }
-  });
+  const collect = {
+    ...newZh,
+    ...fuzzySearchKeywords
+  }
+  console.log("官方中文条数：",_.size(newZh));
+  console.log("中文关键字条数：",_.size(fuzzySearchKeywords));
+  console.log("官方韩文条数：",_.size(newKr));
+  const offical_zh_key = _.keys(collect);
 
-  const array = Object.entries(tar);
+  // 官方没有翻译的 key
+  const office_no_translate = _(newKr).omit(offical_zh_key).pickBy(function(value, key) {
+    const cacheTransalte = targetPool[key]
+    if (cacheTransalte) {
+      const [prevKr, zh] = cacheTransalte;
+      /**
+       * @type {string}
+       */
+      const nowKr = value;
+      if (prevKr === nowKr) {
+        // 不需要翻译了。
+        collect[key] = zh;
+        return false;
+      }
+    }
+    return true;
+  }).commit();
+  console.log("翻译缺失条数：",office_no_translate.size());
+  console.log(_.size(collect));
+
+  // 待翻译字段
+  const array = office_no_translate.entries().valueOf();
+
   let start = 0;
   let temp = "";
   fs.writeFileSync(path.join(__dirname, "./buffer"), "");
@@ -85,9 +88,8 @@ async function main() {
     }
   }
 
-  writeJSON(path.join(__dirname, "../json/kr.json"), newKr);
+  // 重新排序
   const finalZh = Object.keys(newKr).reduce((set, key) => {
-    // 重新排序
     set[key] = collect[key];
     return set;
   }, {});

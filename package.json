@@ -8,7 +8,7 @@
   "private": false,
   "dependencies": {
     "@types/node": "^16.6.1",
-    "axios": "^0.21.1",
+    "axios": "^0.21.4",
     "jsdom": "^17.0.0",
     "pinyin-pro": "^3.3.1",
     "prettier": "^2.3.2",
@@ -19,5 +19,9 @@
     "dev": "cross-env env=DEV node ./script/main.js",
     "build": "cross-env env=BUILD node ./script/main.js"
   },
-  "devDependencies": { "cross-env": "^7.0.3" }
+  "devDependencies": {
+    "@types/lodash": "^4.14.173",
+    "cross-env": "^7.0.3",
+    "lodash": "^4.17.21"
+  }
 }

@@ -13,8 +13,13 @@ exports.SyncAssest = async function SyncAssest() {
     "https://www.notion.so/api/v3/getAssetsJsonV2",
     {
       hash: "",
+    },
+    {
+      timeout: 10000000
     }
-  );
+  ).catch(e => {
+    console.log(e)
+  });
   console.log(assest.data.localeHtml);
   return Promise.all([
     jsdom.JSDOM.fromURL(
