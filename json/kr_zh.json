@@ -15,11 +15,12 @@
   ],
   "UpdateSidebarFollowControl.notFollowing.label": ["팔로잉 안 함", "不关注"],
   "UpdateSidebarFollowControl.unfollow.caption": [
-    "알림 받지 않기",
-    "不接收通知"
+    "업데이트와 댓글 알림 받지 않기",
+    "不接收更新和评论通知"
   ],
   "UpdateSidebarFollowControl.unfollow.label": ["팔로우 취소", "取消关注"],
   "action.boardColumns.name": ["보드 열", "板列"],
+  "action.clearContents.title": ["콘텐츠 지우기", "清除内容"],
   "action.connectSlack.title": ["Slack에 연결", "连接到Slack"],
   "action.copyLinkToCurrentPage.snackBarMessage": [
     "현재 페이지에 대한 링크가 클립보드에 복사되었습니다.",
@@ -28,6 +29,10 @@
   "action.edit.name": ["편집", "编辑"],
   "action.followPage.title": ["페이지 팔로우", "关注页面"],
   "action.group.name": ["그룹화", "分组"],
+  "action.insertColumnLeft.title": ["왼쪽에 삽입", "在左侧插入"],
+  "action.insertColumnRight.title": ["오른쪽에 삽입", "在右侧插入"],
+  "action.insertRowAbove.title": ["위에 삽입", "在上方插入"],
+  "action.insertRowBelow.title": ["아래에 삽입", "在下方插入"],
   "action.languageMode.abap": ["ABAP", "ABAP"],
   "action.languageMode.arduino": ["Arduino", "Arduino"],
   "action.languageMode.bash": ["Bash", "Bash"],
@@ -107,11 +112,13 @@
   "action.listFormat.name": ["목록 형식", "列表格式"],
   "action.listFormat.numbers.name": ["숫자", "数字"],
   "action.listFormat.sectionName": ["목록 형식", "列表格式"],
+  "action.pageUpdates.title": ["페이지 업데이트", "更新页面"],
   "action.quoteSize.default": ["기본", "基本"],
   "action.quoteSize.large": ["크게", "大"],
   "action.quoteSize.name": ["인용 크기", "引用大小"],
   "action.reportPage.name": ["페이지 신고", "页面申报"],
   "action.section.quoteSize": ["인용 크기", "引用大小"],
+  "action.section.simpleTableColumn": ["열", "列"],
   "action.signUpOrlogIn.name": ["회원 가입 또는 로그인하기", "注册或登录"],
   "action.unpin.name": ["사이드바에서 제거", "从侧边栏移除"],
   "action.unsyncTransclusionContainerName.name": [
@@ -120,6 +127,16 @@
   ],
   "action.unsyncTransclusionReference.name": ["동기화 해제", "取消同步"],
   "action.whatIsNotion.name": ["Notion 소개", "Notion简介"],
+  "activityUpdates.filterMenu.byDate": ["기간", "期间"],
+  "activityUpdates.filterMenu.byType.addItemLabel": [
+    "활동 유형 추가",
+    "添加活动类型"
+  ],
+  "activityUpdates.filterMenu.byType.resultSectionTitle": [
+    "활동 유형",
+    "活动类型"
+  ],
+  "activityUpdates.filterMenu.byType.title": ["유형별 검색", "按类型搜索"],
   "allTimeZones.Africa/Abidjan": ["아프리카/아비장", "非洲/阿比让"],
   "allTimeZones.Africa/Accra": ["아프리카/아크라", "非洲/阿克拉"],
   "allTimeZones.Africa/Addis_Ababa": [
@@ -1044,8 +1061,8 @@
     "了解有关过渡的更多信息"
   ],
   "blockPermissionsSettings.permissionsForBot.personalBot.label": [
-    "나만 볼 수 있는 상태",
-    "只有我能看到的状态"
+    "나에게만 보임",
+    "只给我看"
   ],
   "blockPermissionsSettings.permissionsForBot.spaceBot.label": [
     "워크스페이스와 공유됨",
@@ -1055,6 +1072,9 @@
     "숫자 형식 검색",
     "搜索数字格式"
   ],
+  "blockTemplates.list.tab1Title": ["탭1", "选项卡1"],
+  "blockTemplates.list.tab2Title": ["탭2", "标签2"],
+  "blockTemplates.list.tab3Title": ["탭3", "标签3"],
   "bootupHelpers.iosErrorRequiresReinstall.errorMessage": [
     "안녕하세요. iOS 앱에서 문제를 감지했습니다. 이 앱을 삭제한 후에 App Store에서 다시 설치해 주세요.",
     "你好。iOS应用程序检测到问题。删除此应用后，请在App Store中重新安装它。"
@@ -1134,6 +1154,7 @@
     "{numberOfHiddenGroups，plural，other{隐藏组{numberOfHiddenGroups}个}}"
   ],
   "collectionSortMenu.mobile.sort": ["정렬 {sortNumber}", "排序{sortNumber}"],
+  "comment.copyLink.button": ["링크 복사", "复制链接"],
   "comment.embeddedFile.placeholder": ["파일 업로드 중...", "正在上载文件."],
   "comment.embeddedFile.uploadInProgressMessage": [
     "파일 업로드 중...",
@@ -1270,6 +1291,8 @@
     "从{start}到{end}"
   ],
   "database.collectionGroupValue.textGroup.other": ["기타", "其他"],
+  "database.copyButton.copyToClipboard": ["클립보드에 복사", "复制到剪贴板"],
+  "database.editButton.editLinkTooltip": ["URL 편집", "编辑URL"],
   "database.formula.function.id.description": [
     "각 항목의 고유 문자열 ID를 반환합니다.",
     "返回每个条目的唯一字符串ID。"
@@ -1320,6 +1343,10 @@
   ],
   "database.searchRelation.placeholder": ["페이지를 검색하세요", "搜索页面"],
   "database.selectRelation.menuItem": ["페이지를 선택", "选择页面"],
+  "database.timelineView.tableGroupResults.hideTableButton.title": [
+    "표 숨기기",
+    "隐藏表格"
+  ],
   "dateParserHelpers.at": ["시간:", "时间："],
   "dateParserHelpers.day": ["일", "工作"],
   "dateParserHelpers.last": ["지난", "过去"],
@@ -1578,7 +1605,7 @@
     "{moreCommentsNumber，plural，other{{moreCommentsNumber}查看更多评论}}"
   ],
   "discussionInput.attachFileIcon.intro.body": [
-    "이미지와 파일을 첨부해 생생한 댓글을 달아보세요.",
+    "이미지와 파일을 첨부해 생생한 댓글을 달아보세요",
     "附上图片和文件，做出生动的评论。"
   ],
   "discussionInput.attachFileIcon.intro.title": [
@@ -1599,8 +1626,8 @@
     "블록 복제 제한에 도달했습니다. 나중에 다시 시도하세요.",
     "已达到块复制限制。请稍后再试。"
   ],
-  "edit.blockDeletedEditStyles.defaultLabel": ["삭제된 블록", "删除的块"],
-  "edit.blockDeletedEditStyles.factoryLabel": ["삭제된 블록", "删除的块"],
+  "edit.blockDeletedEditStyles.defaultLabel": ["삭제됨", "已删除"],
+  "edit.blockDeletedEditStyles.factoryLabel": ["삭제됨", "已删除"],
   "edit.permissionRole.canEditStyles.label": ["편집 허용", "允许编辑"],
   "embedBlock.originalLink.button": ["원본", "原稿"],
   "embedMenu.action.excalidraw": ["Excalidraw 임베드", "Excalidraw嵌入"],
@@ -1745,6 +1772,18 @@
     "未定义{operator}运算符。"
   ],
   "frontPricingCard.educationPlan.attribute.contentApi.v2": ["API", "API"],
+  "frontPricingCard.enterprisePlan.attribute.unlimitedVersionHistory": [
+    "무제한 버전 기록",
+    "无限制的版本历史记录"
+  ],
+  "frontPricingCard.personalPlan.attribute.limitedVersionHistory": [
+    "30일의 버전 기록",
+    "30天的版本历史记录"
+  ],
+  "frontPricingCard.teamPlan.attribute.sharingPermissions": [
+    "공유 권한",
+    "共享权限"
+  ],
   "frontSignupComponent.emailInput.educationEmailPlaceholder": [
     "학교 이메일을 입력하세요",
     "请输入学校电子邮件。"
@@ -1760,7 +1799,19 @@
   "fullPageError.reportAProblem.label": ["문제 신고하기", "报告问题"],
   "fullPageError.somethingWrong.label": ["문제가 발생했나요?", "出问题了吗？"],
   "guestPagesPopup.permissionsForUserGuest.label": ["게스트", "访客"],
+  "helpButton.onboardingChecklist.menuItem": ["시작하기", "入门"],
   "helpButton.whatsNew.menuItem": ["새로운 소식", "新消息"],
+  "inlineUnfurlingAuthenticationPopup.caption": [
+    "실시간으로 업데이트되는 풍부한 콘텐츠 미리보기를 보려면 로그인하세요.",
+    "登录以查看实时更新的丰富内容预览。"
+  ],
+  "inlineUnfurlingAuthenticationPopup.close": ["닫기", "关闭"],
+  "inlineUnfurlingAuthenticationPopup.connect": ["연결", "连接"],
+  "inlineUnfurlingAuthenticationPopup.connectButton": ["연결", "连接"],
+  "inlineUnfurlingAuthenticationPopup.title": [
+    "{integration}에 연결하기",
+    "连接到{integration}"
+  ],
   "invalidVATEmail.billingLink.text": [
     "<b>사업자등록번호를 <billinglink>이 링크</billinglink>에서 변경해 주세요.</b>",
     "<b>请将营业执照号从<billinglink>此链接</billinglink>更改。</b>"
@@ -1807,15 +1858,41 @@
   "mathParseHelpers.syntax.error": ["{token}의 구문 오류", "{token}的语法错误"],
   "mathParseHelpers.tokenExpected.error": ["{token} 예상", "{token}预期"],
   "mathParseHelpers.unexpected.error": ["예기치 못한 {token}", "意外的{token}"],
+  "mentionMenu.templateVariables.description.me": [
+    "복제하는 사용자",
+    "复制的用户"
+  ],
+  "mentionMenu.templateVariables.description.now": [
+    "복제하는 시간",
+    "复制时间"
+  ],
+  "mentionMenu.templateVariables.description.today": [
+    "복제하는 날짜",
+    "复制日期"
+  ],
+  "mentionMenu.templateVariables.keywords.me": ["나", "我"],
+  "mentionMenu.templateVariables.keywords.now": ["지금", "现在"],
+  "mentionMenu.templateVariables.keywords.today": ["오늘", "今天"],
+  "mentionMenu.templateVariables.text.me": ["나", "我"],
+  "mentionMenu.templateVariables.text.now": ["지금", "现在"],
+  "mentionMenu.templateVariables.text.tday": ["오늘", "今天"],
   "mobileActionBar.nativeMenu.textColor.title": ["색상", "颜色"],
+  "moveBlockMenu.moveToTeam.title": ["팀으로 옮기기", "转到团队"],
+  "moveToMenuRenderer.moveTo.teamLabel": ["페이지나 팀 검색", "搜索页面或团队"],
   "newBlock.abstract.fuzzySearchKeywords": ["앱스트랙트", "Abstract"],
   "newBlock.breadcrumb.fuzzySearchKeywords": [
     "이동 경로 페이지 경로",
-    "面包屑 页面路径 路径"
+    "Breadcrumb 面包屑 mianbaoxie mian'bao'xie 页面路径 yemianlujing ye'mian'lu'jing 路径 lujing lu'jing"
   ],
-  "newBlock.callout.fuzzySearchKeywords": ["콜아웃", "标注"],
-  "newBlock.codepen.fuzzySearchKeywords": ["코드펜", "Codepen"],
-  "newBlock.drive.fuzzySearchKeywords": ["구글 드라이브", "谷歌 网盘 云盘"],
+  "newBlock.callout.fuzzySearchKeywords": [
+    "콜아웃",
+    "Callout 标注 biaozhu biao'zhu"
+  ],
+  "newBlock.codepen.fuzzySearchKeywords": ["코드펜", "CodePen Codepen"],
+  "newBlock.drive.fuzzySearchKeywords": [
+    "구글 드라이브",
+    "Google Drive 谷歌 guge gu'ge 网盘 wangpan wang'pan 云盘 yunpan yun'pan"
+  ],
   "newBlock.excalidraw.description": [
     "Excalidraw 화이트보드를 임베드하세요.",
     "嵌入Excalidraw白板。"
@@ -1826,81 +1903,105 @@
   ],
   "newBlock.excalidraw.title": ["Excalidraw", "Excalidraw"],
   "newBlock.figma.fuzzySearchKeywords": ["피그마", "Figma"],
-  "newBlock.file.fuzzySearchKeywords": ["파일", "文件"],
+  "newBlock.file.fuzzySearchKeywords": ["파일", "File 文件 wenjian wen'jian"],
   "newBlock.framer.fuzzySearchKeywords": ["프레이머", "Framer"],
   "newBlock.fullPageBoard.fuzzySearchKeywords": [
     "보드 - 전체 페이지",
-    "看板 - 整页"
+    "Board - Full page 看板 kanban kan'ban 整页 zhengye zheng'ye"
   ],
   "newBlock.fullPageCalendar.fuzzySearchKeywords": [
     "캘린더 - 전체 페이지",
-    "日历 - 整页"
+    "Calendar - Full page 日历 rili ri'li 整页 zhengye zheng'ye"
   ],
   "newBlock.fullPageGallery.fuzzySearchKeywords": [
     "갤러리 - 전체 페이지",
-    "画廊 - 整页"
+    "Gallery - Full page 画廊 hualang hua'lang 整页 zhengye zheng'ye"
   ],
   "newBlock.fullPageList.fuzzySearchKeywords": [
     "리스트 - 전체 페이지",
-    "列表 - 整页"
+    "List - Full page 列表 liebiao lie'biao 整页 zhengye zheng'ye"
   ],
   "newBlock.fullPageTable.fuzzySearchKeywords": [
     "표 - 전체 페이지",
-    "表格 - 整页"
+    "Table - Full page 表格 biaoge biao'ge 整页 zhengye zheng'ye"
   ],
   "newBlock.fullPageTimeline.fuzzySearchKeywords": [
     "타임라인 - 전체 페이지",
-    "时间轴 - 整页"
+    "Timeline - Full page 时间轴 shijianzhou shi'jian'zhou 整页 zhengye zheng'ye"
   ],
   "newBlock.gist.fuzzySearchKeywords": ["깃허브 지스트", "GitHub Gist"],
-  "newBlock.inlineBoard.fuzzySearchKeywords": ["보드 - 인라인", "看板 - 内嵌"],
+  "newBlock.inlineBoard.fuzzySearchKeywords": [
+    "보드 - 인라인",
+    "Board - Inline 看板 kanban kan'ban 内嵌 neiqian nei'qian"
+  ],
   "newBlock.inlineCalendar.fuzzySearchKeywords": [
     "캘린더 - 인라인",
-    "日历 - 内嵌"
+    "Calendar - Inline 日历 rili ri'li 内嵌 neiqian nei'qian"
   ],
   "newBlock.inlineGallery.fuzzySearchKeywords": [
     "갤러리 - 인라인",
-    "画廊 - 内嵌"
+    "Gallery - Inline 画廊 hualang hua'lang 内嵌 neiqian nei'qian"
   ],
-  "newBlock.inlineList.fuzzySearchKeywords": ["리스트 - 인라인", "列表 - 内嵌"],
-  "newBlock.inlineTable.fuzzySearchKeywords": ["표 - 인라인", "表格 - 内联"],
+  "newBlock.inlineList.fuzzySearchKeywords": [
+    "리스트 - 인라인",
+    "List - Inline 列表 liebiao lie'biao 内嵌 neiqian nei'qian"
+  ],
+  "newBlock.inlineTable.fuzzySearchKeywords": [
+    "표 - 인라인",
+    "Table - Inline 表格 biaoge biao'ge 内联 neilian nei'lian"
+  ],
   "newBlock.inlineTimeline.fuzzySearchKeywords": [
     "타임라인 - 인라인",
-    "时间轴-内联"
+    "Timeline - Inline 时间轴-内联 shijianzhou-neilian shi'jian'zhou'-'nei'lian"
   ],
   "newBlock.invision.fuzzySearchKeywords": ["인비전", "Invision"],
   "newBlock.linkToCollection.fuzzySearchKeywords": [
     "링크된 데이터베이스 생성",
-    "创建 链接 数据库"
+    "Create linked database 创建 chuangjian chuang'jian 链接 lianjie lian'jie 数据库 shujuku shu'ju'ku"
   ],
   "newBlock.loom.fuzzySearchKeywords": ["룸", "Loom"],
-  "newBlock.maps.fuzzySearchKeywords": ["구글 지도", "谷歌 地图"],
+  "newBlock.maps.fuzzySearchKeywords": [
+    "구글 지도",
+    "Google Maps 谷歌 guge gu'ge 地图 ditu di'tu"
+  ],
   "newBlock.miro.fuzzySearchKeywords": ["미로", "Miro"],
-  "newBlock.page.fuzzySearchKeywords": ["페이지", "页面"],
+  "newBlock.page.fuzzySearchKeywords": ["페이지", "Page 页面 yemian ye'mian"],
   "newBlock.pdf.fuzzySearchKeywords": ["PDF", "PDF P'D'F"],
-  "newBlock.quote.fuzzySearchKeywords": ["인용", "引用"],
+  "newBlock.quote.fuzzySearchKeywords": ["인용", "Quote 引用 yinyong yin'yong"],
   "newBlock.replit.description": ["Repl을 임베드하세요.", "嵌入Repl。"],
-  "newBlock.replit.fuzzySearchKeywords": ["리플릿", "Repl"],
+  "newBlock.replit.fuzzySearchKeywords": ["리플릿", "Replit Repl"],
   "newBlock.replit.title": ["Replit", "Replit"],
+  "newBlock.simple_table.description": [
+    "표 형식의 콘텐츠를 위해 표 추가하기",
+    "为表格内容添加表格"
+  ],
+  "newBlock.simple_table.fuzzySearchKeywords": ["표", "表"],
+  "newBlock.simple_table.title": ["표", "表"],
   "newBlock.sketch.description": [
     "Sketch 문서를 임베드하세요.",
     "嵌入Sketch文档。"
   ],
   "newBlock.sketch.fuzzySearchKeywords": ["Sketch 스케치", "Sketch"],
   "newBlock.sketch.title": ["Sketch", "Sketch"],
-  "newBlock.toggle.fuzzySearchKeywords": ["토글 목록", "切换 列表 切换列表"],
+  "newBlock.tab.description": ["탭", "“选项卡”"],
+  "newBlock.tab.keywords": ["탭", "“选项卡”"],
+  "newBlock.tab.title": ["탭 블록 생성하기", "创建制表符块"],
+  "newBlock.toggle.fuzzySearchKeywords": [
+    "토글 목록",
+    "Toggle list 切换 qiehuan qie'huan 列表 liebiao lie'biao 切换列表 qiehuanliebiao qie'huan'lie'biao"
+  ],
   "newBlock.transclusionContainer.description": [
     "모든 페이지에서 콘텐츠를 동기화하세요.",
     "同步所有页面的内容。"
   ],
   "newBlock.transclusionContainer.fuzzySearchKeywords": [
     "동기화 블록 생성 블록 레퍼런스 트랜스클루전 포털 블록 임베드",
-    "同步"
+    "Create synced block reference transclusion portal embed 同步 tongbu tong'bu"
   ],
   "newBlock.transclusionContainer.title": ["동기화 블록", "同步块"],
-  "newBlock.tweet.fuzzySearchKeywords": ["트윗", "推文"],
+  "newBlock.tweet.fuzzySearchKeywords": ["트윗", "Tweet 推文 tuiwen tui'wen"],
   "newBlock.typeform.fuzzySearchKeywords": ["타입폼", "Typeform"],
-  "newBlock.video.fuzzySearchKeywords": ["동영상", "视频"],
+  "newBlock.video.fuzzySearchKeywords": ["동영상", "Video 视频 shipin shi'pin"],
   "newBlock.whimsical.fuzzySearchKeywords": ["윔지컬", "Whimsical"],
   "oauthAuthorizationPage.error.cancelButton.label": ["취소", "取消"],
   "oauthAuthorizationPage.error.clientNotFound.body": [
@@ -1936,8 +2037,8 @@
     "response_type无效或丢失。有关详细信息，请参阅<inlinetextlink>开发人员文档</inlinetextlink>。"
   ],
   "oauthAuthorizationPage.error.notAnAdmin.body": [
-    "관리자에게 연락하여 관리자 액세스를 받거나 다른 워크스페이스를 선택하세요.",
-    "联系管理员获取管理员访问权限或选择其他工作空间。"
+    "관리자에게 연락하여 액세스를 받거나 다른 워크스페이스를 선택하세요.",
+    "联系管理员获取访问权限或选择其他工作空间。"
   ],
   "oauthAuthorizationPage.error.notAnAdmin.switchWorkspaceButton.label": [
     "다른 워크스페이스 선택하기",
@@ -2047,30 +2148,148 @@
   ],
   "oauthPageSearchResults.noResults.placeholder": ["결과 없음", "无结果"],
   "offlineErrors.offlineErrorMessage": ["오프라인 상태입니다.", "脱机。"],
+  "onboardingChecklist.collab.comments.text": [
+    "팀원에게 피드백, 질문, 의견을 댓글로 달아주세요. 페이지의 댓글 스레드에서 바로 아이디어를 의논하고 의견을 조율해 결정을 내릴 수 있습니다.",
+    "请向团队成员留言反馈、提问和意见。直接在页面的评论主题中讨论想法，协调您的意见并做出决定。"
+  ],
+  "onboardingChecklist.collab.comments.title": ["댓글", "评论"],
+  "onboardingChecklist.collab.mentions.text": [
+    "팀원을 멘션하려면 페이지나 댓글에서 @을 입력한 후 해당 팀원의 이름을 입력하세요. 알림을 받은 팀원이 바로 참여할 수 있습니다.",
+    "要支持团队成员，请在页面或评论中键入@，然后输入团队成员的姓名。收到通知的团队成员可以立即加入。"
+  ],
+  "onboardingChecklist.collab.mentions.title": ["멘션", "精神"],
+  "onboardingChecklist.createContent.block.title": ["블록", "块"],
+  "onboardingChecklist.createContent.blockTypes.text": [
+    "블록은 Notion 페이지를 구성하는 요소입니다. 블록은 텍스트, 이미지, 체크박스, 표를 비롯한 다양한 유형의 콘텐츠를 포함할 수 있습니다.",
+    "块是组成Notion页面的元素。块可以包含不同类型的内容，包括文本、图像、复选框和表格。"
+  ],
+  "onboardingChecklist.createContent.rearrangeBlocks.text": [
+    "블록을 다른 콘텐츠 유형으로 바꿔서 새로운 방식으로 사용하고, 표시하고, 포함한 정보를 더 상세하게 표현할 수 있습니다.",
+    "将块替换为其他内容类型，以便以新的方式使用、显示和更详细地表达包括的信息。"
+  ],
+  "onboardingChecklist.createContent.rearrangeBlocks.title": [
+    "블록 재정렬하기",
+    "重新排列块"
+  ],
+  "onboardingChecklist.createContent.transformBlocks.title": [
+    "블록 변신시키기",
+    "改变街区"
+  ],
+  "onboardingChecklist.createPages.slashCommand.text": [
+    "슬래시 명령은 블록을 가져다주는 웨이터 역할을 합니다. /를 입력하면 Notion 페이지에 추가할 수 있는 콘텐츠 유형이 모두 있는 메뉴가 나타납니다.",
+    "斜线命令充当服务员，带来街区。如果键入/，则会出现一个菜单，其中包含可以添加到Notion页面的所有内容类型。"
+  ],
+  "onboardingChecklist.createPages.slashCommand.title": [
+    "슬래시 명령",
+    "斜线命令"
+  ],
+  "onboardingChecklist.createPages.subPage.text": [
+    "페이지 안에서 /페이지라는 명령어를 입력해 하위 페이지를 만들어 보세요. 콘텐츠에 체계가 생겨 필요한 내용을 쉽게 찾을 수 있습니다.",
+    "在页面上输入/页面命令以创建子页面。内容有了一套体系，方便你找到需要的内容。"
+  ],
+  "onboardingChecklist.createPages.subPage.title": ["하위 페이지", "子页"],
+  "onboardingChecklist.createPages.text": [
+    "워크스페이스 왼쪽 하단에 있는 + 새 페이지 또는 사이드바에서 + 버튼을 클릭하면 새로운 페이지를 만들 수 있습니다.",
+    "单击工作区左下角的+新页面或侧栏中的+按钮，即可创建新页面。"
+  ],
+  "onboardingChecklist.createPages.title": ["새 페이지 만들기", "创建新页面"],
+  "onboardingChecklist.share.addTeammates.text": [
+    "팀과 함께 작업을 하시나요? 설정과 멤버 메뉴에서 팀원을 추가하면 같은 Notion 워크스페이스를 모두 공유할 수 있습니다.",
+    "和团队一起工作吗？通过从“设置”和“成员”菜单添加团队成员，您可以共享所有相同的Notion工作空间。"
+  ],
+  "onboardingChecklist.share.addTeammates.title": [
+    "팀원 추가하기",
+    "添加团队成员"
+  ],
+  "onboardingChecklist.share.button.text": [
+    "페이지 오른쪽 상단의 공유 버튼을 사용하면 워크스페이스 멤버뿐만 아니라 멤버가 아닌 사람도 초대해 공동 작업을 할 수 있습니다.",
+    "使用页面右上角的“共享”按钮，您可以邀请非工作区成员以及非成员进行协作。"
+  ],
+  "onboardingChecklist.share.button.title": ["공유 버튼", "“共享”按钮"],
+  "onboardingChecklist.tipsAndTricks.downloadApps.text": [
+    "<a1>데스크톱 앱</a1> 또는 <a2>모바일 앱</a2>을 다운로드하세요.",
+    "下载<a1>桌面应用</a1>或<a2>移动应用</a2>。"
+  ],
+  "onboardingChecklist.tipsAndTricks.exploreTemplates.text": [
+    "<link>템플릿 살펴보기</link>",
+    "<link>查看模板</link>"
+  ],
+  "onboardingChecklist.tipsAndTricks.import.text": [
+    "자세한 내용은 <a>고객 센터</a>에서 확인하실 수 있어요!",
+    "详情请到<a>客服中心</a>查询！"
+  ],
+  "onboardingChecklist.tipsAndTricks.templates.text": [
+    "Notion의 <a>템플릿 갤러리</a>에서 템플릿을 살펴보세요!",
+    "请查看Notion的<a>模板库</a>中的模板！"
+  ],
+  "onboardingChecklist.tipsAndTricks.title": ["자세히 알아보기", "了解详情"],
+  "onboardingChecklist.whatIsNotion.mainUsecases": [
+    "Notion을 활용해 이런 작업을 비롯한 다양한 작업을 할 수 있습니다.",
+    "使用Notion，您可以执行各种任务，包括这些任务。"
+  ],
+  "onboardingChecklist.whatIsNotion.title": ["Notion 소개", "Notion简介"],
+  "onboardingChecklistButton.collaborateWithOthers.displayName": [
+    "다른 사용자와 공동 작업하기",
+    "与其他用户协作"
+  ],
+  "onboardingChecklistButton.createContent.displayName": [
+    "콘텐츠 만들기",
+    "创建内容"
+  ],
+  "onboardingChecklistButton.createPages.displayName": [
+    "페이지 만들기",
+    "创建页面"
+  ],
   "onboardingChecklistButton.getMoreHelp.button": [
-    "더 많은 도움 받기",
-    "获得更多帮助"
+    "더 많은 도움말 보기",
+    "查看更多帮助"
   ],
   "onboardingChecklistButton.headerText": [
-    "<boldtext>Notion을 처음 사용하는 사용자</boldtext>",
-    "首次使用<boldtext>Notion的用户</boldtext>"
+    "<boldtext>Notion 처음 사용자</boldtext>",
+    "<boldtext>Notion首次用户</boldtext>"
+  ],
+  "onboardingChecklistButton.nextStage.complete": ["완료", "完成"],
+  "onboardingChecklistButton.shareYourWork.displayName": [
+    "작업 공유",
+    "工作共享"
+  ],
+  "onboardingChecklistButton.slashAndBlocks.displayName": [
+    "슬래시와 블록",
+    "斜线和块"
+  ],
+  "onboardingChecklistButton.stageFooter.next": ["다음", "下一个"],
+  "onboardingChecklistButton.stageTracker": [
+    "{totalStageNumber}개 중 {currentStageNumber}개",
+    "{totalStageNumber}个中的{currentStageNumber}个"
   ],
   "onboardingChecklistButton.stagesComplete": [
-    "{numTotalStages} 중 {numStagesComplete} 완료",
-    "已完成 {numStagesComplete} / {numTotalStages} "
+    "{numStagesComplete}/{numTotalStages} 완료",
+    "{numStagesComplete}/{numTotalStages}已完成"
   ],
   "onboardingChecklistButton.subtitleText": [
-    "환영합니다! 인터넷 상에 존재하는 유일한 올인원 작업 도구로 다양한 작업을 해보세요.",
-    "欢迎！使用互联网上唯一一款一体式工作工具，完成各种任务。"
+    "올인원 워크스페이스 Notion에 오신 것을 환영합니다! 기초부터 차근차근 시작해보세요.",
+    "欢迎来到一体化工作空间Notion！试着从基础开始。"
   ],
-  "onboardingChecklistButton.tooltip": ["체크리스트 시작하기", "启动核对表"],
+  "onboardingChecklistButton.tipsAndTricks.displayName": [
+    "도움말과 요령",
+    "帮助和技巧"
+  ],
+  "onboardingChecklistButton.title": [
+    "<b>Notion을 처음 사용하는 사용자</b>",
+    "首次使用<b>Notion的用户</b>"
+  ],
+  "onboardingChecklistButton.tooltip": ["Notion 시작하기", "Notion入门"],
+  "onboardingChecklistButton.whatIsNotion.displayName": [
+    "Notion 소개",
+    "Notion简介"
+  ],
   "onboardingInvite.addEmail.caption": [
-    "이메일 주소를 한 개 이상 쓰거나 붙여넣기할 때는 쉼표, 띄어쓰기, 줄 바꿈으로 구분해 주세요.",
-    "使用一个或多个电子邮件地址时，请用逗号分隔。"
+    "여러 개의 이메일 주소를 입력할 때는 쉼표나 띄어쓰기, 줄 바꿈으로 구분해 주세요.",
+    "输入多个电子邮件地址时，请使用逗号或隔行符或换行符分隔。"
   ],
   "onboardingInvite.bulkInvites.placeholder": [
-    "penny@myteam.com, varun@company.com, vicky@company.com, ...",
-    "penny@myteam.com，varun@company.com，vicky@company.com，."
+    "notion@myteam.com, won@company.com, finn@company.com, ...",
+    "notion@myteam.com，won@company.com，finn@company.com，."
   ],
   "onboardingInvite.desktopButton.labelWithAction": [
     "초대 후 진행하기",
@@ -2082,8 +2301,8 @@
     "添加其他电子邮件"
   ],
   "onboardingInvite.emails.addMoreOrInviteInBulkText": [
-    "추가 또는 단체로 초대",
-    "添加或集体邀请"
+    "사용자를 추가하거나 여러 명을 한 번에 초대하세요",
+    "添加用户或一次邀请多人"
   ],
   "onboardingInvite.emails.sendInvites": ["초대하기", "邀请"],
   "onboardingInvite.invalidEmails.error.message": [
@@ -2095,10 +2314,7 @@
     "将单击此链接的团队成员自动添加到工作区。"
   ],
   "onboardingInvite.sharingButton.copied": ["복사 완료!", "复制完成！"],
-  "onboardingInvite.sharingButton.copy": [
-    "공유 가능한 링크 받기",
-    "获取可共享链接"
-  ],
+  "onboardingInvite.sharingButton.copy": ["공유 링크 복사하기", "复制共享链接"],
   "onboardingInvite.sharingButton.tooltip.copy": [
     "이 링크로 팀원 초대하기",
     "使用此链接邀请团队成员"
@@ -2152,6 +2368,7 @@
   "pageSearchResults.noResults.placeholder": ["검색 결과 없음", "无搜索结果"],
   "pageShareMenu.copyMaybePublicLinkButton.label": ["복사", "复制"],
   "pageTitle.flaggedContent": ["플래그가 지정된 콘텐츠", "已标记的内容"],
+  "pageUpdatesModal.mobileMenu.title": ["페이지 업데이트", "更新页面"],
   "pageViewBlock.movedPageBanner.ancestorMovedMessage": [
     "{movedAncestorLink}의 변경된 위치는 {targetSpaceLink}입니다.",
     "{movedAncestorLink}的改变位置是{targetSpaceLink}。"
@@ -2188,6 +2405,18 @@
   "pricingGrid.planAttribute.contentApi.tooltip.v2": [
     "<p>Notion API로 팀에 꼭 맞는 맞춤형 통합을 구축해 보세요. 지금 베타 버전을 만나보세요.</p>",
     "使用<p>Notion API构建适合您的团队的自定义集成。现在就来看看测试版。</p>"
+  ],
+  "pricingGrid.planAttribute.limitedVersionHistory.tooltip": [
+    "<p>지난 30일간의 이전 버전 Notion 페이지를 보고 복원하세요.</p>",
+    "<p>查看和恢复过去30天的旧版本Notion页面。</p>"
+  ],
+  "pricingGrid.planAttribute.sharingPermissions.tooltip": [
+    "<p>초대된 사람들이 다른 사람과 페이지를 공유하지 못하도록 더욱 세부적인 사용 권한을 설정하세요. </p>",
+    "<p>设置更详细的权限，防止邀请者与他人共享页面。</p>"
+  ],
+  "pricingGrid.planAttribute.unlimitedVersionHistory.tooltip": [
+    "<p>이전 버전의 Notion 페이지를 보고 복원하세요.</p>",
+    "<p>查看和恢复旧版本的Notion页面。</p>"
   ],
   "pricingGrid.switchPlanFromInAppPurchase.tooltip": [
     "현재 Apple의 앱 내 구매를 통해 구독 중입니다. 요금제를 바꾸려면 먼저 Apple 구독을 취소해 주세요.",
@@ -2357,12 +2586,74 @@
     "此电子邮件未配置为此工作区的SAML SSO。请与管理员联系。"
   ],
   "scroller.scrollDown.name": ["아래로 스크롤", "向下滚动"],
+  "searchDateFilter.acceptButton.label": ["적용", "应用"],
+  "searchDateFilter.cancelButton.label": ["취소", "取消"],
+  "securitySAMLSettings.SCIMSection.generateScimTokenButton.label": [
+    "SCIM API 토큰 생성",
+    "创建SCIM API令牌"
+  ],
+  "securitySAMLSettings.disablePersonalIntegrations.confirmationModal.confirmButton.label": [
+    "예",
+    "是"
+  ],
+  "securitySAMLSettings.disablePersonalIntegrations.confirmationModal.message": [
+    "제거하시겠습니까? 이 워크스페이스에서 OAuth를 통해 설치한 모든 통합이 제거됩니다.",
+    "是否确实要删除？将从此工作空间中删除通过OAuth安装的所有集成。"
+  ],
+  "securitySAMLSettings.securitySection.disablePersonalIntegrations.caption": [
+    "이것을 비활성화하면 OAuth를 통해 워크스페이스에서 통합 설치를 할 수 없습니다.",
+    "如果禁用它，您将无法通过OAuth在工作空间中进行集成安装。"
+  ],
+  "securitySAMLSettings.securitySection.disablePersonalIntegrations.label": [
+    "OAuth를 통한 통합 설치 비활성화",
+    "禁用通过OAuth的集成安装"
+  ],
   "settings.regionSettings.regionSearch": ["지역을 검색하세요", "搜索区域"],
   "sharedWithMePopover.sortOrder.lastEditedNewest": [
     "최종 편집 일시",
     "上次编辑时间"
   ],
   "sharedWithMePopover.sortOrder.relevance": ["연관성 높은 항목", "关联项"],
+  "sidebar.addATeam.tooltip": ["팀 추가", "添加团队"],
+  "sidebar.addATeamButton.tooltip": [
+    "팀을 만들거나 검색하기",
+    "创建或搜索团队"
+  ],
+  "sidebar.menuListTeam.browseLabel": ["팀 검색", "搜索团队"],
+  "sidebar.menuListTeam.createLabel": ["팀 만들기", "创建团队"],
+  "sidebar.teamSection.header": ["팀", "团队"],
+  "sidebarCreateTeamModal.footer.doneLabel": ["제출하기", "提交"],
+  "sidebarCreateTeamModal.footer.nextLabel": ["다음", "下一个"],
+  "sidebarCreateTeamModal.footer.submitLabel": ["제출하기", "提交"],
+  "sidebarCreateTeamModal.logo.label": ["로고 추가", "添加徽标"],
+  "sidebarCreateTeamModal.membersDescription.label": [
+    "사용자를 초대해 공동 작업하기",
+    "邀请用户进行协作"
+  ],
+  "sidebarCreateTeamModal.membersTitle.label": ["사용자 추가", "添加用户"],
+  "sidebarCreateTeamModal.teamDescription.label": [
+    "팀은 공동 작업을 하고 페이지를 체계적으로 정리하는 공간입니다.",
+    "团队是协作和整理页面的空间。"
+  ],
+  "sidebarCreateTeamModal.teamScreen.descriptionPlaceholder": [
+    "팀의 상세 정보",
+    "团队详细信息"
+  ],
+  "sidebarCreateTeamModal.teamScreen.namePlaceholder": [
+    "가나다 연구소",
+    "神田研究所"
+  ],
+  "sidebarCreateTeamModal.teamScreen.teamDescriptionLabel": [
+    "팀 설명",
+    "小组说明"
+  ],
+  "sidebarCreateTeamModal.teamScreen.teamNameLabel": ["팀 이름", "团队名称"],
+  "sidebarCreateTeamModal.teamTitle.label": ["새로운 팀 만들기", "创建新团队"],
+  "sidebarTeamModal.cancelButton.label": ["취소", "取消"],
+  "sidebarTeamModalTab.option.about": ["소개", "介绍"],
+  "sidebarTeamModalTab.option.people": ["사용자", "用户"],
+  "sidebarTeamModalTab.option.settings": ["설정", "设置"],
+  "sidebarTeamModalTab.teamLabel.stub": ["나의 팀", "我的团队"],
   "sketchBlock.embeds.button.label": ["Sketch 임베드", "Sketch嵌入"],
   "sketchBlock.embeds.caption": [
     "공개 액세스가 활성화된 Sketch 링크와 호환됨",
@@ -2370,12 +2661,12 @@
   ],
   "sketchBlock.placeholder": ["Sketch 임베드", "Sketch嵌入"],
   "spaceBasicSettings.PublicHomePageSection.caption": [
-    "{linkText}의 링크로 공개 홈페이지에 액세스하세요.",
-    "通过{linkText}的链接访问我们的公共主页。"
+    "{linkText}로 공개 홈페이지에 액세스하세요.",
+    "使用{linkText}访问我们的公共主页。"
   ],
   "spaceBasicSettings.PublicHomePageSection.caption.tooltip": [
-    "클릭하여 링크 복사",
-    "单击以复制链接"
+    "클릭해서 링크를 복사하세요",
+    "点击复制链接"
   ],
   "spaceBasicSettings.PublicHomePageSection.dropdownButton.clearHomePage": [
     "홈페이지 지우기",
@@ -2425,6 +2716,14 @@
   "spaceBasicSettings.domainSection.workspaceDomainInput.joinWorkspace.caption": [
     "허용된 이메일 도메인이 있으면 누구나 {linkText} 링크를 통해 이 워크스페이스에 가입할 수 있습니다.",
     "如果有允许的电子邮件域，任何人都可以通过{linkText}链接订阅此工作空间。"
+  ],
+  "spaceBasicSettings.domainSection.workspaceDomainInput.validationMessage.available": [
+    "사용 가능한 도메인",
+    "可用域"
+  ],
+  "spaceBasicSettings.domainSection.workspaceDomainInput.validationMessage.used": [
+    "사용 중인 도메인",
+    "正在使用的域"
   ],
   "spaceBasicSettings.domainSection.workspaceDomainInput.viewPublicPage.caption": [
     "웹에서 공유된 페이지의 주소는 {linkText}로 시작합니다.",
@@ -2488,6 +2787,7 @@
     "{workspaceName}的完整合并列表"
   ],
   "spaceSettings.closeSettingsDialog.cancelationButton.label": ["아니요", "不"],
+  "spaceSettingsSidebar.experimentsTab.title": ["실험", "实验"],
   "spaceSettingsSidebar.integrationsTab.title": ["통합", "整合"],
   "spaceSettingsSidebar.subscriptionTab.title": ["구독", "订阅"],
   "spaceSubscriptionBilling.address.invalidError": [
@@ -2751,12 +3051,28 @@
     "팀 체험판으로 업그레이드",
     "升级到团队体验版"
   ],
+  "tabBlock.emptyBlock.placeholderText": [
+    "빈 탭입니다. 내부를 클릭하거나 블록을 넣으세요.",
+    "空选项卡。单击内部或加入块。"
+  ],
+  "tabBlockActions.addTab.title": ["새로운 탭", "新选项卡"],
+  "tabMenuBlock.title.placeholder": ["제목 없음", "无标题"],
+  "topbar.commentsButton.closeSidebartTooltip": [
+    "댓글 사이드바 닫기",
+    "关闭评论侧边栏"
+  ],
+  "topbar.commentsButton.openSidebartTooltip": [
+    "댓글 사이드바 열기",
+    "打开评论侧边栏"
+  ],
+  "topbar.commentsButton.title": ["댓글", "评论"],
   "topbar.publicPage.cta.label": ["Notion", "Notion"],
   "topbar.publicPage.cta.label.get": ["Notion 사용하기", "使用 Notion"],
-  "topbar.publicPage.cta.label.try": ["Notion을 사용해 보세요", "试试 Notion"],
+  "topbar.publicPage.cta.label.open": ["Notion 열기", "打开Notion"],
+  "topbar.publicPage.cta.label.try": ["Notion 사용해 보기", "试用Notion"],
   "topbar.publicPage.cta.label.try-free": [
-    "Notion을 무료로 사용해 보세요",
-    "免费使用Notion"
+    "Notion 무료로 사용해 보기",
+    "免费试用Notion"
   ],
   "topbar.updatesButton.closeSidebartTooltip": [
     "업데이트 사이드바 닫기",
@@ -2774,6 +3090,23 @@
     "Slack 채널 연결을 해제하고 이 페이지와 하위 페이지의 업데이트를 더 이상 받지 않습니다.",
     "如果您不想再收到有关此页面及其包含页面的更新信息，请断开Slack通道的连接。"
   ],
+  "topbarActionButtons.commentsButton.intro.body": [
+    "모든 댓글을 한 번에 파악하세요.",
+    "一次掌握所有评论。"
+  ],
+  "topbarActionButtons.commentsButton.intro.title": [
+    "모든 댓글 보기",
+    "查看所有评论"
+  ],
+  "topbarActionButtons.updatesButton.intro.body": [
+    "여기서 모든 댓글과 페이지 업데이트 사항을 한 번에 파악하세요.",
+    "在这里，您可以一次了解所有评论和页面更新。"
+  ],
+  "topbarActionButtons.updatesButton.intro.title": [
+    "모든 업데이트와 댓글 보기",
+    "查看所有更新和评论"
+  ],
+  "topbarMobile.commentsMenu.title": ["댓글", "评论"],
   "topbarMoreButton.loggedOut.tooltip": ["기타", "其他"],
   "transactionErrors.searchEngineIndexingNotAllowed.message": [
     "이 워크스페이스는 공개 페이지가 검색 인덱스에 포함되는 것을 허용하지 않습니다.",
@@ -2852,6 +3185,65 @@
     "선택한 블록은 더 이상 원본과 동기화되지 않습니다.",
     "选定的块不再与源同步。"
   ],
+  "unfurling.authenticateButton.title": [
+    "{integration}에 연결해 변경하기",
+    "连接到{integration}进行更改"
+  ],
+  "unfurling.errorButton.title": ["미리보기 불러오기 실패", "预览加载失败"],
+  "unfurling.errorOptions.authenticateAction.alreadyAuthenticated.title": [
+    "다른 {integration} 계정 연결",
+    "连接另一个{integration}帐户"
+  ],
+  "unfurling.errorOptions.authenticateAction.notAuthenticated.title": [
+    "{integration} 계정 연결",
+    "{integration}帐户关联"
+  ],
+  "unfurling.errorOptions.menuTitle": [
+    "다음 옵션을 시도해 보세요",
+    "试试以下选项。"
+  ],
+  "unfurling.errorOptions.readUserGuideAction.title": [
+    "사용자 가이드 확인하기",
+    "检查用户指南"
+  ],
+  "unfurling.errorOptions.removeAction.title": ["제거", "移除"],
+  "unfurling.errorOptions.tryAgainAction.title": ["다시 시도", "重试"],
+  "unfurling.github.githubCommit": ["커밋", "提交"],
+  "unfurling.github.githubCommitted": [
+    "커밋 시간: {value}",
+    "提交时间：{value}"
+  ],
+  "unfurling.github.githubIssue": ["발행 값: {value}", "发行值：{value}"],
+  "unfurling.github.githubPullClosed": [
+    "닫은 시간: {value}",
+    "关闭时间：{value}"
+  ],
+  "unfurling.github.githubPullMerged": [
+    "합친 시간: {value}",
+    "总时间：{value}"
+  ],
+  "unfurling.github.githubPullOpened": [
+    "열린 시간: {value}",
+    "打开时间：{value}"
+  ],
+  "unfurling.github.githubPullRequest": [
+    "풀 리퀘스트 값: {value}",
+    "池请求值：{value}"
+  ],
+  "unfurling.github.githubRepoUpdated": [
+    "업데이트 시간: {value}",
+    "更新时间：{value}"
+  ],
+  "unfurling.github.jiraUpdated": [
+    "업데이트 시간: {value}",
+    "更新时间：{value}"
+  ],
+  "unfurling.jira.jiraAssignee": [
+    "{value} 사람에게 할당됨",
+    "{value}分配给人员"
+  ],
+  "unfurling.updateButton.title": ["변경", "变更"],
+  "unfurlingActions.authPopupTitle": ["인증", "认证"],
   "unfurlingMenu.actions.pasteAsEmbed.title": ["임베드로 붙여넣기", "嵌入粘贴"],
   "unfurlingMenu.actions.pasteAsLink.title": ["링크로 붙여넣기", "粘贴为链接"],
   "unfurlingMenu.actions.pasteAsMention.title": [
@@ -2894,15 +3286,45 @@
   "updateSegmentedControl.option.comment": ["댓글", "评论"],
   "updateSegmentedControl.option.updates": ["모든 업데이트", "所有更新"],
   "updateSidebar.commentContainer.empty": [
-    "페이지나 블록에 달린 댓글이 여기에 표시됩니다.",
-    "此处显示页面或块上的评论。"
+    "페이지의 댓글이 여기에 표시됩니다.",
+    "该页面的评论将在此处显示。"
+  ],
+  "updateSidebar.commentContainer.emptyResolved": [
+    "이 페이지의 해결된 댓글이 여기에 표시됩니다.",
+    "此页上的已解析评论将在此处显示。"
+  ],
+  "updateSidebar.commentContainer.emptyTitle": ["댓글이 없습니다", "没有评论"],
+  "updateSidebar.commentContainer.emptyTitleResolved": [
+    "해결된 댓글 없음",
+    "未解决评论"
+  ],
+  "updateSidebar.commentContainer.emptyTitleUnresolved": [
+    "미해결 댓글 없음",
+    "未解决的评论"
+  ],
+  "updateSidebar.commentContainer.emptyUnresolved": [
+    "이 페이지의 해결되지 않은 댓글이 여기에 표시됩니다.",
+    "此处显示此页面的未解析评论。"
   ],
   "updateSidebar.commentContainer.reply": ["답글", "回复"],
   "updateSidebar.commentContainer.restricted": [
-    "이 제한된 페이지의 업데이트 사항을 볼 수 있는 권한이 없습니다.",
-    "您没有权限查看此受限页面的更新。"
+    "이 페이지의 업데이트 사항을 볼 수 있는 권한이 없습니다.",
+    "您没有查看此页面更新的权限。"
+  ],
+  "updateSidebar.comments.filter.button.resolvedMode": ["해결됨", "已解决"],
+  "updateSidebar.comments.filter.button.unresolvedMode": [
+    "해결되지 않음",
+    "未解决"
+  ],
+  "updateSidebar.comments.mode.resolvedOption": ["해결된 댓글", "已解决的评论"],
+  "updateSidebar.comments.mode.unresolvedOption": [
+    "미해결 댓글",
+    "未解决的评论"
   ],
   "updateSidebar.commentsTab.title": ["댓글", "评论"],
+  "updateSidebar.header.comments.filter": ["미해결", "未解决"],
+  "updateSidebar.header.commentsLabel": ["댓글", "评论"],
+  "updateSidebar.header.updatesLabel": ["업데이트", "更新"],
   "updateSidebar.placeholder.addComment": ["댓글 달기", "评论"],
   "updateSidebar.resolvedToggle.hideResolved": [
     "해결된 댓글을 숨깁니다.",
@@ -2924,17 +3346,26 @@
     "이 페이지에는 업데이트 사항이 없습니다.",
     "此页面没有更新。"
   ],
+  "updateSidebar.updatesContainer.emptyAfterSearch": [
+    "요청하신 필터와 일치하는 업데이트 사항이 없습니다.",
+    "没有与您所请求的过滤器匹配的更新。"
+  ],
   "updateSidebar.updatesHeader.label": ["업데이트", "更新"],
   "updateSidebar.updatesTab.title": ["업데이트 목록", "更新列表"],
   "updateSidebarSelect.selectComments.label": ["댓글", "评论"],
   "updateSidebarSelect.selectUpdates.label": ["모든 업데이트", "所有更新"],
+  "updateSidebarTabCommentsSegmentedControl.option.open": ["미해결", "未解决"],
   "updateSidebarTabCommentsSegmentedControl.option.resolved": [
-    "해결",
+    "해결됨",
     "已解决"
   ],
   "updateSidebarTabCommentsSegmentedControl.option.unresolved": [
     "미해결",
     "未解决"
+  ],
+  "updateSidebarUnexpandButton.closeSidebar.tooltip": [
+    "사이드바 닫기",
+    "关闭边栏"
   ],
   "updateSpaceDomain.error.invalidDomain.message": [
     "사용할 수 없는 도메인입니다.",
@@ -2944,6 +3375,15 @@
     "도메인 입력은 필수입니다.",
     "域输入是必需的。"
   ],
+  "updatesModal.archiveTab.emptyPrompt": [
+    "수신함의 업데이트 사항 중 보관된 사항은 여기에 표시됩니다.",
+    "此处显示收件箱中已存档的更新。"
+  ],
+  "updatesModal.archiveTab.emptyPromptTitle": [
+    "보관된 업데이트 사항 없음",
+    "没有存档的更新"
+  ],
+  "updatesModal.mobileThisPage.title": ["이 페이지", "此页"],
   "upgradeMobileButton.upgradeButton.label": [
     "개인 프로 요금제로 업그레이드",
     "升级到个人专业版计划"
@@ -2960,5 +3400,17 @@
   "viewMoreOutlinerButton.label": [
     "모두 보기({total} 페이지)",
     "查看全部({total}页)"
-  ]
+  ],
+  "whatIsNotion.usecases.databases": ["데이터베이스", "数据库"],
+  "whatIsNotion.usecases.documents": ["문서", "文档"],
+  "whatIsNotion.usecases.knowledgeBases": ["지식 베이스", "知识库"],
+  "whatIsNotion.usecases.notes": [
+    "세상에서 가장 아름다운 노트... 😉",
+    "世界上最美丽的笔记."
+  ],
+  "whatIsNotion.usecases.projectManagementSystems": [
+    "프로젝트 관리 시스템",
+    "项目管理系统"
+  ],
+  "whatIsNotion.usecases.publicWebsites": ["공개 웹사이트", "公共网站"]
 }
