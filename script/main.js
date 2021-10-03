@@ -8,6 +8,9 @@ const { SyncAssest } = require("../util/syncAssest");
 const prettier = require("prettier");
 
 async function main() {
+  // 重要：补充一个手动收集的英文与中文翻译对照，可以直接修改这部分的东西。
+  const en_zh = require("../json/en_zh.json");
+
   // key => [kr, zh]
   const targetPool = require("../json/kr_zh.json");
   // key => zh_str 关键字
@@ -22,6 +25,10 @@ async function main() {
   // 收集器
   const collect = {
     ...newZh,
+    ...Object.keys(en_zh).reduce((res, key) => {
+      res[key] = en_zh[key][1]
+      return res;
+    }, {}),
     ...fuzzySearchKeywords
   }
   console.log("官方中文条数：",_.size(newZh));
@@ -95,6 +102,7 @@ async function main() {
   }, {});
   writeJSON(path.join(__dirname, "../json/zh.json"), finalZh);
 
+  // NOTE: 这里是合理的，kr_zh 就是 diff 官方中文newZh 和 官方韩文newKr
   writeJSON(
     path.join(__dirname, "../json/kr_zh.json"),
     Object.keys(newKr).reduce((set, key) => {
