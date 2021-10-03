@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         Notion-zh_CN notion的汉化脚本
 // @namespace    http://tampermonkey.net/
-// @version      2.3.2
+// @version      2.3.3
 // @description  notion的100%汉化脚本，基于官方中文+机器翻译韩文，支持app版本以及网页油猴，地址：https://github.com/reamd7/notion-zh_CN
 // @author       reamd7
 // @match        *://www.notion.so/*
@@ -27,7 +27,7 @@
     "UpdateSidebarFollowControl.follow.caption": "接收所有更新和评论通知",
     "UpdateSidebarFollowControl.follow.label": "关注",
     "UpdateSidebarFollowControl.following.caption": "接收所有更新和评论通知",
-    "UpdateSidebarFollowControl.following.label": "取消关注",
+    "UpdateSidebarFollowControl.following.label": "关注中",
     "UpdateSidebarFollowControl.notFollowing.caption": "不接收通知",
     "UpdateSidebarFollowControl.notFollowing.label": "不关注",
     "UpdateSidebarFollowControl.unfollow.caption": "不接收更新和评论通知",
@@ -254,14 +254,14 @@
     "action.properties.name": "属性",
     "action.propertyVisibility.label": "切换属性可见性",
     "action.quickFind.name": "快速查找",
-    "action.quoteSize.default": "基本",
+    "action.quoteSize.default": "默认",
     "action.quoteSize.large": "大",
     "action.quoteSize.name": "引用大小",
     "action.redo.name": "重做",
     "action.removefromFavorites.name": "从最爱中移除",
     "action.rename.name": "重命名",
     "action.replace.name": "替换",
-    "action.reportPage.name": "页面申报",
+    "action.reportPage.name": "报告页面",
     "action.resetZoom.name": "重设缩放",
     "action.resyncPage.name": "刷新离线数据",
     "action.ruleCount.label": "{ruleCount, plural, other {{ruleCount} 条规则}}",
@@ -339,7 +339,7 @@
     "action.unsyncTransclusionContainerName.name": "禁用所有同步",
     "action.unsyncTransclusionReference.name": "取消同步",
     "action.viewOriginal.name": "查看原文件",
-    "action.whatIsNotion.name": "Notion简介",
+    "action.whatIsNotion.name": "Notion 是什么？",
     "action.wrapCells.name": "单元格换行",
     "action.wrapCode.fuzzySearchKeywords":
       "Wrap Code 代码 daima dai'ma 换行 huanhang huan'hang",
@@ -1173,7 +1173,7 @@
     "blockHelpers.mapsBlockType": "地图",
     "blockHelpers.miroBlockType": "Miro",
     "blockHelpers.pdfBlockType": "PDF",
-    "blockHelpers.replitBlockType": "剥离",
+    "blockHelpers.replitBlockType": "Replit",
     "blockHelpers.sketchBlockType": "Sketch",
     "blockHelpers.tweetBlockType": "推文",
     "blockHelpers.typeformBlockType": "Typeform",
@@ -1303,9 +1303,9 @@
     "blockTemplates.list.page1Title": "页面 1",
     "blockTemplates.list.page2Title": "页面 2",
     "blockTemplates.list.page3Title": "页面 3",
-    "blockTemplates.list.tab1Title": "选项卡1",
-    "blockTemplates.list.tab2Title": "标签2",
-    "blockTemplates.list.tab3Title": "标签3",
+    "blockTemplates.list.tab1Title": "选项卡 1",
+    "blockTemplates.list.tab2Title": "选项卡 2",
+    "blockTemplates.list.tab3Title": "选项卡 3",
     "blockTemplates.list.tagsPropertyTitle": "标签",
     "blockTemplates.list.viewTitle": "列表视图",
     "blockTemplates.table.namePropertyTitle": "名称",
@@ -1478,23 +1478,23 @@
     "collectionFilterCombinatorGrid.filterOperator.and": "和",
     "collectionFilterCombinatorGrid.filterOperator.or": "或",
     "collectionFilterMenuFilter.filterOperators.checkbox.order":
-      "{operatorValue}{operator}",
+      "{operator}{operatorValue}",
     "collectionFilterMenuFilter.filterOperators.date.order":
-      "{operatorValue}{operator}",
+      "{operator}{operatorValue}",
     "collectionFilterMenuFilter.filterOperators.file.order":
-      "属性{operatorValue}{operator}",
+      "{operator}{operatorValue}",
     "collectionFilterMenuFilter.filterOperators.multi_select.order":
-      "属性{operatorValue}{operator}",
+      "{operator}{operatorValue}",
     "collectionFilterMenuFilter.filterOperators.number.order":
-      "属性{operatorValue}{operator}",
+      "{operator}{operatorValue}",
     "collectionFilterMenuFilter.filterOperators.person.order":
-      "属性{operatorValue}{operator}",
+      "{operator}{operatorValue}",
     "collectionFilterMenuFilter.filterOperators.relation.order":
-      "{operatorValue}{operator}",
+      "{operator}{operatorValue}",
     "collectionFilterMenuFilter.filterOperators.select.order":
-      "属性{operatorValue}{operator}",
+      "{operator}{operatorValue}",
     "collectionFilterMenuFilter.filterOperators.text.order":
-      "属性{operatorValue}{operator}",
+      "{operator}{operatorValue}",
     "collectionFilterMenuFilter.property.name": "属性",
     "collectionFilterMenuFilterOperatorValue.date.exact.order":
       "{exact}{dateValue}",
@@ -2451,12 +2451,12 @@
     "dateParserHelpers.now": "现在",
     "dateParserHelpers.remind": "提醒符_通知",
     "dateParserHelpers.today": "今天",
-    "dateParserHelpers.today.short": "乙",
+    "dateParserHelpers.today.short": "td",
     "dateParserHelpers.tomorrow": "明天",
-    "dateParserHelpers.tomorrow.short": "呼呼",
+    "dateParserHelpers.tomorrow.short": "tm",
     "dateParserHelpers.year": "年",
     "dateParserHelpers.yesterday": "昨天",
-    "dateParserHelpers.yesterday.short": "呼呼",
+    "dateParserHelpers.yesterday.short": "yd",
     "datePropertyMenu.clearButton.label": "清除日期",
     "datePropertyMenu.dateFormatDropdownButton.label": "日期格式",
     "datePropertyMenu.formatMenu.emptyButton.label": "未填写",
@@ -2903,7 +2903,7 @@
     "embedMenu.action.codepen": "嵌入 CodePen",
     "embedMenu.action.createEmbed": "创建嵌入",
     "embedMenu.action.drive": "嵌入谷歌云端硬盘",
-    "embedMenu.action.excalidraw": "Excalidraw嵌入",
+    "embedMenu.action.excalidraw": "嵌入 Excalidraw",
     "embedMenu.action.figma": "嵌入 Figma",
     "embedMenu.action.framer": "嵌入 Framer 原型",
     "embedMenu.action.gist": "嵌入 GitHub Gist",
@@ -2913,8 +2913,8 @@
     "embedMenu.action.maps": "嵌入谷歌地图",
     "embedMenu.action.miro": "嵌入 Miro 画板",
     "embedMenu.action.pdf": "嵌入 PDF",
-    "embedMenu.action.replit": "Repl嵌入",
-    "embedMenu.action.sketch": "嵌入Sketch文档",
+    "embedMenu.action.replit": "嵌入 Repl",
+    "embedMenu.action.sketch": "嵌入 Sketch 文档",
     "embedMenu.action.tweet": "嵌入推文",
     "embedMenu.action.typeform": "嵌入 Typeform",
     "embedMenu.action.video": "嵌入视频",
@@ -2979,7 +2979,7 @@
     "evernoteImportOption.caption.getCredit": "导入即可赚取 US$5 的积分",
     "evernoteImportOption.search.noResultsPlaceholder": "无笔记本",
     "evernoteImportOption.search.placeholder": "搜索笔记本⋯",
-    "excalidrawBlock.embeds.button.label": "Excalidraw嵌入",
+    "excalidrawBlock.embeds.button.label": "嵌入 Excalidraw",
     "excalidrawBlock.embeds.caption": "与Excalidraw白板兼容。",
     "excalidrawBlock.placeholder": "Excalidraw嵌入",
     "export.csvHeader.email": "邮箱地址",
@@ -4146,8 +4146,8 @@
     "newBlock.subSubHeader.fuzzySearchKeywords":
       "sub heading 3 ### 小标题 xiaobiaoti xiao'biao'ti 子标题 zibiaoti zi'biao'ti",
     "newBlock.subSubHeader.title": "标题 3",
-    "newBlock.tab.description": "“选项卡”",
-    "newBlock.tab.keywords": "“选项卡”",
+    "newBlock.tab.description": "选项卡",
+    "newBlock.tab.keywords": "选项卡",
     "newBlock.tab.title": "创建制表符块",
     "newBlock.tableOfContents.description": "显示页面大纲。",
     "newBlock.tableOfContents.fuzzySearchKeywords":
@@ -4308,19 +4308,19 @@
     "onboardingChecklist.collab.comments.title": "评论",
     "onboardingChecklist.collab.mentions.text":
       "要支持团队成员，请在页面或评论中键入@，然后输入团队成员的姓名。收到通知的团队成员可以立即加入。",
-    "onboardingChecklist.collab.mentions.title": "精神",
+    "onboardingChecklist.collab.mentions.title": "提及",
     "onboardingChecklist.createContent.block.title": "块",
     "onboardingChecklist.createContent.blockTypes.text":
       "块是组成Notion页面的元素。块可以包含不同类型的内容，包括文本、图像、复选框和表格。",
     "onboardingChecklist.createContent.rearrangeBlocks.text":
       "将块替换为其他内容类型，以便以新的方式使用、显示和更详细地表达包括的信息。",
     "onboardingChecklist.createContent.rearrangeBlocks.title": "重新排列块",
-    "onboardingChecklist.createContent.transformBlocks.title": "改变街区",
+    "onboardingChecklist.createContent.transformBlocks.title": "改变块",
     "onboardingChecklist.createPages.slashCommand.text":
-      "斜线命令充当服务员，带来街区。如果键入/，则会出现一个菜单，其中包含可以添加到Notion页面的所有内容类型。",
+      "如果键入/，则会出现一个菜单，其中包含可以添加到Notion页面的所有内容类型。😋",
     "onboardingChecklist.createPages.slashCommand.title": "斜线命令",
     "onboardingChecklist.createPages.subPage.text":
-      "在页面上输入/页面命令以创建子页面。内容有了一套体系，方便你找到需要的内容。",
+      "在页面上输入/页面命令以创建子页面。您可以更有层次地组织你的内容，方便随时查找。",
     "onboardingChecklist.createPages.subPage.title": "子页",
     "onboardingChecklist.createPages.text":
       "单击工作区左下角的+新页面或侧栏中的+按钮，即可创建新页面。",
@@ -4329,8 +4329,8 @@
       "和团队一起工作吗？通过从“设置”和“成员”菜单添加团队成员，您可以共享所有相同的Notion工作空间。",
     "onboardingChecklist.share.addTeammates.title": "添加团队成员",
     "onboardingChecklist.share.button.text":
-      "使用页面右上角的“共享”按钮，您可以邀请非工作区成员以及非成员进行协作。",
-    "onboardingChecklist.share.button.title": "“共享”按钮",
+      "使用页面右上角的“分享”按钮，您可以邀请非工作区成员以及非成员进行协作。",
+    "onboardingChecklist.share.button.title": "“分享”按钮",
     "onboardingChecklist.tipsAndTricks.downloadApps.text":
       "下载<a1>桌面应用</a1>或<a2>移动应用</a2>。",
     "onboardingChecklist.tipsAndTricks.exploreTemplates.text":
@@ -4350,7 +4350,7 @@
     "onboardingChecklistButton.getMoreHelp.button": "查看更多帮助",
     "onboardingChecklistButton.headerText":
       "<boldtext>Notion首次用户</boldtext>",
-    "onboardingChecklistButton.nextStage.complete": "完成",
+    "onboardingChecklistButton.nextStage.complete": "完成！🎉",
     "onboardingChecklistButton.shareYourWork.displayName": "工作共享",
     "onboardingChecklistButton.slashAndBlocks.displayName": "斜线和块",
     "onboardingChecklistButton.stageFooter.next": "下一个",
@@ -4363,7 +4363,7 @@
     "onboardingChecklistButton.tipsAndTricks.displayName": "帮助和技巧",
     "onboardingChecklistButton.title": "首次使用<b>Notion的用户</b>",
     "onboardingChecklistButton.tooltip": "Notion入门",
-    "onboardingChecklistButton.whatIsNotion.displayName": "Notion简介",
+    "onboardingChecklistButton.whatIsNotion.displayName": "Notion 是什么？",
     "onboardingGDPR.agreeButton.label": "同意",
     "onboardingGDPR.consentInfo.paragraph1.body":
       "我们使用 Cookie 来安全地识别你的帐户，让你保持登录状态，并改进我们的服务。",
@@ -5405,7 +5405,7 @@
       "无法删除最后一个管理员。",
     "renameFileMenuPopup.input.placeholder": "无标题",
     "renamePageMenuPopup.input.placeholder": "无标题",
-    "replitBlock.embeds.button.label": "Repl嵌入",
+    "replitBlock.embeds.button.label": "嵌入 Repl",
     "replitBlock.embeds.caption": "与Replit兼容。",
     "replitBlock.placeholder": "Repl嵌入",
     "reportPage.additionalInformation.placeholder": "输入附加信息(可选)",
@@ -5805,7 +5805,7 @@
     "sidebarCreateTeamModal.teamDescription.label":
       "团队是协作和整理页面的空间。",
     "sidebarCreateTeamModal.teamScreen.descriptionPlaceholder": "团队详细信息",
-    "sidebarCreateTeamModal.teamScreen.namePlaceholder": "神田研究所",
+    "sidebarCreateTeamModal.teamScreen.namePlaceholder": "Acme 研究所",
     "sidebarCreateTeamModal.teamScreen.teamDescriptionLabel": "小组说明",
     "sidebarCreateTeamModal.teamScreen.teamNameLabel": "团队名称",
     "sidebarCreateTeamModal.teamTitle.label": "创建新团队",
@@ -5889,7 +5889,7 @@
     "signupPage.pageTitle": "注册",
     "signupPage.title": "注册",
     "signupPage.titleForSpace": "欢迎访问 Notion 上的 {workspaceName}",
-    "sketchBlock.embeds.button.label": "Sketch嵌入",
+    "sketchBlock.embeds.button.label": "嵌入 Sketch",
     "sketchBlock.embeds.caption": "与启用了公共访问的Sketch链接兼容",
     "sketchBlock.placeholder": "Sketch嵌入",
     "slackActions.dialogError.loginWithSlack.errorMessage": "出了些问题。",
@@ -6097,12 +6097,12 @@
     "spaceIntegrationSettings.integrationTable.creationInfoColumn.contents":
       "{installerName}，{installedTime}",
     "spaceIntegrationSettings.integrationTable.emptyMessage": "未安装集成",
-    "spaceIntegrationSettings.integrationTable.integrationColumn.title": "整合",
+    "spaceIntegrationSettings.integrationTable.integrationColumn.title": "集成",
     "spaceIntegrationSettings.integrationTable.row.internalIntegrationLabel":
       "内部使用",
     "spaceIntegrationSettings.integrationtable.creationInfoColumn.title":
       "添加的用户",
-    "spaceIntegrationSettings.title": "{workspaceName}的完整合并列表",
+    "spaceIntegrationSettings.title": "{workspaceName}的完整集成列表",
     "spaceInviteLinkEmail.body.cta":
       "你可以将此电子邮件转发给你的队友，邀请他们进入你的工作区。",
     "spaceInviteLinkEmail.body.label":
@@ -6203,7 +6203,7 @@
     "spaceSettingsSidebar.connectedAppsTab.title": "我绑定的应用",
     "spaceSettingsSidebar.creditTab.title": "赚取积分",
     "spaceSettingsSidebar.experimentsTab.title": "实验",
-    "spaceSettingsSidebar.integrationsTab.title": "整合",
+    "spaceSettingsSidebar.integrationsTab.title": "集成",
     "spaceSettingsSidebar.languageAndRegionTab.title": "语言与地区",
     "spaceSettingsSidebar.membersTab.title": "成员",
     "spaceSettingsSidebar.notificationsTab.title": "我的通知",
@@ -6928,13 +6928,13 @@
     "unfurling.errorOptions.tryAgainAction.title": "重试",
     "unfurling.github.githubCommit": "提交",
     "unfurling.github.githubCommitted": "提交时间：{value}",
-    "unfurling.github.githubIssue": "发行值：{value}",
-    "unfurling.github.githubPullClosed": "关闭时间：{value}",
-    "unfurling.github.githubPullMerged": "总时间：{value}",
-    "unfurling.github.githubPullOpened": "打开时间：{value}",
-    "unfurling.github.githubPullRequest": "池请求值：{value}",
-    "unfurling.github.githubRepoUpdated": "更新时间：{value}",
-    "unfurling.github.jiraUpdated": "更新时间：{value}",
+    "unfurling.github.githubIssue": "Issue{value}",
+    "unfurling.github.githubPullClosed": "Closed {value}",
+    "unfurling.github.githubPullMerged": "Merged：{value}",
+    "unfurling.github.githubPullOpened": "Opened：{value}",
+    "unfurling.github.githubPullRequest": "Pull Request {value}",
+    "unfurling.github.githubRepoUpdated": "Updated {value}",
+    "unfurling.github.jiraUpdated": "Updated {value}",
     "unfurling.jira.jiraAssignee": "{value}分配给人员",
     "unfurling.updateButton.title": "变更",
     "unfurlingActions.authPopupTitle": "认证",
@@ -6965,7 +6965,7 @@
     "updateSegmentedControl.option.updates": "所有更新",
     "updateSidebar.commentContainer.empty": "该页面的评论将在此处显示。",
     "updateSidebar.commentContainer.emptyResolved":
-      "此页上的已解析评论将在此处显示。",
+      "此页上的已解决评论将在此处显示。",
     "updateSidebar.commentContainer.emptyTitle": "没有评论",
     "updateSidebar.commentContainer.emptyTitleResolved": "未解决评论",
     "updateSidebar.commentContainer.emptyTitleUnresolved": "未解决的评论",
@@ -6981,7 +6981,7 @@
     "updateSidebar.header.comments.filter": "未解决",
     "updateSidebar.header.commentsLabel": "评论",
     "updateSidebar.header.updatesLabel": "更新",
-    "updateSidebar.placeholder.addComment": "评论",
+    "updateSidebar.placeholder.addComment": "添加评论...",
     "updateSidebar.resolvedToggle.hideResolved": "隐藏已解决的评论。",
     "updateSidebar.resolvedToggle.hideResolvedTooltip": "隐藏已解决的评论",
     "updateSidebar.resolvedToggle.showResolved": "显示已解决的评论。",

@@ -8,7 +8,7 @@
     "모든 업데이트와 댓글 알림 받기",
     "接收所有更新和评论通知"
   ],
-  "UpdateSidebarFollowControl.following.label": ["팔로잉", "取消关注"],
+  "UpdateSidebarFollowControl.following.label": ["팔로잉", "关注中"],
   "UpdateSidebarFollowControl.notFollowing.caption": [
     "알림 받지 않기",
     "不接收通知"
@@ -113,10 +113,10 @@
   "action.listFormat.numbers.name": ["숫자", "数字"],
   "action.listFormat.sectionName": ["목록 형식", "列表格式"],
   "action.pageUpdates.title": ["페이지 업데이트", "更新页面"],
-  "action.quoteSize.default": ["기본", "基本"],
+  "action.quoteSize.default": ["기본", "默认"],
   "action.quoteSize.large": ["크게", "大"],
   "action.quoteSize.name": ["인용 크기", "引用大小"],
-  "action.reportPage.name": ["페이지 신고", "页面申报"],
+  "action.reportPage.name": ["페이지 신고", "报告页面"],
   "action.section.quoteSize": ["인용 크기", "引用大小"],
   "action.section.simpleTableColumn": ["열", "列"],
   "action.signUpOrlogIn.name": ["회원 가입 또는 로그인하기", "注册或登录"],
@@ -126,7 +126,7 @@
     "禁用所有同步"
   ],
   "action.unsyncTransclusionReference.name": ["동기화 해제", "取消同步"],
-  "action.whatIsNotion.name": ["Notion 소개", "Notion简介"],
+  "action.whatIsNotion.name": ["Notion 소개", "Notion 是什么？"],
   "activityUpdates.filterMenu.byDate": ["기간", "期间"],
   "activityUpdates.filterMenu.byType.addItemLabel": [
     "활동 유형 추가",
@@ -1033,7 +1033,7 @@
     "没有解决的评论。"
   ],
   "blockHelpers.excalidrawBlockType": ["Excalidraw", "Excalidraw"],
-  "blockHelpers.replitBlockType": ["Replit", "剥离"],
+  "blockHelpers.replitBlockType": ["Replit", "Replit"],
   "blockHelpers.sketchBlockType": ["Sketch", "Sketch"],
   "blockPasteMenu.actions.createTransclusion.title": [
     "붙여넣고 동기화하기",
@@ -1072,9 +1072,9 @@
     "숫자 형식 검색",
     "搜索数字格式"
   ],
-  "blockTemplates.list.tab1Title": ["탭1", "选项卡1"],
-  "blockTemplates.list.tab2Title": ["탭2", "标签2"],
-  "blockTemplates.list.tab3Title": ["탭3", "标签3"],
+  "blockTemplates.list.tab1Title": ["탭1", "选项卡 1"],
+  "blockTemplates.list.tab2Title": ["탭2", "选项卡 2"],
+  "blockTemplates.list.tab3Title": ["탭3", "选项卡 3"],
   "bootupHelpers.iosErrorRequiresReinstall.errorMessage": [
     "안녕하세요. iOS 앱에서 문제를 감지했습니다. 이 앱을 삭제한 후에 App Store에서 다시 설치해 주세요.",
     "你好。iOS应用程序检测到问题。删除此应用后，请在App Store中重新安装它。"
@@ -1106,39 +1106,39 @@
   "collectionFilterCombinatorGrid.filterOperator.or": ["또는", "或"],
   "collectionFilterMenuFilter.filterOperators.checkbox.order": [
     "속성이 {operatorValue}{operator}",
-    "{operatorValue}{operator}"
+    "{operator}{operatorValue}"
   ],
   "collectionFilterMenuFilter.filterOperators.date.order": [
     "속성이 {operatorValue}{operator}",
-    "{operatorValue}{operator}"
+    "{operator}{operatorValue}"
   ],
   "collectionFilterMenuFilter.filterOperators.file.order": [
     "속성이 {operatorValue}{operator}",
-    "属性{operatorValue}{operator}"
+    "{operator}{operatorValue}"
   ],
   "collectionFilterMenuFilter.filterOperators.multi_select.order": [
     "속성이 {operatorValue}{operator}",
-    "属性{operatorValue}{operator}"
+    "{operator}{operatorValue}"
   ],
   "collectionFilterMenuFilter.filterOperators.number.order": [
     "속성이 {operatorValue}{operator}",
-    "属性{operatorValue}{operator}"
+    "{operator}{operatorValue}"
   ],
   "collectionFilterMenuFilter.filterOperators.person.order": [
     "속성이 {operatorValue}{operator}",
-    "属性{operatorValue}{operator}"
+    "{operator}{operatorValue}"
   ],
   "collectionFilterMenuFilter.filterOperators.relation.order": [
     "속성이 {operatorValue}{operator}",
-    "{operatorValue}{operator}"
+    "{operator}{operatorValue}"
   ],
   "collectionFilterMenuFilter.filterOperators.select.order": [
     "속성이 {operatorValue}{operator}",
-    "属性{operatorValue}{operator}"
+    "{operator}{operatorValue}"
   ],
   "collectionFilterMenuFilter.filterOperators.text.order": [
     "속성이 {operatorValue}{operator}",
-    "属性{operatorValue}{operator}"
+    "{operator}{operatorValue}"
   ],
   "collectionFilterMenuFilter.property.name": ["속성", "属性"],
   "collectionFilterMenuFilterOperatorValue.date.exact.order": [
@@ -1356,12 +1356,12 @@
   "dateParserHelpers.now": ["지금", "现在"],
   "dateParserHelpers.remind": ["리마인더_알림", "提醒符_通知"],
   "dateParserHelpers.today": ["오늘", "今天"],
-  "dateParserHelpers.today.short": ["ㅇㄴ", "乙"],
+  "dateParserHelpers.today.short": ["ㅇㄴ", "td"],
   "dateParserHelpers.tomorrow": ["내일", "明天"],
-  "dateParserHelpers.tomorrow.short": ["ㄴㅇ", "呼呼"],
+  "dateParserHelpers.tomorrow.short": ["ㄴㅇ", "tm"],
   "dateParserHelpers.year": ["년", "年"],
   "dateParserHelpers.yesterday": ["어제", "昨天"],
-  "dateParserHelpers.yesterday.short": ["ㅇㅈ", "呼呼"],
+  "dateParserHelpers.yesterday.short": ["ㅇㅈ", "yd"],
   "developerIntegration.confirmationModal.cancelLabel": ["취소", "取消"],
   "developerIntegration.confirmationModal.confirmLabel": ["계속하기", "继续"],
   "developerIntegration.confirmationModal.deleteLabel": ["삭제", "删除"],
@@ -1630,9 +1630,9 @@
   "edit.blockDeletedEditStyles.factoryLabel": ["삭제됨", "已删除"],
   "edit.permissionRole.canEditStyles.label": ["편집 허용", "允许编辑"],
   "embedBlock.originalLink.button": ["원본", "原稿"],
-  "embedMenu.action.excalidraw": ["Excalidraw 임베드", "Excalidraw嵌入"],
-  "embedMenu.action.replit": ["Repl 임베드", "Repl嵌入"],
-  "embedMenu.action.sketch": ["Sketch 문서 임베드", "嵌入Sketch文档"],
+  "embedMenu.action.excalidraw": ["Excalidraw 임베드", "嵌入 Excalidraw"],
+  "embedMenu.action.replit": ["Repl 임베드", "嵌入 Repl"],
+  "embedMenu.action.sketch": ["Sketch 문서 임베드", "嵌入 Sketch 文档"],
   "embedMenu.actions.createTransclusion.title": [
     "붙여넣고 동기화하기",
     "粘贴并同步"
@@ -1656,7 +1656,7 @@
   ],
   "excalidrawBlock.embeds.button.label": [
     "Excalidraw 임베드",
-    "Excalidraw嵌入"
+    "嵌入 Excalidraw"
   ],
   "excalidrawBlock.embeds.caption": [
     "Excalidraw 화이트보드와 호환됩니다.",
@@ -1983,8 +1983,8 @@
   ],
   "newBlock.sketch.fuzzySearchKeywords": ["Sketch 스케치", "Sketch"],
   "newBlock.sketch.title": ["Sketch", "Sketch"],
-  "newBlock.tab.description": ["탭", "“选项卡”"],
-  "newBlock.tab.keywords": ["탭", "“选项卡”"],
+  "newBlock.tab.description": ["탭", "选项卡"],
+  "newBlock.tab.keywords": ["탭", "选项卡"],
   "newBlock.tab.title": ["탭 블록 생성하기", "创建制表符块"],
   "newBlock.toggle.fuzzySearchKeywords": [
     "토글 목록",
@@ -2157,7 +2157,7 @@
     "팀원을 멘션하려면 페이지나 댓글에서 @을 입력한 후 해당 팀원의 이름을 입력하세요. 알림을 받은 팀원이 바로 참여할 수 있습니다.",
     "要支持团队成员，请在页面或评论中键入@，然后输入团队成员的姓名。收到通知的团队成员可以立即加入。"
   ],
-  "onboardingChecklist.collab.mentions.title": ["멘션", "精神"],
+  "onboardingChecklist.collab.mentions.title": ["멘션", "提及"],
   "onboardingChecklist.createContent.block.title": ["블록", "块"],
   "onboardingChecklist.createContent.blockTypes.text": [
     "블록은 Notion 페이지를 구성하는 요소입니다. 블록은 텍스트, 이미지, 체크박스, 표를 비롯한 다양한 유형의 콘텐츠를 포함할 수 있습니다.",
@@ -2173,11 +2173,11 @@
   ],
   "onboardingChecklist.createContent.transformBlocks.title": [
     "블록 변신시키기",
-    "改变街区"
+    "改变块"
   ],
   "onboardingChecklist.createPages.slashCommand.text": [
     "슬래시 명령은 블록을 가져다주는 웨이터 역할을 합니다. /를 입력하면 Notion 페이지에 추가할 수 있는 콘텐츠 유형이 모두 있는 메뉴가 나타납니다.",
-    "斜线命令充当服务员，带来街区。如果键入/，则会出现一个菜单，其中包含可以添加到Notion页面的所有内容类型。"
+    "如果键入/，则会出现一个菜单，其中包含可以添加到Notion页面的所有内容类型。😋"
   ],
   "onboardingChecklist.createPages.slashCommand.title": [
     "슬래시 명령",
@@ -2185,7 +2185,7 @@
   ],
   "onboardingChecklist.createPages.subPage.text": [
     "페이지 안에서 /페이지라는 명령어를 입력해 하위 페이지를 만들어 보세요. 콘텐츠에 체계가 생겨 필요한 내용을 쉽게 찾을 수 있습니다.",
-    "在页面上输入/页面命令以创建子页面。内容有了一套体系，方便你找到需要的内容。"
+    "在页面上输入/页面命令以创建子页面。您可以更有层次地组织你的内容，方便随时查找。"
   ],
   "onboardingChecklist.createPages.subPage.title": ["하위 페이지", "子页"],
   "onboardingChecklist.createPages.text": [
@@ -2203,9 +2203,9 @@
   ],
   "onboardingChecklist.share.button.text": [
     "페이지 오른쪽 상단의 공유 버튼을 사용하면 워크스페이스 멤버뿐만 아니라 멤버가 아닌 사람도 초대해 공동 작업을 할 수 있습니다.",
-    "使用页面右上角的“共享”按钮，您可以邀请非工作区成员以及非成员进行协作。"
+    "使用页面右上角的“分享”按钮，您可以邀请非工作区成员以及非成员进行协作。"
   ],
-  "onboardingChecklist.share.button.title": ["공유 버튼", "“共享”按钮"],
+  "onboardingChecklist.share.button.title": ["공유 버튼", "“分享”按钮"],
   "onboardingChecklist.tipsAndTricks.downloadApps.text": [
     "<a1>데스크톱 앱</a1> 또는 <a2>모바일 앱</a2>을 다운로드하세요.",
     "下载<a1>桌面应用</a1>或<a2>移动应用</a2>。"
@@ -2248,7 +2248,7 @@
     "<boldtext>Notion 처음 사용자</boldtext>",
     "<boldtext>Notion首次用户</boldtext>"
   ],
-  "onboardingChecklistButton.nextStage.complete": ["완료", "完成"],
+  "onboardingChecklistButton.nextStage.complete": ["완료", "完成！🎉"],
   "onboardingChecklistButton.shareYourWork.displayName": [
     "작업 공유",
     "工作共享"
@@ -2281,7 +2281,7 @@
   "onboardingChecklistButton.tooltip": ["Notion 시작하기", "Notion入门"],
   "onboardingChecklistButton.whatIsNotion.displayName": [
     "Notion 소개",
-    "Notion简介"
+    "Notion 是什么？"
   ],
   "onboardingInvite.addEmail.caption": [
     "여러 개의 이메일 주소를 입력할 때는 쉼표나 띄어쓰기, 줄 바꿈으로 구분해 주세요.",
@@ -2531,7 +2531,7 @@
     "마지막 관리자는 제거할 수 없습니다.",
     "无法删除最后一个管理员。"
   ],
-  "replitBlock.embeds.button.label": ["Repl 임베드", "Repl嵌入"],
+  "replitBlock.embeds.button.label": ["Repl 임베드", "嵌入 Repl"],
   "replitBlock.embeds.caption": ["Replit과 호환됩니다.", "与Replit兼容。"],
   "replitBlock.placeholder": ["Repl 임베드", "Repl嵌入"],
   "reportPage.additionalInformation.placeholder": [
@@ -2641,7 +2641,7 @@
   ],
   "sidebarCreateTeamModal.teamScreen.namePlaceholder": [
     "가나다 연구소",
-    "神田研究所"
+    "Acme 研究所"
   ],
   "sidebarCreateTeamModal.teamScreen.teamDescriptionLabel": [
     "팀 설명",
@@ -2654,7 +2654,7 @@
   "sidebarTeamModalTab.option.people": ["사용자", "用户"],
   "sidebarTeamModalTab.option.settings": ["설정", "设置"],
   "sidebarTeamModalTab.teamLabel.stub": ["나의 팀", "我的团队"],
-  "sketchBlock.embeds.button.label": ["Sketch 임베드", "Sketch嵌入"],
+  "sketchBlock.embeds.button.label": ["Sketch 임베드", "嵌入 Sketch"],
   "sketchBlock.embeds.caption": [
     "공개 액세스가 활성화된 Sketch 링크와 호환됨",
     "与启用了公共访问的Sketch链接兼容"
@@ -2772,7 +2772,7 @@
   ],
   "spaceIntegrationSettings.integrationTable.integrationColumn.title": [
     "통합",
-    "整合"
+    "集成"
   ],
   "spaceIntegrationSettings.integrationTable.row.internalIntegrationLabel": [
     "내부용",
@@ -2784,11 +2784,11 @@
   ],
   "spaceIntegrationSettings.title": [
     "{workspaceName}의 전체 통합 목록",
-    "{workspaceName}的完整合并列表"
+    "{workspaceName}的完整集成列表"
   ],
   "spaceSettings.closeSettingsDialog.cancelationButton.label": ["아니요", "不"],
   "spaceSettingsSidebar.experimentsTab.title": ["실험", "实验"],
-  "spaceSettingsSidebar.integrationsTab.title": ["통합", "整合"],
+  "spaceSettingsSidebar.integrationsTab.title": ["통합", "集成"],
   "spaceSettingsSidebar.subscriptionTab.title": ["구독", "订阅"],
   "spaceSubscriptionBilling.address.invalidError": [
     "유효하지 않은 주소입니다. 결제를 진행하려면 주소를 변경해주세요.",
@@ -3213,31 +3213,25 @@
     "커밋 시간: {value}",
     "提交时间：{value}"
   ],
-  "unfurling.github.githubIssue": ["발행 값: {value}", "发行值：{value}"],
-  "unfurling.github.githubPullClosed": [
-    "닫은 시간: {value}",
-    "关闭时间：{value}"
-  ],
+  "unfurling.github.githubIssue": ["발행 값: {value}", "Issue{value}"],
+  "unfurling.github.githubPullClosed": ["닫은 시간: {value}", "Closed {value}"],
   "unfurling.github.githubPullMerged": [
     "합친 시간: {value}",
-    "总时间：{value}"
+    "Merged：{value}"
   ],
   "unfurling.github.githubPullOpened": [
     "열린 시간: {value}",
-    "打开时间：{value}"
+    "Opened：{value}"
   ],
   "unfurling.github.githubPullRequest": [
     "풀 리퀘스트 값: {value}",
-    "池请求值：{value}"
+    "Pull Request {value}"
   ],
   "unfurling.github.githubRepoUpdated": [
     "업데이트 시간: {value}",
-    "更新时间：{value}"
+    "Updated {value}"
   ],
-  "unfurling.github.jiraUpdated": [
-    "업데이트 시간: {value}",
-    "更新时间：{value}"
-  ],
+  "unfurling.github.jiraUpdated": ["업데이트 시간: {value}", "Updated {value}"],
   "unfurling.jira.jiraAssignee": [
     "{value} 사람에게 할당됨",
     "{value}分配给人员"
@@ -3291,7 +3285,7 @@
   ],
   "updateSidebar.commentContainer.emptyResolved": [
     "이 페이지의 해결된 댓글이 여기에 표시됩니다.",
-    "此页上的已解析评论将在此处显示。"
+    "此页上的已解决评论将在此处显示。"
   ],
   "updateSidebar.commentContainer.emptyTitle": ["댓글이 없습니다", "没有评论"],
   "updateSidebar.commentContainer.emptyTitleResolved": [
@@ -3325,7 +3319,7 @@
   "updateSidebar.header.comments.filter": ["미해결", "未解决"],
   "updateSidebar.header.commentsLabel": ["댓글", "评论"],
   "updateSidebar.header.updatesLabel": ["업데이트", "更新"],
-  "updateSidebar.placeholder.addComment": ["댓글 달기", "评论"],
+  "updateSidebar.placeholder.addComment": ["댓글 달기", "添加评论..."],
   "updateSidebar.resolvedToggle.hideResolved": [
     "해결된 댓글을 숨깁니다.",
     "隐藏已解决的评论。"
