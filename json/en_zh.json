@@ -95,7 +95,7 @@
   "action.languageMode.xml": ["XML", "XML"],
   "action.languageMode.yaml": ["YAML", "YAML"],
   "action.listFormat.letters.default": ["Default", "默认值"],
-  "action.listFormat.letters.name": ["Letters", "字"],
+  "action.listFormat.letters.name": ["Letters", "字母"],
   "action.listFormat.letters.roman": ["Roman numerals", "罗马数字"],
   "action.listFormat.name": ["List format", "列表格式"],
   "action.listFormat.numbers.name": ["Numbers", "数字"],

@@ -106,12 +106,15 @@
   "action.languageMode.webassembly": ["WebAssembly", "WebAssembly"],
   "action.languageMode.xml": ["XML", "XML"],
   "action.languageMode.yaml": ["YAML", "YAML"],
+  "action.listFormat.circle.name": ["원", "圆圈 ◦"],
+  "action.listFormat.disc.name": ["원반", "圆点 •"],
   "action.listFormat.letters.default": ["기본값", "默认值"],
-  "action.listFormat.letters.name": ["글자", "字"],
+  "action.listFormat.letters.name": ["글자", "字母"],
   "action.listFormat.letters.roman": ["로마 숫자", "罗马数字"],
   "action.listFormat.name": ["목록 형식", "列表格式"],
   "action.listFormat.numbers.name": ["숫자", "数字"],
   "action.listFormat.sectionName": ["목록 형식", "列表格式"],
+  "action.listFormat.square.name": ["정사각형", "方块 ▪"],
   "action.pageUpdates.title": ["페이지 업데이트", "更新页面"],
   "action.quoteSize.default": ["기본", "默认"],
   "action.quoteSize.large": ["크게", "大"],
@@ -1236,6 +1239,18 @@
     "로딩 중...",
     "正在加载."
   ],
+  "connectedAppSettings.deleteExternalAuthorization.confirmDelete.label": [
+    "예",
+    "是"
+  ],
+  "connectedAppSettings.deleteExternalAuthorization.withAccountName.confirmationMessage": [
+    "{accountName}의 액세스를 취소할까요?",
+    "是否要取消{accountName}的访问？"
+  ],
+  "connectedAppSettings.deleteExternalAuthorization.withoutAccountName.confirmationMessage": [
+    "이 계정의 액세스를 취소할까요?",
+    "是否要取消此帐户的访问权限？"
+  ],
   "couponEntryInput.button.apply": ["사용", "使用"],
   "couponEntryInput.error.noPromo": [
     "유효하지 않은 쿠폰 코드",
@@ -1244,6 +1259,7 @@
   "couponEntryInput.placeholder": ["쿠폰 코드", "优惠券代码"],
   "database.actionBar.boardColumnsButton.label": ["열 구분 기준", "列分隔标准"],
   "database.actionBar.groupButton.label": ["그룹화 기준", "分组依据"],
+  "database.actionBar.subGroupButton.label": ["하위 그룹화 기준", "子分组依据"],
   "database.boardView.addGroupButton.groupAlreadyExistsError.message": [
     "이 그룹은 이미 존재합니다.",
     "这个组已经存在。"
@@ -1310,6 +1326,8 @@
   "database.groupMenu.dateGroupBy.year": ["연도별", "每年"],
   "database.groupMenu.groupBy": ["그룹화 기준", "分组依据"],
   "database.groupMenu.hiddenGroups": ["숨긴 그룹", "隐藏组"],
+  "database.groupMenu.hideAllGroups": ["모두 숨기기", "隐藏所有组"],
+  "database.groupMenu.hideEmptyGroups": ["빈 그룹 숨기기", "隐藏空组"],
   "database.groupMenu.loadMoreButton.text": [
     "{loadMoreAmount, plural, other {{loadMoreAmount}개 그룹 더 불러오기}}",
     "{loadMoreAmount，plural，other{{loadMoreAmount}载入更多组}}"
@@ -1318,6 +1336,7 @@
   "database.groupMenu.noneGroup": ["없음", "无"],
   "database.groupMenu.numberGroupRange": ["그룹 범위", "组范围"],
   "database.groupMenu.numberGroupSize": ["그룹화 단위", "分组单位"],
+  "database.groupMenu.showAllGroups": ["모두 표시", "显示所有组"],
   "database.groupMenu.sort": ["정렬", "排序"],
   "database.groupMenu.sortType.alphabetical": ["알파벳순", "按字母顺序排列"],
   "database.groupMenu.sortType.ascending": ["오름차순", "升序"],
@@ -1329,6 +1348,7 @@
     "字母倒序"
   ],
   "database.groupMenu.sortType.reverseChronological": ["시간 역순", "时间倒序"],
+  "database.groupMenu.subGroupBy": ["하위 그룹화 기준", "子分组依据"],
   "database.groupMenu.textGroupBy.alphabetical": ["알파벳순", "按字母顺序排列"],
   "database.groupMenu.textGroupBy.exact": ["특정 단어별", "按特定单词"],
   "database.groupMenu.visibleGroups": ["표시되는 그룹", "显示的组"],
@@ -1337,12 +1357,29 @@
     "{loadMoreAmount，plural，other{{loadMoreAmount}载入更多组}}"
   ],
   "database.noRelationSearchResults.message": ["결과 없음", "无结果"],
+  "database.propertiesMenu.showInBoardTitle": [
+    "보드에서 보기",
+    "在电路板上查看"
+  ],
+  "database.propertiesMenu.showInCalendarTitle": [
+    "캘린더에서 보기",
+    "在日历中查看"
+  ],
+  "database.propertiesMenu.showInGalleryTitle": [
+    "갤러리에서 보기",
+    "在图库中查看"
+  ],
+  "database.propertiesMenu.showInListTitle": ["목록에서 보기", "在列表中查看"],
   "database.searchRelation.createNewPageLabel": [
     "{databaseNameWithIcon}<medium>에</medium> {pageName}라는 <medium>새 페이지를 생성하세요.</medium>",
     "在{databaseNameWithIcon}<medium>中创建一个</medium>名为{pageName}的<medium>新页面。</medium>"
   ],
   "database.searchRelation.placeholder": ["페이지를 검색하세요", "搜索页面"],
   "database.selectRelation.menuItem": ["페이지를 선택", "选择页面"],
+  "database.tableView.emptyTablePlaceholder": [
+    "이 표는 비어있습니다.",
+    "这张表是空的。"
+  ],
   "database.timelineView.tableGroupResults.hideTableButton.title": [
     "표 숨기기",
     "隐藏表格"
@@ -1879,6 +1916,7 @@
   "mobileActionBar.nativeMenu.textColor.title": ["색상", "颜色"],
   "moveBlockMenu.moveToTeam.title": ["팀으로 옮기기", "转到团队"],
   "moveToMenuRenderer.moveTo.teamLabel": ["페이지나 팀 검색", "搜索页面或团队"],
+  "newBadgeComponent.label": ["New", "新"],
   "newBlock.abstract.fuzzySearchKeywords": ["앱스트랙트", "Abstract"],
   "newBlock.breadcrumb.fuzzySearchKeywords": [
     "이동 경로 페이지 경로",
@@ -2135,8 +2173,8 @@
     "允许{integrationName}访问此页"
   ],
   "oauthAuthorizationPage.workspaceSwitcher.disabledWorkspace.tooltip": [
-    "관리자 액세스를 가진 사람만이 이 통합을 추가할 수 있습니다.",
-    "只有具有管理员访问权限的人员才能添加此集成。"
+    "멤버나 관리자만이 이 통합을 추가할 수 있습니다.",
+    "只有成员或管理员才能添加此集成。"
   ],
   "oauthPageSearchResults.disabledResult.byAncestor.message": [
     "{ancestorPageName} 페이지를 통해 이미 추가함",
