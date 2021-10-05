@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         Notion-zh_CN notion的汉化脚本
 // @namespace    http://tampermonkey.net/
-// @version      2.3.3
+// @version      2.3.4
 // @description  notion的100%汉化脚本，基于官方中文+机器翻译韩文，支持app版本以及网页油猴，地址：https://github.com/reamd7/notion-zh_CN
 // @author       reamd7
 // @match        *://www.notion.so/*
@@ -216,12 +216,15 @@
     "action.leave.name": "离开",
     "action.linkedDatabaseLock.tooltip":
       "锁定被链接的数据库的属性和视图以防止意外编辑。你仍然可以在内部创建和编辑页面。",
+    "action.listFormat.circle.name": "圆圈 ◦",
+    "action.listFormat.disc.name": "圆点 •",
     "action.listFormat.letters.default": "默认值",
-    "action.listFormat.letters.name": "字",
+    "action.listFormat.letters.name": "字母",
     "action.listFormat.letters.roman": "罗马数字",
     "action.listFormat.name": "列表格式",
     "action.listFormat.numbers.name": "数字",
     "action.listFormat.sectionName": "列表格式",
+    "action.listFormat.square.name": "方块 ▪",
     "action.lockPage.name": "锁定页面",
     "action.logIn.name": "登录",
     "action.mentionPage.description": "提及页面并链接在文本中。",
@@ -1682,6 +1685,12 @@
     "confluenceImportStatus.indexingContent": "正在更新搜寻⋯",
     "confluenceImportStatus.savingTransactions": "正在保存更改⋯",
     "confluenceImportStatus.uploadingAttachments": "附件上传中⋯",
+    "connectedAppSettings.deleteExternalAuthorization.confirmDelete.label":
+      "是",
+    "connectedAppSettings.deleteExternalAuthorization.withAccountName.confirmationMessage":
+      "是否要取消{accountName}的访问？",
+    "connectedAppSettings.deleteExternalAuthorization.withoutAccountName.confirmationMessage":
+      "是否要取消此帐户的访问权限？",
     "connectedAppsSettings.asana.caption": "从看板和列表中导入任务",
     "connectedAppsSettings.connectedAppsSection.title": "已绑定的应用",
     "connectedAppsSettings.disconnectGoogleDriveModal.disconnectButton.label":
@@ -1792,6 +1801,7 @@
     "database.actionBar.searchButtonTooltip": "请连接网络搜索。",
     "database.actionBar.searchInputPlaceholder": "输入以搜索⋯",
     "database.actionBar.sortButtonTitle": "排序",
+    "database.actionBar.subGroupButton.label": "子分组依据",
     "database.actionBar.timelineByPropertyMenu.button.label": "按",
     "database.actionBar.titlePlaceholder": "无标题",
     "database.actionMenu.fileProperty.delete.title": "删除",
@@ -2152,12 +2162,15 @@
     "database.groupMenu.dateGroupBy.year": "每年",
     "database.groupMenu.groupBy": "分组依据",
     "database.groupMenu.hiddenGroups": "隐藏组",
+    "database.groupMenu.hideAllGroups": "隐藏所有组",
+    "database.groupMenu.hideEmptyGroups": "隐藏空组",
     "database.groupMenu.loadMoreButton.text":
       "{loadMoreAmount，plural，other{{loadMoreAmount}载入更多组}}",
     "database.groupMenu.noGroupingSetMessage": "禁用",
     "database.groupMenu.noneGroup": "无",
     "database.groupMenu.numberGroupRange": "组范围",
     "database.groupMenu.numberGroupSize": "分组单位",
+    "database.groupMenu.showAllGroups": "显示所有组",
     "database.groupMenu.sort": "排序",
     "database.groupMenu.sortType.alphabetical": "按字母顺序排列",
     "database.groupMenu.sortType.ascending": "升序",
@@ -2166,6 +2179,7 @@
     "database.groupMenu.sortType.manual": "手动",
     "database.groupMenu.sortType.reverseAlphabetical": "字母倒序",
     "database.groupMenu.sortType.reverseChronological": "时间倒序",
+    "database.groupMenu.subGroupBy": "子分组依据",
     "database.groupMenu.textGroupBy.alphabetical": "按字母顺序排列",
     "database.groupMenu.textGroupBy.exact": "按特定单词",
     "database.groupMenu.visibleGroups": "显示的组",
@@ -2207,6 +2221,10 @@
       "删除",
     "database.propertiesMenu.hiddenProperties": "隐藏属性",
     "database.propertiesMenu.propertiesFor": "属性・用于",
+    "database.propertiesMenu.showInBoardTitle": "在电路板上查看",
+    "database.propertiesMenu.showInCalendarTitle": "在日历中查看",
+    "database.propertiesMenu.showInGalleryTitle": "在图库中查看",
+    "database.propertiesMenu.showInListTitle": "在列表中查看",
     "database.propertiesMenu.showInTableTitle": "在表格中显示",
     "database.propertiesMenu.showInTimelineTitle": "在时间轴中显示",
     "database.propertiesMenu.visibleProperties": "可见属性",
@@ -2346,6 +2364,7 @@
       "确定要删除此属性吗？",
     "database.tableView.addRowButton": "新建",
     "database.tableView.aggregationPlaceholder": "计算",
+    "database.tableView.emptyTablePlaceholder": "这张表是空的。",
     "database.templateList.UntitledDatabaseTitle": "无标题",
     "database.templatePicker.emptyPageTitle": "空白页",
     "database.templatePickerItem.actionMenu.delete": "删除",
@@ -3978,6 +3997,7 @@
     "moveToOrCreateMenu.turnInto.description":
       "将块转换为任何现有数据库或页面内的新页面。",
     "newBadge.label": "新",
+    "newBadgeComponent.label": "新",
     "newBlock.abstract.description": "嵌入 Abstract 项目。",
     "newBlock.abstract.fuzzySearchKeywords": "Abstract",
     "newBlock.abstract.title": "Abstract",
@@ -4276,7 +4296,7 @@
     "oauthAuthorizationPage.selectPagesStep.title":
       "允许{integrationName}访问此页",
     "oauthAuthorizationPage.workspaceSwitcher.disabledWorkspace.tooltip":
-      "只有具有管理员访问权限的人员才能添加此集成。",
+      "只有成员或管理员才能添加此集成。",
     "oauthPageSearchResults.disabledResult.byAncestor.message":
       "已通过{ancestorPageName}页面添加",
     "oauthPageSearchResults.disabledResult.bySelf.message": "已添加",
