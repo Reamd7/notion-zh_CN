@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         Notion-zh_CN notion的汉化脚本
 // @namespace    http://tampermonkey.net/
-// @version      2.3.6
+// @version      2.3.7
 // @description  notion的100%汉化脚本，基于官方中文+机器翻译韩文，支持app版本以及网页油猴，地址：https://github.com/reamd7/notion-zh_CN
 // @author       reamd7
 // @match        *://www.notion.so/*
@@ -7741,4 +7741,27 @@
     }
     insert();
   }
+  function insertMoment() {
+    try {
+      moment.updateLocale("zh-cn", {
+        longDateFormat: {
+          LT: "h:mm A",
+          LTS: "h:mm:ss A",
+          L: "YYYY/MM/DD",
+          LL: "YYYY年M月D日",
+          LLL: "YYYY年M月D日Ah点mm分",
+          LLLL: "YYYY年M月D日ddddAh点mm分",
+          l: "YYYY/M/D",
+          ll: "YYYY年M月D日",
+          lll: "YYYY年M月D日 HH:mm",
+          llll: "YYYY年M月D日dddd HH:mm",
+        },
+      });
+    } catch (e) {
+      requestAnimationFrame(() => {
+        insertMoment();
+      });
+    }
+  }
+  insertMoment();
 })();
