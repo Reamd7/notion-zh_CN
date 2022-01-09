@@ -78,8 +78,27 @@
   ],
   "action.boardColumns.name": ["보드 열", "板列"],
   "action.clearContents.title": ["콘텐츠 지우기", "清除内容"],
+  "action.codePreviewSection.name": ["블록에서 보기", "在块中查看"],
   "action.columnHeader.title": ["열 제목", "列标题"],
   "action.connectSlack.title": ["Slack에 연결", "连接到Slack"],
+  "action.copiedCodeToClipboard.snackBarMessage": [
+    "클립보드에 코드 복사됨",
+    "代码已复制到剪贴板"
+  ],
+  "action.copiedLinkToClipboard.snackBarMessage": [
+    "클립보드에 링크 복사됨",
+    "已复制到剪贴板"
+  ],
+  "action.copiedPropertyToClipboard.snackBarMessage": [
+    "클립보드에 속성 복사됨",
+    "属性复制到剪贴板"
+  ],
+  "action.copiedToClipboard.snackBarMessage": [
+    "클립보드에 복사됨",
+    "复制到剪贴板"
+  ],
+  "action.copyDirectLink.name": ["원본 링크 복사하기", "复制源链接"],
+  "action.copyLinkNavigableType.name": ["링크 복사", "复制链接"],
   "action.copyLinkToCurrentPage.snackBarMessage": [
     "현재 페이지에 대한 링크가 클립보드에 복사되었습니다.",
     "指向当前页面的链接已复制到剪贴板。"
@@ -162,7 +181,7 @@
   "action.languageMode.scheme": ["Scheme", "Scheme"],
   "action.languageMode.scss": ["SCSS", "SCSS"],
   "action.languageMode.shell": ["Shell", "Shell"],
-  "action.languageMode.solidity": ["견고함", "solidity"],
+  "action.languageMode.solidity": ["Solidity", "Solidity(Solidity)"],
   "action.languageMode.sql": ["SQL", "SQL"],
   "action.languageMode.swift": ["Swift", "Swift"],
   "action.languageMode.typescript": ["TypeScript", "TypeScript"],
@@ -182,6 +201,12 @@
   "action.listFormat.numbers.name": ["숫자", "数字"],
   "action.listFormat.sectionName": ["목록 형식", "列表格式"],
   "action.listFormat.square.name": ["정사각형", "方块 ▪"],
+  "action.openInNewTab.name": ["새 탭에서 열기", "在新选项卡中打开"],
+  "action.openInNewWindow.name": ["새 창에서 열기", "在新窗口中打开"],
+  "action.openPageInNewTab.name": [
+    "새 탭에서 페이지 열기",
+    "在新选项卡中打开页面"
+  ],
   "action.pageUpdates.title": ["페이지 업데이트", "更新页面"],
   "action.quoteSize.default": ["기본", "默认"],
   "action.quoteSize.large": ["크게", "大"],
@@ -190,6 +215,9 @@
   "action.rowHeader.title": ["행 제목", "行标题"],
   "action.section.quoteSize": ["인용 크기", "引用大小"],
   "action.section.simpleTableColumn": ["열", "列"],
+  "action.showCodePreviewFormat.name": ["미리보기", "预览"],
+  "action.showOnlyCodeFormat.name": ["코드", "代码"],
+  "action.showSplitViewFormat.name": ["분할 보기", "拆分视图"],
   "action.signUpOrlogIn.name": ["회원 가입 또는 로그인하기", "注册或登录"],
   "action.subGroupBy.name": ["하위 그룹화", "子分组"],
   "action.turnIntoCollection.title": ["데이터베이스로 전환", "切换到数据库"],
@@ -202,6 +230,7 @@
   "action.unsyncTransclusionReference.name": ["동기화 해제", "取消同步"],
   "action.whatIsNotion.name": ["Notion 소개", "Notion 是什么？"],
   "action.workAtNotion.name": ["Notion에서 일하기", "在Notion工作"],
+  "activityUpdates.clearFilters": ["지우기", "清除"],
   "activityUpdates.filterMenu.byDate": ["기간", "期间"],
   "activityUpdates.filterMenu.byType.addItemLabel": [
     "업데이트 유형 추가",
@@ -1105,6 +1134,8 @@
     "크레딧 {creditAmount} 사용",
     "使用积分{creditAmount}"
   ],
+  "attributionTooltip.createdByTitle": ["생성자", "创建者"],
+  "attributionTooltip.lastEditedByTitle": ["최종 편집자", "最终编辑"],
   "auditlog.logTable.dateColumn.header": ["날짜", "日期"],
   "auditlog.logTable.eventColumn.header": ["이벤트", "活动"],
   "auditlog.logTable.userColumn.header": ["사용자", "用户"],
@@ -1115,7 +1146,9 @@
     "해결된 댓글이 없습니다.",
     "没有解决的评论。"
   ],
+  "blockHelpers.deepnoteBlockType": ["Deepnote", "深度笔记"],
   "blockHelpers.excalidrawBlockType": ["Excalidraw", "Excalidraw"],
+  "blockHelpers.hexBlockType": ["Hex", "Hex"],
   "blockHelpers.replitBlockType": ["Replit", "Replit"],
   "blockHelpers.sketchBlockType": ["Sketch", "Sketch"],
   "blockPasteMenu.actions.createTransclusion.title": [
@@ -1150,6 +1183,10 @@
   "blockPermissionsSettings.moveToButton.label": ["옮기기", "转移"],
   "blockPermissionsSettings.option.publish": ["게시", "发布"],
   "blockPermissionsSettings.option.share": ["공유", "共享"],
+  "blockPermissionsSettings.permissionItem.teamAccess": [
+    "{teamName}의 모든 멤버",
+    "{teamName}的所有成员"
+  ],
   "blockPermissionsSettings.permissionsForBot.personalBot.label": [
     "나에게만 보임",
     "只给我看"
@@ -1157,6 +1194,14 @@
   "blockPermissionsSettings.permissionsForBot.spaceBot.label": [
     "워크스페이스와 공유됨",
     "与工作区共享"
+  ],
+  "blockPermissionsSettings.teamPermission.subtitle": [
+    "{nonGuestTeamMembersCount, plural, other {{nonGuestTeamMembersCount}명의 게스트가 아닌 팀 멤버}}",
+    "{nonGuestTeamMembersCount、plural、other{nonGuestTeamMembersCount}不是名来宾的团队成员}}"
+  ],
+  "blockPermissionsSettings.teamPermission.tooltip": [
+    "{teamName}의 게스트가 아닌 팀 멤버 모두(총 {memberCount}명)에게 적용됩니다.",
+    "适用于所有团队成员(总计{memberCount}名)，而不是{teamName}中的来宾。"
   ],
   "blockPropertyValue.filterForNumberFormats.placeholder": [
     "숫자 형식 검색",
@@ -1174,7 +1219,7 @@
     "콘텐츠를 읽을 수 있습니다.",
     "内容可读。"
   ],
-  "capabilitiesTooltip.mixedAccess.title": ["혼합된 액세스", "混合访问"],
+  "capabilitiesTooltip.mixedAccess.title": ["복합 액세스", "复合访问"],
   "capabilitiesTooltip.mixedaccess.insertContent.disabled": [
     "콘텐츠를 입력할 수 없습니다.",
     "无法输入内容。"
@@ -1218,6 +1263,8 @@
     "그룹 이름 바꾸기",
     "重命名组"
   ],
+  "codeBlock.mobileCodePreviewMenu.doneButton.label": ["완료", "完成"],
+  "codeBlock.mobileCodePreviewMenu.title": ["코드 미리보기", "预览代码"],
   "collection.boardView.hiddenGroups.label": ["숨긴 그룹", "隐藏组"],
   "collection.numberFormat.argentinePeso": ["아르헨티나 페소", "阿根廷比索"],
   "collection.numberFormat.baht": ["바트", "泰铢"],
@@ -1295,30 +1342,38 @@
     "{numberOfHiddenGroups，plural，other{隐藏组{numberOfHiddenGroups}个}}"
   ],
   "collectionSortMenu.mobile.sort": ["정렬 {sortNumber}", "排序{sortNumber}"],
-  "collectionViewBlock.action.filter.title": ["필터", "过滤器"],
-  "collectionViewBlock.action.newItem.title": ["New", "新"],
-  "collectionViewBlock.action.noDateButton.noProperty.label": [
-    "날짜가 없는 페이지 ({noDateTotal})",
-    "没有日期的页面({noDateTotal})"
+  "collectionTabBar.showMoreViews.title": [
+    "{moreViewsCount}개 더 보기",
+    "{moreViewsCount}查看更多"
   ],
-  "collectionViewBlock.action.viewSettings.title": ["보기", "视图"],
+  "collectionViewBlock.action.filter.title": ["필터", "过滤器"],
+  "collectionViewBlock.action.newItem.title": ["새로 만들기", "新建"],
+  "collectionViewBlock.action.noDateButton.noProperty.label": [
+    "날짜 없음({noDateTotal})",
+    "无日期({noDateTotal})"
+  ],
+  "collectionViewBlock.action.viewSettings.title": ["설정", "设置"],
   "collectionViewBlock.actionBar.offlineTemplatePicker.message": [
     "온라인으로 접속해 템플릿을 사용하세요.",
     "在线使用模板。"
   ],
   "collectionViewBlock.noSourcePlaceholder.title": [
-    "데이터 출처 없음",
-    "无数据源"
+    "지정된 데이터베이스 없음",
+    "未指定数据库"
   ],
   "collectionViewBlock.placeholder.title": ["데이터 출처 없음", "无数据源"],
-  "collectionViewBlock.setSourceButton.title": ["출처 설정", "设置来源"],
+  "collectionViewBlock.setSourceButton.title": [
+    "데이터베이스 지정",
+    "指定数据库"
+  ],
   "collectionViewGroupMenu.groupByDropdown.defaultChoice": ["없음", "无"],
   "collectionViewSelect.ViewSearch.label": [
-    "검색어를 입력하세요.",
-    "请输入搜索词。"
+    "검색어를 입력하세요",
+    "请输入您的搜索词。"
   ],
+  "collectionViewSelect.viewSearch.label": ["보기를 검색하세요", "搜索视图"],
   "colors.select.lightGray": ["옅은 회색", "浅灰色"],
-  "comment.copyLink.button": ["링크 복사", "复制链接"],
+  "comment.copyLink.button": ["댓글 링크 복사", "复制评论链接"],
   "comment.embeddedFile.placeholder": ["파일 업로드 중...", "正在上载文件."],
   "comment.embeddedFile.uploadInProgressMessage": [
     "파일 업로드 중...",
@@ -1431,6 +1486,30 @@
     "새로운 앱을 만나보세요.",
     "了解新的应用程序。"
   ],
+  "cookieConsentSnackbar.description": [
+    "Notion은 사용자 경험 개선을 위해 쿠키를 사용합니다.",
+    "Notion使用cookie来改善用户体验。"
+  ],
+  "cookieSelector.captions.necessary": [
+    "사이트가 작동하는 데 필요한 쿠키입니다.",
+    "网站运行所需的cookie。"
+  ],
+  "cookieSelector.captions.performance": [
+    "사용자 경험을 개선하는 데 사용합니다.",
+    "用于改善用户体验。"
+  ],
+  "cookieSelector.captions.preference": [
+    "사용자가 선택한 기능을 기억하는 데 사용합니다.",
+    "用于记住用户选择的功能。"
+  ],
+  "cookieSelector.captions.targeting": [
+    "광고 효과를 측정하는 데 사용합니다.",
+    "用于衡量广告效果。"
+  ],
+  "cookieSelector.done.label": ["완료", "完成"],
+  "cookieSelector.label.acceptAll": ["모두 허용", "允许全部"],
+  "cookieSelector.label.custom": ["사용자 지정", "自定义"],
+  "cookieSelector.select": ["사용자 지정 쿠키", "自定义Cookie"],
   "couponEntryInput.button.apply": ["사용", "使用"],
   "couponEntryInput.error.noPromo": [
     "유효하지 않은 쿠폰 코드",
@@ -1523,8 +1602,66 @@
     "从{start}到{end}"
   ],
   "database.collectionGroupValue.textGroup.other": ["기타", "其他"],
+  "database.collectionViewSelect.noResultsTitle": ["결과 없음", "无结果"],
   "database.copyButton.copyToClipboard": ["클립보드에 복사", "复制到剪贴板"],
+  "database.editButton.configureRollupTooltip": ["롤업 구성", "汇总配置"],
+  "database.editButton.editEmailTooltip": ["이메일 편집", "编辑电子邮件"],
   "database.editButton.editLinkTooltip": ["URL 편집", "编辑URL"],
+  "database.editButton.editPhoneTooltip": ["전화번호 편집", "编辑电话号码"],
+  "database.filterBar.filter.title": ["필터", "过滤器"],
+  "database.filterBar.mobileSearch.placeholder": ["검색어 입력", "输入搜索词"],
+  "database.filterBar.reset.title": ["재설정", "重置"],
+  "database.filterBar.search.title": ["검색", "搜索"],
+  "database.filterMenu.addFilterGroup2ButtonTitle": [
+    "필터 그룹 추가",
+    "添加过滤器组"
+  ],
+  "database.filterMenu.addFilterRuleButtonTitle": [
+    "필터 규칙 추가",
+    "添加筛选器规则"
+  ],
+  "database.filterOperatorValue.checkboxPlaceholder.title": [
+    "값 선택",
+    "选择值"
+  ],
+  "database.filterValue.checkboxType.checked.title": ["체크 표시됨", "已标记"],
+  "database.filterValue.checkboxType.title": ["체크박스", "复选框"],
+  "database.filterValue.checkboxType.unchecked.title": [
+    "체크 표시되지 않음",
+    "未选中"
+  ],
+  "database.filterValue.clear.message": ["지우기", "清除"],
+  "database.filterValue.dateType.title": ["날짜", "日期"],
+  "database.filterValue.numberType.searchPlaceholder": ["값 입력", "输入值"],
+  "database.filterValue.numberType.title": ["숫자", "数字"],
+  "database.filterValue.personType.firstPersonPropertyValue.title": [
+    "나",
+    "我"
+  ],
+  "database.filterValue.personType.noResults.message": ["결과 없음", "无结果"],
+  "database.filterValue.personType.searchPersonPropertyMenuItem.errorMessage": [
+    "문제가 발생했습니다.",
+    "出现问题。"
+  ],
+  "database.filterValue.personType.searchPlaceholder": [
+    "사용자 검색",
+    "搜索用户"
+  ],
+  "database.filterValue.personType.title": ["사용자", "用户"],
+  "database.filterValue.relationType.searchPlaceholder": [
+    "페이지 검색",
+    "搜索页面"
+  ],
+  "database.filterValue.relationType.title": ["관계형", "关系型"],
+  "database.filterValue.selectType.noResults.message": ["결과 없음", "无结果"],
+  "database.filterValue.selectType.prompt": ["옵션 선택", "选择选项"],
+  "database.filterValue.selectType.searchPlaceholder": [
+    "옵션 검색",
+    "搜索选项"
+  ],
+  "database.filterValue.selectType.title": ["선택", "选择"],
+  "database.filterValue.textType.searchPlaceholder": ["값 입력", "输入值"],
+  "database.filterValue.textType.title": ["텍스트", "文本"],
   "database.formula.function.id.description": [
     "각 항목의 고유 문자열 ID를 반환합니다.",
     "返回每个条目的唯一字符串ID。"
@@ -1622,6 +1759,8 @@
     "표 숨기기",
     "隐藏表格"
   ],
+  "database.viewHelpers.defaultFilterName": ["제목 없음", "无标题"],
+  "database.viewHelpers.firstPersonPropertyValue": ["나", "我"],
   "database.viewSettings.configureSelfRelationTab.accept.title": [
     "관계형 속성 생성",
     "创建关系属性"
@@ -1655,18 +1794,61 @@
     "数据库名称"
   ],
   "database.viewSettings.createCollectionTab.title": [
-    "새로운 데이터베이스",
-    "新数据库"
+    "새 데이터베이스 생성",
+    "创建新数据库"
   ],
+  "database.viewSettings.createCustomFilterTab.doneButton.title": [
+    "완료",
+    "完成"
+  ],
+  "database.viewSettings.createCustomFilterTab.title": [
+    "새 필터",
+    "新建过滤器"
+  ],
+  "database.viewSettings.createFilterTab.doneButton.title": [
+    "사용자 지정 필터",
+    "自定义筛选器"
+  ],
+  "database.viewSettings.createFilterTab.suggestedFilters.title": [
+    "추천 필터",
+    "推荐筛选器"
+  ],
+  "database.viewSettings.createFilterTab.title": ["새 필터", "新建过滤器"],
   "database.viewSettings.createPropertyTab.title": ["새 속성", "新建属性"],
-  "database.viewSettings.createViewSourceTab.title": ["새로운 보기", "新视图"],
+  "database.viewSettings.createViewSourceTab.title": [
+    "새 보기 추가",
+    "添加新视图"
+  ],
   "database.viewSettings.createViewTab.doneButton.title": ["완료", "完成"],
   "database.viewSettings.createViewTab.newCollectionButton.title": [
-    "새로운 데이터베이스",
-    "新数据库"
+    "새 데이터베이스 생성",
+    "创建新数据库"
   ],
-  "database.viewSettings.createViewTab.title": ["새로운 보기", "新视图"],
+  "database.viewSettings.createViewTab.title": ["새 보기", "新建视图"],
+  "database.viewSettings.deletedPropertiesTab.noResults": [
+    "결과 없음",
+    "无结果"
+  ],
+  "database.viewSettings.filterTab.deleteFilter.modal.confirmButton": [
+    "삭제",
+    "删除"
+  ],
+  "database.viewSettings.filterTab.deleteFilter.modal.prompt": [
+    "이 필터를 제거하시겠습니까?",
+    "是否确实要删除此过滤器？"
+  ],
+  "database.viewSettings.filterTab.removeButton.title": ["제거", "移除"],
   "database.viewSettings.filterTab.title": ["필터", "过滤器"],
+  "database.viewSettings.filterTab.turnOnByDefault.title": [
+    "기본값으로 켜기",
+    "默认打开"
+  ],
+  "database.viewSettings.filtersTab.defaultOn.title": [
+    "기본값 켜짐",
+    "打开默认值"
+  ],
+  "database.viewSettings.filtersTab.newFilter.title": ["새 필터", "新建过滤器"],
+  "database.viewSettings.filtersTab.title": ["필터", "过滤器"],
   "database.viewSettings.groupByPropertyTab.inputPlaceholder": [
     "속성을 검색하세요",
     "搜索属性"
@@ -1720,6 +1902,18 @@
     "显示数据库标题"
   ],
   "database.viewSettings.layoutTab.title": ["레이아웃", "布局"],
+  "database.viewSettings.mainTab.copyLinkButton.title": [
+    "보기 링크 복사",
+    "复制视图链接"
+  ],
+  "database.viewSettings.mainTab.copyLinkSnackBarItem.title": [
+    "보기 링크가 클립보드에 복사되었습니다.",
+    "视图链接已复制到剪贴板。"
+  ],
+  "database.viewSettings.mainTab.deleteViewConfirm.text": [
+    "이 보기를 제거하시겠습니까?",
+    "是否确实要删除此视图？"
+  ],
   "database.viewSettings.mainTab.duplicateButton.title": ["복제", "克隆"],
   "database.viewSettings.mainTab.filterButton.filters.title": [
     "{numberOfFilters, plural, other {{numberOfFilters}개의 필터}}",
@@ -1737,7 +1931,12 @@
     "显示{propertiesShown}"
   ],
   "database.viewSettings.mainTab.propertiesButton.title": ["속성", "属性"],
+  "database.viewSettings.mainTab.removeButton.text": ["제거", "移除"],
   "database.viewSettings.mainTab.removeButton.title": ["제거", "移除"],
+  "database.viewSettings.mainTab.removeViewConfirm.text": [
+    "이 보기를 제거하시겠습니까?",
+    "是否确实要删除此视图？"
+  ],
   "database.viewSettings.mainTab.sortButton.noSorts.title": ["수동", "手动"],
   "database.viewSettings.mainTab.sortButton.oneOrMoreSorts.title": [
     "{numberOfSorts, plural, other {{numberOfSorts}개의 정렬}}",
@@ -1749,7 +1948,11 @@
     "하위 그룹화",
     "子分组"
   ],
-  "database.viewSettings.mainTab.title": ["설정 보기", "查看设置"],
+  "database.viewSettings.mainTab.title": ["보기 설정", "设置视图"],
+  "database.viewSettings.mainTab.viewNamePlaceholder.title": [
+    "보기 이름",
+    "视图名称"
+  ],
   "database.viewSettings.mainTab.viewNameSection.title": [
     "보기 이름",
     "视图名称"
@@ -1827,6 +2030,10 @@
     "时间轴"
   ],
   "database.viewSettings.propertiesTab.title": ["속성", "属性"],
+  "database.viewSettings.propertiesTab.viewDeletedProperties": [
+    "삭제한 속성 보기",
+    "查看已删除的属性"
+  ],
   "database.viewSettings.propertyTab.deleteProperty.modal.confirmButton": [
     "제거",
     "移除"
@@ -1877,8 +2084,8 @@
     "视图用法"
   ],
   "database.viewSettings.sourceTab.newCollectionMenuItem.title": [
-    "새로운 데이터베이스 \"{filterText}\"",
-    "新数据库“{filterText}”"
+    "새 데이터베이스: {filterText}",
+    "新数据库：{filterText}"
   ],
   "database.viewSettings.sourceTab.newDatabaseButton.title": [
     "새로운 데이터베이스",
@@ -1888,7 +2095,14 @@
     "새로운 데이터베이스 \"{filterText}\"",
     "新数据库“{filterText}”"
   ],
-  "database.viewSettings.sourceTab.suggestedSources": ["추천 출처", "推荐来源"],
+  "database.viewSettings.sourceTab.showMore.title": [
+    "{showMore}개 더 보기",
+    "{showMore}查看更多"
+  ],
+  "database.viewSettings.sourceTab.suggestedSources": [
+    "데이터베이스 추천",
+    "数据库推荐"
+  ],
   "database.viewSettings.sourceTab.title": ["출처", "来源"],
   "databdatabase.viewSettings.layoutTab.cardSizeButtonTitle": [
     "카드 크기",
@@ -1907,8 +2121,8 @@
     "{limit}页"
   ],
   "databdatabase.viewSettings.layoutTab.tableWrapCells": [
-    "셀 감싸기",
-    "绕排单元格"
+    "셀 줄 바꿈",
+    "单元格换行"
   ],
   "dateParserHelpers.at": ["시간:", "时间："],
   "dateParserHelpers.day": ["일", "工作"],
@@ -1925,6 +2139,12 @@
   "dateParserHelpers.year": ["년", "年"],
   "dateParserHelpers.yesterday": ["어제", "昨天"],
   "dateParserHelpers.yesterday.short": ["ㅇㅈ", "yd"],
+  "deepnoteBlock.embeds.button.label": ["Deepnote 임베드", "Deepnote嵌入"],
+  "deepnoteBlock.embeds.caption": [
+    "공개 링크가 포함된 Deepnote 블록과 호환됨",
+    "与包含公共链接的Deepnote块兼容"
+  ],
+  "deepnoteBlock.placeholder": ["Deepnote 임베드", "Deepnote嵌入"],
   "developerIntegration.confirmationModal.cancelLabel": ["취소", "取消"],
   "developerIntegration.confirmationModal.confirmLabel": ["계속하기", "继续"],
   "developerIntegration.confirmationModal.deleteLabel": ["삭제", "删除"],
@@ -1962,12 +2182,16 @@
     "오직 <bold>{spaceName}</bold> 워크스페이스에서만 사용 가능합니다. 워크스페이스를 변경하려면 <developertermslink>다른 통합을 생성해 주세요</developertermslink>.",
     "仅在<bold>{spaceName}</bold>工作空间中可用。要更改工作空间，请创建<developertermslink>其他集成</developertermslink>。"
   ],
+  "developerIntegrationForm.capabilities.caption": [
+    "이러한 요청된 기능은 사용자가 통합을 승인할 때 사용자에게 표시됩니다. 더 도움이 필요하신 경우 <inlinetextlink>개발자 문서</inlinetextlink>를 확인해 주세요.",
+    "当用户批准合并时，系统会向用户显示这些请求的功能。如果您需要更多帮助，请查看<inlinetextlink>开发者文档</inlinetextlink>。"
+  ],
   "developerIntegrationForm.capabilities.content_capabilities.title": [
     "콘텐츠 기능",
     "内容功能"
   ],
   "developerIntegrationForm.capabilities.insert_content.caption": [
-    "새로운 콘텐츠 만들기를 요청합니다.",
+    "새 콘텐츠 생성을 요청합니다.",
     "请求创建新内容。"
   ],
   "developerIntegrationForm.capabilities.insert_content.title": [
@@ -1976,7 +2200,7 @@
   ],
   "developerIntegrationForm.capabilities.label": ["기능", "功能"],
   "developerIntegrationForm.capabilities.no_user_capabilities.caption": [
-    "사용자 정보에 대한 액세스를 요청하지 않습니다.",
+    "사용자 정보에 액세스를 요청하지 않습니다.",
     "不请求访问用户信息。"
   ],
   "developerIntegrationForm.capabilities.no_user_capabilities.title": [
@@ -1992,20 +2216,20 @@
     "阅读内容"
   ],
   "developerIntegrationForm.capabilities.read_user_with_email.caption": [
-    "이메일 주소를 포함하는 사용자 정보에 대한 액세스를 요청합니다.",
+    "이메일 주소를 포함하는 사용자 정보에 액세스를 요청합니다.",
     "请求访问包含电子邮件地址的用户信息。"
   ],
   "developerIntegrationForm.capabilities.read_user_with_email.title": [
-    "이메일 주소를 포함하는 사용자 정보 확인",
-    "检查包含电子邮件地址的用户信息"
+    "이메일 주소를 포함하는 사용자 정보를 읽습니다.",
+    "读取包含电子邮件地址的用户信息。"
   ],
   "developerIntegrationForm.capabilities.read_user_without_email.caption": [
-    "이메일 주소를 포함하지 않는 사용자 정보에 대한 액세스를 요청합니다.",
-    "请求访问不包含电子邮件地址的用户信息。"
+    "이메일 주소를 제외한 사용자 정보에 액세스를 요청합니다.",
+    "请求访问除电子邮件地址以外的用户信息。"
   ],
   "developerIntegrationForm.capabilities.read_user_without_email.title": [
-    "이메일 주소 없이 사용자 정보 확인",
-    "在没有电子邮件地址的情况下检查用户信息"
+    "이메일 주소를 제외한 사용자 정보 읽기",
+    "读取除电子邮件地址外的用户信息"
   ],
   "developerIntegrationForm.capabilities.update_content.caption": [
     "기존 콘텐츠 업데이트 요청",
@@ -2157,8 +2381,8 @@
     "{fieldName}条目无效。"
   ],
   "developerIntegrationsCreateInternal.subtitle.label": [
-    "아래 정보를 입력해 새 통합을 차근히 만들어봐요.",
-    "输入下面的信息，重新整合。"
+    "아래 정보를 입력하고 새 통합을 만들어 보세요.",
+    "输入以下信息并创建新的集成。"
   ],
   "developerIntegrationsCreateInternal.title.label": [
     "새 통합 만들기",
@@ -2306,8 +2530,11 @@
   "edit.blockDeletedEditStyles.defaultLabel": ["삭제됨", "已删除"],
   "edit.blockDeletedEditStyles.factoryLabel": ["삭제됨", "已删除"],
   "edit.permissionRole.canEditStyles.label": ["쓰기 허용", "允许写入"],
+  "embedBlock.expandFullScreen.button.label": ["확장", "扩展"],
   "embedBlock.originalLink.button": ["원본", "原稿"],
+  "embedMenu.action.deepnote": ["Deepnote 임베드", "Deepnote嵌入"],
   "embedMenu.action.excalidraw": ["Excalidraw 임베드", "嵌入 Excalidraw"],
+  "embedMenu.action.hex": ["Hex 임베드", "Hex嵌入"],
   "embedMenu.action.replit": ["Repl 임베드", "嵌入 Repl"],
   "embedMenu.action.sketch": ["Sketch 문서 임베드", "嵌入 Sketch 文档"],
   "embedMenu.actions.createTransclusion.title": [
@@ -2365,6 +2592,7 @@
     "显示较少"
   ],
   "externalObjectInstanceBlock.connect": ["연결", "连接"],
+  "externalObjectInstanceEmbedPreview.expandButton.label": ["확장", "扩展"],
   "faq.mandatoryRefund.answer": [
     "<p>유럽 연합, 영국 또는 의무 환불 정책을 적용하는 다른 지역에 거주하시는 경우, 72시간이 지나도 월간 구독 요금을 환불 받으실 수도 있습니다. 예를 들어, 유럽 연합의 고객은 구매 후 72시간이 아닌 14일 이내에 월간 구독 요금을 전액 환불 받으실 수 있습니다.</p><p>환불 요청은 앱 내에서 문의하시거나 team@makenotion.com으로 이메일을 보내주세요. 의무 환불 정책을 적용하는 지역에 거주하시는 경우 저희에게 알려주시면 성심껏 도와드리겠습니다.</p>",
     "<p>如果您居住在欧盟、英国或其他适用强制性退款政策的地区，您甚至可以在72小时后退还您的月度订阅费。例如，欧盟的客户可以在14天内(而不是购买后72小时)全额退还每月订阅费。</p><p>请在应用内查询退款请求，或发送电子邮件至team@makenotion.com。如果您居住在适用强制性退款政策的地区，请告知我们，我们将竭诚为您提供帮助。</p>"
@@ -2486,7 +2714,18 @@
   "fullPageError.somethingWrong.label": ["문제가 발생했나요?", "出问题了吗？"],
   "guestPagesPopup.permissionsForUserGuest.label": ["게스트", "访客"],
   "helpButton.onboardingChecklist.menuItem": ["Notion 시작하기", "Notion入门"],
+  "helpButton.sendUsAMessage.tooltip.intercom.disabled": [
+    "메세지 기능을 활성화하려면 기능 쿠키를 반드시 허용해 주세요.{br}Notion 설정에서 쿠키 설정을 변경하실 수 있습니다.{br}또는 team@makenotion.com으로 이메일로 문의하실 수 있습니다.",
+    "请务必接受功能cookie以启用短信功能。您可以在{br}Notion设置中更改cookie设置。{br}或发送电子邮件至team@makenotion.com。"
+  ],
   "helpButton.whatsNew.menuItem": ["새로운 소식", "新消息"],
+  "hexBlock.embeds.button.label": ["Hex 임베드", "Hex嵌入"],
+  "hexBlock.embeds.caption": [
+    "공개 액세스가 포함된 Hex 셀과 호환됨",
+    "与包含公共访问的Hex单元格兼容"
+  ],
+  "hexBlock.placeholder": ["Hex 임베드", "Hex嵌入"],
+  "hoverPreviewOverlay.editButton.label": ["편집", "编辑"],
   "iFramePreview.imagelessAreaLabel": [
     "임베드를 불러오려면 탭하세요",
     "点击以导入嵌入。"
@@ -2780,6 +3019,12 @@
     "创建新的数据库。"
   ],
   "newBlock.database.title": ["데이터베이스", "数据库"],
+  "newBlock.deepnote.description": [
+    "Deepnote 블록을 임베드하세요.",
+    "嵌入Deepnote块。"
+  ],
+  "newBlock.deepnote.fuzzySearchKeywords": ["Deepnote", "深度笔记"],
+  "newBlock.deepnote.title": ["Deepnote", "深度笔记"],
   "newBlock.drive.fuzzySearchKeywords": [
     "구글 드라이브",
     "Google Drive 谷歌 guge gu'ge 网盘 wangpan wang'pan 云盘 yunpan yun'pan"
@@ -2901,6 +3146,9 @@
   ],
   "newBlock.galleryView.title": ["갤러리 보기", "查看图库"],
   "newBlock.gist.fuzzySearchKeywords": ["깃허브 지스트", "GitHub Gist"],
+  "newBlock.hex.description": ["Hex 셀을 임베드하세요.", "嵌入Hex细胞。"],
+  "newBlock.hex.fuzzySearchKeywords": ["Hex", "Hex"],
+  "newBlock.hex.title": ["Hex", "Hex"],
   "newBlock.inlineBoard.fuzzySearchKeywords": [
     "보드 - 인라인",
     "Board - Inline 看板 kanban kan'ban 内嵌 neiqian nei'qian"
@@ -3048,6 +3296,33 @@
     "토글 목록",
     "Toggle list 切换 qiehuan qie'huan 列表 liebiao lie'biao 切换列表 qiehuanliebiao qie'huan'lie'biao"
   ],
+  "newBlock.toggleFormatHeader.description": [
+    "제목을 토글하면 그 안의 콘텐츠를 숨기거나 표시할 수 있습니다.",
+    "切换标题可以隐藏或显示其中的内容。"
+  ],
+  "newBlock.toggleFormatHeader.keywords": [
+    "첫 번째 제목으로 제목 형식 토글",
+    "标题格式切换为第一个标题"
+  ],
+  "newBlock.toggleFormatHeader.title": ["제목 토글1", "标题切换1"],
+  "newBlock.toggleFormatSubHeader.description": [
+    "제목을 토글하면 그 안의 콘텐츠를 숨기거나 표시할 수 있습니다.",
+    "切换标题可以隐藏或显示其中的内容。"
+  ],
+  "newBlock.toggleFormatSubHeader.keywords": [
+    "두 번째 하위 제목으로 제목 형식 토글",
+    "将标题格式切换为第二个子标题"
+  ],
+  "newBlock.toggleFormatSubHeader.title": ["제목 토글2", "标题切换2"],
+  "newBlock.toggleFormatSubSubHeader.description": [
+    "제목을 토글하면 그 안의 콘텐츠를 숨기거나 표시할 수 있습니다.",
+    "切换标题可以隐藏或显示其中的内容。"
+  ],
+  "newBlock.toggleFormatSubSubHeader.keywords": [
+    "세 번째 하위 제목으로 제목 형식 토글",
+    "切换标题格式为第三个子标题"
+  ],
+  "newBlock.toggleFormatSubSubHeader.title": ["제목 토글3", "标题切换3"],
   "newBlock.transclusionContainer.description": [
     "모든 페이지에서 콘텐츠를 동기화하세요.",
     "同步所有页面的内容。"
@@ -3061,6 +3336,14 @@
   "newBlock.typeform.fuzzySearchKeywords": ["타입폼", "Typeform"],
   "newBlock.video.fuzzySearchKeywords": ["동영상", "Video 视频 shipin shi'pin"],
   "newBlock.whimsical.fuzzySearchKeywords": ["윔지컬", "Whimsical"],
+  "notificationAndPersonalSettings.notificationSection.title": [
+    "내 알림",
+    "我的通知"
+  ],
+  "notificationAndPersonalSettings.settingsSection.title": [
+    "내 설정",
+    "我的设置"
+  ],
   "oauthAuthorizationPage.error.cancelButton.label": ["취소", "取消"],
   "oauthAuthorizationPage.error.clientNotFound.body": [
     "클라이언트 ID가 불완전하거나 누락되었습니다. 자세한 내용은 <inlinetextlink>개발자 문서</inlinetextlink>를 참고하세요.",
@@ -3131,6 +3414,30 @@
     "{integrationName} 통합이 액세스할 수 있는 페이지 내부에 새 페이지를 추가할 수 있게 됩니다.",
     "{integrationName}集成将允许您在可访问的页面内添加新页面。"
   ],
+  "oauthAuthorizationPage.permissionStep.permissionListItem.insertContent": [
+    "선택한 페이지 내에 새로운 콘텐츠 생성",
+    "在所选页面内创建新内容"
+  ],
+  "oauthAuthorizationPage.permissionStep.permissionListItem.insertContent.description": [
+    "\"{integrationName}\" 통합이 내가 다음 단계에서 선택한 페이지에 새로운 콘텐츠나 하위 페이지를 추가할 수 있게 됩니다. 나중에도 공유 메뉴를 통해 \"{integrationName}\" 통합과 페이지를 공유할 수 있습니다.",
+    "“{integrationName}”集成将允许您将新内容或子页面添加到我下一步选择的页面。以后也可以通过共享菜单共享“{integrationName}”集成和页面。"
+  ],
+  "oauthAuthorizationPage.permissionStep.permissionListItem.readContent": [
+    "선택한 페이지 보기",
+    "查看所选页面"
+  ],
+  "oauthAuthorizationPage.permissionStep.permissionListItem.readContent.description": [
+    "\"{integrationName}\" 통합이 내가 다음 단계에서 선택한 페이지를 볼 수 있게 됩니다. 나중에도 공유 메뉴를 통해 \"{integrationName}\" 통합과 페이지를 공유할 수 있습니다.",
+    "“{integrationName}”集成将允许您查看我下一步选择的页面。以后也可以通过共享菜单共享“{integrationName}”集成和页面。"
+  ],
+  "oauthAuthorizationPage.permissionStep.permissionListItem.updateContent": [
+    "선택한 페이지 편집",
+    "编辑所选页面"
+  ],
+  "oauthAuthorizationPage.permissionStep.permissionListItem.updateContent.description": [
+    "\"{integrationName}\" 통합이 내가 다음 단계에서 선택한 페이지를 편집할 수 있게 됩니다. 나중에도 공유 메뉴를 통해 \"{integrationName}\" 통합과 페이지를 공유할 수 있습니다.",
+    "“{integrationName}”集成将允许您编辑我下一步选择的页面。以后也可以通过共享菜单共享“{integrationName}”集成和页面。"
+  ],
   "oauthAuthorizationPage.permissionStep.permissionListItem.viewAndEditPages": [
     "선택한 페이지 보기와 편집하기",
     "查看和编辑所选页面"
@@ -3140,24 +3447,32 @@
     "{integrationName}集成将允许您查看和编辑我下一步选择的页面。稍后，您也可以通过共享菜单与{integrationName}集成共享页面。"
   ],
   "oauthAuthorizationPage.permissionStep.permissionListItem.viewUsers": [
-    "이름과 이메일 보기",
-    "查看姓名和电子邮件"
+    "워크스페이스 사용자 보기",
+    "查看工作区用户"
   ],
   "oauthAuthorizationPage.permissionStep.permissionListItem.viewUsers.detail": [
-    "{integrationName} 통합이 워크스페이스의 모든 멤버와 게스트의 사용자명과 이메일 주소를 볼 수 있게 됩니다.",
-    "{integrationName}集成将允许您查看工作区中所有成员和来宾的用户名和电子邮件地址。"
+    "\"{integrationName}\" 통합이 워크스페이스의 모든 멤버와 게스트의 사용자명과 프로필 이미지와 같은 기본 정보를 볼 수 있게 됩니다(이메일 주소는 제외).",
+    "“{integrationName}”集成将允许您查看工作区中所有成员和来宾的用户名和基本信息图像等基本信息(电子邮件地址除外)。"
+  ],
+  "oauthAuthorizationPage.permissionStep.permissionListItem.viewUsersAndEmail": [
+    "워크스페이스 사용자와 사용자의 이메일 주소를 확인",
+    "检查工作区用户和用户的电子邮件地址"
+  ],
+  "oauthAuthorizationPage.permissionStep.permissionListItem.viewUsersAndEmail.detail": [
+    "\"{integrationName}\" 통합이 워크스페이스의 모든 멤버와 게스트의 사용자명, 프로필 이미지, 이메일 주소와 같은 기본 정보를 볼 수 있게 됩니다.",
+    "“{integrationName}”集成将允许您查看工作区中所有成员和来宾的基本信息，如用户名、个人资料图像和电子邮件地址。"
   ],
   "oauthAuthorizationPage.permissionStep.title": [
     "<inlinetextlink>{integrationName}</inlinetextlink> 통합이 {workspaceName}에 액세스하려고 합니다.",
     "<inlinetextlink>{integrationName}</inlinetextlink>集成尝试访问{workspaceName}。"
   ],
   "oauthAuthorizationPage.permissionStep.warning.body": [
-    "계속하면 민감한 정보를 공유하게 될 수도 있습니다. Notion에서는 {integrationName} 통합과 같은 제3자 통합에 대해 검토하지 않습니다. {integrationName}의 <privacypolicylink>개인정보 보호 정책</privacypolicylink>과 <termsofservicelink>서비스 약관</termsofservicelink>을 통해 사용자 데이터 처리 방식을 확인하세요.",
-    "如果继续，可能会共享敏感信息。Notion不审查第三方集成，例如{integrationName}集成。通过{integrationName}的<privacypolicylink>隐私政策</privacypolicylink>和<termsofservicelink>服务条款</termsofservicelink>查看如何处理用户数据。"
+    "계속하면 민감한 정보를 공유하게 될 수도 있습니다. Notion에서는 \"{integrationName}\" 통합과 같은 제3자 통합에 대해 검토하지 않습니다. \"{integrationName}\"의 <privacypolicylink>개인정보 보호 정책</privacypolicylink>과 <termsofservicelink>서비스 약관</termsofservicelink>을 통해 사용자 데이터 처리 방식을 확인하세요.",
+    "如果继续，可能会共享敏感信息。Notion不审查第三方集成，例如“{integrationName}”集成。通过“{integrationName}”中的<privacypolicylink>隐私政策</privacypolicylink>和<termsofservicelink>服务条款</termsofservicelink>查看如何处理用户数据。"
   ],
   "oauthAuthorizationPage.permissionStep.warning.title": [
-    "{integrationName}({redirectUriDomain}) 통합을 신뢰할 수 있는지 확인하세요.",
-    "{integrationName}({redirectUriDomain})验证集成是否可信。"
+    "\"{integrationName}\"({redirectUriDomain}) 통합을 신뢰할 수 있는지 확인하세요.",
+    "确保集成“{integrationName}”({redirectUriDomain})可信。"
   ],
   "oauthAuthorizationPage.selectPageStep.empty": ["하위 페이지 없음", "无子页"],
   "oauthAuthorizationPage.selectPagesStep.backButton.label": [
@@ -3189,8 +3504,8 @@
     "工作空间"
   ],
   "oauthAuthorizationPage.selectPagesStep.title": [
-    "이 페이지에 대한 {integrationName}의 액세스 허용하기",
-    "允许{integrationName}访问此页"
+    "이 페이지에 대한 \"{integrationName}\"의 액세스 허용하기",
+    "允许访问此页的“{integrationName}”"
   ],
   "oauthAuthorizationPage.workspaceSwitcher.disabledWorkspace.tooltip": [
     "멤버나 관리자만이 이 통합을 추가할 수 있습니다.",
@@ -3494,6 +3809,19 @@
     "죄송합니다. 페이지를 불러오는 중 오류가 발생했습니다. 다시 시도하려면 새로고침 해주세요.",
     "很抱歉。加载页面时出错。要再试一次，请刷新。"
   ],
+  "pageOnAppStoreSetting.description.message": [
+    "Notion을 시작할 때나 워크스페이스를 전환할 때 표시할 항목을 선택하세요.",
+    "选择在启动Notion或切换工作空间时要显示的项目。"
+  ],
+  "pageOnAppStoreSetting.firstPage.label": [
+    "사이드바의 상위 페이지",
+    "侧边栏的父页面"
+  ],
+  "pageOnAppStoreSetting.lastVisitedPage.label": [
+    "마지막 방문 페이지",
+    "上次访问页面"
+  ],
+  "pageOnAppStoreSetting.title": ["시작 시 열기", "启动时打开"],
   "pageShareMenu.copyMaybePublicLinkButton.label": ["복사", "复制"],
   "pageTitle.flaggedContent": ["플래그가 지정된 콘텐츠", "已标记的内容"],
   "pageUpdatesModal.mobileMenu.title": ["페이지 업데이트", "更新页面"],
@@ -3519,8 +3847,18 @@
     "이전 버전 복원",
     "还原早期版本"
   ],
-  "peekTopbar.peekNavDownArrow.tooltip": ["다음 그룹 페이지", "“下一组”页"],
-  "peekTopbar.peekNavUpArrow.tooltip": ["이전 그룹 페이지", "“前一个组”页"],
+  "peekTopbar.peekNavDownArrow.tooltip": [
+    "데이터베이스 다음 페이지",
+    "“数据库下一页”页"
+  ],
+  "peekTopbar.peekNavUpArrow.tooltip": [
+    "데이터베이스 이전 페이지",
+    "“移植数据库”页"
+  ],
+  "permissionInviteToken.groupRole.ownerAlert.tooltip": [
+    "그룹은 팀 소유자로 추가할 수 없습니다.",
+    "组不能作为团队所有者添加。"
+  ],
   "permissionsInvite.closeInviteDialog.cancelButton.label": ["취소", "取消"],
   "permissionsInvite.closeInviteDialog.confirmationButton.label": ["예", "是"],
   "permissionsInvite.closeInviteDialog.confirmationMessage": [
@@ -3554,6 +3892,11 @@
     "현재 Apple의 앱 내 구매를 통해 구독 중입니다. 요금제를 바꾸려면 먼저 Apple 구독을 취소해 주세요.",
     "目前正在通过Apple的App内购买订阅。要改变计划，请先取消Apple订阅。"
   ],
+  "profileSettings.cookieAcceptance.subtitle": [
+    "사용자 경험을 개선할 수 있도록 Notion의 쿠키 사용을 허용해 주세요.",
+    "为改善用户体验，请允许使用Notion的Cookie。"
+  ],
+  "profileSettings.cookieAcceptance.title": ["쿠키 허용", "允许cookie"],
   "profileSettings.personalInfoSection.nameInput.label": [
     "선호하는 이름",
     "首选名称"
@@ -3722,6 +4065,7 @@
   "scroller.scrollDown.name": ["아래로 스크롤", "向下滚动"],
   "searchDateFilter.acceptButton.label": ["적용", "应用"],
   "searchDateFilter.cancelButton.label": ["취소", "取消"],
+  "searchDateFilter.shortTitle": ["날짜", "日期"],
   "securitySAMLSettings.SCIMSection.generateScimTokenButton.label": [
     "SCIM API 토큰 생성",
     "创建SCIM API令牌"
@@ -3742,6 +4086,7 @@
     "멤버들의 제3자 API 통합 설치 비활성화",
     "禁用通过OAuth的集成安装"
   ],
+  "settingItem.buttonPopup.done.label": ["완료", "完成"],
   "settings.regionSettings.regionSearch": ["지역을 검색하세요", "搜索区域"],
   "sharedWithMePopover.sortOrder.lastEditedNewest": [
     "최종 편집 일시",
@@ -3761,7 +4106,7 @@
     "开发专用设计和工程工具"
   ],
   "sidebar.menuListTeam.browseLabel": ["팀 검색하기", "搜索团队"],
-  "sidebar.menuListTeam.createLabel": ["팀 만들기", "创建团队"],
+  "sidebar.menuListTeam.createLabel": ["새 팀", "新团队"],
   "sidebar.openTeamBrowserButton": ["팀 검색", "搜索团队"],
   "sidebar.openTeamBrowserButton.tooltip": [
     "워크스페이스의 팀을 만나보세요.",
@@ -3773,7 +4118,7 @@
     "팀 섹션 표시하고 멤버 추가하기",
     "显示团队部分并添加成员"
   ],
-  "sidebar.outlinerTeamToggleButton.viewLabel": ["팀 표시", "显示团队"],
+  "sidebar.outlinerTeamToggleButton.viewLabel": ["팀 설정", "团队设置"],
   "sidebar.teamSection.header": ["팀", "团队"],
   "sidebar.teamSection.tooltip": ["내가 소속된 팀", "我所属的团队"],
   "sidebarAppDownload.downloadApp": ["앱 다운로드", "下载应用程序"],
@@ -3807,8 +4152,17 @@
   ],
   "sidebarCreateTeamModal.membersTitle.label": ["사용자 추가", "添加用户"],
   "sidebarCreateTeamModal.teamDescription.label": [
-    "팀은 페이지를 체계적으로 정리하고 함께 작업하는 공간입니다.",
-    "团队系统地整理页面，并与之合作的空间。"
+    "페이지를 체계적으로 정리하고 함께 작업하는 공간입니다.",
+    "系统地整理页面，一起工作的空间。"
+  ],
+  "sidebarCreateTeamModal.teamScreen.closedTeam.caption": ["비공개", "非公开"],
+  "sidebarCreateTeamModal.teamScreen.closedTeam.description": [
+    "오직 팀 멤버만 팀의 페이지에 액세스할 수 있습니다.",
+    "只有团队成员才能访问团队的页面。"
+  ],
+  "sidebarCreateTeamModal.teamScreen.closedTeam.title": [
+    "비공개 팀",
+    "私人团队"
   ],
   "sidebarCreateTeamModal.teamScreen.descriptionPlaceholder": [
     "팀 상세 정보",
@@ -3822,6 +4176,12 @@
     "가나다 랩스",
     "Acme 研究所"
   ],
+  "sidebarCreateTeamModal.teamScreen.openTeam.caption": ["공개", "公开"],
+  "sidebarCreateTeamModal.teamScreen.openTeam.description": [
+    "워크스페이스의 모든 멤버가 팀의 페이지에 액세스할 수 있습니다.",
+    "工作区中的所有成员都可以访问团队中的页面。"
+  ],
+  "sidebarCreateTeamModal.teamScreen.openTeam.title": ["공개 팀", "公开团队"],
   "sidebarCreateTeamModal.teamScreen.teamDescriptionLabel": [
     "팀 설명",
     "小组说明"
@@ -3829,12 +4189,12 @@
   "sidebarCreateTeamModal.teamScreen.teamNameLabel": ["팀 이름", "团队名称"],
   "sidebarCreateTeamModal.teamTitle.label": ["새 팀 만들기", "创建新团队"],
   "sidebarTeamModal.aboutScreen.descriptionPlaceholder": [
-    "설명을 추가하세요",
-    "请添加说明。"
+    "설명 추가",
+    "添加注释"
   ],
   "sidebarTeamModal.aboutScreenMembers.label": ["멤버", "成员"],
   "sidebarTeamModal.aboutScreenTeamOwner.label": ["팀 소유자", "团队所有者"],
-  "sidebarTeamModal.aboutScreenTopLevelPages.label": ["페이지", "页数"],
+  "sidebarTeamModal.aboutScreenTopLevelPages.label": ["팀 페이지", "“团队”页"],
   "sidebarTeamModal.cancelButton.label": ["취소", "取消"],
   "sidebarTeamModal.descriptionInput.label": ["설명", "说明"],
   "sidebarTeamModal.lastUpdated.label": ["{time}에 업데이트됨", "{time}已更新"],
@@ -4067,6 +4427,10 @@
   "spaceSettingsSidebar.auditLogTab.title": ["감사 로그", "审核日志"],
   "spaceSettingsSidebar.experimentsTab.title": ["실험", "实验"],
   "spaceSettingsSidebar.integrationsTab.title": ["통합", "集成"],
+  "spaceSettingsSidebar.notificationsAndSettings.title": [
+    "내 알림과 설정",
+    "我的通知和设置"
+  ],
   "spaceSettingsSidebar.subscriptionTab.title": ["구독", "订阅"],
   "spaceSettingsSidebar.teamsTab.title": ["팀", "团队"],
   "spaceSubscriptionBilling.address.invalidError": [
@@ -4343,32 +4707,65 @@
   "tabMenuBlock.title.placeholder": ["제목 없음", "无标题"],
   "teamBrowser.headerLabel": ["팀 검색", "搜索团队"],
   "teamBrowser.teamCard.LeaveTeamLast.prompt": [
-    "마지막 소유자는 팀에서 나갈 수 없습니다.",
-    "最后一个所有者不能离开团队。"
+    "팀의 유일한 소유자이기 때문에 이 팀에서 나가실 수 없습니다. 다른 팀 소유자를 초대하면 나가실 수 있습니다.",
+    "你不能离开这个团队，因为这是团队的唯一所有者。邀请其他团队所有者可以离开。"
   ],
   "teamPermissionSettings.closeSpacePermissionItem.description": [
-    "이 설정이 꺼져 있기 때문에 {num}명의 팀 멤버만이 액세스를 가집니다.",
-    "由于此设置处于关闭状态，因此只有{num}名团队成员具有访问权限。"
+    "이 설정이 꺼져 있기 때문에 {num}명의 팀 멤버만이 액세스를 권한을 가지고 있습니다.",
+    "由于此设置处于关闭状态，只有{num}名团队成员具有访问权限。"
   ],
+  "teamPermissionSettings.generalSection.spacePermission": ["일반", "一般"],
+  "teamPermissionSettings.generalSection.teamPermission": [
+    "팀 멤버",
+    "团队成员"
+  ],
+  "teamPermissionSettings.member.permissionItem.overrideWarning": [
+    "이 멤버는 기본 팀 사용 권한의 적용을 받지 않으며 기본 팀 사용 권한이 변경되는 경우에도 영향을 받지 않습니다.",
+    "此成员不受默认团队权限的约束，即使更改了默认团队权限，也不受影响。"
+  ],
+  "teamPermissionSettings.member.search.zeroState": ["멤버 없음", "无成员"],
   "teamPermissionSettings.openSpacePermissionItem.description": [
-    "이 설정이 켜져 있기 때문에 {num}명의 워크스페이스 멤버가 이 팀에 대한 액세스를 가집니다.",
+    "이 설정이 켜져 있기 때문에 {num}명의 워크스페이스 멤버가 이 팀에 액세스 권한을 가지고 있습니다.",
     "由于此设置已打开，{num}名工作空间成员对此团队具有访问权限。"
   ],
+  "teamPermissionSettings.permissionItem.rolePill.owner": [
+    "팀 소유자",
+    "团队所有者"
+  ],
+  "teamPermissionSettings.permissionItem.rolePill.pageGuest": [
+    "페이지 게스트",
+    "页面来宾"
+  ],
+  "teamPermissionSettings.permissionItem.rolePill.teamGuest": [
+    "팀 게스트",
+    "团队来宾"
+  ],
   "teamPermissionSettings.teamPermissionItem.description": [
-    "가입하는 {num}명의 팀 멤버와 사용자들이 이 액세스 수준을 갖게 됩니다.",
-    "您订阅的{num}名团队成员和用户将拥有此访问级别。"
+    "{num}명의 팀 멤버와 새로 참가하는 사용자들이 이 팀에 액세스할 수 있습니다.",
+    "{num}名团队成员和新加入的用户可以访问此团队。"
   ],
   "teamPermissionSettings.unknownGroup": ["알 수 없는 그룹", "未知组"],
-  "teamPermissionsInviteWithModal.openModal": ["멤버 추가하기", "添加成员"],
-  "teamPermissionsSettings.closeTeamToOpen.accept": ["공개 액세스", "公开访问"],
+  "teamPermissionsInviteWithModal.openModal": ["멤버 추가", "添加成员"],
+  "teamPermissionsSettings.closeTeamToOpen.accept": [
+    "모두에게 액세스 허용",
+    "允许所有人访问"
+  ],
   "teamPermissionsSettings.closeTeamToOpen.dialogDescription": [
-    "워크스페이스 모든 참여자에게 이 팀 페이지의 액세스를 주시겠습니까? 이 워크스페이스의 팀 멤버뿐만 아니라 모든 멤버가 액세스를 갖게 됩니다. 이 팀에는 누구나 가입할 수 있습니다.",
-    "是否允许工作区所有参与者访问此团队页面？此工作区的团队成员以及所有成员都将拥有访问权限。任何人都可以加入这个团队。"
+    "워크스페이스 모든 멤버에게 이 팀의 페이지 액세스를 허용하시겠습니까?",
+    "是否允许工作区所有成员访问此团队的页面？"
+  ],
+  "teamPermissionsSettings.closedTeam.noAccessLabel": [
+    "액세스 없음",
+    "无法访问"
   ],
   "teamPermissionsSettings.openTeamToClose.accept": ["액세스 제거", "删除访问"],
   "teamPermissionsSettings.openTeamToClose.dialogDescription": [
-    "워크스페이스 내 모든 멤버의 액세스를 제거하시겠습니까? 팀 멤버만 액세스를 갖게 되며 새로운 멤버는 초대를 받아야 참여할 수 있습니다.",
-    "是否确实要删除工作区中所有成员的访问权限？只有团队成员具有访问权限，新成员必须获得邀请才能参与。"
+    "모든 워크스페이스 멤버의 액세스를 제거하시겠습니까? 팀 멤버만 액세스를 가지며 새 멤버는 초대를 받아야 참여할 수 있습니다.",
+    "是否确实要删除所有工作区成员的访问权限？只有团队成员具有访问权限，新成员必须获得邀请才能参与。"
+  ],
+  "teamPermissionsSettings.team.disabledPermissionitem.description": [
+    "팀의 사용 권한 수준은 워크스페이스의 사용 권한 수준보다 낮을 수 없습니다.",
+    "团队的权限级别不能低于工作区的权限级别。"
   ],
   "teamWorkspacesSettings.disableTeamCreation.caption": [
     "이 설정은 워크스페이스 관리자만 팀을 생성할 수 있도록 허용합니다. 워크스페이스 멤버는 팀을 생성할 수 없지만 여전히 팀에 참여하거나 팀에서 나갈 수 있습니다.",
@@ -4400,6 +4797,10 @@
     "您必须至少选择一个默认团队。"
   ],
   "teamsWorkspaceSettings.updateButton.label": ["변경", "变更"],
+  "templateHelpers.templates.teamsGettingStarted": [
+    "팀 생성 시작하기",
+    "开始创建团队"
+  ],
   "text.truncated.showMoreLabel": ["더 보기", "查看更多"],
   "timeUtils.durationDescriptor.day": [
     "{numDays, plural, other {{numDays}일 전}}",
@@ -4552,6 +4953,7 @@
   ],
   "unfurling.asana.asanaAssignedTo": ["담당자: {value}", "联系人：{value}"],
   "unfurling.asana.asanaDueAt": ["마감 시간: {value}", "关闭时间：{value}"],
+  "unfurling.asana.asanaProject": ["Asana 프로젝트", "Asana项目"],
   "unfurling.asana.asanaTask": ["Asana 작업", "Asana任务"],
   "unfurling.asana.asanaUpdatedAt": [
     "업데이트 시간: {value}",
@@ -4561,6 +4963,7 @@
     "{integration}에 연결해 미리보기",
     "连接到{integration}预览"
   ],
+  "unfurling.dropbox.dropboxFile": ["Dropbox 파일", "Dropbox文件"],
   "unfurling.errorButton.title": ["미리보기 불러오기 실패", "预览加载失败"],
   "unfurling.errorOptions.authenticateAction.alreadyAuthenticated.title": [
     "다른 {integration} 계정 연결",
@@ -4580,13 +4983,18 @@
   ],
   "unfurling.errorOptions.removeAction.title": ["제거", "移除"],
   "unfurling.errorOptions.tryAgainAction.title": ["다시 시도", "重试"],
+  "unfurling.figma.figmaFile": ["Figma 파일", "Figma文件"],
+  "unfurling.figma.figmaLastModifiedBy": [
+    "{value} 최종 수정",
+    "{value}上次修改"
+  ],
   "unfurling.github.githubCommit": ["Commit", "提交"],
   "unfurling.github.githubCommitted": [
     "{value}에 Commit됨",
     "提交时间：{value}"
   ],
   "unfurling.github.githubIssue": ["Issue {value}", "Issue{value}"],
-  "unfurling.github.githubIssues": ["문제 {value}개", "问题{value}个"],
+  "unfurling.github.githubIssues": ["Issues {value}개", "Issues{value}个"],
   "unfurling.github.githubPullClosed": ["{value}에 닫힘", "Closed {value}"],
   "unfurling.github.githubPullMerged": ["{value}에 Merge됨", "Merged：{value}"],
   "unfurling.github.githubPullOpened": ["{value}에 열림", "Opened：{value}"],
@@ -4797,10 +5205,10 @@
   ],
   "userPermissionsMenu.canWriteItem.label": ["쓰기 가능", "可写"],
   "userPermissionsMenu.mixedAccessItem.caption": [
-    "혼합된 액세스입니다.",
-    "混合访问。"
+    "복합 액세스를 가지고 있습니다.",
+    "具有复合访问。"
   ],
-  "userPermissionsMenu.mixedAccessItem.label": ["혼합된 액세스", "混合访问"],
+  "userPermissionsMenu.mixedAccessItem.label": ["복합 액세스", "复合访问"],
   "userSettings.userType.team1000+": ["1000명 이상", "1000人以上"],
   "userSettings.userType.team101-1000": ["101명~1000명", "101人~1000人"],
   "userSettings.userType.team2-50": ["2명~50명", "2人~50人"],
