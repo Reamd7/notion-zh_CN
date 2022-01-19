@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         Notion-zh_CN notion的汉化脚本
 // @namespace    http://tampermonkey.net/
-// @version      2.4.0
+// @version      2.4.1
 // @description  notion的100%汉化脚本，基于官方中文+机器翻译韩文，支持app版本以及网页油猴/UserScript，地址：https://github.com/reamd7/notion-zh_CN
 // @author       reamd7
 // @match        *://www.notion.so/*
@@ -8113,14 +8113,14 @@
     if (isSafari) {
       const notionRoot = document.createElement('div');
       notionRoot.id = "notion-app"
-      notionRoot.setAttribute("data", 1);
+      notionRoot.setAttribute("data-inject", true);
       document.body.append(notionRoot);
       scriptSrcList.forEach(url => {
         const script = document.createElement("script");
         script.type= 'text/javascript';
         script.defer = "defer";
         script.src = url;
-        script.setAttribute("inject")
+        script.setAttribute("data-inject", true)
         document.head.append(script)
       })
     }
