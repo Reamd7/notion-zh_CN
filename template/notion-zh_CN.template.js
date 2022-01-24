@@ -12,30 +12,61 @@
 // ==/UserScript==
 (function () {
   "use strict";
+  var lang = "zh-CN";
+  var isSafari = navigator.userAgent.includes('Safari/') && !navigator.userAgent.includes('Chrome/')
+  var isElectron = "undefined" != typeof global || window.__isElectron;
+
+  const scriptList = document.querySelectorAll(('script[defer]'));
+  const scriptSrcList = Array.from(scriptList).map(v => v.src)
+  if (isSafari) {
+    scriptList.forEach(v => v.remove())
+    document.getElementById("notion-app").remove();
+  }
 
   const script = document.createElement("script");
   script.id = "messages";
   script.type = "application/json";
-  script.setAttribute("data-locale", "zh-CN");
+  script.setAttribute("data-locale", lang);
   script.text = JSON.stringify(%zh%);
 
   const routes = document.createElement("script");
   routes.id = "routes";
   routes.type = "application/json";
-  routes.setAttribute("data-locale", "zh-CN");
+  routes.setAttribute("data-locale", lang);
   routes.text = JSON.stringify({});
+
+  function insertMoment() {
+    try {
+      moment.updateLocale(lang, {
+        longDateFormat: {
+          LT: "h:mm A",
+          LTS: "h:mm:ss A",
+          L: "YYYY/MM/DD",
+          LL: "YYYY年M月D日",
+          LLL: "YYYY年M月D日Ah点mm分",
+          LLLL: "YYYY年M月D日ddddAh点mm分",
+          l: "YYYY/M/D",
+          ll: "YYYY年M月D日",
+          lll: "YYYY年M月D日 HH:mm",
+          llll: "YYYY年M月D日dddd HH:mm",
+        },
+      });
+    } catch (e) {
+      requestAnimationFrame(() => {
+        insertMoment();
+      });
+    }
+  }
 
   try {
     const preferredLocaleStr = window.localStorage.getItem("LRU:KeyValueStore2:preferredLocale")
     const preferredLocale = JSON.parse(preferredLocaleStr);
     if (preferredLocale.value) {
-      preferredLocale.value = "zh-CN"
+      preferredLocale.value = lang
       window.localStorage.setItem("LRU:KeyValueStore2:preferredLocale", JSON.stringify(preferredLocale)) // search window.document.querySelector("#messages") 请阅读
     } 
-  } catch (e) {
+  } catch (e) {}
 
-  }
-  var isElectron = "undefined" != typeof global || window.__isElectron;
   if (isElectron) {
     var observer = new MutationObserver(function(callback) {
       if (callback.filter(v => {
@@ -51,6 +82,7 @@
       attributes: false, // 观察属性变动
       subtree: true     // 观察后代节点，默认为 false
     });
+    insertMoment();
   } else {
     function insert() {
       try {
@@ -63,28 +95,22 @@
       }
     }
     insert();
-  }
-  function insertMoment () {
-    try {
-      moment.updateLocale("zh-cn", {
-        longDateFormat: {
-          LT: 'h:mm A',
-          LTS: 'h:mm:ss A',
-          L: 'YYYY/MM/DD',
-          LL: 'YYYY年M月D日',
-          LLL: 'YYYY年M月D日Ah点mm分',
-          LLLL: 'YYYY年M月D日ddddAh点mm分',
-          l: 'YYYY/M/D',
-          ll: 'YYYY年M月D日',
-          lll: 'YYYY年M月D日 HH:mm',
-          llll: 'YYYY年M月D日dddd HH:mm',
-        },
-      })
-    } catch(e) {
-      requestAnimationFrame(() => {
-        insertMoment();
+    insertMoment();
+
+    // for UserScript 
+    if (isSafari) {
+      const notionRoot = document.createElement('div');
+      notionRoot.id = "notion-app"
+      notionRoot.setAttribute("data-inject", true);
+      document.body.append(notionRoot);
+      scriptSrcList.forEach(url => {
+        const script = document.createElement("script");
+        script.type= 'text/javascript';
+        script.defer = "defer";
+        script.src = url;
+        script.setAttribute("data-inject", true)
+        document.head.append(script)
       })
     }
   }
-  insertMoment();
 })();
