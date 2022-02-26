@@ -37,7 +37,7 @@
 
   function insertMoment() {
     try {
-      moment.updateLocale(lang, {
+      moment.updateLocale(lang.toLowerCase(), {
         longDateFormat: {
           LT: "h:mm A",
           LTS: "h:mm:ss A",
@@ -51,6 +51,7 @@
           llll: "YYYY年M月D日dddd HH:mm",
         },
       });
+      moment.locale(lang.toLowerCase())
     } catch (e) {
       requestAnimationFrame(() => {
         insertMoment();
