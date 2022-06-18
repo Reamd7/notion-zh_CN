@@ -67,7 +67,6 @@ notion-zh_CN 是对notion的汉化脚本。
 **手动注入：**
 
 ### windows
-
 1. （自**2.0.4**版本后，任意语言都等价于中文了）
 2. notion 安装目录：`C:\Users\用户名\AppData\Local\Programs\Notion\`
 3. 打开`C:\Users\用户名\AppData\Local\Programs\Notion\resources\app\renderer`文件夹
@@ -79,6 +78,13 @@ notion-zh_CN 是对notion的汉化脚本。
     require("./notion-zh_CN") // 添加该行
    ```
 7. 重启
+
+- 上述操作也可以使用 PowerShell 命令来完成。  
+  命令执行完成后，在 Notion 中使用 <kbd>CTRL</kbd>+<kbd>R</kbd> 可以热更新界面。
+   ```powershell
+   Invoke-WebRequest -Uri "https://github.com/Reamd7/notion-zh_CN/releases/latest/download/notion-zh_CN.js" -OutFile "$HOME\AppData\Local\Programs\Notion\resources\app\renderer\notion-zh_CN.js"
+   Add-Content "$HOME\AppData\Local\Programs\Notion\resources\app\renderer\preload.js" 'require("./notion-zh_CN")'
+   ```
 
 ### Mac 
 
