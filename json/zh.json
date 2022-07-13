@@ -6778,7 +6778,7 @@
   "subscriptionSettings.subscriptionStatus.reachedFreeBlockLimit": "此工作区使用了 {freeBlockLimit} 个块存储限制中的 {usedBlocks} 个块（占总存储的 {utilizationPercentage}）。",
   "subscriptionSettings.subscriptionStatus.remainingChargeMessage": "根据你的帐户余额进行调整后，你将需要支付 {formattedInvoiceNextCharge} 费用。",
   "subscriptionSettings.subscriptionStatus.teamTrialMessage": "此工作区是<bold>团队版</bold>的免费试用版，有块存储限制。",
-  "subscriptionSettings.subscriptionStatus.upcomingInvoiceLink": "<upcominginvoicelink>查看下个发票</upcominginvoicelink>",
+  "subscriptionSettings.subscriptionStatus.upcomingInvoiceLink": "<upcominginvoicelink>下期账单</upcominginvoicelink>",
   "subscriptionSettings.title": "订阅",
   "subscriptionSettings.updatingSubscriptionMessage": "正在更新订阅⋯",
   "subscriptionSettings.upgradeToBusinessDialog.confirmationButton": "升级到商业版",
