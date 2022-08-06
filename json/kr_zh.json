@@ -1,1 +1,167 @@
-{}
+{
+  "TeamMemberOwnerSelect.roleName.custom": ["커스텀", "特别定制"],
+  "TeamSettingsGeneral.settingsChanged": [
+    "팀스페이스 세부 정보 업데이트됨",
+    "团队空间详细信息已更新"
+  ],
+  "appTemplates.tasks.taskByProjectFeatureName": [
+    "프로젝트별 작업",
+    "特定于项目的任务"
+  ],
+  "blockPermissionsSettings.groupPermission.label": ["그룹", "组"],
+  "breadcrumb.moveTo.privatePages": ["비공개", "私人"],
+  "database.actionButton.callTooltip": ["통화", "货币"],
+  "database.actionButton.openAsPageTitle": ["열기", "打开"],
+  "database.actionButton.openAsPageTooltip": ["페이지로 열기", "在页面上打开"],
+  "database.actionButton.openInSidePeekTooltip": [
+    "사이드 보기에서 열기",
+    "在侧视图中打开"
+  ],
+  "database.actionButton.openLinkTooltip": ["링크 열기", "打开链接"],
+  "database.actionButton.personAddSelfTooltip": ["본인 추가", "添加本人"],
+  "database.actionButton.personRemoveSelfTooltip": ["본인 제거", "移除本人"],
+  "database.actionButton.personReplaceWithSelfTooltip": [
+    "본인과 바꾸기",
+    "与本人替换"
+  ],
+  "database.actionButton.sendEmailTooltip": ["이메일 보내기", "发送电子邮件"],
+  "database.relationMenuRow.tooltip.openPage.message": [
+    "페이지로 열기",
+    "在页面上打开"
+  ],
+  "database.templatePickerItem.actionMenu.delete": ["삭제", "删除"],
+  "database.templatePickerItem.actionMenu.repeat": ["반복", "重复"],
+  "database.templatePickerItem.mobileRepeatModal.title": ["반복", "重复"],
+  "database.templatePickerItem.quickOptionMenuItem.day": ["매일", "每天"],
+  "database.templatePickerItem.quickOptionMenuItem.month": ["매달", "每月"],
+  "database.templatePickerItem.quickOptionMenuItem.week": ["매주", "每周"],
+  "database.templatePickerItem.quickOptionMenuItem.year": ["매년", "每年"],
+  "ddatabase.templatePickerItem.mobileDoneRepeatButton.label": [
+    "완료",
+    "已完成"
+  ],
+  "embedBlock.actionButton.tooltip.align": ["맞춤", "配合"],
+  "embedBlock.actionButton.tooltip.blockActionMenu": ["추가 작업", "其他操作"],
+  "embedBlock.actionButton.tooltip.caption": ["캡션", "标题"],
+  "embedBlock.actionButton.tooltip.comment": ["댓글", "回帖"],
+  "embedBlock.actionButton.tooltip.download": ["다운로드", "下载"],
+  "helpButton.showTeamspacesEductation": [
+    "팀스페이스에 대해 알아보기",
+    "了解团队空间"
+  ],
+  "iconPicker.newBadge": ["새로 만들기", "新建"],
+  "manageTeamsBrowser.subtitle": [
+    "여기에서 액세스 권한이 있는 모든 팀스페이스를 관리하세요.",
+    "在这里管理您有权访问的所有团队空间。"
+  ],
+  "mobileAppDownloadStep.button": ["Notion 다운로드", "下载Notion"],
+  "mobileAppDownloadStep.subTitle": [
+    "모바일 브라우저에서 Notion 설정을 마무리하거나 {os}용 Notion을 다운로드하세요.",
+    "在移动浏览器中完成Notion设置或下载用于{os}的Notion。"
+  ],
+  "mobileAppDownloadStep.title": [
+    "<boldtext>앱 다운로드</boldtext>",
+    "<boldtext>应用程序下载</boldtext>"
+  ],
+  "pricingGrid.planAttribute.databaseSync.title": [
+    "동기화된 데이터베이스",
+    "同步数据库"
+  ],
+  "pricingGrid.planAttribute.linkPreviews.title": ["링크 미리보기", "预览链接"],
+  "pricingGrid.planAttribute.syncedDatabases.tooltip": [
+    "Jira와 GitHub의 최신 정보를 Notion에서 데이터베이스로 보여줍니다.",
+    "将Jira和GitHub的最新信息从Notion展示到数据库。"
+  ],
+  "spacePermissionsSettings.groupsTab.userGroup.groupIcon.tooltip": [
+    "아이콘 추가",
+    "添加图标"
+  ],
+  "tableView.selectionOverlay.dragAndFill.tooltip": [
+    "세로로 드래그하여 값을 채우세요.",
+    "垂直拖动以填充值。"
+  ],
+  "teamJoinLeaveButton.joinTeam.closedTeamTooltip": [
+    "비공개 팀스페이스에는 멤버가 초대해야 참여할 수 있습니다.",
+    "成员必须邀请才能参与私人团队空间。"
+  ],
+  "teamJoinLeaveButton.leaveTeam.enabledTooltip": [
+    "팀스페이스에서 나가려면 클릭하세요.",
+    "点击退出团队空间。"
+  ],
+  "teamOutliner.addPage": ["페이지 추가", "添加页面"],
+  "teamsEducationModal.doneMessage": ["완료", "已完成"],
+  "teamsEducationModal.learnMoreUrl": [
+    "{url}에서 자세히 알아보기",
+    "了解有关{url}的更多信息"
+  ],
+  "teamsEducationModal.nextMessage": ["다음", "下一页"],
+  "teamsEducationModal.skipMessage": ["건너뛰기", "跳过"],
+  "topbar.connectionSection.connectionIntegration.label": [
+    "{connectionName}",
+    "{connectionName}"
+  ],
+  "topbar.connectionSection.disconnectIntegration.label": [
+    "페이지에서 연결 해제",
+    "断开与页面的连接"
+  ],
+  "topbar.connectionSection.disconnectIntegrationConfirmation.label": [
+    "모든 하위 페이지에서 {botName}이(가) 제거됩니다. 계속하시겠습니까?",
+    "{botName}将从所有子页面中删除。是否继续？"
+  ],
+  "topbar.connectionSection.disconnectIntegrationFromParent.label": [
+    "상위 페이지에서 연결 해제",
+    "从父页面断开连接"
+  ],
+  "topbar.connectionSection.label": ["연결", "已连接"],
+  "topbar.connectionsSection.connectionLoading.label": [
+    "연결 불러오기 중...",
+    "正在导入连接..."
+  ],
+  "topbar.connectionsSection.connectionMore.label": ["더 보기", "更多"],
+  "topbar.connectionsSection.connectionSearchError.label": [
+    "문제가 발생했습니다.",
+    "发生了问题。"
+  ],
+  "topbar.connectionsSection.connectionSearchResult.label": [
+    "{name}",
+    "{name}"
+  ],
+  "topbar.connectionsSection.searchConnections.label": [
+    "연결 찾기",
+    "查找连接"
+  ],
+  "useCasemobileDesktopStep.browser.label": ["브라우저", "浏览器"],
+  "useCasemobileDesktopStep.desktopApp.label": [
+    "Mac과 Windows 앱",
+    "Mac和Windows应用程序"
+  ],
+  "useCasemobileDesktopStep.title": [
+    "Notion은 <boldtext>Mac</boldtext>, <boldtext>Windows</boldtext>, <boldtext>브라우저</boldtext>에서도 작동합니다! 모든 기기 전반에 걸쳐 동기화된 상태를 유지합니다.",
+    "Notion也适用于<boldtext>Mac</boldtext>、<boldtext>Windows</boldtext>和<boldtext>浏览器</boldtext>！跨所有设备保持同步。"
+  ],
+  "useCasemobileEditorSidebarStep.description": [
+    "여기에서 워크스페이스 페이지와 부서 페이지를 볼 수 있습니다.",
+    "您可以在此处查看工作区页面和部门页面。"
+  ],
+  "useCasemobileEditorSidebarStep.title": [
+    "<boldtext>사이드바</boldtext> 메뉴는 업무를 체계적인 상태로 유지합니다.",
+    "<boldtext>侧栏</boldtext>菜单使业务保持系统化。"
+  ],
+  "useCasemobileEditorStep.description": [
+    "콘텐츠를 재정렬하려면 <boldtext>길게 터치</boldtext>하세요.",
+    "要重新排列内容，请<boldtext>长触摸</boldtext>。"
+  ],
+  "useCasemobileEditorStep.title": ["몇 가지 필수 팁:", "一些必要的提示："],
+  "useCasemobileWebClipperStep.title": [
+    "<boldtext>웹 페이지나 로컬 파일을 Notion에 저장하세요.</boldtext>",
+    "<boldtext>请将网页或本地文件保存到Notion。</boldtext>"
+  ],
+  "useCasewebClipperStep.description": [
+    "공유 버튼을 누르고 저장할 페이지나 데이터베이스를 선택하세요.",
+    "点击“共享”按钮，然后选择要保存的页面或数据库。"
+  ],
+  "workspaceTransferErrors.failedTransfer.errorMessages": [
+    "워크스페이스를 이전하지 못했습니다. 다시 이전해 보세요.",
+    "无法转移工作区。再搬迁一下。"
+  ]
+}
