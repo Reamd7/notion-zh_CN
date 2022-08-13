@@ -136,3 +136,8 @@ notion-zh_CN 是对notion的汉化脚本。
 
 # 呼吁：
 提高付费率，支持你所支持的软让他发展更好，这样国内市场才会更受重视，而不是只是白嫖，买淘宝，搞教育账户。
+
+
+## Star History
+
+[![Star History Chart](https://api.star-history.com/svg?repos=Reamd7/notion-zh_CN&type=Date)](https://star-history.com/#Reamd7/notion-zh_CN&Date)
