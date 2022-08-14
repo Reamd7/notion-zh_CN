@@ -113,6 +113,13 @@
         script.setAttribute("data-inject", true)
         document.head.append(script)
       })
+      if (!window.__console || !window.__console.push) {
+        window.__console = {
+          push: (msg) => {
+            
+          }
+        }
+      }
     }
   }
 })();
