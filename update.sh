@@ -7,9 +7,7 @@ remoteUrl="https://greasyfork.org/scripts/430116-notion-zh-cn-notion%E7%9A%84%E6
 if [ -w "/Applications/Notion.app/Contents/Resources/app/renderer/preload.js" ]; then
     curl -# -o "$folder/Notion-zh_CN.js" "$remoteUrl"
 
-    listLine="tail -n 1 $preloadJs"
-
-    if [ $listLine != "require('./notion-zh_CN')" ]; then 
+    if [ "tail -n 1 $preloadJs" != "require('./notion-zh_CN')" ]; then 
       echo "require('./notion-zh_CN')" >> $preloadJs
     fi
 fi
