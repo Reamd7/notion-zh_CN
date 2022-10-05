@@ -9,7 +9,7 @@ if [ -w "/Applications/Notion.app/Contents/Resources/app/renderer/preload.js" ];
 
     listLine="tail -n 1 $preloadJs"
 
-    if [ $listLine != "require('./notion-zh_CN')" ]; then 
-      echo "require('./notion-zh_CN')" >> $preloadJs
+    if [ "$listLine" != "require('./notion-zh_CN')" ]; then 
+      echo "require('./notion-zh_CN')" >> "$preloadJs"
     fi
 fi
