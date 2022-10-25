@@ -2,7 +2,7 @@
 
 folder="/Applications/Notion.app/Contents/Resources/app/renderer"
 preloadJs="$folder/preload.js"
-remoteUrl="https://github.com/Reamd7/notion-zh_CN/releases/latest/download/notion-zh_CN.js"
+remoteUrl="https://cdn.jsdelivr.net/gh/Reamd7/notion-zh_CN@master/update.sh"
 
 if [ -w "$preloadJs" ]; then
     curl -L -# -o "$folder/notion-zh_CN.js" "$remoteUrl"
