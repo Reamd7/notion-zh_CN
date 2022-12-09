@@ -1,4 +1,4 @@
-lockfileVersion: 5.3
+lockfileVersion: 5.4
 
 specifiers:
   '@types/lodash': ^4.14.173
@@ -10,6 +10,7 @@ specifiers:
   pinyin-pro: ^3.3.1
   prettier: ^2.3.2
   tencentcloud-sdk-nodejs: ^4.0.183
+  typescript: ^4.8.4
 
 dependencies:
   '@types/node': registry.npmmirror.com/@types/node/16.11.26
@@ -18,6 +19,7 @@ dependencies:
   pinyin-pro: registry.npmmirror.com/pinyin-pro/3.8.3
   prettier: registry.npmmirror.com/prettier/2.6.2
   tencentcloud-sdk-nodejs: registry.npmmirror.com/tencentcloud-sdk-nodejs/4.0.322
+  typescript: 4.8.4
 
 devDependencies:
   '@types/lodash': registry.npmmirror.com/@types/lodash/4.14.181
@@ -25,6 +27,19 @@ devDependencies:
   lodash: registry.npmmirror.com/lodash/4.17.21
 
 packages:
+
+  /source-map/0.6.1:
+    resolution: {integrity: sha512-UjgapumWlbMhkBgzT7Ykc5YXUT46F0iKu8SGXq0bcwP5dz/h0Plj6enJqjz1Zbq2l5WaqYnrVbwWOWMyF3F47g==}
+    engines: {node: '>=0.10.0'}
+    requiresBuild: true
+    dev: false
+    optional: true
+
+  /typescript/4.8.4:
+    resolution: {integrity: sha512-QCh+85mCy+h0IGff8r5XWzOVSbBO+KfeYrMQh7NJ58QujwcE22u+NUSmUxqF+un70P9GXKxa2HCNiTTMJknyjQ==}
+    engines: {node: '>=4.2.0'}
+    hasBin: true
+    dev: false
 
   registry.npmmirror.com/@tootallnate/once/1.1.2:
     resolution: {integrity: sha512-RbzJvlNzmRq5c3O09UipeuXno4tA1FE6ikOjxZK0tuxVv3412l64l5t1W5pj4+rJq9vpkm/kwiR07aZXnsKPxw==, registry: https://packages.aliyun.com/60c197272c5969c370c5fc9b/npm/npm-registry/, tarball: https://registry.npmmirror.com/@tootallnate/once/-/once-1.1.2.tgz}
@@ -90,6 +105,8 @@ packages:
     engines: {node: '>= 6.0.0'}
     dependencies:
       debug: registry.npmmirror.com/debug/4.3.4
+    transitivePeerDependencies:
+      - supports-color
     dev: false
 
   registry.npmmirror.com/asynckit/0.4.0:
@@ -104,6 +121,8 @@ packages:
     version: 0.21.4
     dependencies:
       follow-redirects: registry.npmmirror.com/follow-redirects/1.14.9
+    transitivePeerDependencies:
+      - debug
     dev: false
 
   registry.npmmirror.com/browser-process-hrtime/1.0.0:
@@ -179,6 +198,11 @@ packages:
     name: debug
     version: 4.3.4
     engines: {node: '>=6.0'}
+    peerDependencies:
+      supports-color: '*'
+    peerDependenciesMeta:
+      supports-color:
+        optional: true
     dependencies:
       ms: registry.npmmirror.com/ms/2.1.2
     dev: false
@@ -223,7 +247,7 @@ packages:
       esutils: registry.npmmirror.com/esutils/2.0.3
       optionator: registry.npmmirror.com/optionator/0.8.3
     optionalDependencies:
-      source-map: registry.npmmirror.com/source-map/0.6.1
+      source-map: 0.6.1
     dev: false
 
   registry.npmmirror.com/esprima/4.0.1:
@@ -259,6 +283,11 @@ packages:
     name: follow-redirects
     version: 1.14.9
     engines: {node: '>=4.0'}
+    peerDependencies:
+      debug: '*'
+    peerDependenciesMeta:
+      debug:
+        optional: true
     dev: false
 
   registry.npmmirror.com/form-data/3.0.1:
@@ -308,6 +337,8 @@ packages:
       '@tootallnate/once': registry.npmmirror.com/@tootallnate/once/1.1.2
       agent-base: registry.npmmirror.com/agent-base/6.0.2
       debug: registry.npmmirror.com/debug/4.3.4
+    transitivePeerDependencies:
+      - supports-color
     dev: false
 
   registry.npmmirror.com/https-proxy-agent/5.0.0:
@@ -318,6 +349,8 @@ packages:
     dependencies:
       agent-base: registry.npmmirror.com/agent-base/6.0.2
       debug: registry.npmmirror.com/debug/4.3.4
+    transitivePeerDependencies:
+      - supports-color
     dev: false
 
   registry.npmmirror.com/iconv-lite/0.4.24:
@@ -353,6 +386,11 @@ packages:
     name: jsdom
     version: 17.0.0
     engines: {node: '>=12'}
+    peerDependencies:
+      canvas: ^2.5.0
+    peerDependenciesMeta:
+      canvas:
+        optional: true
     dependencies:
       abab: registry.npmmirror.com/abab/2.0.5
       acorn: registry.npmmirror.com/acorn/8.7.0
@@ -381,6 +419,10 @@ packages:
       whatwg-url: registry.npmmirror.com/whatwg-url/9.1.0
       ws: registry.npmmirror.com/ws/8.5.0
       xml-name-validator: registry.npmmirror.com/xml-name-validator/3.0.0
+    transitivePeerDependencies:
+      - bufferutil
+      - supports-color
+      - utf-8-validate
     dev: false
 
   registry.npmmirror.com/levn/0.3.0:
@@ -426,6 +468,11 @@ packages:
     name: node-fetch
     version: 2.6.7
     engines: {node: 4.x || >=6.0.0}
+    peerDependencies:
+      encoding: ^0.1.0
+    peerDependenciesMeta:
+      encoding:
+        optional: true
     dependencies:
       whatwg-url: registry.npmmirror.com/whatwg-url/5.0.0
     dev: false
@@ -528,15 +575,6 @@ packages:
     engines: {node: '>=8'}
     dev: true
 
-  registry.npmmirror.com/source-map/0.6.1:
-    resolution: {integrity: sha512-UjgapumWlbMhkBgzT7Ykc5YXUT46F0iKu8SGXq0bcwP5dz/h0Plj6enJqjz1Zbq2l5WaqYnrVbwWOWMyF3F47g==, registry: https://packages.aliyun.com/60c197272c5969c370c5fc9b/npm/npm-registry/, tarball: https://registry.npmmirror.com/source-map/-/source-map-0.6.1.tgz}
-    name: source-map
-    version: 0.6.1
-    engines: {node: '>=0.10.0'}
-    requiresBuild: true
-    dev: false
-    optional: true
-
   registry.npmmirror.com/symbol-tree/3.2.4:
     resolution: {integrity: sha512-9QNk5KwDF+Bvz+PyObkmSYjI5ksVUYtjW7AU22r2NKcfLJcXp96hkDWU3+XndOsUb+AQ9QhfzfCT2O+CNWT5Tw==, registry: https://packages.aliyun.com/60c197272c5969c370c5fc9b/npm/npm-registry/, tarball: https://registry.npmmirror.com/symbol-tree/-/symbol-tree-3.2.4.tgz}
     name: symbol-tree
@@ -555,6 +593,9 @@ packages:
       is-stream: registry.npmmirror.com/is-stream/2.0.1
       node-fetch: registry.npmmirror.com/node-fetch/2.6.7
       tslib: registry.npmmirror.com/tslib/1.13.0
+    transitivePeerDependencies:
+      - encoding
+      - supports-color
     dev: false
 
   registry.npmmirror.com/tough-cookie/4.0.0:
@@ -730,6 +771,14 @@ packages:
     name: ws
     version: 8.5.0
     engines: {node: '>=10.0.0'}
+    peerDependencies:
+      bufferutil: ^4.0.1
+      utf-8-validate: ^5.0.2
+    peerDependenciesMeta:
+      bufferutil:
+        optional: true
+      utf-8-validate:
+        optional: true
     dev: false
 
   registry.npmmirror.com/xml-name-validator/3.0.0:
