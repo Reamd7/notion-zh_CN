@@ -1,588 +1,679 @@
 {
-  "AIWaitlist.demoButton.label.web": ["1분 데모 보기", "观看1分钟演示"],
-  "SelectedItemCountWidget.numItemsSelected": [
-    "{itemsSelectedCount}개 선택됨",
-    "{itemsSelectedCount}已选定"
+  "AiIntroModal.doneMessage": ["확인", "确认"],
+  "AiIntroModal.learnMoreUrl": [
+    "{url}에서 자세히 알아보기",
+    "了解有关{url}的更多信息"
   ],
-  "TeamAccessLevelSwitcher.defaultTeamspace.disabledTooltipNonAdmin": [
-    "워크스페이스 관리자가 아니므로 이 설정을 변경할 수 없습니다.",
-    "无法更改此设置，因为您不是工作区管理员。"
+  "AiIntroModal.mobileDoneMessage": ["확인", "确认"],
+  "AiIntroModal.nextMessage": ["다음", "下一页"],
+  "AiIntroModal.skipMessage": ["둘러보기 건너뛰기", "跳过环视"],
+  "AiIntroModal.subtitle": [
+    "AI intro modal에 초대되셨습니다",
+    "你被邀请加入AI intro modal"
   ],
-  "action.copiedApiObjectToClipboard.snackBarMessage": [
-    "클립보드에 API 오브젝트 복사 완료",
-    "完成将API对象复制到剪贴板"
+  "AiIntroModal.tab1.subtitle": [
+    "빈 페이지를 우두커니 보고만 있을 필요가 없습니다. 모든 종류의 콘텐츠나 요청하신 콘텐츠를 생성해보세요.",
+    "你不必只看空页。创建任何类型的内容或您请求的内容。"
   ],
-  "action.copyPublicApiObject": ["[Dev] Copy API object", "[Dev]Copy API对象"],
-  "adminContentSearchTab.pagesTable.error.confirm": ["재시도", "重试"],
-  "adminContentSearchTab.pagesTable.error.description": [
-    "결과를 불러오는 데 문제가 발생했습니다. 검색을 다시 실행하세요.",
-    "检索结果时出现问题。重新运行搜索。"
+  "AiIntroModal.tab1.title": [
+    "더 빠르게 쓰세요. AI가 초안을 작성해 드립니다.",
+    "写得更快。AI将为您起草。"
   ],
-  "adminContentSearchTab.pagesTable.error.title": [
-    "문제가 발생했습니다.",
-    "发生了问题。"
+  "AiIntroModal.tab2.subtitle": [
+    "AI에게 작문을 계속하거나, 아이디어를 브레인스토밍하거나, 기존 페이지를 편집해 달라고 요청하세요.",
+    "请AI继续写作、头脑风暴或编辑现有页面。"
   ],
-  "adminContentSearchTab.pagesTable.filters.sharedWith.title": [
-    "공유 대상",
-    "共享目标"
+  "AiIntroModal.tab2.title": [
+    "든든한 동반자가 되어줄 창작 파트너이자 편집자.",
+    "成为坚实伴侣的创作伙伴和编辑。"
   ],
-  "auditlog.actionNames.eventColumn.team_group_permission_updated": [
-    "{teamName}의 {groupName} 그룹에 대한 사용자 지정 권한을 {oldPermission}에서 {newPermission}(으)로 업데이트했습니다.",
-    "已将{teamName}中的{groupName}组的自定义权限从{oldPermission}更新为{newPermission}。"
+  "AiIntroModal.tab3.subtitle": [
+    "AI에게 페이지 콘텐츠의 업데이트를 기반으로 요약과 할 일 목록을 작성해 달라고 요청하세요.",
+    "要求AI根据页面内容的更新创建摘要和待办事项列表。"
   ],
-  "auditlog.actionNames.eventColumn.team_user_permission_updated": [
-    "{teamName}의 {userNameOrEmail} 님에 대한 사용자 지정 권한을 {oldPermission}에서 {newPermission}(으)로 업데이트했습니다.",
-    "已将{teamName}中的{userNameOrEmail}的自定义权限从{oldPermission}更新为{newPermission}。"
+  "AiIntroModal.tab3.title": [
+    "페이지 컨텍스트 기반 AI 요약과 할 일 목록.",
+    "基于页面上下文的AI摘要和待办事项列表。"
   ],
-  "auditlogEventFilter.actionNames.team_group_permission_updated": [
-    "팀스페이스 그룹에 대한 사용자 지정 권한 업데이트됨",
-    "团队空间组的自定义权限已更新"
+  "AiIntroModal.title": [
+    "작문과 편집에 사용하는 Notion AI",
+    "用于写作和编辑的Notion AI"
   ],
-  "auditlogEventFilter.actionNames.team_user_permission_updated": [
-    "팀스페이스 멤버에 대한 사용자 지정 권한 업데이트됨",
-    "已更新TeamSpace成员的自定义权限"
-  ],
-  "auditlogEventFilter.eventColumn.admin_content_search_queried.no_filters": [
-    "필터 없이 콘텐츠 검색 실행",
-    "运行不带筛选器的内容搜索"
-  ],
-  "blockPermissionsSettings.workspaceOwner.isChangingPermissionsMessageButton": [
-    "권한 변경",
-    "更改权限"
-  ],
-  "churnSurvey.businessMonthlyOffer.description": [
-    "요금제를 유지하고 3개월 동안 10% 할인을 받으세요.",
-    "保留您的套餐，并在三个月内享受九折优惠。"
-  ],
-  "churnSurvey.businessYearlyOffer.description": [
-    "요금제를 유지하고 10% 할인을 받으세요.",
-    "保留您的套餐，享受10%的折扣。"
-  ],
-  "churnSurvey.downgradeSection.restrictions.guests.limit.oneHundred": [
-    "100",
-    "100"
-  ],
-  "churnSurvey.downgradeSection.restrictions.guests.limit.twoFifty": [
-    "250",
-    "250"
-  ],
-  "churnSurvey.downgradeSection.restrictions.noPrivateTeamspaces.title": [
-    "비공개 팀스페이스 없음",
-    "无私人团队空间"
-  ],
-  "churnSurvey.downgradeSection.restrictions.noSCIM.title": [
-    "SCIM 없음",
-    "无SCIM"
-  ],
-  "churnSurvey.downgradeSection.restrictions.versionHistory.limit.ninety": [
-    "90일",
-    "90天"
-  ],
-  "churnSurvey.header.businessOffer.title": [
-    "비즈니스 요금제를 10% 할인받으세요.",
-    "享受10%的商业计划折扣。"
-  ],
-  "claimSpaceDeletionDelayEmail.bodyLine1": [
-    "도메인 관리를 사용하여 삭제한 <b>{targetSpaceName}</b> 워크스페이스의 소유자가 <b>{date}</b>까지 복구 기간 연장을 요청했습니다.",
-    "使用域管理删除的<b>{targetSpaceName}</b>工作空间的所有者请求将恢复期延长至<b>{date}</b>。"
-  ],
-  "claimSpaceDeletionDelayEmail.bodyLine3": [
-    "워크스페이스 소유자에게 직접 연락하려면 <mailto>{targetSpaceAdminEmail}</mailto>으로 문의하세요.",
-    "要直接联系工作空间所有者，请通过<mailto>{targetSpaceAdminEmail}</mailto>与我们联系。"
-  ],
-  "claimSpaceDeletionDelayEmail.bulletList.heading": [
-    "<b>이것이 무슨 의미인가요?</b>",
-    "<b>这是什么意思？</b>"
-  ],
-  "claimSpaceDeletionDelayEmail.bulletList.item1": [
-    "워크스페이스 소유자가 복구를 요청하기 위해 문의할 수 있습니다.",
-    "工作区所有者可以询问以请求恢复。"
-  ],
-  "claimSpaceDeletionDelayEmail.bulletList.item2": [
-    "워크스페이스를 복구하지 않으면 {date}에 영구 삭제됩니다.",
-    "如果不恢复工作区，则会永久删除{date}。"
-  ],
-  "claimSpaceDeletionDelayEmail.closingText": [
+  "AiWaitlistSpaceEnrolledEmail.closingText": [
     "감사합니다.{br}Notion 팀 드림",
     "谢谢。{br}Notion团队梦"
   ],
-  "claimSpaceDeletionDelayEmail.greetingWithName": [
-    "{customerName}님, 안녕하세요.",
-    "您好，{customerName}先生。"
+  "CollectionsBulkActionsToolbar.deleteButton.tooltip": ["삭제", "删除"],
+  "ContextualInvite.addToWorkspace.button": [
+    "워크스페이스에 추가",
+    "添加到工作区"
   ],
-  "claimSpaceDeletionDelayEmail.greetingWithoutName": ["안녕하세요.", "你好。"],
-  "claimSpaceDeletionDelayEmail.subjectLine": [
-    "삭제된 워크스페이스의 복구 기간이 연장되었습니다",
-    "已删除工作区的恢复期已延长"
+  "ContextualInvite.sendRequest.button": ["요청 전송", "发送请求"],
+  "ItemMultiSelectToolbar.deleteButton.tooltip": ["삭제", "删除"],
+  "OnboardingSurvey.companySize.question.1000_5000": ["1000~5000", "1000-5000"],
+  "OnboardingSurvey.companySize.question.100_299": ["100~299", "100-299"],
+  "OnboardingSurvey.companySize.question.1_49": ["1~49", "1-49"],
+  "OnboardingSurvey.companySize.question.300_999": ["300~999", "300-999"],
+  "OnboardingSurvey.companySize.question.5000+": ["5000+", "5000+"],
+  "OnboardingSurvey.companySize.question.50_99": ["50~99", "50-99"],
+  "PersonaCollectionModalQuestionSelect.schoolQuestion.educator": [
+    "교직원",
+    "教职员"
   ],
-  "collectionSettingsNotificationFilterMenuHelpers.operator.propertyChanged": [
-    "항목 편집",
-    "编辑项目"
+  "PersonaCollectionModalQuestionSelect.schoolQuestion.other": ["기타", "其他"],
+  "PersonaCollectionModalQuestionSelect.schoolQuestion.student": [
+    "학생",
+    "学生"
   ],
-  "collectionSettingsNotificationsAccountPicker.accountDropdown.selectPlaceholder": [
-    "워크스페이스 선택",
-    "选择工作空间"
+  "action.commandPalette.addLink": ["링크 추가", "添加链接"],
+  "action.commandPalette.pageActions": ["페이지 작업", "使用页面"],
+  "action.commandPalette.styleActions": ["스타일링", "造型"],
+  "action.commandPalette.toggleBold": ["굵은 글꼴 토글", "粗体切换"],
+  "action.commandPalette.toggleCode": ["코드 토글", "切换代码"],
+  "action.commandPalette.toggleStrikethrough": ["취소선 토글", "取消线切换"],
+  "adminContentSearchTab.pagesTable.filters.createdOn.titleWithDateRange": [
+    "생성 일시: {dateRangeString}",
+    "创建时间：{dateRangeString}"
   ],
-  "collectionSettingsNotificationsAccountPicker.workspacePicker.title": [
-    "워크스페이스",
-    "工作空间"
+  "adminContentSearchTab.pagesTable.filters.lastEditedOn.titleWithDateRange": [
+    "최종 편집 일시: {dateRangeString}",
+    "上次编辑时间：{dateRangeString}"
   ],
-  "collectionSettingsNotificationsChannelPicker.channelDropdown.selectPlaceholder": [
-    "채널 선택",
-    "选择通道"
+  "adminContentSearchTab.pagesTable.filters.query.placeholder": [
+    "페이지 ID 또는 제목으로 검색",
+    "按页面ID或标题搜索"
   ],
-  "collectionSettingsNotificationsEventsPicker.eventsDropdown.selectPlaceholder": [
-    "알림 타이밍 선택",
-    "选择通知计时"
+  "adminContentSearchTab.pagesTable.filters.teams.caption.closed": [
+    "참가 제한",
+    "参赛限制"
   ],
-  "collectionSettingsNotificationsUpdate.heading.placeholder": [
-    "새로운 알림 규칙",
-    "新的通知规则"
-  ],
-  "completions.CompletionMenuFooter.feedbackThanks": [
-    "피드백을 보내주셔서 감사합니다!",
-    "感谢您的反馈！"
-  ],
-  "completions.CompletionMenuFooter.thumbsDown": [
-    "부정적인 피드백 제출",
-    "提交负面反馈"
-  ],
-  "completions.CompletionMenuFooter.thumbsUp": [
-    "긍정적인 피드백 제출",
-    "提交正面反馈"
-  ],
-  "completions.CompletionMenuFooter.warning": [
-    "AI가 도출하는 값은 부정확하고 오해의 소지가 있을 수 있습니다. <inlinetextlink>자세히 알아보기</inlinetextlink>",
-    "AI得出的值可能不准确且具有误导性。<inlinetextlink>了解详情</inlinetextlink>"
-  ],
-  "completions.FeedbackPopup.shareWithNotion": [
-    "이 AI 세션을 Notion으로 공유하기",
-    "将此AI会话共享为Notion"
-  ],
-  "completions.FeedbackPopup.submitButtonLabel": ["피드백 제출", "提交反馈"],
-  "completions.FeedbackPopup.userCommentPlaceholder": [
-    "어떻게 하면 결과를 개선할 수 있을까요?(선택)",
-    "怎样才能改善结果呢？(可选)"
-  ],
-  "completions.completionActions.dismiss": ["닫기", "已关闭"],
-  "confluenceImportErrors.apiError.message": [
-    "API에서 데이터를 가져오지 못했습니다.",
-    "从API获取数据失败。"
-  ],
-  "csvExport.copiedText.untitled": ["제목 없음", "无标题"],
-  "database.boardView.actions.addNewItem.tooltip": [
-    "새 {newItemName} 생성",
-    "创建新的{newItemName}"
-  ],
-  "database.viewSettings.notificationsTab.slack.createdAndUpdatedEventToggle": [
-    "페이지 추가 또는 업데이트",
-    "添加或更新页面"
-  ],
-  "database.viewSettings.notificationsTab.slack.eventSelector": [
-    "시기",
-    "时机"
-  ],
-  "database.viewSettings.setViewPropertyDefault.allDefaultButton.title": [
-    "모든 새 {databaseName} 보기에서 사용",
-    "在所有新的{databaseName}视图中使用"
-  ],
-  "database.viewSettings.setViewPropertyDefault.defaultProperty.tag": [
+  "adminContentSearchTab.pagesTable.filters.teams.caption.default": [
     "기본",
     "基本"
   ],
-  "database.viewSettings.setViewPropertyDefault.setProperty.title": [
-    "이 보기에서 사용",
-    "在此视图中使用"
-  ],
-  "databaseTypes.helpers.defaultSingleItemName": ["페이지", "第页"],
-  "databaseTypes.helpers.docsSingleItemName": ["문서", "文档"],
-  "databaseTypes.helpers.meetingsSingleItemName": ["회의", "会议"],
-  "databaseTypes.helpers.projectsSingleItemName": ["프로젝트", "项目"],
-  "databaseTypes.helpers.sprintsSingleItemName": ["스프린트", "冲刺"],
-  "databaseTypes.helpers.tasksSingleItemName": ["작업", "操作"],
-  "databaseTypes.helpers.wikisSingleItemName": ["위키 페이지", "维基页面"],
-  "databaseTypes.taskTypes.archived": ["보관됨", "已存档"],
-  "databaseTypes.taskTypes.assignProperty": ["할당", "分配"],
-  "databaseTypes.taskTypes.completed": ["완료", "已完成"],
-  "databaseTypes.taskTypes.done": ["완료", "已完成"],
-  "databaseTypes.taskTypes.dueDateProperty": ["마감일", "截止日期"],
-  "databaseTypes.taskTypes.inProgress": ["진행 중", "正在进行"],
-  "databaseTypes.taskTypes.notStarted": ["시작 전", "开始前"],
-  "databaseTypes.taskTypes.statusProperty": ["상태", "状态"],
-  "databaseTypes.taskTypes.taskTitleProperty": ["작업 이름", "作业名称"],
-  "developerIntegrationForm.regexRule.attributes.label": ["속성", "属性"],
-  "domainVerificationInput.securitySAMLSettings.emailDomainsSection.removeDomain.pending.description": [
-    "해당 도메인을 삭제하면 검증 프로세스가 재시작됩니다. 다음에 검증을 시도할 때 해당 도메인에 대한 새로운 인증 코드가 생성될 예정입니다.",
-    "删除域后，验证过程将重新启动。下次尝试验证时，将为该域生成新的授权码。"
-  ],
-  "downgradeModal.header.acceptedBusinessOfferConfirmation.title": [
-    "비즈니스 요금제를 유지해 주셔서 감사합니다.",
-    "感谢您维护商务套餐。"
-  ],
-  "edit.editedBadge": ["(편집됨)", "(已编辑)"],
-  "externalIntegrationAuthActions.authenticateWithIntegration.failedModal.developerInfo": [
-    "API 통합으로 앱을 Notion에 리디렉션 하기 전에 액세스 토큰을 위한 임시 코드가 필요합니다.",
-    "在将应用程序重定向到Notion之前，API集成需要访问令牌的临时代码。"
-  ],
-  "externalIntegrationAuthActions.authenticateWithIntegration.failedModal.dismiss": [
-    "확인",
-    "确认"
-  ],
-  "externalIntegrationAuthActions.authenticateWithIntegration.failedModal.moreInfo": [
-    "추가 정보",
-    "更多信息"
-  ],
-  "externalIntegrationAuthActions.authenticateWithIntegration.failedModal.text": [
-    "계정을 연결하지 못했습니다.",
-    "连接帐户失败。"
-  ],
-  "id.completions.findActionItems": ["관련 작업 찾기", "查找相关任务"],
-  "id.completions.genericHelpMeEdit": ["{filter}", "{filter}"],
-  "id.completions.helpMeDraftPlaceholder": [
-    "어떤 글을 쓰고 싶으신가요? 예: '새로운 언어를 배우는 것의 이점'",
-    "你想写什么？例如：“学习新语言的好处”"
-  ],
-  "id.completions.helpMeEdit": ["편집에 도움받기", "获得编辑帮助"],
-  "id.completions.helpMeEditPlaceholder": [
-    "어떻게 수정하고 싶으신가요? 예: '한 문장으로 요약'",
-    "你想怎么修改？示例：“用一句话总结”"
-  ],
-  "identityAndProvisioning.claimWorkspaces.actions.recoverSpace": [
-    "복구",
-    "恢复"
-  ],
-  "identityProvisioningSettings.claimWorkspaces.claimModal.salesAssisted.toast": [
-    "{spaceName} 워크스페이스의 소유권 확보를 요청했습니다.",
-    "请求确保{spaceName}工作空间的所有权。"
-  ],
-  "identityProvisioningSettings.claimWorkspaces.claimModal.selfServe.toast": [
-    "{spaceName} 워크스페이스의 소유권이 확보되었습니다.",
-    "{spaceName}工作区的所有权已获得。"
-  ],
-  "identityProvisioningSettings.claimWorkspaces.claimableSpaceConfirmationModal.cancel": [
-    "취소",
-    "取消"
-  ],
-  "identityProvisioningSettings.recoverWorkspaces.confirmationModal.byline": [
-    "워크스페이스 소유자의 사용 권한과 워크스페이스 콘텐츠를 복구합니다.",
-    "恢复工作区所有者的权限和工作空间内容。"
-  ],
-  "identityProvisioningSettings.recoverWorkspaces.confirmationModal.deleteButton": [
-    "복구",
-    "恢复"
-  ],
-  "identityProvisioningSettings.recoverWorkspaces.confirmationModal.title": [
-    "워크스페이스 복구",
-    "恢复工作空间"
-  ],
-  "identityProvisioningSettings.transferWorkspaces.transferModal.toast": [
-    "{spaceName} 워크스페이스에 대한 계정 변경이 요청되었습니다.",
-    "请求更改{spaceName}工作空间的帐户。"
-  ],
-  "importContactsButton.integrationButton.label": [
-    "{integrationNameWithLogo}에서 추가",
-    "从{integrationNameWithLogo}添加"
-  ],
-  "importContactsButton.integrationName": ["Slack", "Slack"],
-  "inboxActionsMenu.handleArchive.tooltipMessage": [
-    "이 알림 보관",
-    "保留此通知"
-  ],
-  "inboxActionsMenu.markNotificationAsRead.tooltipMessage": [
-    "이 알림을 읽음으로 표시",
-    "将此通知标记为已读"
-  ],
-  "inboxActionsMenu.markNotificationAsUnread.tooltipMessage": [
-    "이 알림을 읽지 않음으로 표시",
-    "将此通知标记为未读"
-  ],
-  "integrationGallery.sidebar.searchbar.placeholder": [
-    "API 통합 검색",
-    "API集成搜索"
-  ],
-  "integrationGalleryModalDetail.button.install": ["설치", "安装"],
-  "integrationGalleryModalDetail.button.installAnother": [
-    "추가 설치",
-    "附加安装"
-  ],
-  "integrationGalleryModalDetail.madeBy.name": [
-    "생성자: {name}",
-    "构造函数：{name}"
-  ],
-  "inviteTargetToken.groupTeamOwner.tooltip": [
-    "그룹은 팀 소유자로 추가할 수 없습니다.",
-    "组不能作为团队所有者添加。"
-  ],
-  "inviteTargetToken.guest.tooltip": [
-    "{email}님을 게스트로 초대합니다.",
-    "{email}邀请您作为嘉宾。"
-  ],
-  "inviteTargetToken.verifiedDomain.tooltip": [
-    "@{domain} 도메인은 인증된 도메인이므로 이 사람이 자동으로 워크스페이스에 추가됩니다.",
-    "@{domain}域是经过身份验证的域，因此此人会自动添加到工作区中。"
-  ],
-  "inviteTargetsSearchRequest.importedContactsSection.title": [
-    "출처: Slack",
-    "资料来源:Slack"
-  ],
-  "mfa.saveBackupCodes.downloadAsTextFile.button.message": [
-    "텍스트 파일로 다운로드",
-    "下载到文本文件"
-  ],
-  "mfa.saveBackupCodes.message": [
-    "휴대폰 또는 Authenticator 앱을 사용할 수 없는 경우에 로그인할 수 있도록 백업 코드를 기록하세요.",
-    "如果您的手机或Authenticationator应用程序不可用，请记录您的备份代码，以便登录。"
-  ],
-  "mfa.saveBackupCodes.seeBackupCodes.button.message": [
-    "백업 코드 보기",
-    "查看备份代码"
-  ],
-  "mfa.saveBackupCodes.title": ["백업 코드 저장", "保存备份代码"],
-  "mfa.settingModal.message": [
-    "비밀번호를 사용한 후 인증 코드를 입력하여 본인 인증을 시행하세요.",
-    "使用密码后，输入您的验证码以验证您的身份。"
-  ],
-  "mfa.setupComplete.addAnotherMethod.button.message": [
-    "다른 방법 추가",
-    "添加其他方法"
-  ],
-  "mfa.setupComplete.message": [
-    "사용자가 비밀번호를 입력할 때마다 신원 확인을 위해 인증 코드를 요청합니다.",
-    "每次用户输入密码时，都会请求验证码以验证身份。"
-  ],
-  "mfa.setupComplete.title": [
-    "Authenticator를 사용한 2단계 인증 활성화",
-    "使用Authenticator启用两级身份验证"
-  ],
-  "mfa.showBackupCodes.codesNotedDown.button.message": [
-    "코드를 기록했습니다.",
-    "已记录代码。"
-  ],
-  "mfa.showBackupCodes.message": [
-    "이 코드는 한 번만 제공되므로 안전한 위치에 기록해 두세요.",
-    "此代码只提供一次，因此请将其记录在安全的位置。"
-  ],
-  "mfa.showBackupCodes.title": ["내 백업 코드", "我的备份代码"],
-  "mfa.turnOnSettings.button.message": ["계속", "继续"],
-  "mfa.turnOnSettings.message": [
-    "비밀번호를 사용한 후 인증 코드를 입력하여 본인 인증을 시행하세요.",
-    "使用密码后，输入您的验证码以验证您的身份。"
-  ],
-  "mfa.turnOnSettings.setupAuthenticator.button.message": [
-    "Authenticator 앱에서 일회용 코드 생성",
-    "在Authenticator应用程序中生成一次性代码"
-  ],
-  "mfa.turnOnSettings.setupAuthenticator.button.title": [
-    "Authenticator 코드",
-    "Authenticationator代码"
-  ],
-  "mfa.turnOnSettings.setupSMS.button.message": [
-    "전화번호 추가와 인증",
-    "添加和验证电话号码"
-  ],
-  "mfa.turnOnSettings.setupSMS.button.title": [
-    "코드를 문자로 보내기",
-    "以文字形式发送代码"
-  ],
-  "mfa.turnOnSettings.title": ["2단계 인증 켜기", "打开两步身份验证"],
-  "mfa.updateSettings.activeSection.title": ["사용 중", "正在使用中"],
-  "mfa.updateSettings.activeSection.useAuthenticator.button.message": [
-    "설정 완료",
-    "完成设置"
-  ],
-  "mfa.updateSettings.activeSection.useAuthenticator.button.title": [
-    "Authenticator 별명",
-    "Authenticator别名"
-  ],
-  "mfa.updateSettings.activeSection.usePhoneNumber.button.message": [
-    "(515) 555-1212",
-    "(515)555-1212"
-  ],
-  "mfa.updateSettings.activeSection.usePhoneNumber.button.title": [
-    "코드를 문자로 보내기",
-    "以文字形式发送代码"
-  ],
-  "mfa.updateSettings.addAnotherPhoneNumber.button.message": [
-    "다른 전화번호 인증",
-    "其他电话号码认证"
-  ],
-  "mfa.updateSettings.addAnotherPhoneNumber.button.title": [
-    "다른 전화번호 추가",
-    "添加其他电话号码"
-  ],
-  "mfa.updateSettings.addMoreMethodsSection.title": [
-    "다른 방법 추가",
-    "添加其他方法"
-  ],
-  "mfa.updateSettings.addMoreSection.addAnotherAuthenticator.button.message": [
-    "다른 Authenticator 앱 인증",
-    "认证其他Authenticator应用程序"
-  ],
-  "mfa.updateSettings.addMoreSection.addAnotherAuthenticator.button.title": [
-    "다른 Authenticator 추가",
-    "添加其他Authenticator"
-  ],
-  "mfa.updateSettings.title": ["2단계 인증", "两阶段认证"],
-  "mfa.updateSettings.turnOffVerification.button.message": [
-    "2단계 인증 끄기",
-    "关闭两阶段身份验证"
-  ],
-  "onboardingWorkspacePlanChoose.personalUseCaseButtonExperiment.label": [
-    "개인 사용",
-    "个人使用"
-  ],
-  "onboardingWorkspacePlanChoose.teamUseCaseButtonExperiment.label": [
-    "팀과 사용",
-    "与团队一起使用"
-  ],
-  "openInDesktopAppPopup.alwaysOpenLinksLabel": [
-    "항상 앱에서 열기",
-    "始终在应用程序中打开"
-  ],
-  "openInDesktopAppPopup.header": [
-    "Notion 데스크톱 앱에서 열까요?",
-    "是否要在Notion桌面应用程序中打开？"
-  ],
-  "openInDesktopAppPopup.learnMoreButton": [
-    "앱이 없으신가요? 자세히 알아보기",
-    "没有应用程序吗？了解详情"
-  ],
-  "openInDesktopAppPopup.openInAppButton": ["앱에서 열기", "在应用程序中打开"],
-  "openInDesktopAppPopup.primaryText": [
-    "Notion 데스크톱 앱이 설치되어 있다면 앱 안에서 링크를 열 수 있습니다.",
-    "如果您安装了Notion桌面应用程序，则可以在应用程序中打开链接。"
-  ],
-  "openInDesktopAppPopup.secondaryText": [
-    "<strongtext>설정과 멤버</strongtext>에서 이 설정을 변경할 수 있습니다.",
-    "您可以在<strongtext>设置和成员</strongtext>中更改此设置。"
-  ],
-  "page_analytics.disabled.description": [
-    "{name}의 모든 페이지에서 페이지 조회자와 분석이 활성화되어 있습니다.",
-    "{name}中的所有页面都启用了页面查找器和分析。"
-  ],
-  "page_analytics.disabled.description.unnamed": [
-    "스페이스의 모든 페이지에서 페이지 조회자와 분석이 비활성화되어 있습니다.",
-    "空间中的所有页面都禁用了页面查询者和分析。"
-  ],
-  "page_analytics.disabled.heading": [
-    "페이지 조회자 추적 사용 안 함",
-    "禁用页面查找器跟踪"
-  ],
-  "page_analytics.disabled.learnMore": ["자세히 알아보기", "了解详情"],
-  "profileSettings.mfa.sms.addPhoneHeader": [
-    "전화번호를 입력하여 2단계 인증 코드 받기",
-    "输入电话号码以获得两步验证码"
-  ],
-  "profileSettings.mfa.sms.addPhoneNeedHelp": [
-    "도움이 필요하신가요?",
-    "需要帮助吗？"
-  ],
-  "profileSettings.mfa.sms.addPhoneTitle": ["전화번호 추가", "添加电话号码"],
-  "profileSettings.mfa.sms.continueButton": ["계속", "继续"],
-  "profileSettings.mfa.sms.verifyCodeButton": ["코드 인증", "代码验证"],
-  "profileSettings.mfa.sms.verifyCodeHeader": [
-    "설정을 완료하려면 {phoneHint} 번호로 전송된 코드를 입력하세요. <resend>재전송</resend>",
-    "要完成设置，请输入编号为{phoneHint}的代码。<resend>重传</resend>"
-  ],
-  "profileSettings.mfa.sms.verifyCodeNeedHelp": [
-    "도움이 필요하신가요?",
-    "需要帮助吗？"
-  ],
-  "profileSettings.mfa.sms.verifyCodeTitle": ["전화번호 인증", "电话号码认证"],
-  "profileSettings.mfa.totp.authenticatorNameInput": [
-    "인증 앱 이름",
-    "认证应用名称"
-  ],
-  "profileSettings.mfa.totp.cantScanCodeButton": [
-    "코드를 스캔할 수 없으신가요?",
-    "无法扫描代码吗？"
-  ],
-  "profileSettings.mfa.totp.continueButton": ["계속", "继续"],
-  "profileSettings.mfa.totp.needHelp": ["도움이 필요하신가요?", "需要帮助吗？"],
-  "profileSettings.mfa.totp.scanQRCodeButton": ["QR 코드 스캔", "扫描二维码"],
-  "profileSettings.mfa.totp.scanQRCodeHeader": [
-    "<authenticatorlink>인증 앱</authenticatorlink>을 사용하여 일회용 코드 생성",
-    "<authenticatorlink>使用身份验证应用程序</authenticatorlink>生成一次性代码"
-  ],
-  "profileSettings.mfa.totp.scanQRCodeTitle": [
-    "인증 앱에서 코드 스캔",
-    "在认证应用程序中扫描代码"
-  ],
-  "profileSettings.mfa.totp.settingsVerifyCode": [
-    "계속하려면 신원 인증이 필요합니다",
-    "需要验证身份才能继续"
-  ],
-  "profileSettings.mfa.totp.settingsVerifyCodeButton": ["계속", "继续"],
-  "profileSettings.mfa.totp.settingsVerifyCodeHeader": [
-    "{authenticatorName} 앱의 코드 입력",
-    "为{authenticatorName}应用程序输入代码"
-  ],
-  "profileSettings.mfa.totp.settingsVerifyTryAnotherMethod": [
-    "다른 방법 시도",
-    "尝试其他方法"
-  ],
-  "profileSettings.mfa.totp.typeTextCodeHeader": [
-    "<authenticatorlink>인증 앱</authenticatorlink>을 사용하여 일회용 코드 생성",
-    "<authenticatorlink>使用身份验证应用程序</authenticatorlink>生成一次性代码"
-  ],
-  "profileSettings.mfa.totp.typeTextCodeTitle": [
-    "인증 앱의 코드 입력",
-    "输入认证应用程序的代码"
-  ],
-  "profileSettings.mfa.totp.verifyCodeButton": ["코드 인증", "代码验证"],
-  "profileSettings.mfa.totp.verifyCodeHeader": [
-    "인증 앱의 일회용 코드를 입력해 설정을 완료하세요.",
-    "输入认证应用程序的一次性代码以完成设置。"
-  ],
-  "profileSettings.mfa.totp.verifyCodeTitle": ["코드 인증", "代码验证"],
-  "shareMenu.closeInviteDialog.cancelButton.label": ["취소", "取消"],
-  "shareMenu.closeInviteDialog.confirmationButton.label": ["예", "是"],
-  "shareMenu.closeInviteDialog.confirmationMessage": [
-    "변경 내용이 저장되지 않았습니다. 변경 내용을 삭제할까요?",
-    "您所做的更改尚未保存。是否要删除更改？"
-  ],
-  "shareMenu.inviteButton.emailOverMaxLength.tooltip": [
-    "메시지가 1,000자 제한을 초과했습니다.",
-    "消息超过了1，000个字符的限制。"
-  ],
-  "shareMenu.inviteButton.invite": ["초대", "邀请"],
-  "shareMenu.inviteButton.upgrade": ["업그레이드", "升级"],
-  "sidebar.homeSidebarItem.myTasks.tooltip": ["내 작업", "我的工作"],
-  "sidebar.integrations.label": ["API 통합", "API集成"],
-  "sidebar.integrations.tooltip": ["API 통합 찾기", "查找API集成"],
-  "spaceBasicSettings.analytics.learnMore": ["자세히 알아보기", "了解详情"],
-  "spaceBasicSettings.analytics.settings.description": [
-    "편집 또는 모두 허용 권한을 보유한 사용자는 한 페이지의 조회수가 얼마나 되는지 확인할 수 있습니다. 해당 기능을 비활성화하면 {workspaceName}의 모든 페이지에서 조회수가 저장되지 않습니다.",
-    "拥有“编辑”或“全部允许”权限的用户可以查看一页的浏览量。禁用该功能不会保存{workspaceName}中所有页面的浏览量。"
-  ],
-  "spaceBasicSettings.analytics.settings.title": [
-    "페이지 조회 분석 저장하고 표시",
-    "页面查询分析保存并显示"
-  ],
-  "spaceBasicSettings.analytics.title": ["분석", "分析"],
-  "subscriptionUpgradeModal.targetSpace.button.enterprise": [
-    "소유권을 입증하고 기업 요금제로 업그레이드",
-    "证明所有权并升级到企业计划"
-  ],
-  "subscriptionUpgradeModal.targetSpace.title.enterprise": [
-    "소유권을 입증하고 기업 요금제로 업그레이드",
-    "证明所有权并升级到企业计划"
-  ],
-  "topbarBrowserHistoryButton.newTabButton.label": ["새 탭", "新建选项卡"],
-  "transactionErrors.corruptCollectionProperty": [
-    "속성 변경이 메타데이터 손상을 유발하므로 이를 저장할 수 없습니다.",
-    "无法保存属性更改，因为它会导致元数据损坏。"
-  ],
-  "transactionErrors.duplicateAutoIncrementIdProperty": [
-    "하나의 데이터베이스는 하나의 ID 속성만 보유할 수 있으며 해당 데이터베이스는 이미 ID 속성이 있습니다.",
-    "一个数据库只能保留一个身份属性，该数据库已经有了一个身份属性。"
-  ],
-  "updatesModal.spaceUpdatesTab.markAllReadButton.disabledTooltip": [
-    "모든 알림이 읽음으로 표시되었습니다.",
-    "所有通知都标记为已读。"
-  ],
-  "updatesModal.spaceUpdatesTab.markAllReadButtonTitle": [
-    "모두 읽음으로 표시",
-    "全部标记为已读"
-  ]
+  "adminContentSearchTab.pagesTable.filters.teams.caption.open": [
+    "공개",
+    "公开"
+  ],
+  "adminContentSearchTab.pagesTable.filters.teams.caption.private": [
+    "비공개",
+    "私人"
+  ],
+  "adminContentSearchTab.pagesTable.filters.teams.placeholder": [
+    "팀스페이스 검색 중...",
+    "正在搜索团队空间..."
+  ],
+  "adminContentSearchTab.pagesTable.filters.users.noResultsMessage": [
+    "결과가 없습니다.",
+    "没有结果。"
+  ],
+  "adminContentSearchTab.pagesTable.filters.users.placeholder": [
+    "사용자 검색 중...",
+    "正在搜索用户..."
+  ],
+  "adminContentSearchTab.pagesTable.filters.users.usersAndGroupsPlaceholder": [
+    "사용자와 그룹 검색 중...",
+    "正在搜索用户和组..."
+  ],
+  "adminContentSearchTab.pagesTable.filters.users.usersPlaceholder": [
+    "사용자 검색 중...",
+    "正在搜索用户..."
+  ],
+  "adminContentSearchTab.pagesTable.page.actions.openLink": [
+    "새 탭에서 열기",
+    "在新选项卡中打开"
+  ],
+  "adminContentSearchTab.pagesTable.sharedWithCell.multipleGroups": [
+    "{numGroups, plural, other {{numGroups} 개 그룹}}",
+    "{numGroups，plural，other{{numGroups}个组}}"
+  ],
+  "adminContentSearchTab.pagesTable.sharedWithCell.orphanedPage": [
+    "없음",
+    "无"
+  ],
+  "adminContentSearchTab.pagesTable.sharedWithCell.orphanedPage.tooltip": [
+    "페이지 사용 권한을 가진 개인, 그룹, 팀스페이스가 없습니다.",
+    "没有具有页面权限的个人、组和团队空间。"
+  ],
+  "adminContentSearchTab.sharedWith.permissions.commentOnly": [
+    "댓글 허용",
+    "允许评论"
+  ],
+  "adminContentSearchTab.sharedWith.permissions.editor": [
+    "전체 허용",
+    "完全允许"
+  ],
+  "adminContentSearchTab.sharedWith.permissions.none": ["없음", "无"],
+  "adminContentSearchTab.sharedWith.permissions.readAndWrite": [
+    "편집 허용",
+    "允许编辑"
+  ],
+  "adminContentSearchTab.sharedWith.permissions.reader": [
+    "읽기 허용",
+    "允许读取"
+  ],
+  "aiBlock.conclusion": ["결론", "结论"],
+  "aiBlock.findActionItems": ["액션 아이템 찾기", "查找动作物品"],
+  "aiBlock.generate.label": ["생성", "已创建"],
+  "aiBlock.generated": ["AI로 작성", "使用AI创建"],
+  "aiBlock.helpMeWrite": [
+    "AI에게 무엇이든 작성해 달라고 요청하세요.",
+    "要求AI填写任何东西。"
+  ],
+  "aiBlock.intent": ["이 페이지 요약", "此页摘要"],
+  "aiBlock.summarize": ["이 페이지 요약", "此页摘要"],
+  "aiBlock.summarized": ["AI 요약", "AI摘要"],
+  "aiBlock.toWrite": ["AI 작성:", "创建AI："],
+  "aiBlockBlock.update": ["업데이트", "已更新"],
+  "aiWaitlistEnrolled.body.cta": [
+    "창의적으로 생각하고 빠르게 글쓰기",
+    "创造性地思考，快速写作"
+  ],
+  "aiWaitlistEnrolled.body.label1": [
+    "{name}님, 안녕하세요?",
+    "{name}先生，您好？"
+  ],
+  "aiWaitlistEnrolled.body.label2": [
+    "좋은 소식을 알려드립니다. Notion AI의 비공개 알파 대기자 명단 대기 신청을 받습니다! 두 가지 단계로 시작해보세요.",
+    "告诉你好消息。收到Notion AI的私密阿尔法等待名单等待申请！从两个阶段开始。"
+  ],
+  "aiWaitlistEnrolled.body.label3": [
+    "설정과 멤버 → 멤버에서 워크스페이스 소유자를 찾을 수 있습니다.",
+    "您可以在“设置”和“成员”→“成员”中找到工作区所有者。"
+  ],
+  "aiWaitlistEnrolled.body.label4": [
+    "워크스페이스 소유자가 누구인지 모르겠다면 설정과 멤버 → 멤버에서 확인하세요.",
+    "如果您不知道工作区所有者是谁，请查看设置和成员→成员。"
+  ],
+  "aiWaitlistEnrolled.body.label5": [
+    "AI 기능을 켜면 나와 팀원들의 Notion에서 바로 활성화됩니다. AI의 도움으로 아이디어 브레인스토밍, 내용 요약하기, 회의록에서 액션 아이템 추출하기 등을 시도해 보세요. AI와 처음부터 새로운 글을 작성할 수도 있어요.  Notion AI의 기능과 제한 사항에 대해 자세히 알아보려면 <guideLink>이 가이드</guideLink>를 읽어보세요.",
+    "打开AI功能后，我和团队成员的Notion会立即激活。在AI的帮助下，尝试创意头脑风暴、总结内容、从会议记录中提取动作物品等等。你可以从AI开始写新文章。要详细了解Notion AI的功能和限制，请阅读<guideLink>指南</guideLink>。"
+  ],
+  "aiWaitlistEnrolled.body.label6": [
+    "함께 하게 되어 기뻐요! 창의성을 마음껏 펼쳐 보시기를 기대할게요.",
+    "很高兴能在一起！期待您尽情展现创意。"
+  ],
+  "aiWaitlistEnrolled.closingText": [
+    "감사합니다.{br}Notion 팀 드림",
+    "谢谢。{br}Notion团队梦"
+  ],
+  "aiWaitlistEnrolled.text.label": [
+    "창의적으로 생각하고 빠르게 글쓰기",
+    "创造性地思考，快速写作"
+  ],
+  "aiWaitlistEnrolled.titleOfEmail": [
+    "Notion AI에 오신 것을 환영합니다!",
+    "欢迎来到Notion AI！"
+  ],
+  "aiWaitlistEnrolledEmail.subject.label": [
+    "이제 Notion AI를 사용해볼 순서가 되었습니다!",
+    "现在，我们开始尝试Notion AI了！"
+  ],
+  "aiWaitlistSpaceEnrolledEmail.body.cta": [
+    "더 빠르게 쓰고, 과감하게 생각하고, 창의성을 발휘하세요.",
+    "写得更快，大胆思考，发挥创意。"
+  ],
+  "aiWaitlistSpaceEnrolledEmail.body.label": [
+    "좋은 소식입니다! Notion AI 대기자 명단에 우리 팀이 초대되었습니다.",
+    "好消息！我们团队被邀请加入Notion AI候选名单。"
+  ],
+  "aiWaitlistSpaceEnrolledEmail.body.label1": [
+    "{name}님, 안녕하세요?",
+    "{name}先生，您好？"
+  ],
+  "aiWaitlistSpaceEnrolledEmail.body.label2": [
+    "워크스페이스 소유자는 설정과 멤버 → 워크스페이스 설정으로 이동하여 Notion AI를 활성화할 수 있습니다. 기능을 활성화하면 소유자뿐만 아니라 워크스페이스에 있는 모든 사용자가 기능을 사용할 수 있게 됩니다.",
+    "工作区所有者可以通过转到设置和成员→工作空间设置来启用Notion AI。启用功能后，功能将可供所有者以及工作区中的所有用户使用。"
+  ],
+  "aiWaitlistSpaceEnrolledEmail.body.label3": [
+    "AI 기능을 켜면 나와 팀원들의 Notion에서 바로 활성화됩니다. AI의 도움으로 아이디어 브레인스토밍, 내용 요약하기, 회의록에서 액션 아이템 추출하기 등을 시도해 보세요. AI와 처음부터 새로운 글을 작성할 수도 있어요.  Notion AI의 기능과 제한 사항에 대해 자세히 알아보려면 <guideLink>이 가이드</guideLink>를 읽어보세요.",
+    "打开AI功能后，我和团队成员的Notion会立即激活。在AI的帮助下，尝试创意头脑风暴、总结内容、从会议记录中提取动作物品等等。你可以从AI开始写新文章。要详细了解Notion AI的功能和限制，请阅读<guideLink>指南</guideLink>。"
+  ],
+  "aiWaitlistSpaceEnrolledEmail.body.label4": [
+    "함께 하게 되어 기뻐요! 창의성을 마음껏 펼쳐 보시기를 기대할게요.",
+    "很高兴能在一起！期待您尽情展现创意。"
+  ],
+  "aiWaitlistSpaceEnrolledEmail.subject.label": [
+    "Notion AI 대기자 명단 신청을 받습니다. 팀을 위해 AI를 활성화하세요.",
+    "收到Notion AI等候名单申请。为团队启用AI。"
+  ],
+  "aiWaitlistSpaceEnrolledEmail.text.label": [
+    "Notion AI는 제2의 브레인과도 같아요. 무엇이든 물어보세요.",
+    "Notion AI就像第二个大脑。随便问什么。"
+  ],
+  "aiWaitlistSpaceEnrolledEmail.titleOfEmail": [
+    "Notion AI에 오신 것을 환영합니다!",
+    "欢迎来到Notion AI！"
+  ],
+  "appTemplates.projects.projectPriorityFeatureDescription": [
+    "먼저 수행할 프로젝트를 표시합니다.",
+    "首先，显示要执行的项目。"
+  ],
+  "appTemplates.projects.taskPriorityFeatureDescription": [
+    "먼저 수행할 작업을 표시합니다.",
+    "显示要首先执行的操作。"
+  ],
+  "auditLogEventFilter.actionNames.ai_admin_legal_acceptance_toggled": [
+    "워크스페이스에 Notion AI 기능이 활성화됨",
+    "在工作区中启用了Notion AI功能"
+  ],
+  "auditLogEventFilter.actionNames.workspace_analytics_toggled": [
+    "워크스페이스 애널리틱스 트래킹 토글됨",
+    "工作空间分析跟踪切换"
+  ],
+  "auditlog.actionNames.eventColumn.ai_admin_legal_acceptance_toggled": [
+    "워크페이스에 Notion AI {enabled}",
+    "Notion AI{enabled}在工作面上"
+  ],
+  "auditlog.actionNames.eventColumn.ai_admin_legal_acceptance_toggled.disabled": [
+    "활성화됨",
+    "已启用"
+  ],
+  "auditlog.actionNames.eventColumn.ai_admin_legal_acceptance_toggled.enabled": [
+    "비활성화됨",
+    "已禁用"
+  ],
+  "auditlog.actionNames.workspace_analytics_disabled": [
+    "워크스페이스 애널리틱스 페이지 조회수 트래킹 비활성화됨",
+    "工作区分析页面浏览跟踪被禁用"
+  ],
+  "auditlog.actionNames.workspace_analytics_enabled": [
+    "워크스페이스 애널리틱스 페이지 조회수 트래킹 활성화됨",
+    "跟踪工作区分析页面浏览量已启用"
+  ],
+  "auditlogEventFilter.actionNames.audit_log_exported": [
+    "감사 로그 내보내기됨",
+    "审核日志已导出"
+  ],
+  "auditlogEventFilter.actionNames.content_analytics_exported": [
+    "콘텐츠 애널리틱스 내보내기됨",
+    "内容分析已导出"
+  ],
+  "auditlogEventFilter.eventColumn.audit_log_exported": [
+    "지난 {duration}에 대한 감사 로그 내보내기됨",
+    "已导出过去{duration}的审核日志"
+  ],
+  "auditlogEventFilter.eventColumn.content_analytics_exported": [
+    "{daysFilterString}에 대한 콘텐츠 애널리틱스 내보내기됨",
+    "{daysFilterString}的内容分析已导出"
+  ],
+  "authErrors.alreadyVerifiedPhoneNumber.message": [
+    "이미 인증된 전화번호입니다.",
+    "已经验证的电话号码。"
+  ],
+  "authErrors.genericMfaError.message": [
+    "문제가 발생했습니다.",
+    "发生了问题。"
+  ],
+  "authErrors.invalidPhoneNumber.message": [
+    "전화번호가 유효하지 않습니다.",
+    "电话号码无效。"
+  ],
+  "authErrors.maxMethods.message": [
+    "해당 유형에 대한 최대 MFA 제한에 도달했습니다.",
+    "已达到该类型的最大MFA限制。"
+  ],
+  "automations.addActionButton.empty.label": ["작업 추가", "添加任务"],
+  "automations.addActionButton.nonEmpty.label": [
+    "다른 작업 추가",
+    "添加其他任务"
+  ],
+  "baseTable.pageCell.untitledPath": ["제목 없음", "无标题"],
+  "baseTable.teamCell.hiddenTeam": ["숨긴 팀", "隐藏团队"],
+  "blockMenuItem.aiBadge": ["AI", "AI"],
+  "blockPermissionsSettings.permissionsList.attribution": [
+    "출처: {attribution}",
+    "资料来源：{attribution}"
+  ],
+  "blockPermissionsSettings.permissionsList.moreAttribution": [
+    "권한이 있는 사용자",
+    "特权用户"
+  ],
+  "buttonBlock.button.done": ["완료", "已完成"],
+  "commandPalette.recentActions.more": ["더 보기", "更多"],
+  "commandPalette.recentActions.removeFromMenu": [
+    "메뉴에서 이 작업 제거",
+    "从菜单中删除此任务"
+  ],
+  "commandPalette.recentActions.title": ["최근 작업", "最近的操作"],
+  "completionActions.refreshCompletion.errorMessage": [
+    "문제가 발생했습니다(오류 코드 {errorCode}).",
+    "出现问题(错误代码{errorCode})。"
+  ],
+  "contextualInvite.addToWorkspace.subtitle": [
+    "페이지 외에 워크스페이스에도 {emailCount, plural, one {이 사용자} other {이 사용자}}를 추가하시겠습니까? 멤버가 추가되면 비용이 청구됩니다.",
+    "除页面外，是否要在工作区中添加{emailCount、plural、one{此用户}other{此用户}}？添加成员后，将收取费用。"
+  ],
+  "contextualInvite.addToWorkspace.title": [
+    "워크스페이스에 추가",
+    "添加到工作区"
+  ],
+  "contextualInvite.requestToWorkspace.subtitle": [
+    "{emailCount, plural, one {이 사용자} other {이 사용자}}를 워크스페이스에 추가하도록 워크스페이스 관리자에게 요청을 보내시겠습니까?",
+    "是否要向工作区管理员发送请求，将{emailCount、plural、one{此用户}other{此用户}}添加到工作区？"
+  ],
+  "contextualInvite.requestToWorkspace.title": [
+    "워크스페이스에 사용자 추가 요청",
+    "请求将用户添加到工作区"
+  ],
+  "contextualInvite.skip.button": ["건너뛰기", "跳过"],
+  "contextualInvite.spaceCard.subtitle": [
+    "{numberOfWorkspaceMembers, plural, one {{numberOfWorkspaceMembers}명의 멤버} other {{numberOfWorkspaceMembers}명의 멤버}} · {planType}",
+    "{numberOfWorkspaceMembers，plural，one{{numberOfWorkspaceMembers}个成员}other{{numberOfWorkspaceMembers}个成员}·{planType}"
+  ],
+  "database.timelineView.nest.addSubitemWithPropertyName": [
+    "{propertyName}에 새 페이지",
+    "{propertyName}中的新页"
+  ],
+  "database.viewSettings.arrowsTab.createButton.title": ["생성", "已创建"],
+  "database.viewSettings.arrowsTab.dependenciesExisting.newRelation": [
+    "속성",
+    "属性"
+  ],
+  "database.viewSettings.arrowsTab.emptyStateDescription": [
+    "이름 바꾸기(선택 사항)",
+    "重命名(可选)"
+  ],
+  "database.viewSettings.arrowsTab.initialPropertyName.placeholder": [
+    "관계형 대상",
+    "关系目标"
+  ],
+  "database.viewSettings.arrowsTab.inverseName.placeholder": [
+    "이 데이터베이스와 관계됨",
+    "与此数据库相关"
+  ],
+  "database.viewSettings.arrowsTab.newRelation": [
+    "기존 관계형 사용",
+    "使用现有关系"
+  ],
+  "database.viewSettings.arrowsTab.removeAllDefaultButton.title": [
+    "모든 새 보기에서 끄기",
+    "关闭所有新视图"
+  ],
+  "database.viewSettings.arrowsTab.useExistingRelation.title": [
+    "기존 관계형 사용",
+    "使用现有关系"
+  ],
+  "database.viewSettings.mainTab.subitems.title": ["하위 항목", "子体"],
+  "database.viewSettings.nestTab.createButton.title": ["생성", "已创建"],
+  "database.viewSettings.nestTab.initialPropertyName.placeholder": [
+    "관계형 대상",
+    "关系目标"
+  ],
+  "database.viewSettings.nestTab.inverseName.placeholder": [
+    "이 데이터베이스와 관계됨",
+    "与此数据库相关"
+  ],
+  "database.viewSettings.nestTab.newRelation": [
+    "기존 관계형 사용",
+    "使用现有关系"
+  ],
+  "database.viewSettings.nestTab.subItemsButton.title": [
+    "하위 항목 해제",
+    "取消子项"
+  ],
+  "database.viewSettings.nestTab.toggleByExisting.newRelation": [
+    "속성",
+    "属性"
+  ],
+  "database.viewSettings.nestTab.useExistingRelation.title": [
+    "기존 관계형 사용",
+    "使用现有关系"
+  ],
+  "database.viewSettings.subItemsTab.title": ["하위 항목", "子体"],
+  "id.completions.conclusion": ["결론", "结论"],
+  "id.completions.genericHelpMeWrite": ["{filter}", "{filter}"],
+  "identityProvisioningSettings.claimWorkspaces.actions.claimSpace.ineligibleTooltip": [
+    "이 워크스페이스에 대한 소유권을 주장할 수 없습니다.",
+    "无法声明此工作空间的所有权。"
+  ],
+  "invoice.planType.plus": ["플러스", "加法"],
+  "moveBlockMenu.duplicateToSpace.learnMoreLink": [
+    "자세히 알아보기",
+    "了解详情"
+  ],
+  "moveBlockMenu.duplicateToSpace.message": [
+    "다른 워크스페이스로 페이지를 이동할 수는 없으며 복제만 할 수 있습니다.",
+    "您不能将页面移动到另一个工作区，只能进行复制。"
+  ],
+  "moveToHelpers.duplicateToSpaceConfirmAcceptLabel": [
+    "이해합니다. 복제하기",
+    "理解。克隆"
+  ],
+  "moveToHelpers.duplicateToSpaceConfirmDescription1": [
+    "여기에는 링크, 관계형, 권한, 페이지 기록 등이 포함될 수 있습니다.",
+    "这可能包括链接、关系、权限、页面历史记录等。"
+  ],
+  "moveToHelpers.duplicateToSpaceConfirmDescription2": [
+    "이 페이지는 현재 워크스페이스에 변경되지 않고 유지되며 선택하신 워크스페이스에 복제본이 생성됩니다.",
+    "此页面在当前工作区中保持不变，并在您选择的工作区中创建副本。"
+  ],
+  "moveToHelpers.duplicateToSpaceConfirmHelpLink": [
+    "자세히 알아보기",
+    "了解详情"
+  ],
+  "moveToHelpers.duplicateToSpaceConfirmTitle": [
+    "복제된 페이지의 일부 콘텐츠와 설정이 손상될 수 있습니다.",
+    "复制页面的某些内容和设置可能会损坏。"
+  ],
+  "moveToMenuActions.duplicatedToSpace.toast": [
+    "{spaceName}에 {name} 복제 완료",
+    "{spaceName}已复制{name}"
+  ],
+  "moveToMenuActions.duplicatingContent.loadingMessage": [
+    "콘텐츠 복제 중…",
+    "正在复制内容..."
+  ],
+  "moveToMenuRenderer.duplicateToSpace.label": [
+    "페이지 복제 중…",
+    "正在复制页面..."
+  ],
+  "newBlock.aiActionItemsBlock.description": [
+    "관련된 액션 아이템을 추가합니다.",
+    "添加相关的动作项目。"
+  ],
+  "newBlock.aiActionItemsBlock.fuzzySearchKeywords": [
+    "관련 작업 액션 아이템 추출 뽑기 찾기 AI",
+    "相关动作动作项目提取拔萃查找AI"
+  ],
+  "newBlock.aiActionItemsBlock.title": ["액션 아이템", "动作道具"],
+  "newBlock.aiBlock.description": [
+    "페이지 요약을 추가합니다.",
+    "添加页面摘要。"
+  ],
+  "newBlock.aiBlock.fuzzySearchKeywords": [
+    "요약 AI ai 인공지능 내용요약",
+    "摘要AI ai人工智能内容摘要"
+  ],
+  "newBlock.aiBlock.title": ["요약", "摘要"],
+  "newBlock.aiConclusionsBlock.description": [
+    "콘텐츠 결론을 추가합니다.",
+    "添加内容结论。"
+  ],
+  "newBlock.aiConclusionsBlock.fuzzySearchKeywords": [
+    "결론 AI 마지막 마무리 정리",
+    "结论AI最后整理"
+  ],
+  "newBlock.aiConclusionsBlock.title": ["결론", "结论"],
+  "newBlock.aiFreePromptBlock.description": [
+    "Notion AI에게 무엇이든 물어보세요.",
+    "问问任何Notion AI。"
+  ],
+  "newBlock.aiFreePromptBlock.fuzzySearchKeywords": [
+    "도움말 질문 프롬프트 AI 블록",
+    "帮助问题提示AI块"
+  ],
+  "newBlock.aiFreePromptBlock.title": ["AI 블록", "AI块"],
+  "newBlock.aiSummaryBlock.description": [
+    "페이지 요약을 추가합니다.",
+    "添加页面摘要。"
+  ],
+  "newBlock.aiSummaryBlock.fuzzySearchKeywords": ["요약 AI", "摘要AI"],
+  "newBlock.aiSummaryBlock.title": ["요약", "摘要"],
+  "onboardingChecklistButton.doNotShowAgain.button": [
+    "Notion 기본 콘텐츠 숨기기",
+    "隐藏Notion默认内容"
+  ],
+  "onboardingSurvey.backButton.label": ["뒤로가기", "后退"],
+  "onboardingSurvey.companySize.label": [
+    "회사 규모가 어떻게 되나요?",
+    "公司的规模是多少？"
+  ],
+  "onboardingSurvey.companySize.popuplabel": ["회사 규모...", "公司规模..."],
+  "openInDesktopAppPopup.appDownloadButton": [
+    "앱이 없으신가요? 지금 다운로드하세요.",
+    "没有应用程序吗？立即下载。"
+  ],
+  "securitySAMLSettings.upsell.caption.business": [
+    "비즈니스 요금제에는 대규모로 직원 사용 권한을 관리하기 위한 SSO(통합로그인) 기능과, 보안에 민감한 문서로 협업하기 위한 비공개 팀스페이스 기능 등이 포함됩니다.",
+    "业务计划包括用于大规模管理员工权限的集成登录(SSO)功能，以及用于协作安全敏感文档的专用团队空间功能。"
+  ],
+  "securitySAMLSettings.upsell.caption.enterprise": [
+    "엔터프라이즈 요금제에서는 자동으로 사용자와 그룹을 프로비저닝하고, 워크스페이스 전반에 대한 권한 제어를 효율적으로 실행할 수 있습니다.",
+    "企业计划可以自动调配用户和组，并有效地跨工作区执行权限控制。"
+  ],
+  "securitySAMLSettings.upsell.title.business": [
+    "SAML SSO(통합로그인) 기능과 여러 관리자 도구를 사용하려면 업그레이드하세요.",
+    "升级以使用SAML单点登录(SSO)功能和多个管理员工具。"
+  ],
+  "securitySAMLSettings.upsell.title.enterprise": [
+    "SCIM과 고급 보안 등, 더 많은 기능을 사용하려면 업그레이드하세요.",
+    "升级以使用更多功能，包括SCIM和高级安全性。"
+  ],
+  "settings.workspaceAnalytics.contentTab.allPages.table.empty": [
+    "검색어가 포함된 페이지가 없습니다.",
+    "没有包含搜索词的页面。"
+  ],
+  "settings.workspaceAnalytics.contentTab.allPages.table.location.name": [
+    "위치",
+    "位置"
+  ],
+  "settings.workspaceAnalytics.contentTab.allPages.title": [
+    "모든 페이지",
+    "所有页面"
+  ],
+  "settings.workspaceAnalytics.contentTab.placeholder": [
+    "제목으로 검색",
+    "按标题搜索"
+  ],
+  "settings.workspaceAnalytics.contentTab.timeRange": ["시간:", "时间："],
+  "shareMenu.addFromSlack.label": [
+    "{integrationNameWithLogo}에서 사용자 추가",
+    "从{integrationNameWithLogo}添加用户"
+  ],
+  "shareMenu.emailMessageInput.placeholder": ["메시지 첨부", "附加消息"],
+  "shareMenu.inviteFailure.snackbarMessage": [
+    "{users}님을 초대하는 데 실패했습니다.",
+    "{users}邀请您失败。"
+  ],
+  "shareMenu.inviteSuccess.snackbarMessage": [
+    "{users}님에게 초대를 보냈습니다.",
+    "{users}已将邀请发送给您。"
+  ],
+  "shareMenu.slackIntegrationName.label": ["Slack", "Slack"],
+  "sideBar.newBadge": ["NEW", "新世界"],
+  "sidebarAiEnrolledPrompt.cta": ["설정 열기", "打开设置"],
+  "sidebarAiEnrolledPrompt.subtitle": [
+    "축하드립니다! 대기자 명단에서 순서가 돌아왔어요. 기능을 사용하려면 Notion AI를 활성화하세요.",
+    "恭喜你！等候名单上的顺序回来了。要启用功能，请启用Notion AI。"
+  ],
+  "sidebarAiEnrolledPrompt.title": ["Notion AI 활성화", "启用Notion AI"],
+  "sidebarCreateTeamModal.teamScreen.teamDescriptionOptionalLabel": [
+    "설명(선택 사항)",
+    "说明(可选)"
+  ],
+  "sidebarCreateTeamModal.teamScreen.teamIconAndNameLabel": [
+    "아이콘과 이름",
+    "图标和名称"
+  ],
+  "spaceBasicSettings.aiFeature.caption": [
+    "비공개 알파 멤버의 AI 사용을 활성화합니다. {br}활성화하면 <inlinelink>이 약관</inlinelink>에 동의하는 것으로 간주됩니다.",
+    "启用私有Alpha成员的AI使用。{br}如果启用，即表示您同意<inlinelink>这些条款</inlinelink>。"
+  ],
+  "spaceBasicSettings.aiFeature.label": ["Notion AI", "Notion AI"],
+  "spaceBasicSettings.feature.subtitle": ["기능 설정", "功能设置"],
+  "spaceBasicSettings.public.subtitle": ["공개 설정", "公共设置"],
+  "spacePermissionSettings.memberUpsell.alternativeSinglePlayerUpgradeLabel": [
+    "업그레이드",
+    "升级"
+  ],
+  "spacePermissionSettings.memberUpsell.caption.fromSinglePlayerPlus": [
+    "워크스페이스에 멤버 수 1인 제한이 적용되어 있습니다. 더 많은 사람들을 초대하려면 협업이 쉬운 플러스 요금제로 업그레이드하세요.",
+    "工作区具有成员数1人的限制。要邀请更多人加入，请升级至易于协作的加套餐。"
+  ],
+  "spaceSubscriptionUpgradeModal.upgradeButton.plusPlan": [
+    "플러스 요금제로 업그레이드",
+    "升级至Plus计划"
+  ],
+  "subscriptionSettings.subscriptionNextChargeMessage.plusEducationPlan": [
+    "{planInterval, select, month {이 워크스페이스는 멤버 수가 1인으로 제한된 교육 요금제를 사용하고 있습니다. 요금제를 변경할 수는 있지만 현재 적용된 할인은 더 이상 적용되지 않습니다. 현재 요금은 <bold>월 {planCharge}</bold>로 설정되어 있으며 {renewalDate}에 갱신됩니다.} other {이 워크스페이스는 멤버 수가 1인으로 제한된 교육 플러스 요금제를 사용하고 있습니다. 요금제를 변경할 수는 있지만 현재 적용된 할인은 더 이상 적용되지 않습니다. 현재 요금은 <bold>연 {planCharge}</bold>로 설정되어 있으며 {renewalDate}에 갱신됩니다.}}",
+    "{planInterval、select和month{此工作空间使用培训计划，成员数量为1人。您可以更改计划，但不再适用当前应用的折扣。当前费用设置为<bold>月{planCharge}</bold>，并将更新到{renewalDate}。}other{此工作空间使用培训加套餐，成员人数限制为1人。您可以更改计划，但不再适用当前应用的折扣。当前费率设置为<bold>年{planCharge}</bold>，并将更新到{renewalDate}}}"
+  ],
+  "subscriptionSettings.subscriptionStatus.singlePlayerFreePlanMessage": [
+    "이 워크스페이스는 <bold>무료 요금제</bold>입니다.",
+    "此工作空间为<bold>免费套餐</bold>。"
+  ],
+  "subscriptionUpgradeDetails.planName.plus": ["플러스", "加法"],
+  "subscriptionUpgradeDetails.title.plus": [
+    "플러스 요금제로 업그레이드",
+    "升级至Plus计划"
+  ],
+  "subscriptionUpgradeModal.title.plus": [
+    "플러스 요금제로 업그레이드",
+    "升级至Plus计划"
+  ],
+  "timeline.itemPlaceholder.nest.addSubitemWithPropertyName": [
+    "{propertyName}에 새 페이지",
+    "{propertyName}中的新页"
+  ],
+  "transactionErrors.blockPropertiesMaxSize.message": [
+    "페이지의 최대 속성 크기를 초과했습니다.",
+    "已超过页面的最大属性大小。"
+  ],
+  "upsellActions.confirmProration.businessMessage": [
+    "Notion의 비즈니스 요금제를 멤버당 월 {price}의 가격으로 구독하게 됩니다.{br}{isSubscribed, select, true {일할 계산된 금액에서 계정 잔액을 차감한 금액이 청구됩니다.} other {}}",
+    "您将按每个成员每月{price}的价格订阅Notion的业务计划。{br}{isSubscribed，select，true{将从计算金额减去帐户余额。}other{}}"
+  ],
+  "upsellActions.confirmProration.businessMessage.fromSinglePlayerPlus": [
+    "Notion의 비즈니스 요금제를 멤버당 월 {price}의 가격으로 구독하게 됩니다.{br} 현재 적용된 할인은 더 이상 적용되지 않으며, 일할 계산된 금액에서 계정 잔액을 차감한 금액이 청구됩니다.",
+    "您将按每个成员每月{price}的价格订阅Notion的业务计划。{br}当前应用的折扣不再适用，您将收取从计算金额中减去帐户余额的金额。"
+  ],
+  "upsellActions.confirmProration.enterpriseMessage": [
+    "Notion의 엔터프라이즈 요금제를 멤버당 월 {price}의 가격으로 구독하게 됩니다.{br}{isSubscribed, select, true {일할 계산된 금액에서 계정 잔액을 차감한 금액이 청구됩니다.} other {}}",
+    "您将按每个成员每月{price}的价格订阅Notion的企业计划。{br}{isSubscribed，select，true{将从计算金额减去帐户余额。}other{}}"
+  ],
+  "upsellActions.confirmProration.enterpriseMessage.fromSinglePlayerPlus": [
+    "Notion의 엔터프라이즈 요금제를 멤버당 월 {price}의 가격으로 구독하게 됩니다.{br} 현재 적용된 할인은 더 이상 적용되지 않으며, 일할 계산된 금액에서 계정 잔액을 차감한 금액이 청구됩니다.",
+    "您将按每个成员每月{price}的价格订阅Notion的企业计划。{br}当前应用的折扣不再适用，并且将从工作计算金额中减去帐户余额。"
+  ],
+  "upsellActions.confirmProration.personalMessage": [
+    "Notion의 개인 요금제를 멤버당 월 {price}의 가격으로 구독하게 됩니다.{br}{isSubscribed, select, true {일할 계산된 금액에서 계정 잔액을 차감한 금액이 청구됩니다.} other {}}",
+    "您将按每个成员每月{price}的价格订阅Notion的个人计划。{br}{isSubscribed，select，true{将从计算金额减去帐户余额。}other{}}"
+  ],
+  "upsellActions.confirmProration.personalMessage.fromSinglePlayerPlus": [
+    "Notion의 개인 요금제를 멤버당 월 {price}의 가격으로 구독하게 됩니다.{br} 현재 적용된 할인은 더 이상 적용되지 않으며, 일할 계산된 금액에서 계정 잔액을 차감한 금액이 청구됩니다.",
+    "您将按每个成员每月{price}的价格订阅Notion的个人计划。{br}当前应用的折扣不再适用，您将收取从计算金额中减去帐户余额的金额。"
+  ],
+  "upsellActions.confirmProration.plusMessage": [
+    "Notion의 플러스 요금제를 멤버당 월 {price}의 가격으로 구독하게 됩니다.{br}{isSubscribed, select, true {일할 계산된 금액에서 계정 잔액을 차감한 금액이 청구됩니다.} other {}}",
+    "您将按每个成员每月{price}的价格订阅Notion的加计划。{br}{isSubscribed，select，true{将从计算金额减去帐户余额。}other{}}"
+  ],
+  "upsellActions.confirmProration.plusMessage.fromSinglePlayerPlus": [
+    "Notion의 플러스 요금제를 멤버 수 제한 없이 멤버당 월 {price}의 가격으로 구독하게 됩니다.{br} 현재 적용된 할인은 더 이상 적용되지 않으며, 일할 계산된 금액에서 계정 잔액을 차감한 금액이 청구됩니다.",
+    "Notion的Plus计划将以每个成员每月{price}的价格订阅，但不限成员。{br}当前应用的折扣不再适用，并且将从计算金额中减去帐户余额。"
+  ],
+  "user.notionSupport.name": ["Notion 지원", "Notion支持"],
+  "workspaceAnalyticsTabs.disabled.description": [
+    "워크스페이스 소유자가 {name}의 페이지 조회수 기록 설정을 비활성화했습니다.{br}이 정보를 워크스페이스 설정이나 개인 페이지에서 사용할 수 없습니다.",
+    "工作区所有者已禁用{name}的页面浏览历史记录设置。{br}此信息在工作空间设置或个人主页中不可用。"
+  ],
+  "workspaceAnalyticsTabs.disabled.description.unnamed": [
+    "워크스페이스 소유자가 페이지 조회수 기록 설정을 비활성화했습니다.{br}이 정보를 워크스페이스 설정이나 개인 페이지에서 사용할 수 없습니다.",
+    "工作区所有者禁用了页面浏览历史记录设置。{br}此信息在工作区设置或个人主页中不可用。"
+  ],
+  "workspaceAnalyticsTabs.disabled.heading": [
+    "애널리틱스가 비활성화되었습니다.",
+    "分析被禁用。"
+  ],
+  "workspaceAnalyticsTabs.disabled.learnMore": ["자세히 알아보기", "了解详情"]
 }
