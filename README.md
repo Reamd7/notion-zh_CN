@@ -87,7 +87,7 @@ notion-zh_CN 是对notion的汉化脚本。
    ```
    繁體中文版
    ```powershell
-   Invoke-WebRequest -Uri "https://github.com/Reamd7/notion-zh_CN/releases/latest/download/notion-zh_TW.js" -OutFile "$HOME\AppData\Local\Programs\Notion\resources\app\renderer\notion-zh_TW.js"
+   Invoke-WebRequest -Uri "https://github.com/gba28945/notion-zh_CN/releases/latest/download/notion-zh_TW.js" -OutFile "$HOME\AppData\Local\Programs\Notion\resources\app\renderer\notion-zh_TW.js"
    Add-Content "$HOME\AppData\Local\Programs\Notion\resources\app\renderer\preload.js" 'require("./notion-zh_TW")'
    ```
 ### Mac 
