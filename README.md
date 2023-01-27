@@ -85,7 +85,11 @@ notion-zh_CN 是对notion的汉化脚本。
    Invoke-WebRequest -Uri "https://github.com/Reamd7/notion-zh_CN/releases/latest/download/notion-zh_CN.js" -OutFile "$HOME\AppData\Local\Programs\Notion\resources\app\renderer\notion-zh_CN.js"
    Add-Content "$HOME\AppData\Local\Programs\Notion\resources\app\renderer\preload.js" 'require("./notion-zh_CN")'
    ```
-
+   ```
+   powershell
+   Invoke-WebRequest -Uri "https://github.com/Reamd7/notion-zh_CN/releases/latest/download/notion-zh_TW.js" -OutFile "$HOME\AppData\Local\Programs\Notion\resources\app\renderer\notion-zh_TW.js"
+   Add-Content "$HOME\AppData\Local\Programs\Notion\resources\app\renderer\preload.js" 'require("./notion-zh_TW")'
+   ```
 ### Mac 
 
 网页端 以及 windows 端，能够**100% 汉化**，指的是**时间显示也有国际化的能力**，点击所有更新的时间轴中就能看出来，点击？悬浮按钮也能看到。
