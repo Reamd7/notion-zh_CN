@@ -8,8 +8,7 @@ if [ -w "/Applications/Notion.app/Contents/Resources/app/renderer/preload.js" ];
     curl -# -o "$folder/Notion-zh_CN.js" "$remoteUrl"
 
     listLine="tail -n 1 $preloadJs"
-
-    if [ "$listLine" != "require('./notion-zh_CN')" ]; then 
-      echo "require('./notion-zh_CN')" >> "$preloadJs"
+    if [ "$($listLine)" != "require('./Notion-zh_CN')" ]; then 
+      echo "require('./Notion-zh_CN')" >> $preloadJs
     fi
 fi
