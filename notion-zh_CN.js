@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         Notion-zh_CN notion的汉化脚本
 // @namespace    http://tampermonkey.net/
-// @version      2.4.10
+// @version      2.4.11
 // @description  notion的100%汉化脚本，基于官方中文+机器翻译韩文，支持app版本以及网页油猴，地址：https://github.com/reamd7/notion-zh_CN
 // @author       reamd7
 // @match        *://www.notion.so/*
@@ -204,6 +204,10 @@
     "LuxonDatePropertyMenu.timeSearch.placeholder": "搜索时区…",
     "LuxonDatePropertyMenu.timezoneMenu.noResults": "无结果",
     "LuxonDatePropertyMenu.timezoneMenu.select.placeholder": "选择时区",
+    "ManageTeamsSecurityOverridesFilter.showAllOption": "显示所有",
+    "ManageTeamsSecurityOverridesFilter.showAllPlaceholder": "安全问题",
+    "ManageTeamsSecurityOverridesFilter.showTeamsWithSecurityOverrides":
+      "具有覆盖性",
     "OnboardingSurvery.usecase.question.docs": "文档编辑和共享",
     "OnboardingSurvery.usecase.question.goals": "公司目标和 OKR",
     "OnboardingSurvery.usecase.question.other": "其他",
@@ -332,6 +336,7 @@
       "关闭",
     "SpaceSubscriptionPlans.activeMembers.title":
       "{activeMemberCount, plural, other {{activeMemberCount} 个活跃成员}}",
+    "SpaceSubscriptionPlans.addToPlan.label": "添加到计划中",
     "SpaceSubscriptionPlans.aiCredits.description":
       "要增加你的 AI 积分限制，请在当前方案中添加额外的 AI 或升级你当前的方案。",
     "SpaceSubscriptionPlans.aiCredits.title": "已使用的 AI 积分",
@@ -371,6 +376,7 @@
     "SpaceSubscriptionPlans.recommendedPlanDescription":
       "这是根据你的使用情况而推荐的方案",
     "SpaceSubscriptionPlans.recommendedPlanForYou": "为你推荐的方案",
+    "SpaceSubscriptionPlans.removeFromPlan.label": "从计划中删除",
     "SpaceSubscriptionPlans.usagePercent": "<bold>{percent}%</bold>",
     "SpaceSubscriptionPlans.viewPlans.title": "查看所有方案",
     "SpaceSubscriptionPlans.whatYouHaveNow.title": "你现在所拥有的加上...",
@@ -524,6 +530,9 @@
       "将访问级别更改为“封闭式”或“私人”，以限制可以邀请团队空间成员的人员",
     "TeamSettingsSecurity.pageSettingsTitle": "页面安全性",
     "TeamSettingsSecurity.teamspaceSettingsTitle": "团队空间安全性",
+    "TeamsecuritySection.inviteLink.description":
+      "只有可以邀请成员的用户可以看到邀请链接",
+    "TeamsecuritySection.inviteLink.label": "邀请链接",
     "TemplateDetail.TeamItem.addButton": "添加",
     "TemplateDetail.TeamItem.goButton": "转到",
     "TemplateDetail.TeamItem.teamMemberCount":
@@ -557,6 +566,9 @@
     "UpdateSidebarFollowControl.following.label": "关注中",
     "UpdateSidebarFollowControl.unfollow.caption": "不接收更新和评论通知",
     "UpdateSidebarFollowControl.unfollow.label": "取消关注",
+    "UpsellNotice.label": "你已经用完了你的计划中所有的免费人工智能。",
+    "UpsellNotice.link.label": "获得更多人工智能",
+    "UpsellNotice.link.label.mobile": "升级",
     "VerificationExpiryMenu.done": "完成",
     "VerificationExpiryMenu.pickSpecificDate.placeholder": "或选择特定日期",
     "VerificationExpiryMenu.preset.subtitle": "直到 {date}",
@@ -1120,13 +1132,16 @@
     "addOnUpgrade.title": "你的工作区已用完其 Notion AI 优惠",
     "addOnUpgrade.title.admin": "购买Notion AI",
     "addOnUpgrade.title.nonAdmin": "你的工作区已经用完了Notion AI的推广。",
+    addOnUpgradeModal: "你确定要从你的计划中删除Notion AI吗？",
     "addOnUpgradeModal.confirmPurchase.button.label": "确认购买",
     "addOnUpgradeModal.errorMessage.notAdmin":
       "你没有权限将此工作区升级为附加组件。如果你认为这是个错误，请联系你的管理员。",
     "addOnUpgradeModal.errorMessage.switchPlanFromInAppPurchase":
       "你目前是通过苹果的应用内购买订阅的。要转换计划，请先取消你在苹果公司的订阅。",
     "addOnUpgradeModal.gotIt.button.label": "明白了",
+    "addOnUpgradeModal.noButton.label": "不，取消",
     "addOnUpgradeModal.purchase.button.label": "购买",
+    "addOnUpgradeModal.yesButton.label": "是的，删除",
     "adminAPIRequest.loadingMessage": "载入中…",
     "adminConnectionsSettings.autoApproveBuiltByNotion.caption":
       "启动此选项，以批准所有工作区成员安装<helpcenterlink>由 Notion 构建</helpcenterlink>的连接。",
@@ -1340,7 +1355,7 @@
     "aiWaitlistEnrolled.body.label2":
       "好消息：我们邀请你试用 Notion AI 的私有 alpha 版！只需两步即可开始：",
     "aiWaitlistEnrolled.body.label2.workspaceOwners":
-      "好消息：我们邀请你试用 Notion AI 的私人 alpha 版！下次你登录帐户时，你会看到一条公告。确保从此处<strong>打开 AI </strong>：",
+      "好消息：我们诚邀你试用 Notion AI 的私人 alpha 版！下次你登录帐户时，会看到一条公告。确保从此处<strong>打开 AI </strong>：",
     "aiWaitlistEnrolled.body.label3":
       "转到“设置与成员”→“成员”以查找工作区所有者",
     "aiWaitlistEnrolled.body.label4":
@@ -1348,7 +1363,7 @@
     "aiWaitlistEnrolled.body.label5":
       "启用 AI 后，你可以立即开始使用它来集思广益，根据会议记录生成摘要和待办事项，甚至编写新材料的草稿。要了解有关 Notion AI 功能和局限性的更多信息，请阅读<guidelink>本指南</guidelink>。",
     "aiWaitlistEnrolled.body.label5a":
-      "现在启用 Notion AI，你可以立即使用它来集思广益，根据会议记录生成摘要和待办事项，甚至编写新材料的草稿。 <guidelink>查看本使用手册</guidelink>，探索你现在可以使用 Notion AI 的所有方式。",
+      "Notion AI 现已启用，你可以立即使用它来集思广益，根据会议记录生成摘要和待办事项，甚至编写新材料的草稿。 <guidelink>查看本使用手册</guidelink>，探索你现在可以使用 Notion AI 的所有方式。",
     "aiWaitlistEnrolled.body.label5b":
       "在此处，你可以立即使用它来集思广益，根据会议记录生成摘要和待办事项，甚至编写新材料的草稿。 <guidelink>查看本使用手册</guidelink>，探索你现在可以使用 Notion AI 的所有方式。",
     "aiWaitlistEnrolled.body.label6":
@@ -1357,17 +1372,17 @@
       "没看到吗？从 Notion 桌面应用或你最喜欢的 Web 浏览器，前往<strong>设置与成员→工作区设置</strong>并启用 Notion AI。",
     "aiWaitlistEnrolled.body.noteToOwner": "工作区所有者注意事项",
     "aiWaitlistEnrolled.body.noteToOwnerText1":
-      "你好！ Notion 的团队让我可以访问 <link>Notion AI</link> 的私人 alpha 版。由于我不是工作区所有者，因此我需要你的帮助来启用该功能。",
+      "你好！ Notion 团队授予我 <link>Notion AI</link> 私人 alpha 版访问权限。由于我不是工作区所有者，因此我需要你的帮助来启用该功能。",
     "aiWaitlistEnrolled.body.noteToOwnerText2":
       "你将在<em>设置与成员→工作区设置</em>下找到一个切换开关。请注意，此设置仅在您从 Notion 桌面应用或 Web 浏览器登录时才可用。",
     "aiWaitlistEnrolled.body.noteToOwnerText3":
-      "值得注意的是：当激活 Notion AI 时，该功能将仅适用于已从 alpha 候补名单上被放行的用户，而不适用于整个工作区。",
+      "值得注意的是：当激活 Notion AI 时，该功能将仅适用于已从 alpha 候补名单上放行的用户，而不适用于整个工作区。",
     "aiWaitlistEnrolled.body.noteToOwnerText4": "感谢你的帮助！",
     "aiWaitlistEnrolled.closingText": "谢谢！{br}──来自 Notion 团队",
     "aiWaitlistEnrolled.text.label": "写得更快，想法更多",
     "aiWaitlistEnrolled.titleOfEmail": "欢迎来到 Notion AI！",
     "aiWaitlistEnrolledEmail.emailToWorkspaceOwner.body":
-      "你好，Notion 刚刚让我可以访问 Notion AI 的私人 alpha 版（https://notion.so/product/ai）。由于我不是工作区所有者，因此我需要你的帮助来启用该功能。- 转到“设置与成员”→“工作区设置”。你需要在台式机而不是移动设备上执行此操作。- 当你点击切换按钮时，该功能只会为已从候补名单上被放行的用户开启。",
+      "你好，Notion 刚刚授予我 Notion AI 私人 alpha 版（https://notion.so/product/ai）访问权限。由于我不是工作区所有者，因此我需要你的帮助来启用该功能。- 转到“设置与成员”→“工作区设置”。你需要在台式机而不是移动设备上执行此操作。- 当你点击切换按钮时，该功能只会为已从候补名单上被放行的用户开启。",
     "aiWaitlistEnrolledEmail.emailToWorkspaceOwner.subject": "启用 Notion AI",
     "aiWaitlistEnrolledEmail.subject.label":
       "你已离开等候名单。可以试用 Notion AI 了",
@@ -2173,6 +2188,7 @@
     "appTemplates.projects.estimatesFeatureDescription":
       "使用常用的方法和自定义选项来调整你的任务大小。",
     "appTemplates.projects.feature": "功能",
+    "appTemplates.projects.id": "任务编号",
     "appTemplates.projects.inProgress": "进行中",
     "appTemplates.projects.isCurrentSprintRollup": "是当前迭代",
     "appTemplates.projects.markAsDuplicate": "标记为重复",
@@ -2376,6 +2392,186 @@
     "appTemplates.wiki.wikiWelcomeSubtitle":
       "从头开始使用模板。你稍后可以从模板画廊中添加更多知识库。",
     "appTemplates.wiki.wikiWelcomeTitle": "团队知识库",
+    "appTemplatesNewSprints.projectManagement.projectsCollectionName": "项目",
+    "appTemplatesNewSprints.projectManagement.sprintsCollectionName": "短跑",
+    "appTemplatesNewSprints.projectManagement.tasksCollectionName": "任务",
+    "appTemplatesNewSprints.projects.advancedTaskFeatureDescription":
+      "任务的看板视图。",
+    "appTemplatesNewSprints.projects.advancedTaskProjectStatus.name":
+      "未开始, 在进行中, 已完成, 已归档",
+    "appTemplatesNewSprints.projects.agilePresetName": "项目、任务和冲刺",
+    "appTemplatesNewSprints.projects.agilePresetShortName": "项目",
+    "appTemplatesNewSprints.projects.backlog": "积压案件",
+    "appTemplatesNewSprints.projects.bug": "错误",
+    "appTemplatesNewSprints.projects.completed": "完整的",
+    "appTemplatesNewSprints.projects.completionRollupDescription":
+      "可视化每个项目的任务完成进度。",
+    "appTemplatesNewSprints.projects.completionRollupName": "完成",
+    "appTemplatesNewSprints.projects.doing": "做事",
+    "appTemplatesNewSprints.projects.dueDateProperty": "应付",
+    "appTemplatesNewSprints.projects.endDateProperty": "结束日期",
+    "appTemplatesNewSprints.projects.estimateProperty": "估算",
+    "appTemplatesNewSprints.projects.estimatesFeatureDescription":
+      "用流行的方法和自定义选项来确定你的任务大小。",
+    "appTemplatesNewSprints.projects.feature": "特点",
+    "appTemplatesNewSprints.projects.markAsDuplicate": "标记为重复",
+    "appTemplatesNewSprints.projects.markAsDuplicateFeatureDescription":
+      "将一项任务标记为与另一项任务的重复。",
+    "appTemplatesNewSprints.projects.notStarted": "未开始",
+    "appTemplatesNewSprints.projects.parentTasksName": "父母任务",
+    "appTemplatesNewSprints.projects.pointsEstimates": "积分",
+    "appTemplatesNewSprints.projects.projectStatus": "项目状况",
+    "appTemplatesNewSprints.projects.projectsAndTasksAppName": "项目",
+    "appTemplatesNewSprints.projects.projectsAndTasksPresetName": "项目和任务",
+    "appTemplatesNewSprints.projects.projectsAndTasksPresetShortName": "项目",
+    "appTemplatesNewSprints.projects.simpleTaskFeatureDescription":
+      "用于细化工作的数据库，如问题、任务或bug。",
+    "appTemplatesNewSprints.projects.simpleTaskProjectStatus.name":
+      "待办事项, 已完成",
+    "appTemplatesNewSprints.projects.simpleTasksPresetName": "待办事项清单",
+    "appTemplatesNewSprints.projects.simpleTasksPresetShortName": "任务",
+    "appTemplatesNewSprints.projects.sprintsCollectionEmptyButtonTitle":
+      "新的冲刺",
+    "appTemplatesNewSprints.projects.sprintsCollectionEmptyDescription":
+      "阶段定义了时间段，你可以将任务和项目组织在其中。",
+    "appTemplatesNewSprints.projects.sprintsCollectionEmptyTitle": "没有短跑",
+    "appTemplatesNewSprints.projects.sprintsName": "沖刺",
+    "appTemplatesNewSprints.projects.startDateProperty": "开始日期",
+    "appTemplatesNewSprints.projects.statusFeatureDescription":
+      "跟踪任务/项目的状态。",
+    "appTemplatesNewSprints.projects.subTaskFeatureDescription":
+      "将任务分解成更小的子任务，并跟踪进度。",
+    "appTemplatesNewSprints.projects.subTasksName": "子任务",
+    "appTemplatesNewSprints.projects.tableViewName": "表",
+    "appTemplatesNewSprints.projects.tags": "标签",
+    "appTemplatesNewSprints.projects.taskBlockedByName": "被封锁的",
+    "appTemplatesNewSprints.projects.taskBlockingName": "是阻挡",
+    "appTemplatesNewSprints.projects.taskDependenciesFeatureDescription":
+      "将一项任务标记为被另一项任务阻挡。",
+    "appTemplatesNewSprints.projects.taskDependenciesName": "依赖性",
+    "appTemplatesNewSprints.projects.taskDueDateFeature": "任务到期日",
+    "appTemplatesNewSprints.projects.taskDueDateFeatureDescription":
+      "为任务添加一个到期日。",
+    "appTemplatesNewSprints.projects.taskDuplicatesName": "重复的",
+    "appTemplatesNewSprints.projects.taskGithubPrDisabledFeatureDescription":
+      "请工作区管理员配置GitHub App以使用该功能。",
+    "appTemplatesNewSprints.projects.taskGithubPrFeatureDescription":
+      "根据PR状态的变化自动更新任务状态",
+    "appTemplatesNewSprints.projects.taskGithubPrRelationName":
+      "GitHub拉动请求",
+    "appTemplatesNewSprints.projects.taskIsDuplicateOfName": "是重复的",
+    "appTemplatesNewSprints.projects.taskPriorityFeatureDescription":
+      "标记出要先做的任务。",
+    "appTemplatesNewSprints.projects.taskProjectRelationDependencyName":
+      "项目<-> 任务",
+    "appTemplatesNewSprints.projects.taskProjectRelationName": "项目",
+    "appTemplatesNewSprints.projects.taskReporter": "记者",
+    "appTemplatesNewSprints.projects.taskStatus": "任务状态",
+    "appTemplatesNewSprints.projects.taskType": "任务类型",
+    "appTemplatesNewSprints.projects.taskTypeFeatureDescription":
+      "用模板创建不同类型的任务。",
+    "appTemplatesNewSprints.projects.tasksBoardFeatureName": "任务板",
+    "appTemplatesNewSprints.projects.tasksCollectionEmptyButtonTitle": "新任务",
+    "appTemplatesNewSprints.projects.tasksCollectionEmptyDescription":
+      "任务追踪细化的、单一的工作。",
+    "appTemplatesNewSprints.projects.tasksCollectionEmptyTitle": "没有任务",
+    "appTemplatesNewSprints.projects.tasksCurrentSprintViewDescription":
+      "当前冲刺阶段的任务板",
+    "appTemplatesNewSprints.projects.tasksCurrentSprintViewName": "这次冲刺",
+    "appTemplatesNewSprints.projects.tasksViewName": "所有任务",
+    "appTemplatesNewSprints.projects.tasksWithSprintsFeatureDescription":
+      "每隔几周将你的团队集中在一组任务上。",
+    "appTemplatesNewSprints.projects.tshirtSizeEstimates": "T恤衫尺寸",
+    "appTemplatesNewSprints.projects.welcomeSubtitle":
+      "追踪待办事项和团队项目。从下面挑选一个模板开始。",
+    "appTemplatesNewSprints.projects.welcomeTitle": "项目",
+    "appTemplatesNewSprints.sprints.allTasksViewName": "全部",
+    "appTemplatesNewSprints.sprints.current": "目前",
+    "appTemplatesNewSprints.sprints.future": "未来",
+    "appTemplatesNewSprints.sprints.last": "最后一次",
+    "appTemplatesNewSprints.sprints.newSprint": "新的冲刺",
+    "appTemplatesNewSprints.sprints.next": "下一页",
+    "appTemplatesNewSprints.sprints.past": "过去",
+    "appTemplatesNewSprints.sprints.sprint1": "冲刺1",
+    "appTemplatesNewSprints.sprints.sprint2": "冲刺2",
+    "appTemplatesNewSprints.sprints.sprint3": "冲刺3",
+    "appTemplatesNewSprints.sprints.sprintStatus": "斯普林特状态",
+    "appTemplatesNewSprints.sprints.sprintStatusDescription": "冲刺的状态",
+    "appTemplatesNewSprints.sprints.sprintsCollectionName": "新短跑",
+    "appTemplatesNewSprints.sprints.sprintsTimelineView": "时间轴",
+    "appTemplatesNewSprints.sprints.timelineProperty": "日期",
+    "appTemplatesNewSprints.sprints.uniqueIdProperty": "Sprint ID",
+    "appTemplatesNewSprints.tasks.agilePresetDescription":
+      "工程团队的项目和问题跟踪。用时间盒的冲刺来组织任务和项目。",
+    "appTemplatesNewSprints.tasks.allSprintsViewDescription":
+      "所有冲刺阶段的表格",
+    "appTemplatesNewSprints.tasks.allTasksViewDescription": "所有任务的表格",
+    "appTemplatesNewSprints.tasks.allTasksViewName": "全部",
+    "appTemplatesNewSprints.tasks.archived": "归档",
+    "appTemplatesNewSprints.tasks.assignProperty": "指定",
+    "appTemplatesNewSprints.tasks.boardViewName": "董事会",
+    "appTemplatesNewSprints.tasks.completed": "完整的",
+    "appTemplatesNewSprints.tasks.description": "描述",
+    "appTemplatesNewSprints.tasks.done": "已完成",
+    "appTemplatesNewSprints.tasks.hmlPriority": "高、中、低",
+    "appTemplatesNewSprints.tasks.inProgress": "正在进行中",
+    "appTemplatesNewSprints.tasks.isCurrentSprintProperty": "是当前的斯普林特",
+    "appTemplatesNewSprints.tasks.myTasks": "我的",
+    "appTemplatesNewSprints.tasks.myTasksFeature": "我的任务",
+    "appTemplatesNewSprints.tasks.myTasksFeatureDescription":
+      "分配给我的任务的表格视图。",
+    "appTemplatesNewSprints.tasks.myTasksViewDescription": "我的任务表",
+    "appTemplatesNewSprints.tasks.notStarted": "未开始",
+    "appTemplatesNewSprints.tasks.preview1Description":
+      "关于这个模板预览图片的一些描述...",
+    "appTemplatesNewSprints.tasks.preview2Description":
+      "将项目分解为任务，将工作从高层次的倡议安排到个别任务。",
+    "appTemplatesNewSprints.tasks.priorityHigh": "高",
+    "appTemplatesNewSprints.tasks.priorityLow": "低",
+    "appTemplatesNewSprints.tasks.priorityMedium": "中型",
+    "appTemplatesNewSprints.tasks.priorityProperty": "优先权",
+    "appTemplatesNewSprints.tasks.projectsAndTasksPresetDescription":
+      "团队的项目管理。按项目组织任务，并跟踪整个团队的进展。",
+    "appTemplatesNewSprints.tasks.projectsCollectionName": "项目",
+    "appTemplatesNewSprints.tasks.projectsFeatureDescription":
+      "大型工作的数据库，可以是一个任务的集合。",
+    "appTemplatesNewSprints.tasks.simpleTasksPresetDescription":
+      "简单的任务管理 - 创建、组织和跟踪你的任务。",
+    "appTemplatesNewSprints.tasks.sprintStatus": "斯普林特状态",
+    "appTemplatesNewSprints.tasks.sprintTitleProperty": "斯普林特名称",
+    "appTemplatesNewSprints.tasks.sprintsCollectionName": "萌芽期2",
+    "appTemplatesNewSprints.tasks.sprintsTimelineViewDescription":
+      "冲刺阶段的时间表",
+    "appTemplatesNewSprints.tasks.taskByDueDateFeature": "任务表",
+    "appTemplatesNewSprints.tasks.taskByDueDateFeatureDescription":
+      "按到期日的不同寡头分组的任务的表格视图。",
+    "appTemplatesNewSprints.tasks.taskByPersonFeatureDescription":
+      "按受让人分组的任务的表格视图。",
+    "appTemplatesNewSprints.tasks.taskByPersonFeatureName": "按人分配的任务",
+    "appTemplatesNewSprints.tasks.taskByPersonViewName": "人",
+    "appTemplatesNewSprints.tasks.taskByProjectFeatureDescription":
+      "一个按项目分组的任务板视图",
+    "appTemplatesNewSprints.tasks.taskByProjectFeatureName": "按项目划分的任务",
+    "appTemplatesNewSprints.tasks.taskByProjectViewDescription":
+      "按项目列出的任务表",
+    "appTemplatesNewSprints.tasks.taskByProjectViewName": "按项目分类",
+    "appTemplatesNewSprints.tasks.taskTitleProperty": "任务名称",
+    "appTemplatesNewSprints.tasks.tasksBoardByAssigneeDescription":
+      "按受让人分组的任务委员会",
+    "appTemplatesNewSprints.tasks.tasksBoardByAssigneeViewName":
+      "按人分类的董事会",
+    "appTemplatesNewSprints.tasks.tasksBoardFeatureDescription":
+      "在黑板上可视化工作。",
+    "appTemplatesNewSprints.tasks.tasksBoardViewDescription": "任务委员会",
+    "appTemplatesNewSprints.tasks.tasksByDueDateDescription":
+      "按到期日分组的任务表",
+    "appTemplatesNewSprints.tasks.tasksByDueDateViewName": "即将推出",
+    "appTemplatesNewSprints.tasks.tasksByPersonViewDescription":
+      "按受让人分组的任务表",
+    "appTemplatesNewSprints.tasks.tasksCollectionName": "新任务",
+    "appTemplatesNewSprints.tasks.tasksWithNoSprintViewDescription":
+      "冲刺任务和未来任务表",
+    "appTemplatesNewSprints.tasks.todo": "待办事项",
     "appUpdateListener.mobileAppNotSupported.android": "安卓",
     "appUpdateListener.mobileAppNotSupported.ios": "iOS",
     "appUpdateListener.mobileAppNotSupported.message":
@@ -2989,10 +3185,16 @@
     "authAction.authorize.popupBlocked":
       "你的浏览器目前似乎正在阻止弹出窗口。请允许弹出窗口以继续",
     "authErrors.alreadyVerifiedPhoneNumber.message": "你已经验证过此电话号码。",
+    "authErrors.badFriendlyName": "不能使用认证器名称",
+    "authErrors.duplicateFriendlyName": "认证器名称已经在使用中",
+    "authErrors.emptyFriendlyName": "认证器名称不能为空",
     "authErrors.genericMfaError.message": "出了些问题。",
+    "authErrors.invalidCountryCode.message": "国家代码是无效的。",
     "authErrors.invalidMfaCode.message": "提供的代码不正确，请再试一次",
     "authErrors.invalidPhoneNumber.message": "电话号码无效。",
     "authErrors.maxMethods.message": "已达到给定类型的最大 MFA 方法数。",
+    "authErrors.noPasswordVerification.message":
+      "必须验证您的密码才能继续，请再试一次",
     "automations.AutomationActionSetPropertiesSection.appendAction.label":
       "附加",
     "automations.AutomationActionSetPropertiesSection.property.label": "属性",
@@ -3000,6 +3202,7 @@
       "移除",
     "automations.AutomationActionSetPropertiesSection.replaceAction.label":
       "替换",
+    "automations.AutomationActionSetPropertiesSection.titlePlaceholder": "无题",
     "automations.AutomationCombinatorFilterPopup.deleteFilter.label":
       "删除筛选器",
     "automations.AutomationPagePicker.noResults.label": "无结果",
@@ -3117,6 +3320,8 @@
       "已在 {collection} 中创建页面",
     "automations.buttonTrigger.createdPages":
       "已创建 {numPagesCreated, plural, one { 1 页} other {{numPagesCreated} 页}}",
+    "automations.buttonTrigger.defaultConfirmationWorkflowText":
+      "你确定你要继续吗？",
     "automations.buttonTrigger.defaultContinueWorkflowMessage": "继续",
     "automations.buttonTrigger.defaultStopWorkflowMessage": "取消",
     "automations.buttonTrigger.genericErrorMessage":
@@ -3267,6 +3472,8 @@
     "blockPermissionsSettings.permissionItem.hiddenAccess":
       "更多人可能拥有访问权限",
     "blockPermissionsSettings.permissionItem.linkSharing": "分享到网络",
+    "blockPermissionsSettings.permissionItem.membersTeamName.hidden":
+      "私人团队空间的成员",
     "blockPermissionsSettings.permissionItem.teamAccess": "{teamName} 的成员",
     "blockPermissionsSettings.permissionItem.teamAccess.privateTeam":
       "私人团队空间的成员",
@@ -3390,9 +3597,10 @@
     "businessPlan.title": "商业版",
     "buttonBlock.actions": "操作",
     "buttonBlock.button.addIcon": "添加图标",
-    "buttonBlock.button.clickToEdit": "点击编辑按钮",
+    "buttonBlock.button.clickToEdit": "点击以编辑按钮",
     "buttonBlock.button.done": "完成",
     "buttonBlock.button.iconHeading": "图标",
+    "buttonBlock.button.insufficientPermissions": "你没有权限运行这个按钮",
     "buttonBlock.button.label": "标签",
     "buttonBlock.button.placeholder": "新按钮",
     "buttonBlock.configureTemplate.button.label": "配置按钮",
@@ -3737,7 +3945,7 @@
     "collectionFilterMenuHelpers.operator.enumDoesNotContain": "不包含",
     "collectionFilterMenuHelpers.operator.enumIs": "是",
     "collectionFilterMenuHelpers.operator.enumIsNot": "不是",
-    "collectionFilterMenuHelpers.operator.every": "每一个",
+    "collectionFilterMenuHelpers.operator.every": "每个",
     "collectionFilterMenuHelpers.operator.isEmpty": "为空",
     "collectionFilterMenuHelpers.operator.isNotEmpty": "不为空",
     "collectionFilterMenuHelpers.operator.locationIs": "是",
@@ -3782,8 +3990,8 @@
     "collectionFilterMenuHelpers.relativeDates.theNextMonth": "下个月",
     "collectionFilterMenuHelpers.relativeDates.theNextWeek": "下周",
     "collectionFilterMenuHelpers.relativeDates.theNextYear": "明年",
-    "collectionFilterMenuHelpers.relativeDates.thePastMonth": "过去一个月",
-    "collectionFilterMenuHelpers.relativeDates.thePastWeek": "过去的一周",
+    "collectionFilterMenuHelpers.relativeDates.thePastMonth": "上个月",
+    "collectionFilterMenuHelpers.relativeDates.thePastWeek": "上周",
     "collectionFilterMenuHelpers.relativeDates.thePastYear": "去年",
     "collectionFilterMenuHelpers.relativeDates.thisWeek": "本周",
     "collectionFilterMenuHelpers.relativeDates.today": "今天",
@@ -3933,6 +4141,8 @@
     "collectionTabBar.showMoreViews.title": "其他 {moreViewsCount} 个...",
     "collectionTabBar.viewTab.tooltip":
       "{viewType, select, Table {{collection}的表格视图} Board {{collection}的看板视图} Timeline {{collection}的时间轴视图} Calendar {{collection}的日历视图} List {{collection}的列表视图} Gallery {{collection}的画廊视图} other {集合}}",
+    "collectionUniqueIdHelpers.prefixInvalidError":
+      "前缀必须以字母开头，后面是一个或多个（最多六个）字母数字字符或连字符。",
     "collectionUniqueIdHelpers.prefixTooShort":
       "仅允许使用字母数字字符和短划线",
     "collectionUniqueIdHelpers.prefixTooShortError": "密钥必须在 2-7 个字符内",
@@ -3996,9 +4206,32 @@
     "comment.unfurl.resolvedStatus": "已解决",
     "comments.learn": "了解评论",
     "comments.showLessLabel": "显示更少",
+    "completionActions.genericError":
+      "AI暂时无法使用。几分钟后再试。 ({errorCode})",
+    "completionActions.moderationError":
+      "AI不允许有害或非法的内容。请修改您的输入并再次尝试。(451)",
+    "completionActions.providerError":
+      "我们的人工智能供应商遇到了问题。几分钟后再试。 ({errorCode})",
     "completionActions.refreshCompletion.errorMessage":
       "出了些问题（错误代码 {errorCode} ）。",
+    "completionPopup.blogPost.prefilledValue": "写一篇关于的博文",
+    "completionPopup.brainStorm.prefilledValue": "集思广益，关于",
+    "completionPopup.creativeStory.prefilledValue": "写一个有关的创意故事",
+    "completionPopup.essay.prefilledValue": "写一篇关于",
+    "completionPopup.jobDescription.prefilledValue": "写一份关于工作的描述",
+    "completionPopup.meetingAgenda.prefilledValue": "撰写会议议程，内容涉及",
+    "completionPopup.outline.prefilledValue": "写一份关于以下内容的提纲",
+    "completionPopup.poem.prefilledValue": "写一首关于的诗",
     "completionPopup.prefilledValue": "编写关于 {prefilledValue}",
+    "completionPopup.pressRelease.prefilledValue":
+      "撰写一份关于以下内容的新闻稿",
+    "completionPopup.prosConsList.prefilledValue": "写一份有关的利弊清单",
+    "completionPopup.recruitingEmail.prefilledValue":
+      "写一封关于招聘的电子邮件",
+    "completionPopup.salesEmail.prefilledValue": "写一封关于销售的电子邮件",
+    "completionPopup.socialMediaPost.prefilledValue":
+      "写一篇关于社交媒体的文章",
+    "completionPopup.todoList.prefilledValue": "写一份有关的任务清单",
     "completions.CompletionMenuActionBar.aiDisclaimerTooltip":
       "AI 输出可能不准确或具有误导性",
     "completions.CompletionMenuActionBar.aiDisclaimerTooltipLearnMore":
@@ -4006,7 +4239,7 @@
     "completions.CompletionMenuActionBar.close": "关闭",
     "completions.CompletionMenuActionBar.delete": "放弃",
     "completions.CompletionMenuActionBar.done": "已完成",
-    "completions.CompletionMenuActionBar.feedbackTooltip": "与 Notion 分享反馈",
+    "completions.CompletionMenuActionBar.feedbackTooltip": "向 Notion 提出反馈",
     "completions.CompletionMenuActionBar.insert": "插入",
     "completions.CompletionMenuActionBar.keep": "保留",
     "completions.CompletionMenuActionBar.replace": "替换",
@@ -4099,15 +4332,30 @@
     "confirmUnsubscribePage.loadingMessage": "载入中…",
     "confirmationInputDialog.cancelButton.label": "取消",
     "confluenceAuthentication.APITokenMessage": "API 令牌：",
+    "confluenceAuthentication.accountTypeDropdownCloudOption.label": "云",
+    "confluenceAuthentication.accountTypeDropdownServerOption.label":
+      "服务器/内部部署",
+    "confluenceAuthentication.apiTokenMessage": "符号(APIToken)",
+    "confluenceAuthentication.authenticateButton.label": "认证",
     "confluenceAuthentication.authenticationButton": "身份验证",
+    "confluenceAuthentication.cancelButton.label": "取消",
     "confluenceAuthentication.confluenceVersion": "Confluence 版本 :",
+    "confluenceAuthentication.confluenceVersionDropdownNewVersionOption.label":
+      "7.9或更高版本",
+    "confluenceAuthentication.confluenceVersionDropdownOlderVersionOption.label":
+      "7.9之前",
     "confluenceAuthentication.emailMessage": "邮箱地址：",
+    "confluenceAuthentication.helpButton.caption": "了解进口的情况",
     "confluenceAuthentication.hostMessage": "主机：",
     "confluenceAuthentication.instanceMessage": "Confluence 实例：",
     "confluenceAuthentication.password": "密码 :",
     "confluenceAuthentication.personalAccessTokenMessage": "个人访问令牌 ：",
     "confluenceAuthentication.portMessage": "端口 ：",
     "confluenceAuthentication.siteMessage": "网站：",
+    "confluenceAuthentication.stepsToGetConfluenceAccessToken.captions":
+      "从confluence云获取访问令牌的步骤",
+    "confluenceAuthentication.stepsToGetConfluencePAT.caption":
+      "从confluence服务器获取个人认证令牌的步骤",
     "confluenceAuthentication.titleMessage": "请提供你的有效身份验证详细信息",
     "confluenceAuthentication.username": "用户名称 :",
     "confluenceImportErrors.apiError.message": "无法从 API 获取数据。",
@@ -4139,6 +4387,7 @@
     "confluenceImportOption.actionsMenu.removeIntegration": "移除",
     "confluenceImportOption.search.noResultsPlaceholder": "没有工作区",
     "confluenceImportOption.search.placeholder": "搜索工作区",
+    "confluenceImportOption.search.title": "选择一个要导入的空间",
     "confluenceImportOption.spacesProperty.defaultName": "工作区",
     "confluenceImportStatus.creatingIndex": "创建索引中…",
     "confluenceImportStatus.creatingPages": "正在创建页面...",
@@ -4173,6 +4422,8 @@
     "connectedAppsSettingsItem.connectAnotherAccountLink": "绑定另一个帐户",
     "connectedAppsSettingsItem.disconnectLink": "解除绑定",
     "connectedRelationPropertyMenuResults.addPageButton.label": "添加页面",
+    "connectedRelationPropertyMenuResults.askAdminToAuthenticateButton.title":
+      "要求你的工作空间管理员配置GitHub",
     "connectedRelationPropertyMenuResults.authenticateButton.title":
       "连接到 {integration}",
     "connectedRelationPropertyMenuResults.authenticateHeader.title":
@@ -4180,6 +4431,8 @@
     "connectedRelationPropertyMenuResults.exactMatchAddPage.label":
       "已找到完全匹配",
     "connectedRelationPropertyMenuResults.fetchingData": "正在获取数据...",
+    "connectedRelationPropertyMenuResults.githubPrRelationUserEducation.help":
+      "通过将唯一的任务ID添加到PR标题中，将GitHub PR链接到该任务上",
     "connectedRelationPropertyMenuResults.notMatched.help":
       "在 {integration} 中找不到结果。",
     "connectedRelationPropertyMenuResults.unsupportedUrlErrorDialog.closeButton":
@@ -4263,6 +4516,7 @@
     "cookieConsent.customizeCookies.header": "自定义 cookie",
     "cookieConsent.dismissButton.label": "完成",
     "cookieConsent.moreOptionsButton.label": "更多选项",
+    "cookieConsent.rejectAllButton.label": "拒绝所有",
     "cookieConsent.reloadAfterSave.message":
       "Notion 将重新加载以使你的 cookie 首选项生效。点击 OK 继续。",
     "cookieConsent.saveError": "无法记录 cookie 同意书，请稍后再试。",
@@ -4486,6 +4740,8 @@
     "database.calendarView.dateProperty.defaultName": "日期",
     "database.calendarView.missingDateProperty":
       "无法呈现此视图，因为数据库缺少日期属性。",
+    "database.calendarView.nextMonthButton.label": "下个月",
+    "database.calendarView.previousMonthButton.label": "上个月",
     "database.calendarView.todayButton.label": "今天",
     "database.collectionEditGroupMenu.newGroupLabel.placeholder": "新建群组",
     "database.collectionEditGroupMenu.renameGroupLabel.placeholder":
@@ -4623,12 +4879,12 @@
     "database.filterMenu.wrapInGroupMenuTitle": "包装成组",
     "database.filterOperatorValue.checkboxPlaceholder.title": "选择一个值",
     "database.filterOperators.and": "与",
-    "database.filterOperators.andCaption": "必须满足所有筛选规则",
+    "database.filterOperators.andCaption": "必须满足所有筛选器",
     "database.filterOperators.any": "任何",
-    "database.filterOperators.every": "每个",
+    "database.filterOperators.every": "每",
     "database.filterOperators.none": "无",
     "database.filterOperators.or": "或",
-    "database.filterOperators.orCaption": "必须满足至少一个筛选规则",
+    "database.filterOperators.orCaption": "必须满足至少一个筛选器",
     "database.filterValue.checkboxType.checked.title": "已勾选",
     "database.filterValue.checkboxType.unchecked.title": "未勾选",
     "database.filterValue.clear.message": "清除",
@@ -5369,6 +5625,8 @@
     "database.viewSettings.propertyTab.autoIncrementIdPrefixPreview":
       "{prefixWithHyphen}1, {prefixWithHyphen}2, {prefixWithHyphen}3, ...",
     "database.viewSettings.propertyTab.autoIncrementIdPrefixSubmit": "更新前缀",
+    "database.viewSettings.propertyTab.changePrefixConfirmationMessage":
+      "你确定吗？更新前缀会使依赖此ID的第三方自动程序不同步（例如GitHub）。",
     "database.viewSettings.propertyTab.deleteButton.title": "删除属性",
     "database.viewSettings.propertyTab.deleteProperty.modal.confirmButton":
       "删除",
@@ -5392,6 +5650,8 @@
     "database.viewSettings.propertyTab.showInViewButton.title": "在视图中显示",
     "database.viewSettings.propertyTab.title": "编辑属性",
     "database.viewSettings.propertyTypeSection.connected": "已连接",
+    "database.viewSettings.propertyTypeSection.connected.authFail":
+      "认证失败。请再试一次或联系Notion支持。",
     "database.viewSettings.propertyTypeSection.suggested": "建议的",
     "database.viewSettings.propertyTypeSelect.searchPlaceholder":
       "搜索或添加新属性",
@@ -5623,7 +5883,6 @@
     "datePropertyMenu.timeSearch.placeholder": "搜索时区…",
     "datePropertyMenu.timezoneMenu.noResults": "无结果",
     "datePropertyMenu.timezoneMenu.select.placeholder": "选择时区",
-    "dateRangeMenu.relativeDateToggle.mobileButton.label": "使用相对日期",
     "dbTypesHelpers.custom.caption": "从头开始创建数据库",
     "dbTypesHelpers.custom.displayName": "任何内容",
     "dbTypesHelpers.docs.caption": "组织团队文档",
@@ -5697,6 +5956,8 @@
       "当用户授权你集成时，将会向他们显示这些请求的功能。有关更多帮助，请参阅<inlinetextlink>开发者文档</inlinetextlink>。",
     "developerIntegrationForm.capabilities.comment_capabilities.title":
       "评论功能",
+    "developerIntegrationForm.capabilities.content_capabilities.headerTitle":
+      "内容能力",
     "developerIntegrationForm.capabilities.content_capabilities.title":
       "内容功能",
     "developerIntegrationForm.capabilities.insert_comment.caption":
@@ -5727,6 +5988,8 @@
     "developerIntegrationForm.capabilities.update_content.caption":
       "请求更新现有内容。",
     "developerIntegrationForm.capabilities.update_content.title": "更新内容",
+    "developerIntegrationForm.capabilities.user_capabilities.headerTitle":
+      "用户能力",
     "developerIntegrationForm.capabilities.user_capabilities.title": "用户功能",
     "developerIntegrationForm.clientSecret.confirmationModal.alreadyViewedMessage":
       "你已查看客户端密钥。再次查看将撤销该密钥并生成新的密钥。请确保你安全地存储了密钥。",
@@ -5751,6 +6014,9 @@
     "developerIntegrationForm.email.label": "支持电子邮件",
     "developerIntegrationForm.email.subtitle":
       "用于链接到集成页面和身份验证屏幕中的集成支持电子邮件。",
+    "developerIntegrationForm.error.invalidInput": "{ fieldName }是无效的。",
+    "developerIntegrationForm.error.missingFieldRequired":
+      "{ fieldName }是必须的。",
     "developerIntegrationForm.external_client_id.label": "OAuth 客户端 ID",
     "developerIntegrationForm.external_client_secret.label": "OAuth 客户端密钥",
     "developerIntegrationForm.external_deletion_url.caption":
@@ -5798,6 +6064,7 @@
     "developerIntegrationForm.sectionCaption.unfurling":
       "访问<previewlab>链接预览实验室</previewlab>，规划展开预览和响应。",
     "developerIntegrationForm.sectionHeader.basic": "基本信息",
+    "developerIntegrationForm.sectionHeader.capabilities": "能力",
     "developerIntegrationForm.sectionHeader.external_oauth": "外部授权设置",
     "developerIntegrationForm.sectionHeader.links": "组织信息",
     "developerIntegrationForm.sectionHeader.oauth": "OAuth 域和 URI",
@@ -5836,6 +6103,7 @@
     "developerIntegrationFormBasicView.space.label": "相关的工作空间",
     "developerIntegrationFormBasicView.space.subtitle":
       "选择一个工作区来安装该集成。你可以在以后升级该集成以使用OAuth。",
+    "developerIntegrationFormCapabilitiesView.capabilities.label": "能力",
     "developerIntegrationFormHandler.create.developerTerms":
       "提交即表示你同意 Notion 的<developertermslink>开发者条款</developertermslink>。",
     "developerIntegrationFormHandler.createIntegration.confirmationModal.confirm":
@@ -5860,6 +6128,10 @@
       "在你提交表单之前，不会保存更改。",
     "developerIntegrationFormRegexRule.deletionModal.title":
       "是否确实要删除此正则表达式模式规则？",
+    "developerIntegrationFormSecretView.clientId.label": "OAuth客户端ID",
+    "developerIntegrationFormSecretView.clientSecret.label": "OAuth客户秘密",
+    "developerIntegrationFormSecretView.integrationAuthUrl.label": "授权网址",
+    "developerIntegrationFormSecretView.token.label": "内部集成令牌",
     "developerIntegrationFormValidator.sampleUrls.sampleUrlDoesNotMatchProvidedDomain.error":
       "URL“{value}”与提供的域名不匹配。",
     "developerIntegrationFormValidator.sampleUrls.sampleUrlDoesNotMatchProvidedRegexes.error":
@@ -6324,7 +6596,7 @@
     "enterprisePlan.label": "企业版",
     "enterprisePlan.title": "企业版",
     "enterpriseSpaceAnalyticsSettingsPrompt.caption.member":
-      "通过工作区分析，查看浏览次数或独立访问者数量等指标，了解内容的效果。",
+      "通过工作区分析，查看浏览次数或特殊访客数量等指标，了解内容的效果。",
     "enterpriseSpaceAnalyticsSettingsPrompt.caption.workspaceOwner":
       "通过工作区分析探索成员和访客如何与此工作区互动、进行的常见搜索以及内容参与度指标。",
     "enterpriseSpaceAnalyticsSettingsPrompt.cta": "查看指标",
@@ -6651,6 +6923,23 @@
     "followTabButton.title": "正在关注",
     "followTabButton.tooltip":
       "你关注的页面的更新会在这里显示。<helpCenterLink>了解更多</helpCenterLink>",
+    "forcePasswordResetEmail.body.greeting": "嗨，{姓名}。",
+    "forcePasswordResetEmail.body.intro":
+      "我们之所以联系你，是因为与你的电子邮件相关的用户名和密码组合已在互联网上公开，它可能被用来访问你的Notion账户。",
+    "forcePasswordResetEmail.body.line1":
+      "为了您的账户安全，我们已经将您的Notion账户注销。",
+    "forcePasswordResetEmail.body.line2":
+      "下次登录时，你需要提供一个发送到你邮箱的一次性代码。",
+    "forcePasswordResetEmail.body.line3":
+      "然后，我们建议你在你的账户设置中<a>设置一个新的密码</a>。我们强烈建议为每个不同的网站使用一个独特的密码。",
+    "forcePasswordResetEmail.body.line4":
+      "你可能还想考虑改变你的密码，并在你认为可能受到影响的任何其他服务上设置双因素认证（2FA），包括你的电子邮件供应商。",
+    "forcePasswordResetEmail.body.line5":
+      "如果你有任何问题或其他顾虑，不要犹豫，请与我们联系，team@makenotion.com。",
+    "forcePasswordResetEmail.body.signoff": "观念安全",
+    "forcePasswordResetEmail.subjectLine": "观念的安全警报",
+    "forcePasswordResetEmail.text.label":
+      "为了您的账户安全，我们已经将您的Notion账户注销。下次登录时，你需要用发送到你邮箱的一次性代码来登录。",
     "forkPageActions.loadingStateDisplayText":
       "正在将“{blockTitle}”的副本保存到“{spaceTitle}”…",
     "forkPageActions.untitledBlockRecordTitle": "无标题",
@@ -6845,11 +7134,19 @@
     "fullscreenRenderer.imageCount.label":
       "第 {currentIndex} 个，共 {totalCount} 个",
     "general.mfa.error.incorrectBackupCode":
-      "备份代码没有起作用，请尝试重新输入或使用不同的代码。",
+      "备份代码无效，请尝试重新输入或使用不同的代码。",
     "general.mfa.error.incorrectPassword": "密码不正确。",
     "general.mfa.error.incorrectSMSCode":
       "代码无效，请尝试重新输入或重新发送代码。",
     "general.mfa.error.incorrectTOTPCode": "代码无效，请尝试重新输入。",
+    "general.mfa.error.smsAlreadyVerifedPhoneNumber": "电话号码已被核实。",
+    "general.mfa.error.smsEmptyFriendlyName": "电话号码不能为空",
+    "general.mfa.error.smsEmptyPhoneNumber": "电话号码不能为空",
+    "general.mfa.error.smsInvalidCountryCode": "国家代码是无效的",
+    "general.mfa.error.smsInvalidPhoneNumber": "该电话号码是无效的",
+    "general.mfa.error.totpBadFriendlyName": "不能使用认证器名称",
+    "general.mfa.error.totpDuplicateFriendlyName": "认证器名称已经在使用中",
+    "general.mfa.error.totpEmptyFriendlyName": "认证器名称不能为空",
     "general.mfa.error.unexpectedError": "出了些问题，请重试",
     "genericDialogModal.cancelButton.label": "取消",
     "genericErrors.genericErrorMessage": "出了些问题。",
@@ -6999,6 +7296,7 @@
     "id.completions.changeToneProfessional": "专业",
     "id.completions.changeToneStraightforward": "简单明了",
     "id.completions.changeToneType": "选择语气",
+    "id.completions.cleanUpFormatting": "清理格式化",
     "id.completions.conclusion": "结论",
     "id.completions.continueWriting": "继续编写",
     "id.completions.creativeStory": "创意故事",
@@ -7353,10 +7651,10 @@
     "importTrello.statusProperty.complete": "已完成",
     "importTrello.statusProperty.inProgress": "进行中",
     "inAppNotificationsFollowingOptionsHelpers.allComments.caption":
-      "通知所有评论和@提及",
+      "所有评论和@提及通知",
     "inAppNotificationsFollowingOptionsHelpers.allComments.label": "所有评论",
     "inAppNotificationsFollowingOptionsHelpers.mentionsAndReplies.caption":
-      "通知评论回复和@提及的情况",
+      "评论回复和@提及通知",
     "inAppNotificationsFollowingOptionsHelpers.mentionsAndReplies.label":
       "回复和@提及",
     "inactiveSCIMTokenEmail.subjectLine.text":
@@ -7647,6 +7945,7 @@
     "login.mfa.methodChooser.anotherAccount": "登录另一个帐户",
     "login.mfa.methodChooser.chooseMethodTitle": "验证你的身份",
     "login.mfa.methodChooser.needHelp": "需要帮助？",
+    "login.mfa.mfaPrompt.needHelp": "需要帮助吗？",
     "login.mfa.sms.anotherMethod": "尝试其他方法",
     "login.mfa.sms.verifyCodeButton": "继续",
     "login.mfa.sms.verifyCodeHeader":
@@ -7980,6 +8279,14 @@
       "验证其他身份验证器应用",
     "mfa.updateSettings.addMoreSection.addAnotherAuthenticator.button.title":
       "添加其他身份验证器",
+    "mfa.updateSettings.addMoreSection.addAnotherAuthenticator.disabled.button.message":
+      "添加了2个认证人中的2个",
+    "mfa.updateSettings.addMoreSection.addAnotherPhoneNumber.button.message":
+      "添加了2个电话的{numOfSmsSettings}。",
+    "mfa.updateSettings.addMoreSection.addAnotherPhoneNumber.button.title":
+      "添加电话号码",
+    "mfa.updateSettings.addMoreSection.addAnotherPhoneNumber.disabled.button.message":
+      "添加了2部电话中的2部",
     "mfa.updateSettings.title": "双重验证",
     "mfa.updateSettings.turnOffVerification.button.message": "关闭双重验证",
     "miroBlock.embeds.button.label": "嵌入 Miro",
@@ -8925,14 +9232,14 @@
       "使用“/”菜单向你的模板添加相关块和说明。",
     "onboardingChecklist.addBlockTitle": "添加块",
     "onboardingChecklist.addContextInProjectDocsText":
-      "每个项目和任务都包含一个页面，你可以在期中添加更多信息。你可以把它看作是你的团队的所有项目信息的 一站式商店。要添加项目概述、目标和更多信息，只需开始输入。",
+      "每个项目和任务都包含一个页面，你可以在期中添加更多信息。你可以把它看作你团队的所有项目信息的 一站式商店。要添加项目概述、目标和更多信息，开始输入即可。",
     "onboardingChecklist.addContextInProjectDocsTitle":
       "在项目文档中添加上下文",
     "onboardingChecklist.addCustomPropertiesText":
       "就像项目一样，你可以添加自定义字段来对任务进行分类。根据你的需要，在所有任务中添加更多的属性。开始时可以试试标签或优先级。",
     "onboardingChecklist.addCustomPropertiesTitle": "添加自定义属性",
     "onboardingChecklist.addFullyCustomPropertiesText":
-      "对于跨多个项目的更高级跟踪需求，添加自定义属性 — 如标签、人员、日期等。为属性命名，并添加信息。",
+      "针对跨多个项目的更高级跟踪需求，添加自定义属性 — 如标签、人员、日期等。为属性命名，并添加信息。",
     "onboardingChecklist.addFullyCustomPropertiesTitle": "添加完全自定义的属性",
     "onboardingChecklist.addSuggestedPropertiesText":
       "单击“+ 添加属性”以查看项目数据库的建议字段列表。添加后，这些字段将显示在你创建的每个项目中。试着从“优先级”开始。",
@@ -8977,23 +9284,23 @@
       "使用右侧的“...”菜单以更多方式自定义 - 例如按受托人而不是项目对任务进行分组，或添加子任务。",
     "onboardingChecklist.customizeViewOptionsTitle": "自定义视图选项",
     "onboardingChecklist.gettingStartedPageAddBasicDetailsText":
-      "Notion 中的属性可帮助你大规模地组织项目。为你的第一个项目指定状态（例如“进行中”），并指定接下来两周的日期范围。系统会根据相关任务自动计算完成度。",
+      "Notion 中的属性可帮助你大规模地组织项目。为你的第一个项目指定状态（例如“进行中”），并指定接下来两周的日期范围。系统会根据相关任务自动计算完成情况。",
     "onboardingChecklist.gettingStartedPageAddBasicDetailsTitle":
       "添加基本细节",
     "onboardingChecklist.gettingStartedPageForPMOpenProjectText":
-      "点击项目名称即可开始使用。这将打开你的项目主页。在这里，你将添加关于你的项目的细节，并获得相关任务的整体视图。",
+      "点击项目名称即可开始使用。这将打开你的项目主页。在这里，你将添加项目细节，并获得相关任务的整体视图。",
     "onboardingChecklist.gettingStartedPageForPMOpenProjectTitle":
       "打开你的项目",
     "onboardingChecklist.gettingStartedPageGiveYourProjectANameText":
-      "项目是任务管理层次结构的顶层。它们通常有设定的开始和结束日期，由任务和子任务组成。最适合特定目标，而不是正在进行的工作。",
+      "项目是任务管理层次结构的顶层。它们通常有设定的开始和结束日期，由任务和子任务组成。最适用于特定目标，而不是正在进行的工作。",
     "onboardingChecklist.gettingStartedPageGiveYourProjectANameTitle":
       "为项目命名",
     "onboardingChecklist.gettingStartedPageNextTitle":
-      "继续看下一节，了解如何添加自定义字段 →",
+      "继续到下一节，了解如何添加自定义字段 →",
     "onboardingChecklist.gettingStartedPageUpdateYourPageIcon":
       "更新你的页面图标",
     "onboardingChecklist.gettingStartedPageUpdateYourPageIconText":
-      "享受乐趣吧！表情符号可识别 Notion 中的页面，并有助于为你的项目页面增添一些特色。",
+      "享受乐趣吧！表情符号可标识 Notion 中的页面，并为你的项目页面增添一些特色。",
     "onboardingChecklist.share.addTeammates.text":
       "和团队一起工作吗？通过从“设置”和“成员”菜单添加团队成员，您可以共享所有相同的Notion工作空间。",
     "onboardingChecklist.share.addTeammates.title": "添加团队成员",
@@ -9018,10 +9325,10 @@
       "使用我们的<a>模板画廊</a>浏览模板！",
     "onboardingChecklist.tipsAndTricks.title": "了解详情",
     "onboardingChecklist.visualizeYourViewText":
-      "点击“我的”，只查看分配给你的任务，点击“人员”，查看按受让人分类的所有任务。",
+      "点击“我的”，只查看分配给你的任务；点击“人员”，查看按受让人分类的所有任务。",
     "onboardingChecklist.visualizeYourViewTitle": "可视化视图",
     "onboardingChecklist.whatAreDatabaseTemplatesText":
-      "如果你发现自己反复创建同一类型的任务，数据库模板可以作为蓝图来加速这一过程。定义一个任务类型，然后点击一下即可复制页面结构和属性。",
+      "如果你发现自己反复创建同一类型的任务，则可以将数据库模板作为蓝图来加速这一过程。定义一个任务类型，然后点击一下即可复制页面结构和属性。",
     "onboardingChecklist.whatAreDatabaseTemplatesTitle": "什么是数据库模板？",
     "onboardingChecklist.whatIsNotion.mainUsecases":
       "使用Notion，您可以执行各种任务，包括这些任务。",
@@ -9082,6 +9389,7 @@
     "onboardingChecklistButton.whatIsNotion.displayName": "Notion 是什么？",
     "onboardingDesktopAppDownload.continueButton.label": "转到 Notion",
     "onboardingHelpers.personalWorkspaceName": "{userName}的 Notion",
+    "onboardingIntent.error.optionNotChosen": "请选择一个选项。",
     "onboardingInvite.addEmail.caption":
       "输入或粘贴一个或多个邮箱地址，以逗号、空格或换行符分隔。",
     "onboardingInvite.bulkInvites.placeholder":
@@ -9121,8 +9429,11 @@
     "onboardingProfile.continueButton.footerLabel": "继续",
     "onboardingProfile.continueButton.label": "继续",
     "onboardingProfile.dialogError.photoUploadFailure.message": "上传失败。",
+    "onboardingProfile.intentButtonLabel.life": "生命",
+    "onboardingProfile.intentButtonLabel.school": "学校",
+    "onboardingProfile.intentButtonLabel.work": "工作",
     "onboardingProfile.missingEmail.message":
-      "你的帐户没有电子邮件。请联系客服。",
+      "你的帐户没有电子邮箱。请联系客服。",
     "onboardingProfile.mobileNameInput.placeholder":
       "例如 Ada Lovelace、Ada、AL",
     "onboardingProfile.mobileNameQuestion.label": "我们应该怎么称呼你？",
@@ -9134,15 +9445,14 @@
     "onboardingProfile.nameQuestion.label": "我们应该怎么称呼你？",
     "onboardingProfile.nameQuestion.label_exp01": "全名",
     "onboardingProfile.nameUndefinedError.message": "未填写名称。",
-    "onboardingProfile.nameUndefinedError.message_exp01": "请填写你的姓名。",
+    "onboardingProfile.nameUndefinedError.message_exp01": "请填写姓名。",
     "onboardingProfile.passwordInput.label": "设置密码",
     "onboardingProfile.passwordInput.label_exp01": "密码",
     "onboardingProfile.passwordInput.placeholder": "新密码",
     "onboardingProfile.passwordInput.subtext":
       "必须包含 8 个以上字符和 2 个特殊字符 (!@#$*!)",
     "onboardingProfile.passwordUndefinedError.message": "未填写密码。",
-    "onboardingProfile.passwordUndefinedError.message_exp01":
-      "请填写你的密码。",
+    "onboardingProfile.passwordUndefinedError.message_exp01": "请填写密码。",
     "onboardingProfile.stage.subtitle": "首先，请向我们介绍一下你自己。",
     "onboardingProfile.stage.subtitle_exp01": "你是以 {email} 的身份注册的。",
     "onboardingProfile.stage.title": "欢迎来到 Notion",
@@ -9240,6 +9550,8 @@
     "onboardingWorkspacePlanChoose.step.subtitle":
       "我们将通过你的选择简化初期设置。",
     "onboardingWorkspacePlanChoose.step.title": "你打算如何使用 Notion？",
+    "onboardingWorkspacePlanChoose.step.title_exp01":
+      "欢迎{姓名}!您想用Notion做什么？",
     "onboardingWorkspacePlanChoose.teamUseCaseButton.description":
       "协作处理你的文档、项目和知识库。",
     "onboardingWorkspacePlanChoose.teamUseCaseButtonExperiment.label":
@@ -9252,6 +9564,7 @@
     "openAndDefaultTeamInformation.title": "开放式",
     "openInDesktopAppPopup.alwaysOpenLinksLabel": "始终在应用中打开",
     "openInDesktopAppPopup.appDownloadButton": "没有此应用？请下载",
+    "openInDesktopAppPopup.closeButton": "解散",
     "openInDesktopAppPopup.header": "在 Notion 的桌面应用中打开？",
     "openInDesktopAppPopup.learnMoreButton": "没有此应用？了解更多",
     "openInDesktopAppPopup.openInAppButton": "在应用中打开",
@@ -9624,6 +9937,8 @@
     "pageViewBlock.templatePageBanner.learnMoreLink": "了解更多",
     "pageViewBlock.templatePageBanner.mobile.editTemplateLabel":
       "{pageTitleWithIcon}<mediumtext>中的模板</mediumtext>",
+    "pageViewBlock.templatePageBanner.viewTemplateLabel":
+      "<mediumtext>你正在查看</mediumtext>{pageTitleWithIcon}<mediumtext>中的一个模板</mediumtext>`。",
     "pageViewBlock.trashBanner.deletePermanentlyButton.label": "永久删除",
     "pageViewBlock.trashBanner.message": "此页面位于垃圾箱中。",
     "pageViewBlock.trashBanner.restoreButton.label": "恢复页面",
@@ -10105,7 +10420,7 @@
     "privatePageBadge.label": "私人",
     "privatePageBadge.tooltip": "只有你可以访问此页面",
     "profileSeettings.mfa.verifyIdentity.withBackupCode.header":
-      "输入你的一个备份代码",
+      "输入你的其中一个备份代码",
     "profileSeettings.mfa.verifyIdentity.withSMS.header":
       "输入发送到 {phoneHint} 的代码。",
     "profileSeettings.mfa.verifyIdentity.withTOTP.header":
@@ -10189,6 +10504,7 @@
     "profileSettings.mfa.sms.addPhoneNeedHelp": "需要帮助？",
     "profileSettings.mfa.sms.addPhoneTitle": "添加电话号码",
     "profileSettings.mfa.sms.continueButton": "继续",
+    "profileSettings.mfa.sms.phoneNumberInput.placeholder": "输入电话号码",
     "profileSettings.mfa.sms.setupComplete.confirmation.title":
       "使用电话号码的双重验证已开启",
     "profileSettings.mfa.sms.verifyCodeButton": "验证代码",
@@ -10199,6 +10515,8 @@
     "profileSettings.mfa.sms.verifyCodeNeedHelp": "需要帮助？",
     "profileSettings.mfa.sms.verifyCodeTitle": "验证电话号码",
     "profileSettings.mfa.totp.authenticatorNameInput": "身份验证器名称",
+    "profileSettings.mfa.totp.authenticatorNameInput.placeholder":
+      "输入认证器名称",
     "profileSettings.mfa.totp.cantScanCodeButton": "无法扫描代码？",
     "profileSettings.mfa.totp.confirmationAddMethod": "添加其他方法",
     "profileSettings.mfa.totp.confirmationHeader":
@@ -10219,6 +10537,8 @@
     "profileSettings.mfa.totp.settingsVerifyTryAnotherMethod": "尝试其他方法",
     "profileSettings.mfa.totp.setupComplete.confirmation.title":
       "使用身份验证器的双重验证已开启",
+    "profileSettings.mfa.totp.typeText.message":
+      "在添加新的一次性密码时，将此粘贴在认证器应用程序中",
     "profileSettings.mfa.totp.typeTextCodeHeader":
       "使用<authenticatorlink>身份验证器应用</authenticatorlink>生成一次性代码",
     "profileSettings.mfa.totp.typeTextCodeTitle": "键入身份验证器中的代码",
@@ -10268,6 +10588,8 @@
     "profileSettings.personalInfoSection.emailSetting.label": "电子邮件地址",
     "profileSettings.personalInfoSection.nameInput.label": "首选名称",
     "profileSettings.personalInfoSection.nameMissing.message": "请填写姓名。",
+    "profileSettings.personalInfoSection.profilePhoto.replace": "替换照片",
+    "profileSettings.personalInfoSection.profilePhoto.upload": "上传照片",
     "profileSettings.personalInfoSection.title": "个人资料",
     "profileSettings.profilePhotoSection.removePhotoButton.label": "移除",
     "profileSettings.profilePhotoSection.title": "照片",
@@ -10292,6 +10614,8 @@
     "pushNotification.authorPhrase.unknown": "未知作者",
     "pushNotification.blockEdited.notificationSubject":
       "{userName} 编辑了 {blockName}",
+    "pushNotification.blockPropertyEdited.notificationSubject":
+      "{userName}编辑了{blockName}。",
     "pushNotification.deletedBlock.notificationContents":
       "[已删除] {renderedBlock}",
     "pushNotification.emptyBlockPropertyValueEdited.placeholderLabel": "空",
@@ -10403,7 +10727,7 @@
     "quoteBlock.emptyQuote.placeholder": "空白引用",
     "rateLimitError.message": "请稍后再试。",
     "readGuideForPM.section1.academy.text":
-      "<a>Notion 学院</a>，为每个级别和用例提供课程",
+      "<a>Notion 学院</a>，提供针对每个级别和用例的课程",
     "readGuideForPM.section1.deeperTemplate.text":
       "深入了解高级项目管理功能 → <a>使用子任务和依赖项将任务分解成可管理的步骤</a>",
     "readGuideForPM.section1.recommendedTemplate.text":
@@ -10851,11 +11175,13 @@
     "settings.workspaceAnalytics.contentTab.pages.tooltip.allTime":
       "你在工作区可以访问的页面上的所有时间活动",
     "settings.workspaceAnalytics.contentTab.pages.tooltip.lastDays":
-      "你可以访问的页面上 {dateRange} 的活动",
+      "你可以访问的页面上自 {dateRange} 起的活动",
     "settings.workspaceAnalytics.contentTab.placeholder": "按标题搜索",
     "settings.workspaceAnalytics.contentTab.timeRange": "视图来自",
     "settings.workspaceAnalytics.dataDisclaimerTooltip":
-      "从 2022 年 8 月 1 日开始提供数据",
+      "从 2022 年 8 月 1 日起可用的数据",
+    "settings.workspaceAnalytics.membersOverTime.allTimeTooltip":
+      "所有时间选择显示在过去90天内浏览过一个页面的会员。",
     "settings.workspaceAnalytics.overviewTab.contentEngagement.tooltip.allTime":
       "工作区中所有页面上的所有时间活动",
     "settings.workspaceAnalytics.overviewTab.contentEngagement.tooltip.lastDays":
@@ -10907,11 +11233,21 @@
     "shareMenu.inviteFailure.snackbarMessage": "无法邀请 {users}",
     "shareMenu.inviteSuccess.snackbarMessage": "已成功邀请 {users}",
     "shareMenu.inviteTargetsInput.placeholder": "添加人员、群组或邮箱地址...",
+    "shareMenu.searchResult.groupPermission.tooltip": "这个小组有权限。",
+    "shareMenu.searchResult.spacePermission.tooltip":
+      "在{spaceIconAndName}的每个人都有权限。",
+    "shareMenu.searchResult.teamGuestPermission.tooltip":
+      "{teamIconAndName}的团队空间客人可以访问。",
+    "shareMenu.searchResult.teamMemberPermission.tooltip":
+      "{teamIconAndName}的团队空间成员有权限。",
+    "shareMenu.searchResult.teamPermission.tooltip":
+      "{teamIconAndName}的团队空间所有者有权限。",
+    "shareMenu.searchResult.userPermission.tooltip": "该用户有权限",
     "shareMenu.sendInvite.label": "发送邀请",
     "shareMenu.share.label": "分享",
     "shareMenu.slackIntegrationName.label": "Slack",
     "shareMenuSearchRequest.importedContactsSection.title": "从 Slack",
-    "shareMenuSearchRequest.inPageSection.title": "页中",
+    "shareMenuSearchRequest.inPageSection.title": "在页面中",
     "shareMenuSearchRequest.inviteNewUser.buttonItem": "邀请 {tokenQuery}",
     "shareMenuSearchRequest.noImportedContacts.text":
       "尝试连接不同的 Slack 工作区或输入邮箱地址",
@@ -11006,6 +11342,8 @@
     "sidebar.templateIntro.content":
       "开箱即用，或根据你自己的工作流程自定义它们。",
     "sidebar.templateIntro.title": "这里有一些模板，可以帮助你入门",
+    "sidebar.turnPageIntoTeamButton.missingTitleDisabledTooltip":
+      "不能把没有标题的页面变成团队空间",
     "sidebar.upgradeButton.prompt":
       "更新你的个人资料、升级到专业版或邀请新成员",
     "sidebar.workspacePagesSection.tooltip":
@@ -11218,7 +11556,7 @@
     "slackNotificationProcessor.collectionRowCreated.notificationContents":
       "{userName} 在 {collectionName} 创建了 {rowName}",
     "slackNotificationProcessor.collectionRowEdited.notificationContents":
-      "{userName} 在 {collectionName} · {date} 进行了编辑",
+      "{userName} 编辑了 {collectionName} · 时间：{date}",
     "slackNotificationProcessor.defaultPropertyName.label": "属性",
     "slackNotificationProcessor.emptyPropertyValue.label": "空",
     "slackNotificationProcessor.propertyValueChanged.notificationContents":
@@ -11470,9 +11808,9 @@
       "用户和访问权限",
     "spaceConnectionsSettings.title": "连接",
     "spaceContentDuplication.activeRequest":
-      "复制此工作区的内容时无法编辑内容。",
+      "复制此工作区的内容时无法编辑该内容。",
     "spaceContentDuplication.completed":
-      "无法编辑已迁移到其他工作区的工作区的内容。",
+      "无法编辑已迁移到其他工作区的工作区内容。",
     "spaceCreditSettings.creditBalanceSection.applyCreditButton.label":
       "使用积分",
     "spaceCreditSettings.creditBalanceSection.creditBalanceMessage":
@@ -11580,7 +11918,7 @@
     "spacePermissionSettings.memberUpsell.caption.fromSinglePlayerPlus":
       "你的工作区目前仅限 1 名成员。请升级到协作性的增强版工作区以邀请更多用户。",
     "spacePermissionSettings.pageGuests.subtitle":
-      "页面访客是免费的，但只能访问他们受邀访问的页面。",
+      "页面访客可免费访问，但只能访问他们受邀访问的页面。",
     "spacePermissionSettings.pageGuests.title": "页面访客",
     "spacePermissionSettings.spaceMembers.inviteLink.caption":
       "分享这个私密链接以邀请他人加入此工作区。只有可以邀请成员的用户可见。",
@@ -11592,6 +11930,32 @@
     "spacePermissionSettingsTrialModal.cancel.label": "取消",
     "spacePermissionSettingsTrialModal.tryItFree.label": "免费试用",
     "spacePermissionsSettings.externalTab.title": "外部",
+    "spacePermissionsSettings.externalTab.userThreeDotMenu.convertToMember.caption":
+      "工作区成员不受限于特定的团队空间",
+    "spacePermissionsSettings.externalTab.userThreeDotMenu.convertToMember.confirmationDialog.confirm":
+      "转换为工作区成员",
+    "spacePermissionsSettings.externalTab.userThreeDotMenu.convertToMember.confirmationDialog.description":
+      "这是一个应收账款事件。",
+    "spacePermissionsSettings.externalTab.userThreeDotMenu.convertToMember.confirmationDialog.message":
+      "你确定要把这个用户转换为工作区成员吗？",
+    "spacePermissionsSettings.externalTab.userThreeDotMenu.convertToMember.snackbar.failure":
+      "转换{email}为工作区成员失败了",
+    "spacePermissionsSettings.externalTab.userThreeDotMenu.convertToMember.snackbar.success":
+      "成功地将{email}转换为工作区成员",
+    "spacePermissionsSettings.externalTab.userThreeDotMenu.convertToMember.title":
+      "转换为会员",
+    "spacePermissionsSettings.externalTab.userThreeDotMenu.removeFromWorkspace.confirmationDialog.confirm":
+      "从工作区移除",
+    "spacePermissionsSettings.externalTab.userThreeDotMenu.removeFromWorkspace.confirmationDialog.description":
+      "这个动作将从工作区完全删除用户，包括他们可以访问的任何团队空间和页面。",
+    "spacePermissionsSettings.externalTab.userThreeDotMenu.removeFromWorkspace.confirmationDialog.message":
+      "你确定要从工作区删除这个用户吗？",
+    "spacePermissionsSettings.externalTab.userThreeDotMenu.removeFromWorkspace.snackbar.failure":
+      "从工作区删除{email}失败了",
+    "spacePermissionsSettings.externalTab.userThreeDotMenu.removeFromWorkspace.snackbar.success":
+      "成功地从工作区移除{email}。",
+    "spacePermissionsSettings.externalTab.userThreeDotMenu.removeFromWorkspace.title":
+      "从工作区移除",
     "spacePermissionsSettings.groupsTab.caption":
       "设置群组以便在分享菜单中方便地控制页面权限。",
     "spacePermissionsSettings.groupsTab.captionWithTeamsV2":
@@ -11901,6 +12265,8 @@
       "付款方式",
     "spaceSubscriptionSettings.upgradeModal.sales.questions":
       "有问题？请联系我们的销售团队了解更多信息。",
+    "spaceSubscriptionSettings.upgradeModal.termsOfService.ai":
+      "通过点击确认购买，您同意Notion AI产品的具体条款。",
     "spaceSubscriptionUpdatePaymentMethod.applePay.total.label":
       "Notion - 我们会定期向你收取费用",
     "spaceSubscriptionUpdatePaymentMethod.creditCard.update.header":
@@ -11969,6 +12335,7 @@
       "你的卡的到期年份是过去的年份。",
     "stripeHelpers.invalidNumber.error.message":
       "你的卡号不是有效的信用卡号码。",
+    "structuredAutomations.createNextSprint.nextSprintName": "沖刺",
     "studentNotEligibleModal.contactUsSection.message":
       "对此有疑问？<inlinelink>更多信息和常见问题解答</inlinelink>。",
     "studentNotEligibleModal.header":
@@ -12161,7 +12528,9 @@
     "subscriptionUpgradeDetails.title.team": "升级到团队版",
     "subscriptionUpgradeDetails.title.teamFree": "升级到团队试用版",
     "subscriptionUpgradeModal.addOn.purchase.button": "确认购买",
-    "subscriptionUpgradeModal.ai.addOn.title": "购买无限的 Notion AI",
+    "subscriptionUpgradeModal.ai.addOn.title": "购买 Notion AI",
+    "subscriptionUpgradeModal.oneLiner.ai":
+      "为你的工作空间启用Notion AI。性能受制于公平使用政策。了解更多",
     "subscriptionUpgradeModal.oneLiner.enterprise":
       "运营公司所需的控制和支持。",
     "subscriptionUpgradeModal.oneLiner.personal":
@@ -12315,6 +12684,8 @@
       "会员",
     "teamMemberPermissionSettings.upgradeGuestConfirmation.roleLabelOwner":
       "业主",
+    "teamMemberPermissionSettings.upgradeGuestConfirmationWithOtherTeamspaces.message":
+      "你确定要把这个用户升级为团队空间的{成员或所有者}吗？他们也将作为成员加入工作空间，他们将成为{numberOfOtherTeams，复数，一个{{numberOfOtherTeams}其他团队空间}其他{{numberOfOtherTeams}其他团队空间}中的成员。｝",
     "teamMembersList.tooltip.overflowMessage": "还有 {countRemainingUsers} 个…",
     "teamMenuHeader.teamMemberCount":
       "{numberOfMembers, plural, other {{numberOfMembers} 位成员}}",
@@ -12340,6 +12711,7 @@
     "teamPermissionsActions.restoredTeam": "已恢复 {teamName}",
     "teamPermissionsActions.restoredTeamNoName": "已恢复团队",
     "teamPermissionsInvite.searchInput.placeholder": "搜索人员或群组",
+    "teamPermissionsInviteOverlay.copyLinkButton.label": "复制邀请链接",
     "teamPermissionsInviteOverlay.inviteModal.addNMembers.groupsAsOwnersTooltip":
       "无法将组添加为团队空间所有者。请删除所有组以继续。",
     "teamPermissionsInviteOverlay.inviteModal.skipForNow": "暂时跳过",
@@ -13017,10 +13389,14 @@
       "所有者属性不能从知识库中删除。",
     "transactionErrors.cannotDowngradeSelfIfOnlyOwner.message":
       "不能将自己降级为成员，因为团队空间必须至少有一个所有者。",
+    "transactionErrors.cannotInviteGuestsByNonAdminAndNonTeamOwner":
+      "只有同时也是工作空间（会员）管理员的团队空间所有者可以邀请人们作为团队空间的客人。",
     "transactionErrors.cannotInviteGuestsToTeam":
       "无法邀请非此工作区成员的人员加入此团队空间。",
     "transactionErrors.cannotInviteSpaceMembersAsTeamGuests":
       "无法邀请工作区成员作为团队空间访客。",
+    "transactionErrors.cannotJoinAsTeamGuestIfSpaceMember.message":
+      "如果你是一个空间的成员，就不能作为团队空间的客人加入团队。",
     "transactionErrors.cannotJoinClosedTeam.message":
       "无法加入封闭式团队空间。请联系该团队空间的所有者以获得邀请。",
     "transactionErrors.cannotJoinPrivateTeam.message":
@@ -13352,6 +13728,8 @@
     "updatesModal.openNotifications.tooltip": "打开通知设定",
     "updatesModal.spaceUpdates.mentionsTab.archiveAllButtonTitle": "全部归档",
     "updatesModal.spaceUpdates.mentionsTab.archiveReadButtonTitle": "归档已读",
+    "updatesModal.spaceUpdates.mentionsTab.archiveUnreadButtonTitle":
+      "归档未读",
     "updatesModal.spaceUpdates.mentionsTab.markAllReadButtonTitle":
       "全部标记为已读",
     "updatesModal.spaceUpdatesTab.allArchived":
@@ -13361,6 +13739,11 @@
     "updatesModal.spaceUpdatesTab.allArchivedTitle": "都看完啦！",
     "updatesModal.spaceUpdatesTab.archiveAllButtonTitle": "全部归档",
     "updatesModal.spaceUpdatesTab.archiveReadButtonTitle": "归档阅读",
+    "updatesModal.spaceUpdatesTab.emptyUnreadMentionsTabButton": "查看全部",
+    "updatesModal.spaceUpdatesTab.emptyUnreadMentionsTabMessage":
+      "你的收件箱里有更多的通知。",
+    "updatesModal.spaceUpdatesTab.emptyUnreadMentionsTabTitle":
+      "你已经读了所有的东西",
     "updatesModal.spaceUpdatesTab.markAllReadButton.disabledTooltip":
       "所有通知均已标记为已读。",
     "updatesModal.spaceUpdatesTab.markAllReadButtonTitle": "全部标记为已读",
@@ -13713,6 +14096,9 @@
     "wikiActions.collectionView.ownerPropertyName": "所有者",
     "wikiActions.collectionView.pagePropertyName": "页面",
     "wikiActions.collectionView.pagesIOwn": "我拥有的页面",
+    "wikiActions.collectionView.tagsDesignValue": "设计",
+    "wikiActions.collectionView.tagsOnboardingValue": "入职培训",
+    "wikiActions.collectionView.tagsPropertyName": "标签",
     "wikiActions.collectionView.verificationPropertyName": "验证",
     "wikiMigrationModal.cancelMessage": "取消",
     "wikiMigrationModal.migrateMessage": "迁移我的知识库",
@@ -13745,7 +14131,7 @@
     "workspaceAnalytics.content.contentEngagement.uniqueViews":
       "{uniquePageViews} 次独特的页面浏览量",
     "workspaceAnalytics.contentTab.contentTable.uniqueViewsColumn.tooltip":
-      "在选定的时期内浏览过页面的用户总数",
+      "在所选期间浏览过页面的用户总数",
     "workspaceAnalytics.contentTab.contentTable.viewsColumn.tooltip":
       "用户浏览该页面的次数",
     "workspaceAnalytics.memberOverTime.tooltip": "显示过去 28 天内活跃的成员",
@@ -13840,9 +14226,9 @@
     "workspaceAnalytics.usersTab.refershUserAnalytics.defaultFailed":
       "无法检索用户分析。请尝试刷新然后重新打开设置。",
     "workspaceAnalytics.usersTab.usersTable.pageEdits.tooltip":
-      "用户在工作区中所有页面上进行的页面编辑总数",
+      "用户在工作区所有页面上进行的页面编辑总数",
     "workspaceAnalytics.usersTab.usersTable.pageViews.tooltip":
-      "用户在工作区中所有页面的页面浏览总数",
+      "用户在工作区所有页面的页面浏览总数",
     "workspaceAnalyticsTabs.content.title": "内容",
     "workspaceAnalyticsTabs.disabled.description":
       "工作区所有者已关闭 {name} 的页面视图记录。{br}此信息不会在工作区设置中或单个页面上提供。",
