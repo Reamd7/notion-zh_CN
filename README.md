@@ -104,6 +104,19 @@ notion-zh_CN 是对notion的汉化脚本。
    
 只是 同样打开 Notion.app\Contents\Resources\app\renderer\ 即可。。（安装包显示有同样目录结构）
 
+也可以使用以下shell脚本：
+   ```shell
+   cd '/Applications/Notion.app/Contents/Resources/app/renderer'
+   echo '强行退出Notion……'
+   killall Notion
+   echo '下载notion-zh_CN.js文件，需github访问权……'
+   curl -# -O 'https://raw.githubusercontent.com/Reamd7/notion-zh_CN/main/notion-zh_CN.js'
+   echo '修改preload.js……'
+   echo '//# sourceMappingURL=preload.js.map' >> preload.js
+   echo 'require("./notion-zh_CN") // 添加该行' >> preload.js
+   echo '修改结束，请重启notion.app'
+   cd - > /dev/null
+   ```
 
 ## cloudflare worker
 
