@@ -18,7 +18,8 @@
   "scripts": {
     "dev-search": "node ./script/fuzzySearchKeywords.js",
     "dev": "cross-env env=DEV node ./script/main.js",
-    "build": "cross-env env=BUILD node ./script/main.js"
+    "build": "cross-env env=BUILD node ./script/main.js",
+    "build:tw": "cross-env env=BUILD node ./script/main_zh_TW.js"
   },
   "devDependencies": {
     "@types/lodash": "^4.14.173",
