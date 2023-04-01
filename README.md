@@ -1,3 +1,5 @@
+# 安卓版本已经更新，请使用更新版本
+
 # notion-zh_CN 是什么？
 
 notion-zh_CN 是对notion的汉化脚本。
