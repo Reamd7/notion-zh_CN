@@ -13,7 +13,7 @@
 // ==/UserScript==
 (function () {
   "use strict";
-  var lang = "zh-CN";
+  var lang = "zh-TW";
   var isSafari =
     navigator.userAgent.includes("Safari/") &&
     !navigator.userAgent.includes("Chrome/");
