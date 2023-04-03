@@ -13255,7 +13255,7 @@
     "spaceSubscriptionBilling.changeVATIDModal.title": "變更 VAT/GST 編號",
     "spaceSubscriptionBilling.changeYourAddressModal.title": "變更你的地址",
     "spaceSubscriptionBilling.discount.percentOff": "{percentOff}% 折扣",
-    "spaceSubscriptionBilling.invoicesSection.invoiceStatus.credited": "已退款",
+    "spaceSubscriptionBilling.invoicesSection.invoiceStatus.credited": "已入账",
     "spaceSubscriptionBilling.invoicesSection.invoiceStatus.due": "已到期",
     "spaceSubscriptionBilling.invoicesSection.invoiceStatus.failed": "失敗",
     "spaceSubscriptionBilling.invoicesSection.invoiceStatus.paid": "已付費",
