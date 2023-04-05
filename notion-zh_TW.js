@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         Notion-zh_TW notion的汉化脚本
 // @namespace    http://tampermonkey.net/
-// @version      2.4.13
+// @version      2.4.14
 // @description  notion的100%汉化脚本，基于官方中文+机器翻译韩文，支持app版本以及网页油猴，地址：https://github.com/reamd7/notion-zh_CN
 // @author       reamd7
 // @match        *://www.notion.so/*
@@ -51,9 +51,9 @@
       "我們傳送的電子郵件中包含可讓你查看順位的連結： <referrallink>referralUrl</referrallink>",
     "Activity.author.unknown": "未知",
     "AddOnDiscountPopup.description":
-      "工作有节奏，写作流畅，思想有创意.立即添加Notion AI并享受工作空间价格特别优惠。",
-    "AddOnDiscountPopup.header": "Notion AI{percentage}获得折扣",
-    "AddOnDiscountPopup.purchase.button": "Notion AI线上",
+      "工作更快速、寫作更優質、思考更廣泛。立即加入 Notion AI，以便存取這項專屬你工作區的特別優惠。",
+    "AddOnDiscountPopup.header": "獲得 Notion AI 的 {percentage} 折扣",
+    "AddOnDiscountPopup.purchase.button": "購買 Notion AI",
     "AiIntroModal.doneMessage": "知道了",
     "AiIntroModal.enable.caption":
       "開啟即表示你同意<inlinelink>這些條款</inlinelink>。",
@@ -134,18 +134,19 @@
     "AlternativeCompletionsPopupContent.stop.shortcut": "esc",
     "AlternativeCompletionsPopupContent.tryAgain.label": "再試一次",
     "AlternativeCompletionsPopupContent.writing": "AI 正在撰寫…",
-    "AsanaImportLogs.brokenLinksLogHeader": "无效链接",
-    "AsanaImportLogs.debuggingInformationHeader": "关于调试(用于Notion)",
-    "AsanaImportLogs.failedProjectsLogHeader": "导入失败的项目列表",
-    "AsanaImportLogs.failedTasksLogHeader": "导入失败的任务列表",
+    "AsanaImportLogs.brokenLinksLogHeader": "中斷的連結",
+    "AsanaImportLogs.debuggingInformationHeader":
+      "除錯資訊（針對 Notion 使用情況）",
+    "AsanaImportLogs.failedProjectsLogHeader": "匯入中失敗專案的列表",
+    "AsanaImportLogs.failedTasksLogHeader": "匯入中失敗任務的列表",
     "AsanaImportLogs.importSummary":
-      "{totalNumberOfProjects}个项目中的{successfulProjectCount}和{totalNumerOfTasks}个操作中已成功将{successfulTaskCount}个从Asana帐户导入。无法获取{failedProjectCount}个项目和{failedTaskCount}个任务。如需了解详情，请参阅下文。",
-    "AsanaImportLogs.warningsLogHeader": "警告",
+      "{successfulProjectCount}/{totalNumberOfProjects} 項專案和 {successfulTaskCount}/{totalNumerOfTasks} 項任務已成功自你的 Asana 帳戶匯入。{failedProjectCount} 項專案和 {failedTaskCount} 項任務匯入失敗（你可以在下方找到詳細資料）。",
+    "AsanaImportLogs.warningsLogHeader": "⚠️警告",
     "AuditLogCSV.exportConfirmationDialog.label": "匯出",
     "AuditLogSettings.copyAuditLogEvent": "拷貝行",
     "AutomationActionSelectButton.actionSection.addAction": "添加任务",
     "AutomationActionSelectMenu.actionTitle.slackNotification":
-      "发送Slack通知...",
+      "发送Slack通知的位置",
     "AutomationCollectionSelectMenu.collection.caption":
       "{collectionName} 中的任何頁面",
     "AutomationCollectionSelectMenu.collectionView.captionDifferentParent":
@@ -257,7 +258,7 @@
     "GuestMembershipRequestModal.sendRequest.button": "送出請求",
     "GuestMembershipRequestModal.title": "請求成為工作區成員。",
     "ItemMultiSelectToolbar.deleteButton.tooltip": "刪除",
-    "LearnMoreLink.learnMore": "了解详情",
+    "LearnMoreLink.learnMore": "了解更多",
     "LuxonDatePropertyMenu.clearButton.label": "清除",
     "LuxonDatePropertyMenu.dateFormatDropdownButton.label": "日期格式",
     "LuxonDatePropertyMenu.formatMenu.emptyButton.label": "空白",
@@ -421,7 +422,7 @@
     "PersonaCollectionModalQuestionSelect.workQuestion.support": "客戶服務",
     "ReactionBar.emojiModalMenu.title": "反應",
     "ReactionBar.hoverTooltip.text":
-      "{names} <medium>做出了</medium> {icon} 的反應。",
+      "{numberOfNames, plural, one {{nameOrNames} <medium>對</medium> {icon} 做出了反應} other {{nameOrNames} <medium>對</medium> {icon} 做出了反應}}",
     "RelationPropertyPageSection.button.addPage": "{propertyName} 的新頁面",
     "RelationPropertyPageSection.button.replacePage":
       "替換 {propertyName} 的連結頁面",
@@ -468,10 +469,15 @@
       "增加您的 AI 點數額度，請將額外的 AI 加入您目前的方案或升級目前的方案。",
     "SpaceSubscriptionPlans.aiCredits.title": "使用 AI 點數",
     "SpaceSubscriptionPlans.aiUsageFraction": "（{used}/{total} 個點數）",
+    "SpaceSubscriptionPlans.billingIntervalMessage":
+      "{billingInterval，select，year{年结算}other{月度结算}}",
     "SpaceSubscriptionPlans.blockUsageFraction": "（{used}/{total} 個區塊）",
     "SpaceSubscriptionPlans.blocksUsed.description":
       "升級您的方案以獲得團隊無限區塊。",
     "SpaceSubscriptionPlans.blocksUsed.title": "團隊使用區塊",
+    "SpaceSubscriptionPlans.everythingInBusiness.title": "业务计划的所有功能+",
+    "SpaceSubscriptionPlans.everythingInFree.title": "免费套餐的所有功能+",
+    "SpaceSubscriptionPlans.everythingInPlus.title": "加套餐的所有功能+",
     "SpaceSubscriptionPlans.includes.advancedSecurityControls": "進階安全控制",
     "SpaceSubscriptionPlans.includes.aiCredits": "10 個免費 AI 點數",
     "SpaceSubscriptionPlans.includes.auditLog": "稽核日誌檔",
@@ -498,16 +504,21 @@
     "SpaceSubscriptionPlans.manageUsage.title": "管理使用情況",
     "SpaceSubscriptionPlans.membersPerMonth.title":
       "<bold>{monthlyPrice}</bold> / 成員 / 月",
+    "SpaceSubscriptionPlans.purchaseAI.label": "AI采购",
     "SpaceSubscriptionPlans.purchaseCredits.label": "購買點數",
     "SpaceSubscriptionPlans.recommendedPlanDescription": "根據您的使用情況推薦",
     "SpaceSubscriptionPlans.recommendedPlanForYou": "為您推薦的方案",
     "SpaceSubscriptionPlans.removeFromPlan.label": "自方案移除",
     "SpaceSubscriptionPlans.resubscribe.label": "重新訂閱",
-    "SpaceSubscriptionPlans.upgradeToPlus.button.label": "升级至Plus计划",
+    "SpaceSubscriptionPlans.seeAllPlans": "查看所有计划",
+    "SpaceSubscriptionPlans.upgrade.button.label": "升级",
+    "SpaceSubscriptionPlans.upgradeToPlus.button.label": "升級到加值版",
+    "SpaceSubscriptionPlans.upgradeToPlus.description":
+      "升级至Plus套餐，获得无限组块、无限文件上传、30天页面记录等服务。",
     "SpaceSubscriptionPlans.usagePercent": "<bold>{percent}%</bold>",
     "SpaceSubscriptionPlans.viewPlans.title": "查看所有方案",
     "SpaceSubscriptionPlans.whatYouHaveNow.title": "您現在擁有的加上...",
-    "SpaceSubscriptionPlansAndAddOns.currentPlan.label": "当前计划",
+    "SpaceSubscriptionPlansAndAddOns.currentPlan.label": "目前方案",
     "SpecificTeamMemberToAddRow.addMemberButton.text": "加入",
     "SpecificTeamMemberToAddRow.team_invite_failure":
       "無法加入 {userOrGroupName}",
@@ -713,11 +724,11 @@
     "VerificationExpiryMenu.preset.subtitle": "直到 {date}",
     "VerificationExpiryMenu.preset.title": "持續 {numDays} 天",
     "VerificationExpiryMenu.title": "驗證日期：",
-    "VerificationExpiryPicker.option.customDate": "选择日期",
-    "VerificationExpiryPicker.option.indefinitely": "无限期",
-    "VerificationExpiryPicker.reverify.header": "重新验证页面",
-    "VerificationExpiryPicker.verify.header": "页面验证",
-    "VerificationMetadata.lastVerified": "{user}上次验证",
+    "VerificationExpiryPicker.option.customDate": "選擇日期",
+    "VerificationExpiryPicker.option.indefinitely": "無限期",
+    "VerificationExpiryPicker.reverify.header": "重新驗證頁面",
+    "VerificationExpiryPicker.verify.header": "驗證頁面",
+    "VerificationMetadata.lastVerified": "上次驗證者：{user}",
     "VerificationPropertyButton.empty": "空白",
     "VerificationPropertyButton.expired": "已過期 {timeFromMoment}",
     "VerificationPropertyButton.hoverText": "按一下以加入",
@@ -875,7 +886,7 @@
     "action.duplicateTo.name": "儲存複本到",
     "action.duplicateToPrivate.name": "複製到私人",
     "action.edit.name": "編輯",
-    "action.editIcon.name": "“图标”",
+    "action.editIcon.name": "圖示",
     "action.editPage.name": "編輯",
     "action.editProperty.name": "編輯屬性",
     "action.enter.name": "輸入",
@@ -1039,7 +1050,7 @@
     "action.moveTo.name": "移動到",
     "action.moveUp.name": "向上移動",
     "action.navigation.openInFullPage": "打开整个页面",
-    "action.navigation.openInSidePeek": "在侧视图中打开页面。",
+    "action.navigation.openInSidePeek": "使用侧视图打开",
     "action.newPageIn.name": "轉換成頁面到",
     "action.noDate.name": "無日期",
     "action.openAllToggles.name": "展開所有折疊列表",
@@ -1177,7 +1188,7 @@
       "找不到推薦使用者。",
     "activateReferral.dialogError.userAlreadySignedUp.errorMessage":
       "使用者已經註冊",
-    "activeImports.status.inProgress": "正在进行",
+    "activeImports.status.inProgress": "進行中",
     "activity.accessRequested.header":
       "{numberOfAuthors, plural, other {{authorOrAuthors} 要求存取 {pageName}}}",
     "activity.accessRequested.messageLabel": "來自{author}的訊息",
@@ -1280,14 +1291,14 @@
     "activitySection.authorPhrase.forMoreThanTwoAuthors.label":
       "{numberOfOtherAuthors, plural, other {<b>{firstAuthor}</b>、<b>{secondAuthor}</b>及其他 {numberOfOtherAuthors} 位}}",
     "activitySection.authorPhrase.forMoreThanTwoAuthorsCurrentUser.label":
-      "{numberOfOtherAuthors，plural，other{<b>{firstAuthor}</b>先生，<b>{secondAuthor}</b>先生，其他{numberOfOtherAuthor}名}}",
+      "{numberOfOtherAuthors, plural, other {<b>{firstAuthor}</b>、<b>{secondAuthor}</b>、你及其他 {numberOfOtherAuthors} 位作者}}",
     "activitySection.authorPhrase.forNoAuthors.label": "某人",
     "activitySection.authorPhrase.forOneAuthor.label": "<b>{author}</b>",
-    "activitySection.authorPhrase.forOneAuthorCurrentUser.label": "我",
+    "activitySection.authorPhrase.forOneAuthorCurrentUser.label": "你",
     "activitySection.authorPhrase.forTwoAuthors.label":
       "<b>{firstAuthor}</b>和<b>{secondAuthor}</b>",
     "activitySection.authorPhrase.forTwoAuthorsCurrentUser.label":
-      "我和<b>{firstAuthor}</b>先生",
+      "<b>{firstAuthor}</b> 和你",
     "activitySection.viewVersionForUpdate.tooltip": "查看本次更新後的版本",
     "activityUpdate.unknownErrorLoadingActivities.message": "出了些問題。",
     "activityUpdates.clearFilters": "清除",
@@ -1312,7 +1323,7 @@
     "addOnLimitUsage.description.usedAllFreeResponses.admins":
       "{spaceName} 已用光他們所有的免費 AI 回應。",
     "addOnUpgrade.confirmation.costSection.annual.twentyPercentDiscountMessage":
-      "<bold>年折扣(20%)</bold>",
+      "<bold>年度折扣 (20%)</bold>",
     "addOnUpgrade.confirmation.costSection.currentPlanCost":
       "目前的 <bold>{plan}</bold> 費用",
     "addOnUpgrade.confirmation.costSection.currentPlanCostWithMembers":
@@ -1321,13 +1332,13 @@
       "{interval, select, month {每月} other {每年}}",
     "addOnUpgrade.confirmation.costSection.perMonth.label": "每月",
     "addOnUpgrade.confirmation.costSection.specialDiscount":
-      "<bold>特别折扣({percentage})</bold>",
+      "<bold>特別折扣 ({percentage})</bold>",
     "addOnUpgrade.confirmation.costSection.specialDiscount.annualMessage":
-      "研究阅读期间的应用",
+      "適用於你的年度期限",
     "addOnUpgrade.confirmation.costSection.specialDiscount.annualPlanMessage":
-      "在年度订阅中应用",
+      "適用於年度方案",
     "addOnUpgrade.confirmation.costSection.specialDiscount.threeMonthsMessage":
-      "在接下来的三个月里，",
+      "適用於未來 3 個月",
     "addOnUpgrade.confirmation.costSection.specialDiscounts.fiftyPercent":
       "50%",
     "addOnUpgrade.confirmation.costSection.specialDiscounts.fortyPercent":
@@ -1365,11 +1376,11 @@
     "addOnUpgradeModal.cancellation.title":
       "確定要將 Notion AI 自你的方案移除嗎？",
     "addOnUpgradeModal.confirmPurchase.button.label": "確認購買",
-    "addOnUpgradeModal.coupon.fiftyPercent.label": "50%折扣",
-    "addOnUpgradeModal.coupon.fortyPercent.label": "40%折扣",
-    "addOnUpgradeModal.coupon.sixtyPercent.label": "60%折扣",
-    "addOnUpgradeModal.coupon.thirtyPercent.label": "30%折扣",
-    "addOnUpgradeModal.coupon.twentyPercent.label": "20%折扣",
+    "addOnUpgradeModal.coupon.fiftyPercent.label": "50% 折扣",
+    "addOnUpgradeModal.coupon.fortyPercent.label": "40% 折扣",
+    "addOnUpgradeModal.coupon.sixtyPercent.label": "60% 折扣",
+    "addOnUpgradeModal.coupon.thirtyPercent.label": "30% 折扣",
+    "addOnUpgradeModal.coupon.twentyPercent.label": "20% 折扣",
     "addOnUpgradeModal.errorMessage.notAdmin":
       "你無權將此工作區升級至附加元件。如果你認為這是個錯誤，請與系統管理員聯絡。",
     "addOnUpgradeModal.errorMessage.switchPlanFromInAppPurchase":
@@ -1407,10 +1418,9 @@
       "已核准的連線 {numberOfIntegrations}",
     "adminConnectionsSettings.table.default.title":
       "所有連線 {numberOfIntegrations}",
-    "adminConnectionsSettings.table.securityAndCompliance.title":
-      "安全性和合规性",
+    "adminConnectionsSettings.table.securityAndCompliance.title": "安全与合规",
     "adminConnectionsSettingsAddComplianceMenu.search.button.label":
-      "添加{plusIcon}连接",
+      "{plusIcon}&nbsp；添加连接",
     "adminContentSearchTab.description":
       "使用篩選器在工作區中搜尋任何頁面，包括私人頁面。只有工作區擁有者可以使用內容搜尋。",
     "adminContentSearchTab.export": "匯出結果",
@@ -2260,7 +2270,8 @@
     "appTemplate.docs.newBrainstormTitle": "全新腦力激盪",
     "appTemplate.docs.newPrdTitle": "新產品規格 (PRD)",
     "appTemplate.docs.newTechSpecTitle": "新技術規格",
-    "appTemplateActions.initializeAppTemplateError.message": "复制模板失败。",
+    "appTemplateActions.initializeAppTemplateError.message":
+      "建立模版複本失敗。",
     "appTemplateHelpers.bundledPropertyDelete.description":
       "由於這些相關實體共同運作，因此也會一併刪除。",
     "appTemplateHelpers.bundledPropertyDelete.message":
@@ -2277,6 +2288,9 @@
       "{appName}緊密連動。你可以一起移動它們，否則可能會在分開後遇到問題。",
     "appTemplateHelpers.multiDBMoveAlert.message": "確定要移動{dbName}嗎？",
     "appTemplateHelpers.multiDBMoveAlert.oneLabel": "只移動{dbName}",
+    "appTemplateUpgradeActions.upgradeConfirmationDialog.cancelUpgrade.label":
+      "不升级",
+    "appTemplateUpgradeActions.upgradeConfirmationDialog.upgrade.label": "升级",
     "appTemplates.docs.byCategoryTableViewDescription":
       "按文件類別分組的文件表格",
     "appTemplates.docs.byCategoryTableViewName": "依類別",
@@ -2442,7 +2456,6 @@
     "appTemplates.projects.feature": "功能",
     "appTemplates.projects.id": "任務 ID",
     "appTemplates.projects.inProgress": "進行中",
-    "appTemplates.projects.isCurrentSprintRollup": "是目前的 Sprint",
     "appTemplates.projects.markAsDuplicate": "標記為重複",
     "appTemplates.projects.markAsDuplicateFeatureDescription":
       "將任務標記為其他任務的複本。",
@@ -2491,6 +2504,7 @@
     "appTemplates.projects.statusFeatureDescription": "追蹤任務/專案的狀態。",
     "appTemplates.projects.subTaskFeatureDescription":
       "將任務分解成較小的子任務並追蹤進度。",
+    "appTemplates.projects.subTaskFeatureShortDescription": "大型任务细分",
     "appTemplates.projects.subTasksName": "子任務",
     "appTemplates.projects.summary": "摘要",
     "appTemplates.projects.summaryDescription": "透過 Notion AI 自動摘要專案",
@@ -2510,6 +2524,8 @@
       "要求工作區管理員設定 GitHub 應用程式以使用此功能。",
     "appTemplates.projects.taskGithubPrFeatureDescription":
       "根據 PR 狀態變更自動更新任務狀態",
+    "appTemplates.projects.taskGithubPrFeatureShortDescription":
+      "PR连接和任务状态同步",
     "appTemplates.projects.taskGithubPrRelationName": "GitHub 提取要求",
     "appTemplates.projects.taskIsDuplicateOfName": "重複項目",
     "appTemplates.projects.taskPriorityFeatureDescription":
@@ -2527,16 +2543,18 @@
       "任務追蹤精細且單一的工作。",
     "appTemplates.projects.tasksCollectionEmptyTitle": "沒有任務",
     "appTemplates.projects.tasksCollectionName": "任務",
-    "appTemplates.projects.tasksCurrentSprintV2ViewName": "当前冲刺",
-    "appTemplates.projects.tasksCurrentSprintV2ViewNamePrefix": "现行",
+    "appTemplates.projects.tasksCurrentSprintV2ViewName": "目前 Sprint",
+    "appTemplates.projects.tasksCurrentSprintV2ViewNamePrefix": "目前",
     "appTemplates.projects.tasksCurrentSprintViewDescription":
       "目前 Sprint 任務的看板",
     "appTemplates.projects.tasksCurrentSprintViewName": "這項 Sprint",
     "appTemplates.projects.tasksFeatureDescription":
-      "数据库，用于细粒度的单独工作。将任务添加到项目，跟踪剩余任务。",
+      "更精細工作的資料庫。將任務加入到專案，以便持續追蹤需要完成的工作。",
     "appTemplates.projects.tasksViewName": "所有任務",
     "appTemplates.projects.tasksWithSprintsFeatureDescription":
       "每幾週將你的團隊聚焦於一組任務上。",
+    "appTemplates.projects.tasksWithSprintsFeatureShortDescription":
+      "将团队任务保存到时间框",
     "appTemplates.projects.timelineProperty": "日期",
     "appTemplates.projects.todo": "待辦事項",
     "appTemplates.projects.tshirtSizeEstimates": "T 恤大小",
@@ -2553,9 +2571,9 @@
     "appTemplates.sprints.sprintStatusDescription": "Sprint 的狀態",
     "appTemplates.sprints.sprintsCollectionName": "Sprint",
     "appTemplates.sprints.sprintsTimelineView": "時間軸",
-    "appTemplates.sprints.tasksCollectionName": "操作",
+    "appTemplates.sprints.tasksCollectionName": "任務",
     "appTemplates.sprints.tasksFeatureDescription":
-      "数据库，用于细粒度的单独工作。跟踪每个Sprint中包含的任务。",
+      "更精細工作的資料庫。追蹤每個 Sprint 的任務。",
     "appTemplates.sprints.timelineProperty": "日期",
     "appTemplates.tasks.activeProjectsGalleryFeature": "有效專案圖庫",
     "appTemplates.tasks.activeProjectsGalleryFeatureDescription":
@@ -2852,31 +2870,34 @@
     "appTemplatesNewSprints.tasks.tasksWithNoSprintViewDescription":
       "Sprint 任務和未來任務的表格",
     "appTemplatesNewSprints.tasks.todo": "待辦事項",
-    "appTemplatesSprintsV2.projects.backlog": "积压",
-    "appTemplatesSprintsV2.projects.completed": "已完成",
-    "appTemplatesSprintsV2.projects.notStarted": "开始前",
-    "appTemplatesSprintsV2.projects.tasksCompletedInSprint": "已完成的任务",
+    "appTemplatesSprintsV2.projects.backlog": "待辦需求",
+    "appTemplatesSprintsV2.projects.completed": "完成",
+    "appTemplatesSprintsV2.projects.notStarted": "未開始",
+    "appTemplatesSprintsV2.projects.tasksCompletedInSprint": "已完成的任務",
     "appTemplatesSprintsV2.projects.tasksCurrentKanbanSprintViewDescription":
-      "查看当前Sprint中的任务坎班",
+      "目前 Sprint 任務的看板視圖",
     "appTemplatesSprintsV2.projects.tasksCurrentSprintKanbanViewName":
-      "当前冲刺坎班",
+      "目前 Sprint 看板",
     "appTemplatesSprintsV2.projects.tasksCurrentSprintOwnerViewDescription":
-      "按当前Sprint所有者列出的任务表",
+      "依擁有者劃分目前 Sprint 任務的表格",
     "appTemplatesSprintsV2.projects.tasksCurrentSprintOwnerViewName":
-      "按所有者列出的当前Sprint",
+      "依擁有者劃分的目前 Sprint",
     "appTemplatesSprintsV2.projects.tasksNextSprintViewDescription":
-      "下一个Sprint的任务表",
-    "appTemplatesSprintsV2.projects.tasksNextSprintViewName": "下一个冲刺",
-    "appTemplatesSprintsV2.projects.totalTasksCompletedInSprint": "任务总数",
-    "appTemplatesSprintsV2.projects.totalTasksInSprint": "任务总数",
-    "appTemplatesSprintsV2.sprints.current": "现行",
-    "appTemplatesSprintsV2.sprints.future": "之后",
-    "appTemplatesSprintsV2.sprints.next": "下一页",
-    "appTemplatesSprintsV2.sprints.past": "上一个",
-    "appTemplatesSprintsV2.sprints.sprintStatus": "冲刺状态",
-    "appTemplatesSprintsV2.sprints.uniqueIdProperty": "冲刺ID",
+      "下一個 Sprint 任務的表格",
+    "appTemplatesSprintsV2.projects.tasksNextSprintViewName": "下一個 Sprint",
+    "appTemplatesSprintsV2.projects.totalTasksCompletedInSprint": "任務總計",
+    "appTemplatesSprintsV2.projects.totalTasksInSprint": "任務總計",
+    "appTemplatesSprintsV2.sprints.current": "目前",
+    "appTemplatesSprintsV2.sprints.future": "未來",
+    "appTemplatesSprintsV2.sprints.next": "下一步",
+    "appTemplatesSprintsV2.sprints.past": "過去",
+    "appTemplatesSprintsV2.sprints.sprintStatus": "Sprint 狀態",
+    "appTemplatesSprintsV2.sprints.uniqueIdProperty": "Sprint ID",
     "appTemplatesSprintsV2.tasks.tasksInCurrentNextBacklogGroupsDescription":
-      "冲刺任务和后续任务表",
+      "Sprint 任務和未來任務的看板",
+    "appTemplatesSprintsV2.tasks.tasksSprintPlanningDescription":
+      "冲刺任务和后续任务板",
+    "appTemplatesSprintsV2.tasks.tasksSprintPlanningName": "冲刺计划",
     "appUpdateListener.mobileAppNotSupported.android": "Android",
     "appUpdateListener.mobileAppNotSupported.ios": "iOS",
     "appUpdateListener.mobileAppNotSupported.message":
@@ -2912,7 +2933,7 @@
       "找不到 preReleaseVersion 條目。",
     "appleErrors.api.statusError": "Apple 服務出現問題。",
     "appleErrors.api.tokenError": "在與 Apple 驗證你的身份時出現問題。",
-    "applyCoupon.error.invalidCoupon": "无法将优惠券应用于您的帐户。",
+    "applyCoupon.error.invalidCoupon": "無法將優惠券套用到你的帳戶。",
     "applyCreditToggle.applyCredit.amount": "套用 {creditAmount} 點",
     "approveAccessActivityAction.approveButton.label": "核准",
     "approveSpaceMembershipActivityAction.approveButton.label": "核准",
@@ -2947,62 +2968,62 @@
     "apps.workspacesetup.header.title": "讓你的團隊開始使用 Notion",
     "asanaActions.authenticatingWithAsana.loadingMessage": "Asana 授權中…",
     "asanaActions.loginWithAsanaPopupModal.title": "Asana 登入",
-    "asanaImport.delinkAsanaAccount": "正在删除Asana帐户...",
-    "asanaImport.getStarted.next": "下一页",
-    "asanaImport.gettingAsanaConnections": "正在导入Asana连接...",
+    "asanaImport.delinkAsanaAccount": "移除 Asana 帳戶中...",
+    "asanaImport.getStarted.next": "下一步",
+    "asanaImport.gettingAsanaConnections": "擷取 Asana 連線中...",
     "asanaImport.importingData.failed.problemsOccured":
-      "从Asana工作区导入数据时遇到一些问题。",
-    "asanaImport.importingData.feelFreeToLeave": "请从这个窗口自由离开。",
+      "从Asana工作空间导入数据时出现问题。",
+    "asanaImport.importingData.feelFreeToLeave": "你可以离开这个窗口。",
     "asanaImport.importingData.sendEmail":
       "如果导入完成或出现问题，我们将发送电子邮件。",
-    "asanaImport.importsTab.confirm.subtitle": "已成功导入以下数据：",
-    "asanaImport.importsTab.confirm.tabTitle": "确认",
-    "asanaImport.importsTab.confirm.title": "数据验证",
+    "asanaImport.importsTab.confirm.subtitle": "下列資料已成功匯入。",
+    "asanaImport.importsTab.confirm.tabTitle": "確認",
+    "asanaImport.importsTab.confirm.title": "確認資料",
     "asanaImport.importsTab.getStarted.description":
-      "使用分步导入工具，可以轻松地从Asana导入项目。请求身份验证详细信息，以便访问Asana API。",
-    "asanaImport.importsTab.getStarted.tabTitle": "快速入门",
-    "asanaImport.importsTab.getStarted.title": "快速入门",
+      "你可以使用逐步匯入工具自 Asana 輕鬆匯入專案。我們會要求你提供驗證詳細資料，以便我們存取其 API。",
+    "asanaImport.importsTab.getStarted.tabTitle": "立即開始",
+    "asanaImport.importsTab.getStarted.title": "立即開始",
     "asanaImport.importsTab.importingData.importFailed": "导入失败",
-    "asanaImport.importsTab.importingData.secondaryTitle": "正在导入项目...",
+    "asanaImport.importsTab.importingData.secondaryTitle": "匯入專案中...",
     "asanaImport.importsTab.importingData.subtitle":
-      "根据项目规模的不同，可能需要几分钟时间。从这个窗口出去也没关系。导入完成后，我们将向您发送一封电子邮件。",
-    "asanaImport.importsTab.importingData.tabTitle": "导入数据",
-    "asanaImport.importsTab.importingData.title": "导入数据",
-    "asanaImport.importsTab.selectData.completedHelperText": "(已完成)",
-    "asanaImport.importsTab.selectData.importInto": "要导入的位置",
-    "asanaImport.importsTab.selectData.importedInto": "导入的位置",
-    "asanaImport.importsTab.selectData.loadMoreProjects": "载入更多项目",
+      "根據你的專案大小，這可能需要幾分鐘。你可以離開此視窗。我們會在匯入完成時向你傳送電子郵件。",
+    "asanaImport.importsTab.importingData.tabTitle": "匯入資料中",
+    "asanaImport.importsTab.importingData.title": "匯入資料中",
+    "asanaImport.importsTab.selectData.completedHelperText": "（已完成）",
+    "asanaImport.importsTab.selectData.importInto": "匯入",
+    "asanaImport.importsTab.selectData.importedInto": "已匯入",
+    "asanaImport.importsTab.selectData.loadMoreProjects": "載入更多專案中...",
     "asanaImport.importsTab.selectData.loadingMoreProjects":
-      "正在导入更多项目...",
+      "載入更多專案中...",
     "asanaImport.importsTab.selectData.loadingProjectsHelperText":
-      "正在导入工作区中的项目...",
-    "asanaImport.importsTab.selectData.newTeamspace": "新建团队空间",
-    "asanaImport.importsTab.selectData.privateSpaceTitle": "非公开",
+      "載入工作區專案中...",
+    "asanaImport.importsTab.selectData.newTeamspace": "新團隊空間",
+    "asanaImport.importsTab.selectData.privateSpaceTitle": "私人",
     "asanaImport.importsTab.selectData.searchTeamspacePlaceholder":
-      "团队空间搜索",
-    "asanaImport.importsTab.selectData.selectATeamspace": "选择团队空间",
-    "asanaImport.importsTab.selectData.selectProjects": "选择项目",
-    "asanaImport.importsTab.selectData.tabTitle": "选择Asana工作空间",
-    "asanaImport.importsTab.selectData.tasksHelperText": "操作",
-    "asanaImport.importsTab.selectData.title": "选择数据",
+      "搜尋團隊空間",
+    "asanaImport.importsTab.selectData.selectATeamspace": "選擇團隊空間",
+    "asanaImport.importsTab.selectData.selectProjects": "選擇專案",
+    "asanaImport.importsTab.selectData.tabTitle": "選擇 Asana 工作區",
+    "asanaImport.importsTab.selectData.tasksHelperText": "任務",
+    "asanaImport.importsTab.selectData.title": "選擇資料",
     "asanaImport.importsTab.selectData.workspaceChoiceHelperText":
-      "一次只能导入一个工作空间。",
-    "asanaImport.linkingAsanaAccount": "正在通过Asana验证...",
-    "asanaImport.selectData.backButtonText": "后退",
+      "一次只能匯入一個工作區。",
+    "asanaImport.linkingAsanaAccount": "Asana 授權中...",
+    "asanaImport.selectData.backButtonText": "返回",
     "asanaImportOption.actionsMenu.connectAnotherAccount": "連接另一個帳號",
     "asanaImportOption.actionsMenu.import": "匯入",
     "asanaImportOption.actionsMenu.removeIntegration": "移除",
     "asanaImportOption.asanaButton.accountDelinkingInProgress":
       "正在删除帐户...",
     "asanaImportOption.asanaButton.accountLinkingInProgress": "正在验证...",
-    "asanaImportOption.asanaButton.ariaLabel": "“从Asana导入”按钮",
+    "asanaImportOption.asanaButton.ariaLabel": "自 Asana 按鈕匯入",
     "asanaImportOption.asanaButton.title": "Asana",
     "asanaImportOption.search.noResultsPlaceholder": "沒有專案",
     "asanaImportOption.search.placeholder": "搜尋專案…",
     "asanaImportStatus.importSuccessful": "項目匯入成功。",
     "asanaImportStatus.userRatelimited":
       "由於匯入的項目數量太多，可能需要 {timeOfDelay} 才能匯入。您可以免費使用 Notion。",
-    "asanaImporter.selectData.selectWorkspacePlaceholder": "选择工作空间",
+    "asanaImporter.selectData.selectWorkspacePlaceholder": "選擇工作區",
     "attributionSetting.description.message":
       "在團隊成員建立或編輯的區塊左方查看他們的姓名首字母。",
     "attributionSetting.title": "區塊歸屬",
@@ -3560,26 +3581,26 @@
     "authErrors.maxMethods.message": "你已達到指定類型的 MFA 方法數量上限。",
     "authErrors.noPasswordVerification.message":
       "Notion 必須驗證你的密碼才能繼續，離開此互動視窗後再試一次",
-    "authErrors.passwordLoginRequired": "MFA已启用，因此您必须使用密码登录。",
+    "authErrors.passwordLoginRequired": "您必须使用密码登录。",
     "authErrors.phoneNumberLimitReached.message":
       "此電話號碼再也無法用於設定新的雙步驟驗證方式。",
-    "authErrors.reusedMfaCode.message": "已经使用的代码。请再试一次。",
+    "authErrors.reusedMfaCode.message": "提供的代碼已在使用中。請再試一次。",
     "authErrors.twilioCannotFetchPhoneNumber.message":
       "沒有此電話號碼的記錄，請檢查號碼後再試一次",
     "authErrors.twilioCannotVerifyPhoneNumber.message":
       "我們無法驗證你的電話號碼，請檢查號碼後再試一次",
     "authErrors.twilioGenericError.message": "出現錯誤，請聯絡客戶支援",
     "automationEventTriggerMenu.anyPropertyEdited.title": "所有属性",
-    "automationEventTriggerMenu.pageAdded.title": "已添加页面",
+    "automationEventTriggerMenu.pageAdded.title": "完成页面添加",
     "automationEventTriggerMenu.pagePropertiesEditedSection.title":
-      "已修改页面属性",
-    "automationEventTriggerMenu.searchInputPlaceholder.label": "搜索触发器...",
+      "完成页面属性编辑",
+    "automationEventTriggerMenu.searchInputPlaceholder.label": "搜索条件",
     "automationStore.slackAutomation.defaultName":
-      "{hasCreatorName，select，true{{creatorName}的空闲通知}other{空闲通知}}",
-    "automationTriggerList.anyPagePropertyEdited.title": "所有编辑的页面属性",
-    "automationTriggerList.pageAdded.title": "已添加页面",
+      "{hasCreatorName，select，true{{creatorName}您的Slack通知}other{Slack通知}}",
+    "automationTriggerList.anyPagePropertyEdited.title": "编辑页面属性",
+    "automationTriggerList.pageAdded.title": "添加页面",
     "automationTriggerList.propertyChangesToAny.title":
-      "{propertyName}已修改。",
+      "编辑{propertyName}属性",
     "automations.AutomationActionSetPropertiesSection.appendAction.label":
       "附加",
     "automations.AutomationActionSetPropertiesSection.property.label": "屬性",
@@ -3599,15 +3620,16 @@
     "automations.AutomationPagePicker.showMore.label": "顯示其餘 {showMore} 個",
     "automations.AutomationPagePicker.variables.label": "此自動化的數值",
     "automations.AutomationSummaryCard.MoreActionsButton.ariaLabel": "更多",
-    "automations.AutomationSummaryCard.MoreActionsMenu.Delete.title": "删除",
-    "automations.AutomationSummaryCard.MoreActionsMenu.Disable.title": "禁用",
-    "automations.AutomationSummaryCard.MoreActionsMenu.Duplicate.title": "克隆",
-    "automations.AutomationSummaryCard.MoreActionsMenu.Edit.title": "编辑",
+    "automations.AutomationSummaryCard.MoreActionsMenu.Delete.title": "刪除",
+    "automations.AutomationSummaryCard.MoreActionsMenu.Disable.title": "停用",
+    "automations.AutomationSummaryCard.MoreActionsMenu.Duplicate.title":
+      "建立複本",
+    "automations.AutomationSummaryCard.MoreActionsMenu.Edit.title": "編輯",
     "automations.AutomationSummaryCard.MoreButton.ariaLabel": "更多",
-    "automations.AutomationSummaryCard.MoreMenu.Delete.title": "删除",
-    "automations.AutomationSummaryCard.MoreMenu.Disable.title": "禁用",
-    "automations.AutomationSummaryCard.MoreMenu.Duplicate.title": "克隆",
-    "automations.AutomationSummaryCard.MoreMenu.Edit.title": "编辑",
+    "automations.AutomationSummaryCard.MoreMenu.Delete.title": "刪除",
+    "automations.AutomationSummaryCard.MoreMenu.Disable.title": "停用",
+    "automations.AutomationSummaryCard.MoreMenu.Duplicate.title": "建立複本",
+    "automations.AutomationSummaryCard.MoreMenu.Edit.title": "編輯",
     "automations.AutomationVariableToken.actionFromStepIndex":
       "步驟 {index} 的 {name}",
     "automations.BaseModalAction.cancelButtonHint": "停止工作流程",
@@ -3668,7 +3690,7 @@
       "此自動化的數值",
     "automations.UpdatePagesAction.filter.label": "篩選器",
     "automations.UpdatePagesAction.filterRuleCount.noFilters.fallbackLabel":
-      "数据库中的所有页",
+      "資料庫中的所有頁面",
     "automations.UpdatePagesAction.filterRuleCount.noFilters.label":
       "更新所有頁面",
     "automations.UpdatePagesAction.header": "編輯後述項目的屬性：",
@@ -3721,7 +3743,7 @@
     "automations.buttonTrigger.createdAndUpdatedPages":
       "已建立 {numPagesCreated, plural, one {1 個頁面} other {{numPagesCreated} 個頁面}} 並已編輯 {numPagesEdited, plural, one {1 個頁面} other {{numPagesEdited} 個頁面}}",
     "automations.buttonTrigger.createdBlocks":
-      "在页面上创建了{numBlocksDuplicated、plural、one{块1}other{块{numBlocksDuplicated}个}}。",
+      "已在頁面上建立 {numBlocksDuplicated, plural, one {1 個區塊} other {{numBlocksDuplicated} 個區塊}}",
     "automations.buttonTrigger.createdPageMessage":
       "已在 {collection} 中建立頁面",
     "automations.buttonTrigger.createdPages":
@@ -3771,20 +3793,22 @@
     "automations.triggers.currentUser.label": "目前使用者",
     "automations.triggers.now.label": "現在",
     "automations.triggers.today.label": "今天",
+    "automations.updateDatePropertyAction.singleProperty":
+      "将{propertyName}属性设置为{propertyValue}值",
     "automations.updateMultiSelectPropertyAction.multiProperties":
-      "{propertyName}设置为所有{propertyValues}",
+      "将{propertyName}属性设置为所有{propertyValues}值",
     "automations.updateMultiSelectPropertyAction.singleProperty":
-      "设置为{propertyName}{propertyValues}",
+      "将{propertyName}属性设置为{propertyValues}值",
     "automations.updatePersonPropertyAction.multiProperties":
-      "{propertyName}设置为所有{propertyValues}",
+      "将{propertyName}属性设置为所有{propertyValues}值",
     "automations.updatePersonPropertyAction.singleProperty":
-      "将{propertyName}设置为{propertyValue}",
+      "将{propertyName}属性设置为{propertyValue}值",
     "automations.updateSelectPropertyAction.singleProperty":
-      "将{propertyName}设置为{propertyValue}",
+      "将{propertyName}属性设置为{propertyValue}值",
     "automations.updateStatusPropertyAction.multiProperties":
-      "{propertyName}设置为所有{propertyValues}",
+      "将{propertyName}属性设置为所有{propertyValues}值",
     "automations.updateStatusPropertyAction.singleProperty":
-      "设置为{propertyName}{propertyValues}",
+      "将{propertyName}属性设置为{propertyValues}值",
     "automatonStore.automation.defaultName":
       "{hasCreatorName，select，true{{creatorName}的自动化}other{自动化}}",
     "backlink.currentPageTokenLabel": "此頁面",
@@ -3837,6 +3861,7 @@
     "blockHelpers.audioBlockType": "音訊",
     "blockHelpers.codepenBlockType": "CodePen",
     "blockHelpers.deepnoteBlockType": "Deepnote",
+    "blockHelpers.drawingBlockType": "绘图",
     "blockHelpers.driveBlockType": "Google 雲端硬碟",
     "blockHelpers.embedBlockType": "嵌入",
     "blockHelpers.excalidrawBlockType": "Excalidraw",
@@ -3860,7 +3885,7 @@
     "blockMenu.actionButton.label": "動作",
     "blockMenu.filterForActions.placeholder": "搜尋動作…",
     "blockMenu.moveTo.disabled.fullAccess.reason":
-      "要移动页面，您需要对此页面具有“完全访问权限”。",
+      "要移动页面，需要页面“完全允许”权限。",
     "blockMenuItem.aiBadge": "AI",
     "blockMenuRestrictedMessage.adminRestoreAction.label": "恢復權限",
     "blockMenuRestrictedMessage.label": "你無權編輯此區塊，因為它受到限制。",
@@ -4023,8 +4048,8 @@
     "bootupHelpers.iosErrorRequiresReinstall.errorMessage":
       "你好，我們發現你的 iOS 應用程式有問題。請刪除此應用程式，再從 App Store 重新安裝。",
     "botActions.duplicateTemplateAndShareWithBot.snackbar.failure":
-      "无法将模板复制到工作区。",
-    "botActions.duplicatingTemplate.loadingMessage": "正在复制模板...",
+      "無法建立模板複本到你的工作區中",
+    "botActions.duplicatingTemplate.loadingMessage": "建立模板複本中...",
     "breadcrumb.mobileBreadcrumbMenu.title": "頁面路徑",
     "breadcrumb.moveTo.hasPermission.subtitle": "按一下以移動",
     "breadcrumb.moveTo.hasPermission.title": "只有你有存取權限",
@@ -4488,23 +4513,22 @@
     "collectionSettings.createSlackAutomationView.title": "新的Slack通知",
     "collectionSettings.editAutomationView.actionSection.placeholder":
       "加入動作",
-    "collectionSettings.editAutomationView.actionSection.title":
-      "执行以下操作：",
+    "collectionSettings.editAutomationView.actionSection.title": "執行此動作",
     "collectionSettings.editAutomationView.addAction.iconButton": "添加任务",
     "collectionSettings.editAutomationView.addTrigger.iconButton": "添加条件",
     "collectionSettings.editAutomationView.createButton.label": "已创建",
-    "collectionSettings.editAutomationView.delete": "删除",
+    "collectionSettings.editAutomationView.delete": "刪除",
     "collectionSettings.editAutomationView.notifyForOption.title":
-      "应用了以下内容的页面",
+      "針對以下位置的頁面",
     "collectionSettings.editAutomationView.saveButton.label": "已保存",
-    "collectionSettings.editAutomationView.saveButton.title": "已保存",
+    "collectionSettings.editAutomationView.saveButton.title": "儲存",
     "collectionSettings.editAutomationView.triggerSection.placeholder":
-      "添加条件",
+      "加入觸發程序",
     "collectionSettings.editAutomationView.triggerSection.title":
       "這裡的任一情況發生時",
     "collectionSettings.editSlackAutomationView.title": "Slack 通知",
-    "collectionSettings.slackAutomationsView.create": "新的空闲通知",
-    "collectionSettings.slackAutomationsView.header": "Slack通知",
+    "collectionSettings.slackAutomationsView.create": "通知其他频道",
+    "collectionSettings.slackAutomationsView.header": "Slack 通知",
     "collectionSettingsAccountPicker.addAccount": "連接另一個帳號",
     "collectionSettingsAccountPicker.title": "選擇帳戶",
     "collectionSettingsCreateConnectedRelationPagePicker.addPageButton.label":
@@ -4615,7 +4639,7 @@
     "collectionSettingsNotificationsUpdates.remove.confirmation.message":
       "確定要移除此通知配置嗎？",
     "collectionSettingsSlackAutomationsView.automationTitle.defaultTitle":
-      "{creator}中的Slack通知",
+      "{creator} 的 Slack 警訊",
     "collectionSortMenuRow.sortDirectionSelectMenu.ascending": "升序",
     "collectionSortMenuRow.sortDirectionSelectMenu.descending": "降序",
     "collectionSortMenuRow.sortDirectionSelectMenu.placeholder": "空",
@@ -4692,16 +4716,17 @@
     "comment.unfurl.resolvedStatus": "已解決",
     "comments.learn": "了解評論",
     "comments.showLessLabel": "顯示較少",
-    "completeSprintAutomationButton.keepInThisSprintItem.title": "保持此Sprint",
+    "completeSprintAutomationButton.keepInThisSprintItem.title":
+      "保留在此 Sprint 中",
     "completeSprintAutomationButton.label": "完整的 Sprint",
     "completeSprintAutomationButton.menuItemSectionHeader.incompleteTasks.title":
-      "{numIncompleteTasks，plural，other{未完成的任务{numIncompleteTasks}根}}",
+      "{numIncompleteTasks, plural, other {{numIncompleteTasks} 個未完成的任務}}",
     "completeSprintAutomationButton.menuItemSectionHeader.incompleteTasksPlaceholder.title":
-      "为未完成的任务选择任务",
+      "選擇未完成任務的動作",
     "completeSprintAutomationButton.menuItemSectionHeader.keepInThisSprint.title":
       "選擇下一個 Sprint…",
     "completeSprintAutomationButton.moveToNextSprintItem.title":
-      "转到下一个Sprint",
+      "移動到下一個 Sprint",
     "completeSprintAutomationButton.searchInputPlaceholder.title":
       "選擇 Sprint",
     "completionActions.genericError":
@@ -4749,7 +4774,14 @@
     "completions.CompletionMenuActionBar.sendTooltip": "傳送到 AI",
     "completions.CompletionMenuActionBar.stop": "停止",
     "completions.CompletionMenuActionBar.tryAgain": "再試一次",
+    "completions.CompletionMenuActionBar.tryAgain.clickToEditAndRetry":
+      "单击以编辑提示并重试。",
+    "completions.CompletionMenuActionBar.tryAgain.clickToRetry": "点击以重试。",
+    "completions.CompletionMenuFooter.dataShareThanks":
+      "感谢您帮助改善Notion！",
     "completions.CompletionMenuFooter.feedbackThanks": "感謝你提交回饋！",
+    "completions.CompletionMenuFooter.showFeedbackThanksMessage":
+      "感谢您的反馈！",
     "completions.CompletionMenuFooter.thumbsDown": "提交負面回饋",
     "completions.CompletionMenuFooter.thumbsUp": "提交正面回饋",
     "completions.CompletionMenuFooter.warning":
@@ -4772,12 +4804,19 @@
     "completions.FeedbackPopup.submitButtonLabel": "提交回饋",
     "completions.FeedbackPopup.userCommentPlaceholder":
       "如何改善輸出？（選用）",
+    "completions.OptInLearnMore.description":
+      "为了提升AI质量，我们正在与Notion共享数据。<aiTerms>了解详情</aiTerms>",
     "completions.PromptMenu.alternativeUiEditInputPlaceholder":
       "要求 IA 編輯、查看或生成...",
     "completions.PromptMenu.alternativeUiWriteInputPlaceholder":
       "要求 AI 開始撰寫...",
     "completions.PromptMenu.inputPlaceholder":
       "輸入以呼叫輔助。你可以提出任何要求...",
+    "completions.ShareDataPopup.alwaysShareButton": "始终共享",
+    "completions.ShareDataPopup.description":
+      "使用基于AI的功能自动共享数据，帮助Notion提高AI质量。{br}如果继续，则表示同意<aiTerms>AI数据共享条件</aiTerms>。",
+    "completions.ShareDataPopup.notNowButton": "稍后",
+    "completions.ShareDataPopup.title": "是否始终共享数据以改进Notion AI？",
     "completions.boldImportantWords.label": "加粗的重要字詞",
     "completions.brainstormIdeas.label": "腦力激盪",
     "completions.checkForInconsistencies.label": "檢查不一致處",
@@ -4968,7 +5007,7 @@
     "connectedRelationPropertyMenuResults.githubPrRelationUserEducation.copyIdAria":
       "複製 ID 值。",
     "connectedRelationPropertyMenuResults.githubPrRelationUserEducation.description":
-      "要将GitHub PR链接到此页面，请在PR标题中添加ID。",
+      "若要將你的 GitHub PR 連結到此頁面，請將 ID 加入到 PR 標題。",
     "connectedRelationPropertyMenuResults.githubPrRelationUserEducation.help":
       "透過將唯一的任務 ID 加入到 PR 標題，將 GitHub PR 連結至此任務",
     "connectedRelationPropertyMenuResults.githubPrRelationUserEducation.learnMore":
@@ -4976,7 +5015,7 @@
     "connectedRelationPropertyMenuResults.githubPrRelationUserEducation.learnMoreAria":
       "進一步了解 GitHub 提取要求功能。",
     "connectedRelationPropertyMenuResults.githubPrRelationUserEducationLinkPastingOn.description":
-      "复制ID，然后将其粘贴到GitHub PR标题中。",
+      "将ID复制并粘贴到GitHub PR标题中。",
     "connectedRelationPropertyMenuResults.githubPrRelationUserEducationPasteUrl.description":
       "要将GitHub PR链接到此页面，请粘贴URL。",
     "connectedRelationPropertyMenuResults.notMatched.help":
@@ -5033,9 +5072,9 @@
       "你想要將 {emailCount, plural, one {此人員} other {這些人員}} 加入到工作區和頁面嗎？這是計費活動。",
     "contextualInvite.addToWorkspace.title": "加入到工作區",
     "contextualInvite.addToWorkspace.zeroTeams.subtitle":
-      "{isFreeTier、select、free{对工作空间应用1，000个块限制。}other{}}",
+      "{isFreeTier, select, free {此動作會將 1,000 個區塊的限制套用到你的團隊空間。} other {} }",
     "contextualInvite.addToWorkspace.zeroTeams.subtitle.blockLimit":
-      "添加为成员时，将自动生成TeamSpace，并对{isFreeTier、select和free{工作区应用1，000个块限制。}other{}}",
+      "將它們加入為成員後會自動建立團隊空間，{isFreeTier, select, free {並將 1,000 個區塊的限制套用到你的團隊空間。} other {} }",
     "contextualInvite.buttonAndTokenTooltip.spaceDisablesGuestsAlertLine1":
       "此工作區不允許訪客。",
     "contextualInvite.buttonAndTokenTooltip.spaceDisablesGuestsAlertLine2":
@@ -5342,9 +5381,9 @@
     "database.collectionView.untitledName.timeline": "時程表",
     "database.collectionView.untitledName.untitled": "無標題",
     "database.collectionViewBlock.openAutomationsSettingsButton.ariaLabel":
-      "创建或查看自动化",
+      "建立或檢視自動化",
     "database.collectionViewBlock.openAutomationsSettingsButton.tooltip":
-      "创建或查看自动化",
+      "建立或檢視自動化",
     "database.collectionViewBlock.openFullscreenPageButton.tooltip":
       "以完整頁面開啟",
     "database.collectionViewBlock.openViewSettingsButton.tooltip":
@@ -5412,7 +5451,7 @@
     "database.filterBarFilterValue.title":
       "{propertyName}{colonSeparator} {filterOperator} {propertyValue}",
     "database.filterBarPropertyFilter.cannotConfigure":
-      "此筛选器不能从此视图中删除。",
+      "無法刪除此視圖的篩選條件。",
     "database.filterMenu.addFilterGroup2ButtonTitle": "加入篩選器群組",
     "database.filterMenu.addFilterGroupButtonCaption": "包含多個篩選的群組",
     "database.filterMenu.addFilterRuleButtonTitle": "加入篩選器規則",
@@ -5637,9 +5676,9 @@
     "database.noRelationSearchResults.message": "沒有結果",
     "database.optionExistsAlreadyError.message": "選項已存在。",
     "database.pageProperties.addPropertyButtonTitle": "加入屬性",
-    "database.pageProperties.compact.addPropertyButtonTitle": "添加属性",
+    "database.pageProperties.compact.addPropertyButtonTitle": "加入屬性",
     "database.pageProperties.compact.showMoreTooltip":
-      "{num，plural，other{{num}查看更多属性}}",
+      "{num, plural, other {其他 {num} 個屬性}}",
     "database.pageProperties.hidePropertyTitle":
       "{num, plural, other {隱藏 {num} 個屬性}}",
     "database.pageProperties.showMorePropertyTitle":
@@ -5920,6 +5959,7 @@
     "database.viewPropertiesMenu.peekMode.sidePeek": "側邊預覽",
     "database.viewSettigs.searchCollections.thisDatabase.tooltip": "此資料庫",
     "database.viewSettings.TimelineArrowsBy.newRelation": "新關聯關係",
+    "database.viewSettings.addHighlightedFeature": "添加到",
     "database.viewSettings.arrowsByTab.createNewRelation": "建立新關聯關係",
     "database.viewSettings.arrowsByTab.newRelation": "新關聯關係",
     "database.viewSettings.arrowsByTab.none": "無",
@@ -5939,9 +5979,9 @@
     "database.viewSettings.arrowsTab.title": "依下列項目顯示相依性",
     "database.viewSettings.arrowsTab.useExistingRelation.title":
       "使用現有關聯關係",
-    "database.viewSettings.automationTab.learnAutomationTitle": "了解自动化",
-    "database.viewSettings.automationTab.newAutomationTitle": "新的自动化",
-    "database.viewSettings.automationTab.title": "自动化",
+    "database.viewSettings.automationTab.learnAutomationTitle": "了解自動化",
+    "database.viewSettings.automationTab.newAutomationTitle": "新的自動化",
+    "database.viewSettings.automationTab.title": "自動化",
     "database.viewSettings.choosePropertyType": "選擇屬性類型",
     "database.viewSettings.collectionPropertyLimitHelpers.limit": "限制",
     "database.viewSettings.collectionPropertyLimitHelpers.limitOne":
@@ -6103,7 +6143,7 @@
     "database.viewSettings.mainTab.propertiesButton.propertiesShown.title":
       "已顯示 {propertiesShown}",
     "database.viewSettings.mainTab.propertiesButton.title": "屬性",
-    "database.viewSettings.mainTab.slackNotifications.title": "Slack通知",
+    "database.viewSettings.mainTab.slackNotifications.title": "Slack 通知",
     "database.viewSettings.mainTab.sortButton.noSorts.title": "無",
     "database.viewSettings.mainTab.sortButton.oneOrMoreSorts.title":
       "{numberOfSorts, plural, other {{numberOfSorts} 個排序}}",
@@ -6145,8 +6185,10 @@
     "database.viewSettings.nestTab.toggleByExisting.newRelation": "屬性",
     "database.viewSettings.nestTab.useExistingRelation.title":
       "使用現有關聯關係",
+    "database.viewSettings.newHighlightedFeature": "新建",
     "database.viewSettings.newProperty": "新屬性",
     "database.viewSettings.newPropertyOnDatabase": "{databaseName}上的新屬性",
+    "database.viewSettings.newPropertyOnTypedDatabase": "添加到{databaseName}",
     "database.viewSettings.notifications.off": "關閉",
     "database.viewSettings.notificationsTab.slack.accountSelector": "帳號",
     "database.viewSettings.notificationsTab.slack.addNewAccount.label":
@@ -6255,7 +6297,7 @@
       "了解匯總",
     "database.viewSettings.propertyTab.showInViewButton.title": "在視圖中顯示",
     "database.viewSettings.propertyTab.syncedDatabaseGithubProperty.tooltip":
-      "同步的数据库不能包含GitHub池请求属性。",
+      "已同步的資料庫不能有 GitHub 提取要求屬性",
     "database.viewSettings.propertyTab.title": "編輯屬性",
     "database.viewSettings.propertyTab.wikiGithubProperty.tooltip":
       "知識庫不能有 GitHub 提取要求屬性",
@@ -6379,6 +6421,7 @@
     "database.viewSettings.toggleByTab.none": "無",
     "database.viewSettings.toggleByTab.removeButton.title": "移除摺疊依據",
     "database.viewSettings.toggleByTab.title": "摺疊依據",
+    "database.viewSettings.typedDbPropertyTypeSelect.searchPlaceholder": "搜索",
     "database.viewSettings.viewActionMenu.copyLink": "拷貝檢視連結",
     "database.viewSettings.viewActionMenu.delete": "刪除",
     "database.viewSettings.viewActionMenu.duplicate": "複製",
@@ -6729,7 +6772,7 @@
     "developerIntegrationFormDistributionView.redirect_uri.subtitle":
       "如果你已建立包括連結預覽的整合，填入 notion.so。沒有連結預覽則填入路徑，使用者在完成 Notion 驗證後將會被重新導向。此路徑會附加存取權限的授權代碼，且必須具有通訊協定。路徑中不可包含 URL 片段、相對路徑或萬用字元，也不能是公用 IP 位址。它還必須包含在權杖請求中。",
     "developerIntegrationFormDistributionView.redirect_uri_link_preview_beta.subtitle":
-      "如果要创建包含链接预览功能的集成，请使用notion.so重定向。否则，请在此字段中输入用户在Notion身份验证后重定向的URI。相应的URI将添加访问所需的授权码，并且协议是必需的。此路径不能包含URL片段、相对路径或通配符，也不能是公共IP地址。此外，令牌请求必须包含。",
+      "如果你正在使用「連結預覽」功能建立整合，請重新導向到 notion.so。否則，在此欄位中填入使用者完成 Notion 驗證後將會被重新導向的 URI。該 URI 會附加存取權限的授權代碼，且必須具有通訊協定。URI 中不可包含 URL 片段、相對路徑或萬用字元，也不能是公用 IP 位址。它還必須包含在權杖要求中。",
     "developerIntegrationFormDistributionView.redirect_uris.label":
       "重新導向 URI",
     "developerIntegrationFormDistributionView.switcher.label":
@@ -6805,7 +6848,7 @@
     "developerIntegrationFormUnfurlingView.externalOauthTokenUrl.label":
       "OAuth 權杖 URL",
     "developerIntegrationFormUnfurlingView.sectionSubtitle.external_oauth":
-      "有关<authlink>OAuth 2.0</authlink>的信息，请参阅<textlink>Notion文档</textlink>。",
+      "請參閱 <textlink>Notion 文件</textlink>，了解 <authlink>OAuth 2.0</authlink> 相關資訊。",
     "developerIntegrationFormUnfurlingView.switcher.label":
       "是否要啟用此整合的連結預覽？",
     "developerIntegrationFormUnfurlingView.switcher.subtitle":
@@ -6933,8 +6976,8 @@
     "domainVerificationInput.emailDomainsSection.removeDomain.cancel": "取消",
     "domainVerificationInput.emailDomainsSection.removeDomain.message":
       "確定要刪除此網域嗎？",
-    "domainVerificationInput.emailDomainsSection.statusToken.failed": "失败",
-    "domainVerificationInput.emailDomainsSection.statusToken.pending": "等待",
+    "domainVerificationInput.emailDomainsSection.statusToken.failed": "失敗",
+    "domainVerificationInput.emailDomainsSection.statusToken.pending": "待處理",
     "domainVerificationInput.emailDomainsSection.statusToken.verified":
       "已驗證",
     "domainVerificationInput.myIntegrations.emailDomainsSection.removeDomain.description":
@@ -6943,8 +6986,8 @@
       "刪除此網域會讓具有此電子郵件的其他人無法使用 SAML SSO 登入。",
     "domainVerificationInput.securitySAMLSettings.emailDomainsSection.removeDomain.pending.description":
       "刪除此網域即會重新啟動其驗證流程。下一次驗證嘗試會為此網域產生新驗證碼。",
-    "domainVerificationTable.table.header.domain": "域",
-    "domainVerificationTable.table.header.status": "状态",
+    "domainVerificationTable.table.header.domain": "網域",
+    "domainVerificationTable.table.header.status": "狀態",
     "downgradeModal.header.acceptedBusinessOfferConfirmation.title":
       "感謝你繼續選擇商業版",
     "downgradeModal.header.acceptedEnterpriseOfferConfirmation.title":
@@ -6960,6 +7003,7 @@
     downloadMacSiliconLabel: "適用於搭載 Apple M1 的 Mac",
     "dragHandleButton.clickPrompt.text": "按一下<medium>打開選單</medium>",
     "dragHandleButton.dragPrompt.text": "拖動<medium>以移動</medium>",
+    "drawing.images-not-supported": "绘图中尚未支持图像。",
     "duplicateActions.offlineError.message": "請連接網路後複製此區塊。",
     "duplicatePagePopup.buttonMenuItem.logoutButton.label": "登出 ({email})",
     "duplicatePagePopup.choooseWorkspaceMobileMenu.title": "選擇一個工作區",
@@ -7003,10 +7047,10 @@
     "editProperty.emptyProperty.label": "空",
     "editProperty.relationEditedProperties.moreCount.label":
       "其他 {leftoverCountNumber} 項",
-    "editableUserAvatar.profilePhoto.addPhoto": "添加照片",
+    "editableUserAvatar.profilePhoto.addPhoto": "加入照片",
     "editableUserAvatar.profilePhoto.remove": "移除照片",
-    "editableUserAvatar.profilePhoto.replace": "替换照片",
-    "editableUserAvatar.profilePhoto.upload": "上传照片",
+    "editableUserAvatar.profilePhoto.replace": "取代照片",
+    "editableUserAvatar.profilePhoto.upload": "上傳照片",
     "educationModal.nextButtonCta": "下一個",
     "educationPlan.title": "個人專業版 (教育)",
     "educationPlusPlan.title": "教育加值版",
@@ -7218,6 +7262,7 @@
     "embedMenu.action.codepen": "嵌入 CodePen",
     "embedMenu.action.createEmbed": "建立嵌入",
     "embedMenu.action.deepnote": "嵌入 Deepnote",
+    "embedMenu.action.drawing": "包含绘图",
     "embedMenu.action.drive": "嵌入 Google 雲端硬碟",
     "embedMenu.action.excalidraw": "嵌入 Excalidraw",
     "embedMenu.action.figma": "嵌入 Figma",
@@ -7646,7 +7691,7 @@
     "formHandler.submitButton.continue.label": "繼續",
     "formHandler.submitButton.create.label": "提交",
     "formHandler.submitButton.create.update": "儲存變更",
-    "formHandler.submitButton.saved.label": "已保存",
+    "formHandler.submitButton.saved.label": "已儲存",
     "formInputIcon.uploadButton.label": "上傳圖片",
     "formSecretShow.copied.label": "已複製",
     "formSecretShow.copySecret.label": "拷貝",
@@ -7658,8 +7703,9 @@
     "formatSettings.threeOrMoreItems":
       "{item1} 及其他 {numberOfOther} 位使用者",
     "formatSettings.twoItems": "{item1} 和 {item2}",
-    "formula2Input.keyboardShortcutHint": "Enter自动完成；Shift+Enter添加新行",
-    "formula2Input.learnMore.button.label": "公式用法",
+    "formula2Input.keyboardShortcutHint":
+      "按Enter键自动完成，按Shift+Enter添加新行。",
+    "formula2Input.learnMore.button.label": "进一步了解公式",
     "formulaAutocompleteMenu.insertAValue.message": "插入數值",
     "formulaAutocompleteMenu.insertValue.message": "插入數值",
     "formulaAutocompleteMenu.setADate.title": "設定日期",
@@ -7699,6 +7745,7 @@
     "formulas.SimpleFormulaValuePicker.chooseAValue": "選擇...",
     "formulas.SimpleFormulaValuePicker.clear": "清除",
     "formulas.SimpleFormulaValuePicker.customFormula": "自訂公式",
+    "formulas.SimpleFormulaValuePicker.genericMenuHeader": "将属性设置为",
     "formulas.SimpleFormulaValuePicker.pages.searchPlaceholder":
       "搜尋一或多個頁面...",
     "formulas.SimpleFormulaValuePicker.pages.sectionHeader": "頁面",
@@ -7886,6 +7933,7 @@
     "general.mfa.error.totpDuplicateFriendlyName": "驗證器名稱已在使用中",
     "general.mfa.error.totpEmptyFriendlyName": "驗證器名稱不可空白",
     "general.mfa.error.unexpectedError": "出現錯誤，請重試",
+    "general.mfa.passwordResentLinkSent": "密码重置链接已发送到地址{email}。",
     "genericDialogModal.cancelButton.label": "取消",
     "genericErrors.genericErrorMessage": "出了些問題。",
     "genericErrors.insufficientPermissions.errorMessage":
@@ -7898,7 +7946,7 @@
     "gistBlock.placeholder": "嵌入 Gist",
     "githubGistRenderer.errorLoading.message": "載入 gist 時出錯",
     "githubGistRenderer.loading.message": "載入 gist 中…",
-    "githubUtils.untitledPage": "无标题",
+    "githubUtils.untitledPage": "無標題",
     "googleAuthPromptModal.connectToGoogleButton.label": "連接到 Google",
     "googleAuthPromptModal.mobileUseDesktopPrompt.errorMessage":
       "請在電腦上使用 Notion 連接新帳號。",
@@ -8076,7 +8124,8 @@
     "id.completions.helpMeWrite": "協助我撰寫",
     "id.completions.helpMeWritePlaceholder":
       "你想撰寫什麼樣的內容？例如，「我們應雇用專門設計師的 5 個原因」",
-    "id.completions.historyLabel": "{currentRevision}/{totalRevisions}",
+    "id.completions.historyLabel":
+      "第 {currentRevision} 個，共 {totalRevisions} 個",
     "id.completions.improveWriting": "改善寫作",
     "id.completions.insertAIBlock": "作为AI块插入",
     "id.completions.jobDescription": "工作說明",
@@ -8102,7 +8151,7 @@
     "id.completions.recruitingEmail": "招聘電子郵件",
     "id.completions.recruitingEmailPlaceholder":
       "你想嘗試招聘哪些人員？例如「我們全新社交正念應用程式的資深前端工程師」",
-    "id.completions.redoAriaLabel": "转到下一个AI响应",
+    "id.completions.redoAriaLabel": "前往下一個 AI 回應",
     "id.completions.salesEmail": "銷售電子郵件",
     "id.completions.salesEmailPlaceholder":
       "你銷售的是什麼產品？例如「全新腦力提升補充品營運主管的電子郵件」",
@@ -8132,7 +8181,7 @@
     "id.completions.translateSpanish": "西班牙文",
     "id.completions.translateTagalog": "他加祿語",
     "id.completions.translateVietnamese": "越南文",
-    "id.completions.undoAriaLabel": "转到上一个AI响应",
+    "id.completions.undoAriaLabel": "前往上一個 AI 回應",
     "id.completions.writeWithAI": "開始用 AI 撰寫",
     "identityAndProvisioning.accountAuth.byline":
       "自訂使用者存取 SAML 單一登入的工作區。",
@@ -8199,21 +8248,21 @@
     "identityAndProvisioning.managedUsers.button": "管理使用者",
     "identityAndProvisioning.managedUsers.message":
       "管理使用你的驗證網域的帳號。",
-    "identityAndProvisioning.managedUsers.table.access": "访问",
-    "identityAndProvisioning.managedUsers.table.empty": "用户不存在。",
-    "identityAndProvisioning.managedUsers.table.lastActive": "上次活动",
-    "identityAndProvisioning.managedUsers.table.lastActive.unknown": "无活动",
-    "identityAndProvisioning.managedUsers.table.user": "用户",
+    "identityAndProvisioning.managedUsers.table.access": "存取權限",
+    "identityAndProvisioning.managedUsers.table.empty": "找不到使用者。",
+    "identityAndProvisioning.managedUsers.table.lastActive": "前次使用",
+    "identityAndProvisioning.managedUsers.table.lastActive.unknown": "沒有活動",
+    "identityAndProvisioning.managedUsers.table.user": "使用者",
     "identityAndProvisioning.managedUsers.table.userAccess.cellTitle":
-      "{remainingCount，plural，other{{firstWorkspaceName}<gray>+{remainingCount}</gray>}}",
+      "{remainingCount, plural, other {{firstWorkspaceName}<gray>剩餘 {remainingCount} 個</gray>}}",
     "identityAndProvisioning.managedUsers.table.userAccess.noWorkspaces":
-      "无工作空间",
+      "沒有工作區",
     "identityAndProvisioning.managedUsers.table.userAccess.numMembers":
-      "{plan}·成员{numMembers}{numMembers，plural，one{明}other{明}}",
+      "{plan} · {numMembers} {numMembers, plural, one {位成員} other {位成員}}",
     "identityAndProvisioning.managedUsers.table.userAccess.numMembersLowerEndRange":
-      "{plan}·成员{lowerEnd}以上",
+      "{plan} · {lowerEnd}+ 位成員",
     "identityAndProvisioning.managedUsers.table.userAccess.numMembersRange":
-      "{plan}·成员{lowerEnd}~{higherEnd}名称",
+      "{plan} · {lowerEnd} 到 {higherEnd} 位成員",
     "identityAndProvisioning.managedUsers.title": "使用者管理",
     "identityAndProvisioning.managedUsers.tooltip":
       "你必須驗證網域才能管理其使用者",
@@ -8426,10 +8475,10 @@
     "importOptions.textMarkdown.title": "文字與 Markdown",
     "importPopup.deselectAll": "取消全選",
     "importPopup.selectAll": "全選",
-    "importSidebarActions.confirm": "确认",
-    "importSidebarActions.getStarted": "快速入门",
-    "importSidebarActions.importData": "导入数据",
-    "importSidebarActions.selectData": "选择项目",
+    "importSidebarActions.confirm": "確認",
+    "importSidebarActions.getStarted": "立即開始",
+    "importSidebarActions.importData": "匯入資料",
+    "importSidebarActions.selectData": "選擇專案",
     "importTrello.assignedPersonColumn.propertyName": "指派給",
     "importTrello.attachedFilesColumn.propertyName": "附件",
     "importTrello.database.defaultViewTitle": "預設視圖",
@@ -8441,24 +8490,24 @@
     "importTrello.statusProperty.complete": "已完成",
     "importTrello.statusProperty.inProgress": "進行中",
     "importedAsanaResultEmail.emailText":
-      "打开<importpagelink>Notion</importpagelink>查看导入的项目和任务。如果有问题，请查看<loggerpagelink>导入日志</loggerpagelink>。",
+      "打开<importpagelink>Notion查看</importpagelink>导入的项目和操作。如果您有问题，请参阅<loggerpagelink>导入日志</loggerpagelink>。",
     "importedAsanaResultEmail.subjectLine":
-      "{importedProjectCount}个项目是从Asana导入的。",
-    "importsTab.activeImports.importFrom": "要导入的位置",
-    "importsTab.activeImports.importStatus": "状态",
-    "importsTab.activeImports.importTime": "导入开始时间",
-    "importsTab.activeImports.title": "正在进行的导入",
+      "已完成从Asana导入{importedProjectCount}个项目。",
+    "importsTab.activeImports.importFrom": "匯入來源",
+    "importsTab.activeImports.importStatus": "狀態",
+    "importsTab.activeImports.importTime": "匯入時間",
+    "importsTab.activeImports.title": "有效匯入",
     "importsTab.activeImportsTable.noActiveImports":
       "没有与帐户关联的正在进行的导入。",
-    "importsTab.confirm.doneText": "已完成",
+    "importsTab.confirm.doneText": "完成",
     "importsTab.fetchingAvailableConnections": "正在获取可用连接...",
-    "importsTab.importingData.closeButtonText": "已关闭",
-    "importsTab.selectData.importCompletedTasks": "导入已完成的任务",
-    "importsTab.selectData.nextButtonText": "下一页",
-    "importsTab.subtitle": "从任何源轻松导入数据。",
-    "importsTab.title": "导入数据",
+    "importsTab.importingData.closeButtonText": "關閉",
+    "importsTab.selectData.importCompletedTasks": "匯入已完成的任務",
+    "importsTab.selectData.nextButtonText": "下一步",
+    "importsTab.subtitle": "你可以自下列任一來源輕鬆匯入資料。",
+    "importsTab.title": "匯入資料",
     "importsTab.unsupportedImportsHelperText":
-      "如果您想从尚不支持Notion的应用程序导入数据，请尝试导入CSV文件。",
+      "如果你的資料位於某個我們尚未支援的位置，你可以嘗試透過 CSV 檔案將其匯入。",
     "inAppNotificationsFollowingOptionsHelpers.allComments.caption":
       "接受所有評論和 @提及 通知",
     "inAppNotificationsFollowingOptionsHelpers.allComments.label": "所有評論",
@@ -8506,10 +8555,10 @@
     "integrationImportPopup.importButton.label": "匯入",
     "integrationInstallerFilter.userSearch.placeholder": "依使用者篩選...",
     "integrations.configureIntegrationModal.integrationName":
-      "连接到{integrationName}Notion",
+      "将{integrationName}连接到Notion",
     "integrations.configureIntegrationModal.integrationTagline":
-      "{integrationName}是一个易于使用的智能数据泄露解决方案，适用于SaaS和云应用程序。",
-    "integrations.configureIntegrationModal.webhookSecretCode": "秘密代码",
+      "{integrationName}集成是适用于SaaS和云应用的简单智能数据泄露防护解决方案。",
+    "integrations.configureIntegrationModal.webhookSecretCode": "隐身代码",
     "integrations.configureIntegrationModal.webhookUrlInput": "Webhook URL",
     "internalUnfurlingMenu.actions.pasteAsLink.title": "以連結形式貼上",
     "internalUnfurlingMenu.actions.pasteAsMention.title": "以提及形式貼上",
@@ -8935,7 +8984,7 @@
       "{numTeamMembers, plural, other {位成員}}",
     "manageTeamsTableColumnData.joinedLabel": "正在参与",
     "manageTeamsTableColumnData.numMembersLabel":
-      "{numMembers，plural，other{{numMembers}成员}}",
+      "{numMembers，plural，other{成员{numMembers}名称}}",
     "manageTeamspacesTable.columnTitle.teamspace": "團隊空間",
     "marginComments.collapsed.expand.label": "展開",
     "marginComments.collapsed.numComments.count":
@@ -9190,7 +9239,7 @@
     "mobileCalendarDayMenu.noResults.message": "沒有項目",
     "models.BotModel.unnamedBot": "未命名的機器人",
     "moveBlockMenu.TeamSidebarLocked.tooltip":
-      "此团队空间锁定了侧边栏。您必须是团队空间所有者才能进入此团队空间。",
+      "TeamSpace侧边栏被锁定。只有TeamSpace所有者才能移动数据。",
     "moveBlockMenu.addFromTemplate.title": "從模版加入",
     "moveBlockMenu.addToPrivatePages":
       "加入到<mediumtext>私人頁面</mediumtext>",
@@ -9208,7 +9257,7 @@
     "moveBlockMenu.moveToSpace.title": "移動到工作區",
     "moveBlockMenu.moveToTemplate.title": "移至模版",
     "moveBlockMenu.needEditAccess.tooltip":
-      "要移动此页面，需要对“{parentName}”的“可编辑”访问权限。",
+      "要移动此页，需要“{parentName}”的“允许编辑”权限。",
     "moveBlockMenu.noEditAccess.tooltip": "沒有編輯存取權限",
     "moveBlockMenu.noResults.label": "沒有結果",
     "moveBlockMenu.pagesSection.noTypedDatabases.title": "轉換成頁面到",
@@ -9249,13 +9298,13 @@
       "{numBlocksMoved, plural, other {# 個區塊}}",
     "moveToHelpers.movePageDescriptorString":
       "{numPagesMoved, plural, other { 個頁面}}",
-    "moveToHelpers.moveToUntypedLocationConfirmationButtonLabel": "移移",
+    "moveToHelpers.moveToUntypedLocationConfirmationButtonLabel": "仍要移動",
     "moveToHelpers.moveToUntypedLocationConfirmationMessage":
-      "如果将此{typedDatabaseItem}项目移到{destinationName}位置，它将更改为页面并失去现有属性。",
+      "此 {typedDatabaseItem} 會轉換成頁面，並在你將其移動到 {destinationName} 後遺失其屬性。",
     "moveToHelpers.moveToUntypedLocationConfirmationTitle":
-      "是否确实要移动此{typedDatabaseItem}项目？",
-    "moveToHelpers.privatePageCaptionPrefix": "个人主页",
-    "moveToHelpers.sharedPageCaptionPrefix": "共享页面",
+      "確定要移動此 {typedDatabaseItem} 嗎？",
+    "moveToHelpers.privatePageCaptionPrefix": "私人",
+    "moveToHelpers.sharedPageCaptionPrefix": "已分享",
     "moveToMenuActions.duplicatedToSpace.toast":
       "已將 {name} 的複本建立到 {spaceName}",
     "moveToMenuActions.duplicatingContent.loadingMessage":
@@ -9264,7 +9313,7 @@
     "moveToMenuRenderer.addTo.label": "搜索要加入到的頁面…",
     "moveToMenuRenderer.duplicateToSpace.label": "建立頁面的複本…",
     "moveToMenuRenderer.moveTo.teamLabel": "將頁面移動到...",
-    "moveToMenuRenderer.moveTo.typedLabel": "將 {typedItemName} 移至…",
+    "moveToMenuRenderer.moveTo.typedLabel": "將 {typedItemName} 移動到…",
     "moveToModal.suggestedSection.title": "建議",
     "moveToModal.teamsSection.title": "團隊空間",
     "moveToModal.workspaceSection.title": "工作區",
@@ -9274,17 +9323,17 @@
     "moveToModalTypedEmptyState.subtitle":
       "加入 {itemName} 以移動到另一個團隊空間",
     "moveToModalTypedEmptyState.title": "沒有名稱為 {itemName} 的團隊空間",
-    "moveToModalTypedItem.privateButtonTitle": "个人主页",
-    "moveToModalTypedItem.sharedButtonTitle": "共享页面",
+    "moveToModalTypedItem.privateButtonTitle": "私人",
+    "moveToModalTypedItem.sharedButtonTitle": "已分享",
     "moveToOrCreateMenu.createSubpage.description":
       "在當前區塊內，在你的游標所在的位置建立一個新的子頁面。",
     "moveToOrCreateMenu.newPageIn.description":
       "在任何現有頁面內建立一個新頁面，然後一次性地連結到此頁面。",
-    "moveToOrCreateMenu.privateMenuItem.captionPrefix": "个人主页",
-    "moveToOrCreateMenu.sharedMenuItem.captionPrefix": "共享页面",
+    "moveToOrCreateMenu.privateMenuItem.captionPrefix": "私人",
+    "moveToOrCreateMenu.sharedMenuItem.captionPrefix": "已分享",
     "moveToOrCreateMenu.turnInto.description":
       "將區塊轉換為任何現有資料庫或頁面內的新頁面。",
-    "moveTypedMenu.tooltip": "移至這些位置時，即會保留 {typedItemName} 屬性",
+    "moveTypedMenu.tooltip": "移動到這些位置時，即會保留 {typedItemName} 屬性",
     "newBadge.label": "新",
     "newBadgeComponent.label": "新",
     "newBlock.abstract.description": "嵌入 Abstract 專案。",
@@ -9370,6 +9419,10 @@
     "newBlock.divider.fuzzySearchKeywords":
       "Horizontal Rule Divider --- —- 水平 shuiping shui'ping 分隔线 fengexian fen'ge'xian 分割尺 fengechi fen'ge'chi —— ",
     "newBlock.divider.title": "分隔線",
+    "newBlock.drawing.description": "在无限的画布上绘制绘图和图表。",
+    "newBlock.drawing.fuzzySearchKeywords":
+      "绘图图画布插图绘制草图tldraw涂鸦思维导图架构绘画笔",
+    "newBlock.drawing.title": "绘图",
     "newBlock.drive.description": "嵌入 Google 文件，Google 試算表…",
     "newBlock.drive.fuzzySearchKeywords":
       "Google Drive 谷歌 guge gu'ge 网盘 wangpan wang'pan 云盘 yunpan yun'pan",
@@ -10330,9 +10383,10 @@
     "onboardingCompanySurveyStage.step.title":
       "Notion 很適合用在工作上。向我們介紹一下你的工作",
     "onboardingDesktopAppDownload.continueButton.label": "帶我到 Notion",
-    "onboardingEmailConsent.checkbox.optInlabel": "同意接收Notion的营销传播。",
+    "onboardingEmailConsent.checkbox.optInlabel":
+      "我同意 Notion 向我傳送 Notion 相關行銷通訊。",
     "onboardingEmailConsent.checkbox.optOutlabel":
-      "不，我不想接收Notion的营销传播。",
+      "否，我不想接收 Notion 的行銷通訊。",
     "onboardingEmailConsent.unsubscribe.label":
       "你可以隨時<unsubscribe>取消訂閱</unsubscribe>\\n接收行銷通訊。Notion 的網站和通訊受到我們的《<privacypolicy>隱私權政策</privacypolicy>》規範。",
     "onboardingHelpers.personalWorkspaceName": "{userName}的 Notion",
@@ -11009,13 +11063,12 @@
     "passwordSettings.passwordModal.changePasswordButton.label": "更改密码",
     "passwordSettings.passwordModal.confirmPasswordInput.placeholder":
       "确认口令",
-    "passwordSettings.passwordModal.currentPasswordInput.label":
-      "请输入您的当前密码",
+    "passwordSettings.passwordModal.currentPasswordInput.label": "输入当前密码",
     "passwordSettings.passwordModal.currentPasswordInput.placeholder":
       "当前密码",
     "passwordSettings.passwordModal.educationPlanGuidelines":
-      "如果您无法访问学校电子邮件地址，您可以使用您的密码登录。",
-    "passwordSettings.passwordModal.newPasswordInput.label": "请输入新密码。",
+      "如果您无法访问学校电子邮件地址，您可以使用密码登录。",
+    "passwordSettings.passwordModal.newPasswordInput.label": "输入新密码",
     "passwordSettings.passwordModal.newPasswordInput.placeholder": "新口令",
     "passwordSettings.passwordModal.passwordGuidelines":
       "使用至少15个字符或至少8个字符的字符和数字组合作为密码。",
@@ -11032,11 +11085,11 @@
     "passwordSettings.passwordUpdateSuccessModal.educationPlan.header":
       "即使您无法访问学校电子邮件地址，您也可以登录。",
     "passwordSettings.passwordUpdateSuccessModal.header":
-      "登录帐户时询问此密码。",
+      "登录帐户时必须输入此密码。",
     "passwordSettings.passwordUpdatedModal.passwordSetSuccessModal.title":
-      "密码已设置",
+      "密码已设置。",
     "passwordSettings.passwordUpdatedModal.passwordUpdatedModal.title":
-      "密码已保存",
+      "密码已保存。",
     "passwordSettings.removePasswordButton.label": "移除密碼",
     "passwordSettings.removePasswordModal.continueButton.label": "继续",
     "passwordSettings.removePasswordModal.currentPasswordInput.placeholder":
@@ -11044,31 +11097,30 @@
     "passwordSettings.removePasswordModal.educationPlanWarning":
       "如果你無法存取學校的電子郵件地址，則將無法重新登入 Notion。",
     "passwordSettings.removePasswordModal.educationPlanWarning.message":
-      "如果失去对学校电子邮件地址的访问权限，您将无法再次登录Notion。",
+      "如果失去对学校电子邮件的访问权限，您将无法重新登录Notion。",
     "passwordSettings.removePasswordModal.header":
       "当您尝试登录时，您将通过电子邮件收到链接和登录代码。",
     "passwordSettings.removePasswordModal.keepUsingPasswordButton.label":
-      "请继续使用密码。",
+      "继续使用密码",
     "passwordSettings.removePasswordModal.message":
       "移除密碼時出錯。請稍後再試。",
     "passwordSettings.removePasswordModal.oldPasswordNotEnteredError":
       "請輸入你的當前密碼。",
-    "passwordSettings.removePasswordModal.passwordInput.label":
-      "请输入您的当前密码",
+    "passwordSettings.removePasswordModal.passwordInput.label": "输入当前密码",
     "passwordSettings.removePasswordModal.passwordInput.placeholder":
       "輸入密碼…",
     "passwordSettings.removePasswordModal.removeMfaWarning.message":
-      "如果继续<boldtext>，则第二阶段身份验证也将被删除。</boldtext>",
+      "<boldtext>如果继续，也将删除第二阶段身份验证。</boldtext>",
     "passwordSettings.removePasswordModal.removePasswordButton.label":
       "移除密碼",
     "passwordSettings.removePasswordModal.text":
       "你即將刪除密碼。我們會通過電子郵件將你的臨時登入碼傳送給你，以供日後存取 Notion。",
     "passwordSettings.removePasswordModal.title":
-      "是否确实要删除临时登录代码的密码？",
+      "是否要删除密码并使用临时登录代码？",
     "passwordSettings.removePasswordSuccess.message": "你的密碼已被移除。",
     "passwordSettings.removePasswordSuccessModal.header":
       "我们将通过电子邮件向您发送临时登录代码，以便您可以登录您的帐户。",
-    "passwordSettings.removePasswordSuccessModal.title": "密码已删除",
+    "passwordSettings.removePasswordSuccessModal.title": "密码删除完成",
     "passwordSettings.repeatPasswordInput.label": "再次輸入密碼",
     "passwordSettings.repeatPasswordInput.placeholder": "再次輸入新密碼…",
     "passwordSettings.setPassword.message": "设置用于帐户登录的永久密码。",
@@ -11450,7 +11502,7 @@
     "profileSettings.accountSecuritySection.twoStepVerificationSetting.message":
       "使用一次性代碼驗證你的身分，藉此保護帳號的安全",
     "profileSettings.accountSecuritySection.twoStepVerificationSetting.settingConfigured.message":
-      "{numMfaSettings}个验证方法已启用。",
+      "{numMfaSettings}个身份验证方法已启用。",
     "profileSettings.accountSecuritySection.twoStepVerificationSettingButton.label":
       "變更驗證方式",
     "profileSettings.accountSecuritySection.twoStepVerificationSettingButton.tooltip":
@@ -11848,7 +11900,7 @@
     "relationPropertyMenu.mobileRelationMenu.title": "關聯",
     "relationPropertyMenu2.connectedRelation.searchPlaceholder": "尋找頁面",
     "relationPropertyMenu2.connectedRelationGithub.searchPlaceholder":
-      "Https://github.com/...粘贴到中",
+      "粘贴URL(https://github.com/...)",
     "relationPropertyMenu2.searchPlaceholder": "連結或建立頁面…",
     "relationPropertyMenu2.syncedCollection.searchPlaceholder": "連結頁面",
     "relationPropertyMenu2.viewExisting.searchPlaceholder": "搜尋連結的頁面…",
@@ -12119,15 +12171,15 @@
     "securitySAMLSettings.disableGuests.confirmationModal.message":
       "是否確定？此工作區中的所有訪客都將被移除。",
     "securitySAMLSettings.emailDomainsSection.addDomain": "新增網域",
-    "securitySAMLSettings.emailDomainsSection.details": "查看详细信息",
+    "securitySAMLSettings.emailDomainsSection.details": "檢視詳細資料",
     "securitySAMLSettings.emailDomainsSection.detailsCaption":
-      "详细了解此域身份验证历史记录的状态。",
+      "查看更多關於此網域驗證記錄狀態的資訊。",
     "securitySAMLSettings.emailDomainsSection.emailInput.captionNoSupportLink":
       "當你啟用 SAML 後，任何使用以下網域電子郵件地址的人員就能夠使用 SAML 單一登入登入。",
-    "securitySAMLSettings.emailDomainsSection.emptyTable": "没有配置域。",
-    "securitySAMLSettings.emailDomainsSection.remove": "删除域",
+    "securitySAMLSettings.emailDomainsSection.emptyTable": "未配置網域。",
+    "securitySAMLSettings.emailDomainsSection.remove": "移除網域",
     "securitySAMLSettings.emailDomainsSection.removeCaption":
-      "删除此域身份验证历史记录。",
+      "刪除此網域驗證記錄。",
     "securitySAMLSettings.offline.message": "請連接網路後管理安全設定。",
     "securitySAMLSettings.preventPublicSharing.confirmationModal.confirmButton.label":
       "是",
@@ -12371,11 +12423,14 @@
     "sidebar.outlinerTeamToggleButton.duplicateCaption":
       "重複項權限及其他設定，但沒有頁面和成員",
     "sidebar.outlinerTeamToggleButton.duplicateLabel": "建立團隊空間的複本",
+    "sidebar.outlinerTeamToggleButton.joinAsMemberLabel": "订阅为成员",
+    "sidebar.outlinerTeamToggleButton.joinAsOwnerLabel": "注册为所有者",
     "sidebar.outlinerTeamToggleButton.joinLabel": "加入團隊空間",
     "sidebar.outlinerTeamToggleButton.leaveLabel": "離開團隊空間",
     "sidebar.outlinerTeamToggleButton.ownerViewLabel": "團隊空間設定",
     "sidebar.outlinerTeamToggleButton.tooltip": "團隊空間設定與成員...",
     "sidebar.outlinerTeamToggleButton.unjoinedMemberViewLabel": "查看成員",
+    "sidebar.outlinerTeamToggleButton.upgradeSelfToOwnerLabel": "成为所有者",
     "sidebar.privatePagesSection.tooltip":
       "你建立的頁面，且不在任何團隊空間中。",
     "sidebar.privateSection.header": "私人",
@@ -12439,23 +12494,23 @@
     "sidebarCreateTeamButton.button": "建立團隊空間",
     "sidebarCreateTeamButton.singlePlayer.button": "建立團隊空間",
     "sidebarCreateTeamButton.tooltip": "建立新團隊空間並邀請其他人",
-    "sidebarCreateTeamModal.appsSelection.label": "选择应用程序",
+    "sidebarCreateTeamModal.appsSelection.label": "選擇應用",
     "sidebarCreateTeamModal.footer.addUseCases": "加入用例",
     "sidebarCreateTeamModal.footer.createTeam": "建立團隊空間",
     "sidebarCreateTeamModal.footer.pageCount":
       "{pageNumber} 個步驟，共 {totalPages} 個步驟",
-    "sidebarCreateTeamModal.footer.skipForNow": "现在跳过",
-    "sidebarCreateTeamModal.functionSelection.label": "选择所属部门",
-    "sidebarCreateTeamModal.functions.engTitle": "软件工程",
-    "sidebarCreateTeamModal.functions.generalTitle": "一般团队",
-    "sidebarCreateTeamModal.functions.marketingTitle": "市场推广",
+    "sidebarCreateTeamModal.footer.skipForNow": "暫時略過",
+    "sidebarCreateTeamModal.functionSelection.label": "選擇功能",
+    "sidebarCreateTeamModal.functions.engTitle": "軟體工程",
+    "sidebarCreateTeamModal.functions.generalTitle": "一般團隊",
+    "sidebarCreateTeamModal.functions.marketingTitle": "行銷",
     "sidebarCreateTeamModal.functions.otherTitle": "其他",
-    "sidebarCreateTeamModal.functions.productTitle": "产品设计",
-    "sidebarCreateTeamModal.functions.salesTitle": "销售",
+    "sidebarCreateTeamModal.functions.productTitle": "產品設計",
+    "sidebarCreateTeamModal.functions.salesTitle": "銷售",
     "sidebarCreateTeamModal.learnMoreUrl": "了解團隊空間",
     "sidebarCreateTeamModal.logo.label": "選擇圖示",
     "sidebarCreateTeamModal.membersTitle.label": "加入人員",
-    "sidebarCreateTeamModal.optionalFunctionSelection.label": "所属部门(可选)",
+    "sidebarCreateTeamModal.optionalFunctionSelection.label": "功能（選填）",
     "sidebarCreateTeamModal.teamDescription.label":
       "團隊空間可供你的團隊整理頁面、權限及成員",
     "sidebarCreateTeamModal.teamScreen.descriptionPlaceholder":
@@ -12466,7 +12521,7 @@
     "sidebarCreateTeamModal.teamScreen.openAccessLabel":
       "{spaceName} 中的所有人和新成員都可以存取此團隊空間",
     "sidebarCreateTeamModal.teamScreen.permissionsLabel": "權限",
-    "sidebarCreateTeamModal.teamScreen.teamDescriptionLabel": "說明",
+    "sidebarCreateTeamModal.teamScreen.teamDescriptionLabel": "說明（選填）",
     "sidebarCreateTeamModal.teamScreen.teamDescriptionOptionalLabel":
       "說明（選填）",
     "sidebarCreateTeamModal.teamScreen.teamIconAndNameLabel": "圖示和名稱",
@@ -12477,13 +12532,14 @@
     "sidebarCreateTeamModal.types.docsTitle": "文件",
     "sidebarCreateTeamModal.types.meetingsDescription": "你所有會議的快速筆記",
     "sidebarCreateTeamModal.types.meetingsTitle": "會議記錄",
-    "sidebarCreateTeamModal.types.sprintsDescription": "团队敏捷项目管理跟踪",
-    "sidebarCreateTeamModal.types.sprintsTitle": "任务、项目、冲刺",
+    "sidebarCreateTeamModal.types.sprintsDescription":
+      "你團隊的敏捷專案管理追蹤",
+    "sidebarCreateTeamModal.types.sprintsTitle": "任務、專案及 Sprint",
     "sidebarCreateTeamModal.types.tasksDescription":
       "與你的團隊一同追蹤專案和任務",
     "sidebarCreateTeamModal.types.tasksTitle": "任务和项目",
-    "sidebarCreateTeamModal.types.wikiDescription": "管理团队的知识库。",
-    "sidebarCreateTeamModal.types.wikiTitle": "维基",
+    "sidebarCreateTeamModal.types.wikiDescription": "管理你團隊的知識庫",
+    "sidebarCreateTeamModal.types.wikiTitle": "知識庫",
     "sidebarCreateTeamModal.typesDescription.label":
       "透過模板快速建立你的團隊。你可以稍後在「模板庫」中選擇更多模板。",
     "sidebarCreateTeamModal.typesTitle.label": "選擇用例",
@@ -12576,7 +12632,7 @@
     "sidebarTrash.filterBy.placeholder": "依據頁面標題篩選…",
     "sidebarTrash.goOnline.prompt": "請連線網路後查看垃圾桶。",
     "sidebarTrash.inCurrentPage.tabHeader": "在當前頁面",
-    "sidebarTrash.lastEditedByMe.tabHeader": "我最后编辑",
+    "sidebarTrash.lastEditedByMe.tabHeader": "上次編輯者：我",
     "sidebarTrash.learnMore.prompt": "了解刪除和回復頁面",
     "sidebarTrash.menu.header": "垃圾桶",
     "sidebarTrash.mobileFilterBy.noMatchesPrompt": "無匹配項目。",
@@ -12629,8 +12685,8 @@
       "使用者無法編輯區塊。",
     "slackAuthorizationErrors.webhookNotFound.errorMessage":
       "找不到 Slack 的 webhook。",
-    "slackAutomations.remove.confirmation.message":
-      "是否确实要删除此通知配置？",
+    "slackAutomations.remove.confirmation.acceptLabel": "删除",
+    "slackAutomations.remove.confirmation.message": "確定要移除此通知配置嗎？",
     "slackIntegrationButton.removeIntegrationConfirmationDialog.prompt":
       "確定要刪除 Slack 整合嗎？",
     "slackIntegrationButton.removeIntegrationConfirmationDialog.removeButton.label":
@@ -12655,7 +12711,7 @@
     "slackNotificationProcessor.showMoreEditsLinkText.label":
       "{numberOfMoreEdits, plural, other {顯示其他 {numberOfMoreEdits} 項編輯…}}",
     "slackNotificationProcessor.untitledCollectionViewName.placeholder":
-      "无标题视图",
+      "無標題視圖",
     "slackNotificationProcessor.untitledName.placeholder": "無標題",
     "slackNotificationProcessor.userMentionedInBlock.notificationContents":
       "{userName} 在 {pageName} 提到了你",
@@ -12731,7 +12787,7 @@
       "{pageName} 的驗證已過期",
     "snackbar.undo.title": "還原",
     "spaceActions.createAndDuplicatePageInSpace.copyNotCreated.error":
-      "无法创建复制的页面。",
+      "無法建立已建立複本的頁面。",
     "spaceActions.createGettingStartedPage.copyNotCreated.error":
       "無法建立用戶端複製。",
     "spaceActions.deletingWorkspace.loadingMessage": "正在刪除工作區…",
@@ -12975,7 +13031,7 @@
     "spaceIntegrationSettings.complianceIntegrationTable.integrationType.dlp":
       "DLP",
     "spaceIntegrationSettings.complianceIntegrationTable.integrationType.siem":
-      "暹粒",
+      "SIEM",
     "spaceIntegrationSettings.error": "發生問題...",
     "spaceIntegrationSettings.integrationTable.creationInfoColumn.contents":
       "{installerName} 於 {installedTime}",
@@ -13216,7 +13272,7 @@
     "spaceSettingsSidebar.debugZoneTab.title": "偵錯區",
     "spaceSettingsSidebar.experimentsTab.title": "實驗",
     "spaceSettingsSidebar.identity&ProvisioningTab.title": "身分和管理分配",
-    "spaceSettingsSidebar.importsTab.title": "导入",
+    "spaceSettingsSidebar.importsTab.title": "匯入",
     "spaceSettingsSidebar.integrationsTab.title": "整合",
     "spaceSettingsSidebar.languageAndRegionTab.title": "語言與地區",
     "spaceSettingsSidebar.membersTab.title": "成員",
@@ -13343,6 +13399,7 @@
     "spaceSubscriptionPlans.addons.title": "附加元件",
     "spaceSubscriptionPlans.aiAddOn.switchPlanAsMember.tooltip":
       "只有工作區擁有者可以執行此動作。",
+    "spaceSubscriptionPlans.allPlans.title": "所有计划",
     "spaceSubscriptionPlans.faqSection.link": "方案、帳單及付款",
     "spaceSubscriptionPlans.faqSection.title": "常見問題",
     "spaceSubscriptionPlans.offlineMessage": "請連接網路後管理定價方案。",
@@ -13590,11 +13647,11 @@
     "subscriptionSettings.subscriptionStatus.freePlanMessage":
       "此工作區是<bold>免費方案</bold>，有區塊儲存限制。",
     "subscriptionSettings.subscriptionStatus.gracePeriodBlockLimit":
-      "已达到Notion试用块限制。{remainingDaysMessage}天后，新内容的创建将受到限制。",
+      "你已達到 Notion 的試用區塊限制，並在我們限制建立新內容前還有 {remainingDaysMessage} 天的時間。",
     "subscriptionSettings.subscriptionStatus.gracePeriodBlockLimitNumDays":
-      "{remainingDays，plural，other{离升级还有{remainingDays}天}}",
+      "{remainingDays, plural, other {還有 {remainingDays} 天時間可升級}}",
     "subscriptionSettings.subscriptionStatus.gracePeriodBlockLimitToday":
-      "今天需要升级",
+      "立即升級",
     "subscriptionSettings.subscriptionStatus.legacySubscriptionMessage":
       "我們的訂閱系統目前正在移轉中。請稍後再查看以了解新功能！",
     "subscriptionSettings.subscriptionStatus.nextPlan.free":
@@ -13808,12 +13865,13 @@
     "teamInviteLinkActions.joinTeam.confirmationMessage": "已加入 {teamName}",
     "teamInviteLinkActions.requestAccess.failureMessage": "無法要求成員資格",
     "teamInviteLinkActions.requestAccess.successMessage": "已成功要求成員資格",
-    "teamInviteLinkJoinPage.backToMyContentButton.label": "返回到“我的内容”",
-    "teamInviteLinkJoinPage.contact.message": "如有疑问，请联系工作区所有者。",
-    "teamInviteLinkJoinPage.joinTeam.label": "团队参与",
+    "teamInviteLinkJoinPage.backToMyContentButton.label": "返回我的內容",
+    "teamInviteLinkJoinPage.contact.message":
+      "如有任何問題，請聯絡你的工作區擁有者。",
+    "teamInviteLinkJoinPage.joinTeam.label": "加入團隊空間",
     "teamInviteLinkJoinPage.page.subtitle":
-      "加入团队后，您就可以访问该团队的内容。",
-    "teamInviteLinkJoinPage.page.title": "已被邀请加入{teamName}团队。",
+      "如果你加入團隊空間，你就可以存取團隊空間中的內容。",
+    "teamInviteLinkJoinPage.page.title": "你已受邀加入 {teamName}",
     "teamInviteLinkPageError.archivedTeam.title":
       "很抱歉。这个团队空间已经存档了。",
     "teamInviteLinkPageError.backToMyContentButton.label": "返回到“我的内容”",
@@ -13829,17 +13887,20 @@
     "teamInviteLinkRequestModal.reasonForRequest.title":
       "要求 {icon} {teamName} 的存取權限",
     "teamInviteLinkRequestModal.requestAccessButton.label": "要求",
-    "teamInviteLinkRequestPage.backToMyContentButton.label": "返回到“我的内容”",
+    "teamInviteLinkRequestPage.backToMyContentButton.label": "返回我的內容",
     "teamInviteLinkRequestPage.contact.message":
-      "如有疑问，请联系工作区所有者。",
-    "teamInviteLinkRequestPage.message.placeholder": "消息(可选)",
+      "如有任何問題，請聯絡你的工作區擁有者。",
+    "teamInviteLinkRequestPage.message.placeholder": "訊息（選填）",
     "teamInviteLinkRequestPage.privateTeamspace.label": "个人团队空间",
-    "teamInviteLinkRequestPage.requestAccess.label": "访问请求",
+    "teamInviteLinkRequestPage.requestAccess.label": "要求存取權限",
     "teamInviteLinkRequestPage.requestAccess.subtitle":
-      "团队所有者批准请求后，即可访问此团队。",
-    "teamInviteLinkRequestPage.requestAccess.title": "请求访问{teamName}团队",
+      "如果團隊空間擁有者核准你的要求，你就可以存取此團隊空間。",
+    "teamInviteLinkRequestPage.requestAccess.title":
+      "要求 {teamName} 的存取權限",
     "teamJoinLeaveButton.joinTeam.closedTeamTooltip":
       "你只可以透過成員邀請加入封閉式團隊空間",
+    "teamJoinLeaveButton.joinTeam.privateTeamTooltip":
+      "只有通过成员邀请，才能参与私人团队空间。",
     "teamJoinLeaveButton.leaveTeam.enabledTooltip": "按一下以離開團隊空間",
     "teamJoinLeaveButton.leaveTeam.onlyOwnerTooltip":
       "你是唯一的團隊空間擁有者，因此無法離開此團隊空間。邀請其他擁有者，你才能離開。",
@@ -14427,6 +14488,7 @@
     "text.commandsMenuNotOpen.placeholder": "輸入「/」開啟命令…",
     "text.commandsMenuNotOpen.placeholder.ai":
       "輸入「空格」開啟 AI，「/」開啟命令…",
+    "text.commandsMenuNotOpen.placeholder.textAi": "命令按“/”，AI按“空间键”。",
     "text.commandsMenuOpen.placeholder": "輸入以篩選…",
     "text.truncated.showMoreLabel": "更多",
     "textRenderHelpers.commentMention.attachments.title":
@@ -14591,7 +14653,7 @@
     "transactionErrors.cannotArchiveOnlyDefaultTeam.message":
       "無法歸檔此團隊空間，因為其為此工作區中唯一的預設團隊空間。",
     "transactionErrors.cannotDeleteSprintsStatusPropertySchema":
-      "无法从Sprint架构中删除状态属性。",
+      "狀態屬性無法自 Sprint 架構中刪除。",
     "transactionErrors.cannotDeleteWikiOwnerProeprty":
       "擁有者屬性無法自知識庫中刪除。",
     "transactionErrors.cannotDowngradeSelfIfOnlyOwner.message":
@@ -14613,7 +14675,7 @@
     "transactionErrors.cannotJoinPrivateTeam.message":
       "無法加入私人團隊空間。請聯絡團隊擁有者以收到邀請。",
     "transactionErrors.cannotMutateSprintsStatusPropertySchema":
-      "无法修改Sprint状态属性模式。",
+      "Sprint 狀態屬性架構無法修改。",
     "transactionErrors.cantAddNewMembersFromThisJurisdiction":
       "我們目前不允許此司法管轄區的客戶新增成員。",
     "transactionErrors.collectionSchemaMaxSize.message":
@@ -14662,7 +14724,7 @@
     "transactionErrors.spaceEmailDomainNotAllowed.message":
       "抱歉，不允許使用此網域： {domain}",
     "transactionErrors.syncedDatabaseForbiddenAutoIncrementIdProperty":
-      "同步的数据库不能包含ID属性。",
+      "已同步的資料庫不能有 ID 屬性",
     "transactionErrors.teamDescriptionTooLong.message":
       "團隊空間說明必須少於 {maxTeamDescriptionLength} 個字元。",
     "transactionErrors.teamLevelGuestsNotAllowed.message":
@@ -14684,6 +14746,8 @@
       "此工作區已鎖定修改側邊欄的工作區部分。",
     "transactionHelpers.requestTooLargeError.message":
       "抱歉，此要求太大。嘗試匯入？",
+    "transactionHelpers.requestTooLargeError.message.tryImportInstead":
+      "很抱歉。请求太大。您确定要尝试导入吗？",
     "transclusionContainerBlock.actions.copySuccessMessage":
       "已複製！接著貼到任何頁面即可同步內容。",
     "transclusionContainerBlock.copy": "拷貝並同步",
@@ -14750,8 +14814,8 @@
     "typedMoveBlockMenu.teamsSection.title": "Teamspace(团队空间)",
     "typeformBlock.embed.caption": "適用於啟用了公開存取的 Typeform 連結",
     "typeformBlock.placeholder": "嵌入 Typeform",
-    "uiGenericToken.removeTokenLabel": "删除{title}",
-    "uiGenericToken.removeTokenLabelGeneric": "删除项目",
+    "uiGenericToken.removeTokenLabel": "移除 {title}",
+    "uiGenericToken.removeTokenLabelGeneric": "移除項目",
     "uidoc.colors.copied": "已複製 {colorCode}",
     "uidoc.timeseries.unique_views":
       "{uniqueViews, plural, other {{uniqueViews} 個唯一視圖}}",
@@ -14843,7 +14907,7 @@
     "unfurlingHelpers.unauthorizedClient.":
       "用戶未被授權可使用此方法請求授權代碼。如果問題持續發生，請聯絡支援。",
     "unfurlingHelpers.unfurlResponseError.accessDenied": "沒有存取權限",
-    "unfurlingHelpers.unfurlResponseError.authRefresh": "正在导入预览",
+    "unfurlingHelpers.unfurlResponseError.authRefresh": "擷取預覽中",
     "unfurlingHelpers.unfurlResponseError.databaseSyncLimit":
       "已達同步資料庫限制",
     "unfurlingHelpers.unfurlResponseError.githubNotAcceptable":
@@ -14862,7 +14926,7 @@
     "unfurlingHelpers.unfurlResponseErrorDescription.accessDenied":
       "你沒有適當權限存取此資源。",
     "unfurlingHelpers.unfurlResponseErrorDescription.authRefresh":
-      "通过登录更新获取预览。请稍等一下。",
+      "透過登入更新擷取預覽中，請稍候。",
     "unfurlingHelpers.unfurlResponseErrorDescription.databaseSyncLimit":
       "你的工作區已達同步資料庫限制。",
     "unfurlingHelpers.unfurlResponseErrorDescription.githubNotAcceptable":
@@ -14928,7 +14992,7 @@
     "updateSidebar.updatesContainer.emptyAfterSearch":
       "沒有任何更新與要求的篩選器相符。",
     "updateSidebar.updatesContainer.emptyMaybePurged":
-      "此页上没有最近的更新。页面更新将持续一年。",
+      "此页面没有最新的更新。页面更新将持续一年。",
     "updateSidebarFollowControl.learnMoreAboutFollowing":
       "進一步了解下列內容和通知",
     "updateSidebarSelect.selectComments.label": "評論",
