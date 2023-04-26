@@ -10319,7 +10319,7 @@
   "spaceSubscriptionBilling.changeVATIDModal.title": "更改增值税/商品及服务税编号",
   "spaceSubscriptionBilling.changeYourAddressModal.title": "更改你的地址",
   "spaceSubscriptionBilling.discount.percentOff": "{percentOff}% 的折扣",
-  "spaceSubscriptionBilling.invoicesSection.invoiceStatus.credited": "已退款",
+  "spaceSubscriptionBilling.invoicesSection.invoiceStatus.credited": "已入账",
   "spaceSubscriptionBilling.invoicesSection.invoiceStatus.due": "已到期",
   "spaceSubscriptionBilling.invoicesSection.invoiceStatus.failed": "失败",
   "spaceSubscriptionBilling.invoicesSection.invoiceStatus.paid": "已付费",
