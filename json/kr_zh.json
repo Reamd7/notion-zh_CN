@@ -1,1 +1,11 @@
-{ "notionMeetingsTutorialMeetingsTeamStandupPage_2": ["비어 있음", "空"] }
+{
+  "notionMeetingsTutorialMeetingsTeamStandupPage_2": ["비어 있음", "空"],
+  "sidebar.addAPageButtonTeamToggle.addSprints": [
+    "프로젝트, 작업, 스프린트",
+    "项目、任务、冲刺"
+  ],
+  "sidebar.appTemplate.sprintsTitle": [
+    "프로젝트, 작업, 스프린트",
+    "项目、任务、冲刺"
+  ]
+}
