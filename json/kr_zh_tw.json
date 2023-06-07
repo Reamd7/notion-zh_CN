@@ -1,525 +1,192 @@
 {
-  "AutomationActionSelectButton.actionSection.addAction": [
-    "작업 추가",
-    "添加任务"
-  ],
-  "AutomationActionSelectMenu.actionTitle.slackNotification": [
-    "Slack 알림 보낼 위치",
-    "发送Slack通知的位置"
-  ],
-  "SpaceSubscriptionPlans.billingIntervalMessage": [
-    "{billingInterval, select, year {연간 결제} other {월간 결제}}",
-    "{billingInterval，select，year{年结算}other{月度结算}}"
-  ],
-  "SpaceSubscriptionPlans.everythingInBusiness.title": [
-    "비즈니스 요금제의 모든 기능 +",
-    "业务计划的所有功能+"
-  ],
-  "SpaceSubscriptionPlans.everythingInFree.title": [
-    "무료 요금제의 모든 기능 +",
-    "免费套餐的所有功能+"
-  ],
-  "SpaceSubscriptionPlans.everythingInPlus.title": [
-    "플러스 요금제의 모든 기능 +",
-    "加套餐的所有功能+"
-  ],
-  "SpaceSubscriptionPlans.purchaseAI.label": ["AI 구매", "AI采购"],
-  "SpaceSubscriptionPlans.seeAllPlans": ["모든 요금제 보기", "查看所有计划"],
-  "SpaceSubscriptionPlans.upgrade.button.label": ["업그레이드", "升级"],
-  "SpaceSubscriptionPlans.upgradeToPlus.description": [
-    "플러스 요금제로 업그레이드하여 무제한 팀 블록, 무제한 파일 업로드, 30일 페이지 기록 등의 서비스를 받으세요.",
-    "升级至Plus套餐，获得无限组块、无限文件上传、30天页面记录等服务。"
-  ],
-  "action.navigation.openInFullPage": ["전체 페이지로 열기", "打开整个页面"],
-  "action.navigation.openInSidePeek": ["사이드 보기로 열기", "使用侧视图打开"],
-  "adminConnectionsSettings.table.securityAndCompliance.title": [
-    "보안과 컴플라이언스",
-    "安全与合规"
-  ],
-  "adminConnectionsSettingsAddComplianceMenu.search.button.label": [
-    "{plusIcon}&nbsp;연결 추가",
-    "{plusIcon}&nbsp；添加连接"
-  ],
-  "appTemplateUpgradeActions.upgradeConfirmationDialog.cancelUpgrade.label": [
-    "업그레이드하지 않음",
-    "不升级"
-  ],
-  "appTemplateUpgradeActions.upgradeConfirmationDialog.upgrade.label": [
-    "업그레이드",
-    "升级"
-  ],
-  "appTemplates.projects.subTaskFeatureShortDescription": [
-    "대용량 작업 세분화",
-    "大型任务细分"
-  ],
-  "appTemplates.projects.taskGithubPrFeatureShortDescription": [
-    "PR 연결 및 작업 상태 동기화",
-    "PR连接和任务状态同步"
-  ],
-  "appTemplates.projects.tasksWithSprintsFeatureShortDescription": [
-    "팀 작업을 타임박스에 저장",
-    "将团队任务保存到时间框"
-  ],
-  "appTemplatesSprintsV2.tasks.tasksSprintPlanningDescription": [
-    "스프린트 작업과 이후 작업 보드",
-    "冲刺任务和后续任务板"
-  ],
-  "appTemplatesSprintsV2.tasks.tasksSprintPlanningName": [
-    "스프린트 계획",
-    "冲刺计划"
-  ],
-  "asanaImport.importingData.failed.problemsOccured": [
-    "Asana 워크스페이스에서 데이터를 가져오는 동안 문제가 발생했습니다.",
-    "从Asana工作空间导入数据时出现问题。"
-  ],
-  "asanaImport.importingData.feelFreeToLeave": [
-    "이 창을 나가셔도 됩니다.",
-    "你可以离开这个窗口。"
-  ],
-  "asanaImport.importingData.sendEmail": [
-    "가져오기가 완료되거나 문제가 발생하면 이메일을 보내드립니다.",
-    "如果导入完成或出现问题，我们将发送电子邮件。"
-  ],
-  "asanaImport.importsTab.importingData.importFailed": [
-    "가져오기 실패",
-    "导入失败"
-  ],
-  "asanaImportOption.asanaButton.accountDelinkingInProgress": [
-    "계정 삭제 중...",
-    "正在删除帐户..."
-  ],
-  "asanaImportOption.asanaButton.accountLinkingInProgress": [
-    "인증 중...",
-    "正在验证..."
-  ],
-  "authErrors.passwordLoginRequired": [
-    "비밀번호로 로그인해야 합니다.",
-    "您必须使用密码登录。"
-  ],
-  "automationEventTriggerMenu.anyPropertyEdited.title": [
-    "모든 속성",
-    "所有属性"
-  ],
-  "automationEventTriggerMenu.pageAdded.title": [
-    "페이지 추가 완료",
-    "完成页面添加"
-  ],
-  "automationEventTriggerMenu.pagePropertiesEditedSection.title": [
-    "페이지 속성 편집 완료",
-    "完成页面属性编辑"
-  ],
-  "automationEventTriggerMenu.searchInputPlaceholder.label": [
-    "조건 검색",
-    "搜索条件"
-  ],
-  "automationStore.slackAutomation.defaultName": [
-    "{hasCreatorName, select, true {{creatorName}님의 Slack 알림} other {Slack 알림}}",
-    "{hasCreatorName，select，true{{creatorName}您的Slack通知}other{Slack通知}}"
-  ],
-  "automationTriggerList.anyPagePropertyEdited.title": [
-    "페이지 속성 편집",
-    "编辑页面属性"
-  ],
-  "automationTriggerList.pageAdded.title": ["페이지 추가", "添加页面"],
-  "automationTriggerList.propertyChangesToAny.title": [
-    "{propertyName} 속성 편집",
-    "编辑{propertyName}属性"
-  ],
-  "automations.updateDatePropertyAction.singleProperty": [
-    "{propertyName} 속성을 {propertyValue} 값으로 설정",
-    "将{propertyName}属性设置为{propertyValue}值"
-  ],
-  "automations.updateMultiSelectPropertyAction.multiProperties": [
-    "{propertyName} 속성을 모든 {propertyValues} 값으로 설정",
-    "将{propertyName}属性设置为所有{propertyValues}值"
-  ],
-  "automations.updateMultiSelectPropertyAction.singleProperty": [
-    "{propertyName} 속성을 {propertyValues} 값으로 설정",
-    "将{propertyName}属性设置为{propertyValues}值"
-  ],
-  "automations.updatePersonPropertyAction.multiProperties": [
-    "{propertyName} 속성을 모든 {propertyValues} 값으로 설정",
-    "将{propertyName}属性设置为所有{propertyValues}值"
-  ],
-  "automations.updatePersonPropertyAction.singleProperty": [
-    "{propertyName} 속성을 {propertyValue} 값으로 설정",
-    "将{propertyName}属性设置为{propertyValue}值"
-  ],
-  "automations.updateSelectPropertyAction.singleProperty": [
-    "{propertyName} 속성을 {propertyValue} 값으로 설정",
-    "将{propertyName}属性设置为{propertyValue}值"
-  ],
-  "automations.updateStatusPropertyAction.multiProperties": [
-    "{propertyName} 속성을 모든 {propertyValues} 값으로 설정",
-    "将{propertyName}属性设置为所有{propertyValues}值"
-  ],
-  "automations.updateStatusPropertyAction.singleProperty": [
-    "{propertyName} 속성을 {propertyValues} 값으로 설정",
-    "将{propertyName}属性设置为{propertyValues}值"
-  ],
-  "automatonStore.automation.defaultName": [
-    "{hasCreatorName, select, true {{creatorName}님의 자동화} other {자동화}}",
-    "{hasCreatorName，select，true{{creatorName}的自动化}other{自动化}}"
-  ],
-  "blockHelpers.drawingBlockType": ["드로잉", "绘图"],
-  "blockMenu.moveTo.disabled.fullAccess.reason": [
-    "페이지를 옮기려면 페이지 '전체 허용'권한이 필요합니다.",
-    "要移动页面，需要页面“完全允许”权限。"
-  ],
-  "collectionSettings.createSlackAutomationView.title": [
-    "새 Slack 알림",
-    "新的Slack通知"
-  ],
-  "collectionSettings.editAutomationView.addAction.iconButton": [
-    "작업 추가",
-    "添加任务"
-  ],
-  "collectionSettings.editAutomationView.addTrigger.iconButton": [
-    "조건 추가",
-    "添加条件"
-  ],
-  "collectionSettings.editAutomationView.createButton.label": [
-    "생성",
-    "已创建"
-  ],
-  "collectionSettings.editAutomationView.saveButton.label": ["저장", "已保存"],
-  "collectionSettings.slackAutomationsView.create": [
-    "다른 채널에 알림",
-    "通知其他频道"
-  ],
-  "completions.CompletionMenuActionBar.tryAgain.clickToEditAndRetry": [
-    "프롬프트를 편집하고 다시 시도하려면 클릭하십시오.",
-    "单击以编辑提示并重试。"
-  ],
-  "completions.CompletionMenuActionBar.tryAgain.clickToRetry": [
-    "다시 시도하려면 클릭하세요.",
-    "点击以重试。"
-  ],
-  "completions.CompletionMenuFooter.dataShareThanks": [
-    "Notion을 개선하는 데 도움을 주셔서 감사합니다!",
-    "感谢您帮助改善Notion！"
-  ],
-  "completions.CompletionMenuFooter.showFeedbackThanksMessage": [
-    "피드백을 보내주셔서 감사합니다!",
-    "感谢您的反馈！"
-  ],
-  "completions.OptInLearnMore.description": [
-    "AI 품질 향상을 위해 Notion과 데이터를 공유하고 있습니다. <aiTerms>자세히 알아보기</aiTerms>",
-    "为了提升AI质量，我们正在与Notion共享数据。<aiTerms>了解详情</aiTerms>"
-  ],
-  "completions.ShareDataPopup.alwaysShareButton": ["항상 공유", "始终共享"],
-  "completions.ShareDataPopup.description": [
-    "Notion이 AI 기반 기능 사용에서 데이터를 자동으로 공유하여 AI 품질을 개선하도록 도와주세요. {br}계속하면 <aiTerms>AI 데이터 공유 조건</aiTerms>에 동의하는 것입니다.",
-    "使用基于AI的功能自动共享数据，帮助Notion提高AI质量。{br}如果继续，则表示同意<aiTerms>AI数据共享条件</aiTerms>。"
-  ],
-  "completions.ShareDataPopup.notNowButton": ["나중에", "稍后"],
-  "completions.ShareDataPopup.title": [
-    "Notion AI 개선을 위해 항상 데이터를 공유하시겠습니까?",
-    "是否始终共享数据以改进Notion AI？"
-  ],
-  "connectedRelationPropertyMenuResults.githubPrRelationUserEducationLinkPastingOn.description": [
-    "ID를 복사하여 GitHub PR 제목에 붙여 넣으세요.",
-    "将ID复制并粘贴到GitHub PR标题中。"
-  ],
-  "connectedRelationPropertyMenuResults.githubPrRelationUserEducationPasteUrl.description": [
-    "GitHub PR을 이 페이지에 연결하려면 URL을 붙여 넣으세요.",
-    "要将GitHub PR链接到此页面，请粘贴URL。"
-  ],
-  "database.viewSettings.addHighlightedFeature": ["추가", "添加到"],
-  "database.viewSettings.newHighlightedFeature": ["새로 만들기", "新建"],
-  "database.viewSettings.newPropertyOnTypedDatabase": [
-    "{databaseName}에 추가",
-    "添加到{databaseName}"
-  ],
-  "database.viewSettings.typedDbPropertyTypeSelect.searchPlaceholder": [
-    "검색",
-    "搜索"
-  ],
-  "drawing.images-not-supported": [
-    "이미지는 아직 드로잉에서 지원되지 않습니다.",
-    "绘图中尚未支持图像。"
-  ],
-  "embedMenu.action.drawing": ["드로잉 포함", "包含绘图"],
-  "formula2Input.keyboardShortcutHint": [
-    "자동 완성하려면 Enter, 새 줄을 추가하려면 Shift+Enter를 누르세요.",
-    "按Enter键自动完成，按Shift+Enter添加新行。"
-  ],
-  "formula2Input.learnMore.button.label": [
-    "수식 더 알아보기",
-    "进一步了解公式"
-  ],
-  "formulas.SimpleFormulaValuePicker.genericMenuHeader": [
-    "속성을 다음으로 설정",
-    "将属性设置为"
-  ],
-  "general.mfa.passwordResentLinkSent": [
-    "비밀번호 재설정 링크가 {email} 주소로 전송되었습니다.",
-    "密码重置链接已发送到地址{email}。"
-  ],
-  "groupPreview.noUsers": ["이 그룹에 사용자가 없습니다.", "此组中没有用户。"],
-  "id.completions.insertAIBlock": ["AI 블록으로 삽입", "作为AI块插入"],
-  "identityProvisioningSettings.exportClaimableWorkspaces.button": [
-    "CSV로 내보내기",
-    "导出为CSV"
-  ],
-  "identityProvisioningSettings.managedUsers.searchInput.placeholder": [
-    "이름, 이메일 또는 사용자 ID 검색",
-    "搜索姓名、电子邮件或用户ID"
-  ],
-  "importedAsanaResultEmail.emailText": [
-    "<importpagelink>Notion을 열어</importpagelink> 가져온 프로젝트와 작업을 확인하세요. 문제가 있는 경우 <loggerpagelink>로그 가져오기</loggerpagelink>를 참고하세요.",
-    "打开<importpagelink>Notion查看</importpagelink>导入的项目和操作。如果您有问题，请参阅<loggerpagelink>导入日志</loggerpagelink>。"
-  ],
-  "importedAsanaResultEmail.subjectLine": [
-    "Asana에서 {importedProjectCount}개의 프로젝트 가져오기가 완료되었습니다.",
-    "已完成从Asana导入{importedProjectCount}个项目。"
-  ],
-  "importsTab.activeImportsTable.noActiveImports": [
-    "계정과 연결되어 진행 중인 가져오기가 없습니다.",
-    "没有与帐户关联的正在进行的导入。"
-  ],
-  "importsTab.fetchingAvailableConnections": [
-    "사용 가능한 연결을 가져오는 중...",
-    "正在获取可用连接..."
-  ],
-  "integrations.configureIntegrationModal.integrationName": [
-    "Notion에 {integrationName} 연결하기",
-    "将{integrationName}连接到Notion"
-  ],
-  "integrations.configureIntegrationModal.integrationTagline": [
-    "{integrationName} 통합은 SaaS와 클라우드 앱을 위한 쉬운 인텔리전트 데이터 유출 방지 솔루션입니다.",
-    "{integrationName}集成是适用于SaaS和云应用的简单智能数据泄露防护解决方案。"
-  ],
-  "integrations.configureIntegrationModal.webhookSecretCode": [
-    "시크릿 코드",
-    "隐身代码"
-  ],
-  "integrations.configureIntegrationModal.webhookUrlInput": [
-    "Webhook URL",
-    "Webhook URL"
-  ],
-  "manageTeamsTableColumnData.joinedLabel": ["참여 중", "正在参与"],
-  "manageTeamsTableColumnData.numMembersLabel": [
-    "{numMembers, plural, other {멤버 {numMembers}명}}",
-    "{numMembers，plural，other{成员{numMembers}名称}}"
-  ],
-  "moveBlockMenu.TeamSidebarLocked.tooltip": [
-    "팀스페이스 사이드바가 잠겨 있습니다. 팀스페이스 소유자만 데이터를 옮길 수 있습니다.",
-    "TeamSpace侧边栏被锁定。只有TeamSpace所有者才能移动数据。"
-  ],
-  "moveBlockMenu.needEditAccess.tooltip": [
-    "이 페이지를 옮기려면 \"{parentName}\"에 대한 '편집 허용' 권한이 필요합니다.",
-    "要移动此页，需要“{parentName}”的“允许编辑”权限。"
-  ],
-  "newBlock.drawing.description": [
-    "무한한 캔버스에 드로잉과 다이어그램을 그려보세요.",
-    "在无限的画布上绘制绘图和图表。"
-  ],
-  "newBlock.drawing.fuzzySearchKeywords": [
-    "드로잉 다이어그램 캔버스 일러스트 그리기 스케치 tldraw 낙서 마인드맵 아키텍처 페인트 펜",
-    "绘图图画布插图绘制草图tldraw涂鸦思维导图架构绘画笔"
-  ],
-  "newBlock.drawing.title": ["드로잉", "绘图"],
+  "AutomationHeaderView.disabled.readonly": [
+    "이 자동화는 중단되었습니다. {automationCreatorName}님에게 이 자동화를 활성화하도록 요청하세요.",
+    "这种自动化已经停止。请{automationCreatorName}请求您启用此自动化。"
+  ],
+  "AutomationHeaderView.disabled.readonlyWithDelete": [
+    "이 자동화는 중단되었습니다. {automationCreatorName}님에게 이 자동화를 활성화하도록 요청하거나 <deleteAction>삭제</deleteAction>하세요.",
+    "这种自动化已经停止。请{automationCreatorName}您启用此自动化，或者<deleteAction>删除</deleteAction>。"
+  ],
+  "AutomationHeaderView.header.disabled.owner": [
+    "이 자동화는 중단되었습니다. <resumeAction>자동화 다시 활성화</resumeAction>",
+    "这种自动化已经停止。<resumeAction>重新启用自动化</resumeAction>"
+  ],
+  "AutomationHeaderView.incompatibleCollectionViewFilter.owner": [
+    "보기에 지원되지 않는 필터가 있으므로 이 자동화가 작동하지 않을 수 있습니다.",
+    "此自动化可能不起作用，因为视图中存在不支持的筛选器。"
+  ],
+  "BlockPropertyEditedEmail.updatePageNotificationSettings": [
+    "이 {pageType} 페이지에 대한 알림 설정 업데이트",
+    "更新此{pageType}页面的通知设置"
+  ],
+  "CommentedEmail.updatePageNotificationSettings": [
+    "이 페이지에 대한 알림 설정 업데이트",
+    "更新此页的通知设置"
+  ],
+  "GetNotifiedDropdown.dropdownSelect.caption": [
+    "@멘션 및 내가 참여하는 토론에 대해 항상 알림을 받습니다.",
+    "总是收到@声明和我参与的讨论的通知。"
+  ],
+  "GetNotifiedDropdown.importantUpdatesProjects.caption": [
+    "모든 댓글, 상태/날짜 변경",
+    "更改所有评论、状态/日期"
+  ],
+  "GetNotifiedDropdown.importantUpdatesProjects.label": [
+    "중요한 업데이트",
+    "重要更新"
+  ],
+  "GetNotifiedDropdown.importantUpdatesTasks.caption": [
+    "모든 댓글, 상태/담당자/마감일 변경",
+    "更改所有评论、状态/联系人/截止日期"
+  ],
+  "GetNotifiedDropdown.importantUpdatesTasks.label": [
+    "중요한 업데이트",
+    "重要更新"
+  ],
+  "GetNotifiedDropdown.simpleAllUpdates.caption": [
+    "모든 댓글과 속성 변경",
+    "更改所有评论和属性"
+  ],
+  "GetNotifiedDropdown.unsubscribeFromPage.label": [
+    "페이지 팔로우 취소",
+    "取消关注页面"
+  ],
+  "MentionedEmail.goToPageButton": ["페이지로 이동", "转至页面"],
+  "MentionedEmail.updatePageNotificationSettings": [
+    "이 페이지에 대한 알림 설정 업데이트",
+    "更新此页的通知设置"
+  ],
+  "UpdateSidebarTabUpdatesHeader.pageNotificationSettings.label": [
+    "페이지 알림 설정",
+    "设置页面通知"
+  ],
+  "UpsellNotice.contactWorkspaceOwner.label": [
+    "워크스페이스 소유자에게 문의하여 Notion AI를 추가하세요.",
+    "与工作区所有者联系，添加Notion AI。"
+  ],
+  "accessRequestedEmail.callout": [
+    "업데이트에서 모든 사용 권한 요청을 확인하세요.",
+    "查看更新中的所有权限请求。"
+  ],
+  "accessRequestedEmail.callout.emoji": ["📬", "呼呼"],
+  "addOnUpgradeModal.cancellationStage.errorMessage": [
+    "추가 기능 구독을 취소할 수 없습니다. 나중에 다시 시도하세요.",
+    "无法取消附加功能订阅。请稍后再试。"
+  ],
+  "aiAutofill.autoUpdateOnPageEditUpsellDialogMessage": [
+    "자동 업데이트를 사용하려면 Notion AI 기능이 필요합니다. 워크스페이스 소유자에게 문의하여 Notion AI를 추가하세요.",
+    "自动更新需要Notion AI功能。与工作区所有者联系，添加Notion AI。"
+  ],
+  "aiAutofill.bulkFillUpsellDialogMessage": [
+    "한 번에 여러 페이지를 채우려면 페이지를 모두 업데이트해야 합니다. 워크스페이스 소유자에게 문의하여 Notion AI를 추가하세요.",
+    "要一次填充多个页面，必须更新所有页面。与工作区所有者联系，添加Notion AI。"
+  ],
+  "aiAutofill.fillAllPagesUpsellDialogMessage": [
+    "Notion AI 추가 기능을 사용하려면 페이지를 모두 업데이트해야 합니다. 워크스페이스 소유자에게 문의하여 Notion AI를 추가하세요.",
+    "要使用Notion AI插件，必须更新所有页面。与工作区所有者联系，添加Notion AI。"
+  ],
+  "aiAutofill.outOfAiUpsellDialogMessage": [
+    "이 워크스페이스에 제공된 무료 AI 응답을 모두 사용했습니다. 워크스페이스 소유자에게 문의하여 Notion AI를 추가하세요.",
+    "您已经使用了此工作空间中提供的所有免费AI响应。与工作区所有者联系，添加Notion AI。"
+  ],
+  "assistant.addCustomInstructions": [
+    "이 페이지에 대한 사용자 지정 AI 지침 추가",
+    "为此页面添加自定义AI说明"
+  ],
+  "assistant.fixErrorsButton": ["오류 수정", "更正错误"],
+  "assistant.instructionsBar.title": [
+    "{recordIconAndTitle}의 사용자 지정 지침 사용하기",
+    "使用{recordIconAndTitle}的自定义说明"
+  ],
+  "assistant.suggestionsLabel": ["할 수 있는 작업", "可以执行的操作"],
+  "assistant.undoAllButton": ["모두 실행 취소", "全部撤消"],
+  "collectionSettings.automationsView.showMore": [
+    "{number}개 더 보기",
+    "{number}查看更多"
+  ],
+  "collectionSettings.slackAutomationsView.showMore": [
+    "{number}개 더 보기",
+    "{number}查看更多"
+  ],
+  "configureIntegrationModal.snackbar.title": [
+    "워크스페이스에 {integrationName} 통합이 연결되었습니다.",
+    "{integrationName}集成已连接到工作区。"
+  ],
+  "connectedRelationPropertyMenuResults.addFileButton.label": [
+    "파일 연결",
+    "关联文件"
+  ],
+  "connectedRelationPropertyMenuResults.addPRButton.label": [
+    "PR 연결",
+    "PR连接"
+  ],
+  "database.relationProperty.relatedGithubPages.subHeader": [
+    "{count, plural, other {연결된 PR {count}개}}",
+    "{count，plural，other{连接PR{count}}}"
+  ],
+  "database.relationProperty.relatedGoogleDriveOrFigmaFiles.subHeader": [
+    "{count, plural, other {연결된 파일 {count}개}}",
+    "{count，plural，other{连接的文件{count}个}}"
+  ],
+  "database.viewSettings.mainTab.slackNotifications.none": ["없음", "无"],
+  "emailBase.updateEmailSettings.prompt": [
+    "이메일 설정 업데이트",
+    "更新电子邮件设置"
+  ],
+  "exportModal.includeAllChildrenOfADatabases.description": [
+    "데이이베이스의 모든 하위 항목 포함",
+    "包含数据库的所有子体"
+  ],
+  "exportModal.includeDatabases.all.label.defaultView": [
+    "기본 보기",
+    "基本视图"
+  ],
+  "exportModal.includeWholeDatabaseInCSV.description": [
+    "CSV에 전체 데이터베이스 포함",
+    "在CSV中包含整个数据库"
+  ],
+  "externalActions.dialogError.userReAuth": [
+    "인증이 만료되었습니다. 계속하려면 다시 인증해 주세요.",
+    "认证已过期。要继续的话，请重新认证。"
+  ],
+  "inAppNotificationsFollowingOptionsHelpers.unsubscribeFromPageSelected.label": [
+    "구독 취소됨",
+    "已取消订阅"
+  ],
+  "loginErrors.suspendedUser.message": [
+    "Notion 관리자가 계정을 일시 정지했습니다.",
+    "Notion管理员已暂停帐户。"
+  ],
+  "notionDocsTutorialExampleBrainstorm_4_2": ["비어 있음", "空"],
+  "notionDocsTutorialExampleBrainstorm_5_2": ["비어 있음", "空"],
+  "notionDocsTutorialExampleBrainstorm_6_2": ["비어 있음", "空"],
+  "notionDocsTutorialExampleBrainstorm_7_2": ["비어 있음", "空"],
+  "notionDocsTutorialExamplePrd_11_1_0_1_1": ["비어 있음", "空"],
+  "notionDocsTutorialExamplePrd_12_1": ["비어 있음", "空"],
   "notionMeetingsTutorialMeetingsTeamStandupPage_2": ["비어 있음", "空"],
-  "passwordSetting.changePasswordButton.label": ["비밀번호 변경", "更改密码"],
-  "passwordSettings.changePasswordModal.confirmPasswordInput.label": [
-    "새 비밀번호 확인",
-    "确认新密码"
+  "onboardingInvite.chrome.subtitle.exp.v1": [
+    "팀원들을 초대해 Notion을 최대한으로 활용해<persona_message></persona_message> 보세요.",
+    "邀请团队成员充分利用Notion，看看<persona_message>/persona_message>。"
   ],
-  "passwordSettings.passwordModal.changePasswordButton.label": [
-    "비밀번호 변경",
-    "更改密码"
+  "onboardingInvite.chrome.subtitle.exp.v2": [
+    "Notion은 팀과 함께 사용하도록 설계되어 있습니다. 팀원들을 초대해<persona_message></persona_message> 공동으로 작업해보세요.",
+    "Notion旨在与团队一起使用。邀请团队成员加入<persona_message>/persona_message>合作。"
   ],
-  "passwordSettings.passwordModal.confirmPasswordInput.placeholder": [
-    "비밀번호 확인",
-    "确认口令"
+  "onboardingInvite.chrome.subtitle.exp.v3": [
+    "팀을 초대하여<persona_message></persona_message> Notion을 최대한으로 활용해 보세요.",
+    "邀请团队充分利用<persona_message><persona_message>Notion。"
   ],
-  "passwordSettings.passwordModal.currentPasswordInput.label": [
-    "현재 비밀번호 입력",
-    "输入当前密码"
+  "onboardingInvite.chrome.title.exp.v1": [
+    "팀<persona_message></persona_message> 초대하기",
+    "邀请团队<persona_message>/persona_message>"
   ],
-  "passwordSettings.passwordModal.currentPasswordInput.placeholder": [
-    "현재 비밀번호",
-    "当前密码"
+  "onboardingInvite.chrome.title.exp.v2": [
+    "팀과 함께 커넥티드 워크스페이스 구축",
+    "与团队一起构建互联工作空间"
   ],
-  "passwordSettings.passwordModal.educationPlanGuidelines": [
-    "학교 이메일 주소에 액세스할 수 없는 경우 비밀번호를 사용하여 로그인할 수 있습니다.",
-    "如果您无法访问学校电子邮件地址，您可以使用密码登录。"
+  "onboardingInvite.chrome.title.exp.v3": [
+    "Notion은 팀워크에 최적화된 툴입니다.",
+    "Notion是一款针对团队合作而优化的工具。"
   ],
-  "passwordSettings.passwordModal.newPasswordInput.label": [
-    "새 비밀번호 입력",
-    "输入新密码"
-  ],
-  "passwordSettings.passwordModal.newPasswordInput.placeholder": [
-    "새 비밀번호",
-    "新口令"
-  ],
-  "passwordSettings.passwordModal.passwordGuidelines": [
-    "최소 15자의 문자 또는 최소 8자의 문자와 숫자 조합을 비밀번호로 사용하세요.",
-    "使用至少15个字符或至少8个字符的字符和数字组合作为密码。"
-  ],
-  "passwordSettings.passwordModal.removePasswordButton.label": [
-    "비밀번호 삭제",
-    "删除密码"
-  ],
-  "passwordSettings.passwordModal.setPasswordButton.label": [
-    "비밀번호 설정",
-    "设置密码"
-  ],
-  "passwordSettings.passwordUpdateSuccessModal.educationPlan.header": [
-    "학교 이메일 주소에 액세스할 수 없는 경우에도 로그인할 수 있습니다.",
-    "即使您无法访问学校电子邮件地址，您也可以登录。"
-  ],
-  "passwordSettings.passwordUpdateSuccessModal.header": [
-    "계정에 로그인할 때 이 비밀번호를 입력해야 합니다.",
-    "登录帐户时必须输入此密码。"
-  ],
-  "passwordSettings.passwordUpdatedModal.passwordSetSuccessModal.title": [
-    "비밀번호가 설정되었습니다.",
-    "密码已设置。"
-  ],
-  "passwordSettings.passwordUpdatedModal.passwordUpdatedModal.title": [
-    "비밀번호가 저장되었습니다.",
-    "密码已保存。"
-  ],
-  "passwordSettings.removePasswordModal.continueButton.label": ["계속", "继续"],
-  "passwordSettings.removePasswordModal.currentPasswordInput.placeholder": [
-    "현재 비밀번호",
-    "当前密码"
-  ],
-  "passwordSettings.removePasswordModal.educationPlanWarning.message": [
-    "학교 이메일 액세스 권한을 잃으면 Notion에 다시 로그인할 수 없습니다.",
-    "如果失去对学校电子邮件的访问权限，您将无法重新登录Notion。"
-  ],
-  "passwordSettings.removePasswordModal.header": [
-    "로그인을 시도하면 이메일로 링크와 로그인 코드를 받게 됩니다.",
-    "当您尝试登录时，您将通过电子邮件收到链接和登录代码。"
-  ],
-  "passwordSettings.removePasswordModal.keepUsingPasswordButton.label": [
-    "비밀번호 계속 사용",
-    "继续使用密码"
-  ],
-  "passwordSettings.removePasswordModal.passwordInput.label": [
-    "현재 비밀번호 입력",
-    "输入当前密码"
-  ],
-  "passwordSettings.removePasswordModal.removeMfaWarning.message": [
-    "<boldtext>계속하면 2단계 인증도 제거됩니다.</boldtext>",
-    "<boldtext>如果继续，也将删除第二阶段身份验证。</boldtext>"
-  ],
-  "passwordSettings.removePasswordModal.title": [
-    "비밀번호를 삭제하고 임시 로그인 코드를 사용하시겠습니까?",
-    "是否要删除密码并使用临时登录代码？"
-  ],
-  "passwordSettings.removePasswordSuccessModal.header": [
-    "계정에 로그인할 수 있도록 이메일로 임시 로그인 코드를 보내드립니다.",
-    "我们将通过电子邮件向您发送临时登录代码，以便您可以登录您的帐户。"
-  ],
-  "passwordSettings.removePasswordSuccessModal.title": [
-    "비밀번호 삭제 완료",
-    "密码删除完成"
-  ],
-  "passwordSettings.setPassword.message": [
-    "계정 로그인에 사용할 영구 비밀번호를 설정하세요.",
-    "设置用于帐户登录的永久密码。"
-  ],
-  "profileSettings.accountSecuritySection.twoStepVerificationSetting.settingConfigured.message": [
-    "{numMfaSettings}개의 인증 방법이 활성화되어 있습니다.",
-    "{numMfaSettings}个身份验证方法已启用。"
-  ],
-  "profileSettings.changePasswordModal.title": ["비밀번호 변경", "更改密码"],
-  "profileSettings.mfa.verifyIdentity.withPassword.title": [
-    "계속하려면 본인 인증이 필요합니다.",
-    "需要您的认证才能继续。"
-  ],
-  "profileSettings.setPasswordModal.title": ["비밀번호 설정", "设置密码"],
-  "relationPropertyMenu2.connectedRelationGithub.searchPlaceholder": [
-    "URL을 붙여넣으세요(https://github.com/...)",
-    "粘贴URL(https://github.com/...)"
-  ],
-  "sidebar.outlinerTeamToggleButton.joinAsMemberLabel": [
-    "멤버로 가입",
-    "订阅为成员"
-  ],
-  "sidebar.outlinerTeamToggleButton.joinAsOwnerLabel": [
-    "소유자로 가입",
-    "注册为所有者"
-  ],
-  "sidebar.outlinerTeamToggleButton.upgradeSelfToOwnerLabel": [
-    "소유자 되기",
-    "成为所有者"
-  ],
-  "sidebarCreateTeamModal.types.tasksTitle": ["작업과 프로젝트", "任务和项目"],
-  "slackAutomations.remove.confirmation.acceptLabel": ["삭제", "删除"],
-  "spaceConnectionsSettings.complianceConnectionsTable.connectionsColumn.title": [
-    "연결",
-    "已连接"
-  ],
-  "spaceConnectionsSettings.complianceConnectionsTable.integrationDashboard.title": [
-    "파트너 대시보드",
-    "合作伙伴控制面板"
-  ],
-  "spaceConnectionsSettings.complianceConnectionsTable.integrationTypeColumn.title": [
-    "유형",
-    "类型"
-  ],
-  "spaceIntegrationSettings.complianceIntegrationTable.integrationPartnerDashboard": [
-    "{integrationName} 대시보드",
-    "{integrationName}操控板"
-  ],
-  "spaceIntegrationSettings.complianceIntegrationTable.integrationType.dlp": [
-    "DLP",
-    "DLP"
-  ],
-  "spaceIntegrationSettings.complianceIntegrationTable.integrationType.siem": [
-    "SIEM",
-    "SIEM"
-  ],
-  "spaceSubscriptionPlans.allPlans.title": ["모든 요금제", "所有计划"],
-  "teamInviteLinkPageError.archivedTeam.title": [
-    "죄송합니다. 이 팀 공간은 보관처리되었습니다.",
-    "很抱歉。这个团队空间已经存档了。"
-  ],
-  "teamInviteLinkPageError.backToMyContentButton.label": [
-    "내 콘텐츠로 돌아가기",
-    "返回到“我的内容”"
-  ],
-  "teamInviteLinkPageError.inviteLinkDisabled.title": [
-    "죄송합니다. 이 팀 공간에 대한 초대 링크가 비활성화되어 있습니다.",
-    "很抱歉。此团队空间的邀请链接被禁用。"
-  ],
-  "teamInviteLinkPageError.noAccess.message": [
-    "궁금한 사항은 워크스페이스 소유자에게 문의하세요.",
-    "如有疑问，请联系工作区所有者。"
-  ],
-  "teamInviteLinkPageError.nonSpaceMember.title": [
-    "죄송합니다. 작업공간의 구성원이 아닙니다.",
-    "很抱歉。不是工作区的成员。"
-  ],
-  "teamInviteLinkRequestPage.privateTeamspace.label": [
-    "개인 팀 공간",
-    "个人团队空间"
-  ],
-  "teamJoinLeaveButton.joinTeam.privateTeamTooltip": [
-    "멤버의 초대를 통해서만 비공개 팀 공간에 참여할 수 있습니다.",
-    "只有通过成员邀请，才能参与私人团队空间。"
-  ],
-  "templateHelpers.templates.marketingWiki": ["마케팅 위키", "营销维基"],
-  "text.commandsMenuNotOpen.placeholder.textAi": [
-    "명령어는 '/', AI는 '스페이스 키'를 누르세요.",
-    "命令按“/”，AI按“空间键”。"
-  ],
-  "transactionHelpers.requestTooLargeError.message.tryImportInstead": [
-    "죄송합니다. 요청이 너무 큽니다. 대신 가져오기를 시도해보시겠습니까?",
-    "很抱歉。请求太大。您确定要尝试导入吗？"
-  ],
-  "typedMoveBlockMenu.pagesSection.title": ["페이지", "第页"],
-  "typedMoveBlockMenu.teamsSection.title": [
-    "팀스페이스",
-    "Teamspace(团队空间)"
-  ],
-  "updateSidebar.updatesContainer.emptyMaybePurged": [
-    "이 페이지에 최신 업데이트가 없습니다. 페이지 업데이트는 1년 동안 유지됩니다.",
-    "此页面没有最新的更新。页面更新将持续一年。"
-  ]
+  "sidebarCreateTeamModal.types.tasksTitle": ["프로젝트와 작업", "项目和操作"]
 }

@@ -9,35 +9,43 @@ const jsdom = require("jsdom");
  * }>}
  */
 exports.SyncAssest = async function SyncAssest() {
-  const assest = await axios.default.post(
-    "https://www.notion.so/api/v3/getAssetsJsonV2",
-    {
-      hash: "",
+  const assest = await axios.default({
+    method: 'post',
+    url: 'https://www.notion.so/api/v3/getAssetsJsonV2',
+    headers: {
+      'Content-Type': 'application/json'
     },
-    {
-      timeout: 10000000
-    }
-  ).catch(e => {
+    data: JSON.stringify({
+      "hash": ""
+    })
+  }).catch(e => {
     console.log(e)
   });
-  console.log(assest.data.localeHtml);
+  const fetchConfig = { 
+    'authority': 'www.notion.so', 
+    'if-modified-since': 'Tue, 06 Jun 2023 22:49:53 GMT', 
+    'if-none-match': 'W/"4b79efc8d01ace001fb68165f049cf0d"', 
+    'sec-fetch-user': '?1', 
+    'upgrade-insecure-requests': '1', 
+    'Cache-Control': 'no-cache'
+  }
   return Promise.all([
-    jsdom.JSDOM.fromURL(
-      "https://www.notion.so" + assest.data.localeHtml["ko-KR"]
-    ).then((v) => {
-      const res = v.window.document.getElementById("messages").textContent;
-      return JSON.parse(res);
+    axios.default({
+      method: 'get',
+      url: "https://www.notion.so" + assest.data.localeHtml["ko-KR"],
+      headers: fetchConfig
     }),
-    jsdom.JSDOM.fromURL(
-      "https://www.notion.so" + assest.data.localeHtml["zh-CN"]
-    ).then((v) => {
-      const res = v.window.document.getElementById("messages").textContent;
-      return JSON.parse(res);
+    axios.default({
+      method: 'get',
+      url: "https://www.notion.so" + assest.data.localeHtml["zh-CN"],
+      headers: fetchConfig
     }),
-  ]).then(([newKr, newZh]) => {
+  ]).then(([krHtml, zhHtml]) => {
+    const newKr = jsdom.JSDOM.fragment(krHtml.data);
+    const newZh = jsdom.JSDOM.fragment(zhHtml.data)
     return {
-      newKr,
-      newZh,
+      newKr: JSON.parse(newKr.getElementById("messages").textContent),
+      newZh: JSON.parse(newZh.getElementById("messages").textContent),
     };
-  });
+  })
 };

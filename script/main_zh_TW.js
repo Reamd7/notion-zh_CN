@@ -117,7 +117,7 @@ async function main() {
   if (process.env.env === "BUILD") {
     const packageJSON = require("../package.json");
     const new_version = packageJSON.version.split(".");
-    new_version[2] = String(Number(new_version[2]) + 1);
+    // new_version[2] = String(Number(new_version[2]) + 1);
     packageJSON.version = new_version.join(".");
 
     writeJSON(path.join(__dirname, "../package.json"), packageJSON);
