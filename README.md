@@ -96,7 +96,7 @@ Notion 已经有了中文语料，让用户能够提前使用中文语料
 
 1. 首页：https://workers.cloudflare.com
 
-2. 注册，登陆，`Start building`，取一个子域名，`Create a Worker`。
+2. 注册，登录，`Start building`，取一个子域名，`Create a Worker`。
 
 3. 复制 [worker.js](https://github.com/Reamd7/notion-zh_CN/blob/main/worker.js) 到左侧代码框，修改
    ```js
