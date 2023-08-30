@@ -86,7 +86,7 @@ Notion 已经有了中文语料，让用户能够提前使用中文语料
 6. 在最后一行加上
    ```js
    //# sourceMappingURL=preload.js.map
-    require("./notion-zh_CN") // 添加该行
+   require("./notion-zh_CN") // 添加该行
    ```
 7. 重启
    
@@ -94,7 +94,11 @@ Notion 已经有了中文语料，让用户能够提前使用中文语料
 
 #### 自动导入
 终端输入以下代码即可
-```shell
+```bash
+curl -o- -L https://github.com/Reamd7/notion-zh_CN/raw/main/update.sh | bash -s
+```
+若响应时间过长则可以选择以下命令使用gitee仓库
+```bash
 curl -o- -L https://gitee.com/hubzyy/notion-zh_CN/raw/main/update.sh | bash -s
 ```
 
