@@ -54,22 +54,22 @@ Notion 已经有了中文语料，让用户能够提前使用中文语料
     https://www.notion.so
 
 ## 桌面端
-**手动注入：**
-
 ### windows
+#### 手动注入
 1. （自**2.0.4**版本后，任意语言都等价于中文了）
 2. notion 安装目录：`C:\Users\用户名\AppData\Local\Programs\Notion\`
 3. 打开`C:\Users\用户名\AppData\Local\Programs\Notion\resources\app\renderer`文件夹
 4. 下载 `notion-zh_CN.js` 到上述文件夹（renderer）
 5. 打开 `preload.js`
-6. 在最后一行加上
+6. 在最后一行添加
    ```js
    //# sourceMappingURL=preload.js.map
-    require("./notion-zh_CN") // 添加该行
+   require("./notion-zh_CN") // 添加该行
    ```
 7. 重启
 
-- 上述操作也可以使用 PowerShell 命令来完成。  
+#### 自动导入
+上述操作也可以使用 PowerShell 命令来完成。  
   命令执行完成后，在 Notion 中使用 <kbd>CTRL</kbd>+<kbd>R</kbd> 可以热更新界面。
    ```powershell
    Invoke-WebRequest -Uri "https://github.com/Reamd7/notion-zh_CN/releases/latest/download/notion-zh_CN.js" -OutFile "$HOME\AppData\Local\Programs\Notion\resources\app\renderer\notion-zh_CN.js"
@@ -77,7 +77,7 @@ Notion 已经有了中文语料，让用户能够提前使用中文语料
    ```
 
 ### Mac 
-#### 手动导入
+#### 手动注入
 1. 打开Finder，应用程序，右键`notion.app`，显示应用包内容
 2. （自2.0.4版本后，任意语言都等价于中文了）
 3. 打开 Notion.app\Contents\Resources\app\renderer\
@@ -89,7 +89,7 @@ Notion 已经有了中文语料，让用户能够提前使用中文语料
    require("./notion-zh_CN") // 添加该行
    ```
 7. 重启
-   
+ 
 只是 同样打开 Notion.app\Contents\Resources\app\renderer\ 即可。。（安装包显示有同样目录结构）
 
 #### 自动导入
