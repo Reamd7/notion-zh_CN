@@ -107,7 +107,7 @@ curl -o- -L https://gitee.com/hubzyy/notion-zh_CN/raw/main/update.sh | bash -s
 > 不建议使用。不希望推广。有风险。你需要知道你在干什么。
 
 1. 首页：https://workers.cloudflare.com
-2. 注册，登陆，`Start building`，取一个子域名，`Create a Worker`。
+2. 注册，登录，`Start building`，取一个子域名，`Create a Worker`。
 3. 复制 [worker.js](https://github.com/Reamd7/notion-zh_CN/blob/main/worker.js) 到左侧代码框，修改
    ```js
    const BaseUrl = "xxxx.子域名.workers.dev" // 修改为自己的子域名
