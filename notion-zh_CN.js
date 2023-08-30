@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         Notion-zh_CN notion的汉化脚本
 // @namespace    http://tampermonkey.net/
-// @version      2.4.16
+// @version      2.4.17
 // @description  notion的100%汉化脚本，基于官方中文+机器翻译韩文，支持app版本以及网页油猴，地址：https://github.com/reamd7/notion-zh_CN
 // @author       reamd7
 // @match        *://www.notion.so/*
@@ -26,11 +26,7 @@
     document.getElementById("notion-app").remove();
   }
 
-  const script = document.createElement("script");
-  script.id = "messages";
-  script.type = "application/json";
-  script.setAttribute("data-locale", lang);
-  script.text = JSON.stringify({
+  const translateText = JSON.stringify({
     "AIWaitlist.demoButton.label.web": "观看 1 分钟演示",
     "AIWaitlist.invite.copiedText.label.web": "已复制",
     "AIWaitlist.invite.copyButton.label.web": "复制",
@@ -14846,7 +14842,7 @@
     "spaceSubscriptionBilling.applyCreditButton.label": "使用积分",
     "spaceSubscriptionBilling.changePaymentMethod.changeCardButton.label":
       "更换卡片",
-    "spaceSubscriptionBilling.invoicesSection.invoiceStatus.credited": "已退款",
+    "spaceSubscriptionBilling.invoicesSection.invoiceStatus.credited": "已入账",
     "spaceSubscriptionBilling.invoicesSection.invoiceStatus.due": "已到期",
     "spaceSubscriptionBilling.invoicesSection.invoiceStatus.failed": "失败",
     "spaceSubscriptionBilling.invoicesSection.invoiceStatus.paid": "已付费",
@@ -17230,13 +17226,14 @@
       "无法将工作区转移到没有关联 Notion 帐户的邮箱地址。",
     "workspaceTransferErrors.reattemptWrongUser.errorMessages":
       "不允许重新尝试转移到不同的用户帐户。",
-  });
+  })
 
-  const routes = document.createElement("script");
-  routes.id = "routes";
-  routes.type = "application/json";
-  routes.setAttribute("data-locale", lang);
-  routes.text = JSON.stringify({});
+  const script = document.createElement("script");
+  script.id = "messages";
+  script.type = "text/javascript";
+  script.defer = "defer";
+  script.setAttribute("data-locale", lang);
+  script.text = `window.LOCALE_SETUP={locale: "zh-CN", messages: ${translateText}, routes: {}}`
 
   function insertMoment() {
     try {
@@ -17274,7 +17271,7 @@
         JSON.stringify(preferredLocale)
       ); // search window.document.querySelector("#messages") 请阅读
     }
-  } catch (e) {}
+  } catch (e) { }
 
   if (isElectron) {
     var observer = new MutationObserver(function (callback) {
@@ -17284,7 +17281,6 @@
         }).length > 0
       ) {
         document.head.insertAdjacentElement("afterbegin", script);
-        document.head.insertAdjacentElement("afterbegin", routes);
         observer.disconnect();
       }
     });
@@ -17298,7 +17294,6 @@
     function insert() {
       try {
         document.body.appendChild(script);
-        document.body.appendChild(routes);
       } catch (e) {
         requestAnimationFrame(() => {
           insert();
@@ -17324,7 +17319,7 @@
       });
       if (!window.__console || !window.__console.push) {
         window.__console = {
-          push: (msg) => {},
+          push: (msg) => { },
         };
       }
     }

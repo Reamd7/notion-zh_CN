@@ -25,6 +25,8 @@ notion-zh_CN 是对notion的汉化脚本。
 Notion 已经有了中文语料，让用户能够提前使用中文语料
 
 # 更新日志：
+- 2.4.17 notion2.1.23更新，插件重构翻译逻辑`window.LOCALE_SETUP={locale: "ja-JP", messages: {…}, routes: {…}}`
+- 2.4.13 日常语料更新 + 安卓版本更新 + 繁体中文补充
 - 2.4.2 **翻译开始跟随着官方中文词条啦!!!!!**
 - 2.4.1 支持 ios / macos user script
 - 2.3.1 权衡后，安卓版本使用新的 runtime 注入方式，实现全部的（包括键盘都能够汉化的方式）但有首页白屏事件较长的问题。
@@ -39,6 +41,8 @@ Notion 已经有了中文语料，让用户能够提前使用中文语料
 
 # 如何使用?
 
+网页端 以及 windows 端，能够**100% 汉化**，指的是**时间显示也有国际化的能力**，点击所有更新的时间轴中就能看出来，点击？悬浮按钮也能看到。
+
 ## 网页端
 1. ### 安装油猴插件
     此处提供搜索到知乎的一篇教程：https://zhuanlan.zhihu.com/p/128453110
@@ -50,22 +54,22 @@ Notion 已经有了中文语料，让用户能够提前使用中文语料
     https://www.notion.so
 
 ## 桌面端
-**手动注入：**
-
 ### windows
+#### 手动注入
 1. （自**2.0.4**版本后，任意语言都等价于中文了）
 2. notion 安装目录：`C:\Users\用户名\AppData\Local\Programs\Notion\`
 3. 打开`C:\Users\用户名\AppData\Local\Programs\Notion\resources\app\renderer`文件夹
 4. 下载 `notion-zh_CN.js` 到上述文件夹（renderer）
 5. 打开 `preload.js`
-6. 在最后一行加上
+6. 在最后一行添加
    ```js
    //# sourceMappingURL=preload.js.map
-    require("./notion-zh_CN") // 添加该行
+   require("./notion-zh_CN") // 添加该行
    ```
 7. 重启
 
-- 上述操作也可以使用 PowerShell 命令来完成。  
+#### 自动导入
+上述操作也可以使用 PowerShell 命令来完成。  
   命令执行完成后，在 Notion 中使用 <kbd>CTRL</kbd>+<kbd>R</kbd> 可以热更新界面。
    ```powershell
    Invoke-WebRequest -Uri "https://github.com/Reamd7/notion-zh_CN/releases/latest/download/notion-zh_CN.js" -OutFile "$HOME\AppData\Local\Programs\Notion\resources\app\renderer\notion-zh_CN.js"
@@ -73,9 +77,7 @@ Notion 已经有了中文语料，让用户能够提前使用中文语料
    ```
 
 ### Mac 
-
-网页端 以及 windows 端，能够**100% 汉化**，指的是**时间显示也有国际化的能力**，点击所有更新的时间轴中就能看出来，点击？悬浮按钮也能看到。
-
+#### 手动注入
 1. 打开Finder，应用程序，右键`notion.app`，显示应用包内容
 2. （自2.0.4版本后，任意语言都等价于中文了）
 3. 打开 Notion.app\Contents\Resources\app\renderer\
@@ -84,29 +86,37 @@ Notion 已经有了中文语料，让用户能够提前使用中文语料
 6. 在最后一行加上
    ```js
    //# sourceMappingURL=preload.js.map
-    require("./notion-zh_CN") // 添加该行
+   require("./notion-zh_CN") // 添加该行
    ```
 7. 重启
-   
+ 
 只是 同样打开 Notion.app\Contents\Resources\app\renderer\ 即可。。（安装包显示有同样目录结构）
+
+#### 自动导入
+终端输入以下代码即可
+```bash
+curl -o- -L https://github.com/Reamd7/notion-zh_CN/raw/main/update.sh | bash -s
+```
+若响应时间过长则可以选择以下命令使用gitee仓库
+```bash
+curl -o- -L https://gitee.com/hubzyy/notion-zh_CN/raw/main/update.sh | bash -s
+```
 
 ## cloudflare worker
 
 > 不建议使用。不希望推广。有风险。你需要知道你在干什么。
 
 1. 首页：https://workers.cloudflare.com
-
-2. 注册，登陆，`Start building`，取一个子域名，`Create a Worker`。
-
+2. 注册，登录，`Start building`，取一个子域名，`Create a Worker`。
 3. 复制 [worker.js](https://github.com/Reamd7/notion-zh_CN/blob/main/worker.js) 到左侧代码框，修改
    ```js
    const BaseUrl = "xxxx.子域名.workers.dev" // 修改为自己的子域名
    ```
-
 4. `Save and deploy`。如果正常，右侧应显示提示框：
    Mismatch between origin and baseUrl (dev).
    好的（这里就证明汉化成功了）
-5. 以后可直接访问 `https://xxxx.子域名.workers.dev`。
+   
+6. 以后可直接访问 `https://xxxx.子域名.workers.dev`。
 
 ## 安卓端
 
@@ -115,9 +125,13 @@ Notion 已经有了中文语料，让用户能够提前使用中文语料
 # 大家可以做什么？
 
 1. **优化汉化语言**。都是机器翻译，看到不通畅的句子欢迎提issue/pr直接改了 （修改 **`json/zh.json`** 文件，了解之前，先找到原有的英文，韩文对照一下再更新翻译。）
+2. **修复bug和改进功能**。如果你发现了任何bug或者有任何改进的意见，请在issue中提出。如果你有能力修复bug或者改进功能，请提交PR。
+3. **测试和反馈**。我们需要您的帮助来测试汉化后的软件是否正常工作。如果您在使用过程中发现了任何问题，请在issue中提出。
+4. **分享和推广**。如果您认为这个汉化项目很棒，请分享给你的朋友们。您可以在社交媒体上分享这个项目，也可以在其他社区中推广这个项目。
+5. **贡献代码**。如果您是一名开发者，欢迎加入我们的开发团队。您可以在github上提交PR，或者联系我们加入开发团队。
 
 # 呼吁：
-提高付费率，支持你所支持的软让他发展更好，这样国内市场才会更受重视，而不是只是白嫖，买淘宝，搞教育账户。
+我们鼓励提高付费率，以支持您钟爱的软件发展壮大。这将使国内市场受到更多重视，而不仅仅是依赖免费使用、购买淘宝或使用教育账户。珍惜您所支持的产品，共同助力其不断进步。
 
 ## Star History
 

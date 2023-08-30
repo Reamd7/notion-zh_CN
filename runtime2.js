@@ -6300,7 +6300,7 @@
         "spaceSubscriptionBilling.changeVATIDModal.title": "更改 VAT ID",
         "spaceSubscriptionBilling.changeYourAddressModal.title": "更改地址",
         "spaceSubscriptionBilling.invoicesSection.invoiceStatus.credited":
-          "已退款",
+          "已入账",
         "spaceSubscriptionBilling.invoicesSection.invoiceStatus.due": "已到期",
         "spaceSubscriptionBilling.invoicesSection.invoiceStatus.failed": "失败",
         "spaceSubscriptionBilling.invoicesSection.invoiceStatus.paid": "已付费",
