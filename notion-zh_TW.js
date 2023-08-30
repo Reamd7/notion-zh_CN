@@ -14877,7 +14877,7 @@
     "spaceSubscriptionBilling.applyCreditButton.label": "使用點數",
     "spaceSubscriptionBilling.changePaymentMethod.changeCardButton.label":
       "變更卡片",
-    "spaceSubscriptionBilling.invoicesSection.invoiceStatus.credited": "已退款",
+    "spaceSubscriptionBilling.invoicesSection.invoiceStatus.credited": "已入账",
     "spaceSubscriptionBilling.invoicesSection.invoiceStatus.due": "已到期",
     "spaceSubscriptionBilling.invoicesSection.invoiceStatus.failed": "失敗",
     "spaceSubscriptionBilling.invoicesSection.invoiceStatus.paid": "已付費",
