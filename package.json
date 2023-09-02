@@ -1,6 +1,6 @@
 {
   "name": "notion_zh-cn",
-  "version": "2.4.16",
+  "version": "2.4.17",
   "main": "index.js",
   "repository": "https://github.com/Reamd7/notion-zh_CN.git",
   "author": "reamd7 <reamd7@gmail.com>",
@@ -16,10 +16,7 @@
     "typescript": "^4.8.4"
   },
   "scripts": {
-    "dev-search": "node ./script/fuzzySearchKeywords.js",
-    "dev": "cross-env env=DEV node ./script/main.js",
-    "build": "cross-env env=BUILD node ./script/main.js",
-    "build:tw": "cross-env env=BUILD node ./script/main_zh_TW.js"
+    "build": "cross-env env=BUILD node ./script/main.js"
   },
   "devDependencies": {
     "@types/lodash": "^4.14.173",

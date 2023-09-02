@@ -24,17 +24,7 @@
     document.getElementById("notion-app").remove();
   }
 
-  const script = document.createElement("script");
-  script.id = "messages";
-  script.type = "application/json";
-  script.setAttribute("data-locale", lang);
-  script.text = JSON.stringify(%zh%);
-
-  const routes = document.createElement("script");
-  routes.id = "routes";
-  routes.type = "application/json";
-  routes.setAttribute("data-locale", lang);
-  routes.text = JSON.stringify({});
+  %zh%
 
   function insertMoment() {
     try {
