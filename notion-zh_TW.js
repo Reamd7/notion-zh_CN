@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         Notion-zh_TW notion的汉化脚本
 // @namespace    http://tampermonkey.net/
-// @version      2.4.18
+// @version      2.4.19
 // @description  notion的100%汉化脚本，基于官方中文+机器翻译韩文，支持app版本以及网页油猴，地址：https://github.com/reamd7/notion-zh_CN
 // @author       reamd7
 // @match        *://www.notion.so/*
@@ -13,8 +13,6 @@
 // ==/UserScript==
 (function () {
   "use strict";
-  var lang = "zh-TW";
-
   window.LOCALE_SETUP = {
     locale: "zh-TW",
     messages: {
@@ -18983,8 +18981,19 @@
     routes: {},
   };
 
-  const LOCALE_SETUP = window.LOCALE_SETUP;
+  var isSafari =
+    navigator.userAgent.includes("Safari/") &&
+    !navigator.userAgent.includes("Chrome/");
+  var isElectron = "undefined" != typeof global || window.__isElectron;
 
+  const scriptList = document.querySelectorAll("script[defer]");
+  const scriptSrcList = Array.from(scriptList).map((v) => v.src);
+  if (isSafari) {
+    scriptList.forEach((v) => v.remove());
+    document.getElementById("notion-app").remove();
+  }
+  const LOCALE_SETUP = window.LOCALE_SETUP;
+  var lang = LOCALE_SETUP.locale;
   const call = function () {
     Object.defineProperty(window, "LOCALE_SETUP", {
       get() {
@@ -18995,6 +19004,26 @@
     });
   };
   call();
+
+  const script = document.createElement("script");
+  if (isElectron) {
+    script.id = "messages";
+    script.type = "text/javascript";
+    script.defer = "defer";
+    script.setAttribute("data-locale", lang);
+    const translateText = JSON.stringify(LOCALE_SETUP.messages);
+    script.text = `
+      window.LOCALE_SETUP={locale: "${LOCALE_SETUP.locale}", messages: ${translateText}, routes: {}}
+      const LOCALE_SETUP = window.LOCALE_SETUP;
+      Object.defineProperty(window, "LOCALE_SETUP", {
+        get() {
+          debugger;
+          return LOCALE_SETUP;
+        },
+        set() {},
+      });
+    `;
+  }
 
   function insertMoment() {
     try {
@@ -19019,7 +19048,7 @@
       });
     }
   }
-  insertMoment();
+
   try {
     const preferredLocaleStr = window.localStorage.getItem(
       "LRU:KeyValueStore2:preferredLocale"
@@ -19033,4 +19062,56 @@
       ); // search window.document.querySelector("#messages") 请阅读
     }
   } catch (e) {}
+
+  if (isElectron) {
+    var observer = new MutationObserver(function (callback) {
+      if (
+        callback.filter((v) => {
+          return v.target === document.head;
+        }).length > 0
+      ) {
+        document.head.insertAdjacentElement("afterbegin", script);
+        observer.disconnect();
+      }
+    });
+    observer.observe(document, {
+      childList: true, // 观察目标子节点的变化，是否有添加或者删除
+      attributes: false, // 观察属性变动
+      subtree: true, // 观察后代节点，默认为 false
+    });
+    insertMoment();
+  } else {
+    function insert() {
+      try {
+        document.body.appendChild(script);
+      } catch (e) {
+        requestAnimationFrame(() => {
+          insert();
+        });
+      }
+    }
+    insert();
+    insertMoment();
+
+    // for UserScript
+    if (isSafari) {
+      const notionRoot = document.createElement("div");
+      notionRoot.id = "notion-app";
+      notionRoot.setAttribute("data-inject", true);
+      document.body.append(notionRoot);
+      scriptSrcList.forEach((url) => {
+        const script = document.createElement("script");
+        script.type = "text/javascript";
+        script.defer = "defer";
+        script.src = url;
+        script.setAttribute("data-inject", true);
+        document.head.append(script);
+      });
+      if (!window.__console || !window.__console.push) {
+        window.__console = {
+          push: (msg) => {},
+        };
+      }
+    }
+  }
 })();
