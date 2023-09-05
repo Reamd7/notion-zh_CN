@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         Notion-zh_CN notion的汉化脚本
 // @namespace    http://tampermonkey.net/
-// @version      2.4.19
+// @version      2.4.20
 // @description  notion的100%汉化脚本，基于官方中文+机器翻译韩文，支持app版本以及网页油猴，地址：https://github.com/reamd7/notion-zh_CN
 // @author       reamd7
 // @match        *://www.notion.so/*
@@ -19031,14 +19031,19 @@
     const preferredLocaleStr = window.localStorage.getItem(
       "LRU:KeyValueStore2:preferredLocale"
     );
-    const preferredLocale = JSON.parse(preferredLocaleStr);
+    const preferredLocale = JSON.parse(preferredLocaleStr) || {
+      id: "KeyValueStore2:preferredLocale",
+      value: "zh-CN",
+      timestamp: Date.now(),
+      important: true,
+    };
     if (preferredLocale.value) {
       preferredLocale.value = lang;
-      window.localStorage.setItem(
-        "LRU:KeyValueStore2:preferredLocale",
-        JSON.stringify(preferredLocale)
-      ); // search window.document.querySelector("#messages") 请阅读
     }
+    window.localStorage.setItem(
+      "LRU:KeyValueStore2:preferredLocale",
+      JSON.stringify(preferredLocale)
+    ); // search window.document.querySelector("#messages") 请阅读
   } catch (e) {}
 
   if (isElectron) {

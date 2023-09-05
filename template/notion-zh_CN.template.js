@@ -86,15 +86,15 @@
     const preferredLocaleStr = window.localStorage.getItem(
       "LRU:KeyValueStore2:preferredLocale"
     );
-    const preferredLocale = JSON.parse(preferredLocaleStr);
+    const preferredLocale = JSON.parse(preferredLocaleStr) || {"id":"KeyValueStore2:preferredLocale","value":"zh-CN","timestamp":Date.now(),"important":true};
     if (preferredLocale.value) {
       preferredLocale.value = lang;
-      window.localStorage.setItem(
-        "LRU:KeyValueStore2:preferredLocale",
-        JSON.stringify(preferredLocale)
-      ); // search window.document.querySelector("#messages") 请阅读
     }
-  } catch (e) { }
+    window.localStorage.setItem(
+      "LRU:KeyValueStore2:preferredLocale",
+      JSON.stringify(preferredLocale)
+    ); // search window.document.querySelector("#messages") 请阅读
+  } catch (e) {}
 
   if (isElectron) {
     var observer = new MutationObserver(function (callback) {
