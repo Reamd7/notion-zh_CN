@@ -13,9 +13,13 @@
     "pinyin-pro": "^3.3.1",
     "prettier": "^2.3.2",
     "tencentcloud-sdk-nodejs": "^4.0.183",
-    "typescript": "^4.8.4"
+    "typescript": "^4.8.4",
+    "asar": "3.2.0"
   },
-  "scripts": { "build": "cross-env env=BUILD node ./script/main.js" },
+  "scripts": { 
+    "build": "cross-env env=BUILD node ./script/main.js",
+    "extract": "asar e /Applications/Notion.app/Contents/Resources/app.asar /Applications/Notion.app/Contents/Resources/app.asar"
+  },
   "devDependencies": {
     "@types/lodash": "^4.14.173",
     "cross-env": "^7.0.3",

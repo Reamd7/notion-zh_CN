@@ -1,0 +1,9 @@
+[package]
+name = "notion-zh_CN"
+version = "0.1.0"
+edition = "2021"
+members = [
+    "update_intl",
+]
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
