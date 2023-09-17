@@ -3,7 +3,8 @@ use std::fs;
 use asar::{AsarReader};
 use anyhow::Result;
 
-fn main() -> Result<()> {
+#[tokio::main]
+async fn main() -> Result<()> {
     let notion_install_path = Path::new("/mnt/c/Users/Gemini/AppData/Local/Programs/Notion");
 
     let notion_resource_path = notion_install_path.join("resources");
@@ -55,7 +56,10 @@ fn main() -> Result<()> {
             format!("{}\n{}", preload_js_contents, "require('./Notion-zh_CN');")
         )?;
 
-        let i18n_content = "alert(1)";
+        let i18n_content = reqwest::Client::new().get(
+            "https://greasyfork.org/scripts/430116-notion-zh-cn-notion%E7%9A%84%E6%B1%89%E5%8C%96%E8%84%9A%E6%9C%AC/code/Notion-zh_CN%20notion%E7%9A%84%E6%B1%89%E5%8C%96%E8%84%9A%E6%9C%AC.user.js"
+        ).send().await?.text().await?;
+        
         let i18n_path = Path::new("renderer/notion-zh_CN.js");
 
         fs::write(

@@ -1,7 +1,6 @@
 mod sync_assest_js_script;
 mod update_version;
 use std::path::Path;
-
 use anyhow::Result;
 
 use crate::update_script::ScriptTemplate;
