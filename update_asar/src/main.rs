@@ -2,20 +2,52 @@ use std::path::{Path, PathBuf};
 use std::fs;
 use asar::{AsarReader};
 use anyhow::Result;
+use toml_edit::Document;
+
+struct UpdateScriptEnv {
+    version: String,
+    folder: String,
+    remote_url: String,
+    __doc__: Document
+}
+
+impl UpdateScriptEnv {
+    fn new() -> UpdateScriptEnv {
+        let toml_path = Path::new("env.toml");
+        let toml = String::from_utf8(
+            fs::read(toml_path).unwrap()
+        ).unwrap();
+
+        let doc = toml.parse::<Document>().unwrap();
+        UpdateScriptEnv {
+            version: doc["version"].as_str().unwrap().to_string(),
+            folder: doc["folder"].as_str().unwrap().to_string(),
+            remote_url: doc["remote_url"].as_str().unwrap().to_string(),
+            __doc__: doc
+        }
+    }
+    pub fn update_version(&mut self, next_version: &str) -> () {
+        self.__doc__["version"] = toml_edit::value(next_version);
+        self.version = next_version.to_string();
+    } 
+}
 
 #[tokio::main]
 async fn main() -> Result<()> {
-    let notion_install_path = Path::new("/mnt/c/Users/Gemini/AppData/Local/Programs/Notion");
+    let env = UpdateScriptEnv::new();
+
+    let notion_install_path = Path::new(&env.folder);
 
     let notion_resource_path = notion_install_path.join("resources");
 
     let notion_app_asar = notion_resource_path.join("app.asar");
     let app_asar_copy = notion_resource_path.join("app.asar.backup");
-    println!("{:?} is {}", notion_app_asar, notion_app_asar.is_file());
+
     if notion_app_asar.is_file() {
         // 先备份
         fs::copy(&notion_app_asar, &app_asar_copy)?;
         fs::remove_file(&notion_app_asar)?;
+        println!("备份 app.asar");
     }
     if app_asar_copy.is_file() {
         let asar_file = fs::read(&app_asar_copy)?;
@@ -42,10 +74,9 @@ async fn main() -> Result<()> {
                 let content = file.data();
                 fs::write(extra_path, content)?;
             }
+            println!("解压 app.asar");
         }
 
-        println!("There are {} files in archive.asar", asar.files().len());
-        
         // let files = asar.files().keys().collect::<Vec<_>>();
         let preload_path = Path::new("renderer/preload.js");
         let preload_js_file = asar.files().get(preload_path).unwrap();
@@ -57,7 +88,7 @@ async fn main() -> Result<()> {
         )?;
 
         let i18n_content = reqwest::Client::new().get(
-            "https://greasyfork.org/scripts/430116-notion-zh-cn-notion%E7%9A%84%E6%B1%89%E5%8C%96%E8%84%9A%E6%9C%AC/code/Notion-zh_CN%20notion%E7%9A%84%E6%B1%89%E5%8C%96%E8%84%9A%E6%9C%AC.user.js"
+            &env.remote_url
         ).send().await?.text().await?;
         
         let i18n_path = Path::new("renderer/notion-zh_CN.js");
@@ -66,6 +97,8 @@ async fn main() -> Result<()> {
             notion_app_asar.join(i18n_path),
             i18n_content
         )?;
+
+        println!("完成 i18n 注入");
     }
     Ok(())
 }

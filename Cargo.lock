@@ -1635,6 +1635,7 @@ dependencies = [
  "asar",
  "reqwest",
  "tokio",
+ "toml_edit",
 ]
 
 [[package]]
