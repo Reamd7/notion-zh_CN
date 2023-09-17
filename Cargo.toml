@@ -1,6 +1,6 @@
 [package]
 name = "notion-zh_CN"
-version = "0.1.0"
+version = "2.4.20"
 edition = "2021"
 
 [workspace]
