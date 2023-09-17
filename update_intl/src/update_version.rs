@@ -11,7 +11,7 @@ fn get_next_version() -> String {
 }
 
 pub fn update_version() -> Result<String> {
-  let mut cargo_toml_file = fs::File::open("./cargo.toml")?;
+  let mut cargo_toml_file = fs::File::open("./Cargo.toml")?;
   let mut toml = String::new();
   cargo_toml_file.read_to_string(&mut toml)?;
   let next_version = get_next_version();
@@ -19,6 +19,6 @@ pub fn update_version() -> Result<String> {
   let mut doc = toml.parse::<Document>()?;
   doc["package"]["version"] = value(&next_version);
 
-  fs::write("./cargo.toml", doc.to_string())?;
+  fs::write("./Cargo.toml", doc.to_string())?;
   Ok(next_version)
 }

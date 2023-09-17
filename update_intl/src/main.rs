@@ -1,5 +1,7 @@
 mod sync_assest_js_script;
 mod update_version;
+use std::path::Path;
+
 use anyhow::Result;
 
 use crate::update_script::ScriptTemplate;
@@ -15,14 +17,14 @@ async fn main() -> Result<(), Box<dyn std::error::Error>> {
     let zh_cn = ScriptTemplate {
         version: next_version.clone(),
         script: res.zh_cn,
-        template_file_path: String::from("./template/notion-zh_CN.template.js"),
-        target_path: String::from("./notion-zh_CN.js"),
+        template_file_path: Path::new("./template/notion-zh_CN.template.js").to_path_buf(),
+        target_path: Path::new("./notion-zh_CN.js").to_path_buf(),
     };
     let zh_tw = ScriptTemplate {
         version: next_version.clone(),
         script: res.zh_tw,
-        template_file_path: String::from("./template/notion-zh_TW.template.js"),
-        target_path: String::from("./notion-zh_TW.js"),
+        template_file_path: Path::new("./template/notion-zh_TW.template.js").to_path_buf(),
+        target_path: Path::new("./notion-zh_TW.js").to_path_buf(),
     };
     zh_cn.generator()?;
     zh_tw.generator()?;

@@ -1,11 +1,11 @@
-use std::{io::Read, fs};
+use std::{io::Read, fs, path::{PathBuf}};
 use anyhow::{Result, Ok};
 
 pub struct ScriptTemplate {
   pub version: String,
   pub script: String,
-  pub template_file_path: String,
-  pub target_path: String,
+  pub template_file_path: PathBuf,
+  pub target_path: PathBuf,
 }
 
 impl ScriptTemplate {
