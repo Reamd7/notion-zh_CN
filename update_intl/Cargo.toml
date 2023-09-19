@@ -1,0 +1,16 @@
+[package]
+name = "update_intl"
+version = "2.4.20"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+reqwest = { version = "0.11.20", features = ["json"] }
+tokio = { version = "1.32.0", features = ["full"] }
+serde = { version = "1.0.188", features = ["derive"] }
+serde_json = "1.0.107"
+regex = "1.9.5"
+toml_edit = "0.20.0"
+anyhow = "1.0.75"
+

@@ -1,0 +1,12 @@
+[package]
+name = "notion-zh_CN"
+version = "2.4.21"
+edition = "2021"
+
+[workspace]
+members = [
+    "update_intl",
+    "update_asar"
+]
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
