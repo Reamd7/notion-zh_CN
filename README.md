@@ -54,7 +54,7 @@ Notion 已经有了中文语料，让用户能够提前使用中文语料
 
 ### windows
 
-下载 release 文件夹 window 目录，更新 env.toml 中 folder 字段为自己 notion 安装目录，运行 update_asar.exe。
+下载 [release](https://github.com/Reamd7/notion-zh_CN/releases/tag/2.4.20-win-asar) ，更新 env.toml 中 folder 字段为自己 notion 安装目录，运行 update_asar.exe。
 
 <!-- 1. （自**2.0.4**版本后，任意语言都等价于中文了）
 2. notion 安装目录：`C:\Users\用户名\AppData\Local\Programs\Notion\`
