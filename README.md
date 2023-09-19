@@ -53,7 +53,10 @@ Notion 已经有了中文语料，让用户能够提前使用中文语料
 **手动注入：**
 
 ### windows
-1. （自**2.0.4**版本后，任意语言都等价于中文了）
+
+下载 release 文件夹 window 目录，更新 env.toml 中 folder 字段为自己 notion 安装目录，运行 update_asar.exe。
+
+<!-- 1. （自**2.0.4**版本后，任意语言都等价于中文了）
 2. notion 安装目录：`C:\Users\用户名\AppData\Local\Programs\Notion\`
 3. 打开`C:\Users\用户名\AppData\Local\Programs\Notion\resources\app\renderer`文件夹
 4. 下载 `notion-zh_CN.js` 到上述文件夹（renderer）
@@ -70,7 +73,7 @@ Notion 已经有了中文语料，让用户能够提前使用中文语料
    ```powershell
    Invoke-WebRequest -Uri "https://github.com/Reamd7/notion-zh_CN/releases/latest/download/notion-zh_CN.js" -OutFile "$HOME\AppData\Local\Programs\Notion\resources\app\renderer\notion-zh_CN.js"
    Add-Content "$HOME\AppData\Local\Programs\Notion\resources\app\renderer\preload.js" 'require("./notion-zh_CN")'
-   ```
+   ``` -->
 
 ### Mac 
 
