@@ -918,7 +918,7 @@ dependencies = [
 
 [[package]]
 name = "notion-zh_CN"
-version = "2.4.21"
+version = "1.0.0"
 
 [[package]]
 name = "num-traits"
@@ -1640,7 +1640,7 @@ dependencies = [
 
 [[package]]
 name = "update_intl"
-version = "2.4.20"
+version = "1.0.0"
 dependencies = [
  "anyhow",
  "regex",
