@@ -27,5 +27,7 @@ async fn main() -> Result<(), Box<dyn std::error::Error>> {
     };
     zh_cn.generator()?;
     zh_tw.generator()?;
+    // deps dprint format
+    std::process::Command::new("dprint").arg("fmt ./*.js").output().expect("Failed to execute command");
     Ok(())
 }
