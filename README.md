@@ -1,21 +1,12 @@
-# 安卓版本已经更新，请使用更新版本
+# Window 版本已经更新，请使用更新版本
 
 # notion-zh_CN 是什么？
 
 notion-zh_CN 是对notion的汉化脚本。
 
-> 风险提示：使用 cloudflare worker 的同学，被官方检测出来并封号与我无关，希望自己看明白代码做了什么，以及为什么会被检测出来。
-> 其他方式的，都是使用官方国际化方案进行国际化的，而且在本地进行操作不通过任何服务器——理论上除非故意钓鱼否则不会封你。
-> 钓鱼：主动收集你是不是用了中文版国际化字段，而且，对比你并没有中文版权限。
-> 
-> 如果担心有问题，可以等待官方中文版，可以稍微学习网页开发，可以询问网页开发朋友，项目都是开源的。究竟做了什么操作，对notion 应用本体有什么影响，没有理由的担心只能体现对别人的不信任。
-> 
-> 该项目仅用于学习，如有侵权24h内会马上删除。
-
 ## 功能
 
 - 支持 网页端 ( 油猴脚本 ) + 桌面端 ( win / mac ) + 安卓端 汉化脚本
-
 - （很久没有维护）提供cloudflare worker 版本代理 notion.so 域名
    这是一个**平台无关**（IOS 上的safari也能直接使用）的汉化方式，只要你自己部署cloudflare worker，就可以使用。附带cf代理**加速**的能力。
    > 其实这里应该可以做域名映射到notion.so的访问的。(从而实现全平台汉化)
@@ -23,19 +14,6 @@ notion-zh_CN 是对notion的汉化脚本。
 # 为什么要做这个项目？
 
 Notion 已经有了中文语料，让用户能够提前使用中文语料
-
-# 更新日志：
-- 2.4.2 **翻译开始跟随着官方中文词条啦!!!!!**
-- 2.4.1 支持 ios / macos user script
-- 2.3.1 权衡后，安卓版本使用新的 runtime 注入方式，实现全部的（包括键盘都能够汉化的方式）但有首页白屏事件较长的问题。
-- 2.3.0 支持使用 cloudflare worker 进行代理 notion.so 域名进行加速及国际化
-- 2.2.0 支持 安卓版本notion，与官方版共存 的汉化！
-- 2.1.0：支持中文版快捷命令！支持拼音输入的时候显示快捷命令！
-  ![](https://s3.us-west-2.amazonaws.com/secure.notion-static.com/205477fc-c9df-48f2-a816-50c8809f244b/%E6%97%A0%E6%A0%87%E9%A2%98.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAT73L2G45O3KS52Y5%2F20210821%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20210821T053807Z&X-Amz-Expires=86400&X-Amz-Signature=916007db665a09560b8cde53c10480377a1f58eed05a57f99853496dfb6c8729&X-Amz-SignedHeaders=host&response-content-disposition=filename%20%3D%22%25E6%2597%25A0%25E6%25A0%2587%25E9%25A2%2598.png%22)
-- 2.0.4: 彻底支持无论是默认英文还是韩文都会生效的汉化脚本（2021/08/19 油猴剧本 + win 客户端 + mac 客户端测试通过），统一 win mac 网页端实现。
-- 2.0.3：支持切换到韩文之后帮助文档还原到默认英文版本
-- 2.0.1：支持mac客户端（英文）
-- 2.0.0: 支持win客户端（韩文） + 油猴脚本
 
 # 如何使用?
 
@@ -54,7 +32,16 @@ Notion 已经有了中文语料，让用户能够提前使用中文语料
 
 ### windows
 
+#### 自动挡版本
+> （替换原有update.ps1文件，任何版本都可以自动注入最新的notion汉化我呢见）
+
 下载 [release](https://github.com/Reamd7/notion-zh_CN/releases/tag/2.4.20-win-asar) ，更新 env.toml 中 folder 字段为自己 notion 安装目录，运行 update_asar.exe。
+
+如果有自动注入 notion enhancer 的需求请提相关 issues, 毕竟官方改成asar文件了。
+
+#### 手动挡
+
+按照 [release](https://github.com/Reamd7/notion-zh_CN/releases/tag/2.4.20-handmade) 食用。
 
 <!-- 1. （自**2.0.4**版本后，任意语言都等价于中文了）
 2. notion 安装目录：`C:\Users\用户名\AppData\Local\Programs\Notion\`
@@ -125,3 +112,27 @@ Notion 已经有了中文语料，让用户能够提前使用中文语料
 ## Star History
 
 [![Star History Chart](https://api.star-history.com/svg?repos=Reamd7/notion-zh_CN&type=Date)](https://star-history.com/#Reamd7/notion-zh_CN&Date)
+
+
+> 风险提示：使用 cloudflare worker 的同学，被官方检测出来并封号与我无关，希望自己看明白代码做了什么，以及为什么会被检测出来。
+> 其他方式的，都是使用官方国际化方案进行国际化的，而且在本地进行操作不通过任何服务器——理论上除非故意钓鱼否则不会封你。
+> 钓鱼：主动收集你是不是用了中文版国际化字段，而且，对比你并没有中文版权限。
+> 
+> 如果担心有问题，可以等待官方中文版，可以稍微学习网页开发，可以询问网页开发朋友，项目都是开源的。究竟做了什么操作，对notion 应用本体有什么影响，没有理由的担心只能体现对别人的不信任。
+> 
+> 该项目仅用于学习，如有侵权24h内会马上删除。
+
+
+# 更新日志：
+- 2.4.20 补充 window 更新目录文件之后的 自动注入软件 / 手动注入教程
+- 2.4.2 **翻译开始跟随着官方中文词条啦!!!!!**
+- 2.4.1 支持 ios / macos user script
+- 2.3.1 权衡后，安卓版本使用新的 runtime 注入方式，实现全部的（包括键盘都能够汉化的方式）但有首页白屏事件较长的问题。
+- 2.3.0 支持使用 cloudflare worker 进行代理 notion.so 域名进行加速及国际化
+- 2.2.0 支持 安卓版本notion，与官方版共存 的汉化！
+- 2.1.0：支持中文版快捷命令！支持拼音输入的时候显示快捷命令！
+  ![](https://s3.us-west-2.amazonaws.com/secure.notion-static.com/205477fc-c9df-48f2-a816-50c8809f244b/%E6%97%A0%E6%A0%87%E9%A2%98.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAT73L2G45O3KS52Y5%2F20210821%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20210821T053807Z&X-Amz-Expires=86400&X-Amz-Signature=916007db665a09560b8cde53c10480377a1f58eed05a57f99853496dfb6c8729&X-Amz-SignedHeaders=host&response-content-disposition=filename%20%3D%22%25E6%2597%25A0%25E6%25A0%2587%25E9%25A2%2598.png%22)
+- 2.0.4: 彻底支持无论是默认英文还是韩文都会生效的汉化脚本（2021/08/19 油猴剧本 + win 客户端 + mac 客户端测试通过），统一 win mac 网页端实现。
+- 2.0.3：支持切换到韩文之后帮助文档还原到默认英文版本
+- 2.0.1：支持mac客户端（英文）
+- 2.0.0: 支持win客户端（韩文） + 油猴脚本
