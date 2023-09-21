@@ -3,12 +3,18 @@ use std::fs;
 use asar::{AsarReader};
 use anyhow::Result;
 use toml_edit::Document;
+use directories::BaseDirs;
 
 struct UpdateScriptEnv {
     version: String,
     folder: String,
-    remote_url: String,
-    __doc__: Document
+    url: Option<URL>,
+    __doc__: Document,
+}
+
+enum URL {
+    Local(String),
+    Remote(String),
 }
 
 impl UpdateScriptEnv {
@@ -21,9 +27,28 @@ impl UpdateScriptEnv {
         let doc = toml.parse::<Document>().unwrap();
         UpdateScriptEnv {
             version: doc["version"].as_str().unwrap().to_string(),
-            folder: doc["folder"].as_str().unwrap().to_string(),
-            remote_url: doc["remote_url"].as_str().unwrap().to_string(),
-            __doc__: doc
+            folder: match doc["folder"].as_str() {
+                Some("~") => if let Some(d) = BaseDirs::new() {
+                    let mut x = String::from(d.data_local_dir().to_str().unwrap());
+                    x.push_str("/Programs/Notion");
+                    x
+                }else{ panic!() },
+                Some(dir) => dir.to_string(),
+                None => panic!()
+            },
+            url: match doc.get("local_url") {
+                Some(local) => Some(URL::Local(
+                    match local.as_str() {
+                        Some(s)=>s.to_string(),
+                        None => panic!()
+                    }
+                )),
+                None => match doc.get("remote_url") {
+                    Some(remote) => Some(URL::Remote(remote.as_str().unwrap().to_string())),
+                    None => None,
+                },
+            },
+            __doc__: doc,
         }
     }
     pub fn update_version(&mut self, next_version: &str) -> () {
@@ -87,15 +112,31 @@ async fn main() -> Result<()> {
             format!("{}\n{}", preload_js_contents, "require('./Notion-zh_CN');")
         )?;
 
-        let i18n_content = reqwest::Client::new().get(
-            &env.remote_url
-        ).send().await?.text().await?;
-        
+        let text: String = match &env.url {
+            Some(url) => match url {
+                URL::Local(local) => match fs::read_to_string(local) {
+                    Ok(r) => r.to_string(),
+                    Err(_) => panic!(),
+                },
+                URL::Remote(remote) => match reqwest::Client::new()
+                    .get(remote)
+                    .send()
+                    .await?
+                    .text()
+                    .await
+                {
+                    Ok(r) => r,
+                    Err(_) => panic!(),
+                },
+            },
+            _ => panic!(),
+        };
+
         let i18n_path = Path::new("renderer/notion-zh_CN.js");
 
         fs::write(
             notion_app_asar.join(i18n_path),
-            i18n_content
+            text
         )?;
 
         println!("完成 i18n 注入");
