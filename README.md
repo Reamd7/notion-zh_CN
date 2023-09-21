@@ -39,6 +39,16 @@ Notion 已经有了中文语料，让用户能够提前使用中文语料
 
 如果有自动注入 notion enhancer 的需求请提相关 issues, 毕竟官方改成asar文件了。
 
+!! 注意 window 下路径一定不能用 `\` 分割 ，要用 `/`.
+!! 例如:
+```
+# 这是 env.toml 内容，folder 不能为 C:\Users\用户名\AppData\Local\Programs\Notion，必须为 C:/Users/用户名/AppData/Local/Programs/Notion
+version = "2.4.21"
+folder = "C:/Users/用户名/AppData/Local/Programs/Notion"
+remote_url="https://greasyfork.org/scripts/430116-notion-zh-cn-notion%E7%9A%84%E6%B1%89%E5%8C%96%E8%84%9A%E6%9C%AC/code/Notion-zh_CN%20notion%E7%9A%84%E6%B1%89%E5%8C%96%E8%84%9A%E6%9C%AC.user.js"
+
+```
+
 #### 手动挡
 
 按照 [release](https://github.com/Reamd7/notion-zh_CN/releases/tag/2.4.20-handmade) 食用。
