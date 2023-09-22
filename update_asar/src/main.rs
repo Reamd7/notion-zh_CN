@@ -1,3 +1,5 @@
+#![feature(is_terminal)]
+
 use anyhow::Result;
 use asar::AsarReader;
 use directories::BaseDirs;
@@ -43,19 +45,27 @@ impl UpdateScriptEnv {
             __doc__: doc,
         }
     }
-    pub fn update_version(&mut self, next_version: &str) -> () {
+    pub fn update_version(&mut self, next_version: &str) {
         self.__doc__["version"] = toml_edit::value(next_version);
         self.version = next_version.to_string();
     }
-    
+
     fn find_notion_install_path() -> String {
-        if let Some(d) = BaseDirs::new() {
-            let mut x = String::from(d.data_local_dir().to_str().unwrap());
-            x.push_str("/Programs/Notion");
-            x
-        } else {
-            panic!()
+        if cfg!(target_os = "windows") {
+            // windows系统要执行的代码段
+            if let Some(d) = BaseDirs::new() {
+                let mut x = String::from(d.data_local_dir().to_str().unwrap());
+                x.push_str("/Programs/Notion");
+                return x;
+            } else {
+                panic!()
+            }
         }
+        if cfg!(target_os = "macos") {
+            return String::from("/Applications/Notion.app/");
+        }
+        // linux系统要执行的代码段
+        panic!();
     }
 }
 
