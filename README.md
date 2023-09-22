@@ -33,9 +33,9 @@ Notion 已经有了中文语料，让用户能够提前使用中文语料
 ### windows
 
 #### 自动挡版本
-> （替换原有update.ps1文件，任何版本都可以自动注入最新的notion汉化我呢见）
+> （替换原有update.ps1文件，任何版本都可以自动注入最新的notion汉化）
 
-下载 [release](https://github.com/Reamd7/notion-zh_CN/releases/tag/2.4.20-win-asar) ，更新 env.toml 中 folder 字段为自己 notion 安装目录，运行 update_asar.exe。
+下载 [release](https://github.com/Reamd7/notion-zh_CN/releases/tag/2.4.20-win-mac-asar) ，更新 env.toml 中 folder 字段为自己 notion 安装目录，运行 update_asar.exe。
 
 如果有自动注入 notion enhancer 的需求请提相关 issues, 毕竟官方改成asar文件了。
 
@@ -46,7 +46,6 @@ Notion 已经有了中文语料，让用户能够提前使用中文语料
 version = "2.4.21"
 folder = "C:/Users/用户名/AppData/Local/Programs/Notion"
 remote_url="https://greasyfork.org/scripts/430116-notion-zh-cn-notion%E7%9A%84%E6%B1%89%E5%8C%96%E8%84%9A%E6%9C%AC/code/Notion-zh_CN%20notion%E7%9A%84%E6%B1%89%E5%8C%96%E8%84%9A%E6%9C%AC.user.js"
-
 ```
 
 #### 手动挡
@@ -74,21 +73,12 @@ remote_url="https://greasyfork.org/scripts/430116-notion-zh-cn-notion%E7%9A%84%E
 
 ### Mac 
 
-网页端 以及 windows 端，能够**100% 汉化**，指的是**时间显示也有国际化的能力**，点击所有更新的时间轴中就能看出来，点击？悬浮按钮也能看到。
+#### 自动挡版本
+> （替换原有update.sh文件，任何版本都可以自动注入最新的notion汉化）
 
-1. 打开Finder，应用程序，右键`notion.app`，显示应用包内容
-2. （自2.0.4版本后，任意语言都等价于中文了）
-3. 打开 Notion.app\Contents\Resources\app\renderer\
-4. 下载 `notion-zh_CN.js` 到上述文件夹（renderer）
-5. 打开 `preload.js`
-6. 在最后一行加上
-   ```js
-   //# sourceMappingURL=preload.js.map
-    require("./notion-zh_CN") // 添加该行
-   ```
-7. 重启
-   
-只是 同样打开 Notion.app\Contents\Resources\app\renderer\ 即可。。（安装包显示有同样目录结构）
+下载 [release](https://github.com/Reamd7/notion-zh_CN/releases/tag/2.4.20-win-mac-asar) ，更新 env.toml 中 folder 字段为自己 notion 安装目录, 改成 `~` 会自动识别，运行 `update_asar_intel_mac` 或 `update_asar_m1_mac` 按平台选择
+
+如果有自动注入 notion enhancer 的需求请提相关 issues, 毕竟官方改成asar文件了。
 
 ## cloudflare worker
 
