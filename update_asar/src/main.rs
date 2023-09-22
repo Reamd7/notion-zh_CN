@@ -2,9 +2,11 @@
 
 use anyhow::Result;
 use asar::AsarReader;
+use colored::Colorize;
 use directories::BaseDirs;
 use std::fs;
-use std::path::{Path, PathBuf};
+use std::io::Read;
+use std::path::Path;
 use toml_edit::Document;
 
 struct UpdateScriptEnv {
@@ -21,26 +23,45 @@ enum URL {
 
 impl UpdateScriptEnv {
     fn new() -> UpdateScriptEnv {
-        let toml_path = Path::new("env.toml");
-        let toml = String::from_utf8(fs::read(toml_path).unwrap()).unwrap();
+        let cwd = std::env::current_dir().unwrap();
+        println!("[log] 当前执行路径 {}", cwd.to_str().unwrap().green());
+        let toml_path = cwd.join(Path::new("env.toml"));
+        println!("[log] 配置文件路径 {}", toml_path.to_str().unwrap().green());
+        let mut toml_file = fs::File::open(toml_path)
+            .unwrap_or_else(|_| panic!("{}", "[Error] 找不到配置文件".red()));
+        let mut toml = String::new();
+        toml_file
+            .read_to_string(&mut toml)
+            .unwrap_or_else(|_| panic!("{}", "[Error] 配置文件读取失败".red()));
 
-        let doc = toml.parse::<Document>().unwrap();
+        let doc = toml
+            .parse::<Document>()
+            .unwrap_or_else(|_| panic!("{}", "[Error] 解析配置文件失败".red()));
         UpdateScriptEnv {
-            version: doc["version"].as_str().unwrap().to_string(),
+            version: doc["version"]
+                .as_str()
+                .unwrap_or_else(|| panic!("{}", "[Error] 解析配置 version 失败".red().to_string()))
+                .to_string(),
             folder: match doc["folder"].as_str() {
                 Some("~") => UpdateScriptEnv::find_notion_install_path(),
                 Some(dir) => dir.to_string(),
-                None => panic!(),
+                None => panic!("{}", "[Error] 解析配置 folder 失败".red().to_string()),
             },
             url: match doc.get("local_url") {
                 Some(local) => Some(URL::Local(match local.as_str() {
                     Some(s) => s.to_string(),
-                    None => panic!(),
+                    None => panic!("{}", "[Error] 解析配置 local_url 失败".red().to_string()),
                 })),
-                None => match doc.get("remote_url") {
-                    Some(remote) => Some(URL::Remote(remote.as_str().unwrap().to_string())),
-                    None => None,
-                },
+                None => doc.get("remote_url").map(|remote| {
+                    URL::Remote(
+                        remote
+                            .as_str()
+                            .unwrap_or_else(|| {
+                                panic!("{}", "[Error] 解析配置 remote_url 失败".red().to_string())
+                            })
+                            .to_string(),
+                    )
+                }),
             },
             __doc__: doc,
         }
@@ -87,11 +108,14 @@ async fn main() -> Result<()> {
         println!("备份 app.asar");
     }
     if app_asar_copy.is_file() {
-        let asar_file = fs::read(&app_asar_copy)?;
-        let asar = AsarReader::new(&asar_file, notion_app_asar.clone())?;
+        let asar_file = fs::read(&app_asar_copy)
+            .unwrap_or_else(|_| { panic!("{}", "读取 asar 文件失败".red().to_string()) });
+
+        let asar = AsarReader::new(&asar_file, notion_app_asar.clone())
+            .unwrap_or_else(|_| { panic!("{}", "解析 asar 文件失败".red().to_string()) });
 
         if !notion_app_asar.is_dir() {
-            fs::create_dir(&notion_app_asar)?;
+            fs::create_dir(&notion_app_asar).unwrap_or_else(|_| { panic!("{}", "创建 app.asar 文件夹失败".red().to_string()) });;
             // unzip
             for file_path in asar.files().keys() {
                 let file = asar.files().get(file_path).unwrap();
