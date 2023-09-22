@@ -1,4 +1,4 @@
-# Window 版本已经更新，请使用更新版本
+# Window / Mac 版本已经更新，请使用更新版本
 
 # notion-zh_CN 是什么？
 
