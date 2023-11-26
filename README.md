@@ -1,4 +1,4 @@
-# Window / Mac 版本已经更新，请使用更新版本
+# Window / Mac 版本已经更新3.0.0，请使用更新版本
 
 # notion-zh_CN 是什么？
 
@@ -28,57 +28,58 @@ Notion 已经有了中文语料，让用户能够提前使用中文语料
     https://www.notion.so
 
 ## 桌面端
-**手动注入：**
 
-### windows
+notion 客户端迎来了巨大更新，文件结构发生完全不一致的变化（没有了可以注入的preload.js了）
 
-#### 自动挡版本
-> （替换原有update.ps1文件，任何版本都可以自动注入最新的notion汉化）
+**手动注入（修改原理）：**
 
-下载 [release](https://github.com/Reamd7/notion-zh_CN/releases/tag/2.4.20-win-mac-asar) ，更新 env.toml 中 folder 字段为自己 notion 安装目录，运行 update_asar.exe。
+### windows / mac
 
-如果有自动注入 notion enhancer 的需求请提相关 issues, 毕竟官方改成asar文件了。
+打开 `Notion安装目录/resources`
+解压 `app.asar` 到相同目录的 `app` 文件夹下
+找到 `.webpack/main/index.js`
+搜索 `localeHtml`
+看到一个 `localeHtml[r]`
+将 `r` 替换为 `zh-CN` / `zh-TW`
+保存
+删除 `app.asar` 或 重命名为其他名字
+打开应用
 
-!! 注意 window 下路径一定不能用 `\` 分割 ，要用 `/`.
-!! 例如:
-```
-# 这是 env.toml 内容，folder 不能为 C:\Users\用户名\AppData\Local\Programs\Notion，必须为 C:/Users/用户名/AppData/Local/Programs/Notion
-version = "2.4.21"
-folder = "C:/Users/用户名/AppData/Local/Programs/Notion"
-remote_url="https://greasyfork.org/scripts/430116-notion-zh-cn-notion%E7%9A%84%E6%B1%89%E5%8C%96%E8%84%9A%E6%9C%AC/code/Notion-zh_CN%20notion%E7%9A%84%E6%B1%89%E5%8C%96%E8%84%9A%E6%9C%AC.user.js"
-```
+### 预处理版本
 
-#### 手动挡
+https://github.com/Reamd7/notion-zh_CN/releases/tag/3.0.0
 
-按照 [release](https://github.com/Reamd7/notion-zh_CN/releases/tag/2.4.20-handmade) 食用。
+- `app.win.zip`
+- `app.mac.zip`
 
-<!-- 1. （自**2.0.4**版本后，任意语言都等价于中文了）
-2. notion 安装目录：`C:\Users\用户名\AppData\Local\Programs\Notion\`
-3. 打开`C:\Users\用户名\AppData\Local\Programs\Notion\resources\app\renderer`文件夹
-4. 下载 `notion-zh_CN.js` 到上述文件夹（renderer）
-5. 打开 `preload.js`
-6. 在最后一行加上
-   ```js
-   //# sourceMappingURL=preload.js.map
-    require("./notion-zh_CN") // 添加该行
-   ```
-7. 重启
+都已经有了app文件夹
 
-- 上述操作也可以使用 PowerShell 命令来完成。  
-  命令执行完成后，在 Notion 中使用 <kbd>CTRL</kbd>+<kbd>R</kbd> 可以热更新界面。
-   ```powershell
-   Invoke-WebRequest -Uri "https://github.com/Reamd7/notion-zh_CN/releases/latest/download/notion-zh_CN.js" -OutFile "$HOME\AppData\Local\Programs\Notion\resources\app\renderer\notion-zh_CN.js"
-   Add-Content "$HOME\AppData\Local\Programs\Notion\resources\app\renderer\preload.js" 'require("./notion-zh_CN")'
-   ``` -->
+打开 `Notion安装目录/resources`
+解压 `预处理压缩包` 到 `Notion安装目录/resources` 下
+删除 `app.asar` 或 重命名为其他名字
 
-### Mac 
+### More
 
-#### 自动挡版本
-> （替换原有update.sh文件，任何版本都可以自动注入最新的notion汉化）
+如果你不想修改软件源码，还有如下方案（之后可能会写成自动化脚本）
 
-下载 [release](https://github.com/Reamd7/notion-zh_CN/releases/tag/2.4.20-win-mac-asar) ，更新 env.toml 中 folder 字段为自己 notion 安装目录, 改成 `~` 会自动识别，运行 `update_asar_intel_mac` 或 `update_asar_m1_mac` 按平台选择
+1. 打开Notion的资源缓存文件
 
-如果有自动注入 notion enhancer 的需求请提相关 issues, 毕竟官方改成asar文件了。
+windows: `C:\Users\[用户名]\AppData\Roaming\Notion\notionAssetCache-v2`
+mac
+
+2. 找到热更新资源最新的版本
+基于语义化版本规则可以判断，或者看 `latestVersion.json` 内部 `version` 字段
+
+以下以当前最新版本 `23.13.0.23` 举例子
+
+3. 打开最新版本所在文件夹 `23.13.0.23/assets.json`
+
+搜索到 `localeHtml` 字段，
+将下级`en-US` 字段的值改为和 `zh-CN` 或 `zh-TW` 一致
+保存
+重启
+
+该方案问题是 Notion 经常热更新会更新缓存，那就要一个自动化的脚本自动做如上的事情解决问题
 
 ## cloudflare worker
 
