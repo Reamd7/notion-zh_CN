@@ -6,18 +6,158 @@ use anyhow::{
   Result, anyhow
 };
 
-#[allow(non_snake_case)]
-#[derive(Deserialize, Serialize, Debug)]
-struct AssetsScript {
-  // entry: String,
-  files: Vec<AssetsScriptFile>,
-  // hash: String,
-  // headersWhitelist: Vec<String>,
-  // localeHtml: HashMap<String, String>,
-  // proxyServerPathPrefixes: Vec<String>,
-  sqliteMigrationVersion: i32,
-  version: String
+// Example code that deserializes and serializes the model.
+// extern crate serde;
+// #[macro_use]
+// extern crate serde_derive;
+// extern crate serde_json;
+//
+// use generated_module::AssetsScript;
+//
+// fn main() {
+//     let json = r#"{"answer": 42}"#;
+//     let model: AssetsScript = serde_json::from_str(&json).unwrap();
+// }
+
+
+/// Request
+#[derive(Serialize, Deserialize)]
+#[serde(rename_all = "camelCase")]
+pub struct AssetsScript {
+    entry: String,
+
+    files: Vec<File>,
+
+    hash: String,
+
+    headers_whitelist: Vec<String>,
+
+    locale_html: AssetsScriptLocaleHtml,
+
+    proxy_server_path_prefixes: Vec<String>,
+
+    server_paths: ServerPaths,
+
+    sqlite_migration_version: i64,
+
+    version: String,
 }
+
+#[derive(Serialize, Deserialize)]
+pub struct File {
+    hash: String,
+
+    path: String,
+
+    size: i64,
+}
+
+#[derive(Serialize, Deserialize)]
+pub struct AssetsScriptLocaleHtml {
+    #[serde(rename = "da-DK")]
+    da_dk: String,
+
+    #[serde(rename = "de-DE")]
+    de_de: String,
+
+    #[serde(rename = "en-US")]
+    en_us: String,
+
+    #[serde(rename = "es-ES")]
+    es_es: String,
+
+    #[serde(rename = "es-LA")]
+    es_la: String,
+
+    #[serde(rename = "fi-FI")]
+    fi_fi: String,
+
+    #[serde(rename = "fr-FR")]
+    fr_fr: String,
+
+    #[serde(rename = "ja-JP")]
+    ja_jp: String,
+
+    #[serde(rename = "ko-KR")]
+    ko_kr: String,
+
+    #[serde(rename = "nb-NO")]
+    nb_no: String,
+
+    #[serde(rename = "nl-NL")]
+    nl_nl: String,
+
+    pseudo: String,
+
+    #[serde(rename = "pt-BR")]
+    pt_br: String,
+
+    #[serde(rename = "sv-SE")]
+    sv_se: String,
+
+    #[serde(rename = "zh-CN")]
+    zh_cn: String,
+
+    #[serde(rename = "zh-TW")]
+    zh_tw: String,
+}
+
+#[derive(Serialize, Deserialize)]
+#[serde(rename_all = "camelCase")]
+pub struct ServerPaths {
+    locale_html: ServerPathsLocaleHtml,
+}
+
+#[derive(Serialize, Deserialize)]
+pub struct ServerPathsLocaleHtml {
+    #[serde(rename = "da-DK")]
+    da_dk: String,
+
+    #[serde(rename = "de-DE")]
+    de_de: String,
+
+    #[serde(rename = "en-US")]
+    en_us: String,
+
+    #[serde(rename = "es-ES")]
+    es_es: String,
+
+    #[serde(rename = "es-LA")]
+    es_la: String,
+
+    #[serde(rename = "fi-FI")]
+    fi_fi: String,
+
+    #[serde(rename = "fr-FR")]
+    fr_fr: String,
+
+    #[serde(rename = "ja-JP")]
+    ja_jp: String,
+
+    #[serde(rename = "ko-KR")]
+    ko_kr: String,
+
+    #[serde(rename = "nb-NO")]
+    nb_no: String,
+
+    #[serde(rename = "nl-NL")]
+    nl_nl: String,
+
+    pseudo: String,
+
+    #[serde(rename = "pt-BR")]
+    pt_br: String,
+
+    #[serde(rename = "sv-SE")]
+    sv_se: String,
+
+    #[serde(rename = "zh-CN")]
+    zh_cn: String,
+
+    #[serde(rename = "zh-TW")]
+    zh_tw: String,
+}
+
 
 #[allow(non_snake_case)]
 #[derive(Deserialize, Serialize, Debug)]
@@ -64,9 +204,12 @@ pub async fn get_js_intl_script() -> Result<JSScript>  {
       let locale_setup_regex = regex::Regex::new(
         r"localeSetup\-([a-zA-Z]{2}\-[a-zA-Z]{2})"
       )?;
-  
+      // assets_locale_setup_js.insert("zh-CN", res.locale_html.zh_cn);
+      // assets_locale_setup_js.insert("zh-TW", res.locale_html.zh_tw);
+      // assets_locale_setup_js.insert("ko-KR", res.locale_html.ko_kr);
+      
       res.files.into_iter().filter(|item| {
-        item.path.starts_with("/localeSetup")
+        item.path.starts_with("/_assets/localeSetup")
       }).for_each( |item| {
         let path = &item.path;
         let res = locale_setup_regex.captures(path);
@@ -79,7 +222,7 @@ pub async fn get_js_intl_script() -> Result<JSScript>  {
         }
       });
   
-      println!("{:?}", assets_locale_setup_js);
+      // println!("{:?}", assets_locale_setup_js);
   
       let gen_client = |key: &str| -> RequestBuilder {
         let client = reqwest::Client::new();
