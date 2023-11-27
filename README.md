@@ -31,17 +31,54 @@ Notion 已经有了中文语料，让用户能够提前使用中文语料
 
 notion 客户端迎来了巨大更新，文件结构发生完全不一致的变化（没有了可以注入的preload.js了）
 
-**手动注入（修改原理）：**
+**（修改原理）：**
 
 ### windows / mac
 
 打开 `Notion安装目录/resources`
 解压 `app.asar` 到相同目录的 `app` 文件夹下
 找到 `.webpack/main/index.js`
-搜索 `localeHtml`
+1. 搜索 `localeHtml`
 看到一个 `localeHtml[r]`
 将 `r` 替换为 `zh-CN` / `zh-TW`
+
+目的是直接使用缓存资源文件中 zh-CN 的 html
+
+2. 搜索 requestReturnedAsIndexV2 
+
+看到 const e = l.default.join(i, u.path); 是文件的绝对路径
+在下方直接注入以下代码, 目的是修改 renderer 中 localStorage 的 locale 缓存值
+```js
+if (u.path.endsWith('.html')) {
+    const fs = require('fs');
+    const htmlContent = fs.readFileSync(e, 'utf-8')
+    if (!htmlContent.includes(`{"id":"KeyValueStore2:preferredLocale","value":"zh-CN","timestamp":Date.now(),"important":true}`)) {
+        (() => {
+            fs.writeFileSync(e, htmlContent.replace("</html>", `<script>
+            // ==UserScript==
+            try {
+                const preferredLocaleStr = window.localStorage.getItem(
+                    "LRU:KeyValueStore2:preferredLocale"
+                );
+                const preferredLocale = JSON.parse(preferredLocaleStr) || {"id":"KeyValueStore2:preferredLocale","value":"zh-CN","timestamp":Date.now(),"important":true};
+                if (preferredLocale.value) {
+                    preferredLocale.value = "zh-CN";
+                }
+                window.localStorage.setItem(
+                    "LRU:KeyValueStore2:preferredLocale",
+                    JSON.stringify(preferredLocale)
+                );
+            } catch (e) {}
+            </script>
+            </html>`))
+        })();
+    }
+}
+```
+
 保存
+
+
 删除 `app.asar` 或 重命名为其他名字
 打开应用
 
