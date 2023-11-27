@@ -1,18 +1,27 @@
 mod sync_assest_js_script;
 mod update_version;
-use std::path::Path;
+use std::{path::Path, collections::HashMap};
 use anyhow::Result;
+use reqwest::RequestBuilder;
+use tokio::join;
 
-use crate::update_script::ScriptTemplate;
+use crate::{update_script::ScriptTemplate, update_version::EnvToml, sync_assest_js_script::{JSScript, get_js_script}};
 mod update_script;
 
 #[tokio::main]
 async fn main() -> Result<(), Box<dyn std::error::Error>> {
     println!("Hello, world!");
+    let mut doc = EnvToml::of();
+    
+    let res: sync_assest_js_script::AssetsScript = sync_assest_js_script::get_js_intl_script().await?;
 
-    let res = sync_assest_js_script::get_js_intl_script().await?;
+    if !doc.compare_and_update_notion_version(&res.version) {
+        return Ok(())
+    }
 
-    let next_version = update_version::update_version()?;
+    let res = get_js_script(res).await?;
+
+    let next_version = doc.update_version();
     let zh_cn = ScriptTemplate {
         version: next_version.clone(),
         script: res.zh_cn,
@@ -27,6 +36,7 @@ async fn main() -> Result<(), Box<dyn std::error::Error>> {
     };
     zh_cn.generator()?;
     zh_tw.generator()?;
+    doc.write()?;
     // deps dprint format
     std::process::Command::new("dprint").arg("fmt ./*.js").output().expect("Failed to execute command");
     Ok(())

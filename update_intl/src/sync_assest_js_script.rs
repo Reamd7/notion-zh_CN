@@ -6,6 +6,8 @@ use anyhow::{
   Result, anyhow
 };
 
+use crate::update_version::EnvToml;
+
 // Example code that deserializes and serializes the model.
 // extern crate serde;
 // #[macro_use]
@@ -24,30 +26,30 @@ use anyhow::{
 #[derive(Serialize, Deserialize)]
 #[serde(rename_all = "camelCase")]
 pub struct AssetsScript {
-    entry: String,
+    // entry: String,
 
-    files: Vec<File>,
+    pub files: Vec<File>,
 
-    hash: String,
+    // hash: String,
 
-    headers_whitelist: Vec<String>,
+    // headers_whitelist: Vec<String>,
 
-    locale_html: AssetsScriptLocaleHtml,
+    // locale_html: AssetsScriptLocaleHtml,
 
-    proxy_server_path_prefixes: Vec<String>,
+    // proxy_server_path_prefixes: Vec<String>,
 
-    server_paths: ServerPaths,
+    // server_paths: ServerPaths,
 
-    sqlite_migration_version: i64,
+    // sqlite_migration_version: i64,
 
-    version: String,
+    pub version: String,
 }
 
 #[derive(Serialize, Deserialize)]
 pub struct File {
     hash: String,
 
-    path: String,
+    pub path: String,
 
     size: i64,
 }
@@ -184,7 +186,7 @@ pub struct JSScript {
   pub zh_tw: String,
 }
 
-pub async fn get_js_intl_script() -> Result<JSScript>  {
+pub async fn get_js_intl_script() -> Result<AssetsScript>  {
   let mut fetch_config = HashMap::new();
   fetch_config.insert("hash", "");
 
@@ -198,72 +200,74 @@ pub async fn get_js_intl_script() -> Result<JSScript>  {
   let text = res.text().await?;
   // 为了在解析json失败的时候可以重新解析，
   let parse_assets = serde_json::from_str::<AssetsScript>(&text);
+
   match parse_assets {
     Ok(res) => {
-      let mut assets_locale_setup_js = HashMap::new();
-      let locale_setup_regex = regex::Regex::new(
-        r"localeSetup\-([a-zA-Z]{2}\-[a-zA-Z]{2})"
-      )?;
-      // assets_locale_setup_js.insert("zh-CN", res.locale_html.zh_cn);
-      // assets_locale_setup_js.insert("zh-TW", res.locale_html.zh_tw);
-      // assets_locale_setup_js.insert("ko-KR", res.locale_html.ko_kr);
-      
-      res.files.into_iter().filter(|item| {
-        item.path.starts_with("/_assets/localeSetup")
-      }).for_each( |item| {
-        let path = &item.path;
-        let res = locale_setup_regex.captures(path);
-        if let Some(res) = res {
-          if let Some(locale) = res.get(1) {
-            if !locale.is_empty() {
-              assets_locale_setup_js.insert(locale.as_str().to_string(), item.path);
-            }
-          }
-        }
-      });
-  
-      // println!("{:?}", assets_locale_setup_js);
-  
-      let gen_client = |key: &str| -> RequestBuilder {
-        let client = reqwest::Client::new();
-        let mut url = String::from("https://www.notion.so");
-        url.push_str(assets_locale_setup_js.get(key).unwrap());
-  
-        client.get(
-          url
-        )
-        .header("Cache-Control", "no-cache")
-        .header("upgrade-insecure-requests", "1")
-        .header("sec-fetch-user", "?1")
-        .header("authority", "www.notion.so")
-        .header("if-modified-since", "Tue, 06 Jun 2023 22:49:53 GMT")
-        .header("if-none-match", "W/\"4b79efc8d01ace001fb68165f049cf0d\"")
-      };
-      
-      let ko_kr_client = gen_client("ko-KR");
-      let zh_cn_client = gen_client("zh-CN");
-      let zh_tw_client = gen_client("zh-TW");
-      
-      let (ko_kr_res, zh_cn_res, zh_tw_res) = join!(
-        ko_kr_client.send(),
-        zh_cn_client.send(),
-        zh_tw_client.send()
-      );
-      let (ko_kr_res, zh_cn_res, zh_tw_res) = join!(
-        ko_kr_res?.text(),
-        zh_cn_res?.text(),
-        zh_tw_res?.text()
-      );
-  
-      Ok(JSScript {
-        ko_kr: ko_kr_res?,
-        zh_cn: zh_cn_res?,
-        zh_tw: zh_tw_res?,
-      })
+      return Ok(res);
     }
     Err(assets_err_content) => {
       println!("assets actual result is: {:?}", text);
       Err(anyhow!(Box::new(assets_err_content)))
     }
   }
+}
+
+pub async fn get_js_script(res: AssetsScript) -> Result<JSScript> {
+  let mut assets_locale_setup_js = HashMap::new();
+  let locale_setup_regex = regex::Regex::new(
+    r"localeSetup\-([a-zA-Z]{2}\-[a-zA-Z]{2})"
+  )?;
+  
+  res.files.into_iter().filter(|item| {
+    item.path.starts_with("/_assets/localeSetup")
+  }).for_each( |item| {
+    let path = &item.path;
+    let res = locale_setup_regex.captures(path);
+    if let Some(res) = res {
+      if let Some(locale) = res.get(1) {
+        if !locale.is_empty() {
+          assets_locale_setup_js.insert(locale.as_str().to_string(), item.path);
+        }
+      }
+    }
+  });
+
+  // println!("{:?}", assets_locale_setup_js);
+
+  let gen_client = |key: &str| -> RequestBuilder {
+    let client = reqwest::Client::new();
+    let mut url = String::from("https://www.notion.so");
+    url.push_str(assets_locale_setup_js.get(key).unwrap());
+
+    client.get(
+      url
+    )
+    .header("Cache-Control", "no-cache")
+    .header("upgrade-insecure-requests", "1")
+    .header("sec-fetch-user", "?1")
+    .header("authority", "www.notion.so")
+    .header("if-modified-since", "Tue, 06 Jun 2023 22:49:53 GMT")
+    .header("if-none-match", "W/\"4b79efc8d01ace001fb68165f049cf0d\"")
+  };
+  
+  let ko_kr_client = gen_client("ko-KR");
+  let zh_cn_client = gen_client("zh-CN");
+  let zh_tw_client = gen_client("zh-TW");
+  
+  let (ko_kr_res, zh_cn_res, zh_tw_res) = join!(
+    ko_kr_client.send(),
+    zh_cn_client.send(),
+    zh_tw_client.send()
+  );
+  let (ko_kr_res, zh_cn_res, zh_tw_res) = join!(
+    ko_kr_res?.text(),
+    zh_cn_res?.text(),
+    zh_tw_res?.text()
+  );
+
+  Ok(JSScript {
+    ko_kr: ko_kr_res?,
+    zh_cn: zh_cn_res?,
+    zh_tw: zh_tw_res?,
+  })
 }
