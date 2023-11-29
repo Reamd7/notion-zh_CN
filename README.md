@@ -31,9 +31,23 @@ Notion 已经有了中文语料，让用户能够提前使用中文语料
 
 notion 客户端迎来了巨大更新，文件结构发生完全不一致的变化（没有了可以注入的preload.js了）
 
-**（修改原理）：**
+**有问题发issue，最好是贴录屏，gif 能直接贴在issue**
 
-### windows / mac
+### 预处理版本
+
+https://github.com/Reamd7/notion-zh_CN/releases/tag/3.0.0
+
+- `app.win.zip`
+- `app.mac.zip`
+
+都已经有了app文件夹
+
+打开 `Notion安装目录/resources`
+解压 `预处理压缩包` 到 `Notion安装目录/resources` 下
+删除 `app.asar` 或 重命名为其他名字
+
+
+### **（修改原理）：** windows / mac
 
 打开 `Notion安装目录/resources`
 解压 `app.asar` 到相同目录的 `app` 文件夹下
@@ -82,18 +96,6 @@ if (u.path.endsWith('.html')) {
 删除 `app.asar` 或 重命名为其他名字
 打开应用
 
-### 预处理版本
-
-https://github.com/Reamd7/notion-zh_CN/releases/tag/3.0.0
-
-- `app.win.zip`
-- `app.mac.zip`
-
-都已经有了app文件夹
-
-打开 `Notion安装目录/resources`
-解压 `预处理压缩包` 到 `Notion安装目录/resources` 下
-删除 `app.asar` 或 重命名为其他名字
 
 ### More
 
