@@ -1,4 +1,4 @@
-# Window / Mac 版本已经更新3.0.0，请使用更新版本
+# Window / Mac 版本已经更新3.1.0，请使用更新版本
 
 # notion-zh_CN 是什么？
 
@@ -35,7 +35,7 @@ notion 客户端迎来了巨大更新，文件结构发生完全不一致的变�
 
 ### 预处理版本
 
-https://github.com/Reamd7/notion-zh_CN/releases/tag/3.0.0
+[https://github.com/Reamd7/notion-zh_CN/releases/tag/3.0.0](https://github.com/Reamd7/notion-zh_CN/releases/tag/3.1.0)
 
 - `app.win.zip`
 - `app.mac.zip`
