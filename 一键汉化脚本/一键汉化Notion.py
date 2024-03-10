@@ -279,9 +279,28 @@ def countdown(task, duration):
     # print_current_time("Notion启动完成")
 
 
-def main():
-    start_time = time.time()
+def handle_chinesization_process(source_file_zip, target_directory):
+    choice = input("如需重新汉化，请按0；更新汉化文件或首次使用，请按1：")
 
+    if choice == '1':
+        # 下载汉化文件
+        download_notion_chinesization_file()
+
+        # 解压并删除app.win.zip 指定zip文件路径和目的解压目录
+        target_dir = unzip(source_file_zip, target_directory)
+
+        # 移动app文件夹下的内容至Notion文件夹
+        move_contents_and_remove_source(target_dir, target_directory)
+    elif choice == '0':
+        # 用户选择重新汉化，可以在这里添加相关逻辑，例如提示信息或直接返回不执行后续操作
+        print("选择了重新汉化，跳过下载、解压和移动操作。")
+    else:
+        # 万一按错了，不终止程序，而是重新询问
+        print("无效选择，请重新选择。")
+        handle_chinesization_process(source_file_zip, target_directory)
+
+
+def main():
     # 获取系统用户名
     username = os.getlogin()
 
@@ -289,7 +308,7 @@ def main():
     notion_shortcut = Path(f'C:\\Users\\{username}\\AppData\\Roaming\\Microsoft\\Windows\\Start '
                            f'Menu\\Programs\\Notion.lnk')
     if not notion_shortcut.exists():
-        print("未找到你的Notion程序")
+        print("未找到你的Notion程序，自行前往官网下载 https://www.notion.so/download")
         return
 
     # 安装目录
@@ -301,14 +320,8 @@ def main():
 
     print_current_time("主程序开始")
 
-    # 下载汉化文件
-    download_notion_chinesization_file()
-
-    # 解压并删除app.win.zip 指定zip文件路径和目的解压目录
-    target_dir = unzip(source_file_zip, target_directory)
-
-    # 移动app文件夹下的内容至Notion文件夹
-    move_contents_and_remove_source(target_dir, install_dir)
+    # 询问用户是否重新汉化、更新汉化文件或是第一次使用
+    handle_chinesization_process(source_file_zip, target_directory)
 
     # 启动notion
     activate_notion()
@@ -324,14 +337,7 @@ def main():
     # 重启notion
     restart_notion()
 
-    # 记录结束时间
-    end_time = time.time()
-
     print_current_time("主程序结束")
-
-    # 计算耗时
-    elapsed_time = end_time - start_time
-    print(f"程序执行耗时：{elapsed_time}秒")
 
 
 if __name__ == '__main__':
