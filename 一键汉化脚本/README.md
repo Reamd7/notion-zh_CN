@@ -6,5 +6,8 @@
    2. 路径为./notion_chinesization_error.log
 3. 解决了概率程序不运行的问题
 
+## 注意事项
+登录账号后再执行程序
+
 ## 下载连接
 https://share.feijipan.com/s/ciAMoazh
