@@ -1,7 +1,13 @@
 # 使用教程
 
- 1. **退出Notion**
+ 1. **退出Notion（重点）**
  2. **启动汉化程序**
+
+
+# FAQ
+ 1.提示成功更新assets.json 但是页面中没有中文的情况下，运行`del_cache.bat`脚本<br>
+ ![image](https://github.com/candies404/notion-zh_CN/assets/154443166/c0084d8c-fbda-4f3e-b95a-333d32fc9c84)<br/>
+ ![image](https://github.com/candies404/notion-zh_CN/assets/154443166/de9fd6e4-2fe8-4da4-a639-10cad097adf3)
 
 # 注意事项
 
